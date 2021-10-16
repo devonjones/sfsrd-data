@@ -1,0 +1,288 @@
+{
+    "name": "Monitor",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Monitors are one of the many specialized forms of intelligent anacites. They provide unobtrusive security wherever anacites anticipate physical violence but also desire to avoid an overt display of force. It is not unusual for anacite ambassadors to be assigned a pair of monitors as guards, for example, and anacite facilities with a large number of non-anacite visitors or employees\u2014such as the Horse Eye Orbital Plate\u2014are home to many of these silent, nearly-invisible warriors. A single monitor is often given authority over security in a given facility; there, they maintain shortwave communication with nearby anacites, extending the monitor\u2019s surveillance range and ability to observe threats. If necessary, the monitor can even direct nearby anacites to intercept security threats.<br/><br/> An anacite monitor is mantis-like in shape, with two delicate-looking wings, six long legs, and a distinctive triangular head. Although they have the same unusual eye pattern that all anacites share, the monitor is further equipped with rotating pods on the side of their head, each armed with a deadly electric ray. Despite their large size, they are also surprisingly agile, with two powerful forelegs that end in slashing edges. A monitor\u2019s natural armor is burnished red, but through the use of their chameleon circuits, the anacite monitor can adopt any color or hue, making them surprisingly stealthy."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Monitor",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "Anacite",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 40,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "light dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electric ray",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": null,
+            "int": 1,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 8,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+16 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "shortwave 120 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "chameleon circuit"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Aballon)",
+            "organization": "solitary, pair, or squadron (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite monitor can fade into the background by assuming the colors around them. When an anacite monitor remains stationary for 1 round, they gain a +10 circumstance bonus to Stealth checks. If they take any action, they lose this bonus until they once again spend 1 round remaining stationary.",
+                "name": "Chameleon Circuit",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite monitor can fire electric rays from the pods on the side of their head. These rays have a range increment of 60 feet.",
+                "name": "Electric Ray",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite monitor can acquire power from dim or brighter light, and can store power generated in this way. The monitor can operate in darkness for 2 hours. After this time, the monitor gains the sickened condition until they return to an area of dim or brighter light.",
+                "name": "Light Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite can communicate wirelessly. This acts as telepathy, but only with other creatures with the shortwave ability or constructs with the technological subtype.",
+                "name": "Shortwave",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #34: We\u2019re No Heroes",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #34: We\u2019re No Heroes pg. 58",
+                "alt": "Starfinder #34: We\u2019re No Heroes pg. 58",
+                "href": "https://paizo.com/products/btq023du?Starfinder-Adventure-Path-We-re-No-Heroes"
+            },
+            "page": 58
+        }
+    ]
+}

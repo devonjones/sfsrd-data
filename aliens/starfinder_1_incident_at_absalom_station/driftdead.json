@@ -1,0 +1,240 @@
+{
+    "name": "Driftdead",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "When a mortal humanoid dies within the Drift while consumed with a strong negative emotion, it can become a driftdead, a restless undead spirit bound to that plane, unable to escape the confines of the Drift and reach its final judgment. What\u2019s left of a driftdead\u2019s warped mind is filled with insanity, rage, and a hatred for the living. So overwhelming is this flux of emotions that a driftdead psychically broadcasts its confusion, affecting all who venture too close.<br/><br/> A driftdead leaves its mortal remains behind and forms a new undead body out of the mingled planar energies of the Drift\u2014 just as the Drift contains material snatched from countless planes. This physical body, however, is inextricably linked to the Drift. If a driftdead ever travels to the Material Plane (or any other plane), its planar body remains within the Drift, and the driftdead becomes an incorporeal spirit. The driftdead recreates its corporeal form as soon as it returns to the Drift."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Driftdead",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Combatant",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "aura": "confusion (30 feet, DC 11)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 22,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "spatial incorporeality"
+            ],
+            "immunities": [
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "average"
+                            }
+                        ],
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "Drift rip",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": null,
+            "int": -4,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 12
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (the Drift)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any creature that comes within 30 feet of a driftdead must succeed at a DC 11 Will save or be confused for 2 rounds. Once a creature has attempted this save, whether successful or not, it can\u2019t be affected again by the same driftdead\u2019s aura for 24 hours.",
+                "name": "Confusion Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Just as the Drift tears away chunks of planar material, a driftdead can pull apart the molecular bonds of matter, ripping open the flesh of nearby creatures. This is a ranged attack against EAC that has a range of 30 feet.",
+                "name": "Drift Rip",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Within the Drift, a driftdead has a physical body, but if removed from that plane, its physical body phases out of normal reality. On the Material Plane or otherwise outside the Drift, a driftdead becomes incorporeal. This does not change any of the driftdead\u2019s statistics, but it gains all of the other benefits of the incorporeal special ability (see page 264 of the <i>Starfinder Core Rulebook</i>). If returned to the Drift, a driftdead immediately loses the incorporeal special ability as its physical body returns.",
+                "name": "Spatial Incorporeality",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #1: Incident at Absalom Station",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #1: Incident at Absalom Station pg. 57",
+                "alt": "Starfinder #1: Incident at Absalom Station pg. 57",
+                "href": "https://paizo.com/products/btpy9tmf?Starfinder-Adventure-Path-Incident-at-Absalom-Station"
+            },
+            "page": 57
+        }
+    ]
+}

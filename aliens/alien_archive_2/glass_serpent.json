@@ -1,0 +1,267 @@
+{
+    "name": "Glass Serpent",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The terrifying ambush predators known as glass serpents are some of the most notorious beasts to roam the blasted wastelands of Eox, preying on local fauna and unwary undead alike. Similar creatures have been found on dozens of planets, including those outside the Pact Worlds, leading scholars to speculate that glass serpents may have been brought to Eox in its ancient past through magical means, or that they may represent a natural case of parallel evolution on worlds that have suffered massive catastrophes.<br/><br/> Glass serpents have long, undulating bodies that bulge and narrow at regular intervals, giving them a shape almost like a chain of thick links. Their heads are much different from those of traditional snakes, with a row of eyes peering out from beneath an armored, helmetlike crest, and long feeding tentacles each tipped with a glowing, crystalline tooth dangling from their mouths. Yet, the most fearsome aspect of glass serpents must be their legendary scales: smooth crystalline structures that warp and wrap light around the serpents, turning them invisible and making them terrifying combatants. This invisibility isn\u2019t entirely voluntary and requires enough energy from a serpent that it can activate the ability only when it is hungry and hunting. When well fed, the serpent becomes visible once more, its body appearing partially translucent and strewn with shimmering rainbows. This weakness is of no comfort to those creatures that become the serpent\u2019s prey and provide it with sustenance, pieces of which are visible as they pass through the serpent\u2019s translucent digestive system. An adult glass serpent can grow to be 60 feet long and up to 5,000 pounds.<br/><br/> Hermaphroditic and capable of mating as long as they\u2019re sufficiently nourished, glass serpents have a fascinating courtship process. A glass serpent looking to mate seeks out another glass serpent of roughly its own size and ability level and challenges it in an elaborate ritual. Once this challenge is accepted, the two become a \u201crival pair.\u201d For the next 6 weeks, the two travel together, hunting in tandem but violently attempting to keep the other from eating a share of any slain prey. At the end of this period, they seek out the largest and most powerful glass serpent they can find and attempt to woo this third serpent into accepting the mantle of motherhood via displays of their prowess and gifts of regurgitated food. If this third serpent agrees, it and the larger, better-fed member of the rival pair\u2014called the \u201cbull\u201d\u2014mate. The bull then departs, and the other member of the rival pair\u2014the \u201cguard\u201d\u2014remains to serve the pregnant serpent, bringing food and providing defense until the young are born. Young glass serpents are capable of hunting on their own within a month, at which point all members of the family go their separate ways.<br/><br/> Not intelligent enough to be considered truly sentient, glass serpents are nevertheless cunning hunters and opportunists, with natural curiosity and adaptability in addition to their predatory instincts. Although glass serpents can diminish the glow in their tentacles\u2019 crystalline teeth to better preserve their invisibility, they understand that the light itself remains visible even when their bodies are not. As such, many will purposefully illuminate these lures while invisible, creating delicate, dancing displays of light or even mimicking signal beacons, hoping to draw prey near. Glass serpents have learned that creatures from other worlds often require air, and they specifically target such creatures, ripping open environment suits, vehicles, or structures to asphyxiate their prey.<br/><br/> For all the danger they present, glass serpents have long been a part of Eoxian culture, taking on the cultural role of noble predator that other groups often ascribe to wolves, lions, eagles, or dragons. Domesticated glass serpents are the chosen hunting beasts of both the planet\u2019s nobility and its criminal organizations. Several Bone Sages and ancient organizations have glass serpents on their coats of arms or corporate logos, and execution by glass serpent is an ancient practice that still continues. In recent centuries, the creatures have been heavily exported to other planets, partially for their status in Eoxian culture but more often because their scales can be commercially harvested for illusion magic and a wide variety of optical technologies. The challenge of imprisoning smart animals that can turn invisible and don\u2019t need to breathe means that wild glass serpent populations can now be found on nearly every terrestrial or aquatic planet in the Pact Worlds and many colony worlds beyond. Most notably, the Diaspora has seen significant problems with glass serpents adapting to the highly trafficked waterways of the River Between, where despite their slight disadvantage in movement and stealth, they still prove devastating to travelers. Many cr\u00c3\u00a8che worlds regularly hire mercenaries and adventurers to hunt down and eradicate these serpents, but the population keeps mysteriously bouncing back."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Glass Serpent",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 77,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "defensive_abilities": [
+                "ravenous invisibility"
+            ],
+            "immunities": [
+                "radiation"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "60 ft.",
+                        "movement_type": "walk",
+                        "value": 60
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 30 ft.",
+                        "movement_type": "swim",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 3,
+                    "name": "tentacles",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+11",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "swallow whole"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "30 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d6+5 A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 16"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 16"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "19 HP"
+                        }
+                    ],
+                    "value": "swallow whole"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 1,
+            "int": -4,
+            "wis": 2,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+21 to climb or swim"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Eox)",
+            "organization": "solitary, rival pair, or brood family (2\u20133 adults and 3\u20135 juveniles)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A glass serpent can become invisible as part of any other action. Each time it successfully damages a creature while invisible, it must attempt a DC 14 Will save. If it fails, this ability is suspended and the glass serpent becomes visible for 1 round (though it can turn invisible again at the start of its next turn). A glass serpent that has swallowed a creature cannot turn invisible using this ability until 1 week after it swallowed the creature, when its meal has been completely digested. (If the swallowed creature escapes or is otherwise removed, the glass serpent can use this ability again immediately.) An invisible glass serpent can resume being visible as part of any other action.",
+                "name": "Ravenous Invisibility",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 64",
+                "alt": "Alien Archive 2 pg. 64",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 64
+        }
+    ]
+}

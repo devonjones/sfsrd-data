@@ -1,0 +1,309 @@
+{
+    "name": "Power Archon",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The powers of Heaven have watched technological and magical progress in the mortal realm with skeptical eyes. Knowledge is power, after all, and power corrupts. In this age of advanced science and technomagical prowess, that corrupting influence is more threatening than ever.<br/><br/> Power archons are servitors of the Outer Planes tasked with tempering mortals\u2019 obsession with technology. These virtuous engineers travel to the Material Plane to disable or destroy technology their celestial masters consider to be too corrupting to leave in the hands of mortals. What warrants such intervention is as mysterious as any other instance of celestial meddling. Once power archons are set on a mission, though little can dissuade them, but they talk first and fight only when they must.<br/><br/> Power archons can control the energy that powers technological devices, leading some to refer to them as \u201cbattery archons.\u201d They are skilled techs and hackers who lend their skills to good causes, including missions led by barachius angels."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Power Archon",
+        "type": "stat_block",
+        "cr": "5",
+        "alien_family": "Archon",
+        "role": "Expert",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Lawful Good",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "archon"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "good"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 11
+        },
+        "aura": "aura of menace (20 ft., DC 15)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 65,
+            "rp": 1,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs. poison"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "immunities": [
+                "electricity",
+                "petrification"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electric bolt",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+5",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 5,
+            "con": 0,
+            "int": 3,
+            "wis": 2,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 11,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+19 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 11
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "remote operations"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Heaven)",
+            "organization": "solitary, pair, or team (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any creature hostile to the power archon within its aura of menace must attempt a Will saving throw. A creature that fails the save takes a \u20132 penalty to AC, attack rolls, and saving throws for 24 hours or until it deals damage to the archon. When the effect ends for a creature, that creature can\u2019t be affected again by the same archon\u2019s aura for 24 hours.",
+                "name": "Aura of Menace",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The power archon can unleash an electric bolt as a melee attack or ranged attack. Both versions can be used to deal nonlethal damage without penalty. The ranged attack has a range increment of 30 feet.",
+                "name": "Electric Bolt",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A power archon can attempt Computers and Engineering checks at a range of 30 feet. A creature targeted by the archon or a creature attending or observing the archon\u2019s target can discern what the archon is doing with a successful DC 15 Perception check.",
+                "name": "Remote Operations",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #9: The Rune Drive Gambit",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #9: The Rune Drive Gambit pg. 55",
+                "alt": "Starfinder #9: The Rune Drive Gambit pg. 55",
+                "href": "https://paizo.com/products/btpya21d?Starfinder-Adventure-Path-9-The-Rune-Drive-Gambit"
+            },
+            "page": 55
+        }
+    ]
+}

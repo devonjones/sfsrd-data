@@ -1,0 +1,276 @@
+{
+    "name": "Witchwyrd",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Witchwyrds are avid wanderers and inveterate merchants, plying the trade routes between both planets and the planes.<br/><br/>Witchwyrds have four arms and hairless gray-blue skin. Their eyes glow visibly, increasing in brightness as they absorb force energy. Witchwyrds stand an average of 7 feet tall and weigh approximately 300 pounds. They favor loose, flowing robes and distinctive conical hats, and they frequently cover their faces with masks or ornate helmets. Witchwyrds new to a market or eager to avoid identification during an important business deal sometimes fold one pair of their flexible arms behind their backs and cover their faces.<br/><br/> Although witchwyrds seem to gain some manner of sustenance from the magical force energy they absorb, they still breathe, drink, eat, and sleep like normal creatures, and they have a fondness for extremely spicy foods. The average lifespan of witchwyrds is unknown, though they are believed to live for many centuries, if not millennia.<br/><br/> Witchwyrds are acknowledged as the progenitors of the kasathas and the shobhads of Akiton. Why the witchwyrds seeded Kasath and Akiton with intelligent life modeled after themselves remains a mystery, as does the number of other as-yet-undiscovered planets similarly affected. It is an undisputed fact, however, that witchwyrds were the impetus behind the construction of the kasathas\u2019 worldship Idari and their exodus from their home planet to the Pact Worlds.<br/><br/> Witchwyrds can be found on nearly any world or plane with civilized trade, preferring dry, warm regions, but virtually nothing is known of their mysterious home world beyond its name: Cyrune. The details of witchwyrd government and society are likewise unknown, other than a widespread belief that a mercantile oligarchy of witchwyrd elders directs their race\u2019s interplanetary and interplanar trade.<br/><br/> Most witchwyrds operate as solitary traders, primarily focusing on one area of trade (such as weapons or magic items), though most deal in other goods as well. Virtually all witchwyrds love haggling, to the point that the process of bargaining sometimes seems more important to a witchwyrd than the eventual deal that is struck.<br/><br/> Witchwyrds often travel with a crew of loyal humanoid mercenaries hired from worlds they\u2019ve visited in the past. These hirelings never speak of their remuneration, purportedly forbidden from doing so by punitive clauses in their contracts. Witchwyrds can be encountered throughout the Pact Worlds, though they\u2019re most commonly found on Absalom Station, Akiton, and the Idari. On the Pact Worlds, most witchwyrds do business as members of the Tetrad, an interplanetary and interplanar trade association."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Witchwyrd",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Spellcaster",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 60,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "absorb force"
+            ],
+            "dr": [
+                "5/magic"
+            ],
+            "resistances": [
+                "resist energy 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "slams",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+9",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "force bolt"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 2,
+            "con": 1,
+            "int": 4,
+            "wis": 1,
+            "cha": 5,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Cyrunian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Kasatha"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shobhad"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "<i>tongues</i>"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "freebooter armor II"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "sentinel staff with 4 batteries (20 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, entourage (1 plus 2\u20135 humanoid guards), or enclave (2\u20135 plus 11\u201320 humanoid guards)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a reaction, a witchwyrd can use any number of its free hands to catch magic missiles (from the spell of the same name) fired at it. Doing so absorbs the missile and manifests as a glowing nimbus around that hand (which is no longer considered free). The energy lasts 6 rounds or until it is used to create an additional force bolt (see below). To use this ability, the witchwyrd must be aware of the incoming magic missile and cannot be flat-footed.",
+                "name": "Absorb Force",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a witchwyrd can throw a magic missile (as per the spell of the same name; 1d4+1 force damage) from each free hand or hand that has absorbed a magic missile with the absorb force ability, to a maximum of two missiles per round. The witchwyrd can throw an additional force bolt from each hand that has absorbed a magic missile (maximum of two additional bolts per round), expending the absorbed energy.",
+                "name": "Force Bolt",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A witchwyrd has resistance 5 to two types of energy (acid, cold, fire, electricity, or sonic) as chosen by the witchwyrd. A witchwyrd can change which types of energy it is resistant to as a full action.",
+                "name": "Resist Energy",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 122",
+                "alt": "Alien Archive pg. 122",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 122
+        }
+    ]
+}

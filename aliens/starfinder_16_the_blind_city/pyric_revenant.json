@@ -1,0 +1,258 @@
+{
+    "name": "Pyric Revenant",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "When pyric fire kills, it roasts flesh while kindling the spirit. Left unchecked, this otherworldly flame awakens a slain creature as an undead of ash, embers, and fire. Some pyric revenants smell of charred meat, which can be the first indication one is nearby.<br/><br/>A pyric revenant retains negative traits, such as low cunning or the desire to seek out and torment previous adversaries. The revenant might remember unfinished business and important people, and attempt to destroy such vestiges of its former life. If undirected, however, the creature is straightforward in its malice. It carries out no long-term schemes."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Pyric Revenant",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Expert",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "immunities": [
+                "fire",
+                "undead immunities"
+            ],
+            "weaknesses": [
+                "susceptible to water"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "pyric bolt",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+4",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pyric fire"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": null,
+            "int": 0,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 10
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "dimly illuminated"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or horde (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Light within 10 feet of a pyric revenant increases by one step. Magical darkness decreases this light only if it\u2019s from a source with a CR or level higher than the revenant\u2019s CR.",
+                "name": "Dimly Illuminated",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A pyric revenant can launch a bolt of pyric fire with a range increment of 20 feet and a maximum range of 100 feet.",
+                "name": "Pyric Bolt",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The fire damage of a pyric revenant burns body and spirit, ignoring fire resistance and dealing half damage even to creatures with fire immunity. A creature burning due to this fire can gain no bonuses to end that condition. A creature that dies due to pyric fire damage becomes a pyric revenant 1d4 hours later.<br/><br/>Susceptible to Water (Su) A splash of water deals 1d4 acid damage to a pyric revenant, while a large amount, such as heavy rain, deals 2d4 acid damage. Full immersion in water deals 4d4 acid damage per round to a pyric revenant. However, water can\u2019t reduce a pyric revenant to fewer than one-fifth of its Hit Points (typically 10). Ice does not trigger a pyric revenant\u2019s water susceptibility.",
+                "name": "Pyric Fire",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Pyric Curse",
+                "type": "stat_block_section",
+                "affliction_type": "curse",
+                "save": "Fortitude DC 13",
+                "effect": "A creature that fails the save gains the burning 1d4 condition. This flame is pyric fire (see special ability). While affected, the creature succeeds at saving throws against other pyric curses of the same or weaker potency.",
+                "cure": "1 save; successful saves against the burning condition are successful saves against the curse.",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #16: The Blind City",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #16: The Blind City pg. 60",
+                "alt": "Starfinder #16: The Blind City pg. 60",
+                "href": "https://paizo.com/products/btq01yjk?Starfinder-Adventure-Path-16-The-Blind-City"
+            },
+            "page": 60
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+{
+    "name": "Obfuchsia",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Suspected to be bioweapons engineered by an extinct species, obfuchsias are creatures with no motive beyond slaughter and replication. Each specimen is a mass of thin, writhing tendrils wrapped around a thorny, acid-dripping maw, all possessed of deadly cunning and a surprising capacity for stealth. By aligning light-deflecting microstructures on the feathery foliage that sprouts from its appendages, a stationary obfuchsia can make itself all but invisible against its surroundings. Further, the creature can counteract ambient sound waves by vibrating thin membranes between its tendrils, stifling the sounds of struggle as it tears into horrified victims. Without proper sensors, a crew can easily find itself at the mercy of this utterly remorseless hunter. Fortunately, obfuchsias emanate trace levels of radiation that, while harmless, are still detectable by radiation sweepers and similar devices.<br/><br/> Obfuchsias begin their lives as massive clouds of spores that float dormant in space. Radiation from the engines of passing starships awakens them, prompting them to attach to the ship\u2019s hull and germinate. They grow quickly and, when fully developed, infiltrate the vessel through the tiniest entry, squeezing their malleable forms behind access panels and through ducts until they can pounce on prey. Once they have fed, obfuchsias again seek the void\u2014where they explode into another spore cloud to spread further across the galaxy."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Obfuchsia",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Combatant",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "aura": "silence (10 ft., DC 19)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 120 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 180,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 28
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "camouflage",
+                "void adaptation"
+            ],
+            "immunities": [
+                "plant immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+17",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tendril",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+17",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with tendril"
+                    }
+                ],
+                "value": "5 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 8,
+            "con": 3,
+            "int": 4,
+            "wis": 4,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 22,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+30 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 27,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+37 when motionless"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any vacuum",
+            "organization": "solitary or sprouting (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An obfuchsia can alter the color and texture of its foliage to blend in with its environment. Whenever an obfuchsia remains motionless for 1 round, it gains a +10 bonus to Stealth checks (this bonus doesn\u2019t stack with <i>invisibility</i> or similar effects). If the obfuchsia moves more than 10 feet or takes a hostile action (such as attacking), it loses this bonus until it once again spends 1 round remaining still.",
+                "name": "Camouflage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An obfuchsia vibrates thin membranes between its tendrils to cancel sound waves in an atmosphere, generating an aura of silence that lasts until the beginning of the obfuchsia\u2019s next turn. Creatures within 10 feet, including the obfuchsia, are deafened (Fort DC 19). Sound-based sense-dependent effects, including blindsight (sound), cannot pass through the emanation. This aura of silence is not strong enough to stop sonic weapons, however, which function normally. If the obfuchsia can't take actions, its aura is suppressed.",
+                "name": "Silence",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #29: The Cradle Infestation",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #29: The Cradle Infestation pg. 59",
+                "alt": "Starfinder #29: The Cradle Infestation pg. 59",
+                "href": "https://paizo.com/products/btq021f1?Starfinder-Adventure-Path-29-The-Cradle-Infestation"
+            },
+            "page": 59
+        }
+    ]
+}

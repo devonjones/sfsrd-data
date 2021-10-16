@@ -1,0 +1,383 @@
+{
+    "name": "Jiang-Shi",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Jiang-shis (often called \u201chopping vampires\u201d) are grotesque undead creatures that drink the breath of the living to feed on their life energy, or \u201cchi.\u201d A creature can become a jiang-shi when its spirit does not depart when the creature dies, instead remaining within the rotting corpse. Eventually, the decomposing body reanimates and the newly risen jiang-shi goes in search of living creatures to feed upon.<br/><br/> A jiang-shi\u2019s appearance depends on both the circumstances of the creature\u2019s death and the state of its corpse at the time of its reanimation. A jiang-shi that fell to its death on a warm, wet world would likely have twisted or broken limbs and be in a state of advanced putrefaction, while one who was killed by laser fire on an airless asteroid in the void of space might exhibit laser burns but manifest no signs of decomposition at all. Regardless of the state of decay, most jiang-shis wear clothing or gear that is out of style, if not completely outdated, due to the fact that it can take decades\u2014or even centuries\u2014before a jiang-shi rises from the dead.<br/><br/> All jiang-shis display a prayer scroll in front of their faces. In ancient, pre-Gap days, these prayer scrolls were handwritten on parchment and affixed to the corpse\u2019s brow with stitches or staples in order to protect the deceased from the ravages of restless spirits. In modern times, holographic prayer scrolls projected in front of a jiang-shi\u2019s forehead have typically replaced the parchment scrolls and protect the jiang-shi\u2019s body from both physical and magical harm. If a jiang-shi\u2019s prayer scroll is ever stolen or destroyed, it loses the defensive benefits granted by the scroll (see above), but the jiang-shi may replace it with a handwritten scroll. This requires a strip of paper or cloth, a writing implement, and 10 minutes of uninterrupted work. Alternatively, a jiang-shi can recreate a holographic prayer scroll by crafting a hybrid holoskin (Starfinder Core Rulebook 220) to project the scroll. This requires at least 2 ranks in both the Engineering and Mysticism skills and UPBs worth 500 credits.<br/><br/> Because most jiang-shis become undead only after their corpses have undergone some measure of decomposition, their bodies often display signs of rigor mortis. The rigid inflexibility of a jiang-shi\u2019s muscle tissue makes the creature\u2019s movements especially stiff, and causes the distinctive bouncing gait which gives jiang-shis their colloquial name of hopping vampires. Nevertheless, jiang-shis can be surprisingly nimble in rough terrain, and the stiffness of their joints has little adverse effect in zero gravity.<br/><br/> Jiang-shis are horrified by their own reflections, and the sound of a handbell or the call of a rooster fills them with terror. Cooked rice, which reminds jiang-shis that they are dead and can no longer eat normal food, shames them. Curiously, uncooked rice and other types of grain (cooked or not) don\u2019t affect jiang-shis at all, though rice mixed with vinegar and the dust of a destroyed jiang-shi prevents that vampire from returning to unlife.<br/><br/> Although they normally try to avoid daylight, jiang-shis suffer no detrimental effects from sunlight and can move around during the day unharmed. Nevertheless, most jiang-shis prefer to operate at night or in darkness, when their more obvious physical traits are not as noticeable to the living among whom they mingle. On the other hand, a glowing holographic prayer scroll can be difficult to conceal in the darkness.<br/><br/> Jiang-shis tend to lead solitary existences, but they are not averse to working with other undead creatures, especially if those undead feed on the flesh of the living, leaving the victim\u2019s chi for the jiang-shi to drain. However, jiang-shis are known to be jealous of blood-sucking vampires because of their ability to create their own undead spawn. As a result, most hopping vampires refuse to cooperate with their bloodsucking rivals, even if they might profit from such an arrangement.<br/><br/> In the Pact Worlds, jiang-shis are most associated with the dead world of Eox, though the hopping vampires can be found anywhere there are living, breathing creatures to feed upon. Some jiang-shis serve as officers in the exiled Corpse Fleet as well, working just as tirelessly as their other undead comrades-in-arms for Eoxian supremacy and independence. At least one of the Golden League\u2019s powerful families is said to be led by an ancient jiang-shi matriarch who was alive on pre-Gap Golarion, and inhabitants of Absalom Station\u2019s \u201cDownside\u201d swear that a cabal of seven jiang-shis has inhabited an abandoned level of the Spike since at least the end of the Gap. Each member of the cabal supposedly \u201cspecializes\u201d in drinking the breath of just one species, and refuses to feed on the chi of a different race."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Jiang-Shi",
+        "type": "stat_block",
+        "cr": "6",
+        "alien_family": "Vampire",
+        "role": "Expert",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "elebrian"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "jiang-shi"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "operative"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (breath) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 80,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "evasion",
+                "fast healing 5",
+                "prayer scroll"
+            ],
+            "dr": [
+                "10/magic"
+            ],
+            "immunities": [
+                "effects from spell gems",
+                "undead immunities"
+            ],
+            "resistances": [
+                "cold 10"
+            ],
+            "weaknesses": [
+                "jiang-shi weaknesses"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "advanced shirren-eye rifle",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "corona laser pistol",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4+6",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "debilitating trick"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "deft claws"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "drain chi"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "trick attack +3d8"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 5,
+            "con": null,
+            "int": 3,
+            "wis": 3,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Eoxian"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "hopping gait"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "operative exploits (debilitating sniper, master of disguise [2/day, 60 minutes or 6 minutes, DC 16])"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "specialization (spy)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "freebooter armor II"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "advanced shirren-eye rifle with 25 sniper rounds"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "corona laser pistol with 2 batteries (20 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or cabal (2-8)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A jiang-shi can sense the breathing of living creatures. A creature that holds its breath or doesn\u2019t need to breathe cannot be perceived by a jiang-shi\u2019s blindsight.",
+                "name": "Blindsight",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A jiang-shi\u2019s claw attack has the grab ability (Starfinder Alien Archive 155) and the operative weapon special property.",
+                "name": "Deft Claws",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a jiang-shi succeeds at a grapple combat maneuver, it can drain \u201cchi,\u201d or life energy, by drinking its victim\u2019s breath. A victim must succeed at DC 16 Fortitude save or gain 1 negative level and be staggered for 1d4 rounds.",
+                "name": "Drain Chi",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A jiang-shi moves by hopping, and its land speed is reduced by 10 feet from its base creature\u2019s speed (this adjustment is already included in the statistics above). A jiang-shi ignores difficult terrain and can\u2019t be tripped. Other speeds (such as fly and swim speeds) are unaffected by this ability.",
+                "name": "Hopping Gait",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A jiang-shi is held at bay by cooked rice, mirrors, or ringing a handbell. It must stay at least 5 feet away from the object of its revulsion and cannot touch or make melee attacks against a creature brandishing such an object. Holding a jiang-shi at bay is a standard action. After being held at bay for 1 round, a jiang-shi can attempt a DC 20 Will save at the beginning of its turn to act normally.",
+                "name": "Jiang-Shi Weaknesses",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The holographic prayer scroll at a jiang-shi\u2019s brow grants immunity to any effects from spell gems or other items that store spells, as if the jiang-shi had unbeatable spell resistance. It also grants the jiangshi fast healing 5 and prevents the jiang-shi from being destroyed. When reduced to 0 Hit Points, a jiang-shi crumbles to dust, but it re-forms in 1 minute with 1 Hit Point in the nearest unoccupied space. Scattering the dust or mixing rice into the dust with a dose of vinegar before the jiang-shi re-forms destroys it permanently.",
+                "name": "Prayer Scroll",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #3: Splintered Worlds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #3: Splintered Worlds pg. 58",
+                "alt": "Starfinder #3: Splintered Worlds pg. 58",
+                "href": "https://paizo.com/products/btpy9xa2?Starfinder-Adventure-Path-Splintered-Worlds"
+            },
+            "page": 58
+        }
+    ]
+}

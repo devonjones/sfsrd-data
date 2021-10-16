@@ -1,0 +1,299 @@
+{
+    "name": "Flayer Leech Effigy",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Flayer Leech Effigy",
+        "type": "stat_block",
+        "cr": "15",
+        "alien_family": "Flayer Leech",
+        "role": "Combatant",
+        "xp": 51200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 7
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 26
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 275,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 31
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+2 vs. mind-affecting effects"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "regeneration 15 (acid)"
+            ],
+            "weaknesses": [
+                "phonophobia",
+                "vulnerable to sonic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "white star plasma pistol",
+                    "bonus": 29,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d8",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "rapid strikes"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "warp bones"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 9,
+            "dex": 7,
+            "con": 5,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "feats": [
+                "Mobility",
+                "Spring Attack"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 26
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Dwarven"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "uncanny impersonation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "verminlike"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "diamond carbon skin (green force field [25 HP])"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "white star plasma pistol with 1 ultra-capacity battery (100 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "clique (1 plus 3\u20138 flayer leeches)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A flayer leech has a pharyngeal proboscis that can quickly vibrate at a subsonic frequency, allowing it to easily pierce through bone and similar hardened internal structures to consume a creature\u2019s marrow. A creature struck by a flayer leech\u2019s bite must succeed at a DC 23 Fortitude save or be sickened for 1 minute. Further bites from the flayer leech don\u2019t worsen this condition, only extend the duration.",
+                "name": "Drink Marrow",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a flayer leech effigy is dealt sonic damage or comes within 30 feet of the source of an extremely loud noise (such as that produced by a starship thruster or the explosion of a grenade), it must attempt a DC 21 Will saving throw. If it fails, it is frightened for 1d4 rounds; if it succeeds, it gains the off\u2011target condition for 1d4 rounds instead.",
+                "name": "Phonophobia",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a flayer leech effigy makes a full attack with its wrist proboscis, it makes up to three attacks instead of two, taking a \u20136 penalty to each attack instead of the normal \u20134 penalty.",
+                "name": "Rapid Strikes",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A flayer leech effigy can impersonate the creature whose skin it is wearing to a striking degree. The effigy can use Disguise to disguise itself as a specific person, and the DC for the Disguise check isn\u2019t adjusted due to being disguised as a different creature type or size category. In addition, the flayer leech effigy receives some psychic impressions when it consumes the creature\u2019s brain, allowing it to glean minor details about the creature\u2019s life and speak the languages it spoke. If the effigy attacks with its wrist proboscis, its disguise is automatically ruined for all who witness the attack.",
+                "name": "Uncanny Impersonation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "For effects targeting creatures by type, a flayer leech effigy counts as both monstrous humanoid and vermin (whichever type allows an ability to affect them for abilities that affect only one type, and whichever is worse for abilities that affect both types). The effigy also receives a +2 racial bonus to saving throws against mind-affecting effects.",
+                "name": "Verminlike",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once a flayer leech effigy has tasted a creature\u2019s marrow, it can temporarily reshape that creature\u2019s skeletal structure using only its mind. As a move action, an effigy can concentrate on the creatures it has wounded. Each creature that is sickened due to the effigy\u2019s drink marrow ability must succeed at a DC 21 Fortitude save or suffer extreme pain as its bones twist and crack, gaining the nauseated condition until the end of its next turn.",
+                "name": "Warp Bones",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 36",
+                "alt": "Alien Archive 3 pg. 36",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 36
+        }
+    ]
+}

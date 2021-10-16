@@ -1,0 +1,277 @@
+{
+    "name": "Gray Bounder",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Few know of what some theorists call the doglike gray bounders, but these alien quadrupeds are rarely encountered far from grays or places where grays have been. Scientists who study grays theorize that gray bounders are native to the gray home world. The species are similar and share genetic material. While specific bounders might show signs of augmentation or bioengineering, some evidence suggests that bounders were naturally domesticated by grays for their own nefarious purposes.<br/><br/> Gray bounders are more cunning than dogs, though, and far more malevolent. Unlike their gray masters, gray bounders are muscular, fast, and agile. They move with little of the deliberation a gray normally employs. Instead, gray bounders are jittery and in near-constant motion, as though endlessly looking for a position from which to leap on potential prey. When they stalk or strike prey, gray bounders can be cruel, toying with targets for as long as possible before finishing them off.<br/><br/> Gray bounders can\u2019t speak or make vocalizations of any kind, much like grays. These monstrosities are, however, clever enough to carry out complex plans and improvise based on what they know of their masters\u2019 inscrutable plans. A typical gray bounder stands 3 feet tall at the shoulder and weighs 90 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Gray Bounder",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "gray"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "phase"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "psychic terror"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tail",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+7",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "psychic terror"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pounce"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 1,
+            "int": -3,
+            "wis": 0,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 30 ft."
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or conspiracy (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Gray bounders exist slightly out of phase with the Material Plane. A gray bounder can pass through walls or material objects (but not corporeal creatures) if it begins and ends its turn outside a wall or obstacle. In addition, a gray bounder benefits from a 20% miss chance against attacks and effects targeting it directly and takes only half damage from area effects. Force effects, however, function normally against a gray bounder.",
+                "name": "Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a gray bounder charges, it can make a full attack in place of the normal melee attack.",
+                "name": "Pounce",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An aggressive gray bounder infects its prey with psychic fear. A creature hit by a gray bounder\u2019s melee attacks must succeed at a DC 13 Will saving throw or become shaken for 1d4 rounds. A target that fails the saving throw effect becomes immune to any gray bounder\u2019s terror for 1 hour or until any gray bounder scores a critical hit against the target. This is a mind-affecting, emotion, and fear effect.",
+                "name": "Psychic Terror",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #26: Flight of the Sleepers",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #26: Flight of the Sleepers pg. 55",
+                "alt": "Starfinder #26: Flight of the Sleepers pg. 55",
+                "href": "https://paizo.com/products/btq01zue?Starfinder-Adventure-Path-26-Flight-of-the-Sleepers"
+            },
+            "page": 55
+        }
+    ]
+}

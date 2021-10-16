@@ -1,0 +1,252 @@
+{
+    "name": "Lore Guardian",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Although technological constructs are especially popular in the modern era, many ancient cultures created magical automatons in their own images. Known as lore guardians, these sentries are fairly common in abandoned ruins from bygone eras, where they tirelessly chase off would-be looters. Unlike golems, lore guardians have only limited magical resistances, and they are animated strictly by magic, not by bound spirits or outsiders.<br/><br/> Lore guardians are echoes of their parent cultures, and they are often psychically imbued with those societies\u2019 basic traditions. They infrequently move about their assigned areas, mindlessly aping their creators\u2019 behaviors and rituals. Even after millennia, lore guardians recognize their creators\u2019 species, and a creature of such a species can often approach the constructs peacefully. A successful DC 18 Diplomacy check is often sufficient to calm most lore guardians susceptible to negotiation (though the GM can decide whether this is possible for a particular lore guardian)."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Lore Guardian",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Combatant",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 12
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 28,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "dr": [
+                "2/adamantine"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "sr": "13"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "tactical spear",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "eldritch attacks"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "transposing strike"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": -5,
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "see species tradition"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "species tradition"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tactical spear"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or congregation (2\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A lore guardian\u2019s slam attack and attacks it makes with analog weapons are treated as magic for the purpose of overcoming DR and damaging incorporeal creatures.",
+                "name": "Eldritch Attacks",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A lore guardian mimics the anatomy and mannerisms of the culture that created it. A lore guardian counts as both a construct and a member of its parent species for any effect related to its type and subtype (such as for the bane weapon fusion). It also understands but cannot speak one of its parent species\u2019 languages.",
+                "name": "Species Tradition",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day after making a ranged attack with an analog weapon, a lore guardian can activate a special teleportation effect as a swift action. This either teleports the ranged weapon back into the construct\u2019s hands or teleports the construct to the weapon\u2019s location (maximum 100 feet). When using the latter option, the lore guardian appears with the weapon in its hands adjacent to the target of its ranged attack (if it hit) or in a randomly determined nearby space (if it missed; see Missing with a Thrown Weapon on page 245 of the <i>Starfinder Core Rulebook</i>).",
+                "name": "Transposing Strike",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #2: Temple of the Twelve",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #2: Temple of the Twelve pg. 57",
+                "alt": "Starfinder #2: Temple of the Twelve pg. 57",
+                "href": "https://paizo.com/products/btpy9ujm?Starfinder-Adventure-Path-Temple-of-the-Twelve"
+            },
+            "page": 57
+        }
+    ]
+}

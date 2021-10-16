@@ -1,0 +1,220 @@
+{
+    "name": "Hesper",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Mutating Touch",
+            "type": "section",
+            "html": "<table class=\"inner\"><tr><td><b>D20</b></td><td><b>Mutation</b></td><td><b>Effect</b></td></tr> <tr><td>1</td><td>Additional eyes</td><td>Target gains light blindness and a +4 bonus to sight-based Perception checks</td></tr> <tr><td>2\u20133</td><td>Autonomous parasite</td><td>Target takes 1d6 slashing damage as a parasite emerges</td></tr> <tr><td>4\u20135</td><td>Bioelectric cells</td><td>Technological items held by the target gain the broken condition for as long as the target holds them</td></tr> <tr><td>6\u20137</td><td>Claws, spines, or teeth on one limb</td><td>Target gains a natural melee attack that deals 1d3+Str piercing damage for Medium creatures, but it takes a \u20132 penalty to attacks with two-handed weapons</td></tr> <tr><td>8\u20139</td><td>Glowing tumors</td><td>Target sheds light as a lantern and takes a \u20135 penalty to Stealth checks</td></tr> <tr><td>10</td><td>Gills</td><td>Target gains the amphibious ability, but takes a \u20132 penalty to Fortitude saving throws</td></tr> <tr><td>11</td><td>Hypertrichosis</td><td>Target gains a +1 bonus to its AC, but the max Dex bonus of armor it wears decreases by 1</td></tr> <tr><td>12\u201313</td><td>Musk gland</td><td>Target gains a 30-foot aura that nauseates living creatures within it (Fortitude DC = 10 + half the target\u2019s level or CR + the target\u2019s Con modifier)</td></tr> <tr><td>14\u201315</td><td>Secondary ears</td><td>Target gains vulnerability to sonic damage and a +4 bonus to hearing-based Perception checks</td></tr> <tr><td>16\u201317</td><td>Vestigial limb</td><td>Target grows a useless extra limb that imparts a \u20132 penalty to Dexterity-based skill checks</td></tr> <tr><td>18\u201319</td><td>Weeping sores</td><td>Target takes a \u20132 penalty to Charisma-based skill checks</td></tr> <tr><td>20</td><td>Wracking pain</td><td>Target is sickened</td></tr></table>"
+        },
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Lithe and handsome, hespers embody the potential for change inherent in technological power sources. They are energetic and excitable, interested in new faces, sights, and sensations, which drives them to spread across the universe. However, hespers are invested in change for change\u2019s sake. Though rarely malicious, they worm their way into any repository of advanced technology, rebuilding devices and asking endless questions. Most line their nests with all sorts of souvenirs\u2014 most of them stolen\u2014which they occasionally rebuild into bizarre and sometimes radioactive totems.<br/><br/> Hespers stand 4 to 5 feet tall but are deceptively dense, weighing 300 to 400 pounds despite their slim, generally masculine builds. Their hair color changes from day to day, running the gamut of the colors of the humanoids around them, and their flesh glows softly in the dark. Though they\u2019re not dangerously radioactive unless they wish to be, their presence excites the air around them, creating drifting motes of light. A hesper can focus this energy at will to project rays of fire, emit arcs of electricity, or overload electronic devices. This same energy can infuse other living creatures with focused doses of radiation, skipping the normal radiation sickness and instead causing short-lived changes to a victim\u2019s genetic structure.<br/><br/> Once vanishingly rare, hespers have become somewhat commonplace as more civilizations have taken to the stars. The glowing fey are especially at home in starships, bonding to the vessels\u2019 reactors. They can be blessings for some ships, serving as constant attendants for one of a starship\u2019s most crucial systems, but their fickle nature also means they grow bored with regular routes or overlong stays in port, and they create drama to amuse themselves.<br/><br/> These nuclear fey have few common traditions, instead adopting the customs of whatever societies they dwell within. Most of their knowledge is instinctual, rounded out by boundless curiosity. Though hespers don\u2019t typically seek out their own kind, large installations and radioactive waste facilities can host small circles of the fey. Notoriously shameless flirts, hespers often keep mortal lovers who protect or provide for them. A hesper reproduces by triggering the growth of a grotesque exowomb on a willing lover, which expands for 1\u20132 weeks before spilling forth a small but fully matured hesper."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hesper",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Spellcaster",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 21,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 12
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "reactor sprite"
+            ],
+            "immunities": [
+                "fire",
+                "radiation"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "energy ray",
+                    "bonus": 5,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d3",
+                            "damage_type": "Acid, Cold, Electricity, or Fire",
+                            "damage_type_text": "A, C, E, or F"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 1,
+            "con": 2,
+            "int": 0,
+            "wis": 1,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 12
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any starship or urban",
+            "organization": "solitary, pair, or clique (3\u201312)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hesper can deliver an enormous dose of radiation with a touch, triggering sudden mutations and pain in living creatures. With a successful attack against a living creature\u2019s KAC, a hesper causes the target to sprout tumors that erupt at the beginning of its next turn, causing a random mutation (roll 1d20 on the table below) that persists for 24 hours. An affected creature can negate this transformation with a successful DC 13 Fortitude saving throw. Once a creature has been affected by a hesper\u2019s mutating touch, it becomes immune to that particular fey\u2019s mutating touch for 24 hours.",
+                "name": "Mutating Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a hesper spends 1 hour in close contact with a starship\u2019s power core or another large power source (such as a fusion reactor), it can form a long-term bond. A hesper can merge with its bonded reactor, gaining fast healing 5 while it remains merged. A merged hesper is aware of what happens in the reactor\u2019s immediate vicinity, but if the reactor is broken or suffers the wrecked critical damage condition, the hesper is immediately expelled and takes 3d6 damage. If the reactor is destroyed while the hesper is merged with it, the hesper is slain instantly (Fortitude DC 15 negates). A hesper can bond with only one reactor at a time, and forming a new bond severs its previous bond.",
+                "name": "Reactor Sprite",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 62",
+                "alt": "Alien Archive pg. 62",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 62
+        }
+    ]
+}

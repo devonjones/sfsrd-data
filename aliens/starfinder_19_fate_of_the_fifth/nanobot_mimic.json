@@ -1,0 +1,275 @@
+{
+    "name": "Nanobot Mimic",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Rumored to be the invention of a malicious roboticist, nanobot mimics take the appearance of technological objects, using the deception to launch surprise attacks. Each mimic is a swarm of nanobots that interlock to imitate an item. When a would-be looter picks up the nanobot mimic, the construct dissolves into a dark and silvery cloud of its component nanobots. These then swarm the victim, hindering and attempting to disassemble it.<br/><br/>Nanobot mimics are often quasi-legal. They see some licensed use as security. However, criminals use these constructs far more often, since they serve as fine traps for investigators. Clever scofflaws make mimics look like illegal objects to draw attention. When a detective noses into an area and finds the mimic, the creature not only attacks and makes the target more vulnerable to other attacks, but can also dispose of the body.<br/><br/>The constructs have a penchant for escaping confinement, though, especially after they take significant damage, causing their programming to become faulty. When free of the control of another being, such mimics still follow their (possibly impaired) directives. Intermittently, the mimic takes the shape of various objects it sees other creatures using. It then, without real intent, attacks anyone who picks up the false object. A number of bizarre \u201cmurders\u201d on Absalom Station turned out to be the doings of an escaped nanobot mimic."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Nanobot Mimic",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Fine",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 5
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 40,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 15,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses"
+            ],
+            "immunities": [
+                "construct immunities",
+                "swarm immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+5",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 12"
+                        }
+                    ],
+                    "value": "distraction"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "metal morass"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": null,
+            "int": 0,
+            "wis": 1,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 10,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+18 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 5,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+15 to mimic an object"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 5
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mimic object"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or team (3\u20139)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A nanobot mimic surrounds foes it shares a space with, making it hard for them to escape. A creature that starts its turn in the same space as a nanobot mimic must succeed at a DC 12 Reflex save or become entangled for 1 round.",
+                "name": "Metal Morass",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A nanobot mimic can observe and register into internal memory a number of technological items equal to its CR. A given registered object can weigh no more than 2 bulk. As a full action, the mimic can arrange itself into one item it has registered, taking on the appearance of that item but not its function. While in this form, the nanobot mimic loses its swarm defenses and swarm immunities, has EAC and KAC 10, gains a +10 bonus to Disguise checks, and has hardness equal to 5 + its CR. A mimic in object form can assume its swarm form as a move action or a reaction to taking damage.",
+                "name": "Mimic Object",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #19: Fate of the Fifth",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #19: Fate of the Fifth pg. 56",
+                "alt": "Starfinder #19: Fate of the Fifth pg. 56",
+                "href": "https://paizo.com/products/btq01wtb?Starfinder-Adventure-Path-19-Fate-of-the-Fifth"
+            },
+            "page": 56
+        }
+    ]
+}

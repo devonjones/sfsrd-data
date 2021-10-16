@@ -1,0 +1,261 @@
+{
+    "name": "Draelik",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The Shadari Confederacy lies cloaked deep within an area known as the Kurzach Nebula: an immense cloud of ionized, dingy-colored gases that block most scans and make astrogation difficult. As such, this loose organization houses all manner of fugitives, itinerants, and other scoundrels, and it is led by the inhabitants of Great Shadar, a waterless planet orbiting this system\u2019s dim star. These residents call themselves draeliks, and they are singularly united in support of the Confederacy\u2019s lawless ideals. To outsiders, however, they often seem more beholden to the grotesque sceaduinars: extraplanar creatures from the Negative Energy Plane, and the main figures of the most prominent draelik faith.<br/><br/> Draeliks are gaunt humanoids who average 7 feet in height. They have vestigial gills on their necks and slightly webbed hands and feet that hint that they may have once been an aquatic race, even though their home world currently has no oceans or lakes. Instead of hair, draeliks have short bristles on their heads. The color of draeliks\u2019 skin spans various shades of yellow, from mustard to saffron. Draeliks have three fingers and a thumb on each of their hands, and their limbs are slightly longer than those of humans.<br/><br/> The majority of draeliks have a mystical marking resembling a third eye that usually appears on the forehead. Known as Eyes of Enlightenment, these mark them as adherents of the philosophy of Ataxxea, a belief that pays homage to sceaduinars and finds entropy to be the most sublime force in the universe. Members of this faith don\u2019t actively set out to destroy, but they do very little to prevent and reverse natural deterioration. They build only items that speed up this decay, mostly by using negative energy. This pseudoreligion is widespread throughout the Confederacy, and many races native to the nebula count themselves as followers, receiving the Eye of Enlightenment during a ritualistic process involving special inks distilled from dark energies. Many who get this tattoo gain powers similar to solarians who focus on the graviton aspects of their cycle.<br/><br/> While some outsiders mistakenly conflate the nihilistic philosophy of Ataxxea with that of the Cult of the Devourer, most draeliks find the comparison deeply offensive. To them, their path is a stately and dignified march toward the inevitable and ordained end of all things, while the Devourer\u2019s followers cheapen the entire experience and ruin the work of generations by thrashing around in childlike tantrums, attempting to tear reality\u2019s fabric instead of embracing its beautiful unraveling.<br/><br/> The few draeliks who don\u2019t follow these entropic beliefs generally leave the Kurzach Nebula to seek their fortunes in the wider galaxy. Despite their rejection of their home world\u2019s nihilism, however, they are often still drawn to careers that emphasize the deeply ingrained talents of their people, hiring themselves out as deceptive assassins, furtive thieves, or mystics of dubious morality. Draeliks encased in shining armor and fighting for the betterment of every race and creed are rare, and those who seek to shatter the mold must always contend with their inner demons, sometimes even struggling against foul temptations from sceaduinars who want to bring them back into the fold."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Draelik",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Spellcaster",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "draelik"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 12
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 21,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 14
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+2 vs. necromancy effects"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "dark matter"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "lesser shadowstaff",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "dark nova"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 1,
+            "con": 2,
+            "int": 0,
+            "wis": 4,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 7,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+11 in dim light or darker"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "stellar alignment (graviton)"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "freebooter armor I"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>lesser shadowstaff</i> with 1 clip (40 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Great Shadar)",
+            "organization": "solitary, pair, or penumbra (3-8)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "This functions as the solarian stellar revelation of the same name. As a move action, the draelik can gain DR 2/\u2014 until he leaves graviton mode.",
+                "name": "Dark Matter",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a draelik who is fully graviton-attuned can deal 2d6 negative energy damage to all creatures within 10 feet. A creature that succeeds at a DC 13 Reflex saving throw takes half damage. In addition, the light level of the affected area is reduced by one step for 1 round. After a draelik uses this ability, he immediately becomes unattuned.",
+                "name": "Dark Nova",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 36",
+                "alt": "Alien Archive pg. 36",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 36
+        }
+    ]
+}

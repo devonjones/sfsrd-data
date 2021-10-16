@@ -1,0 +1,226 @@
+{
+    "name": "Rebuilt",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Modern medical equipment, like any technology, can malfunction, sometimes resulting in further injury to a patient or even a fatality. Rarer still is the catastrophic glitch that results in a fate worse than death. The tortured monstrosities known as rebuilt are created when a technological medical procedure goes horribly awry, irreparably fracturing the victim\u2019s genetic code and reshaping the patient\u2019s body into something that barely resembles its previous form.<br/><br/> Creatures that have been rebuilt in this way have limbs that jut in odd directions, and their flesh can be turned inside out, exposing misshapen organs to the air. Much of a rebuilt\u2019s biology doesn\u2019t function as it did for its previous form. Its eyeballs might serve as its pulmonary organs, while it sees out of its toenails. In addition, because of its perpetual agony and the rearrangement of its physiology, a rebuilt can speak only in tortured moans and screams. Strangely, this reshaping doesn\u2019t make a rebuilt more susceptible to damage; pain effects pale in comparison to its constant agony, and its often-ossified flesh protects it from mundane harm.<br/><br/> A rebuilt has no capacity for higher reasoning, and it lashes out at anything in its way with ruinously transformed limbs.<br/><br/> Rebuilt are very rare, as horrified hospital personnel usually euthanize such unfortunates as soon as they arise. They mostly appear in ruined areas where medical equipment has been left unattended or in places that are exposed to high doses of radiation or mystical forces."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Rebuilt",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 105,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs. pain effects"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "amorphous"
+            ],
+            "dr": [
+                "5/\u2014"
+            ],
+            "weaknesses": [
+                "unworkable extremities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "15 ft.",
+                        "movement_type": "walk",
+                        "value": 15
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 4,
+            "int": -2,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vulgar Kishaleen"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can't speak"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any ruins (Nejeor VI)",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A rebuilt can neither wield weapons nor use items that require an action to activate.",
+                "name": "Unworkable Extremities",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #4: The Ruined Clouds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #4: The Ruined Clouds pg. 60",
+                "alt": "Starfinder #4: The Ruined Clouds pg. 60",
+                "href": "https://paizo.com/products/btpy9zkj?Starfinder-Adventure-Path-The-Ruined-Clouds"
+            },
+            "page": 60
+        }
+    ]
+}

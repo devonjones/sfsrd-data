@@ -1,0 +1,240 @@
+{
+    "name": "Muotta",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Muottas are the descendants of a species of harmless birds from Suskillon that were transplanted to the colony on Utraneus to aid with the colonists\u2019 early attempts to foster normal soil farming in Utraneus\u2019s rocky landscape. Due to their altered diet and other various environmental conditions in this new landscape, the species evolved over the centuries to become the ill\u2011regarded avian pests they are today.<br/><br/> Muottas are squat birds with small heads on long necks, pointy, short-toothed beaks, and tails with a broad fan. These birds have four wings; the smaller set sprouting from where its short legs connect to its body. Their webbed feet have sharp, grasping talons, and their plumage is usually a dingy white with spots of gray. While not sapient, muottas do have rudimentary problem-solving abilities, as well as an attraction to shiny objects.<br/><br/> Muottas feed on small aquatic organisms, from fish to shellfish to large algae. Near settlements, they have rapidly adapted to scavenge for both food and nesting materials. Their relative intelligence, territorial nature, and acquisitive tendencies make them the bane of Utraneus\u2019s colonists, as they routinely steal vital components and attempt to nest in critical locations such as communications towers. Inventing muotta-repelling devices and systems has become a cottage industry in New Grakka.<br/><br/> Typically, the largest muotta in a flock is female. Always territorial, muottas become particularly defensive when they have flightless hatchlings in their nests, doing their utmost to drive off intruders. Adult muottas in a flock alternate between gathering food to regurgitate for the hatchlings and guarding the vicinity of the nest. After approximately 3 months, the hatchlings grow their flight plumage, learn to fly, and join the flock in gathering food and claiming territory. Young muottas disperse after about a year, with males attempting to impress potential mates by building mock nests out of any brightly colored or reffective material they can find. Sometimes cooperative female siblings prove more successful in finding food and holding territory than lone muottas and become sister-leaders of their own flocks."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Muotta",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Expert",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 12
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 23,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 14
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "evasion"
+            ],
+            "resistances": [
+                "sonic 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 50 ft.",
+                        "movement_type": "fly",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 10 ft.",
+                        "movement_type": "swim",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "talon",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "dive bomb"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 0,
+            "int": -4,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 7,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+15 to swim"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 7
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any sky (Utraneus)",
+            "organization": "solitary, pair, or flock (2\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a muotta in flight can move up to double its fly speed and make one attack at any point in its movement. The muotta takes a \u20132 penalty to the attack roll, but the movement doesn\u2019t provoke an attack of opportunity from the target of the attack. Alternatively, the muotta can attempt a Sleight of Hand check to pick a target\u2019s pocket instead of making an attack. If successful, the muotta can steal a single item of light or negligible bulk that is easily accessible on the target\u2019s body but not wielded by the target.",
+                "name": "Dive Bomb",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #20: The Last Refuge",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #20: The Last Refuge pg. 57",
+                "alt": "Starfinder #20: The Last Refuge pg. 57",
+                "href": "https://paizo.com/products/btq01zo2?Starfinder-Adventure-Path-20-The-Last-Refuge"
+            },
+            "page": 57
+        }
+    ]
+}

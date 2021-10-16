@@ -1,0 +1,304 @@
+{
+    "name": "Mahadatari",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Within the Sholar Adat on the <i>Idari</i>, wise kasathas known as adatas prepare and guard the most treasured cultural memories of their society in the form of technomagically treated slices of kasatha brains. When adatas sort through these memories, they use a machine called the Sensorium. The process of opening their minds to another\u2019s memories can be quite exhausting and sometimes dangerous but also very enlightening. Rarely, adatas who undergo this experience multiple times over the course of decades unlock powerful psychic potential, leading them to become mahadataris. Once ascended, a mahadatari usually leaves the Sholar Adat to explore the galaxy on a journey referred to as the Second Tempering."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mahadatari",
+        "type": "stat_block",
+        "cr": "19",
+        "role": "Expert",
+        "xp": 204800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 11
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "kasatha"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 37
+        },
+        "aura": "sandstorm (30 ft., DC 26)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 385,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 33,
+                "kac": 34
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "60 ft.",
+                        "movement_type": "walk",
+                        "value": 60
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "slams",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+25",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "19th level"
+                        }
+                    ],
+                    "value": "tempered arms"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 9,
+            "con": 6,
+            "int": 3,
+            "wis": 11,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 32
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 32
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Kasatha"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "multiarmed (4)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "preternatural grace"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "testament to history"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "bespoke echelon fashion"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mahadatari moves with almost unreal agility. As a swift action, they can spend 1 Resolve Point to be affected by <i>haste</i> for 1 minute.",
+                "name": "Preternatural Grace",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mahadatari can call forth the power of Kasath\u2019s deserts. As a move action, they surround themself with the swirling winds of a sandstorm. When a creature enters or begins its turn in the aura, it must attempt a DC 26 Reflex save or be blinded for 1 round and take 4d12 slashing damage (which counts as magic); on a success, it takes half damage and isn\u2019t blinded.",
+                "name": "Sandstorm",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mahadatari is a testament to the history of Kasath and all its people. As a swift action, they can spend 1 Resolve Point to choose three combat feats whose prerequisites they meet and gain one of those feats for 1 minute. As a move action while benefiting from this ability, a mahadatari can exchange the chosen feat for one of the other chosen feats for the remaining duration or until they exchange the feat again.",
+                "name": "Testament to History",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When the mahadatari makes a multiattack with its slams, another set of four ghostly arms materializes and infuses the mahadatari\u2019s corporeal arms with magic. All the mahadatari\u2019s slam attacks gain the benefits of weapon fusions of the mahadatari\u2019s choice until the beginning of their next turn. These weapon fusions must be able to be placed on melee weapons, and multiple fusions can be used on a single slam, but they can\u2019t have a combined item level greater than the mahadatari\u2019s CR.",
+                "name": "Tempered Arms",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #33: Dominion\u2019s End",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #33: Dominion\u2019s End pg. 59",
+                "alt": "Starfinder #33: Dominion\u2019s End pg. 59",
+                "href": "https://paizo.com/products/btq0233n/discuss?Starfinder-Adventure-Path-33-Dominion-s-End"
+            },
+            "page": 59
+        }
+    ]
+}

@@ -1,0 +1,264 @@
+{
+    "name": "Spookfish Swarm",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Explorers and wanderers sometimes return from their ventures in the galaxy\u2019s wild and lonely places with chilling ghost stories or wondrous \u201cbig fish\u201d tales. Prospectors and outlaws brave enough to travel the ancient seabed of Akiton\u2019s arid Irkonian Sea sometimes come back with a bit of both. They speak of dreamlike beings that haunt the barren gorges and desert flats, apparitions from the bottom of a prehistoric ocean who drift and swim through the air. The most terrifying of these marine phantasms is known simply as the spookfish; though individually tiny, they rise from the sand in bloodthirsty swarms of flashing scales and serrated teeth. Each spectral fish is dotted with false eyespots along its flanks; this defensive camouflage has proven utterly disorienting to those hapless souls caught in a spookfish swarm.<br/> Akitonian archaeologists have unearthed fossils of creatures with a physiology that matches the spookfish, and some speculate that the impact of a meteor evaporated the Irkonian Sea and obliterated the entire species in one fateful instant. Some victims relate a strange curse inflicted by these swarming aquatic ghosts. Innocent travelers report feeling slowly engulfed by steadily rising (though unseen) water\u2014as though an entire spectral ocean was rising up in retribution."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Spookfish Swarm",
+        "type": "stat_block",
+        "cr": "16",
+        "role": "Combatant",
+        "xp": 76800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 10
+        },
+        "alignment": "Neutral Evil",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 28
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 275,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 32
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal",
+                "swarm defenses"
+            ],
+            "immunities": [
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d10+15",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 22"
+                        }
+                    ],
+                    "value": "distraction"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 22"
+                        }
+                    ],
+                    "value": "whelming curse"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 10,
+            "con": null,
+            "int": -4,
+            "wis": 7,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 28
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "warm land (Akiton)",
+            "organization": "solitary or school (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, the spookfish swarm lashes out into a disorienting frenzy of flashing fins and ghostly currents around a creature within its space. That creature must succeed at a DC 22 Will save or be afflicted by the curse of the depths (see below). A creature that has a swim speed or that doesn\u2019t need to breathe gains a +2 circumstance bonus on this save.",
+                "name": "Whelming Curse",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Curse of the Depths",
+                "type": "stat_block_section",
+                "affliction_type": "curse",
+                "save": "Will DC 22",
+                "effect": "The victim feels as though they are standing in chest-high water, no matter their current environment. The victim counts all terrain as difficult terrain and must spend 20 feet of movement to move 5 feet (and the victim can\u2019t attempt to swim through this illusory water). When the victim rolls a natural 1 on an attack roll, they feel as though they have been fully submerged in water and must hold their breath or begin drowning (regardless of the availability of breathable air or any equipment that would normally allow them to breathe underwater); creatures that don\u2019t need to breathe are immune to this effect. At the start of each subsequent round, the victim can attempt a Will saving throw to end the drowning effect of this curse.",
+                "cure": "The victim must spend 1 week fully submerged underwater; they can use equipment to breathe, but spending time in a submersible vehicle or domed underwater facility or settlement does not meet this requirement.",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #30: Puppets Without Strings",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #30: Puppets Without Strings pg. 61",
+                "alt": "Starfinder #30: Puppets Without Strings pg. 61",
+                "href": "https://paizo.com/products/btq0225h?Starfinder-Adventure-Path-30-Puppets-Without-Strings"
+            },
+            "page": 61
+        }
+    ]
+}

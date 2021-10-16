@@ -1,0 +1,232 @@
+{
+    "name": "Void Zombie",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Akatas reproduce by implanting their parasitic larval offspring in humanoid hosts. These microscopic larvae cause an infection called void death, which functions as a disease. Those who perish from void death become void zombies. A void zombie looks like a walking rotting corpse, often with a bloated blue-gray \u201ctongue\u201d\u2014the fanged tail of the parasitic larva inside\u2014dangling from its broken skull where its lower jaw once was.<br/><br/> After a humanoid host dies from void death, the strongest of the akata larvae infesting the corpse worms its way to the host\u2019s brain and undergoes a swift initial gestation within 2d4 hours. This accelerated growth causes the feeler-covered head of the oversized, tadpole-shaped parasite to latch onto the base of its victim\u2019s brain and reenergize the dying organ, taking control and turning the host into a void zombie.<br/><br/> Akata larvae require 1d4 weeks as a second gestation before undergoing the transformation into adult akatas. A void zombie bearing an akata larva ready to emerge seeks out a secluded area and vomits the akata\u2019s offspring into a shallow hole or crevice. The void zombie then \u201cdies,\u201d toppling over the disgorged larva. A scant 2d6 hours later, a full-grown akata emerges, usually taking the rotting corpse of its former host as its first meal."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Void Zombie",
+        "type": "stat_block",
+        "cr": "1",
+        "alien_family": "Akata",
+        "role": "Combatant",
+        "xp": 400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 5
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 22,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 11,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "immunities": [
+                "undead immunities"
+            ],
+            "weaknesses": [
+                "susceptible to salt water"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+5",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "feeding tendril",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+5",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "blood drain"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 10
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "any"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a void zombie hits a living creature with its feeding tendril, it drains that creature\u2019s blood, dealing 2 Strength damage before the tendril detaches.",
+                "name": "Blood Drain",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A splash of salt water deals 1d6 damage to a void zombie, and full immersion in salt water deals 4d6 damage per round.",
+                "name": "Susceptible to Salt Water",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 8",
+                "alt": "Alien Archive 2 pg. 8",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 8
+        },
+        {
+            "type": "source",
+            "name": "Starfinder #1: Incident at Absalom Station",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #1: Incident at Absalom Station pg. 61",
+                "alt": "Starfinder #1: Incident at Absalom Station pg. 61",
+                "href": "https://paizo.com/products/btpy9tmf?Starfinder-Adventure-Path-Incident-at-Absalom-Station"
+            },
+            "page": 61
+        }
+    ]
+}

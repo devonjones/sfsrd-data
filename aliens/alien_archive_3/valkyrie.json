@@ -1,0 +1,319 @@
+{
+    "name": "Valkyrie",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Valkyries are resplendent outsiders of mysterious origins known for their ancient tradition of scouring the Material Plane for legendary warriors who perish in combat. Valkyries appear on battlefields throughout the galaxy in search of combatants of great skill and renown, supernaturally aware of who is ready to accept death\u2019s embrace and who yearns to fight on another day. When she locates such a target, a valkyrie can either claim the soul of a deceased warrior or aid the living to continue the battle. Though space travel is a relatively recent development for some mortal species, the valkyries took to the stars long ago to advance their quest of collecting the souls of worthy fighters. As a result, diverse cultures across the universe, most notably those of the Pact Worlds and the Veskarium, recognize these powerful extraplanar creatures as choosers of the slain.<br/><br/> Valkyries are always female and frequently appear as powerful and majestic human or vesk women. A human valkyrie is 6 feet tall and weighs close to 200 pounds, while a vesk valkyrie is 8 feet tall and weighs approximately 300 pounds. Valkyries may take on the appearance of other species if they wish, and references to \u201cwarrior angels\u201d wreathed in lightning exist within many cultures outside the Pact Worlds.<br/><br/> Valkyries are most often associated with gods of war, conflict, valor, and courage. Some valkyries are independent, serving no deity directly\u2014a fact that suggests the outsiders are mercenaries by nature and have complex, ever-changing allegiances to the divine. Whatever a given valkyrie\u2019s associations, her duty is sacred: to protect the souls of slain heroes on their journey from the Material Plane to the Boneyard, where they face judgment and learn their final destination in the Outer Planes. What qualifies a soul for this honor varies by deity\u2014and various cultures and faiths across the galaxy interpret the worth of a warrior in vastly different ways. Valkyries hold a special place in the dominant religion of the Veskarium, where they are referred to as the Spear Maidens of Damoritosh.<br/><br/> Valkyries also come to the aid of warriors who are near death\u2014or even recently dead\u2014but still have a fierce drive to fight on. In this way, a valkyrie\u2019s intervention has turned the tide of battle in countless conflicts across the galaxy.<br/><br/> The mysteries surrounding the afterlife extend to valkyries and their practices, and mortals have questioned for millennia why the striking outsiders shepherd the souls of dead heroes. Some skeptics even posit that valkyries divert souls from their rightful course, collecting them for some great and terrible conflict to come, or stocking grand arenas for the entertainment of beings of unknowable power and alien intellect. This theory holds little credence among scholars, however, who note no recorded conflicts between valkyries and servants of Pharasma, the goddess of life and death, who would certainly object to such subversion.<br/><br/> In the years since the Gap, many valkyries have forgone their traditional sleipnir or pegasus mounts and adopted modern suits of armor. Armor and weapons created by valkyrie engineers blend the latest nanocarbon and polymer technology with powerful magic, resulting in creations that armorers of the Material Plane can only dream about. Occasionally, a valkyrie might gift such a suit of armor, or perhaps a unique weapon, to a mortal warrior she deems worthy."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Valkyrie",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Combatant",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "death sense 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 200,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 28
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "dr": [
+                "10/cold iron and lawful"
+            ],
+            "immunities": [
+                "cold",
+                "electricity",
+                "poison"
+            ],
+            "resistances": [
+                "acid 10",
+                "fire 10"
+            ],
+            "sr": "23"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 100 ft.",
+                        "movement_type": "fly",
+                        "value": 100
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "returning buzzblade spear",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+16",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "impulse storm coil",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+12",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 4,
+            "con": 4,
+            "int": 2,
+            "wis": 5,
+            "cha": 8,
+            "feats": [
+                "Shot on the Run"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 22,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+30 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Medicine",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 22
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "battle trained"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "choose the slain"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "death sense"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "vesk overplate III"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>returning buzzblade spear</i> with 2 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "impulse storm coil with 2 super-capacity batteries (80 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or ride (2\u20138 valkyries)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A valkyrie is proficient with all armor and ignores negative speed adjustments from armor.",
+                "name": "Battle Trained",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A valkyrie can draw a willing soul from a creature within 2 rounds of that creature\u2019s death and store it in her spear. A soul stored this way can\u2019t be returned through magical or technological means, such as raise dead or a regeneration table, unless the spear is first destroyed.",
+                "name": "Choose the Slain",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A valkyrie can instantly determine whether each creature she can see within 30 feet is dead, dying, healthy, undead, or unliving (such as a technological construct) and how many Resolve Points the creature currently has.",
+                "name": "Death Sense",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 124",
+                "alt": "Alien Archive 3 pg. 124",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 124
+        }
+    ]
+}

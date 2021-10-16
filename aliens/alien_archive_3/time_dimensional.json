@@ -1,0 +1,346 @@
+{
+    "name": "Time Dimensional",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Time dimensionals are living fragments of the Dimension of Time, the mysterious demiplane that seems to act as the focal point for the entire flow of time throughout existence. These creatures are seemingly created whenever an event or individual threatens the nature of causality or the flow of time. Time dimensionals act as corrective agents on behalf of the dimension, confronting and neutralizing threats to the timestream. This action can take a variety of forms, ranging from the destruction of the offending target to altering the memories and motives of specific individuals to delaying events until the self-correcting power of time can resolve any discrepancies. In situations of great disruption, the Dimension of Time will dispatch several dimensionals at once to work in conjunction to preserve the timestream.<br/><br/> Due to the fragile nature of causality, the Dimension of Time creates time dimensionals in only the most necessary scenarios. The dimension\u2019s discretion confounds scholars as the situations that require a time dimensional\u2019s presence seem inconsistent. Some seemingly mundane circumstances, such as the uneventful passage of a Vercite transport through the Drift in 303 ag, have caused the appearance of a time dimensional. Meanwhile, events that seem like an obvious beacon for time dimensionals, like the Veskarium research vessel that used a black hole to alter its relative time flow to quickly advance weapons technology in 296 ag, garnered no attention from the creatures whatsoever.<br/><br/> The appearance of a time dimensional varies between each noted sighting and from dimensional to dimensional. The most common appearance is that of a lanky humanoid approximately 12 feet tall formed from myriad crystal facets. Other times, the crystal appears smoother, taking on the appearance of polished glass, while sometimes the shape is wholly translucent. Regardless of a time dimensional\u2019s shape, images of events throughout time, including past, present, and possible future events, constantly flicker within the creature\u2019s body.<br/><br/> Time dimensionals share a portion of the powers of the Dimension of Time and are capable of manipulating the flow of time in a localized area. This allows a time dimensional to lock a creature out of time\u2019s progression or advance the flow of time on an item so quickly that it crumbles to dust. Additionally, this ability grants a time dimensional superior control over its temporal position, allowing it to move around a battlefield in the blink of an eye. This free access to the flow of time also allows a time dimensional to tap into its own past and future knowledge at any time.<br/><br/> Scholars\u2019 fascination with both the Dimension of Time and its native creatures has led several theories throughout history. Some say the existence of time dimensionals in the first place implies a measure of inherent sapience to the Dimension of Time, as few other planes would be capable of creating such creatures, let alone dispatching them with such precision. A few esoteric sages believe that, despite the differing appearance of some dimensionals, only a single time dimensional exists: a creature whose form becomes smoother as its existence progresses, perhaps due to constant creation and reabsorption of the creature by the Dimension of Time. If true, this lone dimensional must be crossing and recrossing its own temporal path, meeting later or earlier incarnations of itself and working in tandem with them to enact the dimension\u2019s will.<br/><br/> Beyond collecting small amounts of temporal residue left behind by destroyed time dimensionals, any attempt to access the power of time dimensionals is futile. Researchers who have attempted to use time travel to return to lost Golarion or other notable points throughout history have vanished entirely or, as rumors persist, encountered an exceptionally rare and powerful time dimensional that removed the individual from time entirely, erasing any evidence of the victim\u2019s existence. Skeptics are quick to point out that even if such a thing occurred, no one would actually know about it. Even if a chronal scientist doesn\u2019t draw the ire of the Dimension of Time, they run the risk of attracting a hound of Tindalos, a terrifying danger in its own right."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Time Dimensional",
+        "type": "stat_block",
+        "cr": "14",
+        "role": "Expert",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "aura": "temporal dilation (30 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 120 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 235,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                }
+            },
+            "defensive_abilities": [
+                "unflankable"
+            ],
+            "dr": [
+                "10/\u2014"
+            ],
+            "immunities": [
+                "chronal immunities"
+            ],
+            "resistances": [
+                "acid 10",
+                "cold 10",
+                "electricity 10",
+                "fire 10",
+                "sonic 10"
+            ],
+            "sr": "25"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d6+22",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "dilating strike"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "temporal stasis"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "time stop"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 6,
+            "con": 4,
+            "int": 3,
+            "wis": 4,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 30,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+38 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 30
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Abyssal"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "timestream knowledge"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Dimension of Time)",
+            "organization": "solitary, pair, or chronology (3\u201312)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A time dimensional is immune to bleed, critical hits, paralysis, poison, radiation, sleep, stunning, and the effects of a vacuum. In addition, a time dimensional is immune to <i>haste</i>, <i>slow</i>, and other effects that manipulate time or the number of actions a time dimensional can take.",
+                "name": "Chronal Immunities",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A time dimensional\u2019s attack slows the local flow of time around its target. A creature hit by a time dimensional\u2019s slam attack must succeed at a DC 22 Will save or be affected by slow for 1d4 rounds. Whether or not it succeeds at the saving throw, a creature cannot be affected again by this ability for 1 minute.",
+                "name": "Dilating Strike",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The area around a time dimensional slows the temporal passage of projectiles and spells. Creatures in this aura (including the time dimensional) have concealment against ranged attacks. A time dimensional can dismiss or resume this aura as a free action.",
+                "name": "Temporal Dilation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action, a time dimensional can attempt a melee attack against EAC at a +24 bonus against a creature within reach. If the attack is successful, the creature must succeed at a DC 22 Fortitude save or enter a state of suspended animation. For the creature, time ceases to flow, and its condition becomes fixed (taking no damage from effects such as bleeding or burning or from poisons or diseases). The creature does not grow older. Its body functions virtually cease, and no force or effect can harm it. At the end of its turn, an affected creature can attempt a DC 22 Will save. After the first success, the creature can take purely mental actions, though its physical body still remains in stasis. After the second success, time partially resumes for the creature; it is affected as per slow and takes a \u20136 penalty to attack rolls and Dexterity-based skills. After the third success, the slow effect ends, and the penalty is reduced to \u20134. After the fourth success, the penalty is reduced to \u20132, and after the fifth success, the affected creature returns to normal. Otherwise, any state persists until it is dispelled via <i>dispel magic</i> (use the time dimensional\u2019s CR as the caster level).",
+                "name": "Temporal Stasis",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action, the time dimensional can stop the flow of time for all other creatures. In reality, the time dimensional speeds up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. The time dimensional is free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm the time dimensional. While the time stop is in effect, other creatures are invulnerable to the time dimensional\u2019s attacks and spells; it cannot target creatures other than itself. A spell that affects an area and has a duration longer than the remaining duration of the time stop has its normal effects on other creatures once the time stop ends. The time dimensional cannot move or harm items held, carried, or worn by a creature stuck in normal time, but it can affect any item that is not in another creature\u2019s possession. The time dimensional is undetectable while time stop lasts.",
+                "name": "Time Stop",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A time dimensional has nearly perfect information about the passage of time in its vicinity and is fully aware of all its own knowledge from all points in its personal timeline. It always acts in the surprise round, and its initiative is calculated as if it rolled a natural 20. In addition, a time dimensional can use any actions remaining on its turn after using <i>dimension door</i>. It also gains a +20 bonus to any skill check to recall knowledge.",
+                "name": "Timestream Knowledge",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 116",
+                "alt": "Alien Archive 3 pg. 116",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 116
+        }
+    ]
+}

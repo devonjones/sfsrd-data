@@ -1,0 +1,228 @@
+{
+    "name": "Threshwolf",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Hailing from an unknown world of fierce natural selection (presumably in the Vast), threshwolves are vicious mammalian predators. Though also gifted with teeth and claws, these hunters\u2019 most identifiable feature is a mane of glass-like fibers they use to gore prey and shred undergrowth. While predominantly carnivores, threshwolves also feed on fruit, vegetation, and fungus when available. When a pack claims territory, they spend time carving a labyrinthine den within the thick, thorny undergrowth they favor. They raise their young communally, with the largest female taking the lead in most hunts. Packs develop complex social hierarchies and delineate labor much like ant colonies or formians, with different members focused on hunting, patrolling territory, maintaining the lair, or rearing young.<br/><br/> Social behavior and reasonable animal intelligence make threshwolves easy to train, though the aggressive predators will constantly test the resolve of their trainers with challenges for dominance. Vesk colonies in the Vast have experimented with truly domesticating the alien beasts, yielding mixed results. Threshwolves can be bred for obedience, and the same genes that control this behavior seem linked to their iconic mane; more approachable and malleable threshwolves develop finer quills that cause minor irritation rather than lacerations.<br/><br/> Xenobiologists have determined that threshwolves originate from the same world as needlehawks (page 58), and the two likely shared biomes. Many believe needlehawks would scavenge what they could from threshwolf kills, provided that the small fliers could stay away from these larger predators\u2019 jaws. Like needlehawks, threshwolves are sometimes employed by dycepskians as scouts connected to the fungal mass mind and as living containers to breed more of their mindless mycelium within."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Threshwolf",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 11
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 76,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 15,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "defensive_abilities": [
+                "quills (1d4 P",
+                "DC 13)"
+            ],
+            "immunities": [
+                "poison"
+            ],
+            "weaknesses": [
+                "vulnerable to sonic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+8",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d6+5 S"
+                        }
+                    ],
+                    "value": "thresh"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 16
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "warm and temperate forests and mountains",
+            "organization": "solitary, pair, or pack (5\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A threshwolf\u2019s mane consists of sharp, glasslike hairs that protect its neck and shoulders. A creature attacking a threshwolf with a natural weapon, an unarmed strike, or melee weapon without reach must succeed at a DC 13 Reflex saving throw or take 1d4 piercing damage as several of these sharp quills break off in their flesh. The attacking creature also gains the off-target condition until the beginning of its next turn due to the pain and irritation.",
+                "name": "Quills",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Whenever a threshwolf succeeds at a combat maneuver to grapple or maintain a grapple, it can immediately shake its mane as a swift action, raking a grappled or pinned victim with razor-sharp quills and inflicting 1d6+5 slashing damage.",
+                "name": "Thresh",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #28: The Hollow Cabal",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #28: The Hollow Cabal pg. 60",
+                "alt": "Starfinder #28: The Hollow Cabal pg. 60",
+                "href": "https://paizo.com/products/btq021bu?Starfinder-Adventure-Path-28-The-Hollow-Cabal"
+            },
+            "page": 60
+        }
+    ]
+}

@@ -1,0 +1,273 @@
+{
+    "name": "Mining",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Mining robots are far from exotic, but neither are they common since they are expensive tools. Such automatons allow mining companies to harvest ore and minerals from dangerous locales, such as airless asteroids and planets with high tectonic activity. A mining robot has an integrated drill arm, a cutting arm, and finer manipulators that allow it to sort through the rubble it creates. A typical model also has built-in harmonic resonators to soften earth and stone, making it easier for the robot to burrow into the ground. Construction and terraforming enterprises employ similar models of these industrial robots.<br/><br/> The dwarven mining corporation Ulrikka Clanholdings is known to make the best mining robots the galaxy has to offer. Outfitted with sturdy magma blades, these constructs can slice through rock like a heated knife cuts through butter. Ulrikka sells the robots to other mining outfits as a profitable side operation. The company sells at a premium, and tight contracts ensure a purchaser\u2019s intended usage doesn\u2019t conflict with Ulrikka interests. Occasionally, warriors and gladiators with a flair for the dramatic purchase a defunct mining robot and strip off the drill for use as an exotic and deadly weapon."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mining",
+        "type": "stat_block",
+        "cr": "9",
+        "alien_family": "Robot",
+        "role": "Combatant",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons",
+                "nanite repair"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "resistances": [
+                "acid 5",
+                "fire 10"
+            ],
+            "weaknesses": [
+                "vulnerable to critical hits",
+                "vulnerable to electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 10 ft.",
+                        "movement_type": "burrow",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated LFD screamer",
+                    "bonus": 17,
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+9",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": null,
+            "int": -2,
+            "wis": 3,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Profession (miner)",
+                        "value": 17
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "rock tunneler"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "andesite magma blade with 3 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "LFD screamer with 2 super-capacity batteries (80 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any underground",
+            "organization": "solitary, pair, or shift (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mining robot\u2019s nanites heal it, restoring a number of Hit Points per hour equal to its CR (9 Hit Points per hour for most mining robots). Once per day as a full action, a mining robot can restore 4d8 Hit Points to itself or any touched construct with the technological subtype.",
+                "name": "Nanite Repair",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mining robot can burrow through stone at half speed, and it can choose to leave tunnels when it burrows.",
+                "name": "Rock Tunneler",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #10: The Diaspora Strain",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #10: The Diaspora Strain pg. 58",
+                "alt": "Starfinder #10: The Diaspora Strain pg. 58",
+                "href": "https://paizo.com/products/btq01vb2?Starfinder-Adventure-Path-10-The-Diaspora-Strain"
+            },
+            "page": 58
+        }
+    ]
+}

@@ -1,0 +1,285 @@
+{
+    "name": "Death Cruiser",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "These spectral vehicles materialize without warning to snatch up the souls of mortal victims. Though each death cruiser has a unique appearance, and each one manifests in a different way, their behavior is predictable: they chase their prey with frightening efficiency, collect the soul of their target, and carry it off. Sometimes, however, a death cruiser can be driven off or challenged to a race; if beaten in a race, the cruiser abandons the pursuit of its target, at least for a time.<br/> Tales of chilling encounters with death cruisers have made their way through the Vast, and ancient records describe similar phantasms that take the form of archaic modes of transportation."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Death Cruiser",
+        "type": "stat_block",
+        "cr": "14",
+        "role": "Combatant",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral Evil",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 24
+        },
+        "aura": "frightful presence (30 ft., DC 20)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (life)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 250,
+            "rp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal"
+            ],
+            "immunities": [
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "incorporeal slam",
+                    "bonus": 27,
+                    "dc": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+14",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "collect soul"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 8,
+            "con": null,
+            "int": 0,
+            "wis": 4,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Pilot",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Abyssal"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "death racer"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "soulbound boost"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a death cruiser deals damage to a creature with its incorporeal slam attack, it can spend 1 RP to immediately attempt to collect the creature\u2019s soul, affecting that creature as <i>snuff life</i> (Fortitude DC 20 partial). Creatures suffering from a fear effect take a \u20134 penalty to this save. The soul of a creature slain by this ability is trapped inside the death cruiser. A trapped soul can be restored to life only by <i>miracle</i>, <i>warp reality</i>, or <i>wish</i>. A creature that succeeds at its save is immune to that death cruiser\u2019s collect soul ability for 24 hours.",
+                "name": "Collect Soul",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A death cruiser has many characteristics of a vehicle, including full speed 650 feet and overland speed 75 mph (ground and fly). It obeys the tactical vehicle and vehicle chase rules, using its own Piloting skill to pilot itself and treating its CR as its vehicle level. A death cruiser using the race maneuver when starting from a full stop doesn\u2019t increase the DC of Piloting checks by 5. At the beginning of any of its turns, a death cruiser can choose to suppress its incorporeal ability until the beginning of its next turn; when it does, it gains a collision attack that deals 15d10 bludgeoning damage (Reflex DC 18 half) and hardness 20.",
+                "name": "Death Racer",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When the death cruiser has trapped a soul with collect soul, all of the death cruiser\u2019s movement speeds double (including the speeds listed in the death racer ability). This does not affect its collision attack damage, and the doubling occurs before applying any other effects that increase its speed.",
+                "name": "Soulbound Boost",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #31: Waking the Worldseed",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #31: Waking the Worldseed pg. 57",
+                "alt": "Starfinder #31: Waking the Worldseed pg. 57",
+                "href": "https://paizo.com/products/btq022cf?Starfinder-Adventure-Path-31-Waking-the-Worldseed"
+            },
+            "page": 57
+        }
+    ]
+}

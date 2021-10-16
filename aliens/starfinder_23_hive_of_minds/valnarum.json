@@ -1,0 +1,323 @@
+{
+    "name": "Valnarum",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Standing almost 10 feet tall at the shoulders and 20 feet from nose to tip of tail, a valnarum is a mystical, intelligent predator that can be found in many systems. A valnarum\u2019s fur is mottled blue and purple with a series of black spots that provides simple camouflage in forest and jungle terrain. In addition to its long tail, a valnarum has a pair of blue, glowing wings made of pure energy that allow the creature to fly through space and provide protection from cosmic radiation.<br/><br/> Originally from Lexonia VII\u2014the seventh satellite of the star Lexon and a magic-filled world of massive, interconnected forests\u2014valnarums became the apex predators on the planet after mystically evolving their energy wings. As valnarums continually moved upward through the ecosystem\u2019s massive canopies, which abutted the edge of the planet\u2019s atmosphere, they gradually adapted to micro-gravity and the lack of breathable air. Eventually, mutations allowed valnarums to travel through space and visit other worlds.<br/><br/> Though they travel throughout the galaxy in small groups known as chains to hunt new and exciting prey, valnarums aren\u2019t ruthless destroyers. When they discover a planet they haven\u2019t visited before, they attempt to make contact with the world\u2019s dominant species to ask permission to hunt. Most valnarums try to respect the laws and customs wherever they land and kill only what they need to survive, though they enjoy the thrill of tracking down a creature they\u2019ve never feasted upon before."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Valnarum",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (life) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 116,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 21,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 8",
+                "void adaptation"
+            ],
+            "immunities": [
+                "cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "60 ft.",
+                        "movement_type": "walk",
+                        "value": 60
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 200 ft.",
+                        "movement_type": "fly",
+                        "value": 200
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+14",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+14",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "15 ft."
+            },
+            "special_attacks": [
+                {
+                    "name": "Special Attack",
+                    "type": "stat_block_section",
+                    "subtype": "special_attack",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8d10 B & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "critical push [20 ft.]"
+                        }
+                    ],
+                    "value": "pulse roar"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": 2,
+            "int": 1,
+            "wis": 1,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 21,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+29 in forest or jungle"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 21
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Lexonian"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "share defenses"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight (Mysticism)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or chain (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a valnarum can bellow a 30-foot cone of battering sonic energy. This natural attack has the blast and unwieldy weapon special properties and a range increment of 30 feet. On a critical hit, the energy pushes a creature 20 feet away from the valnarum. This attack is effective in a vacuum.",
+                "name": "Pulse Roar",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, a valnarum can grant a single creature touching it void adaptation for as long as the creature remains in contact. The valnarum can withdraw this protection as a swift action.",
+                "name": "Share Defenses",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #23: Hive of Minds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #23: Hive of Minds pg. 60",
+                "alt": "Starfinder #23: Hive of Minds pg. 60",
+                "href": "https://paizo.com/products/btq01zpm?Starfinder-Adventure-Path-23-Hive-of-Minds"
+            },
+            "page": 60
+        }
+    ]
+}

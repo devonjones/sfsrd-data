@@ -1,0 +1,249 @@
+{
+    "name": "Writher Swarm",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A writher swarm consists of thousands of pale white fungal filaments that wave slowly back and forth, as if swaying in a light breeze. This mobile mold creeps its way through even the narrowest of crevices to infest a building and slowly digests all the organic matter within, whether discarded food, flesh, or wood. A writher swarm leaves behind only ceramic, concrete, metal, plastic, and stone, making them less of a threat in large urban centers where structures are largely composed of such materials, but potentially devastating to less advanced settlements.<br/><br/> A single spore of a writher swarm can lie dormant for as long as several centuries, whether as a passenger on a meteor or in a cavern deep below the ground. Under the right conditions, that spore can attach to a modicum of organic material, such as a stale piece of bread or the rotting corpse of a tiny animal, after which it quickly begins growing and multiplying. If it is not eradicated, a writher swarm becomes fully mobile in a matter of weeks and can start to seek out new sources of nourishment. Even if a writher swarm presence is discovered before this point and thoroughly scoured, it\u2019s likely that several spores will survive undetected, possibly hitching rides to new environs.<br/><br/> Though a writher swarm\u2019s tiny filaments can pierce hide and flesh, the true danger comes from the infectious particles it can implant in the wounds of its prey. These infestations grow at a rapid rate just under the victim\u2019s skin, draining the creature\u2019s vitality, forcing it into a coma, and eventually killing it. Unless the unfortunate victim is treated before it dies, it becomes host to a new writher swarm, which tears its way out through the creature\u2019s skin after it dies.<br/><br/> When a writher swarm infests a structure for several decades\u2014getting enough food to sustain it but not causing so much death as to draw attention to itself\u2014it grows long, rootlike filaments that thread through the floors, ceilings, and walls. This allows the plant to surround itself with a kind of organic security system that alerts it as soon as new prey sets foot in its domain. However, this fungal framework can eventually supplant the building\u2019s own structural supports, and when such a writher swarm dies and its network of filaments turns to dust, the surrounding building often collapses soon afterward."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Writher Swarm",
+        "type": "stat_block",
+        "cr": "9",
+        "role": "Combatant",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Fine",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses"
+            ],
+            "immunities": [
+                "plant immunities",
+                "swarm immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 10 ft.",
+                        "movement_type": "climb",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "distraction"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "writher infestation"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "special_attacks": [
+                {
+                    "name": "Special Attack",
+                    "type": "stat_block_section",
+                    "subtype": "special_attack",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "distraction"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 4,
+            "con": 6,
+            "int": null,
+            "wis": 3,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 17,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+25 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 17
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any temperate or warm lands",
+            "organization": "solitary"
+        },
+        "afflictions": [
+            {
+                "name": "Writher Infestation",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "save": "Fortitude DC 16",
+                "track": "physical",
+                "frequency": "1/day",
+                "effect": "If the victim dies from this disease, a new writher swarm immediately bursts forth from the corpse and attacks nearby creatures.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #4: The Ruined Clouds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #4: The Ruined Clouds pg. 61",
+                "alt": "Starfinder #4: The Ruined Clouds pg. 61",
+                "href": "https://paizo.com/products/btpy9zkj?Starfinder-Adventure-Path-The-Ruined-Clouds"
+            },
+            "page": 61
+        }
+    ]
+}

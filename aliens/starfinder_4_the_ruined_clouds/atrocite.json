@@ -1,0 +1,267 @@
+{
+    "name": "Atrocite",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The monstrous atrocites are potent agents of the Devourer. Each atrocite has a unique form roughly similar to that of a member of some sentient species. If the original form has eyes, the atrocite\u2019s are instead empty voids. If it has hands, each holds a fanged mouth that speaks of destruction. A gray haze forms above atrocites, constantly crackling with red energy and serving as the source of their void bolts.<br/><br/> Although they are outsiders, atrocites dwell primarily on the Material Plane, searching through space for places ripe for the depredations of a Devourer cult or helping extant cults execute massive acts of destruction beyond their normal capacity. An atrocite remains with a cult only so long as its presence and guidance clearly increases the recruiting power or destructive capacity of the cult, leaving as soon as it can to further spread its message of infinite unmaking.<br/><br/> Cultists sometimes smuggle atrocites into highly populated systems to spread the Devourer\u2019s dire gospel, but atrocites travel on their own just as often, either teleporting over vast distances through space or using planar travel."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Atrocite",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Spellcaster",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "chaotic"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "native"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (life) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 147,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "immunities": [
+                "poison",
+                "vacuum"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "void bolt",
+                    "bonus": 19,
+                    "dc": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+10",
+                            "damage_type": "Force",
+                            "damage_type_text": "force"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "words of destruction"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 2,
+            "int": 0,
+            "wis": 3,
+            "cha": 8,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Abyssal"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy (100 ft.)"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or cult (1 plus 13-20 cultists)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a swift action, the many mouths of an atrocite can speak words of total devastation. For the next 3 rounds, any chaotic evil worshiper of the Devourer within 60 feet adds the wound critical hit effect to all its attacks (in addition to any existing critical hit effect); if an attack already has the wound critical hit effect, it gains the severe wound critical hit effect instead. If the atrocite takes damage at any point during this 3-round period, the effects of its words of destruction end immediately.",
+                "name": "Words of Destruction",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #4: The Ruined Clouds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #4: The Ruined Clouds pg. 56",
+                "alt": "Starfinder #4: The Ruined Clouds pg. 56",
+                "href": "https://paizo.com/products/btpy9zkj?Starfinder-Adventure-Path-The-Ruined-Clouds"
+            },
+            "page": 56
+        }
+    ]
+}

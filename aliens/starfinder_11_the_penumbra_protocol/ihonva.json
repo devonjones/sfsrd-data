@@ -1,0 +1,233 @@
+{
+    "name": "Ihonva",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Ihonvas are native to the blistering deserts of Fullbright. Although these infamous humanoids call themselves ihonvas, a collective term for their race and their nation of federated tribes, most of Verces\u2019s population knows ihonvas by another, sinister name: skin-stitchers. An ihonva is a wormlike being with a chitinous shell, usually dusty yellow or red to match its environment. For appendages, an ihonva has flexible tentacles that, like its tail, separate into multiple parts and allow fine manipulation. A single, outsized eye shaped much like a sideways hourglass dominates an ihonva\u2019s face, the pupil a colored horizontal line across the glossy-black cornea. Below the eye, several feet of trunk end in a circle of teeth. This trunk serves as the ihonva\u2019s only orifice, used for feeding, excretion, and mating.<br/><br/> Ihonva reproduction begins with both partners exchanging gametes through their snouts in a practice they call \u201cthe long kiss.\u201d Each ihonva stores the resulting zygotes until an appropriate host\u2014preferably another intelligent humanoid\u2014is captured and immobilized. The would-be-parent ihonva licks the host\u2019s eyes and other mucous membranes, creating a bridge for the zygotes to enter the host\u2019s bloodstream, where they act as parasites. Ihonva parents stake hosts out in the desert to allow their flesh to wither and cure, and to prevent magic or medical treatment from removing the young. The larval infants grow rapidly in size, sickening and eventually killing their host. When the baby ihonvas are mature enough, they exit through existing openings. Newborns battle until the strongest drives the others away. The winner then claims the host\u2019s skin as a trophy, flaying it with the overlarge teeth that only neonatal ihonvas have. When this victor returns to ihonva society, other ihonvas fashion this \u201cbirth-skin\u201d into ceremonial clothing.<br/><br/> Citizens of the Ring of Nations leave ihonvas alone despite their brutal mating habits. Ihonvas have a fearsome reputation and prey mostly on members of the Outlaw Kingdoms, rarely killing sapients for reasons other than self-defense or breeding. Some ihonva tribes even engage in trade, and a few have settled for using nonsapients as hosts, to the horror of their kind.<br/><br/> An ihonva stands 6 feet tall and weighs 350 pounds. They reach maturity at about 10 years and have a natural lifespan of 50 years."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Ihonva",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "resistances": [
+                "fire 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "static arc pistol",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "implant young"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 0,
+            "con": 5,
+            "int": -1,
+            "wis": 1,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 10
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ihonva"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "static arc pistol with 3 batteries (20 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "warm desert (Verces)",
+            "organization": "solitary, pair, raid (3\u201312), or tribe (20+)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an ihonva can lick a grappled or helpless creature to expose it to ihonva infestation.",
+                "name": "Implant Young",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Ihonva Infestation",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "save": "Fortitude DC 13",
+                "track": "physical",
+                "frequency": "1/day",
+                "effect": "Ihonva young emerge after 7 days, or 1 day after a victim dies, whichever results in more time.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #11: The Penumbra Protocol",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #11: The Penumbra Protocol pg. 56",
+                "alt": "Starfinder #11: The Penumbra Protocol pg. 56",
+                "href": "https://paizo.com/products/btq01vb4?Starfinder-Adventure-Path-11-The-Penumbra-Protocol"
+            },
+            "page": 56
+        }
+    ]
+}

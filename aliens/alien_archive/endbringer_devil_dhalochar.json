@@ -1,0 +1,329 @@
+{
+    "name": "Endbringer Devil (Dhalochar)",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "For countless eons, Hell\u2019s legions have undermined the Material Plane, subtly corrupting mortal empires and laying waste to entire worlds. The malebranche\u2014diabolical generals advancing hellish agendas on terrestrial fronts\u2014call upon the planes\u2019 most fearsome agents to claim strategic footholds. Some of these campaigns call for truly terrifying displays of force. Thus, when the lords of Hell seek to make a whole world shudder, dhalochars take to the battlefield.<br/><br/> Known as endbringer devils, dhalochars are forged to embody diabolical conquest. They are vessels and weapons of ruin, designed to create beachheads upon even the best-defended worlds. Dhalochars were made to withstand the depths of space and can traverse the void, stalking worlds like apocalyptic meteors. Any witnesses who survive a dhalochar\u2019s devastating crash landing swiftly realize that the titan\u2019s assault has only just begun.<br/><br/> Within its body, each dhalochar houses a cavity capable of holding a deadly payload\u2014an infernal strike force or a portal-generating organ. This space isn\u2019t magical but is well protected, able to withstand any attack as long as the devil remains alive. As dhalochars are close cousins to levalochs, they most commonly transport these deadly infernal shock troops.<br/><br/> Upon landing on a world, dhalochars release their cargo and reconfigure themselves. In their terrestrial forms, they appear as many-legged titans, a form which readily demonstrates that they are not mere machines of war. They are calmly arrogant and quick to pronounce a world\u2019s inevitable destruction. While dhalochars participating in a major planetary assault might crash-land in heavily populated areas and immediately attack, most favor staying undiscovered so they can gradually conjure more devils in preparation for even greater diabolical offensives. Dhalochars have no ability to launch themselves into space. As a result, after a dhalochar in starship form uses its cataclysm ability, it returns to Hell using its <i>plane shift</i> spell-like ability and waits to be conjured back to space.<br/><br/> A dhalochar stands roughly 90 feet tall and weighs approximately 400 tons."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Endbringer Devil (Dhalochar)",
+        "type": "stat_block",
+        "cr": "19",
+        "alien_family": "Devil",
+        "role": "Combatant",
+        "xp": 204800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Evil",
+        "size": "Colossal",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "devil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 32
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see in darkness"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 415,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 33,
+                "kac": 35
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "defensive_abilities": [
+                "construct form"
+            ],
+            "dr": [
+                "15/good and magic"
+            ],
+            "immunities": [
+                "fire",
+                "poison"
+            ],
+            "resistances": [
+                "acid 10",
+                "cold 10"
+            ],
+            "sr": "30"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "hellfire glare",
+                    "bonus": 34,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d8+19",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "space": "30 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 ft. with legs"
+                    }
+                ],
+                "value": "30 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 11,
+            "dex": 6,
+            "con": 9,
+            "int": 4,
+            "wis": 6,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 32
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 32
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 32
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 32
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Draconic"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "cargo cavity"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Hell)",
+            "organization": "solitary, assault (1 dhalochar plus 8 other devils), or invasion (3-12)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A dhalochar has a sizable cavity within its body. This space can comfortably fit eight Large or smaller creatures (or four Huge creatures). Any creature inside is protected from the external environment, no matter how hostile, and can breathe as normal. A dhalochar has control over what enters and what leaves its cargo cavity. Entering or leaving a willing dhalochar requires a full action, during which the dhalochar cannot move. Creatures cannot enter an uncooperative dhalochar, but they can try to escape from inside as if they were attempting to escape being grappled.<br/><br/> Alternatively, some dhalochars have this cavity replaced with a device capable of generating minor passages to Hell. This grants them the ability to cast 6th-level <i>planar binding</i> as a spell-like ability once per hour (to a maximum number of times per day equal to the dhalochar\u2019s Constitution modifier\u2014nine times per day for most dhalochars), except they can call only devils. Called devils aren\u2019t trapped by this ability, and they aren\u2019t forced to do the dhalochar\u2019s bidding, though they are usually friendly to the dhalochar.",
+                "name": "Cargo Cavity",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Despite being true devils, dhalochars have a number of immunities common to constructs. They are immune to ability damage, ability drain, death effects, disease, energy drain, exhaustion, fatigue, necromancy effects, negative levels, nonlethal damage, paralysis, sleep, and stunning.",
+                "name": "Construct Form",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As an attack, a dhalochar can shoot hellfire from its eyes at a single target. This attack has a range increment of 120 feet. The glare acts as if it had the <i>unholy</i> fusion.",
+                "name": "Hellfire Glare",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 34",
+                "alt": "Alien Archive pg. 34",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 34
+        }
+    ]
+}

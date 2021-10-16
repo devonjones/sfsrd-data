@@ -1,0 +1,251 @@
+{
+    "name": "Scavenger Slime",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Entropy is the one constant in the universe. Time breaks all things down, as all creation marches inexorably toward chaos and oblivion.<br/><br/> Many eons ago, a long-vanished civilization took offense to this cosmic truth and conceived of an all-purpose gel\u2014equal parts magic and nanotechnology\u2014that could repair nearly anything, including flesh. At some point in that civilization\u2019s history, perhaps due to some industrial accident, a vat of this gel gained a limited sentience and began to reproduce in dark corners and sewers.<br/><br/> Despite all their advanced technology, the civilization eventually collapsed\u2014perhaps even as a result of being overrun by their own creation\u2014but the sentient gel survived, hitching rides on the hulls and in the cramped cargo bays of their progenitor race\u2019s scattering survivors. Released onto other worlds, the gel continued to evolve and adapt, becoming the scrounging, hoarding blobs of protoplasm now generally referred to as scavenger slimes. These oozes now lurk in ruins across the galaxy, gluing together elaborate, snaillike shells for themselves from detritus and jury-rigging whatever technology they find into half-functioning weaponry.<br/><br/>Scavenger slimes are lumps of protoplasm measuring about 6 feet across. Though mindless, they have an intuitive understanding of order and technological systems, allowing them to patch or repair nearly anything they encounter, though rarely into a form as reliable or attractive as it may have once been. Actually using these items is often beyond them\u2014 an ooze might rebuild a hovercar, but have no idea how to operate it, unable to even grasp its purpose. Similarly, an ooze might repair a datapad, yet have no concept what the sights and sounds it displays are attempting to communicate. The sole exception to this principle is weapons: through whatever mechanism, scavenger slimes long ago gained the ability to direct and trigger the weapons they rebuild, instinctively understanding what they\u2019re for and how to use them in their own defense, treating them like specially adapted limbs.<br/><br/> The key to a scavenger slime\u2019s survival mechanisms is the dense resin it secretes, which it uses to bind pieces together or form rudimentary tools on its pseudopods. Scavenger slimes can even vary the conductivity of this resin, allowing them to patch and repair technology. This ability contributes to the scavenger slime\u2019s most iconic feature: durable, snaillike shells each creature fashions from whatever trash it encounters. How these mindless creatures select and shape the components of their shells remains a mystery, but each supports a sophisticated and uniquely evolved life-support system that protects the ooze from vacuum. Most scavenger slimes also incorporate various kitbashed weapons into their shells, making them formidable opponents to even well-equipped adventurers.<br/><br/> Scavenger oozes are the bane of adventurers and treasure hunters exploring ancient ruins and abandoned space stations. Heavily armored and armed, they defend garbage heaps and treasure troves with ferocity, and whatever priceless technology they uncover is quickly disassembled and glued into their shells or incorporated into new weapons.<br/><br/> Their hundreds of eggs\u2014each barely the size of a grain of rice\u2014cling to clothing and boots, allowing them to easily spread to new environments or even starships, where they quietly grow in dark crevices, causing random system failures until the young slimes begin tearing into ship\u2019s vital components. Despite the danger scavenger slimes pose, some creatures find them endlessly delightful. Gremlins find kinship in their destructive nature, while space goblins share the slimes\u2019 habitats and gift for rebuilding technology. Some pirate crews have also learned to seed long-haul freighters with scavenger slime eggs, then follow from a safe distance until the oozes shut down their victims\u2019 defenses.<br/><br/> While the vast majority of scavenger slimes tear down and rebuild technology, a small variant population exists that instead tears down organic beings to \u201cmaintain\u201d them. These rare gene-scavenger slimes construct semiliving shells from bones, hide, and organs of whatever creatures they encounter, incorporating strange special abilities from various aliens and monsters. These advanced scavenger slimes demonstrate a far wider range of special abilities than their technologically inclined kin, and they engage trespassers with horrifying enthusiasm, dragging living victims away to break down\u2014sometimes while still conscious\u2014into new parts for their macabre armor."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Scavenger Slime",
+        "type": "stat_block",
+        "cr": "9",
+        "role": "Combatant",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "scavenger shell"
+            ],
+            "dr": [
+                "5/adamantine"
+            ],
+            "immunities": [
+                "ooze immunities"
+            ],
+            "resistances": [
+                "fire 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "aphelion artillery laser",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d8+9",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "dual crossbolter",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "red star plasma rifle",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+9",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 3,
+            "con": 6,
+            "int": null,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 in ruins or garbage"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "kitbash"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or work crew (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Scavenger slimes have an intuitive understanding of technology and how to use and repair it, despite their otherwise mindless nature. An ooze has a +22 bonus to Engineering checks to repair mechanical and technological items. A scavenger slime can form its body into any tool required for this repair work.",
+                "name": "Kitbash",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Scavenger slimes build protective shells for themselves out of refuse and their own natural resin, incorporating bits of repaired technology as they go. A scavenger slime\u2019s shell grants the ooze DR 5/adamantine and resistance 10 to a random energy type depending on the technology it has incorporated, and also includes life-support systems similar to those in commercial armor, allowing it to survive in the vacuum of space. A scavenger slime can also incorporate weapons: one heavy weapon of an item level no greater than its Challenge Rating (9 for the typical scavenger slime), and either two longarms or three small arms each of an item level no greater than its CR \u2013 1. A scavenger slime gains proficiency in whatever weapons it incorporates into its shell and powers these weapons naturally with the energy it produces. A weapon in a scavenger slime\u2019s shell can be sundered as if it were an item with an item level equal to the slime\u2019s CR. The scavenger slime listed here is resistant to fire and has incorporated an aphelion artillery laser, a dual crossbolter, and a red star plasma rifle.",
+                "name": "Scavenger Shell",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 100",
+                "alt": "Alien Archive pg. 100",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 100
+        }
+    ]
+}

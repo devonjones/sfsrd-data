@@ -1,0 +1,275 @@
+{
+    "name": "Stroxha",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Within the untamed depths of Marata\u2019s protected forests, stroxhas hunt as they have for ages. Apex predators of terrifying strength and agility, these beasts combine feline and reptilian traits in a robust quadrupedal form armed with long claws and crushing jaws. None of these are what make the stroxha truly dangerous, however. Their legendary ambush capabilities derive not from superior stealth or camouflage, but their capacity to sense and charge prey through solid objects.<br/><br/> A stroxha\u2019s eyes are highly advanced sensors capable of detecting a range of electromagnetic radiation from X-rays to microwaves. This sight, combined with phase-shifting abilities born of fey ancestry, allows a stroxha to spot a creature and close on it before the prey has a chance to spot danger.<br/><br/> Because each individual stroxha needs a vast hunting ground, stroxhas rarely congregate for any purpose other than breeding. Stroxhas bear few cubs, usually one or two, with the parents taking turns rearing the young so neither\u2019s territory becomes overhunted. Stroxha culture is based around an honor hierarchy, with displays of force and dominance determining who controls the choicest territory. Their language is a complex combination of hisses, growls, and body cues, and they are capable of comprehending other languages with sufficient exposure.<br/><br/> Maraquoi revere stroxhas as symbols of fierce cunning. The people of Marata were once among the beasts\u2019 prey, but the maraquoi have begun defending the increasingly rare predators. With extraplanetary interests applying more pressure for access to Marata\u2019s highly protected environmental resources, poachers have begun to hunt stroxhas, and over time, stroxhas came to recognize the protection the maraquoi have afforded them. An alliance now exists between the mighty predators and their erstwhile prey to protect their mutual home world.<br/><br/> A typical adult stroxha is 10 feet long and weighs 500 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Stroxha",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 21
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vision) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (vision) 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 135,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "phase"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 40 ft.",
+                        "movement_type": "climb",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+14",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+14",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "clawed pounce"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": 2,
+            "int": -2,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Stroxha"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak other languages"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "temperate or warm forests (Marata)",
+            "organization": "solitary, pair, or guard (1\u20132 plus a maraquoi warband)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a stroxha charges, it can also make a full attack using its claw and bite natural weapons.",
+                "name": "Clawed Pounce",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Stroxhas exist slightly out of phase with the Material Plane. A stroxha can pass through walls or material objects (but not corporeal creatures) as long as it starts and ends its turn outside of any wall or obstacle. In addition, a stroxha always benefits from a 20% miss chance against attacks and effects targeting it directly, and it takes only half damage from area effects. Force effects function normally against a stroxha.",
+                "name": "Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #22: The Forever Reliquary",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #22: The Forever Reliquary pg. 58",
+                "alt": "Starfinder #22: The Forever Reliquary pg. 58",
+                "href": "https://paizo.com/products/btq01zpm?Starfinder-Adventure-Path-23-Hive-of-Minds"
+            },
+            "page": 58
+        }
+    ]
+}

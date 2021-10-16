@@ -1,0 +1,280 @@
+{
+    "name": "Void Hag",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Void hags are terrifying scourges of deep space, enacting their cruel whims on any innocents who cross their paths. A typical void hag stands over 7 feet tall but weighs no more than 150 pounds. They have long limbs, and their hands and feet are similarly elongated, ending in disturbingly sharp, silvery nails. Most void hags have substantial heads of hair that they let loose to frame their faces in the low- to zero-gravity environments in which they dwell.<br/><br/> No one is certain whether void hags are crones who adapted to living in outer space (greatly changing their physiology in the process) or a race of alien witches from a distant, unknown world. Void hags aren\u2019t interested in elucidating their origins to those they consider to be lesser beings, which is just about everyone they come across. Rather, void hags instinctively wish to rule over other life-forms, usually cooperating only with other void hags. On occasion, power struggles break out between allied crones, but they often end swiftly and brutally as one overpowers the other. Void hags despise stupidity in any form, and they find great satisfaction in punishing it, usually in ways that are quite painful and often fatal to the victim.<br/><br/> Though it grants her only a small portion of her power, a void hag\u2019s set of robes is her most important possession. She views the robes as a badge of honor, since a young void hag must undergo a series of harrowing trials to craft them. First, she weaves the cloak from fibers of plants found on naturally irradiated worlds. Then, she finds a star emitting strong solar flares and waits for a phenomenon known as a coronal mass ejection\u2014a massive explosion of plasma and magnetism\u2014in which she bathes the robes. If she survives, she drags the robes into the center of a nebula, collecting cosmic dust and ionized gas particles along the way. She then dons the robes and meditates, often for days, until she visualizes a pattern of stars that she imprints upon the cloak. The design of each set of robes is personally important to the void hag who crafted it, and no two sets of robes look the same.<br/><br/> This process can take years\u2014or sometimes even decades\u2014but once finished, the void hag is bonded to her robes and only the strongest magic can separate her from them. However, until a void hag makes her robes, no other hag will see her as an equal. Some void hags go so far as to completely ignore those of their kind who haven\u2019t crafted their own robes. A void hag in a coven (see below) who somehow loses her robes is forcefully driven out, even though it strips the coven of all power. Even if the expelled hag retrieves her robes (or fashions a new set), she usually must form an entirely new coven, as her previous compatriots never fully trust her again.<br/><br/> Void hags have been seen within Apostae, aiding a handful of drow noble houses in the constant corporate espionage the race perpetrates against one another. Void hags who are diligent and sadistically inventive can rise to be major players in a drow corporation\u2019s security division, sometimes rooting out spies from within and leading strike teams against other drow holdings. However, a void hag can never climb higher than that on the corporate ladder, as those positions are almost always exclusive to drow nobles.<br/><br/> Though Aucturn might seem to be a place of great interest to void hags, they avoid that planet with almost no exception. Some sages claim that the crones are afraid of the Stranger and its disturbing inhabitants. Void hags scoff angrily if this theory is ever espoused in their presence and give vague hints about \u201ccertain pacts\u201d made with potent entities that lead them to avoid Aucturn. No one has been able to get further clarification out of void hags on the matter, and so it remains an unsolved mystery.<br/><br/> Void hags have a similarly standoffish relationship with the Dominion of the Black, though members of the two groups will sometimes deign to work together in extreme circumstances. Such a partnership is always short lived and tense, probably because void hags suspect that deh-nolos and neh-thalggus would eagerly collect their brains if given half a chance."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Void Hag",
+        "type": "stat_block",
+        "cr": "10",
+        "alien_family": "Hag",
+        "role": "Spellcaster",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 7
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 118,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 25,
+                "kac": 27
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "dr": [
+                "10/magic"
+            ],
+            "immunities": [
+                "cold",
+                "disease",
+                "fear",
+                "sleep"
+            ],
+            "sr": "20"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "hailstorm-class zero pistol",
+                    "bonus": 19,
+                    "dc": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+10",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "stardust robes"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 3,
+            "con": 0,
+            "int": 8,
+            "wis": 2,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 when flying"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Drow"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "white carbon carbon skin"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "hailstorm-class zero pistol with 4 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "ultrathin dagger"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any vacuum",
+            "organization": "solitary or coven (see below)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Three times per day as a standard action, a void hag can release the energies of the cosmos stored within her robes. Creatures within 30 feet of the void hag each take 2d6+10 force damage and are outlined in glowing motes of stellar energy for 2d4 rounds. An outlined creature takes a -20 penalty to Stealth checks and doesn\u2019t benefit from the concealment normally provided by <i>displacement</i>, <i>invisibility</i>, or similar effects. A target that succeeds at a DC 19 Reflex saving throw halves this damage and negates the outlining effect. Other void hags are immune to this ability.",
+                "name": "Stardust Robes",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 120",
+                "alt": "Alien Archive pg. 120",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 120
+        }
+    ]
+}

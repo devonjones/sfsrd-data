@@ -1,0 +1,289 @@
+{
+    "name": "Thorgothrel",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The aggressive and insightful genetic manipulators known as thorgothrels enforce their vision of retrogressive development on other species. Once an enlightened humanoid society with impressive technological advancements, the thorgothrels fell under the sway of philosophers and zealots who believed that evolution into higher-ordered forms posed a danger to the universe. The thorgothrels thus began millennia-long self-experimentation to revert themselves to simple, protoplasmic forms while retaining their keen intelligence. About the same time as their society succeeded in this goal, they developed space travel and brought their crusade into the rest of the galaxy. Thorgothrels are now determined to repair the \u201cevolutionary errors\u201d that infest all of existence.<br/><br/> Thorgothrels can apply their mastery of biology and genetic sciences to new creatures they meet after only a few minutes of observation. Despite the medical advances their knowledge might herald for others, most thorgothrels consider regression to a biologically primitive state the only type of genetic manipulation worth performing. They cause this deterioration with startling speed, excreting a complex series of chemicals from their pseudopods that quickly break down a victim\u2019s genetic structure. Their victims\u2019 brains devolve, which suits the thorgothrels fine, as they prefer to have their intellects alone design the fates of living things. Although many thorgothrels prefer to inflict this condition with gentle touches of their pseudopods in controlled laboratory settings, more fanatical thorgothrels deploy this genetic regression in combat. Both are considered appropriate and even laudatory methods in thorgothrel society. Although thorgothrels insist their vision of devolution is appropriate for all living things\u2014 intelligent and unintelligent alike\u2014they derive the most satisfaction from genetic regression of intelligent creatures. Unfortunate prisoner-patients who suffer thorgothrel ministrations over weeks or months are inevitably transformed into near-feral beasts that harm themselves in attempts to escape. Thorgothrels consider each lost patient a mere stepping-stone on the long road to devolution of the universe and simply move on to the next experiment.<br/><br/> Thorgothrels are frequently repulsed by the diversity of intelligent life they meet. They preach that humanoids, in particular, bear dangerously hyper-specialized organs and would be better served with a homogeneous form. Thorgothrels therefore rarely interact peacefully with humanoid societies, instead massing in large numbers to reduce entire planetary populations to mindless, atavistic beasts. Thorgothrels might initially get along well with other intelligent amorphous or ooze races, such as the selamids, but thorgothrels are inevitably disappointed when members of these races won\u2019t join the fight to \u201cimprove\u201d other life-forms throughout the universe.<br/><br/> For all their preaching of genetic superiority, thorgothrels face incredible physical limitations when away from their home world of Gothra. Blobs of protoplasm 12 feet in diameter and only a few inches thick, thorgothrels have no other means of locomotion other than to undulate slowly and awkwardly along the ground. Nearly all atmospheres other than Gothra\u2019s cause thorgothrels\u2019 bodies to evaporate painfully in mere minutes. To overcome these limitations, the thorgothrels again turned to technology. Each thorgothrel wraps itself around an armature of silvery metal, allowing it to stand upright and walk by contracting its form around the armature. As the thorgothrel numerical system is ternary, most armatures have three, six, or nine appendages, although the precise number is based on each thorgothrel\u2019s personal preference. Thorgothrels are translucent, so their strange armatures are visible deep within their upright, undulating forms.<br/><br/> To protect their fragile forms from sublimation\u2014 and to shield themselves from the hostility of those who oppose their mandate to reforge all higher-ordered life\u2014thorgothrels imbue their armatures with sophisticated force field generators. Thorgothrels have fine control over the energy modulated by their force fields, and they can both launch blasts of this energy at foes and recharge it with their own internal electrical reserves. The armature\u2019s metal not only supports and protects a thorgothrel, but nourishes it. Each armature carries low-grade electrical charges that thorgothrels feed on. These charges also quicken a thorgothrel\u2019s intellect, enabling rapid processing of sensory stimuli. Most thorgothrels become exceedingly possessive of their armatures, marking them with symbols to indicate personal scientific successes and victories that advance their crusade.<br/><br/> Although these silvery, metallic armatures are the most common technological solutions thorgothrels employ, more inventive or influential thorgothrels sometimes rely on alternative devices, such as enormous walking machines, reticulated gliders, or even strange devices that translate thought into physical form."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Thorgothrel",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Lawful Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (life) 100 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 100,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "integrated force field (20 HP)"
+            ],
+            "immunities": [
+                "cold",
+                "electricity",
+                "ooze immunities"
+            ],
+            "resistances": [
+                "acid 10"
+            ],
+            "weaknesses": [
+                "sublimation"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "field overload",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+8",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 0,
+            "con": 2,
+            "int": 4,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Medicine",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Gothra)",
+            "organization": "solitary, pair, or symposium (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As standard action, a thorgothrel can reduce its integrated force field\u2019s temporary Hit Points by 2 to unleash an electrical blast at a single target within 100 feet. As a full action, it can reduce the Hit Points of its integrated force field by 6 to unleash its electrical blast at up to 3 separate targets within 100 feet. The thorgothrel can\u2019t use this ability if its integrated force field lacks enough temporary Hit Points to spend.",
+                "name": "Field Overload",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A thorgothrel\u2019s internal armatures create an invisible field around it just like the shield provided by a gray force field armor upgrade, except that it has unlimited charges. Its internal force field generator cannot be removed or targeted by spells or effects unless the thorgothrel is slain or expels it. When the number of temporary Hit Points supplied by the thorgothrel\u2019s integrated force field is reduced to 0, the thorgothrel can spend 1 Resolve Point as a reaction to regain the 20 temporary Hit Points supplied by the force field.",
+                "name": "Integrated Force Field",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A thorgothrel\u2019s natural substance boils away painfully when it isn\u2019t protected by its integrated force field. A thorgothrel that begins its turn with 0 temporary Hit Points from its force field loses 4d4 Hit Points and is off-target until the end of its turn. Sublimation does not occur within a vacuum or within carefully modulated environments that mimic the atmosphere of the thorgothrel\u2019s poisonous home world.",
+                "name": "Sublimation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Atavistic Resequencing",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 18",
+                "track": "Intelligence (special)",
+                "frequency": "1/round for 6 rounds",
+                "effect": "progression track is Healthy\u2013Weakened\u2013 Impaired\u2013Animalistic\u2013Animalistic. The second animalistic functions as an end state, and at the second animalistic state, the effects of the state are permanent until the victim benefits from a <i>restoration</i> spell.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 114",
+                "alt": "Alien Archive 3 pg. 114",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 114
+        }
+    ]
+}

@@ -1,0 +1,414 @@
+{
+    "name": "Emotivore Mastermind",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Emotivore Mastermind",
+        "type": "stat_block",
+        "cr": "17",
+        "alien_family": "Emotivore",
+        "role": "Spellcaster",
+        "xp": 102400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "shapechanger"
+                }
+            ]
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "emotivore"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mystic"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 29
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (emotion) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 285,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 31
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                }
+            },
+            "defensive_abilities": [
+                "share pain (DC 26)"
+            ],
+            "dr": [
+                "10/magic"
+            ],
+            "immunities": [
+                "undead immunities"
+            ],
+            "resistances": [
+                "cold 15"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "banshee sonic pistol",
+                    "bonus": 28,
+                    "dc": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d8+17",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "17 damage"
+                        }
+                    ],
+                    "value": "backlash"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "feed"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "value": "mental anguish"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "value": "mindbreaking link"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "value": "mindkiller"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8 rounds"
+                        }
+                    ],
+                    "value": "sow doubt"
+                }
+            ],
+            "connection": "mindbreaker"
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 5,
+            "con": null,
+            "int": 3,
+            "wis": 8,
+            "cha": 11,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 29,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+37 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 34
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 29
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 29
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 34
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 29
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "<i>truespeech</i>"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "change shape (Medium or Small humanoid)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "emotionsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "bespoke echelon fashion"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "banshee sonic pistol with 2 super-capacity batteries (80 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or cabal (1 plus 2\u20136 emotivores)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an emotivore can assume the shape of any Medium or Small humanoid, including specific individuals.",
+                "name": "Change Shape",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An emotivore constantly reads the surface emotions of creatures, providing the emotivore its blindsense. A creature can avoid detection by succeeding at a DC 27 Bluff check, but a creature under the influence of an emotion effect can\u2019t avoid detection. Creatures affected by <i>nondetection </i>or similar effects automatically avoid detection. The emotivore can use this ability to focus on a creature it\u2019s aware of, and if the creature fails a DC 22 Will saving throw, the emotivore learns that target\u2019s desires, fears, and weaknesses, as well as its general disposition and attitude toward creatures within 30 feet of it. A creature\u2019s weaknesses include physical vulnerabilities and inabilities. Unless otherwise stated, constructs and creatures with Intelligence scores of 2 or lower don\u2019t have emotions and can\u2019t be sensed this way.",
+                "name": "Emotionsense",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An emotivore can feed on a creature affected by the confused, cowering, fascinated, frightened, nauseated, panicked, shaken, or sickened conditions. To do so, the emotivore must make contact with the target by touching it (targeting an unwilling creature\u2019s EAC), hitting the target with a claw attack, or casting <i>mind thrust</i> on the target (which must also fail the Will save against the spell). If the emotivore\u2019s attempt succeeds, the target must succeed at a DC 22 Will saving throw or gain 1 temporary negative level. Upon imposing a negative level, the emotivore regains 10 Hit Points or gains 10 temporary Hit Points. If the emotivore dealt no damage when using this ability, feeding also subjects the target to a <i>suggestion </i>spell (Will DC 22 negates) asking the target to accept the emotivore\u2019s touch again. An emotivore can gain a number of temporary Hit Points in this way equal to one-quarter of its maximum Hit Points (usually 30). Every 24 hours, an emotivore who has temporary Hit Points loses 10 of them. An emotivore who lacks temporary Hit Points usually seeks to feed. In addition, the emotivore mastermind can use the <i>enervation</i> spell to feed if the spell affects a creature already subjected to strong emotions.",
+                "name": "Feed",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "On a critical hit, an emotivore\u2019s claws can render a target shaken for 1d4 rounds (DC 18 Will save negates).",
+                "name": "Shaken",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 51",
+                "alt": "Alien Archive 2 pg. 51",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 51
+        }
+    ]
+}

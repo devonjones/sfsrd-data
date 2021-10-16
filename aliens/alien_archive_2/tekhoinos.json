@@ -1,0 +1,323 @@
+{
+    "name": "Tekhoinos",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The enigmatic aeons maintain balance in the multiverse according to rules known only to themselves. Each variety of aeon holds sway over an aspect of the natural order and seeks to maintain equilibrium, indifferent to any concerns of ethics or morality. Tekhoinos aeons concern themselves with the balance between social development and technological advancement. Populations whose scientific advancements have outstripped their social development are likely to draw a tekhoinos\u2019s attention, as are those who forcefully suppress technological development in favor of spiritual concerns.<br/><br/> Tekhoinos often become involved when a society is uplifted or held back by outside forces, but they also step in when a society manages to unbalance itself. Exactly what constitutes a society out of balance is determined by an intricate code unfathomable to any but the aeons. When an imbalance is suspected, a single tekhoinos visits the society, gathers intelligence with its innate powers, and then confers with a larger collective of tekhoinos and other aeons via its envisaging ability. Once a consensus is reached, the tekhoinos can begin its intervention, wait for reinforcements, or move on to seek out more imbalanced civilizations.<br/><br/> Technological excess that would draw a tekhoinos\u2019s attention might include any less-advanced species that stumbles across advanced technology or species that invent technologies that their societies lack the cultural maturity to handle. On the other end of the spectrum, societies that eschew technology to the extent that harm is done to their societal development might attract tekhoinos, which then seek to inspire new inventions or disrupt the social constructs that keep technological innovation at bay. Tekhoinos prefer covert actions such as manipulation and sabotage to direct confrontation, but this preference is not out of a desire to protect the recipients of their intervention\u2014the aeons have merely found that subtlety makes for more lasting change. This clandestine approach also does not mean the aeons\u2019 actions are benign. A collective might rectify an imbalance through covert manipulation of key individuals or targeted assassinations, or they might take more drastic measures, such as detonating a starship\u2019s reactor or instigating a war, all based on cold calculations regarding which actions give the highest probability of long-term success.<br/><br/> Tekhoinos take great pains to hide their presence, lest notice of their tampering lead to further imbalance. They spend most of their time invisible, and they move carefully and deliberately to further evade detection. They prefer to incapacitate those who discover them, but they don\u2019t hesitate to dispose of creatures that prove a threat to their aims.<br/><br/> Tekhoinos normally intervene in the affairs of single planets, isolated communities, or remote outposts since sprawling planetary and interplanetary populations more readily resist change and are more likely to uncover tekhoinos\u2019s manipulations. However, when major populations swing so far out of balance that they can\u2019t be ignored, they warrant intervention by multiple tekhoinos collectives. Such grand interventions can require generations of covert observation and manipulation before massive, coordinated action, all overseen by elder aeons of significantly greater capabilities.<br/><br/> Such major actions might be subtle. However, if the threat of the imbalance is widespread but its source centralized, or if swift action is required, the intervention could resemble an invasion. The tekhoinos collectives assigned to the intervention might take direct control of problematic sites or objects. Forced into such action, the aeons then directly confront any defenders of those problem areas.<br/><br/> A tekhoinos has no eyes, instead perceiving with its entire body. Three tentacle-like limbs revolve around a tekhoinos\u2019s nebulous core, and the substance of each limb shifts constantly. Across the aeon\u2019s body, patterns of crystalline circuitry and iridescent vapor form, propagate, and give way, the same structure never repeating. The typical tekhoinos measures 4 feet across but weighs only a few pounds.<br/><br/> Like all their kin, tekhoinos communicate using mental imagery rather than words. Among their own kind, they can share the full range of experience and emotion via these images, but communication with non-aeons is far more limited. However, as caretakers of civilization, tekhoinos have better insight into the minds of other creatures than typical aeons have. They can make full use of their telepathic images to communicate with other creatures even when such interactions would normally require a shared language."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Tekhoinos",
+        "type": "stat_block",
+        "cr": "10",
+        "alien_family": "Aeon",
+        "role": "Expert",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aeon"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "defensive_abilities": [
+                "adaptive defense",
+                "unflankable"
+            ],
+            "immunities": [
+                "cold",
+                "critical hits",
+                "poison"
+            ],
+            "resistances": [
+                "electricity 10",
+                "fire 10"
+            ],
+            "sr": "21"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "telekinetic blast",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+10",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pattern bind"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 5,
+            "con": 2,
+            "int": 2,
+            "wis": 8,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+29 to recall knowledge"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+29 to recall knowledge"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 24,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+34 to recall knowledge"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "envisaging"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Outer Planes)",
+            "organization": "solitary, pair, or collective (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a tekhoinos takes acid, electricity, fire, or sonic damage, it gains resistance 10 to that damage type. This resistance does not apply to the triggering attack, and it lasts for 1 hour or until the tekhoinos takes damage of another of those types, triggering a new resistance. This resistance stacks with other sources of energy resistance.",
+                "name": "Adaptive Defense",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a tekhoinos can force a creature within 100 feet to repeat its actions unless it succeeds at a DC 19 Will saving throw. Whatever full, standard, or move actions the creature takes on its turn after being subjected to this effect, the target must repeat on the following turn. The creature must take the same actions in the same order (for example, moving its speed and casting a specific spell) and must act against the same target or targets. However, the creature doesn\u2019t have to make exactly the same choices (such as moving the same number of squares or choosing the same command for the <i>command</i> spell). If the target is unable to repeat an action, it is unable to act and its turn ends immediately. A creature that is affected by pattern bind can\u2019t delay, and if it readies an action on the first turn it is affected, it must ready the same action on its following turn using the same trigger. Whether or not a creature succeeds at its saving throw against this ability, it is immune to further instances of this effect for 24 hours.",
+                "name": "Pattern Bind",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tekhoinos\u2019s telekinetic blast has a range increment of 50 feet.",
+                "name": "Telekinetic Blast",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 6",
+                "alt": "Alien Archive 2 pg. 6",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 6
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "name": "Dormakhabu",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "This six-legged beast resembles a slender alligator with three eyestalks on top of its head and a ridge of bony plates running down its spine. Its front two limbs end in sturdy claws capable of digging through earth and stone. Under its eyestalks, a dormakhabu also has a long and powerful tentacle, which it uses to drag hapless creatures toward its wide mouth full of sharp teeth, located in the center of its torso. Due to the dormakhabu\u2019s rubbery skin and ability to phase through solid matter, many scholars theorize that this unusual aberration originates from the same world or dimension as the aliens known as grays. Despite these similarities and possible shared origins, dormakhabus have not been reported to cooperate with the bulbous-headed humanoids.<br/><br/> The only evidence of the strife between the two species comes from an unsubstantiated infosphere report in which an unnamed witness claimed to have been held captive by grays in some kind of underground facility on an asteroid. This person alleges to have seen a creature with a description matching that of a dormakhabu burrow up from the stone floor and unleash a terrifying psychic tremor that flooded the minds of the grays and their captives alike.<br/><br/> Beset by confusing and nightmarish visions, the witness watched in horror as the dormakhabu spit acid on their incapacitated gray captors before rushing to grab an alien with its tentacle and stuffing the unfortunate victim into its maw. Thanks to the chaos, the witness said, they were able to escape with their life and memories intact. However, no solid evidence for this story has been found.<br/><br/> If true, the question remains as to why or how a dormakhabu can track and hunt grays with such fervor. However, those who believe in the existence of the grays are grateful to hear that the mysterious infiltrators are not without their own natural predators."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Dormakhabu",
+        "type": "stat_block",
+        "cr": "11",
+        "role": "Combatant",
+        "xp": 12800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "gray"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 20
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 120 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 180,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "phase"
+            ],
+            "weaknesses": [
+                "light blindness",
+                "vulnerable to sonic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "acidic spit",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d8+11",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "telepathic howl"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 1,
+            "con": 5,
+            "int": -3,
+            "wis": 3,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 20
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tracking (scent)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or pack (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a dormakhabu can spit a thin stream of acid from its mouth with a range increment of 30 feet.",
+                "name": "Acidic Spit",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Dormakhabus exist slightly out of phase with the Material Plane. A dormakhabu can pass through walls or material objects (but not corporeal creatures), as long as it begins and ends its turn outside of any wall or obstacle. In addition, a dormakhabu always benefits from a 20% miss chance against attacks and effects targeting it directly and takes only half damage from area effects. Force effects, however, function normally against a dormakhabu.",
+                "name": "Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a dormakhabu can unleash a wave of telepathic energy. All creatures within 60 feet must succeed at a DC 17 Will save or become confused for 1d4 rounds. Creatures with telepathy or limited telepathy take a \u20132 penalty to this saving throw. A dormakhabu can use this ability every 1d4 rounds.",
+                "name": "Telepathic Howl",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #29: The Cradle Infestation",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #29: The Cradle Infestation pg. 55",
+                "alt": "Starfinder #29: The Cradle Infestation pg. 55",
+                "href": "https://paizo.com/products/btq021f1?Starfinder-Adventure-Path-29-The-Cradle-Infestation"
+            },
+            "page": 55
+        }
+    ]
+}

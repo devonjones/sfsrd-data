@@ -1,0 +1,249 @@
+{
+    "name": "Linyf",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Linyfs are invasive plants with unusual life cycles. Their translucent seeds travel alongside charged particles with the solar winds that move across the void of space, frequently attaching to starships or falling in a near-invisible rain onto a planet. In the presence of light, moisture, and heat, the seeds germinate into wide masses of silky strands with solid cores of plant matter. Linyfs are driven to grow and reproduce. They are highly susceptible to cold, and significant drops in temperature often kill budding linyf colonies.<br/><br/> A linyf is a collection of thick, translucent vines that resemble tentacles, surrounding a central mass. These vines sprout sticky fibers that can transmit a deadly disease. Curious creatures who inspect a linyf lying in wait notice that it radiates a pleasant warmth but is extraordinarily sticky to the touch. The vines then reach out to slash at the victim, who soon discovers that their wounds eventually close up, though not as a result of the healing process. The affliction initially causes transparent fibers to sprout from the creature\u2019s skin, suturing the damaged tissue. But after a period of sickness and constant itching as more threads burst out of the creature\u2019s body, the victim typically falls comatose and dies.<br/><br/> Despite the aggressive affliction their fibers induce, linyfs aren\u2019t carnivorous and receive their nutrition through photosynthesis, like most other plants. Several months after maturation, a healthy linyf produces a few dozen seeds that it propels into the atmosphere with amazing force and speed. Most of these seeds return to the surface of the same world (with a few catching currents of wind), but a few achieve exit velocity and go on to infest other planets."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Linyf",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (heat)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 38,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                }
+            },
+            "immunities": [
+                "fire",
+                "plant immunities"
+            ],
+            "weaknesses": [
+                "cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 10 ft.",
+                        "movement_type": "climb",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "fiber lash",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+4",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "fibrous growth"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 12"
+                        }
+                    ],
+                    "value": "silken snare"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 2,
+            "int": -2,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 8
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any temperate",
+            "organization": "solitary, growth (3\u20135), or colony (6\u2013300)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, a linyf can secrete sticky, threadlike fibers in a 10-foot-radius burst. This area counts as difficult terrain for all creatures except for the linyf, and the linyf gains a +4 circumstance bonus to attack rolls to grab or maintain a grapple on a creature in the area of the silken snare. Creatures exposed to a linyf\u2019s silken snare who aren\u2019t wearing protective gear (such as armor) must attempt a DC 12 Fortitude save to avoid contracting fibrous growth. A linyf\u2019s silken snares remain until it moves.",
+                "name": "Silken Snare",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Fibrous Growth",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "save": "Fortitude DC 12",
+                "track": "physical",
+                "frequency": "1/day",
+                "effect": "no latent state",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #26: Flight of the Sleepers",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #26: Flight of the Sleepers pg. 57",
+                "alt": "Starfinder #26: Flight of the Sleepers pg. 57",
+                "href": "https://paizo.com/products/btq01zue?Starfinder-Adventure-Path-26-Flight-of-the-Sleepers"
+            },
+            "page": 57
+        }
+    ]
+}

@@ -1,0 +1,253 @@
+{
+    "name": "Creeping Shade",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Creeping shades are incorporeal, plantlike creatures originating on the Shadow Plane. A creeping shade lies in wait to strike at passing prey with its incorporeal touch, attempting to inhabit the creature and infect it with gloom spores. The victim usually falls comatose a few minutes later, after which it is killed by nearby predators, leaving the corpse behind to fertilize nearby plant life, including the creeping shade."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Creeping Shade",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 112,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "15 ft.",
+                        "movement_type": "walk",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 15 ft.",
+                        "movement_type": "climb",
+                        "value": 15
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "incorporeal touch",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+8",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "inhabit"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "gloom spores"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "inhabit"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": null,
+            "dex": 6,
+            "con": 3,
+            "int": -3,
+            "wis": 2,
+            "cha": 0,
+            "feats": [
+                "Spring Attack"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 16
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Shadow Plane)",
+            "organization": "solitary or garden (2\u20137)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature affected by a creeping shade\u2019s inhabit ability risks being poisoned by gloom spores when the creeping shade leaves its body. For every round past the first that a creeping shade has inhabited a creature\u2019s body, the creature takes a cumulative \u20131 penalty to the saving throw to resist the poison.",
+                "name": "Gloom Spores",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a creeping shade scores a critical hit on a living creature, it enters that creature\u2019s space (this doesn\u2019t provoke an attack of opportunity) and merges with the creature\u2019s body for 1d6+1 rounds. The creeping shade doesn\u2019t control the creature it inhabits, but does make the creature feel an overwhelming sense of melancholy. An inhabited creature can\u2019t benefit from morale bonuses. Every round after the first, an inhabited creature can attempt a DC 18 Fortitude save to eject the creeping shade from its body. In addition, a creeping shade can inhabit an adjacent, unconscious living creature as a full action if that creature fails a DC 18 Fortitude save. When a creeping shade leaves an inhabited creature\u2019s body (either if it is ejected or if the duration of the ability ends), it appears in an adjacent square of its choosing and regains 5d8 Hit Points, and the affected creature is subjected to gloom spores.",
+                "name": "Inhabit",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Gloom Spores",
+                "type": "stat_block_section",
+                "affliction_type": "poison (contact)",
+                "save": "Fortitude DC 18",
+                "track": "Wisdom (special)",
+                "frequency": "1/minute for 6 minutes",
+                "effect": "progression track is Healthy\u2014Weakened\u2014Impaired\u2014Confused\u2014Comatose\u2014Comatose. The second comatose functions as an end state.",
+                "cure": "1 save",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #11: The Penumbra Protocol",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #11: The Penumbra Protocol pg. 55",
+                "alt": "Starfinder #11: The Penumbra Protocol pg. 55",
+                "href": "https://paizo.com/products/btq01vb4?Starfinder-Adventure-Path-11-The-Penumbra-Protocol"
+            },
+            "page": 55
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+{
+    "name": "Veolisk",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Veolisks are lumbering, reptilelike quadrupeds with bony exoskeletons. They are often compared to many planets\u2019 prehistoric megafauna, despite being much smaller. Veolisks are typically found only on remote planets and planetoids in the Vast, as most xenobiologists believe their maddening gazes tend to drive off other species and make settling near veolisk territory very difficult. If veolisks are discovered near established communities, the creatures are usually hunted ruthlessly until there are none left.<br/><br/> The veolisk\u2019s signature void gaze ability has led to speculation that the creatures are descended from ancestors with similar gaze attacks that had far more severe effects, and they have earned the nickname \u201cvoid basilisks\u201d from those versed in the ancient folklore of Golarion. Some sages believe destruction-loving cultists of the Devourer bred the first veolisks millennia ago, well before the Gap. Whether or not this is true, the beasts have become popular as guardians of remote Devourer cult bases and as pets to those who believe themselves to be at one with the universe\u2019s entropy. Curiously, though most cultures would never think to try domesticating veolisks, the beasts become quite docile and mostly harmless when wearing blinders, veils, or other methods of negating their gaze ability.<br/><br/> These hulking beasts can survive on very little food, usually eating only one small meal\u2014flesh, fruits, fungus, plant life, or anything it can find\u2014a day. Scientists don\u2019t agree on exactly what maintains a veolisk\u2019s physiology; some believe the creatures simply have a hyperefficient metabolism, while others suggest that they feed on cosmic radiation like trees gathering sustenance through photosynthesis. A few experts theorize that veolisks don\u2019t need to eat at all to survive and subsist solely on the background arcane energies that are present everywhere in the galaxy. Reputable xenobiologists tend to scoff at this hypothesis, but their opponents are quick to point out that universe is full of strange and unknowable wonders that defy scientific explanation.<br/><br/> Veolisks lay fist-sized leathery eggs, usually six to eight at a time. These eggs are recognizable as belonging to a veolisk due to their ebony coloring and their tendency to give off faint wisps of odorless smoke. Once laid, the eggs don\u2019t require any kind of incubation and usually hatch on their own after a few weeks. In most broods, the first veolisks to hatch tend to devour the unhatched eggs as their first meals. Veolisk young begin to hunt for themselves after this initial meal and are fully mature in less than a year. Adult veolisks usually mate whenever the opportunity presents itself, though neither parent takes any interest in their eggs or offspring.<br/><br/> A typical veolisk is about 7 feet long from the tip of its snout to the end of its tail and weighs approximately 200 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Veolisk",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "void gaze"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 3,
+            "int": -4,
+            "wis": 0,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 18
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A veolisk embodies the claustrophobic, dark, and often maddening aspects of deep space, and it can project a sliver of the void into its enemies with its mere gaze. A creature that fails a DC 16 Will saving throw against this gaze ability is confused until the beginning of its next turn. This is a mind-affecting effect.",
+                "name": "Void Gaze",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #3: Splintered Worlds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #3: Splintered Worlds pg. 60",
+                "alt": "Starfinder #3: Splintered Worlds pg. 60",
+                "href": "https://paizo.com/products/btpy9xa2?Starfinder-Adventure-Path-Splintered-Worlds"
+            },
+            "page": 60
+        }
+    ]
+}

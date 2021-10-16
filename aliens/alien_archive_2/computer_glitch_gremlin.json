@@ -1,0 +1,271 @@
+{
+    "name": "Computer Glitch Gremlin",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Computer Glitch Gremlin",
+        "type": "stat_block",
+        "cr": "1/2",
+        "alien_family": "Gremlin",
+        "role": "Spellcaster",
+        "xp": 200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Lawful Evil",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 4
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 9,
+                "kac": 10
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "networked technomancy"
+            ],
+            "resistances": [
+                "cold 5",
+                "electricity 5"
+            ],
+            "sr": "11",
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 2,
+                    "dc": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4\u20131",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "glitch module"
+                        }
+                    ]
+                }
+            ],
+            "space": "2-1/2 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "glitch module"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "networked technomancy"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 2,
+            "con": 1,
+            "int": 3,
+            "wis": 1,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 9
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 4,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+9 to use computers"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 9
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "digital telepathy 30 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "pair or infection (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A computer glitch gremlin can communicate telepathically only with digital devices and with other creatures that can do so (such as other computer glitch gremlins). This allows the glitch gremlin to attempt Computers checks to access any computer within the telepathy\u2019s range.",
+                "name": "Digital Telepathy",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a glitch gremlin succeeds at a Computers check to access a system or hits a foe with an attack or spell, the accessed system or one random computer held or carried by the struck creature glitches. An attended computer (including any computer on a creature hit by a computer glitch gremlin\u2019s attack or spell) negate this effect by succeeding at a DC 10 Will save. The glitch causes one of the following effects, which functions as if the system had the indicated countermeasure (DC = 16 + the number of glitch gremlins within 30 feet when the glitch was added): a fake shell countermeasure that obstructs all users, an alarm that plays a loud and potentially embarrassing audio or holographic file when accessed by any user unless the user succeeds at a Computers check as if hacking the system, or one randomly determined countermeasure that applies even to users with root access. Disabling or removing this glitch requires a Computers check as if disabling or removing a module. A disabled glitch reactivates after 1d10 minutes if not removed. A system can have no more than one glitch per module.",
+                "name": "Glitch Module",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When gathered in groups, computer glitch gremlins share their magic. As long as a computer glitch gremlin is within 30 feet of another of its kind, it gains concealment thanks to erratic holograms that falteringly appear near it and emulate the appearance of surrounding objects. Groups of computer glitch goblins can also use more potent spell-like abilities; each gremlin in the group except for one takes a standard action to prepare the spell-like ability, and the final gremlin actually uses it. Two computer glitch gremlins can use <i>implant data</i> or <i>logic bomb</i> (DC 15), four can use <i>holographic image</i> (3rd level, DC 16) or <i>instant virus</i> (DC 16), and six can use <i>destruction protocol</i> (DC 17).",
+                "name": "Networked Technomancy",
+                "ability_type": "Spell-Like",
+                "ability_type_abbrev": "Sp"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 68",
+                "alt": "Alien Archive 2 pg. 68",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 68
+        }
+    ]
+}

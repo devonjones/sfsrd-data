@@ -1,0 +1,312 @@
+{
+    "name": "Moonflower Titan",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Moonflower Titan",
+        "type": "stat_block",
+        "cr": "16",
+        "alien_family": "Moonflower",
+        "role": "Combatant",
+        "xp": 76800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": -1
+        },
+        "alignment": "Neutral",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 28
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 300,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 32
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "dr": [
+                "10/slashing"
+            ],
+            "immunities": [
+                "electricity",
+                "plant immunities"
+            ],
+            "resistances": [
+                "cold 10"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d10+26",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "swallow whole"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "tentacles",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d6+26",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "20 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "moon pulse"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "0 or 10d6 A & B [see text]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 30"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 28"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "75 HP"
+                        }
+                    ],
+                    "value": "swallow whole"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 10,
+            "dex": -1,
+            "con": 7,
+            "int": -2,
+            "wis": 5,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 28,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+33 in dense vegetation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "telepathy"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 miles"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "other moonflowers only"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "pod spawn"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "solitary, pair, or grove (1 plus 2\u20138 moonflowers)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a moonflower titan can emit a pulse of bright light and psychic static from its body. Each creature within a 50-foot spherical spread originating from the moonflower\u2019s space must attempt a DC 22 Fortitude save. Those that fail are blinded, deafened, and unable to use any other sense for 1d4 rounds. Other than the blinding affect, this ability is a mind-affecting effect. A creature that is immune to mind-affecting effects but in the area and able to see the moonflower can be blinded by this effect.",
+                "name": "Moon Pulse",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A Small or larger living creature that dies while enclosed in a digestive pod is digested, its body completely destroyed in 1 hour. Another hour later, the pod sprouts into a new moonflower. This new moonflower has features that bear a minor resemblance to the digested creature. Any equipment the digested creature carried remains inside the new moonflower. A Huge creature transforms into a moonflower titan instead of a moonflower.",
+                "name": "Pod Spawn",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a moonflower titan can thrust its roots and tentacles into the ground, causing a violent tremor. Each creature within a 50-foot-radius spread originating in the moonflower\u2019s space must attempt a DC 22 Reflex saving throw. Those that fail take 10d6 bludgeoning damage and fall prone. Creatures that succeed take half the damage and remain standing.",
+                "name": "Root Tremor",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a moonflower successfully swallows a target, that creature remains inside the moonflower for 2 rounds, during which the victim takes no damage and the moonflower can\u2019t swallow another creature. After this time, the target is enclosed in a fibrous digestive pod and expelled into a space adjacent to the moonflower. The pod then acts as the swallowing creature, with the same swallow whole statistics but now able to deal acid damage. A creature can\u2019t use Athletics to climb out of this enclosing pod. Other creatures can attack the pod, but the enclosed creature takes damage equal to half the damage dealt to the pod. An external attacker can avoid dealing the enclosed creature damage by using a bladed weapon to make one attack against the pod as a full action.",
+                "name": "Swallow Whole",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 84",
+                "alt": "Alien Archive 2 pg. 84",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 84
+        }
+    ]
+}

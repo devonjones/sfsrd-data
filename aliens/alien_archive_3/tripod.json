@@ -1,0 +1,352 @@
+{
+    "name": "Tripod",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Tripods are the product of a long-extinct species of warmongers who dwelled upon a distant, unknown world in the Vast. Those creators are long gone, but their legacy endures in these devastating and malevolent war machines. After plying the Void for countless years while hibernating in cylinders of starmetal alloy, tripods sometimes crash into a planet. They are often discovered this way, buried at the centers of craters that formed during their initial arrival on those worlds. The machines remain dormant for centuries before awakening either when disturbed or according to a preset trigger, at which point they stride forth to bring destruction upon the planet.<br/><br/> A tripod is an immense creature more than 50 feet tall. Striding on three articulated legs and attacking with long, mechanical tentacles, tripods also fight with devastating disintegrator weapons and infamous grenades of corrosive gas. Instead of computer consoles and electronic power sources, each tripod is powered and controlled by an immortal mass of adaptive nanotechnology. This fluid mass of tiny machines makes up everything about the construct that is changeable, including powering its weapons. This collective is said to be the part of the tripod that can be contacted and reasoned with. All tripods refer to themselves as collective entities, using \u201cwe\u201d for self\u2011reference.<br/><br/> Some scholars speculate that the form and nature of tripods are reffections of those of their mysterious progenitors, although little remains to indicate what this mysterious species was like when they were active on their home world. Ancient legends speak of a time when this species unleashed an army of tripods upon other worlds, using immense devices to launch them in their hibernation tubes across interplanetary gulfs. Certainly the fact that tripods can be encountered on all manner of planets across the galaxy is a sign of the malice of their creators. What finally brought this species to an end and left their tripods abandoned across the galaxy is unknown.<br/><br/> Tripods possess a cruel and sadistic intelligence, perhaps as an intentional feature. Waging war brings a sense of purpose to the tripod. Each tripod gives loud intermittent shrieking calls, like the screech of metal grinding on metal. If one hears the call of another, the constructs gather together. They form groups and spread destruction for no apparent purpose other than to cause ruin.<br/><br/> Tripods are especially responsive to electronic communication. The anacites of Aballon used this fact to their advantage, turning three rampaging tripods from enemies to allies, and those war machines still stride Aballon. Each acts as a freelance hunter of outlaws and participates in larger battles at the Midnight Trenches. The anacites can influence the tripods, but the war constructs overall do as they will, acquiescing only to the anacite directive to stay outside the cities of the First Ones. Despite this command, the tripods of Aballon have harassed the khizars of Constant, keeping the plantlike people and the bizarre vegetation in check outside the city\u2019s perimeter.<br/><br/> Other species have studied defeated tripods and used this knowledge, along with harvested technology, to build facsimiles of the colossal constructs. The appearance of these new tripods can vary, but they have their signature array of three agile legs, grasping tentacles, and nanotech inner workings. Even these recently created tripods tend to be wicked and warlike. It\u2019s as if some facet of the ancient technology that allows for their creation infects them with the will to wage war."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Tripod",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Combatant",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral Evil",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 225,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 27,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons"
+            ],
+            "immunities": [
+                "acid",
+                "construct immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "60 ft.",
+                        "movement_type": "walk",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated decimator disintegrator cannon",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d10+13",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated platoon minelayer with decoupler grenades IV",
+                    "bonus": 24,
+                    "range": "15 ft.",
+                    "dc": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "nanite cloud 1 minute"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d4",
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 ft. with tentacle"
+                    }
+                ],
+                "value": "20 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3d6+13 A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 27"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 27"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "56 HP"
+                        }
+                    ],
+                    "value": "deconstruction cage"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3d12+21 B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 19."
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 6,
+            "con": null,
+            "int": 1,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 23
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 23
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "shortwave 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "internal ammunition"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "decimator disintegrator cannon"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "platoon minelayer with 4 decoupler grenades IV"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or platoon (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The tripod\u2019s deconstruction cage works as the swallow whole ability, except the target is placed in a cage on the construct\u2019s body rather than completely swallowed. All attacks that hit the cage deal only half damage to it, and attacks that hit it from the outside deal its occupant half the damage the cage takes. If the cage is damaged enough to allow a creature to escape, the tripod can\u2019t use the cage again for 24 hours, at which point it is repaired. A creature can escape the cage by succeeding at a DC 29 Engineering check to disable the door or a DC 29 Athletics check to break it open. Each time a creature takes damage from the deconstruction cage, the tripod regains 1 Hit Point for every 4 the victim loses as the construct\u2019s nanite constituents use the harvested material for repairs. This deconstruction targets gear inside the cage after a creature in the cage dies, dealing the gear 4 damage each minute, ignoring hardness, and restoring 1 Hit Point to the tripod each time this damage occurs.",
+                "name": "Deconstruction Cage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tripod doesn\u2019t need batteries for its disintegrator cannon or similar powered weapons. It can produce 1 decoupler grenade for its minelayer every 2 hours. Tripods that use other weapons can produce those weapons\u2019 ammunition at similar rates. If these weapons are removed from the tripod, they can be fitted with conventional ammunition.",
+                "name": "Internal Ammunition",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tripod can communicate wirelessly. This acts as telepathy, but only with other creatures with this ability or constructs with the technological subtype.",
+                "name": "Shortwave",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 118",
+                "alt": "Alien Archive 3 pg. 118",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 118
+        }
+    ]
+}

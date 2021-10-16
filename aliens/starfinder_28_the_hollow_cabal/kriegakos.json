@@ -1,0 +1,271 @@
+{
+    "name": "Kriegakos",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Soaring through the clouds of Liavara, kriegakoses are vaguely avian creatures that constantly ooze an endless supply of highly acidic saliva from the many specialized pores in their skin. This secretion breaks down the steely rinds of the floating reebadarus plants that are the kriegakos\u2019s primary source of sustenance, though it is also a potent deterrent against predators. A kriegakos\u2019s body is covered in millions of hairlike proboscises capable of lapping up whatever their body\u2019s saliva dissolves. As a result, a kreigakos\u2019s primary feeding strategy is simply to slam itself into its prey. Its membranous wings allow it to soar through the Liavaran gases, and the creature\u2019s multiple visual sensors empower it to see in all directions at once."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Kriegakos",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (blindsense [fog]) 60ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 115,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "corrosive saliva (2d8 A",
+                "DC 18)",
+                "evasion",
+                "unflankable"
+            ],
+            "immunities": [
+                "acid"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+12",
+                            "damage_type": "Acid & Bludgeoning",
+                            "damage_type_text": "A & B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4d8 A"
+                        }
+                    ],
+                    "value": "flyby attack"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "saliva shake"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 6,
+            "con": 2,
+            "int": -4,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 21
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any air (Liavara)",
+            "organization": "solitary, pair, or flock (6\u201312)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A kriegakos secretes corrosive saliva from the dozens of digestive pores along its body. A kriegakos automatically deals 2d8 acid damage to a creature that it is grappling at the start of that creature\u2019s turn. A creature that hits a kriegakos with an unarmed attack takes this acid damage (Reflex DC 18 half). The same amount of damage is also dealt to a melee weapon that strikes a kriegakos, though the wielder can attempt a DC 18 Reflex save to halve the damage.",
+                "name": "Corrosive Saliva",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a kriegakos can fly up to its speed and make a single slam attack without provoking an attack of opportunity from the target of the attack. The kriegakos can move both before and after the attack, but must fly at least 10 feet before the attack, and the total distance flown can\u2019t be greater than the kriegakos\u2019s fly speed. The kriegakos can\u2019t use this ability to attack a foe that it is adjacent to at the start of its turn. Before making the attack, the kriegakos can attempt an Acrobatics check with a DC equal to 20 + the target\u2019s level or CR. If it succeeds at this check, the target is flat-footed to the kriegakos\u2019s slam attack, and if that attack hits, it deals an additional 4d8 acid damage.",
+                "name": "Flyby Attack",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a kriegakos can shake off its current layer of corrosive saliva, causing all adjacent creatures and objects (and all armor and other items those creatures are wearing or holding) to take 4d8 acid damage (Reflex DC 18 half). Carried or worn gear succeeds at this save if its wearer succeeds but fails if its wearer fails.",
+                "name": "Saliva Shake",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #28: The Hollow Cabal",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #28: The Hollow Cabal pg. 57",
+                "alt": "Starfinder #28: The Hollow Cabal pg. 57",
+                "href": "https://paizo.com/products/btq021bu?Starfinder-Adventure-Path-28-The-Hollow-Cabal"
+            },
+            "page": 57
+        }
+    ]
+}

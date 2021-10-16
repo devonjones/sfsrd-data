@@ -1,0 +1,339 @@
+{
+    "name": "Pyric Heliacus",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A few sapient pyric revenants master the spiritual fires within them, becoming pyric heliacuses instead of pyric wraiths. With phenomenal mental discipline, a heliacus can bend fire and light, including cutting victims off from warmth and sight. Heliacuses hunger for knowledge as much as flesh and spirit, so they converse with other beings and seek out repositories of lore. However, heliacuses are imperious and malevolent, consuming anyone who fails to edify or impress them.<br/><br/>As a heliacus\u2019s enlightenment grows, so does its body, until the creature tops 12 feet. However, as little more than flame, skin, and bone, a heliacus weighs only 300 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Pyric Heliacus",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Spellcaster",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "aura": "alien presence (10 ft., DC 19, sickened 1 round)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 120 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see in darkness"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "<i>seeinvisibility</i>"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (life) 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "ash consumption"
+            ],
+            "immunities": [
+                "fire",
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "arcing pyric beam",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+10",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "pyric curse"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "eclipse shroud"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "implosion"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pyric fire"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 5,
+            "con": null,
+            "int": 2,
+            "wis": 8,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 60 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "illuminated"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per round as a standard action, a pyric heliacus can project pyric fire out to a range of 120 feet. This attack has the line weapon special property. In addition, once per round after hitting a target, the heliacus can bend the line, causing it to continue along a new trajectory.",
+                "name": "Arcing Pyric Beam",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a creature within 30 feet takes fire damage, a pyric heliacus regains a number of Hit Points equal to the damage the creature took, up to a maximum equal to the harbinger\u2019s CR per round.",
+                "name": "Ash Consumption",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a heliacus can force a creature to succeed at a DC 19 Will saving throw or take 4d8 cold damage and become blinded for 1 minute. An affected creature must repeat the saving throw at the start of each of its turns, taking 4d8 cold damage on a failure and ending the blinded condition on a success.",
+                "name": "Eclipse Shroud",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Light within 10 feet of a pyric wraith increases by two steps. Light for 10 more feet beyond that increases one step. Magical darkness decreases this light only if from a source with a CR or level higher than the heliacus\u2019s CR.",
+                "name": "Illuminated",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When destroyed, a heliacus implodes, becoming a gravitational singularity, as the spell (+22 to attack, 5d6 damage), in a random square of its space for 3 rounds.",
+                "name": "Implosion",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The fire damage of a pyric harbinger burns body and spirit, ignoring fire resistance and dealing half damage even to creatures with fire immunity. A creature burning due to this fire can gain no bonuses to end that condition. A creature that dies due to pyric fire damage becomes a pyric revenant 1d4 hours later.",
+                "name": "Pyric Fire",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Pyric Curse",
+                "type": "stat_block_section",
+                "affliction_type": "curse",
+                "save": "Fortitude DC 19",
+                "effect": "A creature that fails the save gains the burning 2d4 condition. This flame is pyric fire (see special ability). While affected, the creature succeeds at saving throws against other pyric curses of the same or weaker potency.",
+                "cure": "1 save; successful saves against the burning condition are successful saves against the curse.",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #16: The Blind City",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #16: The Blind City pg. 59",
+                "alt": "Starfinder #16: The Blind City pg. 59",
+                "href": "https://paizo.com/products/btq01yjk?Starfinder-Adventure-Path-16-The-Blind-City"
+            },
+            "page": 59
+        }
+    ]
+}

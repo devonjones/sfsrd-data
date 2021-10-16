@@ -1,0 +1,262 @@
+{
+    "name": "Neutronium Golem",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Neutronium, the material found in the heart of a neutron star, is one of the densest substances in existence. Just a spoonful of it would weigh billions of tons and, if dropped onto the surface of a planet, would simply puncture the planet\u2019s crust until it reached the core. Further, neutronium possesses some unusual properties; because it has no electrons, it does not interact with light. Scientists have studied neutronium for centuries, with many of them pursuing the practical goal of weaponizing the substance.<br/><br/> Recently, a group of drow mystics and technomancers made a breakthrough while working to decode ancient texts supposedly written by Eloritu. After decades of work, they managed to temporarily bind an elemental spirit to a neutron star. The elemental, working from within the star, was able to remove a tiny piece of super-dense neutronium, which the drow then isolated with force magic. The team experimented on this rare sample for months on end, until they finally perfected a technomagical process that reduced the density of the neutronium enough to make it more workable, while simultaneously shaping the now enormous object into a vaguely humanoid form. They moved the bound elemental spirit out of its star and into this new vessel, and the first neutronium golem was created.<br/><br/> Since then, the method of crafting neutronium golems has spread through the Pact Worlds. The drow creators of the technique have even begun to industrialize the process, producing neutronium golems in the dozens and charging exorbitant sums for them. Unfortunately, their work has angered some of the drow\u2019s demon lord patrons, which has led some elements of Apostae\u2019s ruling class to call for their expulsion from drow society, if not outright execution. House Brevak in particular has spent a great deal of resources to eliminate these \u201crogue elements\u201d from drow society and take over the production of neutronium golems\u2014for the good of all drow, naturally.<br/><br/> A neutronium golem is invisible in light but pitch black in darkness; this quality makes it both a deadly assassin and a useful guardian. Species with natural darkvision\u2014 like drow\u2014can easily see and interact with these golems in the darkness that is their natural environment. But when intruders trespass into the lightless chambers where a golem is stationed, any illumination they bring with them only serves to make the neutronium golem more dangerous. In addition, the incredible density and neutral charge of neutronium grants the construct a number of immunities even beyond those normally associated with a golem. However, a neutronium golem does have weaknesses. By delivering a charge to the neutronium that makes up the golem\u2019s body, its immunity to light is temporarily negated, causing it to become visible. The magical forces which give the neutronium a humanoid form are also precariously balanced, so rapid fluctuations in gravity can disrupt the golem\u2019s body. Finally, like many golems, it has a tendency to fly into an uncontrollable rage when damaged.<br/><br/> Although the process for creating neutronium golems is a relatively recent development in the Pact Worlds, rumors persist that older neutronium golems exist elsewhere in the galaxy. Based on the writings studied by the drow scientists, it may be that Eloritu\u2014or his priests\u2014 originally created neutronium golems to guard sites sacred to the Hidden Truth. Numerous alien cultures venerated Eloritu long before the Pact Worlds discovered his faith, and some of these cultures may have made use of neutronium golems. An alternative theory is that Eloritu meant to keep the knowledge of creating neutronium golems a mystery from the mortal species of the galaxy, and the reappearance of the technique in the present risks attracting the wrath of the god of secrets."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Neutronium Golem",
+        "type": "stat_block",
+        "cr": "6",
+        "alien_family": "Golem",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "dr": [
+                "5/\u2014"
+            ],
+            "immunities": [
+                "construct immunities",
+                "electricity",
+                "light",
+                "magic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "berserk"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "comm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or gang (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a neutronium golem takes damage that reduces it to half its maximum Hit Points or fewer, and whenever it takes damage while it has half its maximum Hit Points or fewer, it must attempt a DC 13 Will saving throw. On a failure, the golem goes berserk. While berserk, the golem uses its actions to make a full attack or to move and attack. If it can\u2019t reach a creature, it attacks objects. The golem can attempt a DC 13 Will saving throw at the end of each of its turns to end the berserk state. If the golem\u2019s creator communicates with the golem to calm it, via comm unit or from within 60 feet, and succeeds at a DC 10 Charisma check, the golem receives a +2 circumstance bonus to this saving throw.",
+                "name": "Berserk",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A golem can receive wireless communications (and thus commands from its creator) at planetary range.",
+                "name": "Comm",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A neutronium golem does not interact with visible light, so it is immune to laser weapons or any other attack based on visible light. In any area of dim, normal, or bright light, a neutronium golem is invisible.",
+                "name": "Light Immunity",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A neutronium golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem, as follows. <ul><li>If the golem is inside the area of a control gravity spell used to increase gravity and fails its saving throw, instead of the usual effects of the spell, the golem becomes Tiny (reducing its space and reach to 2-1/2 ft.) and sinks partially into the ground, becoming pinned for the duration of the spell.</li> <li>If the golem is inside the area of a control gravity spell used to reverse gravity or create an area of zero-g and fails its saving throw, in addition to the normal effects of the spell, it partially loses its humanoid shape as it becomes Huge (increasing its size and reach to 15 ft.) for the duration of the spell. In this state, it is staggered.</li> <li>The golem automatically fails its saving throw against discharge and greater discharge but has a unique reaction to these spells. Discharge and the area discharge effect of greater discharge heal the golem for 5d8 Hit Points; the targeted discharge effect of greater discharge heals it for 11d8 Hit Points.</li> <li>The golem can be targeted with a recharge spell, but this spell has a unique effect upon it. If the golem fails its saving throw, it loses its immunity to electricity and light, becoming visible as a creature of highly reffective metal for 2d4 rounds.</li></ul>",
+                "name": "Magic Immunity",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 42",
+                "alt": "Alien Archive 3 pg. 42",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 42
+        }
+    ]
+}

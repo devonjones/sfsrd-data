@@ -1,0 +1,261 @@
+{
+    "name": "Plague Ooze",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A plague ooze is disease given predatory form. Such oozes live in the wilds of Aucturn, but rumor holds that cultists of Urgathoa created and released the first specimens. What these creators intended might never be understood, but they ensured the creatures\u2019 propagation. Not only can plague oozes convert Aucturn\u2019s fleshy substances into more of their kind, but they can also hunt other life forms to spread ooze plague. Without an immediate cure, victims without symptoms become carriers who, absent quarantine, infect others. Proliferation of plague oozes then continues as a ghastly epidemic, even long after the source ooze was destroyed. Because of this mode of procreation, plague oozes have been found on worlds far out into the Vast."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Plague Ooze",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "aura": "sickening cloud (20 ft., DC 15)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 117,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "immunities": [
+                "ooze immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to remove affliction"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "plague spore",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+7",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "ooze plague"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "ooze plague"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2d6+11 B plus ooze plague"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 15"
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": 5,
+            "int": null,
+            "wis": 0,
+            "cha": -4,
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Aucturn)",
+            "organization": "solitary, pair, or epidemic (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Contact with a plague ooze can cause an affliction called ooze plague.",
+                "name": "Ooze Plague",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A plague ooze can fling plague spores, which are bits of disease-ridden matter, with a range increment of 20 feet.",
+                "name": "Plague Spore",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that fails the save against the aura becomes sickened for 1 round. A creature that remains sickened in this way for 2 consecutive rounds becomes fatigued.",
+                "name": "Sickening Cloud",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a plague ooze is the target of a remove affliction spell, the ooze takes 7d10 damage and loses its ooze plague and plague spore abilities for 1d4+1 rounds. With a successful Fortitude saving throw, the ooze halves the damage and regains its abilities after only 1 round.",
+                "name": "Vulnerable to Remove Affliction",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Ooze Plague",
+                "type": "stat_block_section",
+                "affliction_type": "disease (contact or injury)",
+                "save": "Fortitude DC 15",
+                "track": "mental and physical (special)",
+                "frequency": "1/day",
+                "effect": "A creature that has this disease, even in its latent state, is contagious and can transmit the ooze plague through contact with others; the victim takes all penalties from progressing on the physical and mental disease tracks; at the impaired state and beyond, penalties from the weakened state become permanent until the victim benefits from a remove affliction or restoration spell; death from this disease causes the corpse to transform into a plague ooze 24 hours later.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #12: Heart of Night",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #12: Heart of Night pg. 55",
+                "alt": "Starfinder #12: Heart of Night pg. 55",
+                "href": "https://paizo.com/products/btq01w1s?Starfinder-Adventure-Path-12-Heart-of-Night"
+            },
+            "page": 55
+        }
+    ]
+}

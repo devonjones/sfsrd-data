@@ -1,0 +1,321 @@
+{
+    "name": "Necrovite",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Long ago, when the native humanoids of Eox\u2014called elebrians\u2014destroyed two neighboring planets, the backlash devastated their own world as well, forcing them to turn to necromancy to survive. The most powerful spellcasters among these survivors combined their advanced technology with the ancient magical traditions of lichdom to achieve immortality in the form of eternal undeath. These were the first necrovites, and along with their colleagues who sought refuge in other forms of undeath, they took control of their ravaged planet to become the first bone sages, Eox\u2019s notoriously aloof heads of state.<br/><br/> Becoming a necrovite is a long and arduous process, but the crux of the ritual involves extracting the spellcaster\u2019s consciousness and soul and imprisoning them in a technomagical relic called an electroencephalon. The spellcaster dies but becomes undead, and as long as her electroencephalon remains intact she can continue her existence without fear of the passage of time.<br/><br/> In addition to constructing an electroencephalon to house her soul, a prospective necrovite must also research and learn the proper ritual to transfer her life force into the receptacle and prepare her body for the transformation into undeath. This ritual is unique to each body and soul\u2014what works for one necrovite will not work for another\u2014and likely has deleterious effects. The exact methods for each spellcaster\u2019s transformation into a necrovite are left to the GM\u2019s discretion, but the process should involve expenditures of hundreds of thousands of credits, multiple dangerous quests, and many difficult skill checks over the course of months, years, or decades.<br/><br/> The above stat block represents an elebrian necrovite\u2014a necrovite formed from one of Eox\u2019s original humanoid inhabitants\u2014but other races can become necrovites as well, using the template graft in the sidebar."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Necrovite",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Spellcaster",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (life) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 186,
+            "rp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 10",
+                "rejuvenation (1d8 days)"
+            ],
+            "immunities": [
+                "cold",
+                "electricity",
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "perihelion laser pistol",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d4+13",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "undead mastery"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": null,
+            "int": 8,
+            "wis": 4,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 28
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Eoxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Sarcesian"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "limited telepathy 30 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "magic hacks (flash teleport, tech countermeasures)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "d-suit IV (gray force field [20 temporary HP])"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>Eoxian wrackstaff</i>"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "perihelion laser pistol with 6 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>spell gem of dominate person</i>"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>spell gem of teleport</i>"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Eox)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any creature that comes within 30 feet of a necrovite is fatigued unless it succeeds at a DC 21 Fortitude saving throw. A creature that is already fatigued suffers no additional effect. A creature that successfully saves cannot be affected again by the same necrovite\u2019s aura for 24 hours.",
+                "name": "Fatigue Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a necrovite is destroyed, its electroencephalon immediately begins to rebuild the creature\u2019s body nearby and download the necrovite\u2019s consciousness into it. After 1d8 days, the necrovite wakens fully healed (albeit without any gear it left behind on its old body).",
+                "name": "Rejuvenation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a necrovite can cause one undead creature within 50 feet to fall under its control as per <i>control undead</i> (Will DC 21 negates). This control is permanent for unintelligent undead; an undead creature with an Intelligence score can attempt an additional saving throw each day to break free. A creature that successfully saves cannot be affected again by the necrovite\u2019s undead mastery for 24 hours. A necrovite can control a group of undead whose total CR is no greater than twice its CR (26 for the typical necrovite).",
+                "name": "Undead Mastery",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 80",
+                "alt": "Alien Archive pg. 80",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 80
+        }
+    ]
+}

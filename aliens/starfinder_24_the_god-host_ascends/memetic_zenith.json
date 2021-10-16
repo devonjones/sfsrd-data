@@ -1,0 +1,279 @@
+{
+    "name": "Memetic Zenith",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Like any other form of information, widely circulated pop culture leaves its imprint in the Akashic Record. On rare occasions, these imprints grow and manifest as memetic zeniths. Each memetic zenith is a unique, living idea that attempts to foster the ideology that brought them to life."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Memetic Zenith",
+        "type": "stat_block",
+        "cr": "15",
+        "role": "Spellcaster",
+        "xp": 51200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Good",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "good"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 26
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 228,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "defensive_abilities": [
+                "digital rejuvenation (1d8 days",
+                "DC 41)"
+            ],
+            "sr": "26",
+            "weaknesses": [
+                "network dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "sonic disruption",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+15",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 5,
+            "con": 5,
+            "int": 5,
+            "wis": 5,
+            "cha": 9,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 26,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+34 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 26
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "truespeech"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "digital telepathy 300 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any urban",
+            "organization": "solitary, pair, or realization (3\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The essence of a memetic zenith is stored within the popular media that created it. When its incorporeal form is slain, the memetic zenith goes into a state of dormancy. It can be truly destroyed only if someone spends 1 hour on an infosphere deleting or discrediting the references and succeeds at a Culture check (DC = 10 + the memetic zenith\u2019s total Culture bonus). Alternatively, a creature can attempt the same check to reinvent the memetic zenith, changing its alignment by one step and altering its subtypes accordingly. Regardless of intent, only one of these checks can be attempted per day targeting a given memetic zenith. If not destroyed, a memetic zenith reawakens fully healed in 1d8 days.",
+                "name": "Digital Rejuvenation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A memetic zenith can speak telepathically with digital devices, as well as with creatures that have the android or technological subtypes.",
+                "name": "Digital Telepathy",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A memetic zenith targets EAC with its touch; this attack\u2019s damage has the force descriptor.",
+                "name": "Digitizing Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A memetic zenith requires access to a digital network to project its incorporeal body. If no digital devices are within range of the memetic zenith\u2019s digital telepathy, the memetic zenith shunts to the nearest device in the same star system and takes damage equal to half their total Hit Points. If no device exists in the same star system or within a similar range, the memetic zenith is slain.",
+                "name": "Network Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A memetic zenith\u2019s sonic disruption has a range increment of 30 feet. As a full action, a memetic zenith can use this ability and apply the blast weapon special property to it. This attack\u2019s damage has the force descriptor.",
+                "name": "Sonic Disruption",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #24: The God-Host Ascends",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #24: The God-Host Ascends pg. 56",
+                "alt": "Starfinder #24: The God-Host Ascends pg. 56",
+                "href": "https://paizo.com/products/btq01zq8?Starfinder-Adventure-Path-24-The-GodHost-Ascends"
+            },
+            "page": 56
+        }
+    ]
+}

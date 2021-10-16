@@ -1,0 +1,317 @@
+{
+    "name": "Oracle of Oras",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Part gene repository, part temple, and part environmental guardian, an oracle of Oras is a sacred tree that presides in biodiverse ecosystems as a protector and cataloger of evolving species and rare genomes. Although most commonly found in dense forests and jungles, oracles of Oras can be found in almost every kind of terrain and on a number of planes. As saplings, they adapt themselves to wherever they set down roots, from land to sea to far stranger environs. They flourish in places sacred to Oras: those that are biodiverse, breathtaking, and in a state of constant flux. The oracles believe that adaptation and evolution are sacred paths to meeting new challenges, and they offer guidance and protection to life forms and ecosystems that embody such change. A typical oracle of Oras is 60 feet tall and 20 feet in diameter, but they can grow larger or smaller depending on their environment.<br/><br/> Since they are rooted, oracles of Oras welcome visitors from afar, and they send their seedlings far and wide with trusted emissaries so that their offspring can experience change, explore new horizons, and help life reshape itself. They spur growth and trade sacred genetic information, helping those that they protect change and evolve to meet new challenges. Rumors suggest that the trees are indirectly responsible for some of the most potent and beneficial mutations in recent history, such as the creation of stable bleachling gnomes. Oracles of Oras do not claim individual names, but sapient creatures often given them titles of esteem based on their location, such as Oracle of Daza.<br/><br/> Oracles of Oras have been found floating in the clouds of Bretheda, Liavara, and other gas giants, drawing nourishment from the mists around them. On Castrovel, several grow deep in the jungles of Ukulam, and one resides near the city of El, where it engages in discourse with scientific and spiritual scholars. Others have been found nestled among coral reefs in the oceans of Melos and Kalo-Mahoi and thriving in the radioactive fields outside Daza in Akiton. Whatever its environ, each tree grows far from others of its species, sometimes separated by entire continents or even planets from the next nearest of its kind. The trees are gregarious, showing a great interest in biotechnicians, scholars, xenodruids, and new sapient species. Where oracles of Oras grow larger than the endemic sapient life, they have formed themselves into elaborate treehouses that house their followers and honored guests. These treehouses serve as dormitories and guesthouses, constantly adapting themselves to serve the needs of their residents. In return, some inhabitants pledge themselves to the protection of the tree, serving as an unofficial security force. Other visitors are more transitory, traveling from one oracle to another via their verdant portals and sharing news and offerings of genetic information.<br/><br/> Oracles of Oras sometimes find themselves in conflict with sapient creatures that are particularly exploitative of their environment. Many a construction project and city expansion that would threaten a delicate ecosystem near an oracle of Oras has met with mysterious catastrophe severe enough to end the endeavor. The trees also freely offer up genetic variants of both staple crops and rare or endangered animal and plant life, driving down the value of those offered by companies that would profit from patented life forms.<br/><br/> On occasion, oracles have been known to offer sanctuary to rogue scientists, political prisoners, or those labeled eco-terrorists, protecting such wards at any cost. More rarely, an oracle of Oras can go rogue, valuing change and experimentation so much that it deliberately imbalances an ecosystem or tries to transform inhabitants against their will. In such cases, local governments\u2014or even other oracles in the same network\u2014usually seek adventurers or other third parties to resolve these disputes."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Oracle of Oras",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Spellcaster",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": -2
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "aura": "reverence (60 ft., Will DC 21)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (life) 120 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 190,
+            "rp": 7,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 27
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "defensive_abilities": [
+                "reactive resistance",
+                "regeneration 10 (acid)",
+                "unflankable"
+            ],
+            "dr": [
+                "10/\u2014"
+            ],
+            "immunities": [
+                "combat maneuvers",
+                "plant immunities"
+            ],
+            "resistances": [
+                "cold 10",
+                "electricity 10",
+                "fire 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "0 ft.",
+                        "movement_type": "walk",
+                        "value": 0
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "count": 4,
+                    "name": "branches",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+17",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "25 ft. with branch"
+                    }
+                ],
+                "value": "20 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "grasping vines"
+                }
+            ],
+            "connection": "xenodruid"
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": -2,
+            "con": 6,
+            "int": 4,
+            "wis": 8,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 23
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "speak with animals"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 60 ft."
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "gene transfer"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "share resistance"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "verdant portal"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or treehouse (1 plus 1\u201310 followers of other species)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action, an oracle of Oras can access its stores of genetic information and provide a burst of psychically encoded transformation to all allies in its <i>telepathic bond</i> that are living creatures. Those allies gain two of the following abilities for 1 minute: blindsense (life; 60 ft.), blindsight (life; 30 ft.), burrow (40 ft.), darkvision (60 ft.), damage reduction (5/\u2014), fly (40 ft.; Su, average), resistance 10 to one type of energy damage, swim (40 ft.), or water breathing. The oracle of Oras can spend a Resolve Point to allow these adaptations to last 8 hours instead.",
+                "name": "Gene Transfer",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Oracles of Oras have a divine connection with the god of change, granting them the mystic class graft with the xenodruid connection.",
+                "name": "Mystic Connection",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that enters or starts its turn in the area must succeed at a DC 21 Will save or gain the fascinated condition for 2d4 rounds. A creature that succeeds at the save is immune to this aura for 24 hours. This is a mind-affecting emotion effect.",
+                "name": "Reverence",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action, an oracle of Oras can allow up to six creatures to travel through itself to any willing oracle of Oras in the same star system. All the creatures in the group must be physically touching one another, and they must all be traveling to the same destination.",
+                "name": "Verdant Portal",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 74",
+                "alt": "Alien Archive 3 pg. 74",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 74
+        }
+    ]
+}

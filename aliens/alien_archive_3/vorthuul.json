@@ -1,0 +1,275 @@
+{
+    "name": "Vorthuul",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "While it is unknown exactly what happens to any starfarer unfortunate enough to be pulled into a black hole, most scientists are certain that nothing can survive the multitude of gravitational forces that batter anything that passes the event horizon. However, reports of strange undead creatures appearing on starships and space stations near these deadly cosmic phenomena have led kasatha mystics aboard the Idari to conjecture that the terrible agony undergone by those consumed by a black hole sometimes allows their spirits to escape the phenomenon and continue on to wreak havoc among the living. The kasathas call such entities vorthuuls, though they are sometimes referred to as singularity wraiths by others. A vorthuul is a strange apparition that appears to be composed of two intertwined forms: one a squat, obsidian skeleton that emanates calm, the other the phantom visage of a creature eternally screaming in unbearable pain as it is stretched to impossible lengths. Neither of these forms ever separates from the other, though one spirit always seems to have dominance at any given moment, pulling along the other with its whims.<br/><br/> Kasatha sages suggest that these two entangled spirits were once a single living creature that suffered the extreme misfortune of being pulled inexorably into the mouth of a black hole. In this moment, where time and reality get twisted, the black hole creates two versions of the same creature: one that is tortuously extended vertically while being compressed horizontally, and the other that is crushed into infinite density as it is drawn into the singularity. Both versions of the original creature are horribly killed, of course, and their spirits are linked to one another through quantum entanglement.<br/><br/> While no one knows precisely how these two versions of the same creature\u2019s spirit combine to form an undead vorthuul, those who travel the void know the true dangers these creatures present. Seemingly able to harness the gravitational forces of a black hole, a vorthuul is a horrifying sight for a party of adventurers hoping to loot an abandoned starship or mine precious metals from the surface of an asteroid.<br/><br/> A vorthuul can appear on a starship, research station, or other celestial object when it passes close to a black hole (though not close enough to be caught by the singularity\u2019s gravitational pull), seemingly manifesting as an avatar of the black hole itself. A singularity that has swallowed countless souls might be \u201chome\u201d to a large group of vorthuuls, making the region of space near that black hole particularly dangerous to living creatures. Such collections of vorthuuls often go unreported if no one makes it out of the area alive, leading to rumors of \u201chaunted\u201d stretches of space.<br/><br/> Solarians\u2014especially those of the kasatha species\u2014are especially aware of and concerned with the threat vorthuuls pose. Some solarians believe that many vorthuuls were once members of the same tradition who became disproportionately attuned with graviton forces. Their connection with the cosmic forces of gravity and light became imbalanced, contributing to their rebirth as vorthuuls, and they now seek out living solarians to completely destroy them.<br/><br/> Other groups, such as the Cult of the Devourer, respect the vorthuuls\u2019 uncanny power, viewing them as avatars of their god of infinite destruction, and may even attempt to capture a vorthuul in an attempt to unleash its wrath upon their foes."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Vorthuul",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Combatant",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 165,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "quantum duality"
+            ],
+            "immunities": [
+                "undead immunities"
+            ],
+            "weaknesses": [
+                "event horizon"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "gravity blast",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+10",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "stunned"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "gravitational maelstrom"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "voidheart"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 5,
+            "con": null,
+            "int": 0,
+            "wis": 3,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 24,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+32 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "vacuum",
+            "organization": "solitary, pair, or supermass (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Vorthuuls bend light toward themselves, including that produced by laser weapons. Attacks made with laser weapons against a vorthuul gain a +4 circumstance bonus to the attack roll and ignore the miss chance from concealment.",
+                "name": "Event Horizon",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Three times per day as a full action, a vorthuul can take on the crushing gravitational properties of a black hole for 1d4+1 rounds, during which time the vorthuul\u2019s speed is reduced by half. At the end of the vorthuul\u2019s turn, creatures the same size or smaller and unattended objects of no more than light bulk within 30 feet of the vorthuul are drawn toward it. The vorthuul makes a single special combat maneuver with an attack bonus of +22, comparing the result to each creature\u2019s KAC + 4. If successful, the creature is pulled 5 feet closer to the vorthuul plus 5 additional feet for every 5 by which the result exceeds the target\u2019s KAC + 4. Unattended objects are automatically moved 10 feet closer to the vorthuul each round. While this ability is active, any creature that begins its turn adjacent to the vorthuul takes 2d10+10 bludgeoning damage (Fortitude DC 17 half); unattended objects automatically take this damage when they are moved adjacent to the vorthuul. In addition, any creature within 30 feet of the vorthuul while this ability is active has its speed reduced by half when it moves away from the vorthuul or doubled when it moves toward the vorthuul. A creature that moves neither toward nor away from the vorthuul during this time moves at its normal speed.",
+                "name": "Gravitational Maelstrom",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A vorthuul\u2019s gravity blast has a range increment of 60 feet.",
+                "name": "Gravity Blast",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Vorthuuls are constantly shifting between the forms of two spirits that are forever intertwined through quantum entanglement: one an apparition that continually suffers in agony as its physical form is stretched by the black hole\u2019s tidal forces, the other a tranquil, compressed mass created by a singularity\u2019s crushing abyss. The vorthuul decides which of its two forms is dominant at the start of combat and can switch between the forms as a move action.<br/><br/><i>Form of Crushing Tranquility:</i> The vorthuul gains immunity to bludgeoning damage and force effects, as well as a +4 circumstance bonus to Will saves.<br/><br/><i>Form of Everburning Essence:</i> The vorthuul gains elemental immunities and ferocity.",
+                "name": "Quantum Duality",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a vorthuul can attempt to touch an adjacent creature with an attack bonus of +22 against the target\u2019s EAC to channel the torment of being consumed by a singularity onto them. If the target fails a DC 19 Fortitude save, it is immediately pinned and staggered by the crushing agony for 1 minute. As a standard action during its turn, the creature can attempt a DC 35 Acrobatics check to escape or a DC 25 Strength check to break through the invisible bonds of gravity, removing the pinned and staggered conditions.",
+                "name": "Voidheart",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 128",
+                "alt": "Alien Archive 3 pg. 128",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 128
+        }
+    ]
+}

@@ -1,0 +1,268 @@
+{
+    "name": "Impostor",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "From the fumbling fool to the universally respected prodigy, every being suffers from moments of doubt when they believe all of their successes are due only to luck and that they will soon be revealed to be the frauds they are. Such thoughts usually pass quickly, but sometimes they can leave a psychic impression on the Astral Plane. When a creature\u2019s lack of confidence returns again and again, these imprints grow strong enough to create a rare outsider known as an impostor\u2014a creature that feeds on self-doubt.<br/><br/> An impostor takes on a form reminiscent of the creature whose doubt created it. However, it is a nightmarish, funhouse-mirror version of the creature, with an elongated face and hollow eyes. When an impostor is created, it can push its way onto the Material Plane, its only thought to end its progenitor\u2019s life. As a creature born from the dark places of the mind, an impostor can manifest doubt as a weapon: a cold blade that seems to absorb light.<br/><br/> Once an impostor has finished off its creator, it seeks ways to undo their accomplishments. Though an impostor is rarely mistaken for its progenitor, it knows their every shameful secret and worst impulses, and it uses this knowledge to further its cruel agenda. Once it thoroughly spoils a person\u2019s reputation, the impostor fades from existence, its energy returning to the Astral Plane."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Impostor",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 21
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 113,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "enhance doubt"
+            ],
+            "weaknesses": [
+                "vulnerability to self-confidence"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "doubt blade",
+                    "bonus": 18,
+                    "dc": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+9",
+                            "damage_type": "Cold & Slashing",
+                            "damage_type_text": "C & S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "mocking visage"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 1,
+            "int": 2,
+            "wis": 2,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common and up to 2 others"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Astral Plane)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, an impostor can manifest a blade made of pure doubt and cold darkness in its hand. This blade exists only when the impostor wields it, and they can dismiss it at will (this takes no action).",
+                "name": "Doubt Blade",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that fails to hit an impostor is filled with self-doubt and must succeed at a DC 18 Will saving throw or gain the shaken condition until the end of its next turn. This is a mind\u2011affecting effect.",
+                "name": "Enhance Doubt",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, an impostor can alter its face into a twisted version of the face of a creature within 15 feet that can see it. The targeted creature must then succeed at a DC 18 Will saving throw or gain the flat-footed condition against the impostor until the beginning of the impostor\u2019s next turn. This is a mind-affecting, sense-dependent effect.",
+                "name": "Mocking Visage",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An impostor takes half again as much damage (+50%) when it takes damage from a creature benefiting from a morale bonus.",
+                "name": "Vulnerability to Self-Confidence",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #23: Hive of Minds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #23: Hive of Minds pg. 55",
+                "alt": "Starfinder #23: Hive of Minds pg. 55",
+                "href": "https://paizo.com/products/btq01zpm?Starfinder-Adventure-Path-23-Hive-of-Minds"
+            },
+            "page": 55
+        }
+    ]
+}

@@ -1,0 +1,261 @@
+{
+    "name": "Psychic Abomination",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "No one is certain where psychic abominations come from or what they want. Many disagree on what the creatures even look like. The only commonality linking these accounts are the distinctive abilities of psychic abominations. They can become invisible at will, unleash blasts of concussive force, and drain the energy from even undead creatures. But what is most disquieting about them is the constant susurrus of half-formed words and upsetting noises that surrounds an invisible psychic abomination. Scholars have yet to pinpoint the source of these noises, but some believe they are the voices of the abomination\u2019s previous victims."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Psychic Abomination",
+        "type": "stat_block",
+        "cr": "11",
+        "role": "Expert",
+        "xp": 12800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (thought) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 170,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal"
+            ],
+            "weaknesses": [
+                "vulnerability to electricity",
+                "vulnerability to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "concussive blast",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": null,
+            "dex": 8,
+            "con": 1,
+            "int": 2,
+            "wis": 3,
+            "cha": 5,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 20,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+28 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a psychic abomination can unleash a focused beam of invisible force against a single target within 60 feet. This attack has the force descriptor.",
+                "name": "Concussive Blast",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A psychic abomination\u2019s incorporeal touch wracks a victim\u2019s body. In addition to the bludgeoning damage, a target must succeed at a DC 20 Fortitude saving throw or gain the fatigued condition; if the attack is a critical hit, the target is instead exhausted on a failed save. In addition, the psychic abomination regains an amount of Hit Points equal to its CR (11 for most psychic abominations) when its target fails this save. If the psychic abomination strikes an already-fatigued creature and that creature fails its saving throw, its condition doesn\u2019t worsen, but the abomination still heals. The fatigued or exhausted condition gained from these attacks ends when the affected creature takes a 10-minute rest to regain Stamina Points.",
+                "name": "Draining Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hearing creature within 30 feet of an invisible psychic abomination must succeed at a DC 20 Will saving throw or be shaken for 5d6 rounds. Once a creature has been exposed to a psychic abomination\u2019s unsettling whispers (whether or not the creature succeeds at its saving throw), it cannot be affected by the same psychic abomination\u2019s unsettling whispers for 24 hours. This is an emotion, fear, mind-affecting, and sense-dependent effect.",
+                "name": "Unsettling Whispers",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #23: Hive of Minds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #23: Hive of Minds pg. 58",
+                "alt": "Starfinder #23: Hive of Minds pg. 58",
+                "href": "https://paizo.com/products/btq01zpm?Starfinder-Adventure-Path-23-Hive-of-Minds"
+            },
+            "page": 58
+        }
+    ]
+}

@@ -1,0 +1,255 @@
+{
+    "name": "Lawless One",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Phantasmal creatures resembling inevitables, lawless ones are construct-like humanoids of spinning gears that brim with chaotic energy. However, their similarities to denizens of the lawful plane of Axis are merely physical. Where inevitables are charged with maintaining order, lawless ones seek the exact opposite, looking to corrupt the rule of law, disrupt long-held class structures, and destroy status quos. They do this by targeting societal leaders, whether they be duly elected government officials or self-made titans of industry. When not on the attack, lawless ones bide their time, using their invisibility and incorporeality to stay hidden. After they strike (and usually kill) their targets, they disappear without a trace, leading many to believe their victims were taken out by skilled assassins or other non-supernatural threats.<br/><br/> As such, little is actually known about lawless ones, especially regarding their origins. 25 years ago, an anonymous user of a fringe infosphere community claimed that AbadarCorp unintentionally created the lawless ones after trying to use blueprints somehow stolen from Axis to create their own inevitables, but the post was quickly expunged. The rumor still persists, however, despite AbadarCorp executives\u2019 constant denials."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Lawless One",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Spellcaster",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "chaotic"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 170,
+            "rp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 25,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal",
+                "void adaptation"
+            ],
+            "immunities": [
+                "acid",
+                "cold",
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "susceptible to order"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "entropic touch",
+                    "bonus": 20,
+                    "dc": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d12+12",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "reality revisitation"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": null,
+            "dex": 5,
+            "con": 0,
+            "int": 0,
+            "wis": 8,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 27,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+35 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 27
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "truespeech"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or anarchy (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Whenever a creature succeeds at its initial saving throw against one of the lawless one\u2019s spell-like abilities, the lawless one can spend 1 Resolve Point as a reaction in an attempt to tweak reality in its favor. The target creature must then reattempt its saving throw against the spell-like ability at the start of its next turn. If it fails, apply the effects of the spell to the creature as if it had failed its initial saving throw.",
+                "name": "Reality Revisitation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A weapon affixed with an axiomatic weapon fusion bypasses a lawless one\u2019s incorporeal defenses as if it were a <i>ghost killer</i> weapon.",
+                "name": "Susceptible to Order",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #29: The Cradle Infestation",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #29: The Cradle Infestation pg. 58",
+                "alt": "Starfinder #29: The Cradle Infestation pg. 58",
+                "href": "https://paizo.com/products/btq021f1?Starfinder-Adventure-Path-29-The-Cradle-Infestation"
+            },
+            "page": 58
+        }
+    ]
+}

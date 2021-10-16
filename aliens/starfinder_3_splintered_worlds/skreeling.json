@@ -1,0 +1,265 @@
+{
+    "name": "Skreeling",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Brutal and shrewd, skreelings are the immature offspring of skreesires (see page 57), but they have not yet developed the full mental abilities of their progenitors. Skreeling siblings hunt in packs, pooling their nascent fighting abilities, and they are much stronger when they work together. Skreeling hosts, as xenobiologists call these packs, often live in rocky crannies or caves where they can better protect themselves from threats until they reach adulthood. Although they lack telepathy and the physical characteristics that would allow them to speak, skreelings can emit shrill, distinctive battle cries, often to distract prey or frighten predators away from their lairs.<br/><br/> Skreelings are typically found on rocky planetoids with thin atmospheres, and they almost always lair within 100 yards or so of a parent skreesire\u2019s territory. Skreelings hatch from eggs their parent has laid in corpses, gathered brush, or nests of sand; they then work together to survive until they reach adulthood. Skreelings are omnivorous and even ingest ash, metal shavings, or wood when regular food is scarce. Once the vicious creatures reach adulthood, their expanded intellects combined with their burgeoning appetites for territory often see siblings turn on each other until the host eventually disperses and the individual skreelings search for new lairs.<br/><br/> Skreelings typically stand about 3 feet tall, weigh about 30 pounds, and have a wingspan of about 3-1/2 feet\u2014 although, as the creatures grow larger, their wings lose their functionality, their lower legs atrophy and drop off, and their tails develop into multiple ambulatory tentacles. This is a very gradual process that begins the moment they are born.<br/><br/> Occasionally, a skreeling becomes stunted in its development, growing too large to fly but not yet having a skreesire\u2019s psychic faculties. These mutants\u2014known as \u201cskreemules\u201d\u2014are often killed by their siblings, but they sometimes escape to live miserable solitary lives, crawling through the hills on their malformed tentacles and snapping at any potential prey.<br/><br/> Though uncommon, skreeling infestations near civilized settlements are treated more like natural hazards to be avoided than pests to be eliminated. Some residents even derive a kind of pride from these annoyances, going so far as to name geological features of the area or local businesses after the creatures. These citizens make sure to warn travelers and newcomers about the skreeling lairs, as much to keep the flying aberrations safe as the people they caution. However, they are quick to turn on the skreelings if they get too aggressive and hold no such love for their far more dangerous adult forms."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Skreeling",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Expert",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 35,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "dr": [
+                "5/cold iron"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+4",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+4",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "cluster"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 2,
+            "int": 1,
+            "wis": -1,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+18 in rocky terrain"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any hills or mountains",
+            "organization": "pair, trio, or host (4-8)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Skreelings are born and grow to adulthood in small packs, and they are more comfortable fighting alongside other skreelings, including their siblings. When two or more skreelings flank a single creature, each skreeling attacking that creature receives an additional +1 circumstance bonus to attack rolls. When two or more skreelings flank a single creature, each skreeling deals 1 point of bleed damage in addition to its normal damage on a successful hit. This bleed damage stacks with bleed damage from other skreelings, but not with itself. (For instance, two skreelings that flank a single creature each deal 1 point of bleed damage every round that they successfully attack, but each individual skreeling can never deal more than 1 bleed damage per round.)",
+                "name": "Cluster",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #3: Splintered Worlds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #3: Splintered Worlds pg. 56",
+                "alt": "Starfinder #3: Splintered Worlds pg. 56",
+                "href": "https://paizo.com/products/btpy9xa2?Starfinder-Adventure-Path-Splintered-Worlds"
+            },
+            "page": 56
+        }
+    ]
+}

@@ -1,0 +1,231 @@
+{
+    "name": "Troll Polyp",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A troll polyp is a mass of tissue with predatory awareness, resulting from horrific gray experiments intended to create trolls that not only would regenerate severed limbs, but whose severed limbs would also grow into new trolls. These experiments only partially succeeded, resulting in the creation of quantum trolls and troll polyps, ooze-like creatures that can operate independently of the troll they came from. Some trolls or polyps exposed to strange energies or gates to other planes, especially the Abyss, form tumors that rip free as a new troll polyp every 2 to 3 weeks. Such polyps instinctively avoid attacking their progenitor or one another but otherwise show no loyalty.<br/><br/> Troll polyps are barely sentient, lacking a life cycle or cognitive functions. They are hungry and aggressive, with little motivation beyond the desires to kill, eat, and assimilate organic matter into themselves, and they smash anything that seems to be an artificial construction. Troll polyps mindlessly attack life\u2011forms that are whole and ordered, and they also are driven to break technological objects, although their motivations, if any, are unknown. Without targets to destroy, troll polyps seek food and warm nooks to cram themselves into.<br/><br/> A typical troll polyp is 3 feet tall and weighs 45 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Troll Polyp",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "giant"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 35,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 14
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "defensive_abilities": [
+                "versatile regeneration 5 (see text)"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "versatile slam",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Bludgeoning, Piercing, or Slashing",
+                            "damage_type_text": "B, P, or S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "biomass entanglement"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": 1,
+            "int": -4,
+            "wis": -1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 8
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or rout (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A troll polyp\u2019s slam splatters regenerating biomass onto that target. The target must succeed at a DC 12 Reflex saving throw (DC 14 if the troll polyp scored a critical hit) or become entangled until it escapes by succeeding at a DC 15 Acrobatics or Athletics check made as a move action. The biomass also releases its target if the mass takes 5 damage from one attack (AC 10).",
+                "name": "Biomass Entanglement",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A troll polyp\u2019s regeneration stops functioning for 1 round only if the polyp takes simultaneous damage from more than one energy damage type during the same turn or takes damage of three or more energy types in a given round. If one foe readies an action to attack the polyp when another foe does, the two attacks are treated as occurring on the same turn for this ability\u2019s purposes.",
+                "name": "Versatile Regeneration",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a troll polyp hits with its slam attack, it can deal one of the following kinetic damage types: bludgeoning, piercing, or slashing.",
+                "name": "Versatile Slam",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #26: Flight of the Sleepers",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #26: Flight of the Sleepers pg. 61",
+                "alt": "Starfinder #26: Flight of the Sleepers pg. 61",
+                "href": "https://paizo.com/products/btq01zue?Starfinder-Adventure-Path-26-Flight-of-the-Sleepers"
+            },
+            "page": 61
+        }
+    ]
+}

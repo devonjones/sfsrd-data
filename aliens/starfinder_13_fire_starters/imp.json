@@ -1,0 +1,304 @@
+{
+    "name": "Imp",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Imps are among the lowest-ranked of the fiends of Hell. However, they serve an important role in corrupting mortals. Easy to summon to the Material Plane, imps willingly form bonds with spellcasters who call them. While on the Material Plane, an imp influences anyone it can to perform diabolical deeds. If serving a mortal master, the imp plays the part of a loyal servant, offering advice, infernal foresight, and even mystic tutelage. The imp\u2019s true goal, however, is the delivery of as many souls as possible into damnation.<br/><br/> An imp is also the devil most likely to be found freely roaming the Material Plane. Without help, an imp has no means of returning to Hell. Therefore, a masterless imp remains and continues its Hell-bound duties. The creature insinuates itself into a new situation, either with a different master or a group of wicked mortals. Among weaker creatures, an imp might rise to a leadership role. But such a fiend is more likely to be a dark influence on a stronger leader. In this way, the imp can direct a group toward depravity but take no blame for any failings.<br/><br/> An imp is about 2 feet tall and weighs nearly 13 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Imp",
+        "type": "stat_block",
+        "cr": "2",
+        "alien_family": "Devil",
+        "role": "Spellcaster",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Lawful Evil",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "devil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "detect magic"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see in darkness"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 18,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 12,
+                "kac": 13
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 2"
+            ],
+            "dr": [
+                "5/good or silver"
+            ],
+            "immunities": [
+                "fire",
+                "poison"
+            ],
+            "resistances": [
+                "acid 10",
+                "cold 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 50 ft.",
+                        "movement_type": "fly",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "sting",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "imp poison"
+                        }
+                    ]
+                }
+            ],
+            "space": "2-1/2 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 4,
+            "con": 0,
+            "int": 1,
+            "wis": 0,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+15 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 7
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "limited telepathy 30 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "change shape (animal)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Hell)",
+            "organization": "solitary, pair, or murder (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An imp can assume the appearance of a Tiny beast, such as a rat, raven, or spider. From this form, in addition to normal benefits of this ability, the imp can gain a climb speed of up to 30 feet. While in its new form, the imp can have a different sort of natural attack. Damage from that attack might be of another kinetic type but retains the dice and poison of the imp\u2019s sting.",
+                "name": "Change Shape",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Imp Poison",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 13",
+                "track": "Dexterity",
+                "frequency": "1/round for 6 rounds",
+                "cure": "1 save",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #13: Fire Starters",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #13: Fire Starters pg. 56",
+                "alt": "Starfinder #13: Fire Starters pg. 56",
+                "href": "https://paizo.com/products/btq01woc?Starfinder-Adventure-Path-13-Fire-Starters"
+            },
+            "page": 56
+        }
+    ]
+}

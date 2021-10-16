@@ -1,0 +1,244 @@
+{
+    "name": "Hobgar",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Hobgars are small, simian pests native to the misty forests of the planet Nakondis. The arboreal creatures have large eyes, flat noses, and wide mouths. Most hobgars are covered with short tufts of blue and brown fur, which is thickest on the head, chest, and upper arms. They have long, dexterous fingers and toes, with opposable thumbs on both hands and feet. Hobgars are exceptionally skillful climbers, able to fold their bones\u2014including their skulls\u2014to fit into narrow spaces. Most hobgars are 2 feet long and weigh 8 pounds, although rumors of significantly larger hobgars persist despite a lack of solid substantiating evidence.<br/><br/> Hobgars are immune to the electrified mist that pervades Nakondis. Instead, they store ambient electrical charge in specialized skin cells, communicating with each other by modulating this energy to silently wave their fur. Hobgars can also release bits of their stored energy in short-range jolts, but a hobgar removed from Nakondis loses the ability to discharge its electricity ray after 24 hours.<br/><br/> Hobgars have no need to drink, as their wide, soft noses draw all the moisture they need from the misty air. They are omnivorous and can consume a startling variety of objects for nourishment. While hobgars generally subsist on insects and fruit, the creatures particularly relish the taste of conductive metals, which they gnaw with sawlike motions of their two rows of teeth.<br/><br/> Social by nature, hobgars congregate in small packs that interact frequently. Packs coexisting in an area freely share information about food sources and potential dangers, and an adult hobgar will choose its mate from a neighboring pack, never from its own. Hobgar females bear live young, but infants are too frail to survive in the outside world for the first several hours after birth. To shelter her young, a hobgar in labor finds a source of protected warmth, such as a stout log or the corpse of a larger creature, and births her litter into the object. She then waits as the infants consume the object from within, quickly gaining size and strength until they burst out in an explosion of electrical energy.<br/><br/> Hobgars are fearless and curious, so they are a persistent nuisance to explorers on Nakondis. They sneak into camps to take apart equipment, gnaw on cables and batteries, and steal small objects, and their social nature means one incursion will inevitably draw other hobgars to join the fun. Hobgars aren\u2019t normally aggressive, preferring to flee from danger, but they attack if mistreated or encountered while tending to their young. A few of the colonists on Nakondis have attempted to domesticate hobgars, but the simians are very headstrong and reluctant to take to the training."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hobgar",
+        "type": "stat_block",
+        "cr": "1/3",
+        "role": "Expert",
+        "xp": 135,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 3
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 10,
+                "kac": 11
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                }
+            },
+            "defensive_abilities": [
+                "evasion"
+            ],
+            "immunities": [
+                "electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electricity ray",
+                    "bonus": 3,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d3",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "space": "2-1/2 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": 0,
+            "int": -4,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 3,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+11 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 3
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any forests (Nakondis)",
+            "organization": "solitary, pair, or pack (3\u201320)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hobgar can discharge a ray of electricity at a single target as a standard action. This attack has a maximum range of 20 feet.",
+                "name": "Electricity Ray",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "This ability functions as the operative class feature of the same name.",
+                "name": "Evasion",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #7: The Reach of Empire",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #7: The Reach of Empire pg. 57",
+                "alt": "Starfinder #7: The Reach of Empire pg. 57",
+                "href": "https://paizo.com/products/btpya1rp?Starfinder-Adventure-Path-7-The-Reach-of-Empire"
+            },
+            "page": 57
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+    "name": "Magmin",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The mischievous magmins seek places where their nativePlane of Fire touches the Material Plane, allowing them toslip between planes. When a magmin appears on the MaterialPlane, it does so in places of immense heat, such as withinlava. An influx of magmins can disrupt magma flows, causingvolcanic eruptions and earthquakes.<br/><br/>Though few mortals know what causes magmins to begintheir exodus from their home plane, the truth is thatmagmins aren\u2019t very imposing in comparison to othercreatures that inhabit the Plane of Fire. Such creaturesregularly push magmins around or annex theirterritory, forcing magmins to migrate, sometimes inlarge groups. Ousted magmins are untrusting andinquisitive, bombarding intruders with questionsin a harsh tone. If magmins dislike the answers tothese interrogations, they can become aggressive,even against stronger beings.<br/><br/>Magmin settlements can be found within the protective crustof magma pillars caused by geyser-like eruptions, where manypools of lava can be found. Magmins enjoy dwelling in thesepools and use them for all sorts of purposes, much like otherspecies use hot springs. Unlike other species, magmins also usethese pools to kill interlopers and cook them, consuming theash, bones, and minerals left over as a tasty treat.<br/><br/>Magma flows through a magmin\u2019s veins and washes over itsbody, giving off extreme heat. A tiny, fiery heart burns withina magmin, like the core of a terrestrial planet. Few have seena magmin\u2019s heart, however. Magmins cool quickly when theydie or disintegrate into the surrounding lava. Cracking a deadmagmin open reveals only dense rock and, sometimes, a feweven denser gemstones. What magmins lack in height, theymake up for in weight. They stand roughly 4 feet tall and weigharound 300 pounds due to their rocky makeup."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Magmin",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "elemental"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "fire"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "aura": "searing (5 ft., DC 12)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 32,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 15,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "molten body"
+            ],
+            "dr": [
+                "5/magic"
+            ],
+            "immunities": [
+                "elemental immunities",
+                "fire"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+4",
+                            "damage_type": "Bludgeoning & Fire",
+                            "damage_type_text": "B & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 2,
+            "con": 4,
+            "int": -1,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ignan"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Plane of Fire)",
+            "organization": "solitary, pair, flow (3\u20138), eruption (9\u201324)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any melee weapon striking the magmintakes 1d4 fire damage, ignoring hardness. If the weapon\u2019swielder fails a DC 12 Reflex save, the weapon gains theburning condition, which deals 1d4 fire damage thatignores hardness.",
+                "name": "Molten Body",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A magmin radiates volcanic heat, and anycreature that starts its turn in the aura must succeed at aDC 12 Fortitude save or take 1d4 fire damage.",
+                "name": "Searing Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #16: The Blind City",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #16: The Blind City pg. 57",
+                "alt": "Starfinder #16: The Blind City pg. 57",
+                "href": "https://paizo.com/products/btq01yjk?Starfinder-Adventure-Path-16-The-Blind-City"
+            },
+            "page": 57
+        }
+    ]
+}

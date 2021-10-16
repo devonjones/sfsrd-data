@@ -1,0 +1,252 @@
+{
+    "name": "Gloomwing",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Gloomwings are mothlike predators native to the Shadow Plane known to slip through the barrier with the Material Plane in places where the barrier is thin. Their bizarrely patterned wings can cause confusion in onlookers, even within the dimly lit, shadowy places where they rest. Gloomwings also have a distinct, musky scent. If a gloomwing becomes stressed, it releases its pheromone-laden musk, causing lethargy in other living creatures. The scent also attracts other gloomwings and their larvae, known as <a href=\"AlienDisplay.aspx?ItemName=Tenebrous%20Worm&Family=None\" style=\"text-decoration:underline\">tenebrous worms</a>. The chitin on a gloomwing\u2019s mandibles and head has a pearlescent quality, especially in normal and bright light. Some jewelers and mystics value this material. With a successful DC 21 Survival check that takes 10 minutes, a character can harvest 1d4 pieces of chitin, each worth 500 credits."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Gloomwing",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "confusion"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "implant"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pheromones"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 5,
+            "con": 2,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land or sky (Shadow Plane)",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The shifting patterns on a gloomwing\u2019s wings are hypnotic. A creature that starts its turn able to see the gloomwing must succeed at a DC 13 Will saving throw or become confused for 1 round. A creature can avoid looking directly at the gloomwing to gain a +4 bonus to the saving throw. However, doing so causes the creature to treat the gloomwing as if it has concealment (20% miss chance). Gloomwings and tenebrous worms are immune to this effect. This is a mind-affecting, sense-dependent effect.",
+                "name": "Confusion",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a gloomwing can lay eggs in a Small or larger helpless living creature. The target creature contracts tenebrous gestation (see below).",
+                "name": "Implant",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Starting on the round after a gloomwing becomes agitated (typically the second round of combat), the creature exudes an invisible cloud of weakening pheromones that creates a musky scent. Living creatures other than gloomwings and tenebrous worms within this 30-foot aura must succeed at a DC 13 Fortitude saving throw or become fatigued for 1 hour.",
+                "name": "Pheromones",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Tenebrous Gestation",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "save": "Fortitude DC 13",
+                "track": "physical (special)",
+                "frequency": "1/day",
+                "effect": "no latent state; if the victim dies, 1d4 young tenebrous worms emerge 4d6 hours later and devour the corpse completely.",
+                "cure": "2 consecutive saves; the eggs can also be removed with a successful DC 13 Medicine check that takes 1 hour or if the victim is targeted by remove affliction.",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #10: The Diaspora Strain",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #10: The Diaspora Strain pg. 56",
+                "alt": "Starfinder #10: The Diaspora Strain pg. 56",
+                "href": "https://paizo.com/products/btq01vb2?Starfinder-Adventure-Path-10-The-Diaspora-Strain"
+            },
+            "page": 56
+        }
+    ]
+}

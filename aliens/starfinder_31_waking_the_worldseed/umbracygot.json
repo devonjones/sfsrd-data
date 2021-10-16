@@ -1,0 +1,295 @@
+{
+    "name": "Umbracygot",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Once known as somalcygots\u2014named after the Azlanti designation of Lost Golarion\u2019s only moon, Somal\u2014these enormous, territorial flatworms claim mile\u2011wide areas of a moon, asteroid, or similar patches of airless environments. Now referred to as umbracygots, these beasts enter vicious frenzies when other species stumble into their domains, looking to consume the interlopers. While relentless in their attempts to feed, umbracygots rarely pursue intruders beyond the borders of their territories to better conserve energy in an environment with limited nutrition.<br/> When not feeding, an umbracygot enters a trancelike hibernation during which it constantly burrows in circles and strange patterns beneath the surface with endless, unthinking repetition. Some xenobiologists speculate that the patterns an umbracygot creates within the territory it inhabits indicate the creature\u2019s mood or even their psychic impressions on the cosmos. Unfortunately, not enough data has been collected on these designs because an umbracygot awakens from its trance to attack when it senses a trespasser.<br/> A typical adult umbracygot is 16 feet long and weighs 1,500 pounds. These creatures possess more intelligence than their monstrous appearances would suggest, but conversations with them are rare. Umbracygots usually socialize on the rare occasions when they\u2019re full and don\u2019t wish to exert energy on a wasteful meal, or when they\u2019re mating. The knowledge gleaned from these unique interactions has proven useful in understanding their psychology, though their main concerns are defending their territory and consuming."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Umbracygot",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Combatant",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 27
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 197,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 27
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "dr": [
+                "10/\u2014"
+            ],
+            "immunities": [
+                "acid",
+                "cold"
+            ],
+            "weaknesses": [
+                "vulnerable to sonic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+20",
+                            "damage_type": "Acid & Piercing",
+                            "damage_type_text": "A & P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "tentacles",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4+20",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "15 ft. with tentacles"
+                    }
+                ],
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "60-ft. line"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "10d6 A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 19 half"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "acid spray"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 3,
+            "con": 5,
+            "int": 1,
+            "wis": 4,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 60 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (terrestrial vacuum)",
+            "organization": "solitary, pair, or clutch (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Every 1d4 rounds as a standard action, an umbracygot can spit a 60-foot line of acid that deals 10d6 acid damage. The acid continues to burn each affected creature, dealing an additional 4d6 acid damage on the following round. A target that succeeds at a DC 19 Reflex save takes half the initial damage and avoids the ongoing damage.",
+                "name": "Acid Spray",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #31: Waking the Worldseed",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #31: Waking the Worldseed pg. 61",
+                "alt": "Starfinder #31: Waking the Worldseed pg. 61",
+                "href": "https://paizo.com/products/btq022cf?Starfinder-Adventure-Path-31-Waking-the-Worldseed"
+            },
+            "page": 61
+        }
+    ]
+}

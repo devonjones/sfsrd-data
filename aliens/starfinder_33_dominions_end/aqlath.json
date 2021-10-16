@@ -1,0 +1,237 @@
+{
+    "name": "Aqlath",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Aqlaths resemble shaggy, humanoid boars with large tusks and three legs. As the predominant species on Lathlath IV, these creatures have adapted to the perpetual winter caused by the inhospitable planet\u2019s distant position from its sun. Aqlaths value physical might and insight, and over thousands of generations, their people have grown strong and developed powerful communal bonds. Good sites to build large cities on Lathlath are rare; yet long ago, aqlaths learned to hew the permafrost and stone of their cold world, working together to create settlements and fortifications. Aqlaths warm their buildings by tapping into geothermal heat beneath the thick planetary crust. Centuries of digging for heat have made aqlaths skilled miners, and they\u2019ve learned that the crust of their world contains many rare and valuable elements. Their sudden arrival in interplanetary trading markets has attracted many enemies who wish to subjugate the aqlaths and steal their planet\u2019s wealth\u2014including sivvs.<br/><br/> Even a young aqlath towers several feet taller than a human. Aqlaths grow ever larger as they age, reaching heights of 15 feet or more. As they mature, aqlaths develop psychic abilities that allow them to inflict their will on others. These abilities manifest as a crown of psychically charged bone horns sprouting from their furry heads. Larger aqlaths have bigger and more numerous horns, therefore possessing stronger psychic abilities. Only the most misanthropic aqlaths use their psychic abilities against others of their species; as with their great strength, aqlaths hone their mental powers only to defend their world against alien aggressors."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Aqlath",
+        "type": "stat_block",
+        "cr": "16",
+        "role": "Spellcaster",
+        "xp": 76800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 7
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 28
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 300,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 32
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "defensive_abilities": [
+                "ferocity"
+            ],
+            "immunities": [
+                "cold"
+            ],
+            "resistances": [
+                "acid 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "ice shard",
+                    "bonus": 28,
+                    "dc": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "7d6+16",
+                            "damage_type": "Cold & Slashing",
+                            "damage_type_text": "C & S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "psychic horns"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 10,
+            "dex": 4,
+            "con": 7,
+            "int": 3,
+            "wis": 5,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 33
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 28
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aqlathian"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Lathlath IV)",
+            "organization": "solitary, pair, or squad (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, an aqlath can psychically manifest and hurl a shard of ice. This attack targets EAC and has a range of 40 feet.",
+                "name": "Ice Shard",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An aqlath\u2019s crown of horns is a psychic manifestation that allows them to wrench revitalizing energy from an enemy\u2019s mind. An aqlath\u2019s crown always has as many protrusions as their current number of Resolve Points. When a creature fails a saving throw against one of the aqlath\u2019s mind-affecting spell-like abilities, the aqlath can spend 1 Resolve Point as a reaction to regain 40 Hit Points. When an aqlath has 0 Resolve Points (and therefore no more horns in their crown), they can\u2019t use their spell-like abilities.",
+                "name": "Psychic Horns",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #33: Dominion\u2019s End",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #33: Dominion\u2019s End pg. 55",
+                "alt": "Starfinder #33: Dominion\u2019s End pg. 55",
+                "href": "https://paizo.com/products/btq0233n/discuss?Starfinder-Adventure-Path-33-Dominion-s-End"
+            },
+            "page": 55
+        }
+    ]
+}

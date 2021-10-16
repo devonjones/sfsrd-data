@@ -1,0 +1,260 @@
+{
+    "name": "Arquand Gazelle",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Life on the sentient planet of Arquand is idyllic for its native inhabitants. Lithe, six-legged gazelles spring merrily over hills, peer at anything that sparks their curiosity, and playfully charge at each other. Arquand gazelles, like most native Arquand species, are friendly and trusting, especially to juvenile creatures of any species. They interact peacefully with one another and other indigenous animals.<br/><br/> The nimble creatures are black, brown, or white, depending on which part of their home planet they come from. Their home planet itself spurs them to wander, using weather and terrain to guide them and growing plentiful and nutritious vegetation and fruit wherever they roam. The gazelles graze contentedly on the abundant food, never knowing struggle, and grow up to 12 feet tall and just as long. They can weigh up to 1,600 pounds.<br/><br/> These gazelles have an unlimited lifespan on Arquand\u2019s surface. They grow neither old nor ill, but they can be killed. Arquand gazelles reproduce very slowly. The creatures have no family units, instead living in large herds. If taken to a different planet, an Arquand gazelle lives up to 30 years. Would-be settlers on Arquand might see these elegant ungulates as a source of meat. Poachers have an easy time capturing the gazelles, which remain friendly even when caged. But killing them is much more difficult than it appears, as the beasts have a tranquilizing affect on beings near them. Successfully slaying a gazelle can mean more trouble, since Arquand doesn\u2019t take kindly to those who harm its creatures or irritate it in other ways.<br/><br/> Many governments, including the Pact Council, have made the removal of gazelles from Arquand illegal. Nevertheless, the animals fetch a high price on the black market. Collectors of exotic pets prize Arquand gazelles; therefore, poachers brave the planet\u2019s wrath to capture the beasts alive. Creative landowners purchase entire herds for security, since the animals\u2019 tranquility aura prevents attacks and break-ins. Some people use the aura for self-medication, while others keep the affable and childloving gazelles as companion animals. Those under the pleasant effects of the gazelle\u2019s aura can\u2019t help but return the creature\u2019s friendliness, so affection grows.<br/><br/> Gazelles accustomed to Arquand have difficulty adjusting to life on other planets. They have little natural survival instinct or skill, since foraging on Arquand is easy and safe. Severe weather spooks them because they never experience it on their home world. However, it is possible to breed Arquand gazelles on other worlds. Domesticated gazelles are still docile and still have a tranquility aura, but the aura is less pleasant, so most collectors prefer Arquand-born gazelles. Those who use the animals solely for security are less particular, and breeders can do brisk business with such clients. Breeding Arquand gazelles is commonly legal, but law officers keep an eye out for native-born animals in breeding stock."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Arquand Gazelle",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "aura": "tranquility (60 ft., DC 13)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "immunities": [
+                "Arquand immunities"
+            ],
+            "weaknesses": [
+                "docile"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "gore",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "if not docile",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "stampede"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d6+7"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 13"
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 0,
+            "int": -4,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 15
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any forests, hills, or plains (Arquand)",
+            "organization": "solitary, pair, or herd (4\u201340)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "While on their native planet, Arquand gazelles don\u2019t age and are immune to disease, exhaustion, and fatigue.",
+                "name": "Arquand Immunities",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Arquand gazelles are naturally unaggressive creatures. An Arquand gazelle loses this weakness if trained for combat, a function of the rear a wild animal task of the Survival skill.",
+                "name": "Docile",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stampede occurs if three or more Arquand gazelles trample while remaining adjacent to each other. While stampeding, the gazelles can trample foes of their size or smaller, and the trample ability\u2019s save DC increases by 2.",
+                "name": "Stampede",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An Arquand gazelle exudes tranquility that has a sedative effect and causes mild hallucinations in creatures within 60 feet. Such hallucinations are pleasant if the gazelle is docile and on Arquand, but less pleasant if the gazelle isn\u2019t on Arquand, wasn\u2019t born on Arquand, or lacks the docile weakness. The effects are unpleasant if the gazelle is aggressive or scared; a creature in the aura must succeed at a DC 13 Will saving throw to attack, cast any spell on an unwilling target, or take any action that involves breaking or disabling an object or device. Creatures that succeed at the save are immune to the same Arquand gazelle\u2019s aura for 24 hours. Arquand gazelles are immune to this aura. This is a mind-affecting, emotion effect.",
+                "name": "Tranquility Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 12",
+                "alt": "Alien Archive 2 pg. 12",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 12
+        }
+    ]
+}

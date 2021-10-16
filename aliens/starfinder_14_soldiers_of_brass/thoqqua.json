@@ -1,0 +1,269 @@
+{
+    "name": "Thoqqua",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Thoqquas are worms of fiery stone, like living lava. A thoqqua generates tremendous heat. This heat and the creature\u2019s sinuous shape allow a thoqqua to burrow through dirt, gravel, and stone, as well as some softer metals and composites. It has a roughly segmented body. Cooler, stony plates form on these segments, with hot flesh between them, to protect the thoqqua. A similar material, rigid but superheated due to the worm\u2019s internal fire, makes a pointed \u201cbeak\u201d the thoqqua uses to burrow and attack. Although outsiders such as thoqquas don\u2019t need to eat, thoqquas consume minerals as they burrow, adding these elements to their rocky shells. A thoqqua unable to do so eventually loses a portion of its natural armor (reducing its KAC slightly). Most adult thoqquas are 5 feet long and weigh 200 pounds. However, these ageless worms never stop slowly growing so long as they have plenty of minerals to consume.<br/> As fiery in attitude as in body, thoqquas are irritable and belligerent, likely to attack if startled or annoyed. They enjoy digging and demolition, and they can grow fond of or attached to other creatures, especially if treated well. Quorlus (Alien Archive 2 104) have friendly connections to the worms. Numerous quorlu settlements have thoqqua protectors.<br/><br/> Fiery mephits also get along well with thoqquas. The species share similarly simple mindsets, and mephits have an intuitive understanding of thoqquas\u2019 nonverbal communication. It is through mephits, confirmed by telepathy, that other species of the galaxy learned the legends of the thoqquas. Titanic thoqquas are the mythical progenitors of the species. These servants of the elemental lords, according to lore, helped form the first volcanoes on the young planets of the Material Plane. The elder thoqquas then retired to the worlds\u2019 cores to rest for eons, and their heat warms the planets to this day."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Thoqqua",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Combatant",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "earth"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "elemental"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "fire"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 12
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 25,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "defensive_abilities": [
+                "molten body"
+            ],
+            "immunities": [
+                "elemental immunities",
+                "fire"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Piercing & Fire",
+                            "damage_type_text": "P & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 2,
+            "con": 4,
+            "int": -2,
+            "wis": 1,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 7
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ignan"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "versatile burrower"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Plane of Fire or Planeof Earth)",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any melee weapon that hits a thoqqua takes 1d4 fire damage, ignoring hardness. If the weapon\u2019s wielder fails a DC 11 Reflex save, the weapon also gains the burning condition, dealing 1d4 fire damage that ignores hardness.",
+                "name": "Molten Body",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Due to its internal heat, a thoqqua can burrow through stone and some harder substances at half its normal burrow speed. It can leave a tunnel behind itself, consuming the material it burrows through.",
+                "name": "Versatile Burrower",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #14: Soldiers of Brass",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #14: Soldiers of Brass pg. 61",
+                "alt": "Starfinder #14: Soldiers of Brass pg. 61",
+                "href": "https://paizo.com/products/btq01wye?Starfinder-Adventure-Path-14-Soldiers-of-Brass"
+            },
+            "page": 61
+        }
+    ]
+}

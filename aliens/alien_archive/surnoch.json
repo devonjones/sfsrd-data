@@ -1,0 +1,237 @@
+{
+    "name": "Surnoch",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Surnochs are burrowing creatures that live in and devour the crusts of asteroids and small moons. Jaws that function like grinders and glands at the bases of their many spines that exude acid to liquefy rock allow these wormlike creatures to create labyrinthine tunnels in their domains, through which they can move with uncanny speed. The color of a surnoch\u2019s hide is similar to that of the rock it burrows through. A typical surnoch is 15 feet long and weighs over 1,200 pounds.<br/><br/> At its leading end, a surnoch has a deep funnel of a mouth lined with numerous small orifices. At the back of the funnel is the grasping jaw with which it brings material into the funnel to be sorted. While the grasping jaw looks ferocious, the real danger of the maw lies in the fact that it is essentially a giant, churning mining machine.<br/><br/> The numerous small orifices that line the interior of a surnoch\u2019s mouth allow matter of different consistencies to stream through as the creature chews and melts its way through rock and stone. Nutrientrich material is routed to the surnoch\u2019s digestive tract, while much of the rest of it is broken down into various acids by the surnoch\u2019s caustrolizer system, a series of organs unique to the creature that act like a chemical factory. A surnoch has an innate sense of which minerals its body requires the most of and has evolved a kind of X-ray vision that it allows it to find these foodstuffs, even through several feet of rock.<br/><br/> After consuming some of its favored elements, a surnoch excretes condensed and hardened forms of the minerals it can neither digest nor turn into acid. A feeding surnoch leaves tunnels full of strange alloys and amalgams in its wake, some which can\u2019t be created through any other process. The castings that line a surnoch tunnel have an ethereal, shimmering beauty, like mother-of-pearl arranged in strange symmetries. Many of the endemic alloys are useful to the technological races of the Pact Worlds, so occasional expeditions purposefully seek out asteroids mined by surnochs to harvest the beasts\u2019 unusual leavings. The greatest connoisseurs of these castings are the sarcesians, who turn the beautiful substances into jewelry and elaborate sculptures.<br/><br/> Approaching surnoch territory to harvest such material, or for any other reason, is incredibly dangerous. Surnochs aren\u2019t territorial but they are ravenous. Almost any technology that can transport a visitor to a surnoch-infested asteroid contains the elements that a surnoch consumes. While powered armor and electronic items are the most likely to draw hungry surnochs, most refined material has a reasonable chance of looking like dinner. Those who make their livings harvesting surnoch castings primarily use equipment created from materials that have already been vetted as uninteresting to the creatures.<br/><br/> Surnochs are found mainly in the asteroids of the Diaspora and in the larger rocks of the Liavaran rings, fully sorting and digesting them before drifting through space to the next host. Surnochs are sometimes seen on small moons across the Pact Worlds, especially the shepherd moons of Liavara, and the discovery of surnoch remains on larger moons has given scientists a fairly precise understanding of how much gravity the beasts can withstand.<br/><br/> A surnoch reproduces once every decade or so, in a process where a smaller creature slowly grows from the surnoch\u2019s hide over the course of a month. This parthenogenesis is often preceded by a period of gorging by the surnoch, which is difficult to differentiate from the creature\u2019s normal voracious feeding behavior. A surnoch feasting in this manner tends to consume minerals with natural radiation (such as uranium), though rocky areas that have been bombarded with nuclear weapons also tend to draw a surnoch ready to reproduce. Once the creature\u2019s bud fully sprouts, it detaches with a burst of acid and the newly formed surnoch is ready to begin feeding. Luckily for the galaxy, at least a third of surnoch parents immediately consume their offspring immediately following this \u201cbirth\u201d for reasons that continue to baffle biologists to this day.<br/><br/> While most surnochs are solitary creatures, two will occasionally travel and feed together, often working their way through parallel tunnels to consume different minerals. While to outsiders it might seem like the two surnochs are deliberately working in concert to cause the most destruction, the truth is far less sinister. The two creatures have been brought together by unknown electromagnetic symbols echoing off their thick hides and attuning their appetites to crave distinct fare. And just as quickly as the pair came together, some mysterious trigger can set them against one another in a tumbling mass of spines and acid that is usually even more devastating than the two surnochs feeding peacefully. A handful of survivors from a recent surnoch attack on a Glimmerglass Inc. production facility in the Diaspora claim that their factory was targeted by a rival company that placed a losing bid for the rights to their asteroid several years before. While their allegations have been dismissed as paranoid ravings, independent investigators found strange computer chips in the brain of what they believe is the corpse of the attacking surnoch."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Surnoch",
+        "type": "stat_block",
+        "cr": "9",
+        "role": "Combatant",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (vision [stone only])"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 145,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "immunities": [
+                "acid"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 30 ft.",
+                        "movement_type": "burrow",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "acid jet",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+9",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "corrosive spines"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 6,
+            "con": 4,
+            "int": -4,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 17
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tunnel swiftness"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any underground or vacuum (Diaspora)",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a surnoch can spew a stream of acid from one of its spines. This attack has the line weapon special property and a range increment of 60 feet.",
+                "name": "Acid Jet",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that begins its turn grappled by a surnoch automatically takes 3d6+9 acid and piercing damage from the acid dripping from its spines.",
+                "name": "Corrosive Spines",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When moving in a tunnel that it or another surnoch has burrowed, a surnoch moves five times its speed and doesn\u2019t gain the flat-footed condition when it takes the run action. In addition, it can hustle in such a tunnel for 3 hours each day before it begins to take nonlethal damage.",
+                "name": "Tunnel Swiftness",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 108",
+                "alt": "Alien Archive pg. 108",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 108
+        }
+    ]
+}

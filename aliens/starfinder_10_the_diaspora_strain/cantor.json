@@ -1,0 +1,294 @@
+{
+    "name": "Cantor",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Only about 3 feet tall and weighing no more than 50 pounds, a cantor resembles a human child or halfling whose skin has been flayed, exposing the underlying musculature and connective tissue. Rather than being a bloody mess, however, its flesh is dull and gray. A cantor\u2019s glossy black eyes burn red when the creature becomes violent or uses its vile powers.<br/><br/> A cantor velstrac is a fiend that uses its horrific appearance as a weapon. It considers itself to be an instrument in an ongoing effort to help mortals accept the velstrac notion of reality\u2014that pain is a tool of self-exploration and development. Cantors pursue this end through subterfuge and by aiding other velstracs as scouts."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Cantor",
+        "type": "stat_block",
+        "cr": "9",
+        "alien_family": "Velstrac",
+        "role": "Spellcaster",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "velstrac"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 120,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 21,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "regeneration 5 (good or silver)"
+            ],
+            "dr": [
+                "5/good or silver"
+            ],
+            "immunities": [
+                "cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+9",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "lingering touch"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "unnerving gaze"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "waking nightmare"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": 2,
+            "int": 1,
+            "wis": 4,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 17
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Shadow Plane)",
+            "organization": "solitary, pair, expedition (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that takes damage from a velstrac cantor\u2019s claw must succeed at a DC 18 Will saving throw or the pain lingers in its mind, dealing 1d4 additional damage (2d4 if the cantor scored a critical hit) at the start of each of its turns for 1 minute. At the end of each of its turns, the target can attempt another saving throw to end this effect. Each of the cantor\u2019s additional successful attacks against a creature suffering this effect extends the duration by 1 round. Any form of magical healing ends this effect immediately. This is a mind-affecting effect.",
+                "name": "Lingering Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A cantor\u2019s appearance causes shock and sympathetic pain. A creature that fails its save against this mind-affecting fear effect is shaken for 1 round.",
+                "name": "Unnerving Gaze",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per minute as a full action, a cantor can mouth a soundless scream to create an illusory double of itself that is Large and even more horrifying. Creatures within 30 feet of and able to see the cantor must succeed at a DC 18 Will saving throw or believe this illusory double to be real. At the same moment, the cantor becomes invisible (as per greater invisibility). These effects last as long as at least one creature believes the illusion, but no longer than 1 minute. Both effects also end if the cantor is ever more than 30 feet away from the illusion at the end of its turn. The illusion appears to attack each round on the cantor\u2019s turn, and the cantor usually attacks the same target, gaining the benefits of both invisibility and stealth. After a creature attacks the illusion, the creature can attempt another save to disbelieve the effect. A creature exposed to this effect is immune to the same cantor\u2019s waking nightmare for 24 hours.",
+                "name": "Waking Nightmare",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #10: The Diaspora Strain",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #10: The Diaspora Strain pg. 60",
+                "alt": "Starfinder #10: The Diaspora Strain pg. 60",
+                "href": "https://paizo.com/products/btq01vb2?Starfinder-Adventure-Path-10-The-Diaspora-Strain"
+            },
+            "page": 60
+        }
+    ]
+}

@@ -1,0 +1,254 @@
+{
+    "name": "Kaion",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Well-known pests of the seas of Nisis, the River Between, and the Diaspora, kaions float in space and water in search of minerals and flesh. These creatures house chemosynthetic bacteria within their chambered shells, which produce energy from various inorganic minerals the kaion scrapes up with its radula and then excrete metallic impurities as a metabolic byproduct. The alloys accumulate in the kaion\u2019s shell as well as in the numerous metallic sclerites that cover the kaion\u2019s many tentacles and two long arms. Not only do these deposits protect the kaion\u2019s soft tissues, but they also produce powerful magnetic fields that respond to the kaion\u2019s bioelectric impulses, often visible in the expanding and contracting field lines of metallic dust adhering to the creature\u2019s shell.<br/><br/>Though their symbiotes provide much of a kaion\u2019s energy needs, kaions require organic proteins in order to mature and to produce gametes. They obtain this resource from live prey using a characteristic hunting technique. By creating a magnetic gradient down its arms, a kaion can detach and accelerate one of its sclerites to railgun speeds. These projectiles lodge in targets, where they can subsequently be reeled back via magnetic attraction, bringing prey with them. Pods of kaions cooperate to bring down larger prey, with younger kaions firing sclerites and older, higher-status individuals reeling the prey in to feed on.<br/><br/>Though kaions are native to the Diaspora, they have since spread to other worlds as stowaways on ice haulers and other starships. They can now be found grinding away on mines and construction sites from Akiton to Triaxus."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Kaion",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Combatant",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (electromagnetism) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 25,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 12,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "sclerite",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "entangled"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with slam"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "polarity pulse"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 2,
+            "int": -4,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+15 to fly"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "magnetic levitation"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "mountains, urban, or vacuum (Diaspora)",
+            "organization": "solitary, pair, or pod (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A kaion can fly in a vacuum. However, this flight is limited to within 60 feet of a planet or asteroid\u2019s surface or a nearby metallic structure, such as a steel railing or a starship\u2019s hull.",
+                "name": "Magnetic Levitation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a kaion can release a magnetic pulse in a 60-foot-radius spread. Each creature in that area wielding metallic weapons, wearing metallic armor, or entangled by a kaion\u2019s sclerites must succeed at a DC 13 Reflex save or be pulled up to 30 feet toward the kaion, or double that on a failure by 5 or more. If a creature is affected only because of an object it holds, it can drop the object as a free action to cease being pulled. Unsecured metallic objects in the area are automatically pulled 60 feet toward the kaion. Being pulled toward a kaion doesn\u2019t provoke attacks of opportunity.",
+                "name": "Polarity Pulse",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A kaion can fire a sclerite with a range increment of 60 feet. The sclerite lodges in or sticks to the target on a hit, causing the target to become entangled as long as the sclerite remains. An entangled creature can remove a sclerite as a move action by succeeding at a DC 13 Athletics or Acrobatics check.",
+                "name": "Sclerite",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #19: Fate of the Fifth",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #19: Fate of the Fifth pg. 55",
+                "alt": "Starfinder #19: Fate of the Fifth pg. 55",
+                "href": "https://paizo.com/products/btq01wtb?Starfinder-Adventure-Path-19-Fate-of-the-Fifth"
+            },
+            "page": 55
+        }
+    ]
+}

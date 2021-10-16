@@ -1,0 +1,269 @@
+{
+    "name": "Marooned One",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "There is a special psychological pain in watching your last chance of survival slip out of sight. Those who are left behind to die in the cold of space\u2014whether on a deserted asteroid or a derelict ship\u2014sometimes arise as a special type of undead called a marooned one. Whether they died of asphyxiation, dehydration, or starvation, unfortunate souls that arise as marooned ones have a desiccated look, with taut skin stretched across their bones. Depending on how long it took them to die, they may have patched environment suits or other signs of their attempts to prolong their isolated lives as long as possible. Many show evidence of madness, both from the psychological pain of their abandonment and from the supernatural dread of the horrific transformation that awaits them just on the other side of death. They often have elaborate tattoos or ritual scarification\u2014marks to count each day of their abandonment are common\u2014or signs of dramatic self-harm, sometimes even including obvious signs of suicide from last-ditch efforts to end their loneliness or avoid the undead eternities that await them. Regardless of their mortal forms or alterations thereto, all marooned ones are distinguishable from similar undead by their glowing, ice-blue eyes and mouths that open unnaturally wide in cheek-splitting and jaw-cracking screams of fury.<br/><br/>Marooned ones inevitably remain near the place of their abandonment, ironically assuring that nobody recovers their remains or otherwise disturbs their final resting place without paying the price. While they have nearly as much intelligence as they did in life, their original personalities erode quickly under the corrosive power of the malicious energies reanimating them, and they use their cognition and what remains of their memories in service of a single purpose: causing other living creatures to suffer the same fate as they did.<br/><br/> The only time one of these undead feels something close to pleasure is when it forces or tricks a group of intruders in its territory into leaving one of their own behind. The marooned one avoids killing this castaway if possible, instead attempting to bond with the victim over their shared fate, increasing the chance that the intruder rises as a marooned one when it dies. This bonding can seem strangely caring; as soon as its victim\u2019s fate is sealed, a marooned one gives every appearance of sympathizing with its prey, even giving advice on how to continue to survive in their current environment as long as possible. This emotion is hollow, however, for a marooned one can never be convinced to allow a victim to escape, and what personality the undead manages to manifest during these conversations inevitably fades again with the victim\u2019s death and rebirth as a fellow undead. Once such a transformation occurs, the marooned ones show little interest in one another, waiting in total silence for more of the living to wander into their shared territory.<br/><br/> Marooned ones can operate any equipment they could in life and, as a representative sample of spacefarers, are often quite technologically savvy. They are frequently armed with weaponry appropriate to their earlier station, but they use such arms mostly to threaten and intimidate, and they prefer to strangle victims to death if marooning them isn\u2019t possible. Their technological acumen is also a major part of their threat, as starship crews sometimes don\u2019t realize they\u2019re in danger until a marooned one has already quietly and permanently disabled their starship, trapping them in the creature\u2019s territory.<br/><br/> Marooned ones are most often found in the hulks of dead starships and other places where spacefarers have been left to die slowly, adrift in the black due to mechanical failure or malicious pirates. Yet marooned ones can also arise in perfectly habitable but dangerously isolated regions: colonists and explorers stranded on new worlds, soldiers abandoned by allies on a battlefield\u2014anyone who dies after being left behind can potentially turn into a marooned one."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Marooned One",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (life) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 115,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "immunities": [
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "advanced semi-auto pistol",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+8",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "strangle"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": null,
+            "int": 6,
+            "wis": 1,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 21,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+26 to disable life-support systems"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "1 other language known in life"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "sabotage life support"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "kasatha microcord III"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "advanced semi-auto pistol with 30 small arm rounds"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tactical knife"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or desolation (2\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A marooned one gains a +5 bonus to Engineering checks to disable a device that provides life support.",
+                "name": "Sabotage Life Support",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a marooned one succeeds at a grapple combat maneuver, the target must attempt a DC 18 Fortitude save. If the target fails, it takes 1d12+10 bludgeoning damage and 1d4 Constitution damage; if it succeeds, it takes half the bludgeoning damage and negates the Constitution damage.",
+                "name": "Strangle",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 76",
+                "alt": "Alien Archive pg. 76",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 76
+        }
+    ]
+}

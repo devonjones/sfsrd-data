@@ -1,0 +1,276 @@
+{
+    "name": "Incapacitator",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Incapacitator robots are built to restrain and subdue, so they are popular among bounty hunters who want to bring quarry back alive and also among security forces with safety concerns. Their large, padded fists strike hard but focus on getting a subduing hold on targets and are designed to deal no lasting damage. When forced to deal with targets at a distance, the robots hurl stickybomb grenades to slow down their marks while closing to melee range. Barring that, integrated shock pistols allow the robots to use jolts of electricity that cause muscles to seize up. Specialized programming allows the robots to strike at a hampered target\u2019s weak points.<br/><br/> Most models of incapacitator robot are shaped like hemispheres balanced on four articulated legs. Two to three arms used for striking and grabbing jut from the hemisphere\u2019s top surface, along with an integrated weapon on a rotating turret. A single sensor bar runs the entire circumference of the robot\u2019s body and can see in every direction at once. These models stand about 5 feet tall, 5 feet long, and 5 feet wide. They can weigh up to 1 ton.<br/><br/> Some manufacturers build incapacitator robots, especially those used in public sectors, to have a more humanoid appearance. These may have friendly faces and a layer of soft, cushioning material enclosing the robot\u2019s frame. Sometimes colloquially referred to as \u201chugbots,\u201d these models can envelop their targets in a crushing embrace that can squeeze the breath (and consciousness) out of almost any living creature. The typical \u201chugbot\u201d is about 7 feet tall and weighs 750 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Incapacitator",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "Robot",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 40,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons",
+                "unflankable"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to critical hits",
+                "vulnerable to electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated voltaic anchor pistol",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "nonlethal": true,
+                            "formula": "1d6+3",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "bind"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "stickybomb grenade I",
+                    "bonus": 10,
+                    "range": "10 ft.",
+                    "dc": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "entangled 2d4 rounds"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "exploit advantage"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": null,
+            "int": 1,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 8
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "voltaic anchor pistol with 2 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "stickybomb grenades I (2)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or gang (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When an incapacitator robot hits an entangled creature, it deals that target extra nonlethal damage equal to its CR (3 extra damage for most incapacitator robots).",
+                "name": "Exploit Advantage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #25: The Chimera Mystery",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #25: The Chimera Mystery pg. 61",
+                "alt": "Starfinder #25: The Chimera Mystery pg. 61",
+                "href": "https://paizo.com/products/btq022bl?Starfinder-Adventure-Path-25-The-Chimera-Mystery"
+            },
+            "page": 61
+        }
+    ]
+}

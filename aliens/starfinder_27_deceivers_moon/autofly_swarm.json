@@ -1,0 +1,283 @@
+{
+    "name": "Autofly Swarm",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Originating from Aballon, an autofly swarm consists of hundreds of 6-inch-long metallic insects. Because they are designed to rebuild both themselves and other constructs, constructs see them as beneficial, potentially immortal guardians. However, due to their nature as protectors, they are ravenous when around most living things.<br/><br/> While autofly swarms can fix physical damage to constructs and machines, they cannot restore data or uncorrupt code. Over the centuries, their original programming has corrupted, so even though they were once designed to serve a particular area, they now roam the blasted lands of Aballon and beyond. They are attracted to creatures of flesh and blood for consumption, but they are also drawn toward high electrical activity, such as that produced by large machines, constructs, and cities (which are usually also filled with living beings).<br/><br/> Anacites do not consider autoflies to be part of their own species, though the swarms can be incredibly useful to them. However, autoflies are mindless and can\u2019t be reasoned with, a fact that frustrates most anacites. Since their discovery on Aballon, autoflies have been accidentally brought aboard the ships of unfortunate starfarers and have now spread across the galaxy, despite all attempts to contain them."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Autofly Swarm",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Diminutive",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 40,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses"
+            ],
+            "immunities": [
+                "construct immunities",
+                "swarm immunities"
+            ],
+            "weaknesses": [
+                "sunlight dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "consume flesh"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 12"
+                        }
+                    ],
+                    "value": "distraction"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -3,
+            "dex": 4,
+            "con": null,
+            "int": 1,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "rebuild"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Aballon)",
+            "organization": "solitary or tempest (5\u201320)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The autofly swarm strips the flesh from living creatures and breaks down the material into components it can use to create more autoflies. For every 2 damage dealt by an autofly swarm to living creatures in a single round, the autofly swarm regains 1 Hit Point.",
+                "name": "Consume Flesh",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The autofly swarm can also repair other constructs. Once per day as a full action, the autofly swarm can restore 1d8 Hit Points to any constructs or objects that share its space.",
+                "name": "Rebuild",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Like anacites, autoflies are solar-powered constructs, though they can function at reduced capacity away from light. In areas of darkness, the autofly swarm gains the staggered condition.",
+                "name": "Sunlight Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #27: Deceivers\u2019 Moon",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #27: Deceivers\u2019 Moon pg. 55",
+                "alt": "Starfinder #27: Deceivers\u2019 Moon pg. 55",
+                "href": "https://paizo.com/products/btq0216g?Starfinder-Adventure-Path-27-Deceivers-Moon"
+            },
+            "page": 55
+        }
+    ]
+}

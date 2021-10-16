@@ -1,0 +1,300 @@
+{
+    "name": "Protocite Speaker",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The \u201clife\u201d of a protocite speaker begins with its extrusion from a manufactory into one of Noma\u2019s hex-shaped sectors, where the speaker carries out preprogrammed tasks. Most speakers exist in a state of quiet determination, moving to and fro in an approximation of a sapient creature\u2019s daily life. Speakers also interact with one another, and sometimes with other protocites, as a way of testing and evaluating various social simulations. Noma has created countless communities of speakers, in which the constituents conform to principles such as \u201cvalue the greater good\u201d or \u201cshun those with different limb configurations.\u201d<br/> Usually, after a speaker performs its assigned tasks, it powers down. A reclaimer then comes and grinds the speaker back into polyfluid. However, in every generation of speakers, several individuals are constructed with expanded data drives, insatiable curiosity, and no predetermined tasks to allow more autonomy than most. These \u201cobserver\u201d speakers roam, watch, and guide other experiments. When they have reached the end of their life cycle, typically after several decades, such speakers seek Noma\u2019s Core. Within this ancient nexus, these speakers are torn limb from limb, relinquishing data drives full of their accumulated experiences.<br/> A protocite speaker has humanoid features. Despite this appearance, its upper body, limbs, and head are reconfigurable. The construct can recreate a wide variety of physical features and mannerisms."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Protocite Speaker",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Expert",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 23,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 14
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "sunlight dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "laser",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "sensory overload"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 1,
+            "con": null,
+            "int": 2,
+            "wis": 0,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "SenseMotive",
+                        "value": 12
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Noma"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "parse"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "shortwave 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "congenial"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any urban (Noma)",
+            "organization": "solitary, pair, telemetry (3\u201330), or cloud (30+)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Protocite speakers relish the opportunity to learn and respond well to positive interactions. They start with a friendly attitude. This attitude worsens only if an attempt at Diplomacy fails by 10 or more.",
+                "name": "Congenial",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The protocite speaker\u2019s laser has a range increment of 80 feet.",
+                "name": "Laser",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "By spending 10 minutes conversing with a willing creature, a protocite speaker can approximate that creature\u2019s spoken or signed language.",
+                "name": "Parse",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a speaker can spin in place, changing its body while emitting high-pitched shrieks and whistles. Each non-protocite creature within 30 feet must attempt a DC 14 Fortitude save. On a success, the creature is dazzled for 1 round. On a failure, the creature is sickened for 1 round.",
+                "name": "Sensory Overload",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A protocite can communicate wirelessly. This acts as telepathy, but only with other creatures with this ability or constructs with the technological subtype.",
+                "name": "Shortwave",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Protocites are solar-powered constructs, although they can function at reduced capacity away from light. In areas of darkness, protocites gain the sickened condition.",
+                "name": "Sunlight Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #15: Sun Divers",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #15: Sun Divers pg. 59",
+                "alt": "Starfinder #15: Sun Divers pg. 59",
+                "href": "https://paizo.com/products/btq01wyg?Starfinder-Adventure-Path-15-Sun-Divers"
+            },
+            "page": 59
+        }
+    ]
+}

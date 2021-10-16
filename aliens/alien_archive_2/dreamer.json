@@ -1,0 +1,241 @@
+{
+    "name": "Dreamer",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Long before the Gap, the barathus of the gas giant Bretheda were sailing the stars within the enormous spacefaring creatures known as oma. One of their first destinations within the star system was their nearest neighbor, the peach-colored gas giant known as Liavara, and these pioneering barathus found the placid skies much to their liking. But something within Liavara\u2019s composition affected the visiting barathus deeply, and the wheeling and trilling so common to the species took on a new and unique psychic significance. Over an astonishingly short span of time, at least on an evolutionary scale, these barathus underwent profound mental and physical changes. Their abilities to adapt and merge dwindled and ultimately vanished, and their intellect diminished even as their psychic prowess burgeoned. The Dreamers became psychically sensitive in ways their barathu progenitors could have never predicted.<br/><br/> By the time the second oma-ship of barathus arrived in Liavara\u2019s skies, the first arrivals had become markedly different from the entities they once were: nearly feral, silent save for their crooning songs, seemingly oblivious to their surroundings, and yet commanding unparalleled powers of divination. Rather than renouncing their wayward kin, the barathus embraced them, calling them \u201cDreamers\u201d due to their somnambulant behavior. Ever since, barathus have regarded their Dreamer cousins with a mix of reverence and protectiveness, an attitude that ultimately led to the barathus\u2019 insistence upon administering Liavara as a protectorate within the Pact Worlds. This political status persists to this day, as the barathus continue to do everything in their power to protect the Dreamers.<br/><br/> Whether the Dreamers recognize or understand their progenitors\u2019 attitudes toward them is unknown. Left to their own among Liavara\u2019s gentle clouds, the Dreamers wheel and dance through the skies, mewling incomprehensible songs that nevertheless carry profound psychic power. While ancient pre-Gap records indicate that the Dreamers\u2019 songs once predicted future events with unerring accuracy, their predictions are now less precise\u2014 though no less portentous. Even those who make only a passing study of Dreamers\u2019 songs realize that the creatures continue to prophecy some monumental event to come; the lack of detail, however, leaves open questions of the nature of the event, its timing, and whether it will be for good or ill. Some more pessimistic denizens of the Pact Worlds grumble that the Dreamers simply babble nonsense with no real clairvoyance to support their claims. These naysayers are in the minority, though\u2014most Pact Worlders believe and wildly speculate what significant future event the Dreamers might have sensed.<br/><br/> Dreamers pay little heed to their surroundings and other creatures. Even Dreamers within a single flotilla seem to ignore one another, though their flights through Liavara\u2019s clouds weave complex but seemingly instinctive patterns. Those creatures that come to Liavara as supplicants to the Dreamers gain no special treatment; the fact that some such petitioners eventually manifest psychic abilities may simply be a result of exposure to the same phenomenon that converted the Dreamers into what they now are. Nonetheless, this occasional happening has earned the Dreamers a reputation among some in the Pact Worlds as the bestowers of psychic sensitivity, and increasing numbers of pilgrims have visited Liavara in recent years to search for these peaceful, floating sages.<br/><br/> A Dreamer\u2019s defenses are almost entirely autonomic, but when seriously injured, a Dreamer erupts into a furious rage with a debilitating psychic blast. Shortly after such an outburst, however, the Dreamer slips back into its dreamlike trance as if nothing out of the ordinary had happened. Even so, the creatures\u2019 barathu protectors are likely to arrest anyone they find harassing a Dreamer and sentence them to one of Bretheda\u2019s prison moons. Barathus are eminently protective over the Dreamers, as their existence is both an artifact of both their home world and their culture."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Dreamer",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Spellcaster",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 105,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "defensive_abilities": [
+                "amorphous",
+                "lulling thoughts"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tentacle",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+12",
+                            "damage_type": "Acid & Bludgeoning",
+                            "damage_type_text": "A & B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "synesthesia"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 1,
+            "con": 0,
+            "int": -2,
+            "wis": 6,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 21
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Brethedan"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "atavistic fury"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any sky (Liavara)",
+            "organization": "solitary, pair, or flotilla (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a Dreamer is reduced to fewer than half its total Hit Points, it angrily awakens from its normal somnambulant state with a roar of psychic fury, at which point each non-Dreamer creature within 30 feet must succeed at a DC 18 Will save or become shaken for 2d4 rounds. This is a mind-affecting effect.<br/><br/> While it remains in its atavistic fury, the Dreamer gains a +2 bonus to melee attack and damage rolls and saving throws, and the save DC for its synesthesia ability increases by 2. While in this state of atavistic fury, a Dreamer cannot use its spell-like abilities. This state lasts for 1 minute, after which the Dreamer is fatigued for 1 hour.",
+                "name": "Atavistic Fury",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A Dreamer\u2019s mind echoes with songs drawn from a planet\u2019s fundamental vibrations, causing any creature that attempts to read its thoughts or use a mind-control or telepathic effect against it to become fascinated for 1d4+1 rounds (Will DC 18 negates). This is a mind-affecting effect.",
+                "name": "Lulling Thoughts",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a Dreamer hits with its tentacle attack, it exposes its target to a focused blast of sensory overstimulation. The target can attempt a DC 18 Will save to negate the effect; if successful, it is off-target for 1 round. On a failed save, the target\u2019s overloaded senses interfere with one another, such that sound is perceived as a swath of color, smells register as various sounds, and so on. The affected creature\u2019s speeds are halved, and it takes a \u20134 penalty to AC, attack rolls, Reflex saves, and skill checks. These effects last for 1d4 rounds, and further applications of this ability increase the duration. This is a mind-affecting effect.",
+                "name": "Synesthesia",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 44",
+                "alt": "Alien Archive 2 pg. 44",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 44
+        }
+    ]
+}

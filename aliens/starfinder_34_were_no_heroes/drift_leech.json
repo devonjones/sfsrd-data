@@ -1,0 +1,241 @@
+{
+    "name": "Drift Leech",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Drift leeches are the parasites of space travel and a bane to all technology that comes near them. Their origins are unknown, but they\u2019ve become an increasingly common nuisance for Drift travelers. Most believe drift leeches were sucked into the Drift from some far-off place, but now these creatures thrive in their new environment, spreading throughout the Drift and menacing every vessel in it.<br/><br/> These giant red slugs measure more than 3 feet long and have circular suctioning maws equipped with hundreds of tiny, razor-sharp teeth. Incredibly hardy, they can spend months floating through space waiting for a ship to pass by and become their next meal. Once attached to a starship hull, these pesky vermin siphon energy from the vessel and store it for reproduction. If allowed to siphon too much energy, a drift leech terrorizes a starship\u2014life support systems fail, engines cease to function, and the vessel becomes mere debris floating through the Drift. To make matters worse, Drift leeches produce an energy-draining field that interferes with advanced weapons and armor, so they\u2019re especially hard to scrape off a starship hull, even once they are found.<br/><br/> Drift leeches show no signs of intelligence, and live only to feed and multiply. They reproduce asexually via fission. As these parasites siphon energy over several weeks, they grow until they\u2019ve doubled in size; they then split in half, becoming two parasites instead of one, and the process begins anew."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Drift Leech",
+        "type": "stat_block",
+        "cr": "",
+        "role": "Combatant",
+        "xp": 0,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "aura": "tech trouble (60 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 11,
+                "kac": 11
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": -2
+                }
+            },
+            "defensive_abilities": [
+                "heal self",
+                "void adaptation"
+            ],
+            "immunities": [
+                "electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "power discharge",
+                    "bonus": 2,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 1,
+            "con": 3,
+            "int": -4,
+            "wis": 0,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 3,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+11 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 3
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 3
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 7
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "the Drift",
+            "organization": "nest (3\u201312), or colony (13-20)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day, as a standard action, a drift leech can expend energy it has siphoned from starships or other technology to restore 1d4+1 Hit Points to itself.",
+                "name": "Heal Self",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A drift leech can lob a ball of energy-infused mucus at its foes. This is a ranged attack with a range increment of 30 feet that targets EAC and has the arc 1 critical hit effect.",
+                "name": "Power Discharge",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Drift leeches have a negative effect on technology in close proximity to them. Attacks using weapons without the analog trait take a \u20131 penalty to attack and damage rolls. Armor with environmental protections expends 1 hour of that protection every round it\u2019s within the leech\u2019s aura. Piloting checks attempted for starships or vehicles within the aura take a \u20131 penalty. The bonus granted by any technological item to a skill check decreases by 1. The effects of multiple tech trouble auras do not stack.",
+                "name": "Tech Trouble",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #34: We\u2019re No Heroes",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #34: We\u2019re No Heroes pg. 59",
+                "alt": "Starfinder #34: We\u2019re No Heroes pg. 59",
+                "href": "https://paizo.com/products/btq023du?Starfinder-Adventure-Path-We-re-No-Heroes"
+            },
+            "page": 59
+        }
+    ]
+}

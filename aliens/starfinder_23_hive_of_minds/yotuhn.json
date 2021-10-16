@@ -1,0 +1,221 @@
+{
+    "name": "Yotuhn",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Yotuhns are among the most adaptable and bellicose species to plague Chonax . Territorial and prone to violent outbursts, these horrors clash with all creatures they encounter. A yotuhn stands 13 feet tall and weighs 1,800 pounds.<br/><br/> When provoked, yotuhns attack wildly, grabbing debris from their lairs or slamming about with furious kicks and fists. These giants also have an inherent aura that warps magic, causing it to behave in a random and chaotic manner, even changing that magic\u2019s fundamental properties.<br/><br/> These giants lair most frequently in caves or ruined structures. Some scientists theorize their nature might somehow be connected to the intense storms that were pervasive on Chonax until 30 years ago. Unfortunately for those researchers, not only are yotuhns incapable of speaking, but they are also aggressive toward anyone other than other yotuhns."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Yotuhn",
+        "type": "stat_block",
+        "cr": "11",
+        "role": "Combatant",
+        "xp": 12800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "giant"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 20
+        },
+        "aura": "magic disruption (30 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vi"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 180,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "sr": "22"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "hurled debris",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d10+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "5-ft.-radius area of difficult terrain around the target"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 8,
+            "int": -3,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 20
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Chonax)",
+            "organization": "solitary, pair, or band (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A yotuhn can turn nearly any debris in reach into a melee weapon. Such debris is available (either loose or readily torn from the environment without requiring an extra action) to the yotuhn unless the GM rules otherwise. A yotuhn takes no penalty to attack rolls with such improvised weapons, which are never considered to be archaic in the yotuhn\u2019s hands. Whenever a yotuhn uses an improvised melee weapon, it gains the knockdown critical hit effect.",
+                "name": "Handheld Debris",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Much as with handheld debris, a yotuhn can turn nearly any debris in reach into a ranged weapon. A yotuhn\u2019s hurled debris has a range increment of 25 feet. Such attacks also create difficult terrain in a 5-foot-radius area around the target.",
+                "name": "Hurled Debris",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "This aura twists magic around the yotuhn. Any creature that casts a spell or uses a spell-like ability within 30 feet of the yotuhn must succeed at a DC 22 caster level check or the effect warps to become the result of a random roll on the table associated with the <i>wonder grenade</i>. If the spell comes from an item, the check is 1d20 + the item\u2019s level. This randomized magical effect also occurs if a spell targets the yotuhn from any range and fails to overcome the creature\u2019s spell resistance.",
+                "name": "Magic Disruption",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #23: Hive of Minds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #23: Hive of Minds pg. 61",
+                "alt": "Starfinder #23: Hive of Minds pg. 61",
+                "href": "https://paizo.com/products/btq01zpm?Starfinder-Adventure-Path-23-Hive-of-Minds"
+            },
+            "page": 61
+        }
+    ]
+}

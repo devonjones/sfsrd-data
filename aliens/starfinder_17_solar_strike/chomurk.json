@@ -1,0 +1,252 @@
+{
+    "name": "Chomurk",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Sometimes called \u201csunchasers,\u201d chomurks are known for their unique, dangerous life cycle. When a chomurk first lands on an asteroid, space station, or similarly small astronomical body, it immediately begins devouring anything it can find, preferring organic matter but eating metals or stone if necessary. If provided with sufficient material, it can reproduce asexually in a matter of hours, giving birth to a clone that grows to adult size in a day. The hive continues to mindlessly eat and reproduce, at which point some individuals begin melding their bodies together to create a \u201cthruster-mound.\u201d Guarded by nonmerged chomurks, the thruster-mound begins pushing the celestial object into a decaying orbit toward the nearest sun at exceptional speeds. As they approach the star, the nonmerged chomurks absorb solar radiation that both empowers and mutates them, creating genetic diversity. At the last minute, those chomurks launch themselves off their temporary home, scattering back out into space, where they hibernate until running across a new object and beginning the process again. Those chomurks incorporated into the thruster-mound are willingly sacrificed in the fires of the sun\u2014along with any remaining residents of the hijacked celestial body.<br/><br/>Chomurks resemble 8-foot-long, 2,000-pound isopods, with colorful articulated shells and two sets of mandibles arranged in a cross shape. A ridge running down their back ends at a cylindrical protrusion with a rear-facing orifice\u2014this is their biothruster, capable of releasing astonishingly powerful blasts of focused flame and force. With little intelligence, chomurks instinctively organize toward a collective goal, willingly sacrificing themselves for the good of the hive."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Chomurk",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 130,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 23
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "immunities": [
+                "cold",
+                "fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "biothruster 200 ft.",
+                        "movement_type": "biothruster",
+                        "value": 200
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "flame jet",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+8",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": 4,
+            "int": -3,
+            "wis": -1,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 16
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "move worlds"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "vacuum",
+            "organization": "solitary, pair, or hive (12\u201364)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A chomurk can fly as a full action at the listed speed. It must move in a straight line while flying in this way, and it can use the Piloting skill instead of Acrobatics to fly in difficult or dangerous conditions.",
+                "name": "Biothruster",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A chomurk can use its biothruster as a ranged weapon with the line and unwieldy weapon special properties and a total range of 40 feet. Though the jet of flame deals fire damage, it is also treated as having the force descriptor.",
+                "name": "Flame Jet",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hive of at least 32 chomurks can meld their bodies together in a unique metamorphosis that amplifies their natural thruster abilities. Chomurks combined in this manner dissolve and merge their limbs in a process that takes 1 hour, creating a pyramidal mound of bodies that acts as a single huge thruster capable of altering the orbit of the asteroid, space station, ship, or similarly sized astronomical body upon which it resides. Chomurks combined in this manner become a single entity, but are otherwise helpless and rely on nonmerged chomurks to defend them.",
+                "name": "Move Worlds",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #17: Solar Strike",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #17: Solar Strike pg. 56",
+                "alt": "Starfinder #17: Solar Strike pg. 56",
+                "href": "https://paizo.com/products/btq01znv?Starfinder-Adventure-Path-17-Solar-Strike"
+            },
+            "page": 56
+        }
+    ]
+}

@@ -1,0 +1,280 @@
+{
+    "name": "Anacite Ambassador",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Anacites have varied general designs, but some have evolved for specialized tasks. Two such specialists are the ambassador and the predator drone.<br/><br/> Anacite ambassadors travel to foster diplomatic relations. Most often members of Those Who Become, anacite ambassadors serve on Aballonian seedships as emissaries. Anacite ambassadors can easily learn languages. Further, although they are not warriors, ambassadors can protect themselves with built-in lasers. To avoid tension during diplomacy, ambassadors keep this weapon retracted until it\u2019s needed, though they usually notify their hosts about the laser unless there\u2019s a good reason to keep it a secret.<br/><br/> An anacite predator drone resembles a rhinoceros beetle made of silvery metal with a reddish shell that opens to reveal enormous wings. The drone\u2019s weapons are part of its body, leaving its wings and appendages free. Countless drones police the megaplexes of Aballon. Others serve as soldiers for anacites that have greater authority, fighting in places such as the Midnight Trenches."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Anacite Ambassador",
+        "type": "stat_block",
+        "cr": "6",
+        "alien_family": "Anacite",
+        "role": "Expert",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "retractable laser"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "light dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "retractable laser",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+6",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": null,
+            "int": 4,
+            "wis": 1,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to four others"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "shortwave 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "language assimilation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Aballon)",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite ambassador can spend 1 minute accessing a planet\u2019s infosphere to learn any language commonly spoken on that planet. Alternatively, the anacite can learn a language by spending 1 day listening to it and reading it. An anacite ambassador can store knowledge of up to four languages at a time in this way, and it can choose which language to replace when it wants to learn a new one.",
+                "name": "Language Assimilation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite ambassador can acquire power from dim or brighter light, and it can store power generated in this way. The anacite can operate in darkness for 2 hours. After this time, the anacite gains the sickened condition until it returns to an area of dim or brighter light.",
+                "name": "Light Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite ambassador\u2019s retractable laser has a range increment of 90 feet. When not in use, this weapon is folded inside the anacite\u2019s arm and hidden from sight. A creature unaware of the anacite\u2019s hidden weapon must succeed at a DC 24 Perception check to find its compartment. The anacite can deploy or retract this weapon as a swift action or as part of making an attack or full attack. The weapon is mounted and leaves the anacite\u2019s hands free, and the anacite can\u2019t be disarmed of it. While deployed, the laser can be sundered as an item with a level equal to the anacite\u2019s CR.",
+                "name": "Retractable Laser",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anacite can communicate wirelessly. This acts as telepathy, but only with other creatures with this ability or constructs with the technological subtype.",
+                "name": "Shortwave",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 10",
+                "alt": "Alien Archive 2 pg. 10",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 10
+        }
+    ]
+}

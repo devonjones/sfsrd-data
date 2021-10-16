@@ -1,0 +1,251 @@
+{
+    "name": "Thermatrod",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Mystics believe that the planets on which thermatrods are found have connections to the Elemental Planes of Earth and Fire. But however much the creatures may resemble elemental inhabitants of those planes, they are simply silicon-based beasts that thrive in extreme heat.<br/><br/> A thermatrod uses a knuckle-walking quadrupedal gait resembling that of a gorilla, but it can also stand on its back legs or use its arms to climb. Its torso is a mix of several types of molten stone and metal, allowing the thermatrod to digest heavy minerals inedible to most living creatures; Pact Worlds scientists don\u2019t fully understand how the thermatrod\u2019s silicon core maintains this intense heat. A thermatrod\u2019s cooler backside is made of several interlocking raised hexagonal plates, which resemble basalt columns. Due to this makeup, thermatrods can weigh over a dozen tons.<br/><br/> Like that of most silicon-based life, the thermatrod\u2019s chemical makeup didn\u2019t allow it to evolve sensory organs, meaning it is both blind and deaf. However, the fine crystalline matrices in the creature\u2019s head allow it to sense both heat and tremors. While its head is absent eyes and a nose, it does have a dripping maw, which the beast uses to eat loose stones it finds on the ground.<br/><br/> A typical thermatrod is 10 feet tall and weighs over 1 ton."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Thermatrod",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "fire"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "aura": "melting aura (5 feet)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 39,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                }
+            },
+            "immunities": [
+                "fire"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 30 ft.",
+                        "movement_type": "burrow",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "slag barrage"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 1,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 7
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "earth glide"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any warm mountains",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that begins its turn within 5 feet of a thermatrod takes 1d4 fire damage from the creature\u2019s intense internal temperature.",
+                "name": "Melting Aura",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a thermatrod can spray a portion of its core at a grid intersection within 60 feet. All creatures within 10 feet of this intersection take 2d6 fire damage and gain the staggered condition as the spray of molten stone and metal hardens. A target can attempt a DC 14 Reflex save to halve the damage and negate the staggered condition. Otherwise, the staggered condition lasts for 1 minute unless the target or an adjacent creature uses a full action to peel off enough rock and stone for the target to be able to move.",
+                "name": "Slag Barrage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #7: The Reach of Empire",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #7: The Reach of Empire pg. 61",
+                "alt": "Starfinder #7: The Reach of Empire pg. 61",
+                "href": "https://paizo.com/products/btpya1rp?Starfinder-Adventure-Path-7-The-Reach-of-Empire"
+            },
+            "page": 61
+        }
+    ]
+}

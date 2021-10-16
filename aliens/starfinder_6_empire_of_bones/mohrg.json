@@ -1,0 +1,264 @@
+{
+    "name": "Mohrg",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A mohrg is a horrific undead that appears to be an ambulatory skeleton with a writhing, rotting mass of intestines held within its ribcage (or the creature\u2019s anatomical equivalent). A tendril of these intestines winds up into the mohrg\u2019s mouth, with a clawed tongue at the end. Though mohrgs can wear clothing and armor, they usually don\u2019t (or they wear clothes that expose their torsos), ensuring that their horrific appearances are maintained and their clawed tongues remain free to make attacks.<br/><br/> Mohrgs are created from the souls of those who revel in killing sentient victims, preferably in ways that bring considerable pain and suffering. In life, most mohrgs were executioners, murderers, torturers, or warmongering soldiers who dedicated themselves to spilling blood and eliciting tortured cries. So strong are these urges that even death can\u2019t stop them, and while the rest of their bodies rot away, a vile core of their bones and guts remains.<br/><br/> Early in a mohrg\u2019s existence, its need to kill often overrides its desire for self-preservation, leading many to take extreme risks to reach more victims, which sometimes leads to their own destruction. But as they age and grow more powerful, mohrgs become more cunning about fulfilling their urges. They often become part of larger groups, ranging from packs of undead roaming the dark places near civilization to organized military groups such as the Corpse Fleet, and use their positions within such groups to ensure their bloodlust can be slaked consistently for centuries to come."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mohrg",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "immunities": [
+                "undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "slams",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+14",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "clawed tongue",
+                    "bonus": 13,
+                    "dc": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+14",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "paralyzing touch"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "create spawn"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "paralyzing touch"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": null,
+            "int": 0,
+            "wis": 0,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Eoxian"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, gang (2\u20134), or mob (3\u20135 plus 4\u201312 occult zombies)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A living humanoid creature slain by a mohrg\u2019s slam attack rises immediately as an occult zombie (<i>Starfinder Alien Archive</i> 115) of a CR equal to the victim\u2019s CR or level. This zombie is permanently under the mohrg\u2019s control. The mohrg recovers 1d8+4 Hit Points from the surge of negative energy created by the spawning process.",
+                "name": "Create Spawn",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mohrg uses its clawed tongue to make its first melee attack each round. If a target is struck and damaged by this attack, it must succeed at a DC 18 Fortitude save or be paralyzed for 1d4 minutes.",
+                "name": "Paralyzing Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #6: Empire of Bones",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #6: Empire of Bones pg. 59",
+                "alt": "Starfinder #6: Empire of Bones pg. 59",
+                "href": "https://paizo.com/products/btpya1ai/"
+            },
+            "page": 59
+        }
+    ]
+}

@@ -1,0 +1,337 @@
+{
+    "name": "Dragonkin",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Native to Triaxus, dragonkin are smaller and more humanoid than their true dragon cousins, yet more intelligent than brutish drakes and wyverns. Even before the advent of the Gap, dragonkin had a long history of alliance with humanoids, specifically in a region on Triaxus called the Skyfire Mandate, where many dragonkin carried ryphorian riders into battle against the armies of the evil dragons in the Drakelands. With the formation of the Pact, however, the Drakelands\u2019 masters ramped back their cruelty to ostensibly legal levels; these dragons eschewed their expansionist wars in favor of biased laws, secret police forces, and corporate oligarchies. In the wake of this peace and the dawn of easily accessible space travel, the Skyfire Mandate\u2019s famed Dragon Legion was renamed the Skyfire Legion and found a new purpose as a spacefaring mercenary league that protects innocent colony worlds that are beyond the reach of the Pact\u2019s laws. Yet not all dragonkin and their bonded partners signed up to join the legendary militia\u2019s new crusade, and some instead took to the stars independently to find their own fortunes.<br/><br/> Probably the greatest distinguishing feature of the dragonkin is their near-magical ability to bond with a non-dragonkin partner, traditionally a ryphorian. Living and working together\u2014 and often training to complement each other in combat\u2014a dragonkin and his partner can develop such a deep bond that they begin to literally read each other\u2019s thoughts, allowing them to act with perfect synchronization. On Triaxus, this historically resulted in bonded pairs known as dragonrider pairs: a humanoid partner riding into combat on the dragonkin\u2019s back and providing ranged and magical support. While there are still plenty of planet-dwelling pairs who practice this ancient form of combat, today, a dragonkin and his partner more often use their link to make an exceptional starship crew or ground assault squad. The bond between dragonkin and partner goes far beyond simple combat, however. While generally not romantically involved with each other, dragonkin and their partners act in sync in nearly every aspect of their lives and form an inseparable partnership that outside relationships must accommodate.<br/><br/> Life among the stars has led to variation within the dragonkin race, both culturally and genetically. While dragonkin adopted the use of armor, weapons, and other tools millennia ago, this reliance has accelerated dramatically in recent centuries. Dragonkin who remain on Triaxus and live according to tradition retain their abilities, yet those who make their homes in the cramped quarters of ships and space stations have a diminished ability to fly\u2014a fact that drives a wedge between traditionalists and the newer breed, the latter of which claim that a good starship provides the only wings they need.<br/><br/> Dragonkin tend to be intimidatingly stoic to strangers but loyal and fun with their friends. While the Skyfire Legion has an unusually heroic code of ethics for a mercenary unit, dragonkin in general are no more good or evil than humans, finding their own religious or moral codes or simply doing whatever it takes to protect their friends and families. While legionaries don\u2019t like to admit it, many dragonkin (and even their humanoid partners) are perfectly happy working for the chromatic-run corporations on Triaxus, conducting shady operations and making sure humanoids in the Drakelands remain properly cowed. Dragonkin have a particularly complicated relationship with the vesk, as the normally aggressive reptilian race have ancient religious scriptures claiming that the spirits of the Veskarium\u2019s greatest warriors would be reincarnated elsewhere in a form suspiciously similar to the dragonkin, and thus vesk have always treated dragonkin with respect and deference, even when their two systems were at war.<br/><br/> The average terrestrial dragonkin is 15 to 20 feet long and weighs roughly 2,000 pounds, while the spacefaring variety can be as small as half that size."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Dragonkin",
+        "type": "stat_block",
+        "cr": "9",
+        "role": "Combatant",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Dragon"
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "dragonkin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "soldier"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 142,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 25,
+                "kac": 27
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "immunities": [
+                "fire",
+                "paralysis",
+                "sleep"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 120 ft.",
+                        "movement_type": "fly",
+                        "value": 120
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "tactical magnetar rifle",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "15 ft. with dragonglaive"
+                    }
+                ],
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "9d6 F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 16 half"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "breath weapon"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "charge attack"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "blitz"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "guard"
+                        }
+                    ],
+                    "value": "fighting styles"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": 5,
+            "int": 0,
+            "wis": 1,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 17
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Draconic"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "armor training"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "keep fighting (2d6+9 HP)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "partner bond"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "advanced iridishell"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tactical magnetar rifle with 50 longarm rounds"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "thunderhead dragonglaive with 1 battery (20 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Triaxus)",
+            "organization": "solitary, bonded pair (1 and 1 partner), patrol (3\u20136 bonded pairs), wing (7\u201314 bonded pairs)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A dragonkin can form a permanent bond with one willing non-dragonkin creature. Once this bond is made, a dragonkin cannot form another partner bond unless its current partner dies. A dragonkin and its partner can communicate with each other as if they both had telepathy with a range of 100 feet. In combat, when a dragonkin is within 30 feet of its partner, both creatures roll initiative checks separately and treat the higher result as the result for both of them.",
+                "name": "Partner Bond",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 40",
+                "alt": "Alien Archive pg. 40",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 40
+        }
+    ]
+}

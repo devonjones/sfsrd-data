@@ -1,0 +1,263 @@
+{
+    "name": "Hashukayak",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Due to its rare ring shape, the planet Orikolai is a place of diverse environments, variable gravity, and extreme seasons where one side of the planet is in constant light for hundreds of days at a time while the other side is in perpetual gloom. Whereas some species hibernate or have evolved to spend months at a time in darkness, hashukayaks tirelessly migrate from one side of the ring to the other in pursuit of sunlight and the lush plants on which they feed. These massive beasts are a keystone species, serving as prey for many of the planet\u2019s large carnivores, dispersing seeds over huge areas, and cropping grasses to make way for new growth.<br/><br/> Although hashukayaks demonstrate considerable sexual dimorphism, they have many traits in common. Each is an eight-legged herbivore about 10 feet long and 5 feet tall at the shoulder, weighing about 4,000 pounds in a normal gravity environment (though the gravity on Orikolai is irregular). Hashukayaks store excess fat and water in a double hump at the base of the neck, which they use to store nutrients when crossing less hospitable terrain. A hashukayak\u2019s eight eyes can focus independently, and each perceives a different spectrum of light, allowing the animal to see in dim conditions as well as sense subtle cues in the atmosphere that signal the changing seasons. To handle the reduced oxygen levels and air density toward the planet\u2019s rim, these creatures have a second set of lungs that can inflate and more efficiently process thin air. These lungs also help to keep the animals buoyant in water, making them clumsy but capable swimmers.<br/><br/> A hashukayak primarily feeds on grasses, which it plucks with eight feeding tentacles arrayed around its mouth. The animal relies on its gizzard and a series of five stomachs to break down the vegetation in several cycles of fermentation aided by its rich, digestive microbiome. Hashukayaks diversify their diet as opportunities allow, digging up roots, breaking into insect colonies to snatch up larvae, or even consuming the occasional carrion. Only in three documented cases have the creatures actively chased down larger fauna to consume, and each incident seemed to be aberrant behavior associated with nutritional deficiencies or high stress.<br/><br/> Adult male and female hashukayaks live different lifestyles and inhabit different territories that overlap only periodically. When most amateur xenobiologists think of hashukayaks, they imagine the female adult, bald but for a narrow band of long hairs around the neck. These sensitive whiskers allow female hashukayaks to sense an array of stimuli, and their leaner bodies allow them to cover large distances to find food or escape predators. Female hashukayaks gather in large herds for protection, traveling with their young. As the long summer ends, these herds migrate from the higher-gravity equator toward the rim, where the planet\u2019s divergent tectonic plates form warm lakes and fertile grasslands.<br/><br/> There, the males live year round in the low-gravity plains. Male hashukayaks grow bulkier in this environment, but for all the competitive advantages their mass provides, they have a limited range. In an area with normal gravity, a male moves at half speed and gradually becomes sick and dies as its weight compresses its digestive tract. The front third of a male\u2019s body is covered in dense hair, with the greatest concentration around its neck and hump. This shields the animal from the broad horns that males grow and use to battle one another for dominance during the long summers. For all their brutal competition, male hashukayaks become much more docile during the transitional season, when the migratory females and juveniles travel to the rim. At that time, dominant males use their feeding tentacles to build elaborate altars or bowers made of logs, dried grasses, and smoothed pebbles. The fancier the installation and its contents, the more attractive the male, and accomplished architects can mate numerous times in a season."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hashukayak",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see sexual dimorphism"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 70,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "see sexual dimorphism"
+                    }
+                ],
+                "eac": 17,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "see sexual dimorphism"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+7",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "gore",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "bleed"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "see sexual dimorphism"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2d6+7 B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 13"
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 0,
+            "con": 4,
+            "int": -4,
+            "wis": 2,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 10
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "see sexual dimorphism"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "temperate plains or hills (Orikolai)",
+            "organization": "solitary, gang (2\u20139 males), or herd (5\u201320 females and young)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Male and female hashukayaks manifest different physical traits during adolescence, and an adult gains several additional abilities that modify the statistics above.<br/><br/> Males develop a voluminous ruff of fur along their necks, front shoulder joints, and humps. They are also heavier, with stout horns growing from their heads and front shoulders. These adaptations grant a male hashukayak a gore attack (included in the statistics above), a +1 bonus to KAC, and a +15 bonus to Intimidate checks.<br/><br/> Female hashukayaks are less massive, more adaptable, and far swifter. Their fur ruffs extend only across their necks but connect to dense arrays of nerve cells that help detect smells, wind, and movement. These adaptations grant a female hashukayak a +1 bonus to EAC, a 40-foot land speed, blindsense (vibration) with a range of 30 feet, and a +10 bonus to Survival checks.",
+                "name": "Sexual Dimorphism",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 72",
+                "alt": "Alien Archive 2 pg. 72",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 72
+        }
+    ]
+}

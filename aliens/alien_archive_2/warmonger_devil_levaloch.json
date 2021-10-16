@@ -1,0 +1,373 @@
+{
+    "name": "Warmonger Devil (Levaloch)",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Few devils personify the infernal approach to military operations like a levaloch. This fiend\u2019s mind is simultaneously logical and passionate, driven to promote Hell\u2019s order through conflict. Its restless spirit finds joy only in battle. Within Hell\u2019s hierarchy, levalochs serve in elite strike forces composed entirely of others of their kind or as commanders of units of other warlike devils.<br/><br/> Fearsome in appearance and skill, warmonger devils are diabolical essences infused into constructed metallic frames. Standing 10 feet tall and weighing 1 ton, a levaloch\u2019s body resembles the torso of a hellish, armored knight placed atop six fiendish, clawed, insectile legs. Even compared to other devils, the anatomy of a levaloch is an enigma. They have no internal physiology at all, being little more than living suits of blasphemous chitin and Hell-forged armor. As a result, levalochs are often misidentified as constructs.<br/><br/>A single levaloch is quite powerful on its own, but the devils\u2019 true might lies in working alongside other devils in battle. Levalochs lead from the front lines, inspiring their allies and terrifying their foes. They are demanding, stern leaders, but they aren\u2019t dismissive of devils lower in Hell\u2019s hierarchy. Levalochs instead assess a given ally based on that being\u2019s capabilities and strategic utility, knowing a single powerful devil might not be able to accomplish what a horde of lesser fiends can. Warmonger devils\u2019 grasp of strategy and tactics is undisputed, and they can understand and execute complex maneuvers. Coupled with this tactical mastery is a devious creativity that allows a levaloch to respond well to unexpected changes in a situation. This adaptability surprises foes that assume the ordered minds of devils are stagnant and resistant to change.<br/><br/> In any confrontation, warmonger devils prefer to wipe out weaker targets first and cut off routes of escape, leaving dangerous foes without allies to call upon or any recourse but defeat or surrender. Levalochs try to avoid throwing away their own troops needlessly, not out of any sense of compassion, but out of a desire to preserve numerical advantage. Fewer troops mean a diminished ability to wage war. Regardless, levalochs value infernal warriors over mortal troops and utilize them in battle accordingly.<br/><br/> When the forces of Hell engage in interplanetary assault, levalochs ride in the cargo cavity of a <a href=\"AlienDisplay.aspx?ItemName=Dhalochar\" style=\"text-decoration:underline\">dhalochar</a> to serve as a supplemental incursion force, quickly quelling pockets of resistance and paving the way for wider devilish invasion. Sometimes they remain within the dhalochar\u2019s cargo cavity until the spacefaring fiend crashes to the ground. Other times, they teleport to the planet while the dhalochar remains in the atmosphere to demolish any air defenses a defender might scramble.<br/><br/> Levalochs can also serve as useful agents provocateurs, whether preparing a world for conquest or serving a mortal summoner. Stealthy despite their large size, they can infiltrate target locations with guile rather than numbers or direct force. A levaloch\u2019s true allegiance is to Hell, however, and sloppily worded contracts and orders can lead one of them to undermine mission objectives if the levaloch believes doing so is in the best interests of its infernal masters. While warmongers do not ingratiate themselves to mortals who have summoned them as easily as other devils do, they hide their motives well.<br/><br/> Among mercenary captains in and near the Pact Worlds, stories persist of training camps run by levalochs where mortals can receive expert training at the hands of devils, paying with various services or currencies\u2014especially souls. For the downtrodden and desperate, this deal can be tempting. More than a few amateur warriors have disappeared for a few months, only to resurface later with devilishly fierce skills in battle. Even more disturbing are the reports of a mercenary company consisting entirely of levalochs. These devils supposedly offer their services as soldiers of fortune to the highest bidder, though once again, care must be taken when drawing up the contracts for such services to avoid any conflicts of interests with the levalochs\u2019 loyalty to Hell itself.<br/><br/> As befits creatures designed for combat, levalochs have a particular interest in weapon technologies. Rumors swirl that several arms manufacturers use levalochs as consultants on projects, sometimes over the protestations of other employees. Corporate lawyers who craft these infernal pacts assure staff that the levalochs\u2019 contracts are airtight. Such reassurances and the potential for increased profits are enough to assuage the fears of the corporate elite."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Warmonger Devil (Levaloch)",
+        "type": "stat_block",
+        "cr": "7",
+        "alien_family": "Devil",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Lawful Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "devil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see in darkness"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 105,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "construct form"
+            ],
+            "dr": [
+                "5/good"
+            ],
+            "immunities": [
+                "fire",
+                "poison"
+            ],
+            "resistances": [
+                "acid 10",
+                "cold 10"
+            ],
+            "sr": "12"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 40 ft.",
+                        "movement_type": "climb",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "corona laser rifle",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+7",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "nyfiber net",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "entangle"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "merciless blow"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 4,
+            "int": 2,
+            "wis": 3,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 14,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+22 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Draconic"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "hellstrider"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "phalanx"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "sintered trident with integrated corona laser rifle with 2 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "nyfiber net"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Hell)",
+            "organization": "solitary, pair, or squadron (3\u201318)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Despite being true devils, levalochs have a number of immunities common to constructs. They are immune to ability damage, ability drain, death effects, disease, energy drain, exhaustion, fatigue, necromancy effects, negative levels, nonlethal damage, paralysis, sleep, and stunning.",
+                "name": "Construct Form",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Difficult terrain doesn\u2019t hamper a levaloch\u2019s movement.",
+                "name": "Hellstrider",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a levaloch hits an entangled foe with an attack, the target takes 2d6 additional damage of the same type.",
+                "name": "Merciless Blow",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Devils gain a +1 morale bonus to attack rolls and AC while adjacent to a levaloch.",
+                "name": "Phalanx",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 36",
+                "alt": "Alien Archive 2 pg. 36",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 36
+        }
+    ]
+}

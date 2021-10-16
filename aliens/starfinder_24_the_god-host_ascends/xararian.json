@@ -1,0 +1,315 @@
+{
+    "name": "Xararian",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Xarar and its colony worlds in the Vast have been ruled for millennia by an elite hierarchy of powerful spellcasters. Those who show a talent for magic and embrace these values are collected from their homes and dispatched to arcane colleges that tower over the largest cities of Xarar, while the rest of the population are doomed to a life of backbreaking servitude. Both organized religion and technology are suppressed, out of fears that divine empowerment or advanced machinery might lead to a bloody peasant uprising.<br/><br/> When Triune granted knowledge of the Drift to the people of Xarar, those in power on the planet saw it as the greatest of all possible threats, moving swiftly to destroy all record of its existence on their own world.<br/><br/> Relying on divination and teleportation magic, dedicated thaumaturges were dispatched far and wide to assess the growing threat of technology from the greater universe. The majority of these agents are xararians, humanoids with wrinkled brows, long white hair, and pale skin. Rarely, other races under Xararian subjugation are also appointed as thaumaturges; after decades of study, they are finally allowed to don the traditional black flowing robes and elaborately carved staves that mark their high station."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Xararian",
+        "type": "stat_block",
+        "cr": "18",
+        "role": "Spellcaster",
+        "xp": 153600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Lawful Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "xararian"
+                }
+            ]
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "male"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "xararian"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mystic"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 31
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 320,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 31,
+                "kac": 32
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                }
+            },
+            "immunities": [
+                "vacuum"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "in space only"
+                            }
+                        ],
+                        "name": "fly 20 ft.",
+                        "movement_type": "fly",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "starflight"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "force dart",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+18",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 25"
+                        }
+                    ],
+                    "value": "meteor shower"
+                }
+            ],
+            "connection": "star shaman"
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": 3,
+            "int": 8,
+            "wis": 11,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 36
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 36
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "stargazer"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "starlight form (18 minutes, DC 25)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "starry bond"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "swap spells"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "walk the void"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "xararian robes (functions as freebooter armor V)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "hardlight staff"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "xararian spell tome"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, entourage (1 plus 2\u20135 guardian creatures)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a xararian can generate a dart of glowing energy with a range increment of 100 feet. This attack has the force descriptor.",
+                "name": "Force Dart",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a xararian mystic who has at least one free hand can replace any one of their spells known with a new spell of the same level contained within their spell tome. A typical xararian thaumaturge\u2019s spell tome contains the following additional spells at the associated levels\u2014<i>animate dead</i> (4th), <i>enervation</i> (4th), <i>feeblemind</i> (5th), <i>mystic cure</i> (4th through 6th), <i>raise dead</i> (5th), and <i>waves of fatigue</i> (5th).",
+                "name": "Swap Spells",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #24: The God-Host Ascends",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #24: The God-Host Ascends pg. 61",
+                "alt": "Starfinder #24: The God-Host Ascends pg. 61",
+                "href": "https://paizo.com/products/btq01zq8?Starfinder-Adventure-Path-24-The-GodHost-Ascends"
+            },
+            "page": 61
+        }
+    ]
+}

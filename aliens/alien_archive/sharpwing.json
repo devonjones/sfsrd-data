@@ -1,0 +1,242 @@
+{
+    "name": "Sharpwing",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Sharpwings are fierce and fast carnivores found mainly in and soaring between the Ice Wells of Aballon\u2014deep craters filled with a surprising variety of biological life that most people wouldn\u2019t associate with the predominantly machine-occupied planet. Those who encroach on sharpwing territory know that the only way to survive an encounter with the deadly predator is to bring it down before it draws close enough to attack with its devastating talons. Even such an undertaking is fraught with risk, as the creatures slice through the sky at such speeds that few have a chance of firing more than once or twice before the creature\u2019s razor claws descend. Sneaking up on a sharpwing is next to impossible thanks to the sensors covering its sleek body and wings, and while the beast is flying, it almost always sees its prey long before the prey is aware of its presence.<br/><br/> Fortunately for other creatures, these long-ranging hunters typically fly alone. One sharpwing is a dangerous foe, with little preference in the creatures it hunts. A pair can be deadly even to an experienced adventurer, especially if the creatures happen to be defending a nest or a newly hatched keenling, and woe unto the foolish explorer who stumbles the creatures roosting along the edges of an Ice Well crater. Only in lean times will the creatures take to the sky as a group to hunt, but when they do, they have been known to bring down prey several times their size.<br/><br/> Sharpwing breeding season lasts for several months each year, during which an unpaired male sharpwing\u2019s many visual sensors begin to blink rapidly. Biologists believe that this fast blinking signals to unpaired female sharpwings that the male\u2019s sensors are strong and plentiful. In areas where the male sharpwing population is greater than the female population, multiple unpaired males sometimes gather in a circle around a female and spread their wings, trying to showcase as many of their sensors as possible. The female sharpwing then chooses a suitable mate from among the suitors by pecking sharply at his forehead. A sharpwing lays only three or four eggs at a time, and the parents remain paired until all the eggs have hatched, as they both have connections to them after they are laid.<br/><br/> Sharpwing eggs are covered with the same organs that cover a sharpwing\u2019s body, and sharpwing parents have the curious ability to see through those eyes. Many scholars believe this connection is possible due to a genetic form of quantum entanglement the creatures evolved thanks to Aballon\u2019s natural radiation. Others posit that the First Ones are responsible for tinkering with the species\u2019 genetic code millennia ago. In addition, and slightly more puzzling to biologists, is the eggs\u2019 ability to sprout slender legs and flee threats perceived through these same sensors. Such movement is of questionable evolutionary benefit, as it is neither swift nor stealthy and has been known to result in the eggs tumbling down cliffs, sinking into bodies of water, or otherwise ensuring their own destruction.<br/><br/> Sharpwings\u2019 unusual biology provides multitudinous opportunities in arcane, biogenetic, and technological research and development, but it has led to overeager researchers turning to or becoming game hunters. Paying to acquire a sharpwing or one of their eggs is a costly endeavor, and even more so for living specimens. Some entrepreneurs have captured sharpwings to breed them as a commodity, leading to out-of-control invasive populations of the predators on planets far from Aballon. However, they are on the brink of extinction on their home world due to this same increasing demand and the planet\u2019s ever-expanding urban sprawl. This threat to the species (and the threat sharpwings pose to species on other worlds) has drawn the attention of the Xenowardens, and discussion of trade sanctions now threatens to push the breeding, capture, and trade of sharpwings and their eggs into the black market, where it will undoubtedly flourish and possibly hasten the species\u2019 demise."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Sharpwing",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 12
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 21
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "unflankable"
+            ],
+            "immunities": [
+                "nonlethal damage"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "15 ft.",
+                        "movement_type": "walk",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 80 ft.",
+                        "movement_type": "fly",
+                        "value": 80
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+14",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "claws",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+14",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": 2,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "feats": [
+                "Spring Attack"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 21,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+29 when flying"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "ovitonomy"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any cold (Aballon)",
+            "organization": "solitary, pair, or sight (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A sharpwing egg is inlaid with the same visual sensors that cover the adult creature\u2019s body. By concentrating, either parent can see through these eyes just as it can through its own, allowing it to monitor the egg\u2019s surroundings for potential threats while it is out hunting for sustenance. However, the sharpwing is unaware of its own surroundings while it is concentrating on its egg. In addition, these visual sensors allow a sharpwing egg to nominally react to its own surroundings. If an unattended egg sees an approaching threat (usually any creature other than a sharpwing), it can extend a number of short limbs and crawl away in search of safety at a speed of 10 feet per round. Either of the egg\u2019s parents can also direct the egg to move, using the same connection that allows the parent to see through the egg\u2019s eyes.",
+                "name": "Ovitonomy",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 102",
+                "alt": "Alien Archive pg. 102",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 102
+        }
+    ]
+}

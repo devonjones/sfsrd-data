@@ -1,0 +1,275 @@
+{
+    "name": "Bloodbrother",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Usually confined to the glaciers that float upon the seas of Darkside\u2014the side of tidally locked Verces that\u2019s always turned away from the sun and thus never feels its heat\u2014 the abominations known as bloodbrothers hunt smaller creatures for their vital essences.<br/><br/> Measuring over 15 feet tall and 11 feet long, a bloodbrother looks like a millipede or some other armored, wormlike arthropod from the waist down. Its upper half resembles that of a muscular humanoid with a set of bony appendages protruding from a cavity in its chest. This ersatz rib cage can open like a fanged mouth, and when a bloodbrother places captured prey within it, the bones clamp down on the creature while the walls of the enclosure exude thin tendrilous suckers. These suckers tap into the prey\u2019s circulatory system. Rather than simply drinking its blood, though, the bloodbrother uses the trapped creature as an auxiliary heart, absorbing blood-borne nutrients and using the prey\u2019s metabolism to help it heat and feed itself. Prey can be kept alive in this way for months, until all its stored energy has been used up and the bloodbrother lets the lifeless husk fall to the ground.<br/><br/> A bloodbrother that hasn\u2019t fed in a long time is almost sheer white, its chitinous exterior drying out and splitting like the husk of a coconut into hairlike fibers\u2014the better to hold on to snow and disguise the creature for its ambushes. Once it\u2019s successfully implanted a victim, however, its body takes on a purplish hue as it has rejuvenated with the flow of blood and vital fluids, while its fibrous hair lies back down and seals itself into smooth scales once more. This renewed appearance lasts for as long as the bloodbrother holds a victim and for several weeks thereafter.<br/><br/> Bloodbrothers\u2019 gruesome feeding habits mean that intelligent creatures with any knowledge of the magical beasts usually flee from them or kill them on sight. However, a hungry bloodbrother\u2019s fur is too stringy to be used as a pelt, and its meat tastes foul, meaning that hunting them provides nothing but a sense of bravado. As a result, the bloodbrother population on Verces has remained steady\u2014and luckily small\u2014for millennia. Their need for regular victims in an environment hostile to most life means that bloodbrothers usually live alone, though they may occasionally gather into small packs called clans. Even during times when prey is scarce, these bloodbrothers don\u2019t cannibalize one another. Instead, they migrate toward more inhabited areas, fearlessly taking on overwhelming odds if it means refreshing the blood in their veins.<br/><br/> Despite their name\u2014a moniker assigned to them not by themselves but by humanoid Vercites\u2014bloodbrothers have no sense of gender, and they reproduce asexually. At a certain point in a bloodbrother\u2019s life, a handful of small, furry nodules appears along its spine. Biologists disagree on the exact conditions that cause this; some believe it is a rise in temperature, while others posit that reproduction requires specific nutrients in the blood of the creature\u2019s most recent victim. As the months pass, the buds grow in size (and furriness) until they are about a foot across. Then, with a series of sickening squelches, these bulbs fall off the parent bloodbrother into the surrounding snow and ice. A few moments later, they uncurl into several immature bloodbrothers that are eager to entrap their first victims (usually tiny mammals or birds). In less than a year, a young bloodbrother reaches its full size and ferocity.<br/><br/> Despite their horrific and merciless nature, bloodbrothers are not mere beasts and are actually as intelligent as the average human. This facet of their nature is often overlooked due to both their lack of tool use and their apparent lack of interest in communication with other races. \u201cInterest\u201d is the operative word here, for while bloodbrothers have no language of their own, they appear to be able to understand those of others\u2014 they simply don\u2019t care to speak. Communication with other members of a clan is conducted entirely through actions, physical touch, and some form of advanced intuition into the other\u2019s needs, perhaps aided by pheromones or other signals not yet detected by researchers.<br/><br/> Bloodbrothers typically make their home in ice caves or stone caverns, patrolling the surrounding area for easy-to-capture prey. In the case of a clan, one member typically stays behind to protect the caves and any offspring therein, while those hunting return with an extra captive or two for them. When resting, the bloodbrothers slither onto one another to form one large pile. The blood-drained corpses of their pray lie scattered about the caves, eventually getting buried in the snow and ice, and trackers are quick to recognize a bloodbrother clan\u2019s lair by the massive number of bones that can be found poking from the floor and walls."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Bloodbrother",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral Evil",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "cold"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (thermal) 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 107,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 5"
+            ],
+            "immunities": [
+                "cold"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "cold"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "rib cage prison"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 4,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vercite"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any cold (Verces)",
+            "organization": "solitary, pair, or clan (3-6)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A bloodbrother\u2019s body generates intense cold, dealing 1d6 cold damage to any creature that hits it with a natural weapon or unarmed strike and to any creature the bloodbrother hits with its slam attack. A creature that begins its turn grappled by a bloodbrother also takes this damage.",
+                "name": "Cold",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a bloodbrother begins its turn grappling a creature that is Large or smaller, it can attempt a grapple combat maneuver as a standard action to transfer the creature into its rib cage prison. A creature in a bloodbrother\u2019s rib cage prison has the grappled condition. As a reaction, a bloodbrother can force a creature in its rib cage prison to attempt a DC 15 Fortitude saving throw; on a failed save, the creature takes 1 point of Constitution damage. Any round that a creature in its rib cage prison takes this Constitution damage, the bloodbrother gains fast healing 5 for that round only; the above statistics assume a bloodbrother has a Small animal with a current Constitution score of 5 (its maximum Constitution score is 10) trapped in its rib cage prison at the beginning of combat. A bloodbrother can have only one creature in its rib cage prison at a time; if it imprisons a new creature, it must release the creature currently in its rib cage. Releasing a creature does not require an action.",
+                "name": "Rib Cage Prison",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 22",
+                "alt": "Alien Archive pg. 22",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 22
+        }
+    ]
+}

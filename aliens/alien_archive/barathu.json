@@ -1,0 +1,242 @@
+{
+    "name": "Barathu",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Barathu",
+        "type": "stat_block",
+        "cr": "5",
+        "alien_family": "Barathu",
+        "role": "Expert",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 17
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 65,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "defensive_abilities": [
+                "amorphous"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+6",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 0,
+            "con": 3,
+            "int": 2,
+            "wis": 5,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 17
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Brethedan"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "adaptation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "combine"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any sky (Bretheda)",
+            "organization": "solitary or herd (2\u20135 plus 4\u201312 early stage barathus)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A barathu\u2019s body is extremely mutable and can adapt to respond to virtually any situation. Once per round as a swift action, a barathu can reshape its body and adjust its chemistry to adopt one of the following qualities. A barathu can have only one adaptation in effect at a time; a new adaptation replaces any other in effect. More extreme adaptations are also possible (at the GM\u2019s discretion) but could take days to adopt. <ul><li>The barathu adds an additional amount of damage on melee attacks equal to twice its Strength modifier.</li><li>It gains a +4 racial bonus to Armor Class.</li><li>Sturdy lower limbs grant it a base speed of 20 feet.</li><li>Rigid plates grant it DR 2/\u2014.</li><li>It gains a ranged attack with a low attack bonus appropriate for its CR (+10 for most barathus) that deals bludgeoning damage appropriate for its CR (1d6+5 for most barathus) and has a range increment of 60 feet.</li><li>Molecular modifications grant it resistance 5 against a single energy type (acid, cold, electricity, fire, or sonic).</li><li>Its reach increases to 15 feet.</li></ul>",
+                "name": "Adaptation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Barathus can combine to work together as parts of a larger organism. As a swift action, a barathu adjacent to another barathu can merge with it, becoming a single creature occupying both barathus\u2019 spaces. The merging barathu can no longer take actions, and it adds its current Hit Points to the new creature\u2019s collective total. For every four component creatures, the combined creature\u2019s size category increases by one. At this time, it also chooses one adaptation. The combined creature gains this adaption and cannot change it unless the combined creature uses its adaptation ability to do so. Any number of barathus can merge in this fashion, but each adaptation can be gained only once (though resistances to multiple energy types are allowed). The combined creature retains the ability to swap one adaptation each round (not once per component creature). The combined creature can split into its component creatures as a full action; the combined creature\u2019s remaining Hit Points are divided evenly among all component creatures. For the purposes of CR-related effects, the CR of the combined creature is equal to the CR of the component creature with the highest CR.",
+                "name": "Combine",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 20",
+                "alt": "Alien Archive pg. 20",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 20
+        }
+    ]
+}

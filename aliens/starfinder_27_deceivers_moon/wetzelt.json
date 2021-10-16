@@ -1,0 +1,240 @@
+{
+    "name": "Wetzelt",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Reptoids use their mastery of genetic engineering to create obedient, highly aggressive pets they call wetzelts. The wetzelt is a hunter and tracker, able to swiftly follow prey. The creature also generates an electromagnetic field that jams comm units and causes other powered items to fail on discharge.<br/><br/> Wetzelts are strange in appearance. They possess four appendages like a humanoid, but they crawl on all fours, and their limbs project out from the side. As a result, the wetzelt looks like it is walking on four arms, elbows sticking out. The wetzelt has scaly skin, glowing eyes, and a bulbous head with a beak-like mouth and no visible ears or nose.<br/><br/> The horrifying truth about the wetzelt is that they are not merely organisms grown in a lab. Each was once a reptoid, before being subjected to extensive biological manipulation. Although non-reptoid scholars theorize that this form is a punishment reserved for reptoids who have betrayed their kind\u2014perhaps by revealing reptoid secrets or simply abandoning their assignment to live within their new society, as many reptoids have been known to do\u2014no one in the Pact Worlds knows for sure why some reptoids are transformed. If reversing the transformation is possible, no one has yet discovered a reliable method.<br/><br/> Wetzelts left on their own hunt whatever prey they can find. Their claws are engineered to shred through hard material, so they freely ambush both solitary victims and vehicles with potential prey inside."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Wetzelt",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "reptoid"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "aura": "electromagnetic field (30 ft., DC 13)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+9",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "penetrating strikes"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 1,
+            "int": -2,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 10
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Reptoid"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A wetzelt generates an electromagnetic field that disrupts technological devices and constructs, and interferes with electronic signals, such as those employed by comm units. Such signals do not function within this area. When a creature activates an item with charges within the area of effect, that object must succeed at a DC 13 Reflex save or is drained of the charge and the action is lost. A technological construct that begins its turn in this area must succeed at a DC 13 Reflex save or be staggered and unable to use energy-based attacks for 1d3 rounds. A creature or object that succeeds at its saving throw is immune to any wetzelt\u2019s electromagnetic field for 24 hours. Equipment held, manufactured, or used by reptoids is unaffected by a wetzelt electromagnetic field.",
+                "name": "Electromagnetic Field",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A wetzelt\u2019s claw attacks have the penetrating weapon special property, ignoring hardness up to the wetzelt\u2019s CR (usually 4).",
+                "name": "Penetrating Strikes",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #27: Deceivers\u2019 Moon",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #27: Deceivers\u2019 Moon pg. 61",
+                "alt": "Starfinder #27: Deceivers\u2019 Moon pg. 61",
+                "href": "https://paizo.com/products/btq0216g?Starfinder-Adventure-Path-27-Deceivers-Moon"
+            },
+            "page": 61
+        }
+    ]
+}

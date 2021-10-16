@@ -1,0 +1,226 @@
+{
+    "name": "Feeder Fungus",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "This ambulatory fungus resembles a very thick lichen, with shoots of long, coiled, fernlike tendrils at the center of its mass. Shorter stalks end in hand-sized pods, which dispense clouds of fine spores. While the feeder fungus has limited mobility, it is nonetheless an effective ambush predator. The spores it releases have a narcotic effect on most creatures, and once a victim is affected, the fungus extends tendrils to grab and throttle its prey. The corpses of its prey provide the fungus with food as well as their means of propagation: once a feeder fungus has accumulated more than it needs to subsist, it produces a special pod it implants in a hollowed-out corpse, which develops into a new feeder fungus. Feeder fungi are repelled by the spores of other feeder fungi, a biological mechanism that encourages a younger fungus to disperse. Newly spawned fungi are smaller than mature specimens and have shorter tendrils, which they use for more rapid movement; such fungi are usually CR 2 and Small with a 30-foot speed and a 5-foot reach. These mobility tendrils grow into grasping tendrils after the fungus has made its first kill, using its prey to fuel its growth into adult size.<br/><br/> The feeder fungus\u2019s narcotic spores can be used to synthesize medical-grade tier 2 sedatives. A character can harvest a single spore pod from a helpless or dead feeder fungus with a successful DC 22 Medicine or DC 27 Survival check. This pod is worth 3,000 credits and contains enough material (treat as virtual UPBs that can be used only to craft sedatives) to create 5 doses of sedative."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Feeder Fungus",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "aura": "narcotic spores (30 ft., DC 15)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 52,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "immunities": [
+                "plant immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 10 ft.",
+                        "movement_type": "climb",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "fungal pod",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+4",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "stunned"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with tendril"
+                    }
+                ],
+                "value": "5 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 1,
+            "con": 3,
+            "int": -4,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 10
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any temperate and warm land",
+            "organization": "solitary or clutch (1 adult and 1\u20134 juveniles)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Every 1d4 rounds, a feeder fungus can launch a fungal pod at a target within 30 feet. A critical hit delivers a concentrated blast of the feeder fungus\u2019s narcotic spores, stunning the target for 1 round.",
+                "name": "Fungal Pod",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A feeder fungus constantly emits a cloud of nearly invisible narcotic spores. A living creature that breathes in this aura must succeed at a DC 15 Fortitude save or be staggered for 1 round. This is a poison effect. Environmental protections, such as those found in most armor, negate this effect.",
+                "name": "Narcotic Spores",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #20: The Last Refuge",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #20: The Last Refuge pg. 55",
+                "alt": "Starfinder #20: The Last Refuge pg. 55",
+                "href": "https://paizo.com/products/btq01zo2?Starfinder-Adventure-Path-20-The-Last-Refuge"
+            },
+            "page": 55
+        }
+    ]
+}

@@ -1,0 +1,274 @@
+{
+    "name": "Rheonnaghan",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Many scholars believe that the heart of every star contains a link to the Positive Energy Plane. Though this theory is difficult to verify, temporary portals to the Positive Energy Plane have been recorded deep within the Pact Worlds\u2019 sun, as well as the suns of other advanced civilizations. Rarely, a crystalline mass that precipitated from the surrounding plasma coalesces around such a rift, similar to the way an oyster forms a pearl. The abundant energy radiating from the Positive Energy Plane sometimes infuses this matter with life and ejects it from the star, giving birth to an enigmatic native outsider known as a rheonnaghan.<br/><br/> Appearing as pulsing geometric shapes of pure energy, rheonnaghans have an almost unshakable fascination with the suns of the galaxy. Though they aren\u2019t immune to the heat and radiation produced by stars, they tend to hover in close proximity to them in order to study their cosmic phenomena, and are sometimes mistaken for mystical pieces of solar ejecta. Most rheonnaghans naturally develop solarian-like powers, and some retain the crystalline cocoons from which they were born, using them to conduct experiments into their own nature.<br/><br/>Though rheonnaghans are rare, the planar scientists who study them agree that no two are alike\u2014each exhibits their own unique geometric form. No one has yet discerned the meaning of the differences in rheonnaghan\u2019s shapes, though many theories have been posited, ranging from age to a representation of the galactic coordinates of the sun from which the outsider was born. When asked about it, rheonnaghans don\u2019t seem to understand the question and become offended at their existence being reduced to simple mathematics.<br/><br/>A typical rheonnaghan stretches approximately 20 feet across but weighs next to nothing."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Rheonnaghan",
+        "type": "stat_block",
+        "cr": "15",
+        "role": "Combatant",
+        "xp": 51200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral Good",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "native"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 26
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 268,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 31
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "coronal flare",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d8+15",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "20 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "penumbral reflection"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 4,
+            "con": 7,
+            "int": 3,
+            "wis": 3,
+            "cha": 9,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 26,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+34 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 31
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aquan"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Auran"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ignan"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Terran"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "stellar alignment"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "vacuum",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A rheonnaghan can unleash a blast of fire infused with positive energy as an attack with a range increment of 60 feet. This attack has the bright weapon special property, counts as magic, and ignores any energy resistance of undead creatures. When a rheonnaghan is fully photon-attuned, they can fire up to three of these flares as a full action, taking a \u20135 penalty to each attack roll; this counts as a zenith revelation power.",
+                "name": "Coronal Flare",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Rheonnaghans can sometimes reflect ranged attacks made against them back at their enemies. When a rheonnaghan is fighting defensively, they can, as a reaction, reflect one ranged attack that misses them, selecting a new target within 30 feet and making a ranged attack roll at a total bonus of +21. If this attack hits, the new target is damaged as if it had been the intended target of the original ranged attack.<br/><br/> When a rheonnaghan is fully graviton-attuned and successfully redirects a ranged attack as a reaction, they can reflect additional ranged attacks until the beginning of their next turn. The rheonnaghan takes a cumulative \u20132 penalty to each redirecting attack roll after the first. If any reflected attack misses, the rheonnaghan can\u2019t make further redirect attempts this turn. Using penumbral reflection in this manner counts as a zenith revelation power.",
+                "name": "Penumbral Reflection",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #18: Assault on the Crucible",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #18: Assault on the Crucible pg. 59",
+                "alt": "Starfinder #18: Assault on the Crucible pg. 59",
+                "href": "https://paizo.com/products/btq01wt6?Starfinder-Adventure-Path-18-Assault-on-the-Crucible"
+            },
+            "page": 59
+        }
+    ]
+}

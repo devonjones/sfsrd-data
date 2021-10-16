@@ -1,0 +1,233 @@
+{
+    "name": "Caypin",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Caypins are some of the most insidious creatures to inhabit the galaxy\u2019s marshes. Although they are hulking beasts, their physiques somewhere between those of wolves and crocodiles, they\u2019re best known for the strange, detachable tentacles that contain both their eyes and their mouths. These eyestalks are able to wriggle like eels both on land and in water, and they can travel up to 100 feet from their \u201chost,\u201d allowing the caypin to both hunt and keep eyes on its territory\u2014literally\u2014 while still lurking safely out of sight, often underwater. While the tentacles are capable of transmitting information back to their caypin via poorly understood psychic phenomena, the tentacles are relatively weak on their own and generally return to their host or gather together in groups before engaging with prey or intruders. In marshy areas where caypins are known to hunt, only the foolish wade into water without first checking to make sure that no fat, vermian tentacles with tiny mouths lurk nearby.<br/><br/> Caypins live on multiple planets throughout the galaxy and are most plentiful on worlds that support extensive swamps or marshes full of meaty prey. Contrary to most people\u2019s assumptions, caypins are not naturally evil\u2014their limited intellects are incapable of truly understanding moral questions at all\u2014but they are apex predators singularly driven by an insatiable hunger for huge amounts of raw meat. Caypins tend to eat half of their body weight in meat every few days, chewing away at the corpses of prey with their dozens of tiny mouths, and more than a few planets have seen native populations of slow-moving mammals, flightless birds, or languid amphibians go extinct due to caypins\u2019 voracious hunting patterns. Likely for this reason, caypins typically live and hunt alone, although occasionally a mated pair shares a single swamp that both use as a killing field. Caypins typically live several hundred years or longer. However, caypins that cannot regularly feed fall into torpor, sometimes sleeping for years at a time in the muck of a river bottom before awakening with a driving hunger.<br/><br/> Caypin biology is as fascinating as it is terrifying, as scholars from both universities and private industry have all so far failed to identify the mechanism by which its detachable appendages communicate with the main body. The wolf-shaped body of a caypin has no eyes or mouth of its own\u2014rather, it sees and eats only via the contributions of dozens of thick, stalk-like appendages that hang from a jawlike protrusion on the front of their skulls. Each appendage bears a bloodshot eyeball looming over a tiny mouth with multiple rows of razor-sharp teeth. While their stalks are attached to their jaws, caypins feed normally, with the tiny mouth-tentacles passing along nutrients through a receptive socket in the jaw. Yet these tentacles can also detach and hunt independently, swarming over unwitting creatures, stripping the victims of meat, and carrying the masticated nourishment back to the caypin\u2019s body. Once reattached, these appendages inject the meat into the feeding sockets to be digested as normal. Caypins can drink without the aid of their feeding appendages, ingesting water directly through the tentacles\u2019 attachment sockets. Lacking digestive organs of their own, these tentacles are reliant on the main body to refresh the nutrients in their blood. Whether this strange system is the result of two symbiotic creatures having evolved to rely on each other or a single creature evolving a curious trait remains anyone\u2019s guess. While many biologists believe the caypin\u2019s control of its tentacles is the result of some unknown (and so far untraceable) form of psychic magic, others posit that the caypin\u2019s nervous system relies on quantum entanglement, thus removing any need for physical connection. Either way, many corporations would love to uncover the secret of the caypin\u2019s instantaneous, untraceable communication.<br/><br/> Occasionally, a caypin\u2019s stalks are destroyed during a difficult hunt. In these cases, the caypin is blind and cannot eat for 3 days while its appendages regrow. A caypin that has lost its feeding appendages typically hides and avoids interacting with other living beings, but if startled or cornered, it may go into a frenzy, attacking anything near it, though its blindness makes it a much less formidable opponent than it would be normally.<br/><br/> Most xenobiologists consider caypins an invasive species that likely originated somewhere in the Veskarium, given the reptilian people\u2019s admiration for the beasts. Some powerful vesk have managed to train caypins and keep them as pets, and have been known to intentionally import them to worlds they conquer. However, given caypins\u2019 prevalence on planets that have had no known contact with the vesk, it\u2019s likely that caypins or variations thereof evolved along parallel routes on several worlds. Caypins\u2019 superficial biology supports this theory\u2014caypins on different worlds often have somewhat divergent physiologies, and caypins with dramatically different abilities likely await discovery.<br/><br/> A typical caypin is 14 feet long and weighs 1,500 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Caypin",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aquatic"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 30 ft.",
+                        "movement_type": "swim",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+13",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "feeding appendages"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 3,
+            "int": -4,
+            "wis": -1,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+21 when swimming"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 18
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "amphibious"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any swamp",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Instead of a lower jaw, a caypin has a mass of writhing eyestalks that grant the creature sight and also chew its food with tiny, lamprey-like mouths. As a move action, a caypin can detach these appendages (or reattach any adjacent appendages), which are capable of ambulating on their own and transmitting visual data back to the caypin.  An appendage that moves farther than 100 feet from the caypin\u2019s body immediately dies.<br/><br/> While caypin appendages are harmless individually, they become more formidable in groups. A caypin has enough appendages to form up to two such groups at once. While detached, the appendages share a single set of actions with the caypin and act on the caypin\u2019s initiative count. Each group of appendages has the aquatic subtype and is amphibious as per the universal creature rule; darkvision to a range of 60 feet and low-light vision; 18 Hit Points; and a base speed of 20 feet and a swim speed of 15 feet. A group of appendages takes up 5 feet of space and has a 5-foot reach. When applicable, a group of appendages uses the caypin\u2019s Armor Class, saving throw bonuses, skill check bonuses, and other qualities.<br/><br/> As a standard action, a group of appendages can enter an adjacent creature\u2019s square without provoking an attack of opportunity from that creature. When in another creature\u2019s square, the appendages can attack that creature as a swift action (using the caypin\u2019s bite attack bonus and damage). Multiple groups of caypin feeding appendages cannot share a space with the same creature at once. Other than this ability to swarm an opponent, a group of appendages cannot attack.<br/><br/> If all of a caypin\u2019s appendages are detached, the creature can see only what its detached appendages see. If all of a caypin\u2019s appendages are destroyed but the caypin still lives, the creature has the blinded condition for 3 days, after which it grows new appendages that function as normal.",
+                "name": "Feeding Appendages",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 26",
+                "alt": "Alien Archive pg. 26",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 26
+        }
+    ]
+}

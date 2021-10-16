@@ -1,0 +1,286 @@
+{
+    "name": "Xanthos",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The intimidating appearance of the robust half-equine, half\u2011reptilian xanthos (plural xanthoi) belies their remarkable intellect and magical abilities. Created by a vanished race of plane-hopping aliens to serve as their mounts, xanthoi still exhibit the natural curiosity and teleporting capabilities of their absentee masters. Their capacity for effortless travel and their drive to observe, collect, and catalogue knowledge give them a long history as field researchers, but the end of the Gap marked a drastic shift in xanthos mindsets. While other species despaired at the collective loss of so much history, the xanthoi celebrate the Gap as the period of their masters\u2019 return. They believe their creators utilized powerful magic or technology to compile all accumulated information in the universe, taking a large chunk of it with them when they again departed at the end of the Gap. They celebrate this erasure as an opportunity to learn anew, free from the misconceptions of the past, and proselytize the inevitable return of their masters, whom they believe will bring about a second Gap.<br/><br/> Understanding that their masters have already collected the \u201cold knowings\u201d that they and others have gathered throughout history, xanthoi now focus their acute observational skills on current events of all sorts. They seek to understand and document everything from political upheavals and interstellar wars to fashion trends and technological advances. Grand celestial occurrences and the final scores of local sporting events captivate them equally, and every moment of their wandering lives is recorded and uploaded into local infospheres. These firsthand accounts often gain popularity on social networks and news outlets, with the famed impartiality of the xanthoi making them ideal\u2014if somewhat dry and over-technical\u2014commentators."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Xanthos",
+        "type": "stat_block",
+        "cr": "14",
+        "role": "Expert",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 120 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 235,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                }
+            },
+            "immunities": [
+                "cold"
+            ],
+            "resistances": [
+                "electricity 30",
+                "fire 30"
+            ],
+            "sr": "25"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "60 ft.",
+                        "movement_type": "walk",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d6+22",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "hoof",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+22",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 2,
+            "con": 6,
+            "int": 1,
+            "wis": 4,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 30
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 5 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "exploit stellar conjunction"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "industrial backpack"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "personal comm unit"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "spy drone (laser microphone)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "4 batteries (20 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A xanthos can sense the alignment of stellar objects (asteroids, comets, planets, and so on), which form conjunctions that grant them magical travel. During these conjunctions, the xanthos can use their teleport spell-like ability as <i>interplanetary teleport</i> to reach any world they have visited before, or as <i>plane shift</i> to reach any plane. These conjunctions occur at the GM\u2019s discretion and usually remain viable for 10d10 hours, after which it could be days, weeks, or even months before another conjunction occurs.",
+                "name": "Exploit Stellar Conjunction",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #29: The Cradle Infestation",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #29: The Cradle Infestation pg. 61",
+                "alt": "Starfinder #29: The Cradle Infestation pg. 61",
+                "href": "https://paizo.com/products/btq021f1?Starfinder-Adventure-Path-29-The-Cradle-Infestation"
+            },
+            "page": 61
+        }
+    ]
+}

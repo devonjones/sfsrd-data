@@ -1,0 +1,297 @@
+{
+    "name": "Nacrea",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "One of the spectra\u2014native inhabitants of the Drift\u2014nacreas focus on the protection of Drift beacons and have been known to appear on ships with disabled Drift engines to perform repairs. With a hollow-faced head that seems to be filled with passing stars, a nacrea is surrounded by rings of solid light slowly spinning around a humanoid body made from what appears to be muscle-like clusters of wires and some kind of dull starmetal. Nacreas can rapidly travel through space and flit between beacons both within the Drift and without, yet they rarely linger for long, vanishing to a new location as soon as their targets are secured. As a result, despite being one of the most commonly found spectra on the Material Plane, they are also one of the most rarely seen, and were only recently confirmed to exist by planar scholars."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Nacrea",
+        "type": "stat_block",
+        "cr": "16",
+        "alien_family": "Spectra",
+        "role": "Spellcaster",
+        "xp": 76800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "spectra"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 28
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "Driftsense 1 mile"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 255,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "dr": [
+                "10/chaotic",
+                "evil",
+                "good",
+                "or lawful"
+            ],
+            "immunities": [
+                "electricity"
+            ],
+            "resistances": [
+                "cold 5",
+                "sonic 5"
+            ],
+            "sr": "26"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 90 ft.",
+                        "movement_type": "fly",
+                        "value": 90
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "helix beam",
+                    "bonus": 27,
+                    "dc": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d4+16",
+                            "damage_type": "Cold & Fire",
+                            "damage_type_text": "C & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "Drift strike"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 5,
+            "con": 3,
+            "int": 7,
+            "wis": 10,
+            "cha": 5,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 33
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 33
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 33
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "machine telepathy 100 ft."
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "slip drive"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight (Mysticism)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (the Drift)",
+            "organization": "solitary or prime (2, 3, 5, or 7)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A nacrea can automatically pinpoint the location of Drift beacons, Drift drives, and other Drift-related technology within a 1 mile radius.",
+                "name": "Driftsense",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature struck by a nacrea\u2019s attacks is teleported 30 feet to a location of the nacrea\u2019s choosing (DC 24 Will save negates). This is a teleportation effect.",
+                "name": "Drift Strike",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a nacrea can fire a twisting beam of flame and frost that has a range increment of 60 feet and the explode (10 feet, DC 24) and unwieldy weapon special properties.",
+                "name": "Helix Beam",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A spectra can communicate with and through technological devices within a certain range (usually 100 feet), as well as with other creatures that have machine telepathy. A spectra can also attempt Computers and Engineering checks at this range.",
+                "name": "Machine Telepathy",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A spectra has an internal biomechanical Drift engine that allows it to travel freely between the Drift and other planes, as well as between two non-Drift planes, using the normal rules for Drift navigation. A slip drive has an effective Drift engine rating equal to the half the spectra\u2019s CR, and a spectra need remain stationary for only 1 round (6 seconds) before engaging its slip drive.",
+                "name": "Slip Drive",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #32: The Starstone Blockade",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #32: The Starstone Blockade pg. 60",
+                "alt": "Starfinder #32: The Starstone Blockade pg. 60",
+                "href": "https://paizo.com/products/btq022lt?Starfinder-Adventure-Path-32-The-Starstone-Blockade"
+            },
+            "page": 60
+        }
+    ]
+}

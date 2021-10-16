@@ -1,0 +1,275 @@
+{
+    "name": "Cybernetic Golem",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Cybernetic Golem",
+        "type": "stat_block",
+        "cr": "8",
+        "alien_family": "Golem",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 18
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "X-ray vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 23
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons"
+            ],
+            "dr": [
+                "5/adamantine or wound"
+            ],
+            "immunities": [
+                "construct immunities",
+                "magic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "corona artillery laser",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+8",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "berserk"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "haste circuit"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": -2,
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "comm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "2 LFD pulse gauntlets with 4 batteries (20 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "corona artillery laser with 4 high-capacity batteries (40 charges each)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or gang (2-4)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a cybernetic golem takes damage that reduces it to half its maximum Hit Points or fewer, and whenever it takes damage while it has half its maximum Hit Points or fewer, it must attempt a DC 15 Will saving throw. On a failure, the golem goes berserk. While berserk, the golem uses its actions to make a full attack or to move and attack. If it can\u2019t reach or shoot a creature, it attacks objects. The golem can attempt a DC 15 Will saving throw at the end of each of its turns to end the berserk state. If the golem\u2019s creator communicates with the golem to calm it, via comm unit or from within 60 feet, and succeeds at a DC 10 Charisma check, the golem receives a +2 circumstance bonus to this saving throw.",
+                "name": "Berserk",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A golem can receive wireless communications (and thus commands from its creator) at planetary range.",
+                "name": "Comm",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A cybernetic golem can use a swift action to gain the benefit of the <i>haste </i>spell. This effect lasts for 1 round, and then the circuit shuts down and must recharge for 1 round before being activated again. The golem can use its circuit up to 10 rounds per day.",
+                "name": "Haste Circuit",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A cybernetic or nanotech golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem as follows. <ul><li>The golem can be affected by <i>discharge </i>or <i>greater discharge </i>but has a unique reaction to the spells. If the golem fails a saving throw against either spell, it becomes confused for 1d4 rounds instead of suffering the spell\u2019s normal effect. The golem can attempt a Fortitude save at the end of each of its turns, ending the condition on a success.</li><li>Magical effects that deal cold damage slow (as the slow spell) the golem for 3 rounds (no save). If the golem has a haste circuit and it is active, this effect counters the haste circuit but has no other effect.</li><li>The golem automatically fails saving throws against weapons and magical effects that deal electricity damage. However, such an effect merely breaks any slow effect on the golem and heals it for 1 Hit Point per 3 damage the effect would have dealt. Any damage that exceeds the golem\u2019s maximum Hit Points is stored as charges for its weapons, at a rate of 1 charge per Hit Point the golem would have gained. Any additional damage is ignored.</li></ul>",
+                "name": "Magic Immunity",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, the golem can grant itself X-ray vision, which functions like an <a href=\"TechItems.aspx?ItemName=X-Ray%20Visor&amp;Family=None\" style=\"text-decoration:underline\">X-ray visor</a>.",
+                "name": "X-Ray Vision",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 66",
+                "alt": "Alien Archive 2 pg. 66",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 66
+        }
+    ]
+}

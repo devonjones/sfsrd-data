@@ -1,0 +1,301 @@
+{
+    "name": "Heretic",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "From a distance, heretic velstracs resemble humanoids enhanced with cybernetic weapons and other augmentations, but a closer look removes all doubt about the nature of these outsiders. Their cybernetics seem to twist their flesh, even splitting it open in places to expose muscle and bone. Most heretics have dark leather plates sutured onto their flesh while pitted iron masks with holes for eyes are riveted onto their faces. Heretics integrate their weapons into their bodies; usually, one arm is replaced by a velstrac flenser, and a laser rifle is attached to a shoulder on an articulated chassis, allowing the weapon to pivot in all directions.<br/><br/> To other velstracs, heretics are seen as crude butchers lacking finesse and subtlety. Heretics consider the consensual exchange of pain to be the weakest form of torture and despise it for its lack of true danger, preferring to engage in what they refer to as \u201cvital combat\u201d with their victims. It is rare to find a heretic on its own, as they tend to form close-knit bands that seek out intruders to the Shadow Plane and deliver righteous pain unto them.<br/><br/> Once every few centuries, a velstrac demagogue reveals themself to a platoon of heretics and charges them with a vital \u201choly mission\u201d that involves the outsiders traveling to a world on the Material Plane and cleansing it of all life. These targets aren\u2019t chosen randomly; they are usually ones inhabited by sentient creatures whose souls are mostly stained with corruption and whose deaths will create more velstracs."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Heretic",
+        "type": "stat_block",
+        "cr": "8",
+        "alien_family": "Velstrac",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Lawful Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "velstrac"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons",
+                "regeneration 5 (good or silver)"
+            ],
+            "dr": [
+                "2/\u2014"
+            ],
+            "immunities": [
+                "cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated aphelion laser rifle",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+8",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "unnerving gaze"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": 4,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "aphelion laser rifle with 2 high-capacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "singer velstrac flenser with 2 batteries (20 charges each)"
+                }
+            ],
+            "augmentations": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "augmentation",
+                    "name": "accelerated datajack"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "augmentation",
+                    "name": "mk 2 dermal plating"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "augmentation",
+                    "name": "respiration compounder"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "augmentation",
+                    "name": "standard speed suspension"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "augmentation",
+                    "name": "vocal modulator"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Shadow Plane)",
+            "organization": "section (2\u20135), squad (6-12), or platoon (13-25)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A heretic\u2019s visage causes viewers to doubt all of their most deeply held convictions. A creature that fails a DC 16 Will saving throw against this gaze is confused for 1 round. This is a mind-affecting effect.",
+                "name": "Unnerving Gaze",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #12: Heart of Night",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #12: Heart of Night pg. 60",
+                "alt": "Starfinder #12: Heart of Night pg. 60",
+                "href": "https://paizo.com/products/btq01w1s?Starfinder-Adventure-Path-12-Heart-of-Night"
+            },
+            "page": 60
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "name": "Kunnid",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Rarely seen and frequently misunderstood, kunnids are nomadic creatures that wander planetoids across the galaxy in an inexorable journey toward areas where the planetoids\u2019 external magnetic field is strongest. A kunnid has three legs with hooved feet, irregular hornlike growths protruding from its skull, and dozens of prehensile tendrils that dangle from its swollen body. The average kunnid stands 10 to 12 feet tall at the shoulder and weighs 1,200 pounds. Many other species on these worlds never glimpse a kunnid in the flesh; frequently, the only evidence of a kunnid\u2019s presence is odd, cloven-hooved tracks marching in straight lines around settlements. Locals frequently attribute these tracks to cryptids and incorporate them into their superstitions.<br/><br/> Many researchers believe that kunnids were created by another intelligent species as living tools for exploration. Others maintain that kunnids belong to an independent lost culture. Some even think that kunnids are the spirits of deceased explorers. With few hard facts about how or why they appear on a world, kunnids\u2019 existence has fueled many conspiracy theories.<br/><br/> When on a planet, kunnids travel relentlessly in straight lines toward magnetic north. They are generally peaceful creatures unless their journey is obstructed or confused by unnatural magnetic fields, at which point they lash out. Once at a world\u2019s magnetic north pole, kunnids establish lairs and mate. However, this never seems to result in an increase in kunnid populations, as groups of kunnids often mysteriously disappear overnight."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Kunnid",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 11
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 72,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "spider climb"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "magnetic beam",
+                    "bonus": 12,
+                    "dc": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+5",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "shift"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "magnetic beam"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "relentless"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 16,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+24 to orienteering"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or migration (3\u201320)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a kunnid can emit a crushing magnetic beam with a range increment of 20 feet.",
+                "name": "Magnetic Beam",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A kunnid can charge without taking the normal penalties to its attack roll and AC and can charge through difficult terrain.",
+                "name": "Relentless",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a kunnid hits with its magnetic beam attack, it deals normal damage. If the kunnid\u2019s attack roll hits the target\u2019s KAC + 4, the target must succeed at a DC 13 Fortitude save or be moved 5 feet in a direction of the kunnid\u2019s choosing. This distance increases to 10 feet if the kunnid\u2019s attack roll hits the target\u2019s KAC + 13. The kunnid can\u2019t move the target past an obstacle. If the target is wearing, wielding, or carrying any metallic objects (including starmetals), it takes a \u20134 penalty to its save.",
+                "name": "Shift",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #26: Flight of the Sleepers",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #26: Flight of the Sleepers pg. 56",
+                "alt": "Starfinder #26: Flight of the Sleepers pg. 56",
+                "href": "https://paizo.com/products/btq01zue?Starfinder-Adventure-Path-26-Flight-of-the-Sleepers"
+            },
+            "page": 56
+        }
+    ]
+}

@@ -1,0 +1,224 @@
+{
+    "name": "Mountain Eel",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Due to some quirk of parallel evolution, these massive creatures have features resembling their waterborne kin\u2019s, especially their gaping maws filled with terrible teeth. On the other hand, mountain eels have large, arthropodan compound eyes, and their coloring tends to range from dark to very dark green. Mountain eels dwell on the slopes of the mountains of Castrovel, gliding quietly between the trees as they hunt for prey. The gaze of a mountain eel paralyzes most creatures, allowing the beast to run its victims down and feast on their corpses. A typical mountain eel is about 5 feet tall but 60 feet from nostrils to tail if laid out in a straight line, though it constantly squirms and contorts its body. Despite its size, a mountain eel is very light, weighing approximately 300 pounds.<br/><br/> Mountain eels are carnivores, and they prefer their meals to be freshly dead before they tear into the flesh. However, they need to eat close to their weight in food every day, so they have been known to devour longdead creatures if enough meat remains on the bones. If a mountain eel has sated its appetite before completely consuming its prey, it simply leaves the body to rot, sometimes coming back to it the following day or leaving it for scavengers (or other mountain eels). Mountain eels get almost all of their hydration from eating, and they tend to avoid larger bodies of water, though it isn\u2019t uncommon to spot a mountain eel splashing through a small stream or turning its face up toward the sky during a rainstorm. Despite their massive bulk, mountain eels are surprisingly quiet in most of their movements, as they distribute their weight across the length of their bodies using their multitude of winged armlike appendages. The creatures also use these arms to push underbrush and small trees to one side as they travel, to avoid the telling sounds of snapping branches and crunching twigs. As a mountain eel closes in on its prey, however, it abandons all attempts at subtlety to gather up enough speed to crush its targets.<br/><br/> In addition to their uncannily quiet locomotion, mountain eels only very infrequently vocalize in any way. After years of study, scientists have discovered that the creatures\u2019 vocal chords are almost completely vestigial. After noticing dozens of small scent glands located just under their scales during their dissections, these researchers posited that mountain eels communicate with one another through smells. Xenobiologists are still unsure exactly how this ability works, but mountain eel hunters and others who live in mountain eel territory have learned that certain smells mean danger.<br/><br/> Mountain eels give birth to live offspring, a messy process that produces a handful of nearly translucent, mucus-covered elvers that are each almost as big as a human. Though newly born mountain elvers\u2019 size might allow them to hunt right away, their fearsome fangs don\u2019t grow in for several weeks. During this time, the parent eels bring small chunks of meat to their offspring, which swallow the food whole. As they start feeding, their pigmentation slowly comes in, and when they do finally develop their teeth, the elvers can take down their own, albeit smaller, prey. It takes several more years of constant eating before an elver becomes a full adult mountain eel and another few years before it reaches sexual maturity.<br/><br/> Judging on appearance alone, it is difficult to tell an elderly mountain eel from an adult. A mountain eel close to the end of its life tends to move a little slower, however, and the odors it emanates become more flowery. Once it becomes unable to catch enough food, the beast slowly starves to death. A mountain eel\u2019s corpse quickly succumbs to the elements, rotting faster than most other dead flesh and attracting teeming swarms of insects. Even a dead mountain eel\u2019s bones seem to disappear after a few days in Castrovelian weather; they are often mistaken for fallen logs covered in a thick layer of bright-green moss.<br/><br/> Some lashuntas and formians enjoy hunting mountain eels, despite (and many would say because of) the danger they pose. These thrill seekers equip themselves with sniper rifles and veils before setting out for the planet\u2019s mountainous areas. The eels leave very little trace of their movements through the foliage, so hunters must be on the lookout for partially chewed carcasses and other signs of mountain eel habitation, such as an increased insect population. Once they find one of the beasts, they make sure to isolate it before striking. Successful lashunta hunters skin the dead eels to make items of clothing, which they sometimes enchant (like the items presented below). Formians, on the other hand, enjoy cooking mountain eel meat, using an array of exotic spices."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mountain Eel",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 95,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "60 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 14"
+                        }
+                    ],
+                    "value": "paralyzing gaze"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d8+11 B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 3,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 18
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "temperate or warm mountains (Castrovel)",
+            "organization": "solitary, pair, or bed (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Looking into a mountain eel\u2019s strange compound eyes causes the muscles of most living creatures to freeze up. A living creature that can see and begins its turn within 60 feet of a mountain eel must succeed at a DC 14 Fortitude save or be paralyzed for 1 round. A creature who succeeds at its save is immune to that mountain eel\u2019s paralyzing gaze for 24 hours. Creatures without a sense of sight and other mountain eels are immune to this effect.",
+                "name": "Paralyzing Gaze",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive pg. 78",
+                "alt": "Alien Archive pg. 78",
+                "href": "https://paizo.com/products/btpy9ujg"
+            },
+            "page": 78
+        }
+    ]
+}

@@ -1,0 +1,384 @@
+{
+    "name": "Sivv Warmaster",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Sivvs are serious-minded and domineering aberrations with long, curving necks; grasping claws; and a sturdy carapace from which several tentacles protrude. Eons ago, sivvs formed the Sivv Dominion, which subjugated its galactic neighbors with its superior hybrid technology until its own hubris allowed one of its enemies, the kishalee, to deal a mortal blow to its economy.<br/><br/> During the Sivv Dominion\u2019s period of expansion, the most brutal and martially inclined sivvs trained as warmasters, leading assaults throughout the galaxy. These warriors underwent rigorous mental conditioning to render them immune to fear and to command obedience in non-sivvs with merely a stern look. Equipped with the best weaponry the Sivv Dominion had to offer, warmasters served as powerful combatants, and like all sivvs, they\u2019re skilled in the use of rel-state. For more information, see \u201cRelics of the Sivvs\u201d on page 46."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Sivv Warmaster",
+        "type": "stat_block",
+        "cr": "17",
+        "role": "Combatant",
+        "xp": 102400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Lawful Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "sivv"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 34
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 340,
+            "rp": 6,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 31,
+                "kac": 33
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 5"
+            ],
+            "immunities": [
+                "fear effects"
+            ],
+            "sr": "28"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "military degenerator rifle",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "7d8+17",
+                            "damage_type": "Acid & Sonic",
+                            "damage_type_text": "A & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6",
+                            "critical": true,
+                            "effect": "degeneration"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "mutation gun",
+                    "bonus": 28,
+                    "dc": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "7d10+17",
+                            "damage_type": "Acid & Sonic",
+                            "damage_type_text": "A & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "mutation"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "degeneration grenade",
+                    "bonus": 28,
+                    "range": "20 ft.",
+                    "dc": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "11d6",
+                            "damage_type": "Acid & Sonic",
+                            "damage_type_text": "A & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d6",
+                            "effect": "degeneration"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 feet"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 22"
+                        }
+                    ],
+                    "value": "domineering gaze"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "ranged +28"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 22"
+                        }
+                    ],
+                    "value": "rel-state dispersal"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 11,
+            "dex": 4,
+            "con": 8,
+            "int": 1,
+            "wis": 0,
+            "cha": 5,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 29
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 29
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 34
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Sivvian"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "intangible step"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "quantum storage"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "vitrum plate"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "military quantum entangler with 2 batteries (20 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "military degenerator rifle with 2 highcapacity batteries (40 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "mutation gun (page 49) with 1 battery (20 charges)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "degeneration grenades (2)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Davvirex or <i>Ark Prime</i>)",
+            "organization": "solitary, pair, or tyranny (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, a sivv warmaster unsettles its foes with a stern look bolstered by psychic conditioning. Each non-sivv creature within 30 feet is staggered for 1d4 rounds unless it succeeds at a DC 22 Will save. A creature staggered by this effect has a \u20132 penalty to attacks made against creatures with the sivv subtype, and it reduces the DC of its spells and abilities used against creatures with the sivv subtype by 2. This is a mind-affecting, sense-dependent effect.",
+                "name": "Domineering Gaze",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A sivv sage-coffer can enter rel-state on their own for a brief period. As a move action, they can spend 1 Resolve Point to become incorporeal and move up to their speed. They become corporeal at the end of their movement.",
+                "name": "Intangible Step",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, the sage-coffer can shift an item in their possession into rel-state, quantum entangling the item\u2019s molecules with their own. This effectively reduces the item\u2019s bulk to 0 and makes the item impossible to disarm or otherwise remove from the sage-coffer, though the item can\u2019t be used. The sage-coffer can shift items weighing a total of 10 bulk, though no one item can be more than 4 bulk. The sage-coffer can retrieve an item from rel-state as a move action. Anything that the sage-coffer placed into rel-state becomes fully real when the sage-coffer is killed.",
+                "name": "Quantum Storage",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a sivv warmaster can spend 1 Resolve Point to cast disintegrate as a spell-like ability with a caster level equal to its CR. The beam of energy forces many of the target\u2019s molecules into rel-state, potentially destroying it.",
+                "name": "Rel-State Dispersal",
+                "ability_type": "Spell-Like",
+                "ability_type_abbrev": "Sp"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #33: Dominion\u2019s End",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #33: Dominion\u2019s End pg. 61",
+                "alt": "Starfinder #33: Dominion\u2019s End pg. 61",
+                "href": "https://paizo.com/products/btq0233n/discuss?Starfinder-Adventure-Path-33-Dominion-s-End"
+            },
+            "page": 61
+        }
+    ]
+}

@@ -1,0 +1,375 @@
+{
+    "name": "Rendalairn",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Spacefarers who frequent the Vast whisper about great cosmic menaces hurtling across the void. According to such reports, these monstrosities are giant metallic spheres traveling in normal space at speeds so fast they preclude engagement. The massive spheres are said to have the ability to sunder asteroids and crack planets, sprouting razor-edged lashes that whirl around them in a lethal flurry. Enough sightings have occurred that authorities are concerned.<br/><br/> The creature\u2019s name, rendalairn, derives from a monster from an old spacefaring tale, but others refer to these creatures as \u201cplanet slayers.\u201d There are two accounts of a rendalairn landing on a planet and starting a rampage that ended only when the construct was done destroying everything it could find, including sapient life. The two targeted worlds, Brimipp\u00c3\u00a9 III and Grixis VI, are home to the ruins of two different technologically advanced but extinct species. Some speculate that rendalairns choose technological societies and sites, which has some people worried at the possibility of such a creature reaching the Pact Worlds or Veskarium.<br/><br/> From observations gathered thus far, rendalairns seem to be specific in their attacks and ignore anything that doesn\u2019t interfere with their intended devastation. During the attack on Brimipp\u00c3\u00a9 III, scavengers recorded the rendalairn\u2019s activity and broadcasts from orbit. In addition to a polite message informing them to maintain a safe distance from the demolition site, which each scavenger heard in their native language, the rendalairn transmitted streams of music, advertisements, or other such random media. Some of this media has since proven to be from pre-extinction Brimipp\u00c3\u00a9 III. On Grixis VI, only some explorers escaped the rendalairn, which broadcasted its warning and then carried out the intended \u201cdemolition\u201d with no concern for bystanders.<br/><br/> No report has yet indicated more than one rendalairn in any one place. They are thought to be solitary. A few scientists have asserted, given the evidence, that \u201cthe\u201d rendalairn is unique. Disparities in description, such as coloration or composition, could be attributed to observational errors. Whatever the case, a rendalairn is spherical with a 30-foot diameter. When its lashes extend, the creature can reach up to 60 feet away. From this data, xenobiologists and engineers have speculated the creature weighs at least 50 tons.<br/><br/> No one is entirely sure when these massive constructs, if more than one exists, first appeared or who created them. The sheer size and complexity of the creatures indicate that significant resources and expertise were invested in their creation. According to reports, a rendalairn has no logos or other identifying marks, besides luminous circular markings that change over time. They have been sighted only in the Vast, which means they come from some far-flung part of the galaxy or, some have conjectured, beyond. The hypothesis that rendalairns are akin to tripods and, perhaps, manufactured by the same species is generally believed to be unlikely, due to the observed broadcasts, but has not been disproved. The mystery surrounding these creatures has prompted explorers and journalists to launch expeditions into the Vast in search of the monstrosities. Most return without significant data. A few have failed to return at all."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Rendalairn",
+        "type": "stat_block",
+        "cr": "25",
+        "role": "Combatant",
+        "xp": 1638400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 12
+        },
+        "alignment": "Neutral",
+        "size": "Colossal",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 46
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "<i>true seeing</i>"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 700,
+            "rp": 8,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 42,
+                "kac": 44
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 23
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 23
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 25",
+                "juggernaut",
+                "juggernaut\u2019s resolve"
+            ],
+            "immunities": [
+                "cold",
+                "construct immunities",
+                "fire"
+            ],
+            "sr": "36"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "100 ft.",
+                        "movement_type": "walk",
+                        "value": 100
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 50 ft.",
+                        "movement_type": "burrow",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 100 ft.",
+                        "movement_type": "fly",
+                        "value": 100
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "disintegration ray",
+                    "bonus": 38,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "13d10+25",
+                            "damage_type": "Acid & Sonic",
+                            "damage_type_text": "A & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ],
+            "space": "30 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "60 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "demolisher"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "override"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "quake pulse"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "18d10+40 B & S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 28"
+                        }
+                    ],
+                    "value": "trample"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 15,
+            "dex": 12,
+            "con": null,
+            "int": 5,
+            "wis": 8,
+            "cha": 0,
+            "feats": [
+                "Mobility",
+                "Shot on the Run",
+                "Spring Attack"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 41,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+49 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 41
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 41
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "comm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "life siphon"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A rendalairn can engage in wireless communications at system-wide range.",
+                "name": "Comm",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A rendalairn\u2019s attacks and abilities treat any object\u2019s hardness as if it were 30 points lower than it is.",
+                "name": "Demolisher",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a rendalairn can fire its disintegration ray, which is a 120-foot line. Damage from this ray has the force descriptor.",
+                "name": "Disintegration Ray",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "While a rendalairn takes a move action, or a full action to run or withdraw, any damage dealt to the rendalairn is halved.",
+                "name": "Juggernaut",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a rendalairn is reduced to 0 Hit Points, as a reaction before being destroyed, it can spend 4 Resolve Points to appear to be destroyed but regain 75 Hit Points at the start of its next turn (including those from fast healing), at which point it becomes active again. Casting wish or miracle before the start of the rendalairn\u2019s next turn can prevent the creature from revivifying.",
+                "name": "Juggernaut\u2019s Resolve",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "While within 60 feet of a rendalairn, any creature reduced to 0 Hit Points dies on its turn unless it spends enough Resolve Points to stabilize. The rendalairn gains any Resolve Points spent in this way, as well as any Resolve Points a creature spends for staying in the fight while within 60 feet of the rendalairn.",
+                "name": "Life Siphon",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, a rendalairn can dictate the actions of one stunned technological construct during its next turn. At the start of the target\u2019s next turn, it ceases being stunned and takes the dictated actions, which cannot be obviously self-destructive.",
+                "name": "Override",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once every 3 rounds, as a standard action, a rendalairn can spend 1 Resolve Point to create a field of electromagnetic and low-frequency sonic energy that simulates seismic waves and disrupts technology. Creatures and objects within a 20-foot-radius spread of the rendalairn take 10d12+40 electricity and sonic damage (Fortitude DC 28 for half; objects carried or held by a creature that succeeds at this save also take half damage). This damage has the force descriptor. A creature that fails the saving throw is knocked prone. If a technological construct fails the save, the construct is also stunned for 2 rounds even if it is normally immune to being stunned. Unattended hybrid or technological objects in the area cease functioning for 2 rounds. Those worn or carried by a creature cease functioning only if the creature fails the saving throw, and then for only 1 round.",
+                "name": "Quake Pulse",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 84",
+                "alt": "Alien Archive 3 pg. 84",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 84
+        }
+    ]
+}

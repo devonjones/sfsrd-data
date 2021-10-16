@@ -1,0 +1,292 @@
+{
+    "name": "Akata",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Terrifying predators that dwell in the vast void of space, akatas make their homes on lifeless asteroids, comets, and dying planets, hibernating in cocoons composed of the starmetal noqual for countless centuries. An akata looks similar in shape to a lion, but with hairless, rubbery blue skin and a mane of thick, lashing tentacles. Its face is little more than two eyes glowing with ever-changing light and a fanged maw. Two long tentacular tails extend from its muscular hindquarters. A typical akata stands 3-1/2 feet tall and weighs 400 pounds.<br/><br/> Akatas lack auditory organs, lungs, and vocal cords, and they can\u2019t hear or vocalize in any way. Instead, they communicate with each other through sight and scent. Akatas can change the color of their eyes to over a thousand shades, which they use in conjunction with complex tail movements to communicate visually. Scent glands located just behind the jawbone on akatas\u2019 necks produce a wide variety of smells that other akatas can \u201ctaste\u201d with their tongues.<br/><br/> Akatas live in colonies of up to 30 individuals. Massive akatas known as akata alphas rule the largest of these colonies. Most colonies inhabit small asteroids or meteors hurtling through the depths of space. Akatas can hibernate for centuries, protecting themselves in cocoons made from a combination of resin from the creatures\u2019 pores and noqual. When a meteorite carrying an akata colony crashes onto a planet or another astronomical object that can support life, the akatas awake from their cocoons. Akatas usually consume the remains of their cocoons upon awakening, but 1 bulk of noqual worth 500 credits can be harvested from the remnants of a single akata cocoon (see page 64 of Starfinder Armory for more information on noqual). Once awakened, akatas can drastically depopulate a planet as they seek out suitable hosts for their young."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Akata",
+        "type": "stat_block",
+        "cr": "1",
+        "alien_family": "Akata",
+        "role": "Combatant",
+        "xp": 400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 5
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (life) 10 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 120 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 18,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 12,
+                "kac": 13
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "immunities": [
+                "cold",
+                "disease",
+                "poison",
+                "starvation"
+            ],
+            "resistances": [
+                "fire 5"
+            ],
+            "weaknesses": [
+                "susceptible to salt water"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "void bite"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 2,
+            "con": 4,
+            "int": -4,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 5
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 5,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+13 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "deaf"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "hibernation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, pack (3\u201311), or colony (12\u201330)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Akatas cannot attempt Perception checks to listen and are immune to effects that rely on hearing to function.",
+                "name": "Deaf",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Akatas can enter a state of hibernation for an indefinite period of time when food is scarce. After 3 or more days without eating, an akata can secrete a fibrous material that hardens into a dense cocoon of the starmetal called noqual. The cocoon has hardness 30 and 30 Hit Points, and it is immune to bludgeoning and fire damage. As long as the cocoon remains intact, the akata within remains unharmed. The akata remains in a state of hibernation until it is exposed to extreme heat or senses a living creature with its blindsense, at which point it claws itself free of its cocoon in 1d4 minutes, leaving the fragments of its cocoon behind.",
+                "name": "Hibernation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A splash of salt water deals 1d6 damage to an akata, and full immersion in salt water deals 4d6 damage per round.",
+                "name": "Susceptible to Salt Water",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Akatas hold hundreds of microscopic larval young within their mouths, and they spread their parasitic offspring to hosts through their bite. Only humanoids make suitable hosts for akata young\u2014all other creature types are immune to this parasitic infection. This affliction is known as void death.",
+                "name": "Void Bite",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Void Death",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "save": "Fortitude DC 10",
+                "track": "physical",
+                "frequency": "1/day",
+                "effect": "No latent/carrier state; an infected creature that dies rises as a void zombie 2d4 hours later.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 8",
+                "alt": "Alien Archive 2 pg. 8",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 8
+        },
+        {
+            "type": "source",
+            "name": "Starfinder #1: Incident at Absalom Station",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #1: Incident at Absalom Station pg. 55",
+                "alt": "Starfinder #1: Incident at Absalom Station pg. 55",
+                "href": "https://paizo.com/products/btpy9tmf?Starfinder-Adventure-Path-Incident-at-Absalom-Station"
+            },
+            "page": 55
+        }
+    ]
+}

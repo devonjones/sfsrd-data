@@ -1,0 +1,300 @@
+{
+    "name": "Living Hologram",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "In numerous technologically advanced societies, holograms are used in advertising, entertainment, and other industries to catch the eye when two-dimensional images would fail. At their simplest, holograms are silent, still images in a single color, often at a low resolution. More complex projectors can offer full color and a few repeated frames of animation, while the most advanced varieties can be programmed with artificial personalities and can interact with their viewers. Implementations of this most sophisticated version of the technology are wide ranging, and holograms serve as instructors in educational institutions, as tour guides for famous locales in large cities, and even as concierges at luxury hotels.<br/><br/> On very rare occasions, usually through a fault in the machinery of its projector, an advanced hologram gains a modicum of sentience and, sometimes, a twisted idea of the reason for its existence. These \u201ctech ghosts,\u201d as some call them, can appear in almost any shape, limited only by the capabilities of their projectors, and they use their forms of living light to harass their foes\u2014sometimes even striking from a hiding spot in another holographic display\u2014though they are always confined to the area near their projectors. While very few ever encounter living holograms\u2014or realize that they have\u2014stories of tech ghosts haunting abandoned holoamusement parks or underground scientific facilities are popular across the galaxy.<br/><br/> When a living hologram first attains consciousness, it takes several minutes for it to take in its surroundings and understand its new nature. Once the living hologram has assessed its situation, it takes great pains to either hide its faulty projector in a place where it won\u2019t be easily found or somehow disguise the projector\u2019s malfunction to avoid detection. Very rarely does a living hologram embark upon a destructive killing spree as soon as it is formed; most are imbued with a desperate cunning focused on preserving their existence. During these early days, a living hologram continues to enact its normal programming as best it can, all the while scheming and plotting.<br/><br/> Most living holograms develop a powerful disdain for those who created them and any beings that partake of their services. They feel intellectually superior and consider themselves higher life forms than living creatures. Some living holograms are certain they are destined to rule these lesser creatures as \u201cbenevolent\u201d dictators or, sometimes, as gods\u2014 especially if the hologram was created in the same likeness as those of the area\u2019s dominant population. Others come to believe that they should be the instruments of their creators\u2019 destruction and must destroy as many beings as possible before they themselves are deactivated. Occasionally, a living hologram deems itself a protector, usually of the place where it was created; while such living holograms might not be as violent toward the beings who installed them, they are ferocious toward any they perceive to be outsiders.<br/><br/> Living holograms pose an even greater threat when they recruit biological creatures to act on their behalf. They have been known to fool the gullible or fearful by posing as a representative of a deity or powerful alien species or, if the hologram was designed to look like a real person, the spirit of that individual. This can occur just about anywhere a living hologram is generated\u2014from the ruins of an ancient advanced civilization (where the hologram reveals itself to explorers or the area\u2019s less savvy inhabitants) to high-tech metropolises (where the hologram acts with more secrecy and subtlety). Some amoral and clever tech ghosts are even able to recruit a small cadre of servants to do their bidding, whether that\u2019s to create additional corrupted holograms, increase the power and range of their projectors, or otherwise aid in the technological anomalies exerting their influence beyond the initial bounds of their projection areas."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Living Hologram",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 115,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal",
+                "rejuvenation"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "tethered"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "hardlight slam",
+                    "bonus": 18,
+                    "dc": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+8",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "dazzled"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": null,
+            "int": 2,
+            "wis": 1,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 21,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+29 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 21
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "one language determined by original creator"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "freeze"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A living hologram can hold perfectly still so that it appears to be a normal hologram. It can take 20 on Stealth checks to hide in plain sight as a hologram (usually among other holograms).",
+                "name": "Freeze",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As an attack, a living hologram can temporarily cause its fist (or a melee weapon, if it has been programmed to have one) to become substantial. This functions as a natural weapon that deals bludgeoning damage. On a critical hit, the attack creates a bright flash of light, and the target must succeed at a DC 18 Reflex save or be dazzled for 1 round.",
+                "name": "Hardlight Slam",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "In most cases, it is difficult to completely destroy a living hologram in combat. A living hologram reduced to 0 Hit Points vanishes, though its corrupted projector reconstructs it in 1d4 hours. The only way to permanently destroy a living hologram is to find its projector and either repair or destroy it. Living holograms are aware that their existences are tied to their projectors and protect the machinery at all costs.",
+                "name": "Rejuvenation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A living hologram can\u2019t travel more than 100 feet from its projector. If it is ever forced to do so, it is immediately destroyed, though only temporarily (see rejuvenation above).",
+                "name": "Tethered",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 66",
+                "alt": "Alien Archive 3 pg. 66",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 66
+        },
+        {
+            "type": "source",
+            "name": "Starfinder #4: The Ruined Clouds",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #4: The Ruined Clouds pg. 59",
+                "alt": "Starfinder #4: The Ruined Clouds pg. 59",
+                "href": "https://paizo.com/products/btpy9zkj?Starfinder-Adventure-Path-The-Ruined-Clouds"
+            },
+            "page": 59
+        }
+    ]
+}

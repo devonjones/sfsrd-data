@@ -1,0 +1,219 @@
+{
+    "name": "Tenebrous Worm",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A tenebrous worm is the larval stage of the <a href=\"AlienDisplay.aspx?ItemName=Gloomwing&Family=None\" style=\"text-decoration:underline\">gloomwing</a>, but this young creature is more dangerous than the adult. When young hatch from the eggs a gloomwing lays in an unfortunate victim, the strongest among the hatchlings sometimes kills and eats its siblings. Other times, the larvae remain together in a pack or scatter into the surrounding environment to hunt. Tenebrous worms crave flesh, and they eat it in whatever form they find, it\u2019s already carrion or living prey they\u2019ve hunted down.<br/><br/> A tenebrous worm\u2019s belly is pale to the point of translucence, and its organs churn with shadowy fluids visible through its segmented carapace. As the worm grows, these liquids mix and partially solidify, poking out between the creature\u2019s plates to form poisonous bristles. A similar substance fills a reservoir near its mandibles, but this substance turns flesh to shadow that the worm consumes to supplement its diet of meat.<br/><br/> When a tenebrous worm has fed enough, it finds a hiding place where it can spin a cocoon of shadowy silk. This chrysalis absorbs surrounding light, reducing nonmagical bright and normal light to dim light in a radius of 20 feet. A tenebrous worm transforms inside the cocoon, emerging after several days as a gloomwing. The cocoon\u2019s remains, tattered gray sheets of silk, lose their light-absorbing properties."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Tenebrous Worm",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "poisonous bristles"
+            ],
+            "immunities": [
+                "acid"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "shadow acid"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 3,
+            "con": 6,
+            "int": -4,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Shadow Plane)",
+            "organization": "solitary, pair, swarm (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Bristles of shadow extend from between the tenebrous worm\u2019s armored plates. Each time a creature within 10 feet of the worm attacks it, several of these bristles reactively shoot off at the attacker. The attacker must succeed at a DC 16 Reflex save or take 1d4 piercing damage and be exposed to tenebrous worm poison (see below). An attacker that strikes the worm with an unarmed strike or grapples the worm is automatically damaged and exposed to the poison.",
+                "name": "Poisonous Bristles",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tenebrous worm\u2019s bite delivers a mystical acid that dissolves organic matter into wisps of shadow. In dim light, this acid deals 3d6 acid damage. In normal light, it deals 2d6 acid damage. In bright light or darkness, it deals 1d6 acid damage.",
+                "name": "Shadow Acid",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Tenebrous Worm Poison",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 16",
+                "track": "Dexterity (special)",
+                "frequency": "1/round for 6 rounds",
+                "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014Staggered\u2014Immobile; no end state.",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #10: The Diaspora Strain",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #10: The Diaspora Strain pg. 59",
+                "alt": "Starfinder #10: The Diaspora Strain pg. 59",
+                "href": "https://paizo.com/products/btq01vb2?Starfinder-Adventure-Path-10-The-Diaspora-Strain"
+            },
+            "page": 59
+        }
+    ]
+}

@@ -1,0 +1,235 @@
+{
+    "name": "Needlehawk",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Winged arthropods from an unknown world (presumably in the Vast), needlehawks are gifted with a sophisticated spinal cord and brain, making them intelligent and curious creatures that can build complex nests and even open latches. These traits, combined with their ability to fly and anesthetizing venom, make them difficult pests to eliminate once a prickle finds a steady food supply. While xenobiologists believe needlehawks are indigenous to a jungle ecosystem, the animals have been spotted across many worlds. Once established, needlehawks hunt insects, scavenge or steal food, and build their homes from whatever materials they can find\u2014often tearing up valuable cargo or disassembling machinery in the process.<br/><br/> Needlehawks reproduce asexually, but they produce larger and healthier egg broods when all three sexes contribute. Sticky egg clusters hatch into thousands of mite-sized young, which infest and devour any detritus as well as each other. Eventually, a half-dozen or so young grow large enough to climb onto their parents\u2019 backs and learn to survive through observation. While needlehawks have no attachment to their miniscule hordes of young, they are fiercely protective of their larger, nymph-stage offspring after they grow wings.<br/><br/> Needlehawks are especially sensitive to fungal diseases, and dycepskians sometimes infest them to create organic drones enslaved to their alien hive mind. Infested needlehawks act as silent lookouts, spies, and guardians. As the dycepskian fungus requires a sentient mind to develop self-awareness, infested needlehawks retain animal-level cunning but react intuitively to the commands of higher-order dycepskian hosts. Conspiracy theorists speculate that dycepskians and needlehawks originate from the same world, and that the crustacean-like scavengers were the parasite\u2019s original host."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Needlehawk",
+        "type": "stat_block",
+        "cr": "3",
+        "role": "Expert",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 34,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "needle launch",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "needlehawk toxin"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 4,
+            "con": 2,
+            "int": -3,
+            "wis": 1,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 13,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+21 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 8
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "active camouflage"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "warm and temperate forests",
+            "organization": "solitary, pair, or prickle (3\u201312)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A needlehawk can adjust chromatophores in its exoskeleton to blend in with its surroundings. When motionless or moving fewer than 10 feet per round, it gains a +5 racial bonus to Stealth checks to hide.",
+                "name": "Active Camouflage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a needlehawk can launch a needle from its barbed tail with a range increment of 30 feet.",
+                "name": "Needle Launch",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Needlehawk Toxin",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 14",
+                "track": "Dexterity",
+                "frequency": "1/round for 4 rounds",
+                "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014Staggered; no end state",
+                "cure": "1 save",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #28: The Hollow Cabal",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #28: The Hollow Cabal pg. 58",
+                "alt": "Starfinder #28: The Hollow Cabal pg. 58",
+                "href": "https://paizo.com/products/btq021bu?Starfinder-Adventure-Path-28-The-Hollow-Cabal"
+            },
+            "page": 58
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "name": "Plasma Ooze",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Enormous crackling lattices of electromagnetic energy, plasma oozes are significant threats to even the Pact Worlds\u2019 most experienced spacefarers. Usually taking a roughly spherical form, a plasma ooze pulses with a brilliant array of pink, purple, and blue light, connected in a complex network that reaches whitehot intensity at its many nodes. These oozes are most often seen in the immediate vicinity of a star\u2019s surface, but explorers have occasionally sighted the mysterious beings hovering near powerful electromagnetic phenomena in numerous system, both in the vacuum of space and on the surfaces of volatile planetoids. A typical plasma ooze is a rough hemisphere approximately 20 feet in diameter, weighing close to 100 tons.<br/><br/> The origin of these oozes has been hotly debated since before the Gap, with ancient scholars speculating that the creatures originated on the Plane of Fire and were drawn to an inhabited system\u2019s sun. However, nearly a century ago, the discovery of deserted cities within the sun of the Pact Worlds\u2014along with modern claims by Plane of Fire natives that yet more civilizations exist in deeper layers of the sun\u2014spawned a host of new theories, as abundant as the oozes are rare.<br/><br/> One of the most popular hypotheses is that the sun\u2019s abandoned cities, now called the Burning Archipelago, were the site of an ancient civilization\u2019s attempts to harness the power of the star. As proponents of this story would have it, the experimenters were successful in creating the first plasma oozes, but they soon lost control of their creations and were quickly eradicated by the beings. Supposedly, the unleashed plasma oozes not only shut down the technological defenses of their creators, but also wiped out the digitally stored collective knowledge upon which the civilization relied for its continued survival. This version of events, though based almost entirely on conjecture and unable to explain plasma oozes\u2019 presence in other systems, is nonetheless often cited by those who caution against an overdependence on technology.<br/><br/> Such theories are met with vehement opposition by Sarenites, many of whom believe the Dawnflower herself created the sun\u2019s cities and would not have permitted such a fate to befall them. Some of Sarenrae\u2019s worshipers believe that the goddess created the plasma oozes too, making them custodians of the Archipelago and solar sites in other systems, and that whatever emptied the sun\u2019s cities did so despite the oozes\u2019 protection.<br/><br/> Plasma ooze sightings often occur at the perimeter of a star just before massive flares occur, leading many to believe that the two are connected somehow. Some of Sarenrae\u2019s worshipers claim that the oozes themselves draw out such flares in a search for some artifact buried deep with the sun, while more recent evidence points to the flares being involved in their reproduction.<br/><br/> Several centuries ago, shortly after Drift travel became widespread, a small residential starship on a routine trip through the Drift reported encountering an enormous plasma ooze, many times larger than those of the Pact Worlds\u2019 sun. Since then, a sighting is made every few decades on average, with the ooze\u2019s reported size gradually increasing each time. How the plasma ooze entered the Drift in the first place is an open question; while most agree that the ooze must have been ripped from the Material Plane by the activation of a Drift engine, some suspect a deeper connection between the ooze and the Drift, normally accessible only by technology granted by the ascended AI god Triune. A few scholars even posit that the creature\u2019s distortion of electromagnetic fields somehow granted it access to the Drift. Plasma oozes\u2019 strong electromagnetic field makes them extremely dangerous to encounter in the vacuum of space, since even shielded starships can find themselves adrift after crossing paths with one. Similarly, in the rare instances when a plasma ooze takes up residence on a populated planet\u2019s surface, the edges of its territory are often marked by the dusty hulls of disabled vehicles, their former owners having wisely abandoned them to live another day. Few living creatures survive contact with a plasma ooze, but those that do often bear terrible wounds that serve as permanent reminders of such oozes\u2019 fearsome power.<br/><br/> A small group of planar scions whose ancestry connects them to the Plane of Fire, and who have served in various military forces, has recently claimed to be actively hunting plasma oozes under the moniker \u201cthe Sunkillers.\u201d They have stockpiled electricity-resistant armor and defensive gear to complement their natural tolerance for fire, and they are currently amassing powerful sonic weaponry that they are confident will bypass the creatures\u2019 formidable defenses. Even with their preparations and experience, they are taking a considerable risk for what seems to be little reward\u2014though anyone who could reliably take on a plasma ooze could likely charge a hefty fee for the service."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Plasma Ooze",
+        "type": "stat_block",
+        "cr": "16",
+        "role": "Combatant",
+        "xp": 76800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Gargantuan",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 28
+        },
+        "aura": "electromagnetic field (100 ft., DC 22)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (thought) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 305,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 32
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "plasma drain",
+                "void adaptation"
+            ],
+            "dr": [
+                "15/\u2014"
+            ],
+            "immunities": [
+                "acid",
+                "electricity",
+                "fire",
+                "ooze immunities"
+            ],
+            "resistances": [
+                "cold 30"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "plasma pulse",
+                    "bonus": 30,
+                    "dc": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "10d6+16",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "space": "20 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "20 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "magnetic draw"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 7,
+            "dex": 5,
+            "con": 10,
+            "int": null,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 28,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+36 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 28,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "to navigate only"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "solar adaptation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any solar or vacuum",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A plasma ooze generates a massive electromagnetic field that disrupts electronics and interferes with signals. Electronic signals, such as those employed by comm units, do not function within this area. When a creature activates an object with charges that is in the area, that object must succeed at a DC 22 <a href=\"Rules.aspx?Name=Saving%20Throws&amp;Category=Combat%20Basics\" style=\"text-decoration:underline\">Reflex save</a> or it is drained of all charges and the action is lost. A technological construct that begins its turn in this area must succeed at a DC 22 Reflex save or be staggered and unable to use energy-based attacks for 1d4 rounds. A creature or object that succeeds at its saving throw is immune to the plasma ooze\u2019s electromagnetic field for 24 hours.",
+                "name": "Electromagnetic Field",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, a plasma ooze can draw all Medium and smaller creatures and unattended objects of no more than light bulk that are within 100 feet up to 30 feet toward itself (Reflex DC 22 negates; this DC increases by 5 for technological constructs and technological items).",
+                "name": "Magnetic Draw",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action, a plasma ooze can drain the charges of plasma weapons within 100 feet to regain a number of Hit Points equal to the most charges drained from any one battery. Each weapon can attempt a DC 22 Reflex saving throw to negate this effect for that weapon.",
+                "name": "Plasma Drain",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A plasma ooze\u2019s plasma pulse is a ranged attack with a range increment of 60 feet and the severe wound critical hit effect.",
+                "name": "Plasma Pulse",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 2",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 2 pg. 100",
+                "alt": "Alien Archive 2 pg. 100",
+                "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+            },
+            "page": 100
+        }
+    ]
+}

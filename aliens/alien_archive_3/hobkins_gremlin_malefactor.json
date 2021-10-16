@@ -1,0 +1,279 @@
+{
+    "name": "Hobkins Gremlin Malefactor",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Gremlins delight in mayhem and destruction, and hobkins find particularly malicious glee in manipulating others into destroying their own equipment. With their mottled gray skin and round, glowing eyes, hobkins blend into the shadows and observe the best ways to encourage frustration and ruin. These patient creatures will often lie in wait for the perfect moment to pop up and startle an unwitting victim into dropping something delicate or valuable before they fade back into their hiding place. Once the target of their mischief is riled up after several such unexpected interruptions, a hobkins might appear again, just out of reach, to draw the frustrated victim\u2019s ire\u2014which can often result in the person shooting a cherished item in the same room.<br/><br/> A cunning hobkins might cause a stir without even showing itself. These slight creatures use their spell-like abilities to create a string of irritating but minor diversions, knowing that many beings will struggle to maintain a calm, rational state of mind as tension builds. A hobkins might use ghost sound to create feedback or disturbing noises that make a comm unit appear to be malfunctioning, or employ holographic image to display a \u201clow battery\u201d warning on an ammunition cartridge that is actually full, aware of the universal tendency to resort to \u201cpercussive maintenance\u201d when technology is unreliable. Computer interfaces are favorite targets of these crafty gremlins as well, as they fool users into believing their keystrokes aren\u2019t recording properly or their touchscreens are frozen. Particularly insidious and creative hobkins have been known to use holographic image to display a convincing virus alert, snickering with glee from the shadows as a hapless technician is fooled into wiping their own computer.<br/><br/> Sporting large, bat-like ears, needle-like teeth, and spindly, elongated limbs, a hobkins stands about 3 feet tall and weighs 15 pounds. Sightings have been reported in various environments around the Pact Worlds and beyond, and while it\u2019s not uncommon to encounter a lone hobkins, where there\u2019s one there are often more. A gang of hobkins gremlins is problematic enough, but more than a handful poses a much more pressing concern: the potential presence of a hobkins malefactor.<br/><br/> Unlike the mottled gray hobkins, malefactors have swirling skin patterns reminiscent of galaxies in dark purple and blue hues, and their faceted, gem-like eyes glow with a disconcerting silver or red light. These slightly larger gremlins have strong psychic abilities and a keen interest in the workings and potential failings of technology. They are capable of coordinating full hobkins infestations to terrifying effect. A malefactor will often use stealth to go unnoticed and orchestrate events telepathically from a secure vantage point, but malefactors are ferocious if cornered. Not content with the simple destruction of small personalized items, malefactors utilize their stronger understanding of computers and engineering to direct full-scale assaults within warehouses, on starships, and even on planet-wide technological systems.<br/><br/> In one legendary encounter in the Diaspora, a hobkins infestation resulted in the destruction of the heavy freighter Hummingbird. Directed by a malefactor stowaway, hobkins gremlins moved systematically through the ship, leading its crew to believe their vessel was suffering from multiple malfunctions. Navigation appeared nonresponsive, life support seemed to be failing, shields were out of balance, and crew members saw error messages appear where there were no errors, leading them to race off to fix each apparent calamity. After manipulating the unlucky crew into sabotaging their own systems, the gremlins ensured the Hummingbird was locked into a collision course with one of many large asteroids in the Diaspora before finally allowing the crew to see something real: thirty hobkins gremlins with evil grins waving from within the escape pods. Panicked, the crew ejected the pods from the ship, hoping to rid themselves of the creatures\u2014unwittingly ensuring the hobkins\u2019 survival as their final action before impact. Wary spacefarers view this incident as a cautionary tale, and search for signs of the presence of hobkins gremlins when faced with unexplained technological glitches on their ships.<br/><br/> Scholars have yet to establish whether malefactors are hobkins that have undergone a psychic apotheosis or are a completely different species of gremlin with traits in common with hobkins. Attempts to capture and study any type of gremlin usually end in disaster. Recently, several think tanks have taken more diplomatic approaches, luring in hobkins by setting up delicate sensors and computers in areas known to be infested with the gremlins and simply waiting. When things begin to go haywire, the scientists try to speak with the hobkins to learn more about them. This tactic has also yielded little success so far, and in one terrifying case, garnered the attention of a particularly cruel malefactor, who proceeded to cause a meltdown in the facility\u2019s core nuclear reactor."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hobkins Gremlin Malefactor",
+        "type": "stat_block",
+        "cr": "4",
+        "alien_family": "Gremlin",
+        "role": "Spellcaster",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 43,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 15,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "defensive_abilities": [
+                "out of phase"
+            ],
+            "dr": [
+                "5/cold iron"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 5,
+            "con": 0,
+            "int": 1,
+            "wis": 3,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 15
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "limited telepathy 60 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "collateral damage"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "minor levitation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "perfect coordination"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or infestation (1 plus 6\u201330 hobkins gremlins)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Whenever an attack fails to damage a hobkins, whether due to a low attack roll, a miss chance, or a failure to penetrate DR, the hobkins can redirect the attack to any target in range of the original attack (if any), including objects. The attack can\u2019t be redirected against the original attacker, though it can be redirected against the original attacker\u2019s gear (but not the weapon used to make the original attack). The attacker rolls a new attack and damage roll against the new target, and the attack is considered to have the penetrating weapon special quality.",
+                "name": "Collateral Damage",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hobkins floats about 1 inch about the ground, allowing it to ignore difficult terrain. As a move action, a hobkins can levitate up to 20 feet straight up, but at the end of the movement, unless it has found something to cling to, it returns to 1 inch above the nearest flat surface below it.",
+                "name": "Minor Levitation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Hobkins exist slightly out of phase with the Material Plane, causing all ranged attacks against them to suffer a 50% miss chance. This ability functions as <i>displacement</i>.",
+                "name": "Out of Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hobkins malefactor can use its psychic ability to orchestrate precise mayhem and destruction with other hobkins. As a full action, the malefactor can telepathically instruct up to 15 hobkins that are within 60 feet; each of the chosen gremlins gains a +2 circumstance bonus to its next skill check or attack roll, or the DC of the next spell it casts increases by 2.",
+                "name": "Perfect Coordination",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 44",
+                "alt": "Alien Archive 3 pg. 44",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 44
+        }
+    ]
+}

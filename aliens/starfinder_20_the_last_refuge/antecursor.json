@@ -1,0 +1,271 @@
+{
+    "name": "Antecursor",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A Swarm antecursor\u2019s lithe body bears two pairs of large wings and oversized compound eyes. The creature\u2019s scorpion-like tail keeps it stable in flight and can launch an organic stinger at foes. An antecursor is frequently dull green and brown with matte-gray wings, but those scouting urban areas are sometimes gray, with iridescent markings resembling electric lights.<br/><br/> Antecursors often form the first wave of any Swarm onslaught, infiltrating target worlds and gathering intelligence to send back to the hive mind. Swift and stealthy, they avoid engaging opponents; if attacked, they use their neurotoxin to incapacitate enemies so they can escape. Antecursors usually appear to be alone, but due to their long-range telepathy, attacking one often means several more antecursors will soon arrive as backup. Antecursors are somewhat more intelligent than most Swarm components, and thanks to the hive mind\u2019s shared memories, they can capably operate in nearly any planetary environment even if they haven\u2019t have experienced it firsthand."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Antecursor",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "The Swarm",
+        "role": "Expert",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 33,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "Swarm mind"
+            ],
+            "immunities": [
+                "acid",
+                "fear effects"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 45 ft.",
+                        "movement_type": "fly",
+                        "value": 45
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "stinger",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "paralytic neurotoxin"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 0,
+            "int": 1,
+            "wis": 2,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 300 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tracking (blindsense)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or advance (2\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a Swarm antecursor can launch a poisoned stinger from its tail with a range increment of 50 feet. Each stinger is coated with a paralytic neurotoxin (see below).",
+                "name": "Stinger",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Members of the Swarm are bound together into a singular hive mind by a blend of exuded pheromones, imperceptible movements of antennae and limbs, electrostatic fields, and telepathic communication. All Swarm creatures with 30 feet of each other are in constant communication; if one is aware of a threat, all are. (Such awareness can spread along a \u201cchain\u201d of Swarm creatures under appropriate circumstances, potentially alerting distant Swarm creatures). In addition, once per round when within 30 feet of another Swarm creature, a Swarm creature can roll twice and take the better result on a saving throw against a mind\u2011affecting effect.",
+                "name": "Swarm Mind",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Paralytic Neurotoxin",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 14",
+                "track": "Dexterity",
+                "frequency": "1/round for 4 rounds",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #20: The Last Refuge",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #20: The Last Refuge pg. 59",
+                "alt": "Starfinder #20: The Last Refuge pg. 59",
+                "href": "https://paizo.com/products/btq01zo2?Starfinder-Adventure-Path-20-The-Last-Refuge"
+            },
+            "page": 59
+        }
+    ]
+}

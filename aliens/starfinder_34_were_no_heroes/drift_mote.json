@@ -1,0 +1,257 @@
+{
+    "name": "Drift Mote",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Like the other natives of the strange hyperspace plane of the Drift, Drift motes aren\u2019t well understood. Many planar scholars believe they were created when parts of the Plane of Air were pulled into the Drift and mutated by unknown energies. However, some religious sages proclaim that Drift motes are the stray, castoff thoughts of the goddess Triune given some form of life by strange planar energies.<br/><br/> Whatever their origin, Drift motes are tiny balls of electrical energy that flit aimlessly through the Drift until they sense passing starships. Instinctively attracted to the electrical currents within most vessels, a Drift mote enters a ship through its sensors or other technological components. Once inside a ship, a Drift mote moves haphazardly through the ship\u2019s rooms and corridors, bouncing off walls, floors, and ceilings. As it travels, its random bursts of electrical energy often damage sensitive equipment or start fires. A Drift mote can be captured within a conductive cage surrounded by plastic, but most crews settle for destroying such a pest before it causes too much havoc. However, a Drift mote defends itself if attacked, unleashing a dangerous wave of jolting energy. Those familiar with Drift motes know to ground themselves as well as possible before confronting one to protect themselves from the electrical discharge.<br/><br/> Travelers in the Drift have reported seeing Drift motes that are much bigger than the norm, some the size of small starships, but these stories have been dismissed as either tall tales, the consequences of drunkenness, or the result of simply spending too much time in the Drift."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Drift Mote",
+        "type": "stat_block",
+        "cr": "1/2",
+        "role": "Spellcaster",
+        "xp": 200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Tiny",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 4
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 11,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 9,
+                "kac": 10
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "immunities": [
+                "electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electrical discharge",
+                    "bonus": 3,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "space": "2-1/2 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "15-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2d8 E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 11"
+                        }
+                    ],
+                    "value": "jolting cascade"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -3,
+            "dex": 3,
+            "con": 1,
+            "int": -3,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 9,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+17 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 9
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tech phase"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "the Drift",
+            "organization": "solitary or dance (3-5)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a Drift mote can unleash an electrical blast with a range of 30 feet at a single target. This attack has the first arc 1d3 weapon special property.",
+                "name": "Electrical Discharge",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day, a Drift mote can create a wave of dangerous electricity in a 15-foot cone that deals 2d8 electricity damage. Creatures in the area of effect can attempt a DC 11 Reflex save for half damage.",
+                "name": "Jolting Cascade",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Drift motes can pass through material objects (but not corporeal creatures) that contain mostly technological components. For instance, a Drift mote can enter a starship through the controls of an airlock door, but couldn\u2019t pass through a solid steel bulkhead. The Drift mote must begin and end its turn outside of any object.",
+                "name": "Tech Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #34: We\u2019re No Heroes",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #34: We\u2019re No Heroes pg. 60",
+                "alt": "Starfinder #34: We\u2019re No Heroes pg. 60",
+                "href": "https://paizo.com/products/btq023du?Starfinder-Adventure-Path-We-re-No-Heroes"
+            },
+            "page": 60
+        }
+    ]
+}

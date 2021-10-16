@@ -1,0 +1,320 @@
+{
+    "name": "Keeper Robot",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "One of the many functions robots can serve is protection, whether for a single person or a large property. Several robot models have been created for just this purpose.<br/><br/> Guardian robots have become something of a status symbol among business leaders and politicians in the Pact Worlds, and a whole range of defense-focused robotic bodyguards of all shapes and sizes are available. Most guardian robots are crafted to appear as unassuming humanoids of a certain species and usually have a quiet and deferential virtual intelligence. They constantly scan for potential nearby threats and endeavor to stay close to their handlers, engaging opponents from a distance using grenades or weighted nets.<br/><br/> The desire to create autonomous defensive constructs can sometimes lead to unfortunate results, however, especially when time or a natural disaster alters a robot\u2019s programming. A collection of massive drones known as keeper robots stalk the wild and forgotten areas of Castrovel seeking to destroy intruders, their original directives clearly corrupted into a surprising ferocity. Usually nonhumanoid in appearance, keeper robots are dangerous and implacable opponents. Some stand about 14 feet high on eight legs and weigh several tons.<br/><br/> Scholars believe these keeper robots were designed to protect lands and resources from would-be scavengers at some point during the Gap. Interestingly, the Xenokeepers have led a campaign to keep Castrovel from amassing a small fighting force to destroy the keeper robots, arguing that the constructs provide a natural deterrent to poachers and others who would pillage the natural resources or archaeological finds of an area, since keeper robots are known to ignore the surrounding native wildlife. Recent reports have noted the existence of keeper robots on other planets outside of the Pact Worlds, looking as new as if they had just rolled off the factory floor, and sporting more modern weaponry. This has sparked a flurry of speculation about these robots\u2019 origins. One of the more outrageous theories bandied about various infospheres is that keeper robots weren\u2019t created during the Gap but at some point in the far future and were sent back to secure (or even destroy) some mysterious objective."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Keeper Robot",
+        "type": "stat_block",
+        "cr": "18",
+        "alien_family": "Robot",
+        "role": "Combatant",
+        "xp": 153600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 31
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 380,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 32,
+                "kac": 34
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons",
+                "unflankable"
+            ],
+            "dr": [
+                "15/adamantine"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "spider climb"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "avalanche-class zero rifle",
+                    "bonus": 30,
+                    "dc": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "7d8+18",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "13d6+29 B"
+                        }
+                    ],
+                    "value": "falling crush"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "19d6 E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 23 half"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "redirect power"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 11,
+            "dex": 8,
+            "con": null,
+            "int": 5,
+            "wis": 6,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 36
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "nanite repair"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "avalanche-class zero rifle with 1 ultra-capacity battery (100 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a keeper robot is at least 20 feet directly above any number of Medium or smaller creatures in a 10-foot square (usually due to its spider climb ability), it can release its grip on the surface as a move action and fall onto those creatures. The keeper robot takes falling damage as normal, but each creature it falls on takes 13d6+29 bludgeoning damage and is pinned. Each crushed target can attempt to escape the pin as normal on its turn, and the pin ends automatically if the keeper robot moves off the target\u2019s square. A target of falling crush can\u2019t take the falling crush damage more than once, unless the keeper robot moves fully off that creature and then falls on it again.",
+                "name": "Falling Crush",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A keeper robot\u2019s nanites heal it, restoring a number of Hit Points per hour equal to its CR. Once per day as a full action, the robot can regain 12d8 Hit Points.",
+                "name": "Nanite Repair",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A keeper robot can leech power from nearby batteries to recharge its own weapon or unleash the stolen electricity at its foes. A keeper robot can activate this ability once every 1d4 rounds as a full action; when it does, each battery within 30 feet of the robot (excluding the one in its own weapon) loses 2d4 charges. The keeper robot can redirect this power to recharge the battery in its integrated weapon with the same number of charges. Alternatively, the keeper robot can amplify this power, releasing it in a weaponized arc of electricity, dealing 19d6 electricity damage in a 40-foot cone (Reflex DC 23 half).",
+                "name": "Redirect Power",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 3",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 3 pg. 86",
+                "alt": "Alien Archive 3 pg. 86",
+                "href": "https://paizo.com/products/btq01wt9?Starfinder-Alien-Archive-3"
+            },
+            "page": 86
+        }
+    ]
+}

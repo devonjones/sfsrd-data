@@ -1,0 +1,245 @@
+{
+    "name": "Azlanti Adjutant",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Designed and manufactured long ago by a technomagical robotics firm loyal to the Aeon Throne, adjutant robots are ideal assistants for busy officers: in addition to serving as scribes, valets, and social secretaries, the robots make rapid strategic calculations to aid real-time combat decisions. Centuries ago, when the Aeon Throne mandated the presence of an adjutant robot on all large starships and in every military engagement, most officers were pleased with the aid.<br/><br/> Shortly afterward, rumors began to circulate that the imperially mandated robots were not mere helpers, but spies for the Aeon Throne, recording and transmitting information about their assigned officers to loyalty evaluators. Growing suspicious, many officers began circumventing their adjutant robots when possible. More canny officers reprogrammed their robots to submit only reports favorable to themselves\u2014 and unfavorable to their rivals. Why the Aeon Throne ceased assigning these robots is information lost in the Gap, but the Star Empire hasn\u2019t manufactured a new one in centuries. Some adjutant robots still operate at the fringes of the Azlanti Star Empire, either maintaining their old vigils or assisting\u2014 and still transmitting information on\u2014descendants of remote planetary governors.<br/><br/> Although housing designs of adjutant robots differ, most are humanoid, with four arms able to handle multiple physical tasks simultaneously. Designed to be useful on the battlefield, adjutant robots carry an integrated weapon, have an aeon slot for magical protection, and have tracked wheels instead of feet to handle rugged terrain."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Azlanti Adjutant",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "Robot",
+        "role": "Combatant",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 42,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 16
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "defensive_abilities": [
+                "aeon slot (+1",
+                "10 HP)",
+                "integrated weapons"
+            ],
+            "immunities": [
+                "construct immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "integrated azimuth laser rifle",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+3",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": null,
+            "int": 1,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Azlanti"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "azimuth laser rifle with 2 batteries (20 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "slotted <i>iridescent spindle aeon stone</i>"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Azlanti Star Empire)",
+            "organization": "solitary or complement (2\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The body of every Azlanti adjutant robot contains a slot to house a single <i>aeon stone</i>, usually in the center of its faceplate. A slotted <i>aeon stone</i> doesn\u2019t provide its usual bonus, but instead gives the robot a bonus equal to half the <i>aeon stone</i>\u2019s level (minimum +1) to saving throws against effects that deal energy damage and effects that specifically target constructs or electronic systems. As a standard action, the robot can burn out the slotted aeon stone to recover a number of Hit Points equal to 5 times the <i>aeon stone</i>\u2019s level. An <i>aeon stone</i> burned out in this way is forever nonmagical and does not provide this or any other robot with any bonus to saving throws. Removing or slotting an <i>aeon stone</i> into an Azlanti adjutant robot is a full action.",
+                "name": "Aeon Slot",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An Azlanti adjutant robot\u2019s rifle is integrated into its frame and can\u2019t be disarmed.",
+                "name": "Integrated Weapons",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #7: The Reach of Empire",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #7: The Reach of Empire pg. 59",
+                "alt": "Starfinder #7: The Reach of Empire pg. 59",
+                "href": "https://paizo.com/products/btpya1rp?Starfinder-Adventure-Path-7-The-Reach-of-Empire"
+            },
+            "page": 59
+        }
+    ]
+}

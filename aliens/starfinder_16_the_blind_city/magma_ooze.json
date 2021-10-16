@@ -1,0 +1,256 @@
+{
+    "name": "Magma Ooze",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Magma oozes are living pools of bubbling moltenrock that churn and move of their own accord.They can be found on the Plane of Earth andthe Plane of Fire. On the Material Plane, theyarise spontaneously from planar influences or bizarremagic, usually in the vicinity of volcanoes. Magmaoozes have also been known to form when molten rockis suddenly pulled into the Drift.<br/><br/>A magma ooze has an extraordinarily high bodytemperature. An agitated magma ooze can jettison chunksof its superheated mass as projectiles of burning rockand protoplasm.<br/><br/>Although mindless, a magmaooze instinctively avoidswater and extreme cold.Cold causes the ooze tosplit, while water causesits body to harden. Prolonged periods ofsubmersion might even harden the ooze\u2019ssurface into a stiff shell, rendering the creaturetotally immobile until it emerges and becomes moltenonce more.<br/><br/>A typical magma ooze is 10 feet widewhen its body is spread 6inches thick. It weighs 2 tons."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Magma Ooze",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": -2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "fire"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 120,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "defensive_abilities": [
+                "molten body",
+                "split"
+            ],
+            "immunities": [
+                "fire",
+                "oozeimmunities"
+            ],
+            "weaknesses": [
+                "petrified by water",
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "hurl magma",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+7",
+                            "damage_type": "Bludgeoning & Fire",
+                            "damage_type_text": "B & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": -2,
+            "con": 4,
+            "int": null,
+            "wis": 2,
+            "cha": -4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 14,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+22 to climb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any underground",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A magma ooze can hurl magma at a rangeincrement of 20 feet to a maximum range of 100 feet.",
+                "name": "Hurl Magma",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any melee weapon striking the magmaooze takes 2d6 fire damage, ignoring hardness. If theweapon\u2019s wielder fails a DC 15 Reflex save, the weapongains the burning condition, which deals 1d6 fire damagethat ignores hardness.",
+                "name": "Molten Body",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When exposed to a least 1 bulk ofwater, such as in heavy rain or a pool, the magma ooze isstaggered for 1 round. A magma ooze is also staggered for1 round if it starts its turn in such conditions. A magmaooze staggered in this way for 5 or more consecutiverounds becomes petrified. It remains petrified untilthe source of the petrification is removed and the oozesucceeds at a DC 20 Fortitude saving throw, which it canattempt at the end of each of its turns.",
+                "name": "Petrified by Water",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a magma ooze takes cold damage, providedit has at least 12 Hit Points remaining, it splits into twooozes. The new magma ooze appears in an adjacentunoccupied space. If there is no such free space, the oozedoesn\u2019t split. Each ooze has half the original\u2019s remainingHit Points. The new ooze acts just after the original oozein the initiative order.",
+                "name": "Split",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #16: The Blind City",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #16: The Blind City pg. 56",
+                "alt": "Starfinder #16: The Blind City pg. 56",
+                "href": "https://paizo.com/products/btq01yjk?Starfinder-Adventure-Path-16-The-Blind-City"
+            },
+            "page": 56
+        }
+    ]
+}
