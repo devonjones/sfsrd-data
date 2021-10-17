@@ -5,7 +5,7 @@
         {
             "name": "Description",
             "type": "section",
-            "html": "Hulsas are stout, kaleidoscopically radiant fey connected to remote stars. They love to teach others about the physical phenomena of the universe, and they use their powers to bless the respectful and punish the insolent."
+            "html": "These stout fey resemble metallic golems with their animated armor plates that emit bright, kaleidoscopic light. A typical hulsa stands about 5 feet tall and weights 300 pounds, though a few outliers tower more than 7 feet in height. Hulsa heads bear few features and virtually no expressions, offering only a few lines to suggest eyes or mouths. Instead, most expression comes from the collection of metallic ornaments that hover symmetrically behind their shoulders like decorative wings, their colors and orientation conveying hints of the hulsa\u2019s mood. These ornaments emit luminous rays, sheets, and contrails when the fey fly but don\u2019t move like traditional wings.<br/><br/> Rather than representing terrestrial environments like forests and oceans, hulsas connect to specific stars. In many ways, this connection is symbolic, such as how hulsas often speak of directions in relation to their star rather than by magnetic poles. Hulsas from proximate stars consider each other kin, occasionally convening as \u201cconstellations\u201d to socialize or combat mutual threats. Likewise, those fey tied to stars of a similar type (such as white dwarves and red giants) acknowledge each other as peers. Hulsas who lack such connections largely leave each other alone or, rarely, form distant rivalries founded in some esoteric disagreement about one of the universe\u2019s underlying mechanics. These relationships can last eons, for hulsas appear ageless and claim to be as old as their respective stars. There are no known instances of hulsas expiring when their stars die, yet those whose stars have extinguished or exploded are never seen again.<br/><br/> A hulsa\u2019s actions seem unpredictable and erratic to most; the fey travels at random, pausing for days or even years at a time without warning. Only two things seem consistent with their behavior. First, a hulsa demands that they and the forces they represent be treated with respect. Any insult, either direct or dismissive, marks the perpetrator for retribution. The severity of this retribution is always measured by their level of affront rather than by any objective standard, ranging from causing minor annoyance to outright destruction of the offender\u2019s corporeal form. When a hulsa doesn\u2019t believe they can easily mete out justice, they wait, reserving their vengeance for as long as necessary. Legends speak of hulsas who took centuries to build alliances and train an offender\u2019s enemies simply to see an insult avenged. If the original offender dies before the hulsa exacts vengeance, the fey seeks out whoever else they can hold accountable, ranging from the original offender\u2019s heirs to societies that trained the offender. The hulsa even matter-of-factly explains why it punishes these other parties and rarely allows for other ways to seek atonement.<br/><br/> The second consistent aspect of hulsa behavior is education. They love teaching others about the universe\u2019s physical phenomena. Students who approach a hulsa respectfully can inquire about the life cycle of stars, the nature of the fey realm\u2019s influence on the universe, or how an individual can access cosmic power, though these lessons come on the hulsa\u2019s terms. A hulsa might refuse to teach anything but the basics, require an obscure form of compensation for their efforts, or deny secrets to anyone unwilling to commit to a decades-long apprenticeship to absorb the lessons with the proper depth. Several kasatha-led monasteries maintain that a legendary hulsa taught their founders the solarian arts.<br/><br/> Although most hulsas contently travel alone, individual hulsas might seek out companions with whom they can experience cosmic phenomena. A few of these fey even find senior roles on starships that explore the Vast, trading their expertise for the opportunity to cruise around the cosmos with like-minded company."
         }
     ],
     "game-obj": "Aliens",
@@ -39,7 +39,12 @@
             {
                 "type": "stat_block_section",
                 "subtype": "sense",
-                "name": "<a href=\"SpellDisplay.aspx?ItemName=See%20Invisibility\" style=\"text-decoration:underline\">see invisibility</a>"
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see invisibility"
             }
         ],
         "defense": {
@@ -80,7 +85,7 @@
             },
             "defensive_abilities": [
                 "solar adaptation",
-                "soul furnace",
+                "stellar revelation (soul furnace)",
                 "void adaptation"
             ],
             "immunities": [
@@ -162,38 +167,15 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "10-ft. radius"
+                            "name": "miniature star [10-ft. radius, 5d6 F]"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "5d6 F"
+                            "name": "supernova [15-ft. radius, 11d6 F; DC 19]"
                         }
                     ],
-                    "value": "miniature star"
-                },
-                {
-                    "name": "Offensive Ability",
-                    "type": "stat_block_section",
-                    "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "15-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "10d6 F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 19"
-                        }
-                    ],
-                    "value": "supernova"
+                    "value": "stellar revelations"
                 }
             ]
         },
@@ -301,7 +283,15 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A hulsa is supernaturally luminous, shining bright light out to a range of 30 feet, normal light for another 30 feet, and dim light for another 30 feet. A magical effect can reduce the light in this area only if its source has a higher level or CR than the hulsa. A hulsa can extinguish its light or relight it as a move action.<br/><br/> In addition, the hulsa can spend 1 Resolve Point to oscillate the bright light from this ability for as long as the fey maintains <a href=\"Rules.aspx?Name=Duration&amp;Category=Defining%20Effects\" style=\"text-decoration:underline\">concentration</a>. Creatures within 90 feet of the hulsa that can see this light must succeed at a DC 19 Will saving throw or become fascinated while the effect lasts and for 1 round after it ends. The hulsa can instead focus the glow on one creature, working like the hypnotic glow stellar revelation of a 10th-level solarian (DC 19, 10 rounds). Hulsas are immune to these mind-affecting effects.",
+                "text": "When making a full attack entirely with melee weapons, a hulsa takes a \u20133 penalty to each attack roll instead of the normal \u20134 penalty.",
+                "name": "Flashing Strikes",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hulsa is supernaturally luminous, shining bright light out to a range of 30 feet, normal light for another 30 feet, and dim light for another 30 feet. A magical effect can reduce the light in this area only if its source has a higher level or CR than the hulsa. A hulsa can extinguish or relight their light as a move action.<br/> In addition, the hulsa can spend 1 Resolve Point to oscillate the bright light from this ability for as long as the fey maintains concentration. Creatures within 90 feet of the hulsa that can see this light become fascinated while the effect lasts and for 1 round after it ends (Will DC 19 negates). The hulsa can instead focus the glow on one creature, which works like the hypnotic glow stellar revelation of a 10th\u2011level solarian (DC 19, 10 rounds). Hulsas are immune to this ability. This is a mind-affecting effect.",
                 "name": "Kaleidoscopic Glow",
                 "ability_type": "Supernatural",
                 "ability_type_abbrev": "Su"
@@ -309,7 +299,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A hulsa can spend 1 Resolve Point to heal living creatures within its bright light. It can heal itself or one other living creature as a standard action, or itself and other creatures of its choice in its bright light as a full action. Each target regains 8d8 Hit Points. When using this ability as a full action, the hulsa can spend 1 additional Resolve Point to also harm undead in the area, dealing 8d8 electricity and fire damage to each one (Fortitude DC 19 half).",
+                "text": "A hulsa can spend 1 Resolve Point to heal living creatures within their bright light. They can heal themself or one other living creature as a standard action, or themself and other creatures of their choice in their bright light as a full action. Each target regains 8d8 Hit Points. When using this ability as a full action, the hulsa can spend 1 additional Resolve Point to also harm undead in the area, dealing 8d8 electricity and fire damage to each one (Fortitude DC 19 half).",
                 "name": "Life-Giving Glow",
                 "ability_type": "Supernatural",
                 "ability_type_abbrev": "Su"
@@ -325,6 +315,17 @@
         ]
     },
     "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 48",
+                "alt": "Alien Archive 4 pg. 48",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 48
+        },
         {
             "type": "source",
             "name": "Starfinder #9: The Rune Drive Gambit",
