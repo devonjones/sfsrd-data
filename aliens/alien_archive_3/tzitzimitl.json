@@ -137,6 +137,45 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 33,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "12d6+30",
+                            "damage_type": "Bludgeoning & Electricity",
+                            "damage_type_text": "B & E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "energy drain"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 33,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "15d6+30",
+                            "damage_type": "Slashing & Electricity",
+                            "damage_type_text": "S & E"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "eyebeam",
                     "bonus": 30,

@@ -127,6 +127,35 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "ecclesiastic shadow chains",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "9d4+21",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "energy drain"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "bind"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "tomb-class void rifle",
                     "bonus": 23,

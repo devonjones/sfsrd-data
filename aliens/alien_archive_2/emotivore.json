@@ -130,6 +130,35 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+9",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "shaken"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "see text"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "hailstorm-class zero pistol",
                     "bonus": 16,

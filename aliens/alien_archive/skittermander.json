@@ -113,6 +113,30 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "ember flame doshko",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+3",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "wound"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "static arc pistol",
                     "bonus": 6,

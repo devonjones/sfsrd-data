@@ -121,6 +121,24 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "static polarity gauntlets",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+5",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "static polarity rifle",
                     "bonus": 12,
@@ -144,17 +162,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "black hole [20-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "pull 10 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13]"
+                            "name": "black hole [20-ft. radius, pull 10 ft., DC 13]"
                         },
                         {
                             "type": "stat_block_section",
@@ -169,17 +177,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "supernova [10-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5d6 F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13]"
+                            "name": "supernova [10-ft. radius, 5d6 F, DC 13]"
                         }
                     ],
                     "value": "stellar revelations"

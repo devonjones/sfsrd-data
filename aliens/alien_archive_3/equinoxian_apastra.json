@@ -111,6 +111,24 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "solar weapon",
+                    "bonus": 29,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+24",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "thrown solar weapon",
                     "bonus": 26,
@@ -152,32 +170,12 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "black hole [35-ft. radius"
+                            "name": "black hole [35-ft. radius, pull 25 ft., DC 21]"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "pull 25 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21]"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "supernova [15-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "16d6 F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21]"
+                            "name": "supernova [15-ft. radius, 16d6 F, DC 21]"
                         }
                     ],
                     "value": "stellar revelations"

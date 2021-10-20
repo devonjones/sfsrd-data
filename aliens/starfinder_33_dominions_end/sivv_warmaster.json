@@ -120,6 +120,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "military quantum entangler",
+                    "bonus": 31,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+28",
+                            "damage_type": "Acid & Sonic",
+                            "damage_type_text": "A & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6",
+                            "critical": true,
+                            "effect": "degeneration"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "military degenerator rifle",
                     "bonus": 28,

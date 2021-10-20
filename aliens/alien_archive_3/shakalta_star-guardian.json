@@ -151,6 +151,24 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "solar weapon",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+1d4+9",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "holy inertial cavitation pistol",
                     "bonus": 16,
@@ -200,17 +218,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "black hole [25-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "push 15 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15]"
+                            "name": "black hole [25-ft. radius, push 15 ft., DC 15]"
                         },
                         {
                             "type": "stat_block_section",
@@ -225,17 +233,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "supernova [10-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5d6 fire"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15]"
+                            "name": "supernova [10-ft. radius, 5d6 fire, DC 15]"
                         }
                     ],
                     "value": "stellar revelations"

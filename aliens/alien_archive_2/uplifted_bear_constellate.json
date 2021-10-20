@@ -122,6 +122,47 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "static shock truncheon",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+12",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
                     "attack_type": "ranged",
                     "name": "red star plasma pistol",
                     "bonus": 15,
@@ -171,17 +212,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "black hole [25-ft. radius"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "pull 15 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15]"
+                            "name": "black hole [25-ft. radius, pull 15 ft., DC 15]"
                         },
                         {
                             "type": "stat_block_section",
