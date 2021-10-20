@@ -1,0 +1,255 @@
+{
+    "name": "Liquid Arsenate",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "When technomancers and other chemical engineers experiment with concentrating poisons into spells and hybrid weapons, sometimes the resulting magical waste product becomes infused with life, resulting in an ooze known as liquid arsenate. A churning mass of noxious magical waste, a liquid arsenate mindlessly seeks out living creatures to poison. The ooze doesn\u2019t consume any corpses it leaves behind; most biochemists posit that liquid arsenate maintains its cohesion through magic alone.<br/><br/> Some unscrupulous techno-alchemists intentionally create these oozes or seek them out to harvest the concentrated arsenic that forms on their surfaces. Unfortunately, such endeavors work better in theory than in practice, as a captured liquid arsenate is more likely to turn on its keepers than remain docile. Black-market poisoners constantly look for ways to safely contain liquid arsenates without diluting their poison, but so far, none have been able to devise a reliable method of captivity. It\u2019s a popular opinion among those who favor harsh justice that liquid arsenate farmers who end up bludgeoned and poisoned by the dangerous oozes more than deserve their fate.<br/><br/> On average, a liquid arsenate is about 3 feet in diameter and no more than half a foot thick at the middle. It has a silvery sheen and occasionally forms crystalline striations along its surface, though these are quickly subsumed into the ooze proper. Despite its small size, a liquid arsenate can stretch its pseudopods to surprising lengths, though this elasticity is rendered quite brittle when introduced to below-freezing temperatures. As such, savvy ooze hunters know to arm themselves with cryo-based weapons if they think they might encounter a liquid arsenate."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Liquid Arsenate",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 108,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "immunities": [
+                "electricity",
+                "ooze immunities Weaknesses vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "pseudopod",
+                    "bonus": 17,
+                    "dc": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "concentrated arsenic"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 3,
+                    "name": "pseudopods",
+                    "bonus": 11,
+                    "dc": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "concentrated arsenic"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with pseudopod"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "mindless"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 4,
+            "con": 2,
+            "int": null,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 14,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+22 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 19
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any underground or urban",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A liquid arensate\u2019s pseudopod inflicts a concentrated dose of the poison arsenic. Though the DC is still 17, the poison type becomes injury, the onset time becomes immediate, and the frequency becomes 1/round for 4 rounds. The concentrated arsenic produced by more powerful liquid arsenates might have a higher save DC.",
+                "name": "Concentrated Arsenic",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #38: Crash and Burn",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #38: Crash and Burn pg. 60",
+                "alt": "Starfinder #38: Crash and Burn pg. 60",
+                "href": "https://paizo.com/products/btq024xh?Starfinder-Adventure-Path-38-Crash-Burn"
+            },
+            "page": 60
+        }
+    ]
+}

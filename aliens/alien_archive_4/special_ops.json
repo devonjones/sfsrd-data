@@ -1,0 +1,319 @@
+{
+    "name": "Special Ops",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Special Ops",
+        "type": "stat_block",
+        "cr": "4",
+        "alien_family": "Copaxi",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "copaxi"
+                }
+            ]
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "copaxi"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "solarian"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "solar weapon",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+9"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d2",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "thunderstrike sonic pistol",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+4",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "black hole [20-foot radius, pull 10 ft., DC 13]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "gravity anchor"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "gravity boost [+1]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "supernova [10-foot radius, 5d6 F; DC 13]"
+                        }
+                    ],
+                    "value": "stellar revelations"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 1,
+            "int": 0,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Copaxi"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "any 2 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "gravity adjustment"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "solar manifestation (solar weapon)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "stellar alignment"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "graphite carbon skin"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "minor muon crystalR"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Tabrid Minor)",
+            "organization": "solitary, pair, team (3\u20139) or squadron (10\u201320)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Retaining some of their ancient connection to the universe\u2019s gravitational forces, a copaxi can adjust their personal gravity as a standard action. They can treat high or low gravity as standard gravity or treat standard gravity as high or low gravity. These adjustments affect only the copaxi and anything they carry, but not thrown weapons. A copaxi can\u2019t adjust to or from extreme or zero gravity. This adjustment remains in effect until the copaxi spends another standard action to return to their environment\u2019s natural gravity. Entering an environment with a different gravity also cancels the copaxi\u2019s ongoing gravitational adjustment.",
+                "name": "Gravity Adjustment",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 22",
+                "alt": "Alien Archive 4 pg. 22",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 22
+        }
+    ]
+}

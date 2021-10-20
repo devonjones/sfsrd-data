@@ -1,0 +1,359 @@
+{
+    "name": "Brain Collector",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The hideous brain collectors, also known as neh-thalggus, originate from worlds beyond the known galaxy, and they belong to the hostile coalition called the Dominion of the Black. These creatures\u2019 common name stems from their obsession with absorbing the brains of any being they deem inferior\u2014in effect, virtually every other being\u2014 not to gain sustenance, but to increase their intellect and power their spells.<br/><br/> Brain collectors resemble vaguely scorpion-like creatures with lamprey mouths, jagged pincers, and clattering legs studded with twitching eyes. Pulsating, brain-filled blisters line their backs, making these monstrous creatures easily distinguishable from other predators in the Vast. Those who survive encounters with brain collectors describe eerie, whispering thoughts intruding into their minds. These thoughts seem to simultaneously offer salvation and destruction, and some victims report that they couldn\u2019t determine whether the thoughts belonged to the brain collector, the pulsating brain sacs, or their own traumatized imaginations.<br/><br/> Even after millennia of exposure to Pact Worlds species, brain collectors\u2019 motivations remain murky; it remains unclear whether they act to fulfill the schemes of sinister overlords among the Dominion of the Black or if their hostility stems from an utterly incomprehensible morality, if not outright cruelty. Whatever the case, brain collectors are relentless. Upon landing on a planet in living drop-ships, their vessels rot into useless biological matter as well as metal components the brain collectors use to convert caves and abandoned buildings into unsettling, flesh-walled compounds. From these bases, the brain collectors systematically hunt, kill, and claim the brains of intelligent beings. Once satiated\u2014which can take anywhere from a few days to many years, depending on their needs\u2014the brain collectors rapidly disassemble their fleshy homes, reconstruct their shuttles, and return to their orbiting starships. They then set off for another distant world to repeat the process\u2014or return their cerebral payload to their unknown home worlds.<br/><br/> Largely solitary, brain collectors hunt alone even when sharing starships and lairs. The greatest emotional bond they form comes through brain-swapping, a grotesque process that allows them to share their victims\u2019 memories. To a brain collector, other creatures simply serve as resources, with no more rights or dignity than their ships\u2019 fuel. Even so, they regularly attract cults dedicated to the Dominion whose members harbor misguided hopes that obeisance might save the cultists\u2019 lives. For the most part, neh-thalggus don\u2019t care for these cults, and the members have no guarantees of safety.<br/><br/> Yet some brain collectors appear to take pleasure in being worshipped, even if it mostly just makes their jobs easier. A few unsubstantiated reports claim that neh-thalggus who consume the brains of zealous individuals can inadvertently absorb humanoid notions of faith, in turn developing uncharacteristic habits of grandiosity, generosity, or protectiveness. If these anomalies exist, it seems other brain collectors quickly eradicate the heretics.<br/><br/> Xenoanthropologists\u2019 research suggests that brain collectors\u2019 religion venerates the primordial forces of space and time, potentially serving as the belief that unifies the species and drives their behavior. Others, however, believe that brain collectors simply \u201cpractice\u201d religion out of boredom during their long journeys among the stars, and that they take it no more or less seriously than rote mathematics. However, an emerging theory proves among the most concerning: that over the eons they spent accumulating knowledge, brain collectors have discovered some fearful, fundamental truths of the universe\u2014and only faith preserves them from abject terror. Brain collectors are among the most commonly encountered members of the Dominion of the Black, though they rarely interact or cooperate with others from that enigmatic group. However, they practically never enter into direct competition with one another. A common punishment for a scheming or inefficient brain collector involves violently tearing out their brain collection, then abandoning them on a lifeless moon to suffer centuries of stupefaction and powerlessness. According to unconfirmed rumors, brain collectors that excel at their duties undergo transformations to become far more powerful and horrific creatures.<br/><br/> The average brain collector has a stature about 6 feet tall and 9 feet across; they can weigh over 3,500 pounds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Brain Collector",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Spellcaster",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 105,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "dr": [
+                "10/magic"
+            ],
+            "immunities": [
+                "confused condition"
+            ],
+            "sr": "19",
+            "weaknesses": [
+                "brain dependency"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+12",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "brain collector venom"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+12",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "brain collector venom"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "claws",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "brain collection"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 2,
+            "con": 2,
+            "int": 6,
+            "wis": 2,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 2,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+10 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 16
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "see Strange Knowledge"
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Abyssal"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 7 other languages as determined by brain collection"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A brain collector can store up to seven brains of Small or Medium creatures to enhance their knowledge and power, learning a single language known by the former owner of each stored brain. A brain collector can extract a brain from a helpless opponent with a coup de grace action that kills the opponent, or they can extract one as a standard action from a body that has been dead for no longer than 1 minute.",
+                "name": "Brain Collection",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A brain collector that has fewer than seven collected brains gains 1 negative level for each missing brain, and a brain collector with no collected brains can\u2019t cast any of their spells. These negative levels never become permanent and can be removed only by adding brains to a brain collector\u2019s collection. The statistics presented here assume a brain collector with a full collection.",
+                "name": "Brain Dependency",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A brain collector can access the collective knowledge of their stored brains. If they have at least one brain in their collection, they gain one of the following skills (with 8 ranks) in which the former owner was trained: Bluff +16, Computers +16, Culture +16, Engineering +16, Medicine +16, Piloting +16, Profession +16, or Sense Motive +16. For every three additional brains in their collection, the brain collector gains one additional skill from the list among the skills in which the former owners were trained.",
+                "name": "Strange Knowledge",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Brain Collector Venom",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "save": "Fortitude DC 18",
+                "track": "Strength (special)",
+                "frequency": "1/round for 6 rounds",
+                "effect": "progression track is Healthy\u2014Weakened\u2014Staggered\u2014Immobile",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 16",
+                "alt": "Alien Archive 4 pg. 16",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 16
+        }
+    ]
+}

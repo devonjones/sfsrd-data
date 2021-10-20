@@ -1,0 +1,299 @@
+{
+    "name": "Titan",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Titan",
+        "type": "stat_block",
+        "cr": "15",
+        "alien_family": "Supenga",
+        "role": "Combatant",
+        "xp": 51200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 26
+        },
+        "aura": "gnawing brood (10 ft., Reflex DC 21)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 290,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 31
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "defensive_abilities": [
+                "ferocity",
+                "self-propagate Immunities plant immunities"
+            ],
+            "resistances": [
+                "cold 10",
+                "fire 10"
+            ],
+            "weaknesses": [
+                "vulnerable to slashing"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+24",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "epicuticular enzyme"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d6+24",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tail",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+24",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "claws",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d6+24",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "tail",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+24",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "15 ft. with tail"
+                    }
+                ],
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 9,
+            "dex": 5,
+            "con": 7,
+            "int": -3,
+            "wis": 2,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 31
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "warm and temperate deserts",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The wax coating a supenga\u2019s teeth contains a digestive, paralytic enzyme. When a supenga damages a creature with its bite, the target must succeed at a DC 21 Fortitude save or gain the paralyzed condition for 1d4 rounds. As a full action, the target can attempt a new save to end the condition. This is a poison effect.",
+                "name": "Epicuticular Enzyme",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A typical supenga titan\u2019s body is crawling with its pups, which hungrily bite at nearby prey. Creatures in the aura take 6d6 piercing damage (Reflex DC 21 negates). If a supenga titan takes 30 or more damage from an effect that affects all targets in an area (such as from a grenade or a blast weapon), its gnawing brood aura is deactivated and can\u2019t be reactivated for 1 round.",
+                "name": "Gnawing Brood",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a supenga titan takes slashing damage, its gnawing brood aura\u2019s damage increases to 6d6+12 until the end of its next turn.",
+                "name": "Self-Propagate",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 120",
+                "alt": "Alien Archive 4 pg. 120",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 120
+        }
+    ]
+}

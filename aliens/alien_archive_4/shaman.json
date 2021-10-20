@@ -1,0 +1,327 @@
+{
+    "name": "Shaman",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Shaman",
+        "type": "stat_block",
+        "cr": "6",
+        "alien_family": "Kiirinta",
+        "role": "Spellcaster",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "kiirinta"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mystic"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 75,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "fluttercloud"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 20 ft.",
+                        "movement_type": "fly",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "medium sap",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "nonlethal": true,
+                            "formula": "1d6+6",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "corona laser pistol",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4+6",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "grasping vines"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "reverberating shriek"
+                }
+            ],
+            "connection": "xenodruid"
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": 2,
+            "int": 2,
+            "wis": 5,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Kiirinta"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "limited telepathy 30 ft."
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "speak with animals"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "animal adaptation (6 minutes)"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "freebooter armor II"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "corona laser pistol"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "medium sap"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Stabrisis-14)",
+            "organization": "solitary, pair, or kaleidoscope (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once every 10 minutes, as a move action, a kiirinta within 15 feet of the ground can flutter its wings to stir up a cloud of debris and glistening sparkles around themself, granting the kiirinta concealment (20% miss chance) for 1d4 rounds or until they leave their space.",
+                "name": "Fluttercloud",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once every 10 minutes, as a standard action, a kiirinta can emit a shriek of sonic energy at an adjacent creature, causing painful vibrations throughout the target\u2019s body. This gives the target the staggered condition for 1d4 rounds. The target can attempt a DC 16 Fortitude save to negate the effect.",
+                "name": "Reverberating Shriek",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 62",
+                "alt": "Alien Archive 4 pg. 62",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 62
+        }
+    ]
+}

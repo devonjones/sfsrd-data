@@ -1,0 +1,379 @@
+{
+    "name": "Mummified Prophet",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Whether mummification involves storing bodies atop frigid peaks, interring them in deoxygenated environments, or carefully preserving them with chemicals and surgical care, most processes of mummification trace their roots back to archaic societies. With the development of advanced materials, the favored method now involves injecting specialized resins into a cadaver\u2019s veins\u2014 afterward either replacing the body\u2019s flesh with a silicon facsimile or sealing the body within a translucent silicon shell that shields them from the elements and decay. Although some request mummification as a symbolic gesture, others have developed techniques for sealing a creature\u2019s soul within their body and animating them as an unliving, sentient being. These occult methods are carefully guarded by a handful of corporations and cults.<br/><br/> The most sophisticated reanimation rituals preserve nearly all of the original body\u2019s memories, even allowing the soul to persist in a comfortable way that doesn\u2019t drive the undead creature to embrace evil. Although some of these beings continue their previous lives in a less public capacity\u2014interacting with polite society through the infosphere or intermediaries, or operating openly on planets like Eox\u2014in many cases the silicon mummy withdraws from the living world entirely. Wealthy families occasionally shell out extraordinary sums to preserve a revered elder or beloved pet.<br/><br/> No matter the methodology, though, the complex mummification ritual doesn\u2019t always go perfectly. Flawed procedures for creating an undead can result in a mummy with mere echoes of their former self, with the remainder of their persona replaced by insatiable rage, unshakable ennui, or empty compliance. Those undead that aren\u2019t destroyed outright (or lost, if the mummy escapes the facility) can find roles as guardians or servants. Yet even bodies preserved for mundane burial occasionally animate spontaneously, often awakening in a combination of pain and confusion before haring off in desperate pursuit of justice or answers. Creatures accidentally mummified in industrial settings can also animate as silicon mummies. For example, an employee who tumbles into a vat during a preventable accident might arise and systematically murder their negligent supervisors. Unfortunately, rogue mummies aren\u2019t always recognized as a threat thanks to their role in popular media, especially in several campy xenoarchaeology films over the past century that have inspired popular costumes worn to masquerades and specific holiday celebrations.<br/><br/> Silicon mummies retain enough control over their bodies to make subtle alterations to their blue-gray exteriors, rendering crude emotions and facial expressions. Furthermore, a mummy can modulate the opacity of their silicon exterior, either highlighting or obscuring the preserved veins or body within. However, the impermeable forms lack the vocal capacity to speak, instead gaining the ability to broadcast their thoughts telepathically."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mummified Prophet",
+        "type": "stat_block",
+        "cr": "12",
+        "alien_family": "Silicon Mummy",
+        "role": "Spellcaster",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "silicon"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mummy"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mystic"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 170,
+            "rp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 25,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "defensive_abilities": [
+                "constructed shell",
+                "share pain (DC 21)",
+                "silicon casing (25%)"
+            ],
+            "dr": [
+                "10/adamantine Immunities undead immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+16",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "perihelion laser pistol",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d4+12",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "12 damage"
+                        }
+                    ],
+                    "value": "backlash"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "mental anguish"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "mindbreaking link"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "6 rounds"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "sow doubt"
+                }
+            ],
+            "connection": "mindbreaker"
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 5,
+            "con": null,
+            "int": 3,
+            "wis": 3,
+            "cha": 8,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 22
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Eoxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Triaxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vesk"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "solar battery (4 points)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "perihelion laser pistol with 2 high-capacity batteries (40 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or entombment (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "For effects targeting creatures by type, a silicon mummy counts as both a construct and as undead (whichever type allows an ability to affect them for abilities that affect only one type, and whichever is worse for abilities that affect both types).",
+                "name": "Constructed Shell",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A silicon mummy\u2019s protective exterior and nonfunctional organs limit critical damage; the mummy has a 25% chance to ignore the extra damage dealt by a critical hit and gains a +4 bonus to saves against critical hit effects.",
+                "name": "Silicon Casing",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A silicon mummy can absorb solar energy in the form of Solar Reserve Points (SRP), which they can spend in place of Resolve Points. For every 8 hours a silicon mummy spends exposed to the light of a star, the mummy gains 1 SRP, to a maximum number of SRPs equal to one-third their CR (4 for a mummified prophet). For every week a silicon mummy absorbs no stellar energy, they lose 1 SRP. However, the mummy can intentionally enter a state of hibernation to lose only 1 point per 20 years, and although the mummy is aware of their surroundings and can fully animate as a move action, they are staggered for 1d4 hours afterward. As a swift action, a silicon mummy can expend 1 SRP to enhance either their next melee attack, ranged attack, or spell before the end of their turn. An enhanced attack gains a +2 circumstance bonus to its attack roll and deals an additional 3d6 damage if it hits. An enhanced spell increases the spell\u2019s saving throw DC by 2.",
+                "name": "Solar Battery",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 74",
+                "alt": "Alien Archive 4 pg. 74",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 74
+        }
+    ]
+}

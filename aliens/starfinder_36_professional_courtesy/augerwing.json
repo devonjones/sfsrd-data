@@ -1,0 +1,290 @@
+{
+    "name": "Augerwing",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "An augerwing is a tall, lean bird with two sets of wings and eight legs. Its long, sinuous, rasp-covered beak splits into multiple sections, each of which sports numerous pores. Colored bright yellow or red, each augerwing\u2019s beak displays a pattern of spots unique to that individual. An augerwing has eight spindly legs and two sets of wings with muted brown, gray, and white plumage, keeping its secondary wingspan close to its body when not in use. By switching between wing pairs while flying, an augerwing moves through the air in a hypnotic, twisting spiral pattern that has endeared Pharasmin cultures to this strange avian.<br/><br/> When hunting, an augerwing approaches its prey in a rapid, spinning dive. Strong muscular and skeletal structures help the bird muster the power to drill into their target\u2019s flesh. It then continues to twist and stab, injecting fixative enzymes into its prey to limit mobility.<br/><br/> Groups of augerwings use large animal carcasses as nests and lay their tiny eggs inside the corpse\u2019s bones; after the eggs have hatched, these hollowed-out bones resemble flutes and can fetch a high price. The birds have spread throughout Near Space and have mostly resisted domestication efforts."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Augerwing",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 70,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": ""
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 50 ft.",
+                        "movement_type": "fly",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 10 ft.",
+                        "movement_type": "swim",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "beak",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+8",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "talon",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+8",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "1d4 bleed"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "enzyme jet",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+5",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "embalming enzymes"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "impale"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 2,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 16,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+24 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 11,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+19 to swim"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land or sky",
+            "organization": "solitary, pair, quiver (3\u201310), flight (11\u201330)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, an augerwing can open its beak pores to spray high-pressure streams of ink-like enzymes with a maximum range of 30 feet and no range increment. This attack has the unwieldy weapon special property and can be used only every 1d4+1 rounds.",
+                "name": "Enzyme Jet",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An augerwing can perform a spiraling dive to drive its beak into prey. When the augerwing performs a charge and deals damage, if the result of the attack rolls meets or exceeds the target\u2019s KAC + 4, the augerwing\u2019s beak pierces the target\u2019s body; if the target is Medium or smaller, it is also grappled. The augerwing can keep its beak embedded in the target if it succeeds at further grapple combat maneuvers as normal; it receives a +4 racial bonus to these attacks. A creature can pull out the augerwing\u2019s beak (and remove the grappled condition) with a successful Acrobatics check to escape or grapple combat maneuver as normal for the condition. A creature impaled in this way is exposed to embalming enzymes (see above) at the start of its turn.",
+                "name": "Impale",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ],
+        "afflictions": [
+            {
+                "name": "Embalming Enzymes",
+                "type": "stat_block_section",
+                "affliction_type": "poison (injury)",
+                "track": "Dexterity (special)",
+                "frequency": "1/minute for 10 minutes",
+                "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014Staggered\u2014Immobile",
+                "cure": "2 consecutive saves",
+                "subtype": "affliction"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #36: Professional Courtesy",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #36: Professional Courtesy pg. 57",
+                "alt": "Starfinder #36: Professional Courtesy pg. 57",
+                "href": "https://paizo.com/products/btq023hp?Starfinder-Adventure-Path-36-Professional-Courtesy"
+            },
+            "page": 57
+        }
+    ]
+}

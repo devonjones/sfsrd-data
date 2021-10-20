@@ -1,0 +1,300 @@
+{
+    "name": "Ursikka",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Populating Triaxian children\u2019s horror tales, ursikkas roam the Triaxian wilderness during the wandering planet\u2019s winter years. These enormous, nightmarish praying mantises stretch 20 feet in length and stand as tall as 25 feet\u2014mostly due to the long, slender walking legs on which they skitter with an eerie speed. Ursikkas\u2019 grasping forelimbs each end in sharp pincers capable of shearing flesh from bone, and their three-part maws can open wide enough to swallow humans whole. Freezing saliva drips from their gnashing mandibles, which can injure and trap prey.<br/><br/> Ursikkas are endlessly hungry creatures that act primarily on instinct. As such, they view all smaller creatures as food. During their planet\u2019s long winters, ursikkas terrorize Triaxus\u2019s extensive rural lands to secure the several tons of meat they need each week to survive. They prefer to consume large, cold-blooded creatures, but hungry ursikkas pursue any viable prey, particularly victims that seem sluggish and easy to catch.<br/><br/> As winter draws to a close, ursikkas become especially ravenous as they prepare for a long hibernation in their summer abodes: cocoons constructed from their own freezing saliva. The cocoons\u2019 temperature resistance makes it an exceptional insulation material for delicate machinery, and Triaxian factories long ago devised chemical baths that make the cocoons more pliable. Freelance hunters can collect considerable bounties for these cocoons. Summerborn ryphorians actively seek and destroy slumbering ursikkas\u2014not only to profit off their cocoons and hides, but also to cull the predators before they awaken the next winter and pose an active threat to communities. These local crews and hunting teams periodically join forces, each benefiting from the others\u2019 aid. Their joint hunting ventures are limited to the summer seasons. This is in part because ursikkas almost always consume their cocoons to recoup the expended nutrients when they emerge in winter, and also because hunting hibernating ursikkas is safer than tracking active ones. The creatures are still ferocious even in summer, but their saliva production slows considerably during hibernation, and unless an awoken ursikka can eat enough to build a new cocoon, it often dies from exposure. Disturbed ursikkas sometimes rampage in the verdant summer wildernesses, desperate to eat and then return to sleep.<br/><br/> Thanks to their tempestuous tempers and voracious appetites, ursikkas typically live solitary existences. However, where prey is abundant, ursikkas sometimes live in pairs or, rarely, in small hives. Even then, they typically hunt alone and fiercely guard their kills from their kin."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Ursikka",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Combatant",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 165,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "ferocity"
+            ],
+            "resistances": [
+                "cold 20"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "ice burrow"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+18",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "freezing saliva"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+18",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "15 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "coat claws"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "freezing saliva"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "spit"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 3,
+            "con": 5,
+            "int": -3,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 19
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "hibernation"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any arctic (Triaxus)",
+            "organization": "solitary, pair, or hive (3\u201310)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an ursikka can coat its pincerlike claws with freezing, viscous saliva. This coating lasts for 1 minute. Any creature hit by an ursikka\u2019s coated claws takes an additional 2d10 cold damage (Reflex DC 17 half).",
+                "name": "Coat Claws",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The saliva that drips from an ursikka\u2019s mouth is sticky as well as cold, and any creature hit by its bite or spit attack becomes entangled for 1d4 rounds (Reflex DC 17 negates). At the end of each turn they\u2019re entangled, a creature takes 2d10 cold damage. An entangled creature can end the entangled condition early with a successful DC 17 Acrobatics or Strength check as a standard action, or by dealing 15 points of fire or slashing damage to the saliva.",
+                "name": "Freezing Saliva",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An ursikka can enter a prolonged state of hibernation by weaving a cocoon from its spittle. It takes 1 uninterrupted hour of work for an ursikka to create this cocoon and an additional 24 hours for the cocoon to fully harden, after which it has hardness 10 and 100 Hit Points. While hibernating, an ursikka doesn\u2019t need to drink or eat. As long as the cocoon remains intact, the ursikka remains unharmed in its hibernation. An ursikka must use its attacks to break free from its cocoon.",
+                "name": "Hibernation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Ursikkas have evolved to thrive in icy climes that are inhospitable to most other creatures. In addition to dirt, ursikkas can burrow through solid ice and through packed snow of any density.",
+                "name": "Ice Burrow",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an ursikka can spit a 60-foot line of its saliva. Creatures in the area take 6d10 cold damage and become entangled. A successful DC 17 Reflex save halves the damage and negates the entangled condition.",
+                "name": "Spit",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 128",
+                "alt": "Alien Archive 4 pg. 128",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 128
+        }
+    ]
+}

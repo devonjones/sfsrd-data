@@ -1,0 +1,304 @@
+{
+    "name": "Abynthic",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Measuring up to 100 feet from their eel-like jaws to their four-part tails and weighing hundreds of tons, abynthics are among the largest and most formidable creatures found in the seas of Entha (page 62). While they\u2019re swimming on long migratory patterns that circumnavigate the planet\u2019s full circumference twice a year, their segmented tails cleave together and function as one powerful limb that propels them through the depths. Abynthics are incredibly flexible for their size and can use their tails individually to attack with devastating effect when they happen across a worthy meal.<br/><br/> These carnivorous giants attack their prey by first ramming into it with their massive jaws, then clamping down with enormous pressure and bringing their flexible tails to bear. When they\u2019ve appropriately subdued and tenderized a creature, they swallow it whole.<br/><br/> Abynthics are constantly on the move and have no established hunting grounds. Often, their travel takes them through smaller ecosystems, where their voracious appetites can leave devastation in their wake, upsetting an area\u2019s fragile balance. On Entha, the only refuges from these massive creatures are the magical reefs that supernaturally decrease the surrounding water pressure; abynthics are adapted to the high pressure of the deep sea and fare poorly in shallow and low-pressure environments.<br/><br/> Many other worlds contain creatures that closely resemble abynthics, though most have notable differences in their number of tails or diet; some are even herbivorous. Sapient species study, fear, or even worship these mysterious beings wherever they appear\u2014but nothing is known about their reproductive cycle. Some posit that the massive creatures are effectively immortal, dropped fully formed into the seas by some divine entity, as no abynthic young, eggs, or decaying remains have ever been found. The leviathans can be killed, however, and powerful mercenaries regularly mount expeditions to hunt abynthics. These poachers primarily want the creatures\u2019 uniquely strong jaws, which are sometimes incorporated into deep-sea submersibles to help them withstand enormous pressure."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Abynthic",
+        "type": "stat_block",
+        "cr": "7",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Colossal",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aquatic"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 112,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs. attacks of opportunity"
+                    }
+                ],
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "flexible"
+            ],
+            "dr": [
+                "5/piercing"
+            ],
+            "resistances": [
+                "cold 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 60 ft.",
+                        "movement_type": "swim",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+12",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "swallow whole"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 3,
+                    "name": "tail swipes",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+12",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "30 ft.;",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "30 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2d6+12 B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 19"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 17"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "28 HP"
+                        }
+                    ],
+                    "value": "swallow whole"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 4,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics +",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 to swim"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 14
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "water breathing"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any water (Entha)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An abynthic can contort itself surprisingly well for its enormous size. An abynthic gains a +4 bonus to its AC against attacks of opportunity.",
+                "name": "Flexible",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #36: Professional Courtesy",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #36: Professional Courtesy pg. 55",
+                "alt": "Starfinder #36: Professional Courtesy pg. 55",
+                "href": "https://paizo.com/products/btq023hp?Starfinder-Adventure-Path-36-Professional-Courtesy"
+            },
+            "page": 55
+        }
+    ]
+}

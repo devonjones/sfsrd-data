@@ -1,0 +1,260 @@
+{
+    "name": "Warpstitcher",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A warpstitcher preys upon sapient creatures, targeting spellcasters who manipulate the fabric of the multiverse. Terrifying to behold, these aberrations have several barbed, insectile legs supporting a massive, bulbous torso that writhes and roils with the flesh of victims they\u2019ve grafted into their bodies. The warpstitcher\u2019s back has five slender appendages that each taper into needle-like points of extraordinary sharpness. The creature\u2019s infamy and name stem from their hunting strategy: they pin down their victim, skewer its flesh, and use shimmering thread to sew the hapless creature into their bodies.<br/><br/> Those few who\u2019ve survived being sewn to a warpstitcher claim the stitches pulse with energy that trigger disturbing visions, such as the victims\u2019 deaths in alternate realities. For most, the revelations prove so painful or incomprehensible that those survivors\u2019 minds suffer irreparable damage. A rare handful instead experience different visions entirely, emerging from the near-death experience with an ineffable sense of revelation and euphoria. This possibility has led desperate sensates to hunt down a warpstitcher on the off chance of attaining this strange enlightenment, as survivors sometimes achieve unprecedented witchwarping powers. Most die, however. Once a victim\u2019s consciousness has been utterly destroyed, a warpstitcher absorbs the body that continues to kick and contort from unseen nightmares. No one knows for certain if a warpstitcher feeds off its victims\u2019 flesh, thoughts, energy from other timelines, or something else entirely.<br/><br/> Warpstitchers hunt those who wield powerful magic or technology recklessly, believing such abuses create dimensional echoes that damage alternate realities. Upon identifying a target, warpstitchers stalk their quarry relentlessly, confirming their suspicions before striking. They favor targeting witchwarpers, whose magic frequently violates numerous warpstitcher taboos. Other potential prey for these aberrations include those who wield supernatural power, especially irreverent solarians and engineers of space-bending technologies. Warpstitchers hold a special hatred for Drift engines, believing that starships that have them inflict terrible wounds on extraplanar ecosystems.<br/><br/> Although they\u2019re most often encountered as remorseless assassins, warpstitchers regularly communicate with others telepathically. In some cases, they might deliver a grim admonition to an amateur spellcaster practicing their first cantrips, only to disappear seconds later. More often, warpstitchers assert control over a group of weaker creatures through lies and manipulation, promising to tell their subordinates\u2019 futures or open a portal to extradimensional riches in exchange for obedience. For all the aberrations\u2019 power, they almost never have the capability to fulfill these promises. Instead they rely on coercing others into making up for their shortcomings, such as by transporting the warpstitchers to other worlds, providing magical support, or securing rare lore that might help the warpstitchers find their way home and undo the Gap\u2019s damage.<br/><br/> Warpstitchers\u2019 most dangerous lies, however, might be the ones they tell themselves. Many warpstitchers believe that eons ago, when the infinite fabric of the multiverse amounted to no more than a single thread, the gods created their kind to sew together the space between alternate realities. There, warpstitchers reinforced cosmic boundaries and mended tears resulting from interdimensional paradoxes. That is, until the Gap, when warpstitchers woke to find themselves ripped from their interstitial realms and condemned to live among mortal creatures. Many warpstitchers blame witchwarpers for the Gap and the warpstitchers\u2019 subsequent exile. The aberrations\u2019 own mythology insists these spellcasters greedily altered reality to eliminate warpstitchers and to access immense magical power before creating the Gap to erase the memory of their deeds and hide their betrayal."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Warpstitcher",
+        "type": "stat_block",
+        "cr": "14",
+        "role": "Combatant",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Lawful Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 225,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                }
+            },
+            "defensive_abilities": [
+                "resist reality"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 40 ft.",
+                        "movement_type": "climb",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 27,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+22",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "warp suture"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "warp suture"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 4,
+            "con": 3,
+            "int": 1,
+            "wis": 0,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "truespeech"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "solitary or scolding (2\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a reaction, when the warpstitcher would take damage, it can gain resistance 10 against one of the damage types the triggering attack deals. This resistance applies to the triggering attack\u2019s damage and lasts until the beginning of the warpstitcher\u2019s next turn. The warpstitcher can\u2019t use this ability to reduce damage dealt to its warp sutures.<br/> If the warpstitcher has at least one living creature grappled or pinned with warp suture (see below), this ability deals 5d8 force damage to one of those creatures (5d8+14 if the creature is pinned) unless it succeeds at a DC 20 Will save. If the creature fails this saving throw, the resistance granted by this ability this round increases by an amount equal to one-quarter the damage dealt.",
+                "name": "Resist Reality",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A warpstitcher uses long claws threaded with strands of quintessence to sew its unfortunate victims into itself. If a warpstitcher\u2019s claw attack roll result equals or exceeds the target\u2019s KAC + 4, it automatically grapples the target. (If it equals or exceeds the target\u2019s KAC + 13, it instead pins the target). On the beginning of the warpstitcher\u2019s next turn after grappling or pinning the target, if the target hasn\u2019t escaped the grapple or pin, the target automatically takes the claw attack\u2019s damage. The warpstitcher can then make a new attack roll with the same attack as a standard action. If the roll equals or exceeds the target\u2019s KAC, the grapple or pin is maintained.<br/> While grappled or pinned by this ability, a target shares the warpstitcher\u2019s space and moves wherever the warpstitcher does (though the target doesn\u2019t provoke attacks of opportunity for this movement).<br/> Creatures can attempt to cut the target free (EAC 28, KAC 26, 56 HP), though any attack that doesn\u2019t deal slashing damage deals only half its normal damage. Alternatively a sewn creature can attempt to wriggle free using the escape task of the Acrobatics skill (DC 36), or the creature can burst free with a successful DC 15 Athletics check as a standard action, though the latter deals 8d6+14 slashing damage to the target as it tears free.<br/> A warpstitcher can grapple or pin up to two Medium creatures in this way (doubling the number of creatures it can bind for each additional size category by which these creatures are smaller). If a target dies while grappled or pinned by this ability, its body is absorbed into the warpstitcher and destroyed 1d3 rounds later.",
+                "name": "Warp Suture",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 136",
+                "alt": "Alien Archive 4 pg. 136",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 136
+        }
+    ]
+}

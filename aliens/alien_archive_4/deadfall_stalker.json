@@ -1,0 +1,331 @@
+{
+    "name": "Deadfall Stalker",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Loosely resembling a spider, a deadfall stalker\u2019s body hosts a black hole singularity it uses to capture, crush, and digest prey. Each of these subterranean predators skitters ably on its host of legs\u2014the number of appendages ranges from 12\u201331 but doesn\u2019t impact their creatures\u2019 mobility and is unrelated to their age. A stalker\u2019s strange, spherical body has phalanxes of hairy appendages. Rather than eyes, a deadfall stalker relies on its legs\u2019 thousands of bristles, using them to sense the faintest vibrations even through thin atmosphere or stone. Those who survive encounters with these beasts sometimes report the soft tapping of a nearby stalker as it hauntingly raps on nearby surfaces to listen for echoes and prey.<br/><br/> As ambush hunters, deadfall stalkers quietly patrol their territory on the lookout for prey to catch unawares. They\u2019re adept at creeping up on targets, yet their favored tactic involves using passwall to strike from a completely unexpected direction. Once in range, a deadfall stalker scrabbles to pin down its prey with its legs before passing the immobilized meal into its jawless maw, which relies on suctioning force to crush and swallow food whole. The internal singularity and the organ that shelters it occupy roughly half the stalker\u2019s abdomen, and in addition to creating the gravity fields that circulate the creature\u2019s blood, the singularity acts as a powerful gizzard that pulverizes virtually anything the deadfall stalker swallows. The beast draws sustenance from the energy released by its prey\u2019s disintegrating atomic bonds and periodically excretes hyper-dense waste pellets.<br/><br/> When a deadfall stalker accumulates too much matter, its singularity grows too powerful to remain housed safely in the creature\u2019s body. Within a few days, the stalker finds a safe place, hunkers down, and locks its limbs against one another in order to tear itself apart, undergoing binary fission. In addition to creating two healthy deadfall stalkers, each with half the number of legs as the original, this process snaps the singularity in half, releasing a powerful shock wave that registers on seismometers, breaks windows, and occasionally triggers cave-ins. The two halves barely acknowledge each other before skittering off to go their separate ways, gradually growing a full set of legs over the next several months.<br/><br/> Deadfall stalkers typically live solitary existences. However, they are fairly gregarious when meeting others of their kind, often linking claws and patting each other\u2019s joints with remarkable tenderness before settling into a huddled tangle of limbs. They can remain this way for days on end. Because deadfall stalkers reproduce asexually, it\u2019s unclear why the creatures perform this soothing ritual, yet they seem to enjoy each other\u2019s company and purposefully seek out occasional companions. If lonely, these beasts need only seek out trails that lack dust entirely to find each other, for their singularities quietly vacuum up loose debris wherever they walk. Thankfully, this same trail helps other creatures avoid the stalkers. In at least three documented cases, however, these beasts have sought out other species for company\u2014in each case chasing down, capturing, and then delicately grooming their distressed companion before releasing them wordlessly several hours later.<br/><br/> The discovery of deadfall stalkers came only within the last century, when a half-orc expedition into Apostae\u2019s interior unsealed a vault with walls dozens of feet thick. A torrent of deadfall stalkers fell upon the spelunkers, and the drow who received the distress calls responded by sealing off that stretch of tunnels, thinking that sufficient to stem the strange threat. However, deadfall stalkers have since infiltrated several other sections of the planet, bypassing all but the thickest barricades. Within a month, the creatures had spread beyond the drow houses\u2019 ability to contain the threat, and deadfall stalkers have become a deadly reality for those delving the planet\u2019s depths.<br/><br/> Thankfully, deadfall stalkers can barely sense their surroundings on Apostae\u2019s airless surface, which discourages the creatures from venturing too far into the open. Those that do become hopelessly lost, often compressing themselves into a tight mass before entering a period of hibernation. This survival technique occasionally results in stalkers hiding in surface ruins, or getting lodged into starship hulls and inadvertently hitching rides across the galaxy. These accidental stowaways adapt easily to new worlds, yet they inexplicably reproduce far slower on other planets than they do on Apostae. As much as this peculiarity baffles researches, it\u2019s welcome news to the distant worlds that wish to avoid being overrun.<br/><br/> The few biologists and behaviorists who\u2019ve studied deadfall stalkers and lived to report their findings have discovered that the creatures don\u2019t espouse particularly complex belief systems, yet this information hasn\u2019t stopped the Cult of the Devourer from obsessing over them. Feaster sects in particular relish any opportunities to lure deadfall stalkers into populated areas, all while forming a perimeter to eliminate any bystanders who try to flee the scene. Other worshippers\u2014especially the cult\u2019s recruiters\u2014have tried to tame the deadfall stalkers to turn them into dreadful mounts or living tanks. Devourer cultists have even attempted to transport deadfall stalkers to other planets, often with disastrous results. Collectively, these destructive missions rarely go as planned, as the escaped beasts often inflict just as much havoc on their captors as they might once have on the cultists\u2019 intended targets."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Deadfall Stalker",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Combatant",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 27
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (blindsight [vibration]) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 185,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 28
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "regeneration 5 (electricity)"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 15 ft.",
+                        "movement_type": "burrow",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d8+20",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "swallow whole"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+20",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 3,
+                    "name": "claws",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+20",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with claws"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "singular attraction"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3d8+20 B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 26"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 24"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "46 HP"
+                        }
+                    ],
+                    "value": "swallow whole"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 5,
+            "con": 4,
+            "int": -3,
+            "wis": 1,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 27
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "feast"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "void adaptation"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Apostae)",
+            "organization": "solitary or tangle (2\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Whenever a creature the deadfall stalker has swallowed dies or loses or spends a Resolve Point while dying, the deadfall stalker\u2019s regeneration increases by 10 during the following round (maximum 25).",
+                "name": "Feast",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A deadfall stalker easily transfers grabbed prey into its maw. A deadfall stalker can use its swallow whole ability to swallow a creature even if that creature wasn\u2019t grappled or pinned by the deadfall stalker\u2019s bite attack.",
+                "name": "Singular Attraction",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 28",
+                "alt": "Alien Archive 4 pg. 28",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 28
+        }
+    ]
+}

@@ -1,0 +1,271 @@
+{
+    "name": "Junk",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Junk golems are constructed using random metal and electronic scrap found in junkyards, such as rusted pieces of vehicles, broken vidscreens, and discarded food tins. They\u2019re favored by certain tribes of space goblins, who find their ingenuity in building these hulking constructs matched only by their prudence in making a hasty retreat when the golem inevitably goes berserk."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Junk",
+        "type": "stat_block",
+        "cr": "4",
+        "alien_family": "Golem",
+        "role": "Combatant",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 50,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 18
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "defensive_abilities": [
+                "5/adamantine"
+            ],
+            "immunities": [
+                "construct immunities",
+                "magic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "25 ft.",
+                        "movement_type": "walk",
+                        "value": 25
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+9",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "berserk"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": -3,
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "death crumple"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or gang (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a junk golem begins its turn with half its HP or fewer, it must attempt a DC 11 Will save. On a failure, it goes berserk, using its actions to move and attack or make a full attack. If it can\u2019t reach a creature, it attacks objects. The golem attempts a DC 11 Will saving throw at the end of each of its turns to end the berserk state. If the golem\u2019s creator communicates with it to calm it and succeeds at a DC 10 Charisma check, the golem gains a +2 circumstance bonus to this save.",
+                "name": "Berserk",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Constructs are immune to the following effects, unless the effect specifies that it works against constructs. <ul><li>Bleed, death effects, disease, mind-affecting effects, necromancy effects, paralysis, poison, sleep, and stunning.</li> <li>Ability damage, ability drain, energy drain, exhaustion, fatigue, negative levels, and nonlethal damage.</li> <li>Any effect that requires a Fortitude save (unless the effect works on objects or is harmless).</li></ul>",
+                "name": "Construct Immunities",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a junk golem is reduced to 0 Hit Points, it collapses in a landslide of debris. All Medium or smaller creatures adjacent to the junk golem take 1d8+9 bludgeoning damage (Reflex DC 13 half).",
+                "name": "Death Crumple",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once a day, the golem can take a standard action to pick up 1 bulk of inert electronic equipment and add it to its body, restoring 1d10 HP.",
+                "name": "Junk Repair",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A junk golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically targets constructs. In addition, certain spells and effects function differently against the golem, as follows. <ul><li>Magical effects that deal acid damage slow (as the slow spell) the junk golem for 3 rounds (no save).</li> <li>If targeted by a spell with a Target entry of \u201cat least 1 bulk of inert electronic equipment,\u201d the golem becomes confused for 1d4 rounds. It attempts a Fortitude save (against the spell\u2019s DC) at the end of each of its turns to end this condition.</li></ul>",
+                "name": "Magic Immunity",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A junk golem has no Intelligence score or modifier and is immune to mind-affecting effects.",
+                "name": "Mindless",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The golem has no Constitution score or modifier and is destroyed when it reaches 0 HP. It doesn\u2019t heal naturally, but can be repaired with the right tools. Unliving creatures don\u2019t breathe, eat, or sleep.",
+                "name": "Unliving",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Junker's Delight",
+            "link": {
+                "type": "link",
+                "name": "Junker's Delight pg. 61",
+                "alt": "Junker's Delight pg. 61",
+                "href": "https://paizo.com/products/btq026l2/discuss?Starfinder-Adventure-Junkers-Delight"
+            },
+            "page": 61
+        }
+    ]
+}

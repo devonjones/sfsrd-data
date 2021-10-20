@@ -1,0 +1,328 @@
+{
+    "name": "Claustral",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Claustral",
+        "type": "stat_block",
+        "cr": "6",
+        "alien_family": "Agathion",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral Good",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "agathion"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "good"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "aura": "conservation aura (20 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs poison"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "immunities": [
+                "electricity",
+                "petrification"
+            ],
+            "resistances": [
+                "cold 10",
+                "sonic 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "holy enforcement-class capture pole",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+10",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "injection DC +2"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+10",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with capture pole"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "preserver\u2019s patience"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 3,
+            "con": 3,
+            "int": 0,
+            "wis": 2,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 18
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "speak with animals"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "healing channel (6d8)"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "holy enforcement-class capture pole"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "<i>mk 2 serum of healing</i>"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any urban (Nirvana)",
+            "organization": "solitary or patrol (2\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A claustral\u2019s aura preserves imperiled natural creatures. Creatures with the animal or plant type within this aura gain fast healing 2. This fast healing doubles for affected creatures that are below half their maximum Hit Points or that are in an urban environment. If an affected creature would be reduced to 0 Hit Points by an effect the claustral can see, the claustral can spend 1 Resolve Point as a reaction to reduce the damage dealt to that creature by the effect by 6d6. A claustral can suppress the aura\u2019s effects for any number of those animals and plants as a free action.",
+                "name": "Conservation Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A claustral can choose to deal nonlethal damage with any of its attacks against animals and plants without taking a penalty. A claustral gains a +2 bonus to attack rolls to resolve grapple and trip combat maneuvers, and this bonus doubles against animals and plants.",
+                "name": "Preserver\u2019s Patience",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A claustral can communicate with animals and use language-dependent effects on them.",
+                "name": "Speak with Animals",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 6",
+                "alt": "Alien Archive 4 pg. 6",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 6
+        }
+    ]
+}

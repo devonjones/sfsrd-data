@@ -1,0 +1,262 @@
+{
+    "name": "Vaigruuk",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Vaigruuks are hunched, long-eared gremlins that love to skulk around and sicken creatures that don\u2019t realize they\u2019re there. Despite their affinity for poison and radioactivity, these gremlins don't wallow in toxic areas\u2014they\u2019re instead drawn to places where non-ill people congregate, such as fitness centers or athletic events. There, vaigruuks spoil food and inflict radiation sickness from a good hiding place. Vaigruuks don\u2019t often work together, as they frequently devolve into bickering about the best way to undertake their sabotage, thus risking getting caught.<br/><br/> Vaigruuks are singularly aberrant, with asymmetrical clusters of beady eyes above two slit-like nostrils and a drooling mouth. Their most prominent feature is fleshy, rabbitlike ears, which are so long they hang down to the ground. Vaigruuks are incredibly vain about their ears and take great care to groom them each day, brushing the clumps of hairy bristles on them. These ears function as radiation receivers and amplifiers, allowing the vaigruuk to sense the presence of nearby radiation and bolster its effects."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Vaigruuk",
+        "type": "stat_block",
+        "cr": "2",
+        "alien_family": "Gremlin",
+        "role": "Spellcaster",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 7
+        },
+        "aura": "amplified radiation (20 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 21,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 12,
+                "kac": 13
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "immunities": [
+                "poison"
+            ],
+            "sr": "13"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 3,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+1",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "caustic glob",
+                    "bonus": 5,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 4,
+            "con": 2,
+            "int": 1,
+            "wis": 0,
+            "cha": -1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 12
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 7
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "despoiling touch"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "irradiating lights"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A vaigruuk\u2019s long, dangling ears act as radiation amplifiers. It emits low radiation within 20 feet, which it amplifies from harmless background radiation in the area. When within an area of low radiation, the vaigruuk emits medium radiation. In any environment where there is absolutely no radiation at all, such as certain shielded chambers, this aura doesn\u2019t function. The vaigruuk can suppress its aura by wrapping its ears tightly around its body as a move action, but it is flat-footed during this time. Unwrapping its ears is another move action.",
+                "name": "Amplified Radiation Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack that targets EAC, a vaigruuk can spit a glob of nauseating poison at a single creature within 30 feet. The acid damage from this glob results from vapors that eat away at a creature\u2019s tissues and sinuses like a fast-acting toxin; creatures immune to poison take no damage from the vaigruuk\u2019s caustic glob.",
+                "name": "Caustic Glob",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a vaigruuk touches ordinary food in a container no larger than itself, the food becomes rancid and loses all nutritional value.",
+                "name": "Despoiling Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The illumination a vaigruuk creates with its dancing lights spell-like ability emits low radiation within the area of their illumination (which is 10 feet for dancing lights) and is always a sickly green color.",
+                "name": "Irradiating Lights",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #40: Planetfall",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #40: Planetfall pg. 57",
+                "alt": "Starfinder #40: Planetfall pg. 57",
+                "href": "https://paizo.com/products/btq026i0/discuss?Starfinder-Adventure-Path-40-Planetfall"
+            },
+            "page": 57
+        }
+    ]
+}

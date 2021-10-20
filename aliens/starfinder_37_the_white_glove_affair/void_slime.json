@@ -1,0 +1,233 @@
+{
+    "name": "Void Slime",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "When an akata infects a humanoid with its foul method of reproduction, it typically results in a host called a void zombie which gestates a larval akata in its rotting form for several weeks before once again dying. However, if the void death\u2014the disease that grows a latent akata larva in one\u2019s system\u2014claims a creature who lacks the nutrients necessary to feed the larva, the gestating creature might trigger a period of hibernation prematurely. This usually transforms the host\u2019s corpse into a slurry of noqual shards, grisly flesh, and larva paste known as a void slime. This misbegotten, half-living form is a thing of insatiable hunger and constant pain.<br/><br/> While a void slime would be dangerous enough with resistances similar to those of an akata, shards of noqual\u2014the starmetal that usually makes up an akata\u2019s hibernating cocoon\u2014jut from the ooze\u2019s surface at irregular angles. These fragments provide a void slime with a measure of protection against magic and grant its reaching pseudopods the possibility of dispelling magic from those it strikes. Luckily for those with the knowledge to take advantage, a void slime also shares an akata\u2019s susceptibility to salt water.<br/><br/> Both treasure hunters and xenobiologists are fascinated with void slimes, albeit for different reasons. The fortune seekers want only to harvest a void slime\u2019s precious noqual, while scientists wish to study the process by which it\u2014and similarly, an akata\u2014creates the starmetal with its unusual biology. Of course, the danger of either task lies in the fact that seeking rare void slimes often means coming into contact with packs of akatas, risking infection with void death in the process."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Void Slime",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 11
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (life) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 65,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                }
+            },
+            "immunities": [
+                "cold",
+                "disease",
+                "ooze immunities Resistances fire 5"
+            ],
+            "sr": "16",
+            "weaknesses": [
+                "susceptible to salt water"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+7",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "dispel"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 3,
+            "con": 5,
+            "int": null,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 11
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "deaf"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A void slime can\u2019t attempt Perception checks to listen and is immune to effects that rely on hearing to function.",
+                "name": "Deaf",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "On a critical hit, a void slime\u2019s slam attack gains the effects of a dispelling weapon fusion, treating the void slime\u2019s CR as the slam\u2019s item level.",
+                "name": "Dispel",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A splash of salt water deals 1d6 damage to a void slime, and full immersion in salt water deals 4d6 damage per round.",
+                "name": "Susceptible to Salt Water",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #37: The White Glove Affair",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #37: The White Glove Affair pg. 61",
+                "alt": "Starfinder #37: The White Glove Affair pg. 61",
+                "href": "https://paizo.com/products/btq024up?Starfinder-Adventure-Path-37-The-White-Glove-Affair"
+            },
+            "page": 61
+        }
+    ]
+}

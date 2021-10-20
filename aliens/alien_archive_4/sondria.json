@@ -1,0 +1,361 @@
+{
+    "name": "Sondria",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Spectra are a race of outsiders native to the hyperspace plane of the Drift, concerned with technological growth and advancement, the protection of the Drift, and the spread of Drift technology across the galaxy. Encounters with the relatively new group of outsiders have occurred with greater frequency over the 300 years since they joined the Great Beyond. In recent decades, two new types of spectra have begun to appear: wyspirias and sondrias. It\u2019s unknown whether these spectra existed in the Drift all along, simply unobserved by mortals, or if Triune newly created them to further some fresh purpose.<br/><br/> Wyspirias, often compared to iridias as emissaries of the Drift, are dispatched across the galaxy, possibly on missions from Triune themself, or perhaps on behalf of the mysterious hierarchy of spectra. They stand 7 feet tall with chassis of multicolored glass, and a multitude of coiled, rootlike tentacles cascading from their waists. As a result of the resemblance they bear to floating trees, they are sometimes called trees of knowledge. Wyspirias use their tendrils to plug themselves into people and machines alike\u2014a direct connection that allows them to quickly transfer huge quantities of data between connected people and devices. Whereas iridias come to the Prime Material Plane offering gifts of knowledge and technology to mortals, many believe wyspirias do the opposite, collecting libraries of secrets and information about the galaxy for the unseen purposes of spectra. Rarely, wyspirias are said to appear during the peace talks of warring civilizations, connecting the opposing delegates and enabling them to understand each other directly. Many believe these spectra intervene only when they deem the risk of losing technology or information from a conflict too great.<br/><br/> Sondrias are a new variety of spectra primarily encountered inside the Drift. They are small and sharply featured, with six arms, razor talons, and round, flat, owlish faces. Sometimes called Drift pixies, their presence is always accompanied by a grainy, low-pitched hum or buzzing noise. Sondrias use their own voices more often than other types of spectra, and sequences of sondrias have a habit of speaking at the same time in overlapping sentences that are difficult to pick apart. Like the larger and more formidable aspecnas, sondrias patrol the Drift to help lost travelers and rescue marooned escape pods or starships whose Drift engines malfunction, latching onto the vessels and using their slip drives to boost them back to the Material Plane. It\u2019s rumored sequences of sondria can also offer Triune\u2019s blessing to those killed during Drift travel or in service of the All Code\u2019s agenda\u2014by reincarnating them as androids."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Sondria",
+        "type": "stat_block",
+        "cr": "14",
+        "alien_family": "Spectra",
+        "role": "Combatant",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "spectra"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 250,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "dr": [
+                "10/chaotic",
+                "evil",
+                "good",
+                "or law"
+            ],
+            "immunities": [
+                "electricity"
+            ],
+            "resistances": [
+                "cold 5",
+                "sonic 5"
+            ],
+            "sr": "24"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 100 ft.",
+                        "movement_type": "fly",
+                        "value": 100
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+22",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "Drift dash"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "claws",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+22",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "Drift dash"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "vibrochitter",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+14",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 6,
+            "con": 4,
+            "int": 4,
+            "wis": 4,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 25,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+33 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "machine telepathy 100 ft."
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "drift boost"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "multiarmed (6)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "rebuild"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "slip drive"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spaceflight (Mysticism)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (the Drift)",
+            "organization": "solitary, sequence (2, 3, 5, or 8), or triarmament (1 aspecna plus 2 sondrias)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A sondria can attach themself to a starship of any size and lend that ship the use of their slip drive, allowing the ship to travel through the Drift. The ship uses the Drift engine rating for the sondria\u2019s slip drive (7 for a CR 14 sondria) and needs to remain stationary for only 6 seconds before engaging the drive.",
+                "name": "Drift Boost",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A sondria who scores a critical hit with its claw attack can slip through the Drift and teleport adjacent to a secondary target within 10 feet, making another claw attack against that target at a \u20134 penalty; this does not require an action. The sondria can use this ability a maximum of two times per round.",
+                "name": "Drift Dash",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Three or more sondrias can spend 10 minutes chanting in a series of low-frequency clips and chirps to use <i>reincarnate</i> as a spell-like ability on one target. Targets reincarnated through this ability are always reincarnated as androids and do not roll on the reincarnate table to randomly determine their new body.",
+                "name": "Rebuild",
+                "ability_type": "Spell-Like",
+                "ability_type_abbrev": "Sp"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A sondria\u2019s vibrochitter is a ranged attack with a range increment of 30 feet that targets EAC and has the blast weapon special property.",
+                "name": "Vibrochitter",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 114",
+                "alt": "Alien Archive 4 pg. 114",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 114
+        }
+    ]
+}

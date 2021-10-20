@@ -1,0 +1,339 @@
+{
+    "name": "Skarak",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Skaraks are massive, eight-legged predators that resemble horned arachnids covered in patches of black, white, and blue bristles. Their 16-foot leg spans and 3-ton bodies bely a deadly agility, and skaraks can chase down even fleet prey with little difficulty before goring their victims and swallowing them whole. Those they can\u2019t reach they trap, either constructing devious pits or ensnaring their targets with lassos of sticky silk webs.<br/><br/> Skaraks are exceptionally efficient eaters, securing nutrients from virtually all parts of a kill. Yet the creatures\u2019 jaws are best designed for stabbing and pinning prey, not chewing, and their bony throat plates perform only cursory mastication. Instead, food travels through a series of four stomachs, similar to those of herbivorous ruminants. Powerful digestive acids break down carcasses (even the protective shells common to creatures on their home planet), and periodically transfer matter back to its throat for chewing during idle periods. The second stomach functions like a gizzard, gradually accumulating indigestible matter like stones and metal that help to grind food. Adventurers have found durable technological treasures inside this organ and also within the ambergris-like nodules the skaraks excrete. In times of limited prey, skaraks are known to graze on vegetation.<br/><br/> Skarak webbing is as much a sensory tool as it is a weapon. With the help of magically attuned cerebral lobes, skaraks can sense magical pathways between their own position and their webs. By reaching through these invisible portals, skaraks can drag a web-ensnared target into a waiting mouth. This intuition appears completely unattuned to any other form of magic, yet witchwarping scholars are quick to connect skaraks\u2019 space-bending abilities with their own magical tradition, even paying a bounty for fresh skarak silk to test and prove that it\u2019s from another reality.<br/><br/> Unlike spider webs, skarak webs have only a short-lived adhesive that loses all but a modicum of stickiness after a few minutes\u2019 exposure to most atmospheres, making the threads nearly useless for creating lasting traps. Instead, skaraks spin simple hunting lassos and weave shelters, drawing finger-thick silk from spinnerets on their back legs and directing it with foot-combs on their front legs.<br/><br/> For all their resemblance to giant spiders, skaraks are highly analytical and expressive. A lone skarak might watch a settlement from afar for days to memorize behavioral patterns before launching a raid to snatch up prey at an opportune moment. But far more famously, skaraks are unabashed art critics, apparently delighting in beautiful visual expressions while vandalizing artwork that doesn\u2019t meet their standards. Many settlements near skarak territories have developed artistic traditions to shield their communities, ranging from dance festivals during the creatures\u2019 mating seasons to funding public art installations as a form of self-defense. If the quality meets the predators\u2019 standards, marauding skaraks often marvel at the art for hours before dispersing as if in a haze. They\u2019re far less adept at creating their own art, but they create nonetheless, building elaborate webs with interwoven baubles ranging from skulls and polished stones to spent rifle shells and dropped cred sticks. Occasionally, these web tapestries display scenes like nearby landmarks or animals, and a popular theory among adventurers is that these images act as treasure maps to hidden wealth.<br/><br/> Skaraks are predominantly solitary, yet they gather in small groups during their mating season, which occurs roughly once every Pact Standard year. After filling the nights with the haunting sounds of their dances, skaraks breed and embark on a group hunt that lasts for weeks as they gorge to fuel egg development. This rampage carves literal trails of destruction, with the adults shattering architecture in their path as they dig shallow furrows and fill them with uneaten carcasses as food stores for their future offspring. After finding or hollowing out a subterranean nest, the skaraks lay their eggs and scatter, leaving the eggs to incubate for about 5 months before hatching.<br/><br/> The newly hatched young instinctively retrace their parents\u2019 rampage trail, eating any remaining carrion and hunting prey still in the area. Settlements nearby adapt to this cycle and often prioritize erasing these trails over repairing their own homes just to avoid the second wave of attack. A few warlords have even laid false trails to direct young skaraks against their enemies. More proactive settlements track down and burn these nests whenever possible. Yet skarak parents are canny. Not only do they typically kill off any other predators along their trail so that their young face little competition, they often leave only the weakest prey alive, ensuring their offspring can hone their hunting skills on hapless victims. As a result, some cultures view survivors of the first wave of skarak attacks as helplessly inept rather than lucky.<br/><br/> Skaraks are organic creatures that seem to have reached several different systems before the Gap\u2014ostensibly traveling with the help of their strange teleportation sense. Sometime during the Gap, the research company Homeworld Biotech apparently began an amoral and ill-advised genetic manipulation of skaraks to transform the creatures into docile livestock able to survive in nearly any environment. As the Gap ended, the untold decades of records from the program became garbled, yet initial tests suggested the skaraks were suitable for export. Needing income to stay afloat, Homeworld Biotech sold and shipped hundreds of their stock to at least a dozen planets before the disastrous reports started rolling in: once outside the labs, the skaraks turned on their herders and escaped. As criminal negligence accusations mounted, the company quietly dissolved, its upper management exploiting the recent Gap\u2019s lost records to restart their lives elsewhere. The skaraks survive as invasive species on an untold number of worlds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Skarak",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Combatant",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 215,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 27,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "dr": [
+                "10/magic"
+            ],
+            "resistances": [
+                "cold 10"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 50 ft.",
+                        "movement_type": "climb",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 27,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+21",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "swallow whole"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "gore",
+                    "bonus": 27,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+21",
+                            "damage_type": "Bludgeoning & Piercing",
+                            "damage_type_text": "B & P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "tether",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+13",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "entangle"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "15 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "frenzied thrash"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "quad-stomached"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "snare"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3d12+21 A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "EAC 27"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "KAC 25"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "54 HP"
+                        }
+                    ],
+                    "value": "swallow whole"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 6,
+            "con": 4,
+            "int": 0,
+            "wis": 0,
+            "cha": -4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 23
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 23
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "solitary, pair, or massacre (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "By abandoning any regard for its own defense, a skarak can thrash out at multiple foes at once. As a full action, a skarak can make one gore attack against each enemy of which it\u2019s aware in its threatened area. The skarak is flat-footed until the beginning of its next turn.",
+                "name": "Frenzied Thrash",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A skarak has four stomachs, allowing it to continue to swallow creatures whole even after one or more creatures have cut their way out of the skarak\u2019s gut.",
+                "name": "Quad-Stomached",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A skarak can spin and hurl a weblike coil with a range increment of 20 feet. Any Huge or smaller creature hit by the tether is entangled (Reflex DC 19 negates). The entangled condition persists until the target escapes with a successful DC 29 Acrobatics or Athletics check as a standard action, the target cuts itself free with a slashing weapon (EAC 27, KAC 25, 27 HP), or 1d10 minutes pass, at which point the tether\u2019s adhesive becomes weak enough to escape automatically.<br/> As a move action, a skarak can teleport a creature it has entangled with its tether to any square within its reach (Will DC 19 negates); the creature must be within 60 feet of the skarak to be teleported, and the target cannot be teleported to a space that is intrinsically dangerous, such as over a pit. This movement does not provoke attacks of opportunity.",
+                "name": "Snare",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 110",
+                "alt": "Alien Archive 4 pg. 110",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 110
+        }
+    ]
+}

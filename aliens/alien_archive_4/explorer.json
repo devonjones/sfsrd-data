@@ -1,0 +1,321 @@
+{
+    "name": "Explorer",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Explorer",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "Tryziarka",
+        "role": "Expert",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "tryziarka"
+                }
+            ]
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "tryziarka"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "operative"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 9
+        },
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 35,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                "evasion"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "survival knife",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "semi-auto tactical pistol",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+3",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "stunt and strike"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Culture"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "analyze"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "distracting blather"
+                        }
+                    ],
+                    "value": "stunts"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 4,
+            "con": 0,
+            "int": 2,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 14,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+16 to escape grapple"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 9
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 9
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "operative exploit (without a trace)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "specialization (explorer)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tattoo magic"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tattoo transference"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "graphite carbon skin"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "semi-auto tactical pistol with 18 small arm rounds"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "survival knife"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or quest (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Tryziarkas\u2019 magical ooze symbiotes can manifest in many forms. At character creation, a tryziarka chooses a 0-level spell from the mystic spell list and can cast it at will as a spell-like ability. Upon reaching 5th level, a tryziarka chooses a 1st-level mystic spell and can also cast it once per day as a spell-like ability. Their caster level for these spell-like abilities is equal to the tryziarka\u2019s character level, and Wisdom is the key ability score.",
+                "name": "Tattoo Magic",
+                "ability_type": "Spell-Like",
+                "ability_type_abbrev": "Sp"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Tryziarkas can temporarily tattoo parts of the magic held by their karakande on other creatures. Once per day, a tryziarka spend 1 minute in physical contact with a willing creature to place some of their ooze-magic on that creature, granting that creature the tattoo magic ability (identical to the tryziarka\u2019s own); that creature loses this ability at the end of 24 hours. A creature can benefit from only one such ability at a time (not counting their own from being a tryziarka).",
+                "name": "Tattoo Transference",
+                "ability_type": "Spell-Like",
+                "ability_type_abbrev": "Sp"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 126",
+                "alt": "Alien Archive 4 pg. 126",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 126
+        }
+    ]
+}

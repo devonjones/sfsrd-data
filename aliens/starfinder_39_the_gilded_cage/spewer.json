@@ -1,0 +1,275 @@
+{
+    "name": "Spewer",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A spewer is an undead corpse coursing with chemicals that form bulging pustules on the surface of its skin. The cause of this undead\u2019s physiology is in fact its animating force: implanted hybrid augmentations that have taken over the recipient\u2019s body upon their death. The chemicals that course through a spewer\u2019s body allows it to convert just about any material into more fuel for its implants. The undead can disgorge a concentrated glob of this chemical acid or shower its prey in a torrent of the vile substance. Witnessing a spewer dislodge a wave of vomit only to then eat the remains of its bile-covered victim is a sight few recover from. Should a spewer be unable to feed, it falls into a kind of torpor until it is disturbed; those who create spewers use this quirk as a means to control them.<br/><br/> Most scholars believe the first spewers arose from individuals who perished while testing experimental biotech. According to records, nefarious necromancers have devised processes of purposefully creating spewers to use as shock troops or unsubtle assassins."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Spewer",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Combatant",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 170,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "pustule explosion (10 A) Immunities undead immunities"
+            ],
+            "immunities": [
+                "undead immunities"
+            ],
+            "resistances": [
+                "acid 10"
+            ],
+            "weaknesses": [
+                "vulnerable to electricity"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+18",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "chemical spitball",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+10",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "11d6 A plus sickened"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "breath weapon"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 5,
+            "con": null,
+            "int": null,
+            "wis": 2,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 to climb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or retch (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that fails its saving throw against a spewer\u2019s breath weapon is also sickened for 1 round.",
+                "name": "Breath Weapon",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a spewer can discharge a glob of acid with a range increment of 30 feet.",
+                "name": "Chemical Spitball",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a spewer is struck by an attack that deals bludgeoning, piercing, or slashing damage, all creatures within 5 feet take 10 acid damage.",
+                "name": "Pustule Explosion",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #39: The Gilded Cage",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #39: The Gilded Cage pg. 57",
+                "alt": "Starfinder #39: The Gilded Cage pg. 57",
+                "href": "https://paizo.com/products/btq024zw"
+            },
+            "page": 57
+        }
+    ]
+}

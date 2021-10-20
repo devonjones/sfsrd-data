@@ -1,0 +1,294 @@
+{
+    "name": "Gray Goo",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Over millennia, explorers from across the known galaxy pass down fearful tales of a sentient, liquid-like swarm of nanites that can envelop creatures and quickly turn them to dust. Once connected to grays, a mysterious species of abductors who used advanced fringe technology with a similar silvery sheen, these creatures gained the moniker gray goo. However, the term has survived despite there being no corroborating evidence that firmly links the two.<br/><br/> The only solid information about gray goo originates from the scattered reports of rare surviving witnesses. Gray goo attacks its victims by surprise, taking advantage of any hapless beings it comes across as it roams a desolate wasteland. Indeed, another commonality among gray goo sightings is the entity\u2019s seeming preference for places devoid of life\u2014though many argue that the gray goos created such environments. Scientists posit that most gray goo originates with a sapient species\u2019 often well-intentioned attempt to develop an autonomous nanite swarm that can affect technological repairs, perform delicate biomedical operations, or even terraform. However, even a simple error in their programming, or in some cases the malicious introduction of a deadly code hack, can have disastrous effects, especially for swarms that can ingest a wide range of materials and self-replicate. Rumors persist of entire worlds, once prosperous technological paradises, now entirely covered in writhing swarms of gray goo.<br/><br/> When not engaged in the consumption of material, most gray goos seem to have two driving directives: replicate and assimilate. The clouds of nanites have even hacked computer systems and technological constructs of sufficient sophistication, usually through brute force methods, to access and incorporate any useful data within. If a computer system\u2019s countermeasures block it, the goo attempts to dismantle the console and reduce it to its essential components before stripping even those parts to a fine metallic dust.<br/><br/> Because of a recent black-market item derived from gray goo (see nanite capsules below), bounties and attempts at tracking down the swarms have risen dramatically to keep up with demand. Very few parties have successfully obtained more than a handful of viable samples\u2014if they survive at all. While gray goo is more commonly found among abandoned space debris and can survive the coldness of space, instances of the entity have cropped up in low-population spacecrafts and stations, especially among the Diaspora.<br/><br/> The construct-populated Pact World of Aballon has outlawed any work related to the gray goo out of an abundance of caution\u2014including even research projects related to the dangerous entities\u2014and any being found in violation of this restriction receives an immediate and permanent ban from the planet."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Gray Goo",
+        "type": "stat_block",
+        "cr": "14",
+        "role": "Combatant",
+        "xp": 38400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral",
+        "size": "Fine",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sense through (vision [life-forms only]) 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 250,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 28,
+                "kac": 30
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses",
+                "void adaptation"
+            ],
+            "immunities": [
+                "construct immunities",
+                "swarm immunities"
+            ],
+            "resistances": [
+                "cold 15"
+            ],
+            "weaknesses": [
+                "vulnerable to fire",
+                "vulnerable to magic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "perfect",
+                        "name": "fly 50 ft.",
+                        "movement_type": "fly",
+                        "value": 50
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "bonus": 28,
+                    "dc": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+20",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "dismantle"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 20"
+                        }
+                    ],
+                    "value": "infest"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 8,
+            "con": null,
+            "int": 4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or storm (3\u201312)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Creatures damaged by a gray goo\u2019s swarm attack must succeed at a Reflex save or a random piece of hybrid or technological equipment that they\u2019re wearing or wielding takes the same amount of damage. In addition, at the beginning of its turn, a gray goo can automatically deal its melee attack damage to an unattended hybrid or technological object in its space.",
+                "name": "Dismantle",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a gray goo can infest an adjacent Medium or larger creature (Fortitude save negates). The gray goo moves inside the creature\u2019s body, dealing double its normal swarm attack damage to its host each round at the beginning of the gray goo\u2019s turn. A gray goo can\u2019t use its normal attacks while infesting a host, but it can be targeted normally during the infestation and can end the infestation as a move action. A host reduced to 0 Hit Points while infested by a gray goo is reduced to dust and destroyed, as if killed by disintegrate. A gray goo infesting a host can be expelled by any effect that cures disease, such as <i>remove affliction</i>; the effective disease DC is the same as the infest ability\u2019s.",
+                "name": "Infest",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 38",
+                "alt": "Alien Archive 4 pg. 38",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 38
+        }
+    ]
+}

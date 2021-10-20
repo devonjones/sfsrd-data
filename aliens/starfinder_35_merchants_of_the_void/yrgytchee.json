@@ -1,0 +1,275 @@
+{
+    "name": "Yrgytchee",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Natives of the high-gravity paradise planet Yrgytch, yrgytchees have an affinity for technology and welcome off-worlders to the numerous resorts and retreats they operate on the long, pristine beaches of their world. These quick, feathered humanoids stand about 4 feet tall on average and have long, crocodilian snouts. While often whimsical and jovial, yrgytchees become deadly serious when discussing their planet\u2019s high gravity or when someone recommends they leave it for other opportunities. They have a deep reverence for the unusually powerful gravity of their small world, explaining only that they must never abandon their planet nor misuse its gift.<br/><br/> Yrgytchees have risen to prominence on their world only within the past few millennia. Evolution or ascendancy from a native species seems unlikely, and yrgytchees, with no foundational or etiological myths to explain their origins, assume their beginnings must somehow tie to the mystical connection they all bear with Yrgytch. Records of a prior complex civilization on the planet are present yet scant, though yrgytchees do their best to distract visitors from investigating such traces too thoroughly.<br/><br/> Most yrgytchees affiliate themselves with one of several great cabals that hold both economic and political power across the planet. Expulsion from one of these cabals occurs more often than the government would like to admit, creating a small but vocal exile population of restless and stateless yrgytchees, who in response turn to activities ranging from planetary exploration to anarchist sabotage. However, no yrgytchee is ever exiled from the planet as punishment; those few who leave Yrgytch willingly become labeled as apostates, never to return to their home planet for fear of discovery and swift execution."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Yrgytchee",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Expert",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 11
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 65,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "gravitic deflection"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tactical starknife",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+7",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "thunderstrike sonic rifle",
+                    "bonus": 13,
+                    "dc": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+5",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "untethered mass"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 5,
+            "con": 2,
+            "int": 1,
+            "wis": 0,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Gytchean"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "d-suit I"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tactical starknife"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "thunderstrike sonic rifle with 1 high-capacity battery (40 charges)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Yrgytch)",
+            "organization": "solitary, pair, or chatter (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An yrgytchee instinctively warps gravity around them to divert danger. They gain a +2 racial bonus to their AC against melee attacks and ranged kinetic attacks if they aren\u2019t flat-footed.",
+                "name": "Gravitic Deflection",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, an yrgytchee can temporarily disrupt the connection between a creature within 30 feet and the dominant local gravity field affecting it. The creature gains the off-kilter condition until the beginning of the yrgytchee\u2019s next turn or until it takes a move action to reorient itself.",
+                "name": "Untethered Mass",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #35: Merchants of the Void",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #35: Merchants of the Void pg. 61",
+                "alt": "Starfinder #35: Merchants of the Void pg. 61",
+                "href": "https://paizo.com/products/btq023fy?Starfinder-Adventure-Path-35-Merchants-of-the-Void"
+            },
+            "page": 61
+        }
+    ]
+}

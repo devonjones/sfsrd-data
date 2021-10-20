@@ -1,0 +1,279 @@
+{
+    "name": "Midships Mimic",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Tales from Lost Golarion\u2019s past speak of shapechanging aberrations posing as treasure chests in crumbling dungeons to prey on adventurers. Many believe that the creatures called midships mimics are descended from those creatures, as they can perform similar feats of masquerade. However, a midships mimic can integrate itself into a starship\u2019s system, seamlessly replacing vital components and feeding off the ship\u2019s power. Even when discovered, many crews opt to leave a midships mimic undisturbed, knowing that destroying the creature will leave the system decidedly damaged.<br/><br/> Given enough time however, a midships mimic might reproduce, with offspring consuming more and more of a starship until its most vital systems are more aberration than machine. This leaves the vessel in a precarious situation, for if any of the midships mimics leave or are killed, the ship would become an essentially useless floating wreck."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Midships Mimic",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "shapechanger"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": ""
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "10 ft.",
+                        "movement_type": "walk",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+14",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "coolant spray",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+8",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        }
+                    ]
+                }
+            ],
+            "special_attacks": [
+                {
+                    "name": "Special Attack",
+                    "type": "stat_block_section",
+                    "subtype": "special_attack",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3d4+14 B"
+                        }
+                    ],
+                    "value": "constrict"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 2,
+            "con": 4,
+            "int": 0,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 21,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+31 to mimic a starship part"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mimic starship part"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (starship)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a midships mimic successfully renews a grapple or pin against a creature, it automatically deals 3d4+14 bludgeoning damage to that creature.",
+                "name": "Constrict",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a midships mimic can spray nearby foes with the coolant-like substance that runs naturally throughout its body. This attack has a range of 20 feet and the blast special property.",
+                "name": "Coolant Spray",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a midships mimic can assume the general shape of a mechanism or part of an internal system of a Medium or larger starship. A midships mimic can use Disguise to impersonate such a mechanism, as if it were disguising itself as a creature of its own type and size category; it gains a +10 racial bonus to its Disguise check to do so. If the midships mimic is near a functioning part of the starship system (such as a vessel\u2019s engines or power core) that it is mimicking, it can digest and replace the complex machinery over the course of 24 hours. During this time, the system is treated as if it has the glitching critical damage condition, but when the midships mimic is finished, the system functions as normal. Afterward, each time that system gains a critical damage condition, the midships mimic loses 40 Hit Points; removing that critical damage condition fully heals the creature. If an integrated midships mimic is reduced to 0 Hit Points, the system it has replaced immediately gains the wrecked critical damage condition, but can be repaired normally; see the critical damage effect table on page 321 of the Starfinder Core Rulebook for a list of starship systems that can be affected. Each starship system can sustain one midships mimic at a time.",
+                "name": "Mimic Starship Part",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #37: The White Glove Affair",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #37: The White Glove Affair pg. 58",
+                "alt": "Starfinder #37: The White Glove Affair pg. 58",
+                "href": "https://paizo.com/products/btq024up?Starfinder-Adventure-Path-37-The-White-Glove-Affair"
+            },
+            "page": 58
+        }
+    ]
+}

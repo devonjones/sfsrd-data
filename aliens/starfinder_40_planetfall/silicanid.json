@@ -1,0 +1,264 @@
+{
+    "name": "Silicanid",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "As their name implies, silicanids are canids native to Weydana-1 that have inorganic, silicone-based bodies that resemble obsidian and magma more than flesh and blood; even their coats are a collection of soot and ash instead of fur. Doglike in both appearance and behavior, silicanids are natural hunters just like their carbon-based cousins, and they\u2019re armed with teeth and claws of solid quartz. They instinctually chase down their prey, even burrowing into dens when necessary.<br/><br/> As companions, silicanids have a well-earned reputation as excellent varmint-hunters, due to their small stature and tenacity. Their aura of warmth makes them especially popular among vesk and other cold-blooded species, and they are much in demand as therapy animals or as companions in frigid environments. Silicanids are pack animals in the wild, and they form a fierce bond with others."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Silicanid",
+        "type": "stat_block",
+        "cr": "2",
+        "role": "Spellcaster",
+        "xp": 600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "fire"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 12
+        },
+        "aura": "warmth (5 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 25,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 15
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "immunities": [
+                "fire"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 20 ft.",
+                        "movement_type": "burrow",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+3",
+                            "damage_type": "Fire & Piercing",
+                            "damage_type_text": "F & P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+3",
+                            "damage_type": "Fire & Slashing",
+                            "damage_type_text": "F & S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "takedown"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 0,
+            "int": -4,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 12
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "tracking (scent)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Waydana-1)",
+            "organization": "solitary, pair, pack (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Silicanids exude an aura of soothing warmth. Creatures adjacent to a silicanid are immune to the effects of cold weather, treat severe cold as cold weather, and treat extreme cold as severe cold.",
+                "name": "Aura of Warmth",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a silicanid attacks on a charge and hits a creature of Medium size or smaller, the target is knocked prone.",
+                "name": "Takedown",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #40: Planetfall",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #40: Planetfall pg. 61",
+                "alt": "Starfinder #40: Planetfall pg. 61",
+                "href": "https://paizo.com/products/btq026i0/discuss?Starfinder-Adventure-Path-40-Planetfall"
+            },
+            "page": 61
+        }
+    ]
+}

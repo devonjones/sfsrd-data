@@ -1,0 +1,366 @@
+{
+    "name": "Hulsa",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "These stout fey resemble metallic golems with their animated armor plates that emit bright, kaleidoscopic light. A typical hulsa stands about 5 feet tall and weights 300 pounds, though a few outliers tower more than 7 feet in height. Hulsa heads bear few features and virtually no expressions, offering only a few lines to suggest eyes or mouths. Instead, most expression comes from the collection of metallic ornaments that hover symmetrically behind their shoulders like decorative wings, their colors and orientation conveying hints of the hulsa\u2019s mood. These ornaments emit luminous rays, sheets, and contrails when the fey fly but don\u2019t move like traditional wings.<br/><br/> Rather than representing terrestrial environments like forests and oceans, hulsas connect to specific stars. In many ways, this connection is symbolic, such as how hulsas often speak of directions in relation to their star rather than by magnetic poles. Hulsas from proximate stars consider each other kin, occasionally convening as \u201cconstellations\u201d to socialize or combat mutual threats. Likewise, those fey tied to stars of a similar type (such as white dwarves and red giants) acknowledge each other as peers. Hulsas who lack such connections largely leave each other alone or, rarely, form distant rivalries founded in some esoteric disagreement about one of the universe\u2019s underlying mechanics. These relationships can last eons, for hulsas appear ageless and claim to be as old as their respective stars. There are no known instances of hulsas expiring when their stars die, yet those whose stars have extinguished or exploded are never seen again.<br/><br/> A hulsa\u2019s actions seem unpredictable and erratic to most; the fey travels at random, pausing for days or even years at a time without warning. Only two things seem consistent with their behavior. First, a hulsa demands that they and the forces they represent be treated with respect. Any insult, either direct or dismissive, marks the perpetrator for retribution. The severity of this retribution is always measured by their level of affront rather than by any objective standard, ranging from causing minor annoyance to outright destruction of the offender\u2019s corporeal form. When a hulsa doesn\u2019t believe they can easily mete out justice, they wait, reserving their vengeance for as long as necessary. Legends speak of hulsas who took centuries to build alliances and train an offender\u2019s enemies simply to see an insult avenged. If the original offender dies before the hulsa exacts vengeance, the fey seeks out whoever else they can hold accountable, ranging from the original offender\u2019s heirs to societies that trained the offender. The hulsa even matter-of-factly explains why it punishes these other parties and rarely allows for other ways to seek atonement.<br/><br/> The second consistent aspect of hulsa behavior is education. They love teaching others about the universe\u2019s physical phenomena. Students who approach a hulsa respectfully can inquire about the life cycle of stars, the nature of the fey realm\u2019s influence on the universe, or how an individual can access cosmic power, though these lessons come on the hulsa\u2019s terms. A hulsa might refuse to teach anything but the basics, require an obscure form of compensation for their efforts, or deny secrets to anyone unwilling to commit to a decades-long apprenticeship to absorb the lessons with the proper depth. Several kasatha-led monasteries maintain that a legendary hulsa taught their founders the solarian arts.<br/><br/> Although most hulsas contently travel alone, individual hulsas might seek out companions with whom they can experience cosmic phenomena. A few of these fey even find senior roles on starships that explore the Vast, trading their expertise for the opportunity to cruise around the cosmos with like-minded company."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hulsa",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Expert",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see invisibility"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 142,
+            "rp": 5,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "defensive_abilities": [
+                "solar adaptation",
+                "stellar revelation (soul furnace)",
+                "void adaptation"
+            ],
+            "immunities": [
+                "electricity",
+                "fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "solar weapon",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+11",
+                            "damage_type": "Fire or Slashing",
+                            "damage_type_text": "F or S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "light ray",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+11",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "flashing strikes"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "kaleidoscopic glow"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "miniature star [10-ft. radius, 5d6 F]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "supernova [15-ft. radius, 11d6 F; DC 19]"
+                        }
+                    ],
+                    "value": "stellar revelations"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 0,
+            "con": 1,
+            "int": 3,
+            "wis": 5,
+            "cha": 8,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+27 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "electromagnetic communication"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "life-giving glow"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "solar manifestation (solar weapon)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "stellar alignment (photon)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or constellation (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hulsa can communicate with other creatures within the same star system. With other hulsas, this ability functions as telepathy. Otherwise, the hulsa mentally broadcasts to technological comm units.",
+                "name": "Electromagnetic Communication",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When making a full attack entirely with melee weapons, a hulsa takes a \u20133 penalty to each attack roll instead of the normal \u20134 penalty.",
+                "name": "Flashing Strikes",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hulsa is supernaturally luminous, shining bright light out to a range of 30 feet, normal light for another 30 feet, and dim light for another 30 feet. A magical effect can reduce the light in this area only if its source has a higher level or CR than the hulsa. A hulsa can extinguish or relight their light as a move action.<br/> In addition, the hulsa can spend 1 Resolve Point to oscillate the bright light from this ability for as long as the fey maintains concentration. Creatures within 90 feet of the hulsa that can see this light become fascinated while the effect lasts and for 1 round after it ends (Will DC 19 negates). The hulsa can instead focus the glow on one creature, which works like the hypnotic glow stellar revelation of a 10th\u2011level solarian (DC 19, 10 rounds). Hulsas are immune to this ability. This is a mind-affecting effect.",
+                "name": "Kaleidoscopic Glow",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hulsa can spend 1 Resolve Point to heal living creatures within their bright light. They can heal themself or one other living creature as a standard action, or themself and other creatures of their choice in their bright light as a full action. Each target regains 8d8 Hit Points. When using this ability as a full action, the hulsa can spend 1 additional Resolve Point to also harm undead in the area, dealing 8d8 electricity and fire damage to each one (Fortitude DC 19 half).",
+                "name": "Life-Giving Glow",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hulsa\u2019s light ray has a range increment of 90 feet and the bright special property.",
+                "name": "Light Ray",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 48",
+                "alt": "Alien Archive 4 pg. 48",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 48
+        },
+        {
+            "type": "source",
+            "name": "Starfinder #9: The Rune Drive Gambit",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #9: The Rune Drive Gambit pg. 59",
+                "alt": "Starfinder #9: The Rune Drive Gambit pg. 59",
+                "href": "https://paizo.com/products/btpya21d?Starfinder-Adventure-Path-9-The-Rune-Drive-Gambit"
+            },
+            "page": 59
+        }
+    ]
+}

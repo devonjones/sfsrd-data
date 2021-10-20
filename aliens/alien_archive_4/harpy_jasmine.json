@@ -1,0 +1,196 @@
+{
+    "name": "Harpy Jasmine",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Flush with life, Castrovel hosts countless carnivorous plants that evolved to feed on the planet\u2019s bountiful fauna. Many of these flora boast complex protein chains that function as both nerves and fast-twitch muscles. Although the assassin vine is one of the most well-known examples, harpy jasmine infamously has one of the most sinister lures: psychic powers that draw in and pummel curious prey. Despite its colorful moniker\u2014derived from its songs and fascination-based abilities\u2014the blossom has nothing in common with actual harpies.<br/><br/> In the wild, harpy jasmines grow as a large shrub with long runners, each studded with five-petaled flowers, stretching from their leafy bodies. They use complex illusions to lure in and strangle curious beasts, though incredibly, the plants don\u2019t display the intelligence to invent or adapt their illusions that might be expected from such a predator. Instead, harpy jasmines record nearby events and emotions that they replicate with little variation or apparent understanding. Animal memories rarely show more than instinctual scenes of distress or content grazing, but intelligent prey can inadvertently surrender secrets to the plants, which in some cases result in jarringly inappropriate lures. However, eccentric detectives and security companies have occasionally cultivated or provoked harpy jasmines to have the plants replay scenes of a nearby crime.<br/><br/> The flowers play a small role in lashunta mythology, serving as a symbol of death and knowledge. Lashunta legend claims that especially old and large examples of harpy jasmines grow to tree-like proportions and develop their own minds, amalgams built from the psychic impressions of countless previous victims. At least two such myths involve heroes seeking out such ancient plants to recover a lost secret; the cautionary fable of the Sing-Sweet Vine warns against becoming obsessed with the past, and in another tale, a venerable harpy jasmine\u2019s memory of a loved one is the final ingredient needed to restore a hero\u2019s deceased friend to life.<br/><br/> After siphoning away the nutritious fluids of their prey to store in their bulbous taproots, harpy jasmines leave corpses to decay and nourish the soil, often burying a kill to protect the remains from scavengers. While the plants can disperse seeds into the wind, few sprouts reach the ideal, marshy conditions that juvenile plants need to sustain themselves until they develop the ability to move on their own. Instead, the most common harpy jasmine reproduction method is by cuttings\u2014severing a part of the plant\u2019s body and planting it in a fresh kill before uprooting and wandering elsewhere. The severed tendril can move independently and soon grows into a clone of the original.<br/><br/> Like true jasmine, harpy jasmine prefers warm and humid environments, though it has the hardiness to survive anywhere that the ambient temperature stays above freezing. It grows across much of Castrovel, and shortsighted horticulturalists have transplanted it to many other warm climes throughout the Pact Worlds and Near Space. At least one luxury cruise line has also tried growing the plant aboard starships to enjoy their sweet, perfumed scent and the mild euphoria the plants generate when content\u2014though a failure to properly prune and control the plants has led to bloodshed and lawsuits on at least one occasion."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Harpy Jasmine",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Spellcaster",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (thought) 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 60,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "immunities": [
+                "plant immunities"
+            ],
+            "resistances": [
+                "fire 5"
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "5 ft.",
+                        "movement_type": "walk",
+                        "value": 5
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 5 ft.",
+                        "movement_type": "climb",
+                        "value": 5
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "vine",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+9",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "haunting memory"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 0,
+            "con": 3,
+            "int": null,
+            "wis": 1,
+            "cha": 2
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "temperate or warm forests (Castrovel)",
+            "organization": "solitary, or thicket (2\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full-round action, a harpy jasmine can create psychic echoes of people and events it has encountered, playing back moments of intense emotion or pain. This functions as a 4th-level <i>holographic image</i> spell (CL 5th, Will DC 15), but the harpy jasmine can only replay events it has already experienced and has no conscious control over the images, sounds, and sensations it creates.",
+                "name": "Haunting Memory",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 44",
+                "alt": "Alien Archive 4 pg. 44",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 44
+        }
+    ]
+}

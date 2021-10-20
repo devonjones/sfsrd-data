@@ -1,0 +1,242 @@
+{
+    "name": "Joltvine",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Across Weydana-4, white trumpet vines are fast-growing creeping vines that have overrun several temperate regions. Brought in as decorative plants by settlers from the Marixah Republic who didn\u2019t realize how seriously they would impact the local ecosystem, white trumpet vines have outlived their humanoid tenders and spread rampantly for over a century. They smother native plants. Their distinctive white trumpet-shaped flowers draw pollinators, and their broad leaves shade other plants from vital sunlight.<br/> However, powerful lightning storms can funnel an overwhelming amount of electricity into a white trumpet vine (such as from a bolt of lightning), and the plant\u2019s cells become infused with the energy, transforming the mundane vines into the much more dangerous joltvines. Joltvines gain a modicum of sentience from the transformation.<br/> Joltvines uproot themselves from the white trumpet vines clustered around them and, by means of electrical transmission in their cells, writhe slowly but determinedly along surfaces, following a rudimentary instinct to seek out other sources of electricity. When a joltvine detects faint electric signals in living beings\u2014or powerful electric signals in technological equipment\u2014it attacks the source with its own darts of electricity. If it suspects prey might happen by, it prepares and ambush by hiding among mundane vegetation by closing up its distinctive white flowers.<br/> New joltvines seek to spread their genetic material; fortunately, joltvines produce only more white trumpet vines, not more joltvines. Joltvines thus tend to be solitary creatures once they\u2019ve left the patch where they were created."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Joltvine",
+        "type": "stat_block",
+        "cr": "1",
+        "role": "Combatant",
+        "xp": 400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 5
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 20,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 11,
+                "kac": 13
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "immunities": [
+                "plant immunities"
+            ],
+            "resistances": [
+                "electricity 10"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 10 ft.",
+                        "movement_type": "climb",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tendril",
+                    "bonus": 5,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+3",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electric jolt",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+1",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": 1,
+            "int": -4,
+            "wis": 1,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 5,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+13 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 10,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+20 in dense vegetation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "vine camouflage"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Weydana-4)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a joltvine can discharge a ray of electricity that has a range increment of 20 feet.",
+                "name": "Electric Jolt",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The joltvine closes its flowers as a standard action, during which it blends in with other leafy plant life and appears to be a patch of ordinary vegetation. This camouflage provides the joltvine a +10 bonus to Stealth checks while in dense vegetation, and it allows a joltvine to attempt a Stealth check even when lacking cover or concealment. Once a creature succeeds at a Perception check to realize a joltvine is more than it appears, the joltvine loses the benefit of vine camouflage against that creature until the creature can no longer see it.",
+                "name": "Vine Camouflage",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #40: Planetfall",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #40: Planetfall pg. 58",
+                "alt": "Starfinder #40: Planetfall pg. 58",
+                "href": "https://paizo.com/products/btq026i0/discuss?Starfinder-Adventure-Path-40-Planetfall"
+            },
+            "page": 58
+        }
+    ]
+}

@@ -1,0 +1,336 @@
+{
+    "name": "Stormghost",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Stormghosts can live for an exceedingly long time\u2014up to 2,000 years\u2014thanks to their natural regeneration. Each of these rarely encountered hunters has a muscular humanoid torso and stands nearly 8 feet tall on four jagged insectile legs. Tiny eyes ring a stormghost\u2019s conical head, which also bears a toothy mouth. Built of muscled flesh and hardened chitin, a stormghost weighs roughly 1,500 pounds.<br/><br/> Triaxians who first encountered these creatures named them stormghosts because of their ability to conjure malignant weather and attack unseen. Though stormghosts inhabit many different locales, they often hunt their prey in remote mountainous areas, where they leap down on their victims from cliffsides or ambush them in blind mountain passes. These predators engage any target, posing a risk to not only the humanoids of Triaxus, but also the dragons. While most stormghosts have tints with shades of blue, gray, and white, the pigments in their hide adapt to their surroundings; for example, stormghosts in the jungles of Castrovel are mottled greens and browns.<br/><br/> Exceptionally single-minded, stormghosts live to hunt and hate losing quarry, and they persistently pursue their fleeing prey, even forgoing rest. As with many efficient hunters, stormghosts\u2019 senses and tenacity make them difficult to evade. These traits, in addition to their superior stamina, help them doggedly track down any prey that initially escape their attack. Only when another major predator begins hunting in the same region does a stormghost shift their attention from their original prey. Solitary creatures, stormghosts resist sharing their hunting grounds, especially with others of their kind.<br/><br/> According to records kept by dragonriders of the Skyfire Mandate, fewer than 1,000 stormghosts have been spotted on Triaxus. Multiple sightings of these rare creatures, made safely from the back of a dragonkin, seem to be of the same stormghost; many scholars estimate that the creatures have a smaller population than initially believed, with a few at most living in the Parapet Mountains. A naturalist in Preita recently published a journal detailing his journey in search for evidence of a stormghost, as tales of these creatures and other vicious beasts are fashionable in the cosmopolitan cities of the Allied Territories. In these writings, he postulates that stormghosts initially came from another world in the solar system, or perhaps beyond. In fact, while stormghosts first appeared on Triaxus long before the Gap, people in the Pact Worlds and even worlds in Near Space have since reported incidents that strongly indicate stormghost activity, suggesting that they\u2019ve since spread beyond their original planet\u2014or that they didn\u2019t originate on Triaxus to begin with."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Stormghost",
+        "type": "stat_block",
+        "cr": "15",
+        "role": "Combatant",
+        "xp": 51200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 9
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 31
+        },
+        "aura": "static (5 ft., 2d6 electricity)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (scent) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 90 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "weathersight"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 275,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 31
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "regeneration 5 (acid) Immunities disease",
+                "electricity",
+                "poison"
+            ],
+            "resistances": [
+                "cold 10",
+                "fire 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 29,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d6+24",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "E"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+24",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "E"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "claws",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d12+24",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "E"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with claws"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "impaling leap"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "static charge"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 9,
+            "dex": 7,
+            "con": 5,
+            "int": 2,
+            "wis": 5,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 26,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+34 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 26
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Auran"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a stormghost can leap up to 30 feet and land adjacent to a target that is at least one size smaller than themself and impale the victim with their spiky legs. The target must succeed at a DC 21 Reflex save or take 4d8+24 points of piercing damage and gain the pinned condition until the beginning of the stormghost\u2019s next turn, at which point the stormghost can attempt to renew the pinned condition with a grapple combat maneuver as normal.",
+                "name": "Impaling Leap",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Crackling electricity surrounds a stormghost. As a standard action once every 1d4 rounds, a stormghost can focus this static charge into a bolt, releasing it in a 40-foot line that deals 8d6 electricity damage. A successful DC 20 Reflex save halves this damage.",
+                "name": "Static Charge",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stormghost can see perfectly through dust, fog, mist, rain, heavy snow, and smoke. They ignore concealment and penalties to Perception checks from such effects.",
+                "name": "Weathersight",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 118",
+                "alt": "Alien Archive 4 pg. 118",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 118
+        }
+    ]
+}

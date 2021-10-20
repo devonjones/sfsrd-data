@@ -1,0 +1,270 @@
+{
+    "name": "Tattoo Guardian",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Magical tattoos capable of leaping off their wearer\u2019s flesh and coming alive, tattoo guardians are unwavering warriors attuned to their wearer\u2019s life force. First developed by tattoo artists eager only to improve their art, tattoo guardians were swiftly copied by less scrupulous individuals. As long as the wearer lives, a tattoo guardian can\u2019t be stolen or permanently destroyed. Most tattoo guardians are created in the image of animals, celestials, dragons, fiends, magical beasts, or meaningful symbols, but they use the same statistics regardless of appearance."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Tattoo Guardian",
+        "type": "stat_block",
+        "cr": "11",
+        "role": "Combatant",
+        "xp": 12800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 25
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 180,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "ink interception"
+            ],
+            "immunities": [
+                "construct immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+19",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 5,
+            "con": null,
+            "int": 0,
+            "wis": 3,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 20
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "one other language determined by its creator"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "alternate forms"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "bonded guardian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or pair"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tattoo guardian has two forms: active and passive. As a move action, the wearer of a tattoo guardian can alternate between these forms. In either form, a tattoo guardian can be repaired with spells and effects that repair constructs or objects.<br/><i>Active Form:</i> While active, a tattoo guardian becomes a physical creature made entirely of ink, compelled to protect its wearer. It gains the ink interception ability. If a tattoo guardian is ever more than 100 feet from its wearer, it immediately reverts to passive form. A tattoo guardian that is reduced to 0 Hit Points explodes in a 5-ft. radius burst of slippery ink, immediately reverts to passive form, regains 1 Hit Point, and can\u2019t reenter active form for 24 hours. Enemies in the area of the ink explosion must attempt a DC 18 Reflex save or fall prone and become blinded for 1 round.<br/><i>Passive Form:</i> While passive, a tattoo guardian resides on its wearer\u2019s body as a tattoo. It functions as a magic item that cannot be disarmed or sundered. Attempts to identify a tattoo guardian in passive form have a \u201310 circumstance penalty. While the guardian is in passive form, its wearer gains a +1 circumstance bonus to AC and Will saving throws. Additionally, a damaged tattoo guardian in passive form regains lost Hit Points at a rate of 5 per hour.",
+                "name": "Alternate Forms",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A tattoo guardian shares a bond with a single sapient creature, who is referred to as its wearer. This bond cannot be removed or transferred. If a tattoo guardian\u2019s wearer dies, the construct is destroyed.",
+                "name": "Bonded Guardian",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a reaction when its wearer is targeted by an attack or spell that would deal damage, an active tattoo guardian within 10 feet of its wearer can expel a wave of ink to intercept the blow. Damage that would be dealt to the wearer\u2019s Hit Points by the triggering effect is instead split evenly between the wearer and the tattoo guardian; other effects of the attack or spell affect the wearer as normal.",
+                "name": "Ink Interception",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #39: The Gilded Cage",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #39: The Gilded Cage pg. 58",
+                "alt": "Starfinder #39: The Gilded Cage pg. 58",
+                "href": "https://paizo.com/products/btq024zw"
+            },
+            "page": 58
+        }
+    ]
+}

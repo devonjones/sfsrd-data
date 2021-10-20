@@ -1,0 +1,285 @@
+{
+    "name": "Runner",
+    "type": "alien",
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Runner",
+        "type": "stat_block",
+        "cr": "8",
+        "alien_family": "Epokasite",
+        "role": "Spellcaster",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Chaotic Good",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Fey"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "aura": "draining (20 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 95,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "tech resistance 10"
+            ],
+            "resistances": [
+                "electricity 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "club",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+9",
+                            "damage_type": "Bludgeoning & Sonic",
+                            "damage_type_text": "B & So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "archaic blaze flame pistol",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4+8",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "anachronistic strike"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "regressing glare"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 0,
+            "int": 6,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "archaic blaze flame pistol with 2 standard petrol tanks"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "club"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land",
+            "organization": "solitary or reenactment (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any damage an epokasite deals with an archaic weapon is never reduced as a result of that property. Any archaic weapon an epokasite wields typically deals additional damage or has additional weapon properties, equivalent to a basic melee weapon or small arm of a level equal to the fey\u2019s CR.",
+                "name": "Anachronistic Strike",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An epokasite fixer radiates an aura that drains active technological items. While in the area, each item whose level is no more than twice the fixer\u2019s CR (level 7 for most fixers) doubles its usage (if it uses charges to function), reduces the saving throw DCs of any effects it creates by 2, and increases the DC of all checks to use the item by 2. If the item\u2019s level is lower than the fixer\u2019s CR, it instead triples its usage, reduces its saving throw DCs by 3, and increases the check DCs by 3.",
+                "name": "Draining Aura",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an epokasite runner can focus their gaze on a technological or hybrid item within 30 feet whose level doesn\u2019t exceed the runner\u2019s level + 2. Unless it succeeds at a DC 18 Fortitude save, the item transforms into an anachronistic analogue of itself, such as a rifle turning into a musket or steamoperated crossbow. This transformation lasts for 1d6+2 rounds, during which time the item gains the archaic property, functions as if it had the broken condition, and any checks made to manipulate the item (such as operating a now-antiquated computer) take a \u20132 penalty. If the target is a weapon or armor that fails the save by 5 or more, it changes so dramatically that any user is treated as not proficient with the item. The runner can affect items of size Large or smaller with this ability, including terminals and vehicles. Once an item has saved against this ability, it\u2019s immune to that runner\u2019s regressing glare for 24 hours. An epokasite ignores all of a regressed item\u2019s drawbacks listed above when using the item. ",
+                "name": "Regressing Glare",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An epokasite naturally resists contemporary technology, including technological traps, most weapons, technomancer spells, hybrid gear, and the natural attacks of creatures with the technological subtype. Any damage the epokasite takes from such sources is reduced by the listed amount (minimum 0), which doesn\u2019t stack with other resistances the epokasite has. Natural hazards, weapons with the archaic special weapon property, and other forms of magic bypass this defense.",
+                "name": "Tech Resistance",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 36",
+                "alt": "Alien Archive 4 pg. 36",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 36
+        }
+    ]
+}

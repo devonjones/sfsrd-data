@@ -1,0 +1,339 @@
+{
+    "name": "Quyu",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Quyus originated deep in the isolated regions of space and initially encountered other life-forms when a broken fraction of their barren asteroid home joined the Diaspora. Living for eons floating only among themselves in empty space, quyus do not require food, drink, or even an atmosphere to survive. The dangerously clever creatures quietly observed the sapient life-forms of their new homes and noted their bizarre tendency to defenselessly approach anything small, pathetic, and cute. The aberrations devised a devious hunting strategy that exploited what they saw as a flaw in the nature of many social species. Devoid of sympathy or compassion, quyus do not entirely understand why social life-forms approach them in their adorable disguises, but they receive a deep sense of satisfaction from the betrayed expressions of their victims when their adorable facades unfurl into their grotesque forms.<br/><br/> Quyus are sightless and curious, and express their interest in the composition of other beings by dissecting their prey. They are masters of their own physiology and have learned to compress their larger, aberrant bodies into smaller forms, adopting traits such as fur and large ears to mimic what they\u2019ve identified as commonly cute in other creatures. Even when in their aberration forms, evidence of their facade forms can manifest in patches across their bodies, which fold together to create their disguises. Lacking visual organs in their aberrant forms, quyus capture and dissect creatures from the local environment that sapient life-forms find adorable to learn what makes them appear so precious to other species. A sudden rise in small, cute creatures disappearing or being found dismembered is often the first sign of a quyu\u2019s presence in the area.<br/><br/> A quyu\u2019s facade form varies depending on the surrounding area, as it adapts to best fit what is considered cute by the local culture. Generally this form is round and fluffy, with large, dark eyes and a perpetually dejected expression. Quyus always aim to invent the most precious facades possible from the perspective of their victims, regardless of whether such a creature suits the local ecology. Fortunately for quyus, few potential victims pause to consider whether a particularly adorable animal is in any way adapted to its environment.<br/><br/> Most quyus live on the edge of civilization and lure isolated individuals into secluded ambush locations with their facade forms. Many learn to imitate injuries or crying to elicit helpful responses. They sometimes stow away on starships and quietly lure individual crew members to their doom, sometimes taking out an entire crew before being discovered. Planet-bound quyus, on the other hand, might build a den and string up dissected bodies to display their collection. The cleverest and most insidious quyus hunt in cosmopolitan settings that already host a wide variety of species, sapient and otherwise.<br/><br/> Once a quyu has lured its prey close and lulled it into a false sense of security with its pitiful visage, its beguiling eyes tear apart from the pupil, the patches of fur split apart, and its downy ears morph into protruding spikes. An eyeless head bursts from each eye, covered in an acidic slime that coats the thin gray membrane of its true skin. As its body unfurls, the skeleton pops and snaps nauseatingly into place. Its true form has long forward limbs with opposable hands and dexterous long fingers, and it perches on crouched, short back legs. Its two elongated, large-jawed heads share a single consciousness.<br/><br/> The most experienced and intelligent quyus choose to live benignly as innocuous pets in urban environments where they accept their keepers as accessories to their disguises and slip away to prowl the city when not observed. They prefer vulnerable keepers, innocent-seeming keepers who often escape the attention of those investigating suspicious disappearances. Cases of murders and missing persons perpetrated by quyus are often difficult to prove or recognize. While the scenes often look like an animal attack, the bodies are never eaten, and the precision of the kills often hints at some level of intelligent motive. Few are familiar enough with these otherworldly aberrations to suspect one may be trotting past the murder scene as a child\u2019s cute and spunky pet. It typically takes a specialist or a team of experts to identify a quyu\u2019s work and locate it among the beloved pets in the city."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Quyu",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Expert",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 80,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "void adaptation"
+            ],
+            "immunities": [
+                "acid",
+                "starvation"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 12,
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+8",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab, cruel dissection"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+8",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "spiked missile",
+                    "bonus": 14,
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "cruel dissection"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "pathetic gaze"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 5,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science +",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Brethedan"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Eoxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vesk"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "facade form"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "no breath"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Quyus use their knowledge of physiology to increase their likelihood of landing devastating attacks. When a quyu hits with a bite or spiked missile attack, the target must succeed at a Fortitude save or take an additional 1d6 piercing damage.",
+                "name": "Cruel Dissection",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, the quyu can switch into or out of its adorable facade form. While in its facade form, the quyu\u2019s pathetic gaze is active, but it can\u2019t use any of its melee or ranged attacks. While in facade form, the quyu is a Tiny creature.",
+                "name": "Facade Form",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The quyu\u2019s sightless eyes cast a magical influence on those who meet its gaze. While in facade form, any creature within 30 feet of the quyu that can see it must succeed at a DC 14 Will save or gain the fascinated condition. On a failed save, the target also becomes irrationally infatuated with the quyu and takes a \u20134 penalty to attacks against it for 1d4 rounds, even if the quyu leaves facade form. This is a mind-affecting emotion effect.",
+                "name": "Pathetic Gaze",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A quyu\u2019s spiked missile attack has a range increment of 60 feet.",
+                "name": "Spiked Missile",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Alien Archive 4",
+            "link": {
+                "type": "link",
+                "name": "Alien Archive 4 pg. 92",
+                "alt": "Alien Archive 4 pg. 92",
+                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+            },
+            "page": 92
+        }
+    ]
+}
