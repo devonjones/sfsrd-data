@@ -1,0 +1,239 @@
+{
+    "name": "Lemure",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Lemures, the least of all devils, are made from the souls of cruel and selfish mortals. Upon death, these individuals travel the River of Souls and\u2014if not devoured by an astral leviathan or caught in the net of a night hag for resale on the soul market\u2014eventually find themselves at Pharasma\u2019s court in the Boneyard. There, the wicked actions these individuals performed in life earn them eternal damnation, and Pharasma condemns them to the Nine Hells.<br/> These pathetic fiends are nearly mindless, forming only after the souls of the damned lose every trace of their former selves. Because lemures lack identities, their faces change and churn through different features, often mirroring the appearance of the last person they saw\u2014an unnerving sight for those unused to lemure physiology. Their bodies are nearly formless, with drooping, misshapen limbs and melting heads. They move by oozing across the ground; at rest, they appear to be little more than lumps of shapeless, stinking flesh.<br/> Though they count among the most loathsome creatures in existence, lemures occupy a vital role in Hell\u2019s ecology. After centuries or torment and corruption, Hell itself twists the souls of the damned into lemures, who begin their journeys in the wastelands of Avernus and travel downward through Hell\u2019s layers until they finally reach the depth that suits their soul\u2019s crimes. Lemures assemble in vast, putrid mobs across the Hells, joining together and awaiting the day a greater devil finds them and combines the fetid mass to create a singular true devil, ready to serve in Hell\u2019s damned legions.<br/> In addition, the ubiquity of lemures in Hell makes them a source of nearly unlimited utility, provided their master remembers not to expect too much of them. A wave of lemures can probe an enemy\u2019s defenses, overwhelm a foe through sheer numbers, clear a minefield, or simply perform manual labor without requiring nourishment or rest. They make poor soldiers, but there are simply so many of them that Hell\u2019s overlords and middle managers often keep a swarm of lemures at the ready, just in case."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Lemure",
+        "type": "stat_block",
+        "cr": "1/2",
+        "alien_family": "Devil",
+        "role": "Combatant",
+        "xp": 200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": -1
+        },
+        "alignment": "Lawful Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "devil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 4
+        },
+        "aura": "repulsive nature (5 ft., Fortitude DC 9)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 13,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 10,
+                "kac": 12
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "immunities": [
+                "fire",
+                "poison"
+            ],
+            "resistances": [
+                "acid 5",
+                "cold 5"
+            ],
+            "weaknesses": [
+                "vulnerable to good-aligned or silver weapons"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "25 ft.",
+                        "movement_type": "walk",
+                        "value": 25
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claws",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": -1,
+            "con": 3,
+            "int": -2,
+            "wis": 0,
+            "cha": -2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 9
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 4
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 4
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Hell)",
+            "organization": "solitary, pair, or swarm (3 or more)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A creature that begins its turn within 5 feet of a lemure must succeed at a DC 9 Fortitude save or be sickened for 1 round. A creature who succeeds at this Fortitude save is unaffected by any lemure\u2019s repulsive nature for 1 day.",
+                "name": "Repulsive Nature",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #46: The Perfect Storm",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #46: The Perfect Storm pg. 57",
+                "alt": "Starfinder #46: The Perfect Storm pg. 57",
+                "href": "https://paizo.com/products/btq02dv1?Starfinder-Adventure-Path-46-The-Perfect-Storm"
+            },
+            "page": 57
+        }
+    ]
+}

@@ -1,0 +1,352 @@
+{
+    "name": "Drift Saboteur",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Those who work on Drift engines and starships have been especially affected by the Drift Crisis in a number of rippling effects. Where they once had reasonable answers about most questions to do with Drift travel and could provide expert assistance, they\u2019re now as uncertain as the least educated individual. Nothing works properly. Simple repairs are impossible to complete. Stable careers are crumbling as the daily work of tune-ups and maintenance are drying up\u2014or stopping altogether.<br/><br/> But these problems aren\u2019t without their opportunities. In the aftermath of the Drift Crash and the ensuing crisis, some factions have begun to recruit these specialized Drift engineers, hoping their expertise could provide context or assistance in responding to the crisis. For more embittered mechanics searching for answers, the Moored and their prescient hatred of the Drift offered a palliative, if perhaps less productive, path forward. Many Drift-travel experts have begun to reject their previous professions, using their knowledge to further anti-Drift causes and earning the label of \u201cDrift saboteur.\u201d<br/><br/> These Drift saboteurs primarily turn their expertise toward undermining plans and actions that focus on restoring the Drift to its former state, and they have easy access for sabotage. They know the infrastructure of local hangars, the intricacies of beacon maps, and the weakest points of interstellar systems of travel. Years of practice are ingrained in their very bodies, from the way they carry themselves while walking an access corridor to the nuances required to secure official permits needed to access sensitive areas of starships and starports. They know how to blend in with their former colleagues and dismantle crucial wiring before anyone remembers they resigned weeks ago.<br/><br/> While most discovered sabotage is assumed to be work of the Moored, there are multiple less-than-savory organizations that want to maintain certain advantages from having a disrupted interstellar travel industry. A single saboteur may work for multiple organizations, uniquely able to connect plans happening across Absalom Station or further afield. Saboteurs may also work independently, fueled by bitterness and frustration with their local ruling body\u2019s official response to the Drift Crisis.<br/><br/> These saboteurs carry the purple\u2011striped tool kits of any Drift engineer and smile through chats with former colleagues. Sometimes, a saboteur will offer the chance for a once-friendly coworker to join them in an opportunity to, as they euphemistically refer to it, make a difference. Otherwise, they\u2019re content to wait until they\u2019re the last one on the job to strike. When caught in their sabotage, they defend themselves with ease, using their tools to hamper opponents. They carry few obvious weapons, preferring to improvise by overloading technology and surprising would-be investigators. When they serve as allies, Drift saboteurs can provide thorough technical information, a suite of starship mechanic services, full access to current and former professional networks, and legitimate identification and credentials."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Drift Saboteur",
+        "type": "stat_block",
+        "cr": "4",
+        "role": "Expert",
+        "xp": 1200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "human"
+                }
+            ]
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "human"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "mechanic"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 10
+        },
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 45,
+            "rp": 4,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            }
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "sledge",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+4",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "thunderstrike sonic pistol",
+                    "bonus": 10,
+                    "dc": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+4",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "stickybomb grenade I",
+                    "bonus": 10,
+                    "range": "10 ft.",
+                    "dc": 15,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "entangle 2d4 rounds"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 15"
+                        }
+                    ],
+                    "value": "overload"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "target tracking"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": 1,
+            "int": 5,
+            "wis": 0,
+            "cha": 0,
+            "feats": [
+                "Hide Sabotage"
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 15
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Akitonian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Castrovelian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Kasatha"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ysoki"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "artificial intelligence (exocortex)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "custom rig (tool kit)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mechanic tricks (overload weapon)"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "basic lashunta tempweave"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "sledge"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tool kit (engineering kit)"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Absalom Station)",
+            "organization": "solitary, pair, or team (3\u20138)"
+        }
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 151",
+                "alt": "Drift Crisis pg. 151",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 151
+        }
+    ]
+}

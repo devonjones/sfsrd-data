@@ -1,0 +1,271 @@
+{
+    "name": "Riftstalker",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Although planes of existence are impossibly distant from each other, supernatural stresses can tear their metaphysical boundaries, creating planar breaches that connect the two realms. Not only can a planar breach draw creatures from another plane, but the energies sometimes coalesce into strange predators known as riftstalkers. These creatures instinctively patrol their unstable territory and stalk prey. This fuels a popular theory that riftstalkers aren\u2019t independent creatures so much as extensions of their breach, like white blood cells maintaining the integrity of their home by destroying foreign bodies.<br/><br/> As a breach heals and closes, riftstalkers become increasingly aggravated and aggressive, desperately clinging to their ephemeral ecosystem. Under most circumstances, a sealed breach causes any riftstalkers to wither, sublimate, and die, unless they can find an equally vibrant home. Attempts to safely relocate these creatures\u2014for study or to save them\u2014are risky, because they often behave erratically and destructively when separated from their ephemeral homes. Riftstalkers\u2019 features often aesthetically reflect the planes associated with the breach that created them. A breach to Hell might create a riftstalker with a menacing glow and fangs dripping with hellfire, while one from an Elysium breach might be covered in flowers and accompanied by beautiful music. Occasionally two planes\u2019 influence combine to dazzling effect. Even when associated with breaches to aligned outer planes, riftstalkers are often chaotic beings."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Riftstalker",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "chaotic"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 115,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "out of phase",
+                "breach healing 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "rift walk"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "jaws",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+12"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "warp flesh"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8d8 damage [see below]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 16 half"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "planar breath"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 6,
+            "con": 1,
+            "int": -3,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 16
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or eddy (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A riftstalker gains fast healing 5 while in or within 100 feet of an area of planar instability. Any ability that suppresses an area\u2019s or creature\u2019s ability to move between planes, such as dimensional anchor, also suppresses this fast healing.",
+                "name": "Breach Healing",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A riftstalker\u2019s outline continually bends and shifts, giving attacks against it a 25% miss chance.",
+                "name": "Out of Phase",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A riftstalker can expel a blast of energy that functions as a breath weapon, though each time the riftstalker uses this ability, its damage type is selected randomly from the following: acid, cold, electricity, fire, or sonic. At the GM\u2019s discretion, a nearby planar instability might add other damage types to this list or cause certain damage types to occur more frequently.",
+                "name": "Planar Breath",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When created, a riftstalker gains one of the following movement types best suited to helping it navigate its home, at the GM\u2019s discretion: burrow 20 feet, climb 50 feet, fly 50 feet (average), or swim 50 feet.",
+                "name": "Rift Walk",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A riftstalker destabilizes any creature it bites, causing the target to gain vulnerability to one of the following randomly determined damage types for 1d4 minutes: acid, cold, electricity, fire, sonic. Whether or not the save is successful, that creature is then immune to that riftstalker\u2019s warp flesh ability for the next 24 hours.",
+                "name": "Warp Flesh",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 160",
+                "alt": "Drift Crisis pg. 160",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 160
+        }
+    ]
+}

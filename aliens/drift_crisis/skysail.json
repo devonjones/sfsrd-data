@@ -1,0 +1,234 @@
+{
+    "name": "Skysail",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Liavaran skysails resemble aquatic, leafy sea dragons from terrestrial planets. Unlike the waterbound creatures, skysails use their delicate protrusions to catch Liavara\u2019s gaseous currents and drift through the salmon-colored skies. Skysails tend to be shades of orange or pink to blend into their environment. On Liavara, skysails feed off the plentiful ambient psychic energy in the air, making them generally docile creatures. Because of this demeanor, \u201cswimming\u201d with skysails quickly became a popular tourist activity in certain highly monitored areas near the gas giant\u2019s few floating city-platforms.<br/><br/> Wealthy owners of private zoos have hired hunters to capture skysails for use as living decorations because of their beauty and apparent docility. However, such collectors quickly discover that when deprived of Liavara\u2019s atmosphere, skysails will often siphon mental energy from other sources, and the minds of sentient creatures are glowing beacons to their thought-seeking senses. To feed in this manner, a skysail wraps a sentient creature in its sail-like tendrils and drains them of every last vestige of mental energy. Creatures trapped in this way are typically rendered comatose, eventually dying of dehydration or starvation, at which point, the skysail discards the corpse and seeks new prey.<br/><br/> Skysails that have been transported off Liavara and escape their would-be owners demonstrate remarkable resilience and adaptability to new environments, often becoming dangerous predators for the planet\u2019s local fauna and intelligent species. The most entrenched cloud of invasive skysails make its home in Castrovel\u2019s Ocean of Mists.<br/><br/> Similar creatures of only slightly differing physiology have been reported on planets far from the Pact Worlds, fueling rumors that they originated outside the system, though its equally likely that such creatures evolved independently of one another."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Skysail",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Combatant",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (thought) 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 70,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 19
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "dr": [
+                "5/slashing or piercing"
+            ],
+            "immunities": [
+                "plant immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "5 ft.",
+                        "movement_type": "walk",
+                        "value": 5
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "good",
+                        "name": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tendril",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+8"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 13"
+                        }
+                    ],
+                    "value": "drain intelligence"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "sticky"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 2,
+            "int": -5,
+            "wis": 1,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 11
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any sky (Liavara)",
+            "organization": "solitary, pair, or cloud (3\u201311)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Skysails can feed off the mental energy of their prey. A creature with an Intelligence score that starts its turn grappled by a skysail must succeed at a DC 13 Fortitude saving throw or progress one step down the Intelligence poison track. In addition, on a failed save, the skysail regains a number of Hit Points equal to the target\u2019s CR, up to the skysail\u2019s normal maximum.",
+                "name": "Drain Intelligence",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A skysail\u2019s fanlike protrusions secrete an adhesive substance for trapping prey. Checks made to escape a skysail\u2019s grapple or pin take a \u20132 penalty.",
+                "name": "Sticky",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 161",
+                "alt": "Drift Crisis pg. 161",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 161
+        }
+    ]
+}

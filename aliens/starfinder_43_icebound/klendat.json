@@ -1,0 +1,256 @@
+{
+    "name": "Klendat",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Few explorers have ever seen a Swarm klendat. Indeed, even those who successfully defend their worlds against the Swarm never come close to one. For a time, they were thought to be mere legend, but an intrepid crew of Starfinders managed to pierce the front line of a Swarm invasion to bring back evidence of their existence. The Veskarium has set a bounty for the live capture of such a creature, but no one has managed to claim the money.<br/><br/> Klendats dwell at the center of massive Swarm bioships or deep underground in subterranean lairs dug into conquered planets. There, they coordinate information, lead subcolonies, and arrange logistics for the Swarm\u2019s inevitable effort to devour the galaxy. When components are wounded and judged too valuable to waste, they\u2019re brought to a klendat to be healed.<br/><br/> A klendat is a squat Swarm component vaguely shaped like a beetle with a collection of scuttling legs tucked under its form. When it rises up on these appendages, a klendat can reach a height of 14 feet. Brain matter comprises most of a klendat\u2019s carapace, which makes it uniquely vulnerable. Its wings are largely vestigial. However, the creature wields potent psychic powers, is highly resistant to magic, and can quite capably defend itself and the chamber from which it directs other Swarm components."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Klendat",
+        "type": "stat_block",
+        "cr": "11",
+        "alien_family": "The Swarm",
+        "role": "Spellcaster",
+        "xp": 12800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 20
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (thought) 100 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 155,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 24
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "defensive_abilities": [
+                "Swarm mind"
+            ],
+            "immunities": [
+                "acid",
+                "fear effects"
+            ],
+            "sr": "22",
+            "weaknesses": [
+                "vulnerable to critical hits"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 20,
+                    "dc": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+13",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "wound"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "15 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "psychic interrogation"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 0,
+            "con": 2,
+            "int": 8,
+            "wis": 5,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a Swarm klendat can bore into the mind of a single target within 100 feet that it can sense with its blindsight. The target must succeed at a DC 20 Will save or be stunned for 1 round, take 4d10 damage, and the klendat gets the answer to one question of its choice from the target\u2019s mind. Targets that successfully save still take 2d10 damage. This is a mind-affecting effect.",
+                "name": "Psychic Interrogation",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The klendat is mostly brain matter, and some attacks tear through its delicate neurons to deal especially severe wounds. When a creature hits a Swarm klendat with a critical hit, it deals an additional 50% damage (after the critical damage is calculated).",
+                "name": "Vulnerable to Critical Hits",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #43: Icebound",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #43: Icebound pg. 60",
+                "alt": "Starfinder #43: Icebound pg. 60",
+                "href": "https://paizo.com/products/btq027tz?Starfinder-Adventure-Path-43-Icebound"
+            },
+            "page": 60
+        }
+    ]
+}

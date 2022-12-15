@@ -1,0 +1,269 @@
+{
+    "name": "Convergent",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Convergent devils, known as porcellanixes, are formed from the souls of creatures whose desire to evolve into something unique led them to vile, callous acts. These devils find creatures with similar desires and use magic to install biotech augmentations, with the unspoken catch that their magic will infect the recipient, often sapping them of energy when used.<br/> According to planar scholars, convergent devils regularly form from the souls of species such as barathus and verthani. Once they have proven themselves within Hell, these fiends are allowed to travel to the Material Plane to offer empty promises of grand evolution to species with a love for augmentation. While they once desired to be unique, convergent devils are named for evolving into the same form no matter their origin, and appear as 3-foot-wide crabs whose shells fill with buoyant gases to allow them to swim faster.<br/> In the hierarchy of Hell, more powerful devils call upon convergent devils when their skills as low-ranking specialists become useful. Many convergent devils are found in the swamps of Stygia, where their empty promises are at home with the other exploitative and duplicitous souls that reside there. On the Material Plane, convergent devils work alone, finding a solitary life of exploitation suits them best. They readily take advantage of communities where appearances are everything, leveraging these mortals\u2019 desires to break their wills and, if their craving for evolution is strong enough, eventually turn them into convergent devils as well.<br/> In some circumstances, porcellanixes progress further among their Hellish comrades by taking up professions like those of a mortal, but it\u2019s nigh-unheard of for a convergent devil to attempt to change their own body with augmentations or to become a different kind of devil. As far as they\u2019re concerned, they are the final stage of evolution, and their obligation is to develop their skills and exploit lesser life-forms such as mortals. On the eighth layer of Hell, Caina, skilled porcellanix biohackers and vanguards attempt to break down celestial beings like angels into their component parts to further understand their planar biology. This allows the forces of Hell to mount offenses against their foes more readily."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Convergent",
+        "type": "stat_block",
+        "cr": "3",
+        "alien_family": "Devil",
+        "role": "Spellcaster",
+        "xp": 800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Lawful Evil",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "devil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 8
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "see in darkness"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 32,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 14
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            },
+            "immunities": [
+                "fire",
+                "poison"
+            ],
+            "resistances": [
+                "acid 5",
+                "cold 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 10 ft.",
+                        "movement_type": "climb",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 40 ft.",
+                        "movement_type": "swim",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "pincer",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 2,
+            "con": 2,
+            "int": 4,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Barathu"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "biotech warp"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Hell)",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a convergent devil uses their instant upgrade spell-like ability, they can choose to create a biotech augmentation instead of a cybernetic augmentation, subject to the same restrictions. If they do so, the target must attempt a DC 17 Fortitude save. On a failure, the target is sickened for the duration of the spell.",
+                "name": "Biotech Warp",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #46: The Perfect Storm",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #46: The Perfect Storm pg. 55",
+                "alt": "Starfinder #46: The Perfect Storm pg. 55",
+                "href": "https://paizo.com/products/btq02dv1?Starfinder-Adventure-Path-46-The-Perfect-Storm"
+            },
+            "page": 55
+        }
+    ]
+}

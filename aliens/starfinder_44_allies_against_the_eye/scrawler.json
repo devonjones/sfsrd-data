@@ -1,0 +1,244 @@
+{
+    "name": "Scrawler",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Native to Weydana-5, scrawlers move in packs along the planet\u2019s glass-like surface. Smooth, iridescent scales and an exoskeleton of pale, bony armor adorn their silver, gelatinous bodies. Bulbous eyes beneath their horns can see in every direction simultaneously, making the scrawler difficult to surprise, and a thick poisonous mucus that paralyzes living creatures covers their skin. This poison can also be found on the retractable spikes at the tip of the scrawler\u2019s bulbous tail; these spikes act as hooks, detaching from the tail and remaining embedded in prey. Detached spikes grow back over several days.<br/><br/> Adult scrawlers exceed three feet in height and are five feet long. Their sharp claws assist with climbing, and gills beneath the eyes allow them to comfortably breathe in heavy water for extended periods. Scrawlers typically hunt aquatic prey on Weydana-5 and make nests near local bodies of water. They have no teeth, scooping prey into their mouths with their prehensile tongues.<br/><br/> Scrawlers are pack animals. Offspring remain with their parents while they learn to hunt, and they continue to remain dependent on each other even as adults. They communicate using a series of panting breaths and primal screeches, and each pack develops its own unique alarms and signals.<br/><br/> The sophisticated communication pattern of scrawlers, along with their relatively high intelligence and pack lethality, makes these creatures candidates for bioweapon research. Unscrupulous corporations like EJ Corp have begun to explore transplanting scrawlers into other environments and training them for warfare."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Scrawler",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "water"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 18
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "defensive_abilities": [
+                "paralytic mucus"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 30 ft.",
+                        "movement_type": "climb",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 30 ft.",
+                        "movement_type": "swim",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tailblade",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "burrowing barbs"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "paralytic mucus"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "amphibious"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "water breathing"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "aquatic (Weydana-5)",
+            "organization": "solitary, pair, or pack 3\u20138"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a scrawler hits a creature with its tailblade, the target must attempt a DC 14 Reflex save; on a failure, one or more barbs break off the scrawler\u2019s tail and remain burrowed inside the target. The target takes 1d6 bleed damage; the bleeding condition can be ended according to the normal rules (Core Rulebook 273), but each round the target takes bleed damage, they must also succeed at a DC 14 Fortitude save or be paralyzed for 1 round; this is a poison effect.",
+                "name": "Burrowing Barbs",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Toxins coat the slick skin and tail barbs of a scrawler. If the scrawler hits a creature with its tailblade and inflicts damage, the target must succeed at a DC 14 Fortitude save or be paralyzed for 1d4 rounds. Creatures that hit the scrawler with an unarmed attack must also attempt this save, with the same result on a failure. This is a poison effect.",
+                "name": "Paralytic Mucus",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #44: Allies Against the Eye",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #44: Allies Against the Eye pg. 59",
+                "alt": "Starfinder #44: Allies Against the Eye pg. 59",
+                "href": "https://paizo.com/products/btq029ub?Starfinder-Adventure-Path-44-Allies-Against-the-Eye"
+            },
+            "page": 59
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "name": "Astro-krill Swarm",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Astro-krill are spacefaring crustaceans indigenous to the asteroid shell surrounding Weydana-5. They\u2019ve adapted to the harsh living conditions of the void, and their diet consists entirely of inorganic material. Unfortunately, they\u2019re indiscriminate in this hunger; astro-krill consume asteroids and the space suits of hapless explorers with equal relish.<br/><br/> No longer than two-and-a-half inches and weighing only a fraction of an ounce, an astro-krill\u2019s exoskeleton is segmented and translucent. This translucency, in turn, allows for the creatures\u2019 dazzling bioluminescence to shine through. Though the Xenowardens generally agree that astro-krill are mindless, some have posited that this bioluminescence may be a form of nascent communication.<br/><br/> The question of astro-krill sentience is of grave concern to one corporation: Koji! Can Fisheries. Koji! Can incorporated shortly after Weydana-4 was settled, and they\u2019ve cornered the market on harvesting fresh astro-krill swarms as a food alternative. Their chief product is Biobright, an astro-krill paste high in protein and low in calories. The aftertaste leaves something to be desired, but children love how their tongues are left dyed with vibrant color after every meal. Koji! Can has plans to go public soon, and all this talk of possible sentience among the krill has left potential investors skittish.<br/><br/> Harvesting astro-krill is not for the faint of heart. This time-consuming process involves a spacewalk, luring each swarm into a specialized container using hand-held light emitters that attract the krill and react to the swarm\u2019s bioluminescence. Storage containers are reinforced with impervious force fields, and crews must keep their distance; accidents in which a crew member gets too close and ends up exposed to vacuum are all too common. Once a swarm is contained, it can be loaded onto a spacecraft and taken to Koji! Can processing plants. The current rate for a living or fresh astro-krill swarm is 50,000 credits."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Astro-krill Swarm",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Combatant",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral",
+        "size": "Fine",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Vermin",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "swarm"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "aura": "bioluminescence (60 ft., Will DC 19)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 225,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 27,
+                "kac": 29
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 17
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses",
+                "void adaptation"
+            ],
+            "immunities": [
+                "radiation",
+                "swarm immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+17",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "attach"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 19"
+                        }
+                    ],
+                    "value": "distraction"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 8,
+            "con": 6,
+            "int": null,
+            "wis": 0,
+            "cha": -3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 28,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+36 to fly"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "feeding frenzy"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any vacuum (Weydana-5)",
+            "organization": "swarm"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An astro-krill swarm emits brilliant and complex light patterns. Creatures affected by the aura are dazed; creatures who successfully save are dazzled for 1d4 rounds and immune to this ability for 1 day.",
+                "name": "Bioluminescence",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Astro-krill instinctively try to eat any solid object they come in contact with. Any melee weapon that hits an astro-krill swarm and inflicts bludgeoning, piercing, or slashing damage must attempt a DC 19 Fortitude save or be broken, while broken items are instead destroyed. If a creature takes damage from the astro-krill\u2019s swarm attack and is wearing armor, that armor must attempt this save, with the same results.",
+                "name": "Feeding Frenzy",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #44: Allies Against the Eye",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #44: Allies Against the Eye pg. 54",
+                "alt": "Starfinder #44: Allies Against the Eye pg. 54",
+                "href": "https://paizo.com/products/btq029ub?Starfinder-Adventure-Path-44-Allies-Against-the-Eye"
+            },
+            "page": 54
+        }
+    ]
+}

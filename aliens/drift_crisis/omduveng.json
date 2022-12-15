@@ -1,0 +1,240 @@
+{
+    "name": "Omduveng",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Lumbering creatures with four muscular arms and bovine faces, omduvengs act as living homing beacons that metaphysically bend space to pull teleporting creatures or objects to themselves. Though they can focus this aura to teleport familiar items into their hands, they passively attract errant objects and creatures. Omduvengs consider this ability a tiresome burden inflicted on them at the dawn of time by their mythical creator, a divine being known as Domdun, and most omduvengs adopt a weary, dejected attitude from this supernatural inconvenience.<br/><br/> Yet this ability is crucial to their survival. Their home world in the Vast is a planetoid called Domdun\u2019s Bilestone, whose nutritious lichens wouldn\u2019t sustain the omduvengs were it not for the random creatures and other arrivals that are occasionally torn from astral space and into the omduvengs\u2019 reach. Periodically, omduvengs\u2019 teleportation curse works in reverse, transporting a small population to a distant world. Wherever they live, omduvengs typically use simple tools, rarely showing interest in more complex machinery, even if it\u2019s designed for their blunt fingers."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Omduveng",
+        "type": "stat_block",
+        "cr": "10",
+        "role": "Combatant",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "aura": "teleportation beacon (100 ft.)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 165,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "sr": "21"
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+18",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "slams",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+18",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "10 ft."
+            }
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 3,
+            "con": 5,
+            "int": -2,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Duvengan"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "called item"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Domdun\u2019s Bilestone)",
+            "organization": "solitary, pair, or drear (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an omduveng can attune to an object they\u2019re holding. The omduveng can call the attuned object to hand as a swift action, as the called weapon fusion, as long as the object is within 1 mile and the omduveng has enough hands free to hold it. Multiple omduvengs can attune to the same object. An omduveng can attune to three items at a time; if they attune to a fourth, they must choose an existing object to lose its attunement.",
+                "name": "Called Item",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Omduvengs act as living teleportation beacons. A creature that would arrive within 100 feet of an omduveng with a teleportation effect senses the beacon and can choose to arrive in an open space adjacent to the omduveng, even if that space is outside the range of the teleportation effect. A creature arriving next to an omduveng can\u2019t further redirect the arrival space to another omduveng\u2019s aura. An omduveng can concentrate on this effect as a standard action to increase the range to 1 mile for 1 minute. At the GM\u2019s discretion, multiple omduvengs with overlapping auras can extend this range even further or force creatures teleporting into the area to land in their midst.",
+                "name": "Teleportation Beacon",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 157",
+                "alt": "Drift Crisis pg. 157",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 157
+        }
+    ]
+}

@@ -1,0 +1,269 @@
+{
+    "name": "Kalo-mahoi Bloom",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A Kalo-Mahoi bloom is an invasive, perennial seaweed that lurks in the ocean depths. As the name suggests, this macroalgae is native to Kalo-Mahoi, a moon of Bretheda, where it\u2019s a simple and harmless foodstuff. But travelers and interstellar commerce have brought the Kalo-Mahoi bloom to aquatic environments on other worlds where, bereft of its natural predators, the algae grows exponentially. When exposed to certain forms of radiation or heavy water\u2014such as that found in the seas of Weydana-5\u2014it \u201cblooms,\u201d mutating and developing predatory spell-like abilities.<br/><br/> Though not sentient, Kalo-Mahoi blooms possess a cunning bordering on intelligence. They telepathically lure victims to a watery grave by stealing cherished memories and moving them into tubular buds found throughout the tangled mass of vegetation that compose their bodies. These buds then bloom, tauntingly transmuted to the likeness of their victim\u2019s favorite flower. Xenowardens warn that if measures aren\u2019t taken soon, Kalo-Mahoi blooms will threaten ecosystems on many worlds, potentially even becoming the dominant life form. To date, kalos take no responsibility for this ecological nightmare."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Kalo-mahoi Bloom",
+        "type": "stat_block",
+        "cr": "13",
+        "role": "Spellcaster",
+        "xp": 25600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Neutral",
+        "size": "Huge",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aquatic"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "cold"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 23
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (emotion) 5 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 190,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 26,
+                "kac": 27
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 16
+                }
+            },
+            "immunities": [
+                "cold",
+                "plant immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to fire"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 15 ft.",
+                        "movement_type": "swim",
+                        "value": 15
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "caress",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "6d4+13",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "energy drain"
+                        }
+                    ]
+                }
+            ],
+            "space": "15 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "30 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "change shape"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2 levels"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "energy drain"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "water breathing"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": 1,
+            "int": -4,
+            "wis": 8,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 23
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 23
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "aquatic",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, a Kalo-Mahoi bloom can transmute any of its many amorphous buds into flowers of its choosing. It uses this ability to create flowers its prey recognizes\u2014knowledge the bloom acquires through the use of mind probe. The bloom then uses its steal memory ability to hide the memory in one of these flowers.",
+                "name": "Change Shape",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a Kalo-Mahoi bloom can share a memory it has stolen with its steal memory ability with all creatures within 60 feet; this is identical to the spell share memory (Character Operations Manual 141) except the targets don\u2019t need to be willing.",
+                "name": "Eidetic Mimicry",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A Kalo-Mahoi bloom can steal a memory from another creature. First, it must identify a specific memory through the use of mind probe or a similar effect. Then, as a standard action, the bloom targets its victim, who must be within 60 feet and must attempt a DC 21 Will save. On a failure, the target loses the chosen memory, which is moved into one of the bloom\u2019s flowers. This effect works like the displace memory spell except the bloom can target other creatures and anyone touching the object can recall the displaced memory. If the flower is destroyed, the memory returns to the target creature.",
+                "name": "Steal Memory",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #44: Allies Against the Eye",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #44: Allies Against the Eye pg. 58",
+                "alt": "Starfinder #44: Allies Against the Eye pg. 58",
+                "href": "https://paizo.com/products/btq029ub?Starfinder-Adventure-Path-44-Allies-Against-the-Eye"
+            },
+            "page": 58
+        }
+    ]
+}

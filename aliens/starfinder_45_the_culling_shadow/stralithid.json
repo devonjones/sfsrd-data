@@ -1,0 +1,301 @@
+{
+    "name": "Stralithid",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Stralithids are subterranean telekinetic creatures that dwell in Weydana-7\u2019s vast regolith seas. When the creature feeds, it extends tendrils hundreds of feet to the surface of the regolith sea, where the stralithid absorbs kinetic energy from nearby activity, primarily meteoroid impacts.<br/><br/> Stralithids also feed off the motion of Weydana-7\u2019s other fauna, creating nearly invisible traps of shifting kinetic energy to stun prey. They hunt collector crabs (page 54), goading the creatures into traps to drain them dry and to lay eggs in the corpses."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Stralithid",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 15
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (motion) 120 ft.."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "kinetic sight"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 110,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 21,
+                "kac": 23
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "telekinetic absorption"
+            ],
+            "weaknesses": [
+                "sonic overload"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 40 ft.",
+                        "movement_type": "burrow",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "telekinetic burst",
+                    "bonus": 20,
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+14",
+                            "damage_type": "Bludgeoning, Piercing, or Slashing",
+                            "damage_type_text": "B, P, or S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "telekinetic lance",
+                    "bonus": 20,
+                    "dc": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+8",
+                            "damage_type": "Bludgeoning, Piercing, or Slashing",
+                            "damage_type_text": "B, P, or S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "kinetic entanglement"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "telekinetic trap"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 4,
+            "con": 2,
+            "int": null,
+            "wis": 1,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 20
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Terran"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak any language"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any land (Weydana-7)",
+            "organization": "solitary, pair, quilt (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a stralithid can create a telekinetic link between itself and another creature within 120 feet; the effect lasts for 1 minute or until the stralithid uses this ability again. When the targeted creature is within 120 feet of the stralithid and attempts to take a physical action, the stralithid can use its reaction to absorb the action\u2019s kinetic force. The targeted creature must attempt a DC 18 Fortitude save. On a failure, the target takes 4d6 force damage and loses the triggering action; the stralithid gains the effects of haste until the end of its next turn, and the kinetic entanglement ends.",
+                "name": "Kinetic Entanglement",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stralithid can use its blindsight to perceive targets of its kinetic entanglement and telekinetic trap abilities, even if the creature is motionless.",
+                "name": "Kinetic Sight",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stralithid that takes sonic damage or fails to save against a sonic effect must succeed at a DC 16 Fortitude save or be stunned for 1 round, overwhelmed by minute vibrations.",
+                "name": "Sonic Overload",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stralithid is immune to effects with the force trait.",
+                "name": "Telekinetic Absorption",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A stralithid\u2019s telekinetic lance is a ranged attack with a range of 120 feet and the staggered critical hit effect.",
+                "name": "Telekinetic Lance",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a stralithid can infuse a 30-foot-radius sphere within 120 feet with an intricate pattern of invisible kinetic energy that lasts for 1 round. A non-stralithid that enters or begins its turn in the pattern\u2019s area must succeed at a DC 18 Fortitude save or be staggered for 1d4 rounds.",
+                "name": "Telekinetic Trap",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #45: The Culling Shadow",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #45: The Culling Shadow pg. 60",
+                "alt": "Starfinder #45: The Culling Shadow pg. 60",
+                "href": "https://paizo.com/products/btq02aji?Starfinder-Adventure-Path-45-The-Culling-Shadow"
+            },
+            "page": 60
+        }
+    ]
+}

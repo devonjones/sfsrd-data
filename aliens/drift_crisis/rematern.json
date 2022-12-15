@@ -1,0 +1,303 @@
+{
+    "name": "Rematern",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Rematerns are one of the more rarely seen Swarm components, as they aren\u2019t typically used as ground troops, instead appearing on worlds already overrun by the Swarm. Rematerns are often used alongside the extractor imagoes that burrow into a planet\u2019s surface like a tick. While the giant imago can withdraw petrochemicals from a planet\u2019s crust, the much smaller rematerns consume various ores and use corrosive chemical cocktails within their multiple stomach cavities to process them, regurgitating more refined products. Rematerns can burrow underground to locate deposits of specific materials required by the Swarm, often covering their bodies in chemical shells to protect themselves from harsh environments.<br/><br/> Beetle-like in appearance, a rematern crawls on six legs and has a sharp, pointed beak, used both for consuming ore and burrowing through the ground. It also has a quartet of chitinous flaps above its large, compound eyes that protect the sensory organs from debris. While among the less intelligent of Swarm components, a rematern can still be a fierce opponent in battle, spewing the contents of its stomachs at enemies in a deadly spray of acid.<br/><br/> Rematerns appear to be especially reliant on their connection to the Swarm. When their link is lost, they either continue their tasks mindlessly until their eventual deaths or cease functioning altogether. Those who have been formidable and fortunate enough to push back a heavy Swarm infestation\u2014one that progressed far enough for rematerns to be introduced to the invaded world\u2014are often rewarded afterward with a network of tunnels littered with refined ores, rematern husks, and the flaky remnants of their protective shells. Even these shell remnants can be useful, as they can be repurposed as a kind of insulative shingling.<br/><br/> Rarely, the Swarm deploys rematerns on worlds that happen to be rich in a rare starmetal, such as abysium or adamantine. While the typical rematern is not capable of processing such materials, the Swarm is ever adaptive, and prolonged exposure to a particular starmetal causes fundamental changes to a rematern\u2019s physiology that allow it to excavate and refine even these extraordinary materials. Rematerns that adapt to process abysium, for example, are known as fever beetles and give off dangerous radiation. Those that process inubrix, or ghost iron, become able to burrow through even the hardest materials, though they lose the ability to process any other ore."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Rematern",
+        "type": "stat_block",
+        "cr": "7",
+        "alien_family": "The Swarm",
+        "role": "Combatant",
+        "xp": 3200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 14
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 105,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "chemical shell",
+                "Swarm mind"
+            ],
+            "immunities": [
+                "acid",
+                "fear effects"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 10 ft.",
+                        "movement_type": "burrow",
+                        "value": 10
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "jaws",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "spit rocks",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+7",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "corrode"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "15-ft. cone"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "7d4 A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 15 half"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "usable every 1d4 rounds"
+                        }
+                    ],
+                    "value": "regurgitate acid"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 5,
+            "con": 4,
+            "int": -1,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy 100 ft."
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "pair or pack (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a defense mechanism or as protection against harsh elements encountered while burrowing deep underground, a rematern can exude chemicals from its skin that harden when exposed to atmosphere as a move action. The rematern gains resistance 5 to electricity, fire, or cold (the rematern\u2019s choice) for 1 minute, after which the shell crumbles and flakes off. This ability does not function in a vacuum.",
+                "name": "Chemical Shell",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action once every 1d4 rounds, a rematern can expel corrosive chemicals from one of its stomachs in a 15-foot cone that deals 7d4 acid damage (Reflex DC 15 half).",
+                "name": "Regurgitate Acid",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a ranged attack, a rematern can spit acid\u2011coated rocks from one of its stomachs at a single target with a range increment of 20 feet.",
+                "name": "Spit Rocks",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 163",
+                "alt": "Drift Crisis pg. 163",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 163
+        }
+    ]
+}

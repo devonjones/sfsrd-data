@@ -1,0 +1,273 @@
+{
+    "name": "Anemonite Communicant",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Anemonites are nanomachines that ride the preprogrammed storms of Weydana-6 in swarms called communicants. These nanomachines maintain Weydana-6\u2019s dormant computer, defragmenting errant data worldwide and cataloging that data. Unfortunately for travelers exploring the mystery of Weydana-6, the mindless communicants register them as errant data and seek to eliminate them while simultaneously storing their engrams.<br/><br/> Creatures defragmented by an anemonite communicant are subjected to excruciating pain as their bodies are broken down and reordered to be read more efficiently. If killed, these hapless individuals are reconfigured into cubes of matter that bear no resemblance to the living beings they once were. Those fortunate enough to survive anemonites have complained of splintered recall, a memory disorder in which the memories of one individual are transferred to another.<br/><br/> Each communicant stores all data relevant to creatures it has killed, presumably for uploading to Weydana-6\u2019s cosmic computer. However, that computer remains dormant, leaving this data within each anemonite swarm. Computer scientists have had some success hacking a swarm and using its own nanomachines to reconstruct individuals the swarm has defragmented."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Anemonite Communicant",
+        "type": "stat_block",
+        "cr": "12",
+        "role": "Combatant",
+        "xp": 19200,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Lawful Neutral",
+        "size": "Fine",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 170,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 25,
+                "kac": 26
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                }
+            },
+            "defensive_abilities": [
+                "swarm defenses"
+            ],
+            "immunities": [
+                "construct immunities",
+                "swarm immunities"
+            ],
+            "resistances": [
+                "acid 10"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "swarm attack",
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+16",
+                            "damage_type": "Bludgeoning & Electricity",
+                            "damage_type_text": "B & E"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "electroshock",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+12",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 21"
+                        }
+                    ],
+                    "value": "distraction"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 5,
+            "con": null,
+            "int": null,
+            "wis": 8,
+            "cha": null,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 27,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+35 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "polymorphic defragmentation"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "reconstruction protocol"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "Weydana-6",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An anemonite communicant breaks down and reconstructs its victims in simpler, condensed forms. When an anemonite communicant kills a creature, the creature\u2019s corpse disappears into the swarm. One round later, the anemonite communicant leaves behind a single cube of undifferentiated matter that includes all the material once found in that creature, including all its possessions.",
+                "name": "Polymorphic Defragmentation",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A communicant retains data records of all the creatures it has killed. A character with a custom rig or computer with a range upgrade can attempt to hack the communicant to recreate creatures it has slain. The hacker must take a full action and succeed at a DC 33 Computers check; on a failure, the hacker activates the communicant\u2019s defense protocols, and the swarm moves toward the hacker as quickly as possible, targeting them with its attacks and spell-like abilities in an attempt to destroy them. On a success, the last creature slain by the communicant and not already reconstructed is returned to life in a space adjacent to the communicant, as if subjected to the raise dead spell.",
+                "name": "Reconstruction Protocol",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #43: Icebound",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #43: Icebound pg. 54",
+                "alt": "Starfinder #43: Icebound pg. 54",
+                "href": "https://paizo.com/products/btq027tz?Starfinder-Adventure-Path-43-Icebound"
+            },
+            "page": 54
+        }
+    ]
+}

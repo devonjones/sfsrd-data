@@ -1,0 +1,304 @@
+{
+    "name": "Cherubic Squire",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "To keep unrestrained technological advances out of evil hands, barachius angels (Starfinder Alien Archive 12) created robotic shells capable of housing angelic petitioners, the souls of good mortal beings that haven\u2019t yet been judged for their eternal reward, to act as footsoldiers in their ongoing crusade. These seemingly simplistic robots are often mistaken for holy automatons, but are in actuality constructed shells to protect and empower the vulnerable, good-aligned quintessence\u2014the substance that forms a petitioner\u2019s body on the Outer Planes\u2014that is installed within. A petitioner\u2019s quintessence can be harmed and even destroyed similar to a mortal body\u2019s flesh, but a petitioner can never be resurrected if it is \u201ckilled\u201d; when this happens, the surrounding plane absorbs that essential energy. As such, cherubic squires hold their lives very dear and aren\u2019t averse to fleeing in the face of superior odds unless spurred into action by more powerful celestials. When a cherubic squire is defeated and the angelic spark within dissolves, a useless metal husk is left behind to corrode and disintegrate.<br/> To the unknowing, cherubic squires are simple, if beautiful, machines with large ocular cameras that add to their seeming innocence; in war, this childlike guise quickly becomes a terrifying visage as the camera turns an angry red color. Cherubic squires are usually deployed to the field in hosts under the command of other angels or, in rare cases, alone or in pairs to facilitate surgical strikes. Whenever barachiuses march to battle, they surround themselves with masses of these creations, using them as part of the front line of their armies against the minions of evil\u2014clearing a swath with blade and electricity\u2014or piloting ships and celestial chariots across both the field of battle and the skies above."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Cherubic Squire",
+        "type": "stat_block",
+        "cr": "1",
+        "role": "Combatant",
+        "xp": 400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "alignment": "Lawful Good",
+        "size": "Small",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "angel"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "good"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "lawful"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 5
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 20,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 11,
+                "kac": 13
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs. poison"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "defensive_abilities": [
+                "constructed shell"
+            ],
+            "immunities": [
+                "electricity",
+                "petrification"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "average",
+                        "name": "fly 20 ft.",
+                        "movement_type": "fly",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tactical dueling sword",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+2",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "pulsecaster pistol",
+                    "bonus": 9,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "nonlethal": true,
+                            "formula": "1d4+1",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 5
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 10
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 5
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Celestial"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Draconic"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "truespeech"
+                    }
+                ]
+            },
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "pulsecaster pistol with 1 battery (20 charges)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "tactical dueling sword"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any good-aligned planes (Heaven)",
+            "organization": "solitary, pair, or host (3\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As creatures of planar essence inside of a robotic frame, cherubic squires have dual natures. For effects targeting creatures by type, a cherubic squire counts as both a construct and as an outsider (whichever type allows an ability to affect them for abilities that affect only one type, and whichever is worse for abilities that affect both types).",
+                "name": "Constructed Shell",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When not in use, each of a cherubic squire\u2019s weapons is folded inside the squire\u2019s shell and hidden from sight. A creature unaware of the cherubic squire\u2019s hidden weapons must succeed at a DC 15 Perception check to notice one. A cherubic squire can deploy any or all of their weapons as a swift action or as part of making an attack or full attack. The cherubic squire can\u2019t be disarmed of the weapons. As a swift action, the squire can retract any or all of their weapons.",
+                "name": "Retractable Weapons",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #46: The Perfect Storm",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #46: The Perfect Storm pg. 54",
+                "alt": "Starfinder #46: The Perfect Storm pg. 54",
+                "href": "https://paizo.com/products/btq02dv1?Starfinder-Adventure-Path-46-The-Perfect-Storm"
+            },
+            "page": 54
+        }
+    ]
+}

@@ -8,6 +8,12 @@
         "cr": "1/2",
         "alien_family": "Phentomite",
         "role": "Expert",
+        "image": {
+            "type": "image",
+            "name": "Phentomite",
+            "game-obj": "Monster",
+            "image": "AA2_Phentomite.png"
+        },
         "xp": 200,
         "initiative": {
             "name": "Initiative",
@@ -227,7 +233,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "Phentomites are acclimated to <a href=\"Rules.aspx?Name=Atmospheres&amp;Category=Environment\" style=\"text-decoration:underline\">thin atmospheres and high altitudes</a>, and they count as Small creatures for the purpose of slow <a href=\"Rules.aspx?Name=Environmental%20Rules&amp;Category=Environment\" style=\"text-decoration:underline\">suffocation</a>.",
+                "text": "Phentomites are acclimated to <a aonid=\"Atmospheres\" category=\"Environment\" game-obj=\"Rules\">thin atmospheres and high altitudes</a>, and they count as Small creatures for the purpose of slow <a aonid=\"Environmental Rules\" category=\"Environment\" game-obj=\"Rules\">suffocation</a>.",
                 "name": "Acclimated",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"

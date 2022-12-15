@@ -1,0 +1,229 @@
+{
+    "name": "Collector Crab",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Perhaps the strangest tale passed between explorers of Weydana-7 speaks of outcroppings of rock and metal that move. Most of these mobile boulders are the size of small vehicles, though stories tell of some as big as starships. These hulking heaps of ore, crystals, and rock dot the planet\u2019s landscape, seeking unusual starmetals and defending themselves when anything approaches.<br/><br/> Nicknamed collector crabs, these reclusive, slow-moving animals live in unoccupied ore fields, collecting minerals from meteorites that pummel the surface. No one is entirely sure what the creature looks like within its starmetal shell, as it extends only a single large claw from its shell to claim its prizes; the rest of the creature\u2019s body shrivels to dust when exposed to an atmosphere, and scientists have been unable to capture a live specimen for study.<br/><br/> Collector crab shells are quite valuable, thanks to the starmetals the creature stores there. Some explorers hunt them to harvest the minerals in their shells. The most enterprising among these explorers employ baited traps and explosives to neutralize their prey from a safe distance, though the practice can be quite destructive to the local ecosystem. Currently, explorers are divided on the issue of hunting collector crabs. Overzealous hunting threatens to eradicate the species entirely, though there\u2019s no denying that the beasts pose a danger in the remote wilds of Weydana-7, and the lucrative profits of crab hunting have proven too much for poachers to resist."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Collector Crab",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "alignment": "Neutral",
+        "size": "Large",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Animal"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 18
+        },
+        "aura": "radiation (30 ft., DC 14)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "scent (ore) 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                }
+            },
+            "dr": [
+                "10/\u2014"
+            ],
+            "immunities": [
+                "critical hits"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "space": "10 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "15 ft. with claw"
+                    }
+                ],
+                "value": "10 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "meteor collection"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 3,
+            "int": -4,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Weydana-7)",
+            "organization": "solitary or herd (2\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The meteors a collector crab collects for its shell grant it unusual properties. Its natural weapons are a conglomeration of different types of ore. Each time the collector crab attacks, roll randomly to determine which mineral affects the collector crab\u2019s natural attacks. <table class=\"inner\"> <tr> <td>D6</td> <td>ORE</td> </tr> <tr> <td>1-2</td> <td> Abysium: The collector crab\u2019s attacks inflict radiation burns. The target must succeed at a DC 14 Fortitude save or be sickened for 1d4 rounds. On a critical hit, the target must succeed at a DC 14 Fortitude save or contract radiation sickness.</td> </tr> <tr> <td>3-4</td> <td> Horacalcum: The crab\u2019s attacks warp time around the target, who must succeed at a DC 14 Fortitude save or be staggered for 1 round. On a critical hit, the target is stunned for 1 round.</td> </tr> <tr> <td>5-6</td> <td> Voidglass: The crab\u2019s shell is infused with hostile psychic emotions. Half the damage dealt by the crab is cold damage. The target of a collector crab\u2019s attacks must succeed at a DC 14 Will save or be shaken for 1d4 rounds. On a critical hit, the target is panicked for 1 round.</td> </tr> </table>",
+                "name": "Meteor Collection",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #45: The Culling Shadow",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #45: The Culling Shadow pg. 54",
+                "alt": "Starfinder #45: The Culling Shadow pg. 54",
+                "href": "https://paizo.com/products/btq02aji?Starfinder-Adventure-Path-45-The-Culling-Shadow"
+            },
+            "page": 54
+        }
+    ]
+}

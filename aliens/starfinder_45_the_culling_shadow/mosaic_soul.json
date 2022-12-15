@@ -1,0 +1,245 @@
+{
+    "name": "Mosaic Soul",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Mosaic souls are shattered collections of emotions left in the wake of deadly psychic magic or terrible Drift accidents that divide mind and soul. They appear as blurry abstract shapes, packed with spinning fragments of brilliant colors; true to their name, these undead creatures are often compared to mosaics, kaleidoscopes, or stained glass. They glow brightly, becoming painful to look at when they become agitated.<br/><br/> Although a single event might create multiple mosaic souls, they find the company of their own kind disagreeable. Unlike many undead, mosaic souls are driven by chaotic urges and dream logic, wandering far from their original creation site.<br/><br/> Followers of Pharasma have proven that repeated application of emotion-based magic along with traditional therapy can eventually unify a mosaic soul and allow it to pass on. Although the process is prohibitively expensive compared to simply destroying a mosaic soul, some Pharasmin priests believe saving such a tormented soul is worth any price."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mosaic Soul",
+        "type": "stat_block",
+        "cr": "8",
+        "role": "Expert",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "incorporeal"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (emotion) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 110,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 21
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "incorporeal",
+                "undead immunities"
+            ],
+            "weaknesses": [
+                "disorganized emotion"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "touch",
+                    "bonus": 17,
+                    "dc": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+8",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "mosaic touch"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "swirling colors"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": null,
+            "int": -1,
+            "wis": 2,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a mosaic soul fails a saving throw against an emotion effect, a single solid hue takes over its chaotic form, and magical attacks deal damage to it as though it wasn\u2019t incorporeal for 1d4 rounds. During this time, the mosaic soul can\u2019t use swirling colors to blind opponents.",
+                "name": "Disorganized Emotion",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The mosaic soul\u2019s touch unravels living targets into their component parts, leaving grievous wounds similar to acid burns. A living creature that takes Hit Point damage from the mosaic soul\u2019s touch must attempt a DC 18 Fortitude save. On a failure, the target takes 2d6 acid damage each round at the start of their turn, similar to the corrode critical hit effect.",
+                "name": "Mosaic Touch",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mosaic soul glows brightly, increasing the light by one level in a 50-foot radius. As a full action, a mosaic soul can unleash this radiance. Sighted creatures other than mosaic souls within 50 feet are blinded for 1 round unless they succeed at a DC 16 Fortitude save. Creatures that succeed at this save are immune to this effect from all mosaic souls for 24 hours.",
+                "name": "Swirling Colors",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #45: The Culling Shadow",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #45: The Culling Shadow pg. 57",
+                "alt": "Starfinder #45: The Culling Shadow pg. 57",
+                "href": "https://paizo.com/products/btq02aji?Starfinder-Adventure-Path-45-The-Culling-Shadow"
+            },
+            "page": 57
+        }
+    ]
+}

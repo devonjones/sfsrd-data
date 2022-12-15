@@ -1,0 +1,278 @@
+{
+    "name": "Hymothoa",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Pahtras are the most prominent of Vesk-6\u2019s (Near Space 50) native species, but they aren\u2019t the only intelligent creature that calls the planet home. Hymothoas are a species of sapient, parasitic oozes that dwell in the deepest and most remote swamps of Vesk-6. They\u2019re infamous for their ability to infest their prey; a hymothoa can seep into its victim\u2019s body and devour internal organs, bones, and even parts of the brain. The hymothoa then uses its extremely malleable body to mimic the function of those organs, essentially turning their victim into a barely living puppet. When the hymothoa abandons its host, the host almost always dies of massive organ damage on the spot. While countless stories exist of hymothoa-infested impostors lurking among the residents of a settlement, enacting nefarious schemes, in truth, little is known about why hymothoas infests certain creatures.<br/><br/> Though sapient, hymothoas have shown little interest in communicating with other species, and little is known of their society. It seems that to hymothoas, other sapient species aren\u2019t beings worthy of even the most minimum levels of interaction, and they have no qualms about infesting or consuming other intelligent life to further their mysterious goals."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hymothoa",
+        "type": "stat_block",
+        "cr": "9",
+        "role": "Expert",
+        "xp": 6400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Neutral Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Ooze",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aquatic"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 22
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 130,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 23
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "immunities": [
+                "ooze immunities"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 40 ft.",
+                        "movement_type": "swim",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "pseudopod",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+9",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "attach",
+                    "bonus": 19
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "infest"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "traumatize organs"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": 4,
+            "int": 2,
+            "wis": 1,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 17
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Pahtra"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vesk"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "amphibious"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Vesk-6)",
+            "organization": "solitary, pair, or nest (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A hymothoa can infest a helpless target no more than one size category larger or smaller than it by taking 10 minutes to slide into the target\u2019s body, devouring organs and replacing them with its own body. While infesting a creature, a hymothoa has total cover and takes no actions. However, it controls the infested creature\u2019s (host\u2019s) actions, including using equipment and weapons (using the hymothoa\u2019s attack bonus), using the hymothoa\u2019s or host\u2019s saving throw bonuses (whichever is higher), using the host\u2019s extraordinary abilities (but not its supernatural or spell-like abilities), and using the hymothoa\u2019s or host\u2019s natural attacks. A hymothoa isn\u2019t affected by any damage dealt to its host. When a hymothoa abandons its host, the host typically dies of organ damage instantly, though if they succeed at a DC 23 Fortitude save, they can stay alive for 1d4 minutes, during which time another character can attempt to stabilize them with a DC 28 Medicine check. A lengthy stay in a hospital is then necessary to replace any lost organs.",
+                "name": "Infest",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action while attached to or grappling a creature, the hymothoa can send thin pseudopods into the creature\u2019s mouth, nose, or open wounds to inflict terrible trauma on the creature\u2019s innards. The target takes 4d6+12 B damage and 1d8 bleed damage; a successful DC 18 Fortitude save halves the damage and negates the bleed damage.",
+                "name": "Traumatize Organs",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 154",
+                "alt": "Drift Crisis pg. 154",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 154
+        }
+    ]
+}

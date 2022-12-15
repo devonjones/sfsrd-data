@@ -1,0 +1,376 @@
+{
+    "name": "Moroi",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Vampires are undead creatures who feed on the blood of the living. They come in many varieties, differentiated by culture, species, and planet of origin, but the one described here is the most common variety; known as \u201cmoroi\u201d among their own kind, these creatures are synonymous with the word \u201cvampire\u201d throughout the Pact Worlds, Near Space, and the Vast.<br/><br/> Although a vampire has many well-known weaknesses, most can blend into mortal society and even carry on something like a normal life. They hide in their coffins by day, emerging at night to hunt for food, and are protected by mortal minions who willingly serve in the hope of one day being given immortality\u2014something that they might realize too late is more of a curse than a blessing.<br/><br/> Interstellar travel has enabled vampires to escape those who threaten them, and even avoid some of their most debilitating weaknesses; vampires justly fear the deadly light of the sun, but a vampire who lives on the dark side of Verces never has to worry about the dawn. Vampires have also discovered a new weakness since the Signal: similar to their old inability to cross running water, they can\u2019t willingly enter the Drift unless within the protection of their coffin. Sometimes, a vampire\u2019s coffin takes the shape of an arcane mortuary or cryo-chamber (Starship Operations Manual 24), some of which are equipped with cybernetic systems that enable the vampire to control the surrounding starship from within their coffin. As vampirism has spread to alien species, their association with bats, wolves, and other nocturnal creatures has expanded to include various alien fauna found in systems beyond the Pact Worlds."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Moroi",
+        "type": "stat_block",
+        "cr": "8",
+        "alien_family": "Vampire",
+        "role": "Combatant",
+        "xp": 4800,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead"
+        },
+        "grafts": [
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "shirren"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "graft",
+                "name": "moroi"
+            }
+        ],
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 125,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 20,
+                "kac": 22
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                "coffin restoration",
+                "fast healing 5"
+            ],
+            "dr": [
+                "5/magic and silver"
+            ],
+            "immunities": [
+                "undead immunities"
+            ],
+            "resistances": [
+                "cold 10",
+                "electricity 10"
+            ],
+            "weaknesses": [
+                "vampire weaknesses"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "spider climb"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 25,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+14",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "blood drain"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "communalism"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "dominate"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 4,
+            "con": null,
+            "int": 1,
+            "wis": 2,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 21
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "children of the night"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "limited telepathy (30 ft.)"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "children of the night"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "create spawn"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mist form"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "any"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a vampire successfully grapples a target, they can suck blood from their victim with their fangs. The victim must attempt a DC 16 Fortitude save; on a failure, it gains 1 negative level, and the vampire gains 5 temporary hit points that last for 1 hour (up to a maximum number of temporary hit points equal to their full normal hit points).",
+                "name": "Blood Drain",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A vampire can change shape into the form of one or more animals, typically a Small or Medium predator (Alien Archive 2 102) native to their home world. While in this animal shape, the vampire gains any senses, extraordinary abilities, and movement abilities of the animal. The vampire\u2019s gear disappears when the vampire assumes animal shape and returns when they returns to their normal form. This shirren vampire can turn into a Medium spider (low-light vision, climb 30 ft., bite inflicts piercing instead of slashing damage, and damaged creatures are exposed to turbocurarine [Character Operations Manual 127]) or a Small insect (low-light vision, fly 60 ft., stinger inflicts piercing instead of slashing damage).",
+                "name": "Change Shape",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The vampire\u2019s presence brings forth creatures of the night, typically Small or Medium predators or predator swarms (Alien Archive 2 102), to do their master\u2019s bidding. The vampire can give telepathic orders to these creatures as long as they\u2019re within 100 ft., but they can\u2019t communicate back.",
+                "name": "Children of the Night",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a vampire is reduced to 0 HP, they don\u2019t die. Instead, they fall unconscious. If they rest in their coffin for 1 hour, the vampire regains 1 HP, after which their fast healing functions normally.",
+                "name": "Coffin Restoration",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a creature dies from the vampire\u2019s blood drain ability, the vampire can turn this victim into a moroi vampire or vampire spawn by donating some of their blood to the victim and burying it in the ground for 3 days. If the new vampire is lower in CR than their creator, they\u2019re under the creator\u2019s control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a DC 16 Will save.",
+                "name": "Create Spawn",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A vampire can crush a humanoid opponent\u2019s will as a standard action, targeting a single creature within 30 ft. that must succeed at a DC 16 Will save or fall instantly under the vampire\u2019s influence, as though subject to dominate person (caster level 8th). A creature that successfully saves against this ability is immune to the vampire\u2019s dominate ability for 24 hours.",
+                "name": "Dominate",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A vampire can take a move action to transform into a cloud of mist, smoke, or other vapor. In this form, they\u2019re immune to physical damage, gain a fly speed of 30 ft., and can fit through any opening that isn\u2019t airtight. They can\u2019t make attacks or use any ability that requires a target to attempt a saving throw. While using this power, the vampire\u2019s fast healing doesn\u2019t function. The vampire can remain in mist form indefinitely and can return to their normal form with a move action.",
+                "name": "Mist Form",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Vampires have many distinctive weaknesses; some vampires can ignore or mitigate one or more of these weaknesses, but most can\u2019t. A vampire is held at bay by garlic or the holy symbol of a non-evil deity. They must stay at least 5 ft. from the object of their revulsion and can\u2019t touch or make melee attacks against a creature brandishing such an object. Holding a vampire at bay takes a standard action. After being held at bay for 1 round, a vampire can attempt a DC 22 Will save at the beginning of their turn to act normally. <ul> <li>A vampire can\u2019t enter a residence unless they\u2019re invited inside, can\u2019t enter any area filled with the smell of garlic, and can\u2019t voluntarily cross running water or enter the Drift unless transported while inside their coffin.</li> <li>A vampire exposed to direct sunlight is staggered; if exposed to direct sunlight for 2 consecutive rounds, the vampire is destroyed.</li> <li>A wooden stake driven through the heart of an unconscious vampire reduces the vampire to 0 HP and prevents them from healing above 0 HP, even in their coffin; if the stake is removed, the vampire can heal, and if the vampire is in their coffin, the 1-hour rest period begins once the stake is removed. If the vampire\u2019s head is severed and anointed with holy water while the stake is in place, the vampire is destroyed.</li> </ul>",
+                "name": "Vampire Weaknesses",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #42: Whispers of the Eclipse",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #42: Whispers of the Eclipse pg. 56",
+                "alt": "Starfinder #42: Whispers of the Eclipse pg. 56",
+                "href": "https://paizo.com/products/btq027nt/discuss?Starfinder-Adventure-Path-42-Whispers-of-the-Eclipse"
+            },
+            "page": 56
+        }
+    ]
+}

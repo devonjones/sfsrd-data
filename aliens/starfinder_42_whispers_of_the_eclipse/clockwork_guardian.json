@@ -1,0 +1,282 @@
+{
+    "name": "Clockwork Guardian",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "After leaving the Golarion system and founding New Thespera, the Azlanti who would become the cruel and infamous Star Empire expanded rapidly from their new home world\u2014to quickly supply sufficient personnel to every additional military installation across their solar system. To supplement ground forces, Azlanti engineers built clockwork guardians from precision-cut steel; the designs of these humanoid constructs included keen detection systems and powerful weapons. Just a few human Azlanti troops could hold a new base with the help of a team of clockwork guardians. The conquered people of the Aristia system quickly grew to recognize and fear the distinct sounds of clockwork guardians: an ever-present ticking that grows louder, but never faster, as they prepare for battle.<br/><br/> Powered by Azlanti clockwork, these constructs wind their own springs while moving, making them exceptionally energy-efficient. While nothing can self-power indefinitely, clockwork guardians can remain functional for an extremely long time without external winding. These constructs have visible clockworks and cogs over their entire forms, though with enough resiliency built in so that a single pebble or loose nut doesn\u2019t seize up the entire unit. Clockwork guardians intended for particularly harsh terrains sometimes have shells to protect their inner workings, but many military leaders of the Empire liked the aesthetic of the visible gears and requested such coverings to be made of clear crystal or plastic.<br/><br/> The Azlanti had several advanced models of clockwork guardians, outfitting them with wings, fins, or alternate weapons, depending on the terrain at their areas of deployment. These constructs have uses beyond combat, too. While not intelligent, clockwork guardians can be programmed by Azlanti engineers to carry out simple commands to help construct military bases, weapons, and starships. Such tasks usually included repetitive button-pushing or carrying heavy cargo from one place to another. It\u2019s little surprise that many of the Azlanti Star Empire\u2019s first flights with its early and dangerous faster-than-light drives included many of these expendable guardians as extra crew."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Clockwork Guardian",
+        "type": "stat_block",
+        "cr": "6",
+        "role": "Combatant",
+        "xp": 2400,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ]
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 13
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "low-light vision"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 90,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 3
+                }
+            },
+            "defensive_abilities": [
+                "integrated weapons",
+                "overwind"
+            ],
+            "dr": [
+                "5/\u2014"
+            ],
+            "immunities": [
+                "construct immunities"
+            ],
+            "weaknesses": [
+                "vulnerable to sonic"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slam",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+9",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "AG accelerator rifle",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "clockwork reload"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": null,
+            "int": null,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Azlanti"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "can\u2019t speak"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ],
+            "gear": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "gear",
+                    "name": "integrated AG accelerator rifle"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, squad (3\u20138), or troop (10\u2013100)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The clockwork guardian reloads its weapons with an integrated system powered by its own movement. When using a move action to move up to its speed, the clockwork guard can also reload its AG accelerator rifle.",
+                "name": "Clockwork Reload",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When the clockwork guardian is struck by a critical hit, its interior springs overwind, imposing excessive tension and energy on its system. As a full action before the end of its next turn, the clockwork guardian can wildly spin its torso and limbs, striking all adjacent creatures. This attack deals 1d6+9 bludgeoning damage to each creature (DC 14 Reflex half).",
+                "name": "Overwind",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #42: Whispers of the Eclipse",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #42: Whispers of the Eclipse pg. 52",
+                "alt": "Starfinder #42: Whispers of the Eclipse pg. 52",
+                "href": "https://paizo.com/products/btq027nt/discuss?Starfinder-Adventure-Path-42-Whispers-of-the-Eclipse"
+            },
+            "page": 52
+        }
+    ]
+}

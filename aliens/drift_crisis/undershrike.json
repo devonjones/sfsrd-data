@@ -1,0 +1,277 @@
+{
+    "name": "Undershrike",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Those who return from Absalom Station\u2019s Ghost Levels speak of haunting cryptids that feel their way through the tunnels with tapping tendrils and whose calls summon death. Known as undershrikes, these lanky creatures aimlessly patrol the Ghost Levels, slipping past obstacles almost like ghosts. To the myriad strange life-forms native to the Ghost Levels, undershrikes may as well be phantoms; the two barely seem to notice each other and respect one another when they do. However, undershrikes are territorial around unfamiliar beings, stalking them before either skewering the intruders just outside the Ghost Levels or screeching to attract local fauna to dispatch the trespassers. Rarely, a respectful explorer becomes accepted by undershrikes, who ignore the traveler as if they were one of the Ghost Level inhabitants.<br/><br/> When slain, an undershrike\u2019s body dissolves into the surrounding architecture, only to reform elsewhere on the station with its memories intact. Some of these reborn creatures develop a taste for revenge, slinking out from the Ghost Levels like eyeless revenants to track, torment, and murder their killers.<br/><br/> Undershrikes\u2019 origins are a mystery, with the most popular theories being they were convicts banished to the Ghost Levels during the Gap and transformed by something within the haunted halls. Undershrikes speak an unpredictable array of languages, yet seem to understand one another no matter which they\u2019re speaking, often cryptically discussing people, landmarks, and events unknown to history. Undershrikes who speak the same language seem so rare it might be there\u2019s only one such creature per language, reborn repeatedly."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Undershrike",
+        "type": "stat_block",
+        "cr": "5",
+        "role": "Expert",
+        "xp": 1600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "alignment": "Chaotic Neutral",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 16
+        },
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsight (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "sightless"
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 70,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 16,
+                "kac": 17
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                "fast healing 5"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+6",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tentacle",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+6",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with tentacle"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "screech"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "tentacle burst"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 3,
+            "con": 1,
+            "int": 0,
+            "wis": 5,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 11
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "any 1 language"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any underground (Absalom Station)",
+            "organization": "solitary, pair, or chorus (3\u20136)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an undershrike can screech discordantly. Creatures within 10 feet of the undershrike take 2d6 sonic damage, are staggered for 1 round, and are deafened for 1d4 rounds; with a successful DC 15 Fortitude save, a creature takes half damage, and negates the staggered and deafened effects. Under typical conditions, the screech is audible from 1,000 feet away. After screeching, an undershrike can\u2019t do so again for 1d6 rounds. Undershrikes are immune to each others\u2019 screech abilities.",
+                "name": "Screech",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, an undershrike can momentarily sprout a host of thin tendrils from its body that deal 1d6+6 slashing damage to all creatures in a 30\u2011foot cone (DC 15 Reflex half). If at least two creatures fail the saving throw, the undershrike can use its screech ability as swift action instead of as a standard action until the end of its next turn. Once it uses its tendril burst, an undershrike can\u2019t do so again for 1d6 rounds.",
+                "name": "Tendril Burst",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 165",
+                "alt": "Drift Crisis pg. 165",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 165
+        }
+    ]
+}

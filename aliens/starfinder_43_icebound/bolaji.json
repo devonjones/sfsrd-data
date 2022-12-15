@@ -1,0 +1,289 @@
+{
+    "name": "Bolaji",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Some scientists call the bolaji the truest incarnation of the Swarm, since the creature is itself made up of thousands of insect-sized Swarm components. Together, these tiny creatures combine into a single deadly being capable of shredding most humanoids in seconds with its long, scythe-like claws and razor-sharp mandibles. When sorely hurt, the bolaji breaks apart into its many components, allowing it to flee into tiny spaces where its enemies can rarely follow. Once in hiding, the surviving components rapidly multiply to rebuild the bolaji\u2019s body, and soon it returns to kill again.<br/><br/> The bolaji is a cunning hunter, almost soundless in its movement, and capable of rigging traps and other devices of great technical complexity. Subtle telepathic emanations create an unspeakable fear in all who see one. Bolajis move ahead of Swarm invasions, gathering intelligence and waging guerrilla campaigns of terror and chaos. Often, they construct signal devices that help Swarm starships target strategic objectives. After an invasion is complete and the Swarm depart the ruined husk of a world, bolajis are sometimes left behind, where they linger in a torpor-like state until interstellar travelers arrive to seek survivors or scavenge the wreckage. Then, the bolajis awaken, sneak aboard the newly arrived vessel, and begin a new murder spree.<br/><br/> Swarm scholars believe that this particular variation of the creatures appeared only after the Swarm consumed a research station staffed by several hundred spathinae (Alien Archive 3 101)."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Bolaji",
+        "type": "stat_block",
+        "cr": "10",
+        "alien_family": "The Swarm",
+        "role": "Combatant",
+        "xp": 9600,
+        "initiative": {
+            "name": "Initiative",
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "alignment": "Chaotic Evil",
+        "size": "Medium",
+        "creature_type": {
+            "name": "creature_type",
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid"
+        },
+        "perception": {
+            "name": "Perception",
+            "type": "stat_block_section",
+            "subtype": "perception",
+            "value": 19
+        },
+        "aura": "frightful presence (30 ft., Will DC 17)",
+        "senses": [
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "blindsense (vibration) 30 ft."
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "sense",
+                "name": "darkvision 60 ft."
+            }
+        ],
+        "defense": {
+            "name": "Defense",
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": 165,
+            "ac": {
+                "name": "AC",
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "name": "Saves",
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                "discorporate",
+                "Swarm mind"
+            ],
+            "immunities": [
+                "acid",
+                "fear effects"
+            ]
+        },
+        "offense": {
+            "name": "Offense",
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "name": "Speed",
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "spider climb"
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+18",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 23,
+                    "dc": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+18",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "grab"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "space": "5 ft.",
+            "reach": {
+                "name": "Reach",
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "10 ft. with claw"
+                    }
+                ],
+                "value": "5 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "value": "carry off"
+                }
+            ]
+        },
+        "statistics": {
+            "name": "Statistics",
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 5,
+            "con": 3,
+            "int": 1,
+            "wis": 2,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "name": "Skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "name": "Languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "telepathy (100 ft.)"
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "name": "Ecology",
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary or clutch (2\u20134)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a full action, a bolaji can renew a grapple or pin on a creature its size or smaller, and move up to its speed, dragging the grappled or pinned creature with it.",
+                "name": "Carry Off",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a bolaji is reduced to 0 Hit Points, it doesn\u2019t die unless it was reduced to 0 Hit Points by an area effect. Instead, it immediately breaks apart into a swarm of Fine components (no larger than an ordinary insect) with an extraordinary fly speed of 30 feet with perfect maneuverability, and it can move up to that speed as a reaction. In its discorporated state, the Swarm bolaji can\u2019t attack, activate items, or manipulate objects, but it gains swarm defenses, swarm immunities, and regeneration 10 (area effects). It can return to its normal form at any time as a full action, but automatically does so when it returns to full Hit Points.",
+                "name": "Discorporate",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #43: Icebound",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #43: Icebound pg. 58",
+                "alt": "Starfinder #43: Icebound pg. 58",
+                "href": "https://paizo.com/products/btq027tz?Starfinder-Adventure-Path-43-Icebound"
+            },
+            "page": 58
+        }
+    ]
+}
