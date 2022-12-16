@@ -36,25 +36,30 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 24
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 24
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 120 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
         },
         "aura": "calming presence (30 ft., Will DC 19)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 120 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

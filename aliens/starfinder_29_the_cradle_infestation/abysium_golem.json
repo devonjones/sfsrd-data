@@ -42,25 +42,30 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 22
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 22
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
         },
         "aura": "radioactive (high, 10 ft., DC 22)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

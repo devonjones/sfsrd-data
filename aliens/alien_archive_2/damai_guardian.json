@@ -48,24 +48,29 @@
                 "name": "mystic"
             }
         ],
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 27
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "greater emotionsense"
+                "subtype": "perception",
+                "value": 27
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "greater emotionsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

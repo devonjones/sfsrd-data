@@ -29,25 +29,30 @@
             "subtype": "creature_type",
             "creature_type": "Fey"
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 5
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 5
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "<i>detect tech</i> (starships and their integrated systems only)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
         },
         "aura": "disaster (30 ft.)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "<i>detect tech</i> (starships and their integrated systems only)"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

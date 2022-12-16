@@ -29,25 +29,30 @@
             "subtype": "creature_type",
             "creature_type": "Aberration"
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 28
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 28
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight (life) 60 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                }
+            ]
         },
         "aura": "stench (10 ft., DC 22)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight (life) 60 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

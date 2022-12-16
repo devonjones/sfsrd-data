@@ -42,24 +42,29 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 14
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight 60 ft. (ground vibration)"
+                "subtype": "perception",
+                "value": 14
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight 60 ft. (ground vibration)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

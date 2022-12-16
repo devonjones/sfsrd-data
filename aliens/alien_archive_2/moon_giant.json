@@ -36,30 +36,35 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 31
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 31
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sense through (vision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "60 ft.)"
+                }
+            ]
         },
         "aura": "lunar (60 ft., DC 21)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sense through (vision"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "60 ft.)"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

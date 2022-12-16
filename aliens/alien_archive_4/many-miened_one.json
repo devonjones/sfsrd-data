@@ -42,39 +42,44 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 37
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 37
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsense (vibration) 60 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight (thought"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "gibbous phase only) 200 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low light vision"
+                }
+            ]
         },
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsense (vibration) 60 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight (thought"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "gibbous phase only) 200 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low light vision"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

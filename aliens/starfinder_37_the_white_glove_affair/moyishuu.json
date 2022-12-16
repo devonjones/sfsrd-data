@@ -41,24 +41,29 @@
                 "name": "envoy"
             }
         ],
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 14
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsense (emotion) 10 ft."
+                "subtype": "perception",
+                "value": 14
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "low-light vision"
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsense (emotion) 10 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

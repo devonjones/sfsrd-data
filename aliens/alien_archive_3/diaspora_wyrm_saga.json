@@ -36,24 +36,29 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 29
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight 300 ft. (electromagnetism)"
+                "subtype": "perception",
+                "value": 29
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sightless"
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight 300 ft. (electromagnetism)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sightless"
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

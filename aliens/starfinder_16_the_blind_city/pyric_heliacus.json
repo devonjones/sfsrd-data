@@ -29,35 +29,40 @@
             "subtype": "creature_type",
             "creature_type": "Undead"
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 19
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 19
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 120 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "see in darkness"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "<i>see invisibility</i>"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sense through (life) 30 ft."
+                }
+            ]
         },
         "aura": "alien presence (10 ft., DC 19, sickened 1 round)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 120 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "see in darkness"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "<i>see invisibility</i>"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sense through (life) 30 ft."
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

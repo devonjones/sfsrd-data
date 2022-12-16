@@ -53,19 +53,24 @@
                 "name": "mechanic"
             }
         ],
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 8
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsense (vibration) 30 ft."
-            }
-        ],
+                "subtype": "perception",
+                "value": 8
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsense (vibration) 30 ft."
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

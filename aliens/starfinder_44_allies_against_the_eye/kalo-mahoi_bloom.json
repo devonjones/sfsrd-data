@@ -41,24 +41,29 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 23
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsense (emotion) 5 ft."
+                "subtype": "perception",
+                "value": 23
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sightless"
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsense (emotion) 5 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sightless"
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

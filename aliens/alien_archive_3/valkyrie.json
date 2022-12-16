@@ -42,24 +42,29 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 22
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
+                "subtype": "perception",
+                "value": 22
             },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "death sense 30 ft."
-            }
-        ],
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "death sense 30 ft."
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

@@ -36,25 +36,30 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 8
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 8
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight (vibration) 60 ft."
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sightless"
+                }
+            ]
         },
         "aura": "melting aura (5 ft., 1d4 F)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight (vibration) 60 ft."
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sightless"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

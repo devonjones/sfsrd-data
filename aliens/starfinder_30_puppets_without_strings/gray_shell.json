@@ -36,19 +36,24 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 23
-        },
-        "senses": [
-            {
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
                 "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
-            }
-        ],
+                "subtype": "perception",
+                "value": 23
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                }
+            ]
+        },
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

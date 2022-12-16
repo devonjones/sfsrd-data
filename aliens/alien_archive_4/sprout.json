@@ -36,29 +36,34 @@
                 }
             ]
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 4
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 4
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsense 30 ft. (sound)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "blindsight 5 ft. (sound)"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "sightless"
+                }
+            ]
         },
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsense 30 ft. (sound)"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "blindsight 5 ft. (sound)"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "sightless"
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

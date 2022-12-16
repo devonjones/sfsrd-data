@@ -29,20 +29,25 @@
             "subtype": "creature_type",
             "creature_type": "Undead"
         },
-        "perception": {
-            "name": "Perception",
+        "senses": {
+            "name": "Senses",
             "type": "stat_block_section",
-            "subtype": "perception",
-            "value": 20
+            "subtype": "senses",
+            "perception": {
+                "name": "Perception",
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 20
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "darkvision 60 ft."
+                }
+            ]
         },
         "aura": "frightful presence (30 ft., DC 20)",
-        "senses": [
-            {
-                "type": "stat_block_section",
-                "subtype": "sense",
-                "name": "darkvision 60 ft."
-            }
-        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",
