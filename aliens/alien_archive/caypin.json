@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Caypin",
         "type": "stat_block",
-        "cr": "6",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Caypin",
             "game-obj": "Monster",
             "image": "AA1_Caypin.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

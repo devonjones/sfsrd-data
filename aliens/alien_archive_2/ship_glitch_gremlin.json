@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ship Glitch Gremlin",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Gremlin",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Ship Glitch Gremlin",
             "game-obj": "Monster",
             "image": "AA2_Gremlin_Ship_Glitch.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Chaotic Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Chaotic Evil",
+            "size": "Small",
+            "alien_family": "Gremlin",
+            "cr": "1",
+            "role": "Spellcaster",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Special Ops",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Copaxi",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Special Ops",
             "game-obj": "Monster",
             "image": "AA4_Copaxi_Special_Ops.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "copaxi"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Copaxi",
+            "cr": "4",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "copaxi"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "solarian"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "copaxi"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "solarian"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -198,6 +198,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "graphite carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "minor muon crystalR"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -276,23 +293,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "stellar alignment"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "graphite carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "minor muon crystalR"
                 }
             ]
         },

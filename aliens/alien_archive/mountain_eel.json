@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Mountain Eel",
         "type": "stat_block",
-        "cr": "6",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Mountain Eel",
             "game-obj": "Monster",
             "image": "AA1_Mountain_Eel.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

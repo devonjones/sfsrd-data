@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Wysp Conductor",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Wysp",
-        "role": "Expert",
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -33,20 +27,26 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Wysp",
+            "cr": "8",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "wysp"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "wysp"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",

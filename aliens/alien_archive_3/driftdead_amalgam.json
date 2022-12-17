@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Driftdead Amalgam",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Driftdead",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Driftdead Amalgam",
             "game-obj": "Monster",
             "image": "AA3_Driftdead_Amalgam.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Driftdead",
+            "cr": "13",
+            "role": "Combatant",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",

@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Anacite Ambassador",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Anacite",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Anacite Ambassador",
             "game-obj": "Monster",
             "image": "AA2_Anacite_Ambassador.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -41,7 +35,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Anacite",
+            "cr": "6",
+            "role": "Expert",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

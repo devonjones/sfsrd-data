@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Gathol",
         "type": "stat_block",
-        "cr": "3",
-        "role": "Combatant",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +29,25 @@
                     "subtype": "creature_subtype",
                     "name": "gathol"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "3",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "gathol"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "vanguard"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "gathol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "vanguard"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -243,6 +243,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "regimental dress I (jump jets)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic tactical shield"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flash compliance ray with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "liquidator disintegration lash AR with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -331,28 +353,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "vanguard disciplines (metabolic stability)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "regimental dress I (jump jets)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic tactical shield"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flash compliance ray with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "liquidator disintegration lash AR with 1 battery (20 charges)"
                 }
             ]
         },

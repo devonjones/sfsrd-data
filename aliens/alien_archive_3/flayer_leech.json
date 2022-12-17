@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Flayer Leech",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Flayer Leech",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Flayer Leech",
             "game-obj": "Monster",
             "image": "AA3_Flayer_Leech.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Flayer Leech",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

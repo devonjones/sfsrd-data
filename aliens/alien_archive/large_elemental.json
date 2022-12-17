@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Large Elemental",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Elemental",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Large Elemental",
             "game-obj": "Monster",
             "image": "AA1_Elemental2.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Elemental",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

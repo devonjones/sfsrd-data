@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Free Captain",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Free Captains",
-        "role": "Expert",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "kasatha"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Free Captains",
+            "cr": "4",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kasatha"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kasatha"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -181,6 +181,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "defrex hide"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades II (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -283,28 +305,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "four-armed"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "defrex hide"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades II (2)"
                 }
             ]
         }

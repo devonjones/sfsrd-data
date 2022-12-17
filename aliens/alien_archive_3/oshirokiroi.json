@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Oshirokiroi",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Irokiroi",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Oshirokiroi",
             "game-obj": "Monster",
             "image": "AA3_Irokiroi.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "alien_family": "Irokiroi",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

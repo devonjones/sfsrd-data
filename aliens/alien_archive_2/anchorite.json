@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Anchorite",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Velstrac",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Anchorite",
             "game-obj": "Monster",
             "image": "AA2_Velstrac_Anchorite.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -49,7 +43,13 @@
                     "subtype": "creature_subtype",
                     "name": "lawful"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Velstrac",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -229,6 +229,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "velstrac harness (functions as defrex hide)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical acid dart rifle with 20 darts"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ascetic velstrac flenser (see page 129) with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades II (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -296,29 +318,7 @@
                         "name": "telepathy 30 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "velstrac harness (functions as defrex hide)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical acid dart rifle with 20 darts"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ascetic velstrac flenser (see page 129) with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades II (2)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

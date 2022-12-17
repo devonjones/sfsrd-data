@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Night Hag",
         "type": "stat_block",
-        "cr": "9",
-        "role": "Spellcaster",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +34,12 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "9",
+            "role": "Spellcaster",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -216,6 +216,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "gold AbadarCorp travel suit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aphelion laser pistol with 1 high-capacity battery (40 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "incapacitator with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>heartstone</i>"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -305,28 +327,6 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "<i>heartstone</i>"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "gold AbadarCorp travel suit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "aphelion laser pistol with 1 high-capacity battery (40 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "incapacitator with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
                     "name": "<i>heartstone</i>"
                 }
             ]

@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Mining",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Robot",
-        "role": "Combatant",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,7 +29,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Robot",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -217,6 +217,18 @@
                 "value": "10 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "andesite magma blade with 3 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "LFD screamer with 2 super-capacity batteries (80 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -269,18 +281,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "andesite magma blade with 3 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "LFD screamer with 2 super-capacity batteries (80 charges each)"
                 }
             ]
         },

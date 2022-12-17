@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Broodling",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Vasporan",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Broodling",
             "game-obj": "Monster",
             "image": "AA4_Vasporan.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Vasporan",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

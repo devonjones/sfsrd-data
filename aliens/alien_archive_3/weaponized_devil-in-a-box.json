@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Weaponized Devil-in-a-box",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Weaponized Toy",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Weaponized Devil-in-a-box",
             "game-obj": "Monster",
             "image": "AA3_Weaponized_Toy_Devil-in-a-Box.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Weaponized Toy",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",

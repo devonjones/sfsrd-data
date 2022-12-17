@@ -5,23 +5,23 @@
     "stat_block": {
         "name": "Necropede",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Vermin (Space)",
-        "role": "Combatant",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Vermin (Space)",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",

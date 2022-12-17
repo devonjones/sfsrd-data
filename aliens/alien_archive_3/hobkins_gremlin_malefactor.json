@@ -12,29 +12,29 @@
     "stat_block": {
         "name": "Hobkins Gremlin Malefactor",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Gremlin",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Hobkins Gremlin Malefactor",
             "game-obj": "Monster",
             "image": "AA3_Gremlin_Hobkins_Malefactor.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "alien_family": "Gremlin",
+            "cr": "4",
+            "role": "Spellcaster",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

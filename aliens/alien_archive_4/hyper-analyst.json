@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Hyper-analyst",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Hadrogaan",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Hyper-analyst",
             "game-obj": "Monster",
             "image": "AA4_Hadrogaan_Hyper-Analyst.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +28,31 @@
                     "subtype": "creature_subtype",
                     "name": "hadrogaan"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Hadrogaan",
+            "cr": "3",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "luma"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hadrogaan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "luma"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hadrogaan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -190,6 +190,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "casual stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -275,23 +292,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "mechanic tricks (portable power)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "casual stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
                 }
             ],
             "augmentations": [

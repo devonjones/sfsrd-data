@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Ja Noi",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Oni",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ja Noi",
             "game-obj": "Monster",
             "image": "AA2_Oni_Ja_Noi.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -49,7 +43,13 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Oni",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",
@@ -203,6 +203,23 @@
                 "value": "5 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta ringwear II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical swoop hammer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic rifle with 2 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -260,23 +277,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "change shape (Small or Medium humanoid)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "lashunta ringwear II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical swoop hammer"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic rifle with 2 high-capacity batteries (40 charges each)"
                 }
             ]
         },

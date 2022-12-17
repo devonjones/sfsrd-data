@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Time Dimensional",
         "type": "stat_block",
-        "cr": "14",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Time Dimensional",
             "game-obj": "Monster",
             "image": "AA3_Time_Dimensional.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "14",
+            "role": "Expert",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",

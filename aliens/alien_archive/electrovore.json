@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Electrovore",
         "type": "stat_block",
-        "cr": "2",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Electrovore",
             "game-obj": "Monster",
             "image": "AA1_Electrovore.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Small",
+            "cr": "2",
+            "role": "Expert",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",

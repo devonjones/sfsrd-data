@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Ursikka",
         "type": "stat_block",
-        "cr": "10",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ursikka",
             "game-obj": "Monster",
             "image": "AA4_Ursikka.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Reptoid Host",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Dycepskian",
-        "role": "Expert",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -38,25 +32,31 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Dycepskian",
+            "cr": "6",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "dycepskian-infested"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "reptoid"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "dycepskian-infested"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "reptoid"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -219,6 +219,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -303,23 +320,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (spy)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "survival knife"
                 }
             ]
         },

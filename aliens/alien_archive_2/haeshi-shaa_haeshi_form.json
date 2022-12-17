@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Haeshi-Shaa (Haeshi Form)",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Haeshi-Shaa",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Haeshi-Shaa (Haeshi Form)",
             "game-obj": "Monster",
             "image": "AA2_Haeshi-Shaa.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Chaotic Evil",
+            "size": "Large",
+            "alien_family": "Haeshi-Shaa",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

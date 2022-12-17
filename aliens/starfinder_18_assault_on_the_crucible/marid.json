@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Marid",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Genie",
-        "role": "Combatant",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +39,13 @@
                     "subtype": "creature_subtype",
                     "name": "water"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Large",
+            "alien_family": "Genie",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -210,6 +210,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "gold AbadarCorp travel suit"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -306,13 +313,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "change shape (humanoid)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "gold AbadarCorp travel suit"
                 }
             ]
         },

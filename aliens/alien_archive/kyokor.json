@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Kyokor",
         "type": "stat_block",
-        "cr": "20",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Kyokor",
             "game-obj": "Monster",
             "image": "AA1_Kyokor.png"
         },
-        "xp": 307200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Chaotic Evil",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "colossus"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Colossal",
+            "cr": "20",
+            "role": "Combatant",
+            "xp": 307200
         },
         "senses": {
             "name": "Senses",

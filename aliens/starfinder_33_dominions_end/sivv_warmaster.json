@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Sivv Warmaster",
         "type": "stat_block",
-        "cr": "17",
-        "role": "Combatant",
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "sivv"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "cr": "17",
+            "role": "Combatant",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",
@@ -262,6 +262,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vitrum plate"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "military quantum entangler with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "military degenerator rifle with 2 highcapacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mutation gun (page 49) with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "degeneration grenades (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -326,33 +353,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "quantum storage"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vitrum plate"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "military quantum entangler with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "military degenerator rifle with 2 highcapacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mutation gun (page 49) with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "degeneration grenades (2)"
                 }
             ]
         },

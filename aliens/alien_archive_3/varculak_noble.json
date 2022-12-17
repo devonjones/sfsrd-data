@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Varculak Noble",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Varculak",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Varculak Noble",
             "game-obj": "Monster",
             "image": "AA3_Varculak_Noble.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "alien_family": "Varculak",
+            "cr": "12",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "varculak"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 19200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "varculak"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -187,6 +187,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "platinum AbadarCorp travel suit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced tetrad rings with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultrathin dueling sword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -281,23 +298,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unnerving visage (ysoki)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "platinum AbadarCorp travel suit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced tetrad rings with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultrathin dueling sword"
                 }
             ]
         },

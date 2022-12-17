@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ancient",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Lumocantha",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ancient",
             "game-obj": "Monster",
             "image": "AA4_Lumocantha.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Lumocantha",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

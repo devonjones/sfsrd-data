@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Thasteron Khefak",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Khefak",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Thasteron Khefak",
             "game-obj": "Monster",
             "image": "AA2_Khefak.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Khefak",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",

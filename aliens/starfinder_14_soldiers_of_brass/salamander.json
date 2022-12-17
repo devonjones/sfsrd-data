@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Salamander",
         "type": "stat_block",
-        "cr": "6",
-        "role": "Combatant",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +34,12 @@
                     "subtype": "creature_subtype",
                     "name": "fire"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -216,6 +216,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical pike multitool with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc rifle with 2 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -267,24 +284,7 @@
                         "name": "Ignan"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical pike multitool with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc rifle with 2 high-capacity batteries (40 charges each)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

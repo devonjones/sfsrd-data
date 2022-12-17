@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Hashukayak",
         "type": "stat_block",
-        "cr": "5",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Hashukayak",
             "game-obj": "Monster",
             "image": "AA2_Hashukayak.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

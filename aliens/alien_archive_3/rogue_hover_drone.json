@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Rogue Hover Drone",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Rogue Drone",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Rogue Hover Drone",
             "game-obj": "Monster",
             "image": "AA3_Rogue_Drone_Hover.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Rogue Drone",
+            "cr": "6",
+            "role": "Expert",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -146,6 +146,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>merciful tactical rotating pistol</i> with 20 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 2 nanite patch"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -209,18 +221,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>merciful tactical rotating pistol</i> with 20 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 2 nanite patch"
                 }
             ]
         },

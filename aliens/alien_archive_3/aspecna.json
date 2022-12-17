@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Aspecna",
         "type": "stat_block",
-        "cr": "18",
-        "alien_family": "Spectra",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Aspecna",
             "game-obj": "Monster",
             "image": "AA3_Spectra_Aspecna.png"
         },
-        "xp": 153600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "spectra"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Spectra",
+            "cr": "18",
+            "role": "Spellcaster",
+            "xp": 153600
         },
         "senses": {
             "name": "Senses",

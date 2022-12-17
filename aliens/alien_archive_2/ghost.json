@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Ghost",
         "type": "stat_block",
-        "cr": "7",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Ghost",
             "game-obj": "Monster",
             "image": "AA2_Ghost.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,25 +35,30 @@
                     "subtype": "creature_subtype",
                     "name": "incorporeal"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "cr": "7",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "male"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ghost"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 3200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "male"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ghost"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",

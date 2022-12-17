@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Drow Enforcer",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Drow",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Drow Enforcer",
             "game-obj": "Monster",
             "image": "AA1_Drow_Enforcer.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "elf"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Drow",
+            "cr": "1",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "drow"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "drow"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -228,6 +228,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta ringwear I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser rifle with 4 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "shock grenades I (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "standard taclash"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -279,29 +301,7 @@
                         "name": "Drow"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "lashunta ringwear I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "azimuth laser rifle with 4 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "shock grenades I (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "standard taclash"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

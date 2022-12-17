@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Lumyr",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Sombrian",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Lumyr",
             "game-obj": "Monster",
             "image": "AA4_Sombrian_Lumyr.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Sombrian",
+            "cr": "8",
+            "role": "Spellcaster",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",

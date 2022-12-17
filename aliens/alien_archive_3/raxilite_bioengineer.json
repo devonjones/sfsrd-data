@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Raxilite Bioengineer",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Raxilite",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Raxilite Bioengineer",
             "game-obj": "Monster",
             "image": "AA3_Raxilite_Bioengineer.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Raxilite",
+            "cr": "4",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "raxilite"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "raxilite"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -195,6 +195,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical switchblade"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -294,23 +311,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "mechanic tricks (distracting hack, overcharge)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic lashunta tempweave"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical switchblade"
                 }
             ]
         },

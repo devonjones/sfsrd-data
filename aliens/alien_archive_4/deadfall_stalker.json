@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Deadfall Stalker",
         "type": "stat_block",
-        "cr": "12",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Deadfall Stalker",
             "game-obj": "Monster",
             "image": "AA4_Deadfall_Stalker.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Chaotic Neutral",
+            "size": "Large",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

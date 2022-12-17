@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Alural War Wolliped",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Wolliped",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Alural War Wolliped",
             "game-obj": "Monster",
             "image": "AA3_Wolliped_Aluural_War.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Wolliped",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -182,6 +182,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pinion skyfire armor"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -216,13 +223,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "cold inured"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pinion skyfire armor"
                 }
             ]
         },

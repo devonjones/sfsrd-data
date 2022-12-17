@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Endbringer Devil (Dhalochar)",
         "type": "stat_block",
-        "cr": "19",
-        "alien_family": "Devil",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Endbringer Devil (Dhalochar)",
             "game-obj": "Monster",
             "image": "AA1_Devil_Endbringer.png"
         },
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Evil",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -56,7 +50,13 @@
                     "subtype": "creature_subtype",
                     "name": "lawful"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Colossal",
+            "alien_family": "Devil",
+            "cr": "19",
+            "role": "Combatant",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",

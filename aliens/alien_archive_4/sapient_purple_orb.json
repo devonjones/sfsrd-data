@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Sapient Purple Orb",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Sapient Purple Orb",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Sapient Purple Orb",
             "game-obj": "Monster",
             "image": "AA4_Sapient_Purple_Orb.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral Good",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral Good",
+            "size": "Small",
+            "alien_family": "Sapient Purple Orb",
+            "cr": "4",
+            "role": "Spellcaster",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

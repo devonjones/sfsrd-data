@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Phentomite Bridger",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Phentomite",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Phentomite Bridger",
             "game-obj": "Monster",
             "image": "AA2_Phentomite_Bridger.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "phentomite"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Phentomite",
+            "cr": "6",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "phentomite"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "phentomite"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -205,6 +205,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical semi-auto pistol with 27 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical shirren-eye rifle with 20 sniper rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -286,28 +308,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (daredevil)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical semi-auto pistol with 27 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical shirren-eye rifle with 20 sniper rounds"
                 }
             ]
         },

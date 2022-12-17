@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Security Specialist",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Security Forces",
-        "role": "Spellcaster",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "android"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Security Forces",
+            "cr": "3",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "android"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "android"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -194,6 +194,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "casual stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "manacles"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "personal comm unit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tool kit (hacking)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -300,33 +327,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "upgrade slot (jump jets)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "casual stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "manacles"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "personal comm unit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tool kit (hacking)"
                 }
             ]
         }

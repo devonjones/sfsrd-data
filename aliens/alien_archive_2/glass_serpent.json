@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Glass Serpent",
         "type": "stat_block",
-        "cr": "5",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Glass Serpent",
             "game-obj": "Monster",
             "image": "AA2_Glass_Serpent.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Oread",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Planar Scion",
-        "role": "Combatant",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Planar Scion",
+            "cr": "1",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "oread"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "oread"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -203,6 +203,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta ringwear I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "assault hammer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "utility scattergun with 8 shells"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stickybomb grenades I (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -260,28 +282,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor training"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "lashunta ringwear I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "assault hammer"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "utility scattergun with 8 shells"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stickybomb grenades I (2)"
                 }
             ]
         },

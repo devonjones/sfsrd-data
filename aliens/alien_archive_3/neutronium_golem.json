@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Neutronium Golem",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Golem",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Neutronium Golem",
             "game-obj": "Monster",
             "image": "AA3_Golem_Neutronium.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -46,7 +40,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Golem",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

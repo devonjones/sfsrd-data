@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Drift Saboteur",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Expert",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +29,25 @@
                     "subtype": "creature_subtype",
                     "name": "human"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "4",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "human"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "human"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -200,6 +200,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sledge"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tool kit (engineering kit)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -308,28 +330,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "mechanic tricks (overload weapon)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic lashunta tempweave"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sledge"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tool kit (engineering kit)"
                 }
             ]
         },

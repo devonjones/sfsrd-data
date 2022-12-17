@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Raxilite Researcher",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Raxilite",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Raxilite Researcher",
             "game-obj": "Monster",
             "image": "AA3_Raxilite_Researcher.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Raxilite",
+            "cr": "1/2",
+            "role": "Expert",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -157,6 +157,23 @@
                 "value": "0 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "standard taclash"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -231,23 +248,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "LFAN symbiosis"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "standard taclash"
                 }
             ]
         },

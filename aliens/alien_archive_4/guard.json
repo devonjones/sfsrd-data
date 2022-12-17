@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Guard",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Kiirinta",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Guard",
             "game-obj": "Monster",
             "image": "AA4_Kiirinta_Guard.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "alien_family": "Kiirinta",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",
@@ -166,6 +166,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical rail gunAR with 24 longarm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -224,24 +241,7 @@
                         "name": "limited telepathy 30 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical rail gunAR with 24 longarm rounds"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

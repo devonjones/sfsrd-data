@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Corpsefolk Operative",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Corpsefolk",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Corpsefolk Operative",
             "game-obj": "Monster",
             "image": "AA2_Corpsefolk_Operative.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Corpsefolk",
+            "cr": "3",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "corpsefolk"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "corpsefolk"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -190,6 +190,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "graphite carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical shirren-eye rifle with 25 sniper rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -258,28 +280,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "graphite carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "survival knife"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical shirren-eye rifle with 25 sniper rounds"
                 }
             ]
         },

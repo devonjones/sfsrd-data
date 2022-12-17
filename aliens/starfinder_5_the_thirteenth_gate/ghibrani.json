@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Ghibrani",
         "type": "stat_block",
-        "cr": "3",
-        "role": "Spellcaster",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +29,30 @@
                     "subtype": "creature_subtype",
                     "name": "ghibrani"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "3",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "membrane"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ghibrani"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "membrane"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ghibrani"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -201,6 +201,23 @@
             ],
             "connection": "empath"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "casual stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "battle staff"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -264,23 +281,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "greater mindlink"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "casual stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "battle staff"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 2 batteries (20 charges each)"
                 }
             ]
         },

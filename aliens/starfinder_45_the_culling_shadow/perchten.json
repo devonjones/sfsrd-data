@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Perchten",
         "type": "stat_block",
-        "cr": "9",
-        "role": "Combatant",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +29,25 @@
                     "subtype": "creature_subtype",
                     "name": "cold"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "cr": "9",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "perchten"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "perchten"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -215,6 +215,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "night plate I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "acolyte shadow chains"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "perchten prison crystal"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -287,23 +304,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "rune of the eldritch knight"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "night plate I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "acolyte shadow chains"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "perchten prison crystal"
                 }
             ]
         },

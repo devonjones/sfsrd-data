@@ -12,23 +12,23 @@
     "stat_block": {
         "name": "Voidshard",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Vampire",
-        "role": "Combatant",
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Vampire",
+            "cr": "8",
+            "role": "Combatant",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",
@@ -241,6 +241,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced lashunta tempweave (black force field)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "gelid hail pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -309,18 +321,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced lashunta tempweave (black force field)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "gelid hail pistol with 2 batteries (20 charges each)"
                 }
             ]
         },

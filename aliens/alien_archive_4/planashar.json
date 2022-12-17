@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Planashar",
         "type": "stat_block",
-        "cr": "17",
-        "alien_family": "Planashar",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Planashar",
             "game-obj": "Monster",
             "image": "AA4_Planashar.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -46,7 +40,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Small",
+            "alien_family": "Planashar",
+            "cr": "17",
+            "role": "Spellcaster",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",

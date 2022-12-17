@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Hobgoblin Lieutenant",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Hobgoblin",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Hobgoblin Lieutenant",
             "game-obj": "Monster",
             "image": "AA2_Hobgoblin_Lieutenant.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "goblinoid"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Hobgoblin",
+            "cr": "7",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hobgoblin"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 3200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hobgoblin"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -235,6 +235,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "golemforged plating III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser rifle with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sintered longsword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stickybomb grenades II (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -286,29 +308,7 @@
                         "name": "Goblin"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "golemforged plating III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser rifle with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sintered longsword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stickybomb grenades II (2)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

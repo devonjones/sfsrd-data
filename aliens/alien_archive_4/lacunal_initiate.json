@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Lacunal Initiate",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Lacunal Collector",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Lacunal Initiate",
             "game-obj": "Monster",
             "image": "AA4_Lacunal_Collector_Initiate.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "android"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Lacunal Collector",
+            "cr": "1",
+            "role": "Spellcaster",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -181,6 +181,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "battle staff"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "subzero hail pistolR with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -248,23 +265,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "battle staff"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "subzero hail pistolR with 2 batteries (20 charges each)"
                 }
             ],
             "augmentations": [

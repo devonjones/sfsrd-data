@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Space Goblin Honchohead",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Goblin (Space)",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Space Goblin Honchohead",
             "game-obj": "Monster",
             "image": "AA1_Goblin_Space.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "goblinoid"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "alien_family": "Goblin (Space)",
+            "cr": "2",
+            "role": "Expert",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",
@@ -166,6 +166,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tattered estex suit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "dogslicer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "junklaser with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -223,24 +240,7 @@
                         "name": "Goblin"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tattered estex suit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "dogslicer"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "junklaser with 2 batteries (20 charges each)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

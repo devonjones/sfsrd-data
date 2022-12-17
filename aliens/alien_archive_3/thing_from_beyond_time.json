@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Thing from Beyond Time",
         "type": "stat_block",
-        "cr": "17",
-        "alien_family": "Hound of Tindalos",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Thing from Beyond Time",
             "game-obj": "Monster",
             "image": "AA3_Hound_of_tindalos.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 11
         },
-        "alignment": "Neutral Evil",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Huge",
+            "alien_family": "Hound of Tindalos",
+            "cr": "17",
+            "role": "Expert",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",

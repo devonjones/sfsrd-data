@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Nanotech Golem",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Golem",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Nanotech Golem",
             "game-obj": "Monster",
             "image": "AA2_Golem_Nanotech.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Golem",
+            "cr": "14",
+            "role": "Combatant",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",

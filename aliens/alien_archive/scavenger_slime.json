@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Scavenger Slime",
         "type": "stat_block",
-        "cr": "9",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Scavenger Slime",
             "game-obj": "Monster",
             "image": "AA1_Scavenger_Slime.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

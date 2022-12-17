@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Plasma Ooze",
         "type": "stat_block",
-        "cr": "16",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Plasma Ooze",
             "game-obj": "Monster",
             "image": "AA2_Plasma_Ooze.png"
         },
-        "xp": 76800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "cr": "16",
+            "role": "Combatant",
+            "xp": 76800
         },
         "senses": {
             "name": "Senses",

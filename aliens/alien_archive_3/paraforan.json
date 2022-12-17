@@ -5,23 +5,18 @@
     "stat_block": {
         "name": "Paraforan",
         "type": "stat_block",
-        "cr": "12",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Paraforan",
             "game-obj": "Monster",
             "image": "AA3_Paraforan.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -33,7 +28,12 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "12",
+            "role": "Expert",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

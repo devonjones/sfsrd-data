@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ghoul",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Ghoul",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ghoul",
             "game-obj": "Monster",
             "image": "AA2_Ghoul.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Ghoul",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -179,6 +179,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser pistol with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -236,13 +243,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "azimuth laser pistol with 1 battery (20 charges)"
                 }
             ]
         },

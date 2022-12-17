@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Xararian",
         "type": "stat_block",
-        "cr": "18",
-        "role": "Spellcaster",
-        "xp": 153600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +29,30 @@
                     "subtype": "creature_subtype",
                     "name": "xararian"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "cr": "18",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "male"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "xararian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 153600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "male"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "xararian"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -204,6 +204,23 @@
             ],
             "connection": "star shaman"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "xararian robes (functions as freebooter armor V)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hardlight staff"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "xararian spell tome"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -276,23 +293,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "walk the void"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "xararian robes (functions as freebooter armor V)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hardlight staff"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "xararian spell tome"
                 }
             ]
         },

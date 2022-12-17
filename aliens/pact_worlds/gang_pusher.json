@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Gang Pusher",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Street Gangs",
-        "role": "Expert",
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 9
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "ysoki"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "alien_family": "Street Gangs",
+            "cr": "2",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ysoki"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ysoki"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -181,6 +181,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -291,23 +308,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (thief)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
                 }
             ]
         }

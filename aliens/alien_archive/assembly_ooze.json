@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Assembly Ooze",
         "type": "stat_block",
-        "cr": "1",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Assembly Ooze",
             "game-obj": "Monster",
             "image": "AA1_Assembly_Ooze.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "1",
+            "role": "Expert",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",

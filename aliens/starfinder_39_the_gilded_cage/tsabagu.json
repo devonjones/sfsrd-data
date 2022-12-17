@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Tsabagu",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Oni",
-        "role": "Combatant",
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +39,13 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Large",
+            "alien_family": "Oni",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",
@@ -229,6 +229,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "warleader shobhad harness"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white star flare axe with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "combat rifle with 24 longarm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "2 frag grenades IV"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -291,28 +313,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "multiarmed (4)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "warleader shobhad harness"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "white star flare axe with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "combat rifle with 24 longarm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "2 frag grenades IV"
                 }
             ]
         },

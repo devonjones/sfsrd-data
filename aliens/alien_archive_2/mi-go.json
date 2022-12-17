@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Mi-Go",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Mi-Go",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Mi-Go",
             "game-obj": "Monster",
             "image": "AA2_Mi-Go.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Mi-Go",
+            "cr": "6",
+            "role": "Expert",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -187,6 +187,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mi-go frostbite-class zero rifle with 2 mi-go high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -272,13 +279,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spaceflight (Mysticism)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mi-go frostbite-class zero rifle with 2 mi-go high-capacity batteries (40 charges each)"
                 }
             ]
         },

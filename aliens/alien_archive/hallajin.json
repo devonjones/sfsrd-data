@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Hallajin",
         "type": "stat_block",
-        "cr": "17",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Hallajin",
             "game-obj": "Monster",
             "image": "AA1_Hallajin.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Chaotic Neutral",
+            "size": "Large",
+            "cr": "17",
+            "role": "Spellcaster",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",

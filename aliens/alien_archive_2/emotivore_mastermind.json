@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Emotivore Mastermind",
         "type": "stat_block",
-        "cr": "17",
-        "alien_family": "Emotivore",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Emotivore Mastermind",
             "game-obj": "Monster",
             "image": "AA2_Emotivore_Mastermind.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Emotivore",
+            "cr": "17",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "emotivore"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 102400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "emotivore"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -287,6 +287,18 @@
             ],
             "connection": "mindbreaker"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "bespoke echelon fashion"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "banshee sonic pistol with 2 super-capacity batteries (80 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -381,18 +393,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "bespoke echelon fashion"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "banshee sonic pistol with 2 super-capacity batteries (80 charges each)"
                 }
             ]
         },

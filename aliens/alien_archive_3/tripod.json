@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Tripod",
         "type": "stat_block",
-        "cr": "13",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Tripod",
             "game-obj": "Monster",
             "image": "AA3_Tripod.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral Evil",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Gargantuan",
+            "cr": "13",
+            "role": "Combatant",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",
@@ -286,6 +286,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "decimator disintegrator cannon"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "platoon minelayer with 4 decoupler grenades IV"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -343,18 +355,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "decimator disintegrator cannon"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "platoon minelayer with 4 decoupler grenades IV"
                 }
             ]
         },

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Patrol-Class Security Robot",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Robot (Security)",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Patrol-Class Security Robot",
             "game-obj": "Monster",
             "image": "AA1_Robot_Security_Patrol.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Robot (Security)",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -169,6 +169,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical arc emitter with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -221,13 +228,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical arc emitter with 2 batteries (20 charges each)"
                 }
             ]
         },

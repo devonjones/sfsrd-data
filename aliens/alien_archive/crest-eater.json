@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Crest-Eater",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Crest-Eater",
             "game-obj": "Monster",
             "image": "AA1_Crest-Eater.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Large",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

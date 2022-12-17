@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Ryphorian Skyfire Pilot",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Ryphorian",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Ryphorian Skyfire Pilot",
             "game-obj": "Monster",
             "image": "AA1_Ryphorian_Skyfire.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +28,31 @@
                     "subtype": "creature_subtype",
                     "name": "ryphorian"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Ryphorian",
+            "cr": "5",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "summerborn"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ryphorian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "summerborn"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ryphorian"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -209,6 +209,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "estex suit II (jetpack, quick-release sheath)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 4 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -283,23 +300,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (explorer)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "estex suit II (jetpack, quick-release sheath)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "survival knife"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 4 batteries (20 charges each)"
                 }
             ]
         },

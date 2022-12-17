@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Kalo Sharkhunter",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Kalo",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Kalo Sharkhunter",
             "game-obj": "Monster",
             "image": "AA1_Kalo_Soldier.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Kalo",
+            "cr": "2",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kalo"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kalo"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -216,6 +216,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades I (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater autotarget rifle with 50 longarm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater tactical starknife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -284,29 +306,7 @@
                         "name": "Kalo"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades I (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater autotarget rifle with 50 longarm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater tactical starknife"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

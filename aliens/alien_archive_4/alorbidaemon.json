@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Alorbidaemon",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Daemon",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Alorbidaemon",
             "game-obj": "Monster",
             "image": "AA4_Daemon_Alorbidaemon.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -44,7 +38,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Large",
+            "alien_family": "Daemon",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

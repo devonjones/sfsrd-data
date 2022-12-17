@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Morlamaw Mayor",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Morlamaw",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Morlamaw Mayor",
             "game-obj": "Monster",
             "image": "AA3_Morlamaw_Mayor.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Morlamaw",
+            "cr": "9",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "morlamaw"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "morlamaw"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -195,6 +195,23 @@
                 "value": "10 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "gold AbadarCorp travel suit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater advanced semi-auto pistol with 24 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater sentinel spear"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -287,23 +304,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "water breathing"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "gold AbadarCorp travel suit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater advanced semi-auto pistol with 24 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater sentinel spear"
                 }
             ]
         },

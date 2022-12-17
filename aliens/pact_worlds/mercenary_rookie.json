@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Mercenary Rookie",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Mercenaries",
-        "role": "Combatant",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "vesk"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Mercenaries",
+            "cr": "6",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "vesk"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "vesk"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -297,6 +297,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vesk overplate I (jetpack)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "red star plasma doshko with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc rifle with 1 high-capacity battery (40 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -358,23 +375,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor savant"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vesk overplate I (jetpack)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "red star plasma doshko with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc rifle with 1 high-capacity battery (40 charges)"
                 }
             ]
         }

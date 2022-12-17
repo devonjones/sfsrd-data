@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Ascendant",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Khulan",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ascendant",
             "game-obj": "Monster",
             "image": "AA4_Khulan.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "incorporeal"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Khulan",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

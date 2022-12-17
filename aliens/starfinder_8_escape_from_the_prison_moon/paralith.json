@@ -12,22 +12,22 @@
     "stat_block": {
         "name": "Paralith",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Combatant",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -170,6 +170,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "cylindrical lens pistol with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -220,14 +227,7 @@
                         "name": "Paralithi"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "cylindrical lens pistol with 1 battery (20 charges)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Gallant",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Psacynoid",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Gallant",
             "game-obj": "Monster",
             "image": "AA4_Psacynoid_Gallant.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Psacynoid",
+            "cr": "9",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "psacynoid"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "solarian"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "psacynoid"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "solarian"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -202,6 +202,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "D-suit III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced semi-auto pistol with 24 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "minor gluon crystal"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -269,23 +286,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "stellar alignment"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "D-suit III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced semi-auto pistol with 24 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "minor gluon crystal"
                 }
             ]
         },

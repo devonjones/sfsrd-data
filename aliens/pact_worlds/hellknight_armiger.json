@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Hellknight Armiger",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Hellknights",
-        "role": "Combatant",
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,35 +29,41 @@
                     "subtype": "creature_subtype",
                     "name": "lashunta"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Hellknights",
+            "cr": "5",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "damaya"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "lashunta"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "(star"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "knight)"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "damaya"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "lashunta"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "(star"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "knight)"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -281,6 +281,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "officer ceremonial plate (targeting computer)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>anchoring thunderstrike sonic rifle</i> with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical cryopike with 1 high-capacity battery (40 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "shock grenade II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stickybomb grenade II"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -349,34 +376,7 @@
                         "name": "limited telepathy 30 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "officer ceremonial plate (targeting computer)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>anchoring thunderstrike sonic rifle</i> with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical cryopike with 1 high-capacity battery (40 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "shock grenade II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stickybomb grenade II"
-                }
-            ]
+            }
         }
     },
     "sources": [

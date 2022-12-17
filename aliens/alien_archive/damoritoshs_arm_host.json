@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Damoritosh's Arm Host",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Symbiend",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Damoritosh's Arm Host",
             "game-obj": "Monster",
             "image": "AA1_Symbiend_Arm_Host.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "human"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Symbiend",
+            "cr": "6",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "human"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "human"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -214,6 +214,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vesk overplate I with filtered rebreather"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades II (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "red star plasma pistol with 4 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -261,23 +278,6 @@
                     }
                 ]
             },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vesk overplate I with filtered rebreather"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades II (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "red star plasma pistol with 4 batteries (20 charges each)"
-                }
-            ],
             "augmentations": [
                 {
                     "type": "stat_block_section",

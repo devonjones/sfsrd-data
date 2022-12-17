@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Smart-merc",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Hadrogaan",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Smart-merc",
             "game-obj": "Monster",
             "image": "AA4_Hadrogaan_Smart_Merc.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 12
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +28,31 @@
                     "subtype": "creature_subtype",
                     "name": "hadrogaan"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Hadrogaan",
+            "cr": "10",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "doluma"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hadrogaan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 9600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "doluma"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hadrogaan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -238,6 +238,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "specialist defiance series"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "comet hammer with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical autobeam rifle with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades IV (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -295,28 +317,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor training"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "specialist defiance series"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "comet hammer with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical autobeam rifle with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades IV (2)"
                 }
             ]
         },

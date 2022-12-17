@@ -12,22 +12,22 @@
     "stat_block": {
         "name": "Gatecrasher",
         "type": "stat_block",
-        "cr": "10",
-        "role": "Combatant",
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Lawful Evil",
+            "size": "Large",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",
@@ -162,6 +162,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced swoop hammer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aurora shock caster with 3 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -224,18 +236,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced swoop hammer"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "aurora shock caster with 3 high-capacity batteries (40 charges each)"
                 }
             ]
         },

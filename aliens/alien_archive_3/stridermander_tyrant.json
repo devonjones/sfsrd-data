@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Stridermander Tyrant",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Stridermander",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Stridermander Tyrant",
             "game-obj": "Monster",
             "image": "AA3_Stridermander_Tyrant.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "skittermander"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Large",
+            "alien_family": "Stridermander",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

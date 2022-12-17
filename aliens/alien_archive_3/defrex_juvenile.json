@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Defrex Juvenile",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Defrex",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Defrex Juvenile",
             "game-obj": "Monster",
             "image": "AA3_Defrex_Juvenile.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Defrex",
+            "cr": "7",
+            "role": "Combatant",
+            "xp": 3200
         },
         "senses": {
             "name": "Senses",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Animated Lictor Hellknight Plate",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Animated Armor",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Animated Lictor Hellknight Plate",
             "game-obj": "Monster",
             "image": "AA3_Animated_Armor_Hellknight.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -52,7 +46,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Animated Armor",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",
@@ -204,6 +204,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol with 4 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "jetpack"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 1 thermal capacitor"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -248,23 +265,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol with 4 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "jetpack"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 1 thermal capacitor"
                 }
             ]
         },

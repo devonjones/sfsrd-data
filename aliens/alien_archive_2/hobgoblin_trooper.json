@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Hobgoblin Trooper",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Hobgoblin",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Hobgoblin Trooper",
             "game-obj": "Monster",
             "image": "AA2_Hobgoblin_Trooper.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "goblinoid"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Hobgoblin",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -205,6 +205,28 @@
                 "value": "5 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta ringwear I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser rifle with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "standard taclash"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stickybomb grenades I (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -256,29 +278,7 @@
                         "name": "Goblin"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "lashunta ringwear I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "azimuth laser rifle with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "standard taclash"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stickybomb grenades I (2)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

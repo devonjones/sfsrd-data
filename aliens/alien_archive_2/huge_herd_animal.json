@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Huge Herd Animal",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Herd Animal",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Huge Herd Animal",
             "game-obj": "Monster",
             "image": "AA2_Herd_Animal.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Herd Animal",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Kothama Ascendant",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Kothama",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Kothama Ascendant",
             "game-obj": "Monster",
             "image": "AA3_Kothama.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "cold"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Kothama",
+            "cr": "14",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kothama"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 38400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kothama"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",

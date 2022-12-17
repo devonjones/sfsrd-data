@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Dromada Vigilant",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Dromada",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Dromada Vigilant",
             "game-obj": "Monster",
             "image": "AA3_Dromada.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Dromada",
+            "cr": "5",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "dromada"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "dromada"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -165,6 +165,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "business stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -244,23 +261,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "envoy improvisations (watch out, watch your step)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "business stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
                 }
             ]
         },

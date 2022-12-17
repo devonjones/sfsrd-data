@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Rendalairn",
         "type": "stat_block",
-        "cr": "25",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Rendalairn",
             "game-obj": "Monster",
             "image": "AA3_Rendalairn.png"
         },
-        "xp": 1638400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 12
         },
-        "alignment": "Neutral",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "magical"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Colossal",
+            "cr": "25",
+            "role": "Combatant",
+            "xp": 1638400
         },
         "senses": {
             "name": "Senses",

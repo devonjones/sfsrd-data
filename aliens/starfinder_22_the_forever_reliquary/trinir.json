@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Trinir",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Spellcaster",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +29,30 @@
                     "subtype": "creature_subtype",
                     "name": "trinir"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Small",
+            "cr": "4",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "agender"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "trinir"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "agender"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "trinir"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -180,6 +180,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "trinir suit (functions as defrex hide)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -249,23 +266,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spell cache (integrated comm unit)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "trinir suit (functions as defrex hide)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 1 battery (20 charges)"
                 }
             ]
         },

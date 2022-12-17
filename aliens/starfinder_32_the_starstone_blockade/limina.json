@@ -12,22 +12,22 @@
     "stat_block": {
         "name": "Limina",
         "type": "stat_block",
-        "cr": "16",
-        "role": "Spellcaster",
-        "xp": 76800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 10
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "16",
+            "role": "Spellcaster",
+            "xp": 76800
         },
         "senses": {
             "name": "Senses",
@@ -179,6 +179,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "wasp sting pistol with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "zero-edge longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -242,19 +254,7 @@
                         "name": "truespeech"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "wasp sting pistol with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "zero-edge longsword"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

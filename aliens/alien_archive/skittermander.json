@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Skittermander",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Skittermander",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Skittermander",
             "game-obj": "Monster",
             "image": "AA1_Skittermander.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "skittermander"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "alien_family": "Skittermander",
+            "cr": "2",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "skittermander"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "skittermander"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -178,6 +178,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ember flame doshko"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 3 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -247,23 +264,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "envoy improvisations (get \u2019em, inspiring boost [8 SP])"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ember flame doshko"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 3 batteries (20 charges each)"
                 }
             ]
         },

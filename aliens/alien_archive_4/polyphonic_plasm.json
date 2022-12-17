@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Polyphonic Plasm",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Polyphonic Gel",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Polyphonic Plasm",
             "game-obj": "Monster",
             "image": "AA4_Polyphonic_Gel.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Polyphonic Gel",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

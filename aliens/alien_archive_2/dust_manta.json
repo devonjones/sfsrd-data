@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Dust Manta",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Dust Manta",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Dust Manta",
             "game-obj": "Monster",
             "image": "AA2_Dust_Manta.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Dust Manta",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Dromada",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Dromada",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Dromada",
             "game-obj": "Monster",
             "image": "AA3_Dromada.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Dromada",
+            "cr": "1/2",
+            "role": "Expert",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -128,6 +128,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hunting rifle with 12 longarm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -202,18 +214,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "bolt"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hunting rifle with 12 longarm rounds"
                 }
             ]
         },

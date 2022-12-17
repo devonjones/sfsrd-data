@@ -12,41 +12,41 @@
     "stat_block": {
         "name": "Jiang-Shi",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Vampire",
-        "role": "Expert",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Vampire",
+            "cr": "6",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "elebrian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "jiang-shi"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "elebrian"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "jiang-shi"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -249,6 +249,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced shirren-eye rifle with 25 sniper rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -333,23 +350,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced shirren-eye rifle with 25 sniper rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol with 2 batteries (20 charges each)"
                 }
             ]
         },

@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Adikodaemon",
         "type": "stat_block",
-        "cr": "18",
-        "alien_family": "Daemon",
-        "role": "Spellcaster",
-        "xp": 153600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +39,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Daemon",
+            "cr": "18",
+            "role": "Spellcaster",
+            "xp": 153600
         },
         "senses": {
             "name": "Senses",
@@ -196,6 +196,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "bespoke echelon fashion"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "executioner disintegrator pistol with 1 high-capacity battery (40 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -282,18 +294,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "terms and conditions"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "bespoke echelon fashion"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "executioner disintegrator pistol with 1 high-capacity battery (40 charges)"
                 }
             ]
         },

@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Ossiworm Agent",
         "type": "stat_block",
-        "cr": "10",
-        "role": "Expert",
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "10",
+            "role": "Expert",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",
@@ -194,6 +194,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "nanofiber garrote"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "rime subduer with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -285,23 +302,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "nanofiber garrote"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "rime subduer with 2 batteries (20 charges each)"
                 }
             ]
         },

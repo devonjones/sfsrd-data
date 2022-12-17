@@ -5,47 +5,47 @@
     "stat_block": {
         "name": "Spathinae Guard",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Spathinae",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Spathinae Guard",
             "game-obj": "Monster",
             "image": "AA3_Spathinae_Guard.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Spathinae",
+            "cr": "1",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "spathinae"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "colony"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "spathinae"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "colony"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -208,6 +208,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser rifle with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -275,23 +292,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "verminlike"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "azimuth laser rifle with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "longsword"
                 }
             ]
         },

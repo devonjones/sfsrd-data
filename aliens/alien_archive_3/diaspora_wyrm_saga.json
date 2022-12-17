@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Diaspora Wyrm Saga",
         "type": "stat_block",
-        "cr": "17",
-        "alien_family": "Diaspora Wyrm",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Diaspora Wyrm Saga",
             "game-obj": "Monster",
             "image": "AA3_Diaspora_Wyrm.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 10
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Diaspora Wyrm",
+            "cr": "17",
+            "role": "Combatant",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",

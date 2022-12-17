@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Erinyes",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Devil",
-        "role": "Combatant",
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -50,7 +44,13 @@
                     "subtype": "creature_subtype",
                     "name": "lawful"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Devil",
+            "cr": "8",
+            "role": "Combatant",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",
@@ -227,6 +227,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "infernal flight suit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser rifle with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "rope of hair"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sintered longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -319,29 +341,7 @@
                         "name": "telepathy 100 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "infernal flight suit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser rifle with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "rope of hair"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sintered longsword"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

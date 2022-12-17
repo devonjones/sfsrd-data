@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ixtangi",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Ixtangi",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Ixtangi",
             "game-obj": "Monster",
             "image": "AA4_Ixtangi.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Ixtangi",
+            "cr": "1",
+            "role": "Expert",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -174,6 +174,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ixtangi stationwear (functions as estex suit I)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -242,23 +259,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unflappable climber"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ixtangi stationwear (functions as estex suit I)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "survival knife"
                 }
             ]
         },

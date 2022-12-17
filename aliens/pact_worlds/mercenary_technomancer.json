@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Mercenary Technomancer",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Mercenaries",
-        "role": "Spellcaster",
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "ysoki"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Mercenaries",
+            "cr": "8",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ysoki"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ysoki"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -198,6 +198,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced semi-auto pistol with 24 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -283,23 +300,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "moxie"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced lashunta tempweave"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced semi-auto pistol with 24 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
                 }
             ]
         }

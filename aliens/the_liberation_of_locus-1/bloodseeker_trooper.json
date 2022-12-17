@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Bloodseeker Trooper",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Tromlin",
-        "role": "Combatant",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -28,7 +22,13 @@
                     "subtype": "creature_subtype",
                     "name": "tromlin"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Tromlin",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -213,6 +213,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin (leapers)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "2 stickybomb I grenades"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -277,23 +294,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "jumper"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin (leapers)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "2 stickybomb I grenades"
                 }
             ]
         },

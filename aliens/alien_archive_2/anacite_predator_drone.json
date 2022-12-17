@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Anacite Predator Drone",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Anacite",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Anacite Predator Drone",
             "game-obj": "Monster",
             "image": "AA2_Anacite_Predator_Drone.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -41,7 +35,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Anacite",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

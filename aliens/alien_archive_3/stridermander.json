@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Stridermander",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Stridermander",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Stridermander",
             "game-obj": "Monster",
             "image": "AA3_Stridermander.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "skittermander"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Stridermander",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",

@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Liquescence",
         "type": "stat_block",
-        "cr": "2",
-        "role": "Combatant",
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +34,12 @@
                     "subtype": "creature_subtype",
                     "name": "water"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "2",
+            "role": "Combatant",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",

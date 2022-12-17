@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Drift Architech",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Drift Native",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Drift Architech",
             "game-obj": "Monster",
             "image": "AA3_Drift_Native_Architect.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Drift Native",
+            "cr": "10",
+            "role": "Expert",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

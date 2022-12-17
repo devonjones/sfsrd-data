@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Toshigami",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Kami",
-        "role": "Spellcaster",
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +34,13 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Kami",
+            "cr": "13",
+            "role": "Spellcaster",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",
@@ -178,6 +178,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>hybridized advanced living staff</i> with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -247,13 +254,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "no breath"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>hybridized advanced living staff</i> with 1 battery (20 charges)"
                 }
             ]
         },

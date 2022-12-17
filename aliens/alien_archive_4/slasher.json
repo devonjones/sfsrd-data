@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Slasher",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Radiation Drake",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Slasher",
             "game-obj": "Monster",
             "image": "AA4_Radiation_Drake.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Dragon"
+            "creature_type": "Dragon",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Radiation Drake",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

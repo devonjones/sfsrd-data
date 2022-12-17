@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Raconteur",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Jububnan",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Raconteur",
             "game-obj": "Monster",
             "image": "AA4_Jububnan_Raconteur.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Jububnan",
+            "cr": "8",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "jububnan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "witchwarper"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "jububnan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "witchwarper"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -194,6 +194,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "incendiary grenades II (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "red star plasma pistol with 2 capacity batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -282,28 +304,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "wanderer\u2019s pluck"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced lashunta tempweave"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "incendiary grenades II (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "red star plasma pistol with 2 capacity batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
                 }
             ]
         },

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Feral",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Ravenous Drake",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Feral",
             "game-obj": "Monster",
             "image": "AA4_Ravenous_Drake_Feral.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Dragon"
+            "creature_type": "Dragon",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Ravenous Drake",
+            "cr": "2",
+            "role": "Combatant",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",

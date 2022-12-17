@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Flayer Leech Effigy",
         "type": "stat_block",
-        "cr": "15",
-        "alien_family": "Flayer Leech",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Flayer Leech Effigy",
             "game-obj": "Monster",
             "image": "AA3_Flayer_Leech.png"
         },
-        "xp": 51200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Flayer Leech",
+            "cr": "15",
+            "role": "Combatant",
+            "xp": 51200
         },
         "senses": {
             "name": "Senses",
@@ -178,6 +178,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "diamond carbon skin (green force field [25 HP])"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white star plasma pistol with 1 ultra-capacity battery (100 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -244,18 +256,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "verminlike"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "diamond carbon skin (green force field [25 HP])"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "white star plasma pistol with 1 ultra-capacity battery (100 charges)"
                 }
             ]
         },

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Hound of Tindalos",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Hound of Tindalos",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Hound of Tindalos",
             "game-obj": "Monster",
             "image": "AA3_Hound_of_tindalos.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Hound of Tindalos",
+            "cr": "7",
+            "role": "Expert",
+            "xp": 3200
         },
         "senses": {
             "name": "Senses",

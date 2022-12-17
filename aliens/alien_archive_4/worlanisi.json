@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Worlanisi",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Worlanisi",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Worlanisi",
             "game-obj": "Monster",
             "image": "AA4_Worlanisi.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Good",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "worlanisi"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Small",
+            "alien_family": "Worlanisi",
+            "cr": "1",
+            "role": "Expert",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -156,6 +156,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flight suit stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -249,23 +266,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "worlanisi luck"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flight suit stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
                 }
             ]
         },

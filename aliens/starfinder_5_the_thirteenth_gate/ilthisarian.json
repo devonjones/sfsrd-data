@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Ilthisarian",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Expert",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "ilthisarian"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "cr": "4",
+            "role": "Expert",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -173,6 +173,18 @@
                 "value": "10 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "casual stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -238,19 +250,7 @@
                         "name": "Ilthisarian"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "casual stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with battery (20 charges)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

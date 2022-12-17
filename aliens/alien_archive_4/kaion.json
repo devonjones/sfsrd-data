@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Kaion",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Kaion",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Kaion",
             "game-obj": "Monster",
             "image": "AA4_Kaion.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Kaion",
+            "cr": "2",
+            "role": "Combatant",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",

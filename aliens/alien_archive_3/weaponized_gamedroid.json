@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Weaponized Gamedroid",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Weaponized Toy",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Weaponized Gamedroid",
             "game-obj": "Monster",
             "image": "AA3_Weaponized_Toy_Gamedroid.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Weaponized Toy",
+            "cr": "6",
+            "role": "Spellcaster",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

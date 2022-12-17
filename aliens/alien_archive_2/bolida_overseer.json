@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Bolida Overseer",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Bolida",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Bolida Overseer",
             "game-obj": "Monster",
             "image": "AA2_Bolida_Overseer.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Bolida",
+            "cr": "8",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "bolida"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "bolida"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -209,6 +209,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "kasatha microcord III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced semi-auto pistol with 24 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "carbon staff"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -303,23 +320,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "wireless hack"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "kasatha microcord III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced semi-auto pistol with 24 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "carbon staff"
                 }
             ]
         },

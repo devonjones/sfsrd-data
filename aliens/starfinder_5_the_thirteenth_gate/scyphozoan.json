@@ -12,35 +12,35 @@
     "stat_block": {
         "name": "Scyphozoan",
         "type": "stat_block",
-        "cr": "3",
-        "role": "Expert",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "3",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "scyphozoan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "scyphozoan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -171,6 +171,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "scyphozoan bio-weave (functions as graphite carbon skin)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical arc emitter with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -255,18 +267,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "mechanic tricks (energy shield [7 HP, 3 minutes])"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "scyphozoan bio-weave (functions as graphite carbon skin)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical arc emitter with 1 battery (20 charges)"
                 }
             ]
         },

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Haeshi-Shaa (Shaa Form)",
         "type": "stat_block",
-        "cr": "16",
-        "alien_family": "Haeshi-Shaa",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Haeshi-Shaa (Shaa Form)",
             "game-obj": "Monster",
             "image": "AA2_Haeshi-Shaa.png"
         },
-        "xp": 76800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 10
         },
-        "alignment": "Neutral Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral Evil",
+            "size": "Large",
+            "alien_family": "Haeshi-Shaa",
+            "cr": "16",
+            "role": "Spellcaster",
+            "xp": 76800
         },
         "senses": {
             "name": "Senses",

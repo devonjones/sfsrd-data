@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Huitz\u00e2\u0080\u0099plina",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Huitz\u00e2\u0080\u0099plina",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Huitz\u00e2\u0080\u0099plina",
             "game-obj": "Monster",
             "image": "AA4_Huitzplina.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Huitz\u00e2\u0080\u0099plina",
+            "cr": "9",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "huitz\u2019plina"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "huitz\u2019plina"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -217,6 +217,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "D-suit III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aphelion laser pistol with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -314,23 +331,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (explorer)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "D-suit III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "aphelion laser pistol with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
                 }
             ]
         },

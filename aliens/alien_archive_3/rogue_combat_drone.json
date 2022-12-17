@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Rogue Combat Drone",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Rogue Drone",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Rogue Combat Drone",
             "game-obj": "Monster",
             "image": "AA3_Rogue_Drone_Combat.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Rogue Drone",
+            "cr": "14",
+            "role": "Combatant",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",
@@ -175,6 +175,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>obscuring absolute-zero hailcannon</i> with 1 super-capacity battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "zero-edge dagger"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 3 nanite patch"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -228,23 +245,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>obscuring absolute-zero hailcannon</i> with 1 super-capacity battery"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "zero-edge dagger"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 3 nanite patch"
                 }
             ]
         },

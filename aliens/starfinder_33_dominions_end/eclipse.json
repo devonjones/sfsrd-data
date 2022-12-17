@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Eclipse",
         "type": "stat_block",
-        "cr": "19",
-        "alien_family": "Giant",
-        "role": "Spellcaster",
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,7 +29,13 @@
                     "subtype": "creature_subtype",
                     "name": "giant"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "alien_family": "Giant",
+            "cr": "19",
+            "role": "Spellcaster",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",
@@ -186,6 +186,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultraserrated longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -257,13 +264,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "eclipse empowered (<i>greater resistant armor</i>)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultraserrated longsword"
                 }
             ]
         },

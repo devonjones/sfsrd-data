@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Abysium Eater",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Starmetal Eater",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Abysium Eater",
             "game-obj": "Monster",
             "image": "AA4_Starmetal_Eater_Abysium.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Starmetal Eater",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Selamid",
         "type": "stat_block",
-        "cr": "6",
-        "role": "Expert",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "selamid"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "cr": "6",
+            "role": "Expert",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -194,6 +194,13 @@
                 "value": "5 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced semi-auto pistol with 12 rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -267,13 +274,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "malleable"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced semi-auto pistol with 12 rounds"
                 }
             ]
         },

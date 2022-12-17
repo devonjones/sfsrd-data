@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Assault Laser Dragon",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Robot Dragon",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Assault Laser Dragon",
             "game-obj": "Monster",
             "image": "AA4_Robot_Dragon_Assault_Laser.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Lawful Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -41,7 +35,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Huge",
+            "alien_family": "Robot Dragon",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

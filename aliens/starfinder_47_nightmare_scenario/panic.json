@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Panic",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Psychemental",
-        "role": "Expert",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,7 +29,13 @@
                     "subtype": "creature_subtype",
                     "name": "incorporeal"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Psychemental",
+            "cr": "1",
+            "role": "Expert",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",

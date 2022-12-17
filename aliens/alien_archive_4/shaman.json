@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Shaman",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Kiirinta",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Shaman",
             "game-obj": "Monster",
             "image": "AA4_Kiirita_Shaman.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "alien_family": "Kiirinta",
+            "cr": "6",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kiirinta"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kiirinta"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -201,6 +201,23 @@
             ],
             "connection": "xenodruid"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "medium sap"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -276,23 +293,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "animal adaptation (6 minutes)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "medium sap"
                 }
             ]
         },

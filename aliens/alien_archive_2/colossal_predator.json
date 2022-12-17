@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Colossal Predator",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Predator",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Colossal Predator",
             "game-obj": "Monster",
             "image": "AA2_Predator_Large.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Colossal",
+            "alien_family": "Predator",
+            "cr": "13",
+            "role": "Combatant",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",

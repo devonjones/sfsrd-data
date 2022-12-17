@@ -12,35 +12,35 @@
     "stat_block": {
         "name": "Ferran",
         "type": "stat_block",
-        "cr": "5",
-        "role": "Expert",
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Humanoid"
+            "creature_type": "Humanoid",
+            "alignment": "Neutral",
+            "size": "Small",
+            "cr": "5",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ferran"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ferran"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -198,6 +198,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "d-suit I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frostbite-class zero pistol with 1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "datapad"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -287,28 +309,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "wireless hack"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "d-suit I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frostbite-class zero pistol with 1 battery"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "datapad"
                 }
             ]
         },

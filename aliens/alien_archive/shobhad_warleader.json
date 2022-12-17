@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Shobhad Warleader",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Shobhad",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Shobhad Warleader",
             "game-obj": "Monster",
             "image": "AA1_Shobhad_Warleader.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Shobhad",
+            "cr": "7",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "shobhad"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 3200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "shobhad"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -213,6 +213,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced war harness (functions as d-suit II)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sintered longswords (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "shobhad longrifle (functions as an advanced shirren-eye rifle) with 50 sniper rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -264,24 +281,7 @@
                         "name": "Shobhad"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced war harness (functions as d-suit II)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sintered longswords (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "shobhad longrifle (functions as an advanced shirren-eye rifle) with 50 sniper rounds"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

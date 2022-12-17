@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Morlamaw",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Morlamaw",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Morlamaw",
             "game-obj": "Monster",
             "image": "AA3_Morlamaw.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Morlamaw",
+            "cr": "3",
+            "role": "Spellcaster",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",
@@ -149,6 +149,13 @@
                 "value": "10 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "casual stationwear"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -218,13 +225,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "water breathing"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "casual stationwear"
                 }
             ]
         },

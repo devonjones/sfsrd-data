@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Reminiscent",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Itmi Vruh",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Reminiscent",
             "game-obj": "Monster",
             "image": "AA4_Itmi_Vruh_Reminiscent.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "incorporeal"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Itmi Vruh",
+            "cr": "10",
+            "role": "Spellcaster",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

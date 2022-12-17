@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Security Guard",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Security Forces",
-        "role": "Expert",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "human"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Security Forces",
+            "cr": "1",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "human"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "human"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -226,6 +226,53 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flight suit stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "standard taclash"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flash grenade I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stickybomb grenade I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "binders (4)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flashlight"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "personal comm unit"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -287,53 +334,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor training"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flight suit stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "standard taclash"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flash grenade I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stickybomb grenade I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "binders (4)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flashlight"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "personal comm unit"
                 }
             ]
         }

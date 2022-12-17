@@ -5,47 +5,47 @@
     "stat_block": {
         "name": "Uplifted Bear Avenger",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Bear (Uplifted)",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Uplifted Bear Avenger",
             "game-obj": "Monster",
             "image": "AA2_Bear_Uplifted_Avenger.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Chaotic Neutral",
+            "size": "Large",
+            "alien_family": "Bear (Uplifted)",
+            "cr": "4",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "uplifted"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "bear"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "uplifted"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "bear"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -261,6 +261,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "officer ceremonial plate"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frostbite-class zero rifle with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical swoop hammer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades II (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -321,29 +343,7 @@
                         "name": "limited telepathy 30 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "officer ceremonial plate"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frostbite-class zero rifle with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical swoop hammer"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades II (2)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

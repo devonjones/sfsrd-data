@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Hardshell Defender",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Tromlin",
-        "role": "Combatant",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -28,7 +22,13 @@
                     "subtype": "creature_subtype",
                     "name": "tromlin"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Tromlin",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -198,6 +198,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "estex suit I (light weapon mount)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic riot shield (fitted)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -249,24 +266,7 @@
                         "name": "Tromlin"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "estex suit I (light weapon mount)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic riot shield (fitted)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "static arc pistol with 2 batteries (20 charges each)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

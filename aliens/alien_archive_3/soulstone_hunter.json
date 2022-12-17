@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Soulstone Hunter",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Hanakan",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Soulstone Hunter",
             "game-obj": "Monster",
             "image": "AA3_Hanakan_Soulstone_Hunter.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Lawful Neutral",
+            "size": "Small",
+            "alien_family": "Hanakan",
+            "cr": "8",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hanakan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "solarian"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hanakan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "solarian"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -214,6 +214,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>hybridized gelid hail pistol</i> with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>minor graviton crystal</i>"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -276,18 +288,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "stellar alignment"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>hybridized gelid hail pistol</i> with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>minor graviton crystal</i>"
                 }
             ]
         },

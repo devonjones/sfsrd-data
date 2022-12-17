@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Directive 9 Assassin",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Directive 9 Operatives",
-        "role": "Combatant",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "vesk"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Directive 9 Operatives",
+            "cr": "9",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "female"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "vesk"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "female"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "vesk"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -206,6 +206,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vesk brigandine III (reaction accelerator)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>bleeding advanced doshakari</i>"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>malediction phantom assassin rifle</i> (DC 16) with 10 rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "comm unit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "credstick"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -281,33 +308,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor savant"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vesk brigandine III (reaction accelerator)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>bleeding advanced doshakari</i>"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>malediction phantom assassin rifle</i> (DC 16) with 10 rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "comm unit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "credstick"
                 }
             ]
         },

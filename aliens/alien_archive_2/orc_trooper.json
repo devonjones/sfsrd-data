@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Orc Trooper",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Orc",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Orc Trooper",
             "game-obj": "Monster",
             "image": "AA2_Orc_Trooper.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "orc"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Orc",
+            "cr": "5",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "orc"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "orc"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -211,6 +211,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "officer ceremonial plate"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "fangblade with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic rifle with 1 highcapacity battery (40 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -257,23 +274,6 @@
                     }
                 ]
             },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "officer ceremonial plate"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "fangblade with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic rifle with 1 highcapacity battery (40 charges)"
-                }
-            ],
             "augmentations": [
                 {
                     "type": "stat_block_section",

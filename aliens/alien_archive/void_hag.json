@@ -12,29 +12,29 @@
     "stat_block": {
         "name": "Void Hag",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Hag",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Void Hag",
             "game-obj": "Monster",
             "image": "AA1_Void_Hag.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Hag",
+            "cr": "10",
+            "role": "Spellcaster",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",
@@ -180,6 +180,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white carbon carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hailstorm-class zero pistol with 4 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultrathin dagger"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -255,23 +272,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "no breath"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "white carbon carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hailstorm-class zero pistol with 4 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultrathin dagger"
                 }
             ]
         },

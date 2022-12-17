@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Theropod",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Dinosaur",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Theropod",
             "game-obj": "Monster",
             "image": "AA2_Dinosaur2.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "alien_family": "Dinosaur",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

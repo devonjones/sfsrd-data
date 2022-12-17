@@ -12,41 +12,41 @@
     "stat_block": {
         "name": "Dragonkin",
         "type": "stat_block",
-        "cr": "9",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Dragonkin",
             "game-obj": "Monster",
             "image": "AA1_Dragonkin.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Dragon"
+            "creature_type": "Dragon",
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "cr": "9",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "dragonkin"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "dragonkin"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -261,6 +261,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced iridishell"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical magnetar rifle with 50 longarm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderhead dragonglaive with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -328,23 +345,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "partner bond"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced iridishell"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical magnetar rifle with 50 longarm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderhead dragonglaive with 1 battery (20 charges)"
                 }
             ]
         },

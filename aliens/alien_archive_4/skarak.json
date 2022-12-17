@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Skarak",
         "type": "stat_block",
-        "cr": "13",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Skarak",
             "game-obj": "Monster",
             "image": "AA4_Skarak.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "cr": "13",
+            "role": "Combatant",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",

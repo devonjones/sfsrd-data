@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Cybernetic Golem",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Golem",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Cybernetic Golem",
             "game-obj": "Monster",
             "image": "AA2_Golem_Cybernetic.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Golem",
+            "cr": "8",
+            "role": "Combatant",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",
@@ -204,6 +204,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "2 LFD pulse gauntlets with 4 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona artillery laser with 4 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -229,18 +241,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "2 LFD pulse gauntlets with 4 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona artillery laser with 4 high-capacity batteries (40 charges each)"
                 }
             ]
         },

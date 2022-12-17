@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Avigwyr",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Azata",
-        "role": "Expert",
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -50,7 +44,13 @@
                     "subtype": "creature_subtype",
                     "name": "good"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Azata",
+            "cr": "13",
+            "role": "Expert",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",
@@ -202,6 +202,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "limning shock ultrathin longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -278,13 +285,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "digital transfer"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "limning shock ultrathin longsword"
                 }
             ]
         },

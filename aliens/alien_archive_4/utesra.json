@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Utesra",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Utesra",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Utesra",
             "game-obj": "Monster",
             "image": "AA4_Utesra.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Utesra",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

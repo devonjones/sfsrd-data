@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Atlapak",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Atlapak",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Atlapak",
             "game-obj": "Monster",
             "image": "AA4_Atlapak.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Atlapak",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

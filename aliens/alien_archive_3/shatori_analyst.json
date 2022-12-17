@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Shatori Analyst",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Shatori",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Shatori Analyst",
             "game-obj": "Monster",
             "image": "AA3_Shatori_Analyst.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "shatori"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Shatori",
+            "cr": "4",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "shatori"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "shatori"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -157,6 +157,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "graphite carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical semi-auto pistol with 27 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "datapad"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -235,28 +257,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spell cache (datapad)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "graphite carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical semi-auto pistol with 27 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "datapad"
                 }
             ]
         },

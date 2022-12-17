@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Writher Swarm",
         "type": "stat_block",
-        "cr": "9",
-        "role": "Combatant",
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Fine",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "swarm"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Fine",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

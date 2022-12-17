@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Kish",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Combatant",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "kish"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -145,6 +145,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic acrochor hide"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "skirmish kishaxe"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical battlebow with 20 arrows"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -200,24 +217,7 @@
                         "name": "Vulgar Kishaleen"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic acrochor hide"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "skirmish kishaxe"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical battlebow with 20 arrows"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

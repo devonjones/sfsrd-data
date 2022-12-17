@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Titan",
         "type": "stat_block",
-        "cr": "15",
-        "alien_family": "Supenga",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Titan",
             "game-obj": "Monster",
             "image": "AA4_Supenga_Titan.png"
         },
-        "xp": 51200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Supenga",
+            "cr": "15",
+            "role": "Combatant",
+            "xp": 51200
         },
         "senses": {
             "name": "Senses",

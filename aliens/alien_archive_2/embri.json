@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Embri",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Embri",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Embri",
             "game-obj": "Monster",
             "image": "AA2_Embri.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Embri",
+            "cr": "3",
+            "role": "Expert",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",
@@ -151,6 +151,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical crossbolter with 10 arrows"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hivemask"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -214,19 +226,7 @@
                         "name": "Embri"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical crossbolter with 10 arrows"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hivemask"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Maraquoi Hunter",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Maraquoi",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Maraquoi Hunter",
             "game-obj": "Monster",
             "image": "AA1_Maraquoi_Hunter.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "maraquoi"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Maraquoi",
+            "cr": "1/2",
+            "role": "Combatant",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -157,6 +157,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster rifle with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical spear"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -215,19 +227,7 @@
                         "name": "Maraquoi"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster rifle with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical spear"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

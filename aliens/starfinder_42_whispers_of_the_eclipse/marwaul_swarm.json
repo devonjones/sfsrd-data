@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Marwaul Swarm",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Marwaul",
-        "role": "Combatant",
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -28,7 +22,13 @@
                     "subtype": "creature_subtype",
                     "name": "swarm"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Marwaul",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",

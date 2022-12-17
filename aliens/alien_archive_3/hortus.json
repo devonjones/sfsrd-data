@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Hortus",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Hortus",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Hortus",
             "game-obj": "Monster",
             "image": "AA3_Hortus.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Hortus",
+            "cr": "2",
+            "role": "Combatant",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",
@@ -167,6 +167,28 @@
                 "value": "5 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "graphite carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical pike"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical semi-auto pistol with 18 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>mk I serum of healing</i>"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -229,28 +251,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "atmospheric alteration (DC 11)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "graphite carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical pike"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical semi-auto pistol with 18 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>mk I serum of healing</i>"
                 }
             ]
         },

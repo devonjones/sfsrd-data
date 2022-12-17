@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Medium Herd Animal",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Herd Animal",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Medium Herd Animal",
             "game-obj": "Monster",
             "image": "AA2_Herd_Animal_Baby.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Herd Animal",
+            "cr": "1/2",
+            "role": "Combatant",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",

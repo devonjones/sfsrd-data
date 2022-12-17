@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Mature Solar Wisp",
         "type": "stat_block",
-        "cr": "19",
-        "alien_family": "Solar Wisp",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Mature Solar Wisp",
             "game-obj": "Monster",
             "image": "AA2_Solar_Wisp_Mature.png"
         },
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 11
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -49,7 +43,13 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Solar Wisp",
+            "cr": "19",
+            "role": "Combatant",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",

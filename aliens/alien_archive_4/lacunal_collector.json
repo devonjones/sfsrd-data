@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Lacunal Collector",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Lacunal Collector",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Lacunal Collector",
             "game-obj": "Monster",
             "image": "AA4_Lacunal_Collector.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "android"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Lacunal Collector",
+            "cr": "11",
+            "role": "Spellcaster",
+            "xp": 12800
         },
         "senses": {
             "name": "Senses",
@@ -175,6 +175,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "buzzblade spear with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sepulcher-class bone pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -237,23 +254,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "white carbon skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "buzzblade spear with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sepulcher-class bone pistol with 2 batteries (20 charges each)"
                 }
             ],
             "augmentations": [

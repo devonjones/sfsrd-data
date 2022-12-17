@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Hellhound",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Hellhound",
-        "role": "Combatant",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -28,7 +22,13 @@
                     "subtype": "creature_subtype",
                     "name": "devil"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Hellhound",
+            "cr": "3",
+            "role": "Combatant",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",

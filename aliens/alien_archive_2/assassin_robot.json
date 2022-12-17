@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Assassin Robot",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Robot",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Assassin Robot",
             "game-obj": "Monster",
             "image": "AA2_Robot_Assassin.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Robot",
+            "cr": "9",
+            "role": "Expert",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -199,6 +199,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "microserrated longsword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced semi-auto pistol with 48 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced shirren-eye rifle with 16 sniper rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -279,23 +296,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "microserrated longsword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced semi-auto pistol with 48 small arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced shirren-eye rifle with 16 sniper rounds"
                 }
             ]
         },

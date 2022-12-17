@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Sarcesian Sniper",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Sarcesian",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Sarcesian Sniper",
             "game-obj": "Monster",
             "image": "AA1_Sarcesian.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "sarcesian"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Sarcesian",
+            "cr": "5",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "sarcesian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "sarcesian"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -206,6 +206,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "estex suit II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced Diasporan rifle (see page 99) with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades II (4)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -285,28 +307,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "void flyer"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "estex suit II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced Diasporan rifle (see page 99) with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades II (4)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
                 }
             ]
         },

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Drow Noble Arms Dealer",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Drow",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Drow Noble Arms Dealer",
             "game-obj": "Monster",
             "image": "AA1_Drow_Noble_Arms_Dealer.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "elf"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Drow",
+            "cr": "11",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "drow"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 12800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "drow"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -198,6 +198,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "kasatha microcord IV (electrostatic field mk 2, white force field [15 HP])"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "LFD sonic pistol with 2 super-capacity batteries (80 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultrathin longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -282,23 +299,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "envoy improvisations (hidden agenda, improved get \u2019em, improved hurry, quick dispiriting taunt)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "kasatha microcord IV (electrostatic field mk 2, white force field [15 HP])"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "LFD sonic pistol with 2 super-capacity batteries (80 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultrathin longsword"
                 }
             ]
         },

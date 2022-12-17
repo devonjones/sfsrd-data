@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Heretic",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Velstrac",
-        "role": "Combatant",
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -50,7 +44,13 @@
                     "subtype": "creature_subtype",
                     "name": "velstrac"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Velstrac",
+            "cr": "8",
+            "role": "Combatant",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",
@@ -205,6 +205,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aphelion laser rifle with 2 high-capacity batteries (40 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "singer velstrac flenser with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -257,18 +269,6 @@
                     }
                 ]
             },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "aphelion laser rifle with 2 high-capacity batteries (40 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "singer velstrac flenser with 2 batteries (20 charges each)"
-                }
-            ],
             "augmentations": [
                 {
                     "type": "stat_block_section",

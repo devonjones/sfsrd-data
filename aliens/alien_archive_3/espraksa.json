@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Espraksa",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Espraksa",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Espraksa",
             "game-obj": "Monster",
             "image": "AA3_Espraksa.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "espraksa"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Espraksa",
+            "cr": "1/2",
+            "role": "Combatant",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -160,6 +160,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin (azimuth shoulder laser with 2 batteries [20 charges each])"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -223,13 +230,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "cold inured"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin (azimuth shoulder laser with 2 batteries [20 charges each])"
                 }
             ]
         },

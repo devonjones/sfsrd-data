@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Equinoxian Periastra",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Equinoxian",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Equinoxian Periastra",
             "game-obj": "Monster",
             "image": "AA3_Equinoxian_Periastra.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Equinoxian",
+            "cr": "9",
+            "role": "Combatant",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

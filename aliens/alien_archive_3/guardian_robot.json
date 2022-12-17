@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Guardian Robot",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Robot",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Guardian Robot",
             "game-obj": "Monster",
             "image": "AA3_Robot_Guardian.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -41,7 +35,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Robot",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",
@@ -257,6 +257,48 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "nyfiber net"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sentry shield projector with 1 high-capacity battery (40 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "voltaic anchor pistol with 1 high-capacity battery (40 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flash grenades I (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "smoke grenades (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 2 serum of healing"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 1 serums of healing (2)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced medkit"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -318,48 +360,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "nyfiber net"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sentry shield projector with 1 high-capacity battery (40 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "voltaic anchor pistol with 1 high-capacity battery (40 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flash grenades I (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "smoke grenades (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 2 serum of healing"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 1 serums of healing (2)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced medkit"
                 }
             ]
         },

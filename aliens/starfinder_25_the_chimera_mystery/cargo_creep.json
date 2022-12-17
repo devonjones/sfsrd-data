@@ -12,22 +12,22 @@
     "stat_block": {
         "name": "Cargo Creep",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Expert",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "4",
+            "role": "Expert",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

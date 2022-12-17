@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Runner",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Epokasite",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Runner",
             "game-obj": "Monster",
             "image": "AA4_Epokasite_Runner.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Epokasite",
+            "cr": "8",
+            "role": "Spellcaster",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",
@@ -172,6 +172,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "archaic blaze flame pistol with 2 standard petrol tanks"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "club"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -224,19 +236,7 @@
                         "name": "Common"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "archaic blaze flame pistol with 2 standard petrol tanks"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "club"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

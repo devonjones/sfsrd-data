@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Void Troll",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Troll",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Void Troll",
             "game-obj": "Monster",
             "image": "AA3_Troll_Void.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "giant"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Large",
+            "alien_family": "Troll",
+            "cr": "14",
+            "role": "Combatant",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",

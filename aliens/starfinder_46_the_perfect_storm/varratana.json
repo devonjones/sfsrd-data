@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Varratana",
         "type": "stat_block",
-        "cr": "1/2",
-        "role": "Expert",
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +29,30 @@
                     "subtype": "creature_subtype",
                     "name": "varratana"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "cr": "1/2",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "blusterwind"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "varratana"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "biohacker"
+                }
+            ],
+            "xp": 200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "blusterwind"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "varratana"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "biohacker"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -161,6 +161,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "standard syringe stick"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical needler pistol with 16 darts"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "chemalyzer"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -238,28 +260,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "fields of study (immunology)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "standard syringe stick"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical needler pistol with 16 darts"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "chemalyzer"
                 }
             ]
         },

@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Jinsul Base Commander",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Jinsul",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Jinsul Base Commander",
             "game-obj": "Monster",
             "image": "AA3_Jinsul_Base_Commander.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Jinsul",
+            "cr": "5",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "jinsul"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "jinsul"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -191,6 +191,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "estex suit II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frostbite\u2011class zero pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -259,18 +271,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spell cache (siccatite pincer)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "estex suit II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frostbite\u2011class zero pistol with 2 batteries (20 charges each)"
                 }
             ]
         },

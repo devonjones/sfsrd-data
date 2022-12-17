@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Shatori Theorist",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Shatori",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Shatori Theorist",
             "game-obj": "Monster",
             "image": "AA3_Shatori_Theorist.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "shatori"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Shatori",
+            "cr": "10",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "shatori"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 9600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "shatori"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -159,6 +159,23 @@
             ],
             "connection": "Akashic"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "buzzblade dueling sword with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite semi-auto pistol with 24 small arm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -257,23 +274,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "shared stillness"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "buzzblade dueling sword with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite semi-auto pistol with 24 small arm rounds"
                 }
             ]
         },

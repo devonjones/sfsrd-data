@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Orc Technician",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Orc",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Orc Technician",
             "game-obj": "Monster",
             "image": "AA2_Orc_Technician.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "orc"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Orc",
+            "cr": "1/2",
+            "role": "Expert",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -158,6 +158,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "estex suit I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser pistol with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical baton"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -220,24 +237,7 @@
                         "name": "Orc"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "estex suit I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "azimuth laser pistol with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical baton"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

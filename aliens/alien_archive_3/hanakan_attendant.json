@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Hanakan Attendant",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Hanakan",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Hanakan Attendant",
             "game-obj": "Monster",
             "image": "AA3_Hanakan_Attendant.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Hanakan",
+            "cr": "1",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hanakan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hanakan"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -148,6 +148,13 @@
             ],
             "connection": "empath"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -205,13 +212,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "empathy"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "survival knife"
                 }
             ]
         },

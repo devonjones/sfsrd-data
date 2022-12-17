@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Siege Robot",
         "type": "stat_block",
-        "cr": "15",
-        "alien_family": "Robot",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Siege Robot",
             "game-obj": "Monster",
             "image": "AA2_Robot_Siege.png"
         },
-        "xp": 51200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 7
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Robot",
+            "cr": "15",
+            "role": "Combatant",
+            "xp": 51200
         },
         "senses": {
             "name": "Senses",
@@ -226,6 +226,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite x-gen gun with 400 heavy rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "heavy stellar cannon with 800 scattergun shells"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "IMDS missile launcher with 2 advanced missiles"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -295,23 +312,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite x-gen gun with 400 heavy rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "heavy stellar cannon with 800 scattergun shells"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "IMDS missile launcher with 2 advanced missiles"
                 }
             ]
         },

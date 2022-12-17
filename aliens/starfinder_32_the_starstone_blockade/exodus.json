@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Exodus",
         "type": "stat_block",
-        "cr": "17",
-        "alien_family": "Angel",
-        "role": "Combatant",
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +39,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Angel",
+            "cr": "17",
+            "role": "Combatant",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",
@@ -219,6 +219,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "bespoke echelon fashion"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>holy inferno skyfire sword</i> with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>holy zenith laser pistol</i> with 1 super-capacity battery (80 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -293,23 +310,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "holy chariot"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "bespoke echelon fashion"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>holy inferno skyfire sword</i> with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>holy zenith laser pistol</i> with 1 super-capacity battery (80 charges)"
                 }
             ]
         },

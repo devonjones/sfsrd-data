@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Moonflower Titan",
         "type": "stat_block",
-        "cr": "16",
-        "alien_family": "Moonflower",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Moonflower Titan",
             "game-obj": "Monster",
             "image": "AA2_Moonflower.png"
         },
-        "xp": 76800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": -1
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "alien_family": "Moonflower",
+            "cr": "16",
+            "role": "Combatant",
+            "xp": 76800
         },
         "senses": {
             "name": "Senses",

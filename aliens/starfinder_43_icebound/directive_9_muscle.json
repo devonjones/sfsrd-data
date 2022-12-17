@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Directive 9 Muscle",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Directive 9 Operatives",
-        "role": "Combatant",
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,20 +29,26 @@
                     "subtype": "creature_subtype",
                     "name": "vesk"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Directive 9 Operatives",
+            "cr": "3",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "male"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "vesk"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "male"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "vesk"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -234,6 +234,48 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vesk brigandine I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "stalker assassin rifle with 10 rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical rail gun with 2 clips (12 rounds each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vapor cavitation pistol  with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical switchblade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "comm unit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "credstick"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flashlight"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -294,48 +336,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "armor savant"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vesk brigandine I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "stalker assassin rifle with 10 rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical rail gun with 2 clips (12 rounds each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "vapor cavitation pistol  with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical switchblade"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "comm unit"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "credstick"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flashlight"
                 }
             ]
         },

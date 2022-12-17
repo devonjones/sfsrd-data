@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Hortinarch",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Hortus",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Hortinarch",
             "game-obj": "Monster",
             "image": "AA3_Hortus_Hortinarch.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Hortus",
+            "cr": "11",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hortus"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 12800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hortus"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "technomancer"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -185,6 +185,23 @@
                 "value": "5 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "kasatha microcord IV"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced living staff with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced rotating pistol with 16 small arm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -262,23 +279,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spell cache (advanced living staff)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "kasatha microcord IV"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced living staff with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "advanced rotating pistol with 16 small arm rounds"
                 }
             ]
         },

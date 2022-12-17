@@ -5,47 +5,47 @@
     "stat_block": {
         "name": "Ghoran Flora-Shaper",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Ghoran",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Ghoran Flora-Shaper",
             "game-obj": "Monster",
             "image": "AA2_Ghoran_Flora-Shaper.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Ghoran",
+            "cr": "6",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "oakling"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ghoran"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 2400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "oakling"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ghoran"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -171,6 +171,23 @@
             ],
             "connection": "xenodruid"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol with 3 batteries (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ghoran synthbark II (as kasatha microcord II)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -266,23 +283,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "speak with animals"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol with 3 batteries (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ghoran synthbark II (as kasatha microcord II)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical dueling sword"
                 }
             ]
         },

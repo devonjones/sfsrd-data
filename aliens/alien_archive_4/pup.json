@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Pup",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Supenga",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Pup",
             "game-obj": "Monster",
             "image": "AA4_Supenga_Pup.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Supenga",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

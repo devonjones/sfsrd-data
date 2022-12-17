@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Arabuk",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Arabuk",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Arabuk",
             "game-obj": "Monster",
             "image": "AA4_Arabuk.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Arabuk",
+            "cr": "8",
+            "role": "Combatant",
+            "xp": 4800
         },
         "senses": {
             "name": "Senses",

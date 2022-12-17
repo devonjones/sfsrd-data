@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Jinsul Warrior",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Jinsul",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Jinsul Warrior",
             "game-obj": "Monster",
             "image": "AA3_Jinsul_Warrior.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Jinsul",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -171,6 +171,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical arc emitter with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -223,18 +235,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "powerful leap"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical arc emitter with 2 batteries (20 charges each)"
                 }
             ]
         },

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Osharu",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Osharu",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Osharu",
             "game-obj": "Monster",
             "image": "AA2_Osharu.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Lawful Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Lawful Good",
+            "size": "Medium",
+            "alien_family": "Osharu",
+            "cr": "1/2",
+            "role": "Expert",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",
@@ -150,6 +150,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -219,13 +226,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "slime"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "pulsecaster pistol with 2 batteries (20 charges each)"
                 }
             ]
         },

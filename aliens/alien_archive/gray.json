@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Gray",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Gray",
             "game-obj": "Monster",
             "image": "AA1_Gray.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "gray"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "cr": "4",
+            "role": "Spellcaster",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",
@@ -165,6 +165,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "gray skinsuit (functions as basic lashunta tempweave)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "needler pistol with 25 darts"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "5 doses of blue whinnis"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -225,24 +242,7 @@
                         "name": "can\u2019t speak"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "gray skinsuit (functions as basic lashunta tempweave)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "needler pistol with 25 darts"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "5 doses of blue whinnis"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

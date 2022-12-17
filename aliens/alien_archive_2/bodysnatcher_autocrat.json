@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Bodysnatcher Autocrat",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Bodysnatcher Slime",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Bodysnatcher Autocrat",
             "game-obj": "Monster",
             "image": "AA2_Bodysnatcher_Slime.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Bodysnatcher Slime",
+            "cr": "10",
+            "role": "Expert",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

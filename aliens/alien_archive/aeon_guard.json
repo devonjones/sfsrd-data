@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Aeon Guard",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Aeon Guard",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Aeon Guard",
             "game-obj": "Monster",
             "image": "AA1_Aeon_Guard.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "human"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Aeon Guard",
+            "cr": "3",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "azlanti"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "azlanti"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -236,6 +236,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "AG trooper battle dress (<i>clear spindle aeon stone</i>, jump jets)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "AG assault rifle with 4 magazines (100 longarm rounds)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike pulse gauntlet with 2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenade II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "incendiary grenade I"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -288,34 +315,7 @@
                         "name": "Azlanti"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "AG trooper battle dress (<i>clear spindle aeon stone</i>, jump jets)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "AG assault rifle with 4 magazines (100 longarm rounds)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike pulse gauntlet with 2 batteries"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenade II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "incendiary grenade I"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

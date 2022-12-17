@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Perigean Lucandrian",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Lucandrian",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Perigean Lucandrian",
             "game-obj": "Monster",
             "image": "AA3_Lucandrian_Perigean.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Fey"
+            "creature_type": "Fey",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Lucandrian",
+            "cr": "9",
+            "role": "Spellcaster",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -188,6 +188,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "21 small arm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -253,13 +260,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "limited spaceflight"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "21 small arm rounds"
                 }
             ]
         },

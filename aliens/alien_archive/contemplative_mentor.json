@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Contemplative Mentor",
         "type": "stat_block",
-        "cr": "18",
-        "alien_family": "Contemplative",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Contemplative Mentor",
             "game-obj": "Monster",
             "image": "AA1_Contemplative.png"
         },
-        "xp": 153600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Monstrous Humanoid"
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Contemplative",
+            "cr": "18",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "contemplative"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 153600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "contemplative"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -278,6 +278,18 @@
             ],
             "connection": "mindbreaker"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite hardlight series"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "zenith laser pistol with 2 ultra-capacity batteries (100 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -353,19 +365,7 @@
                         "name": "telepathy 100 ft."
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite hardlight series"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "zenith laser pistol with 2 ultra-capacity batteries (100 charges each)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Burrower",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Ignurso",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Burrower",
             "game-obj": "Monster",
             "image": "AA4_Ignurso.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Ignurso",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

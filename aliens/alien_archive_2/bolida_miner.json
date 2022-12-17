@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Bolida Miner",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Bolida",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Bolida Miner",
             "game-obj": "Monster",
             "image": "AA2_Bolida_Miner.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "alien_family": "Bolida",
+            "cr": "2",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "bolida"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "bolida"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -246,6 +246,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hidden soldier armor"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical crossbolter with 20 arrows"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical pike"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades I (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -297,29 +319,7 @@
                         "name": "Common"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hidden soldier armor"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical crossbolter with 20 arrows"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical pike"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades I (2)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

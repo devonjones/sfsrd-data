@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Barathu",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Barathu",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Barathu",
             "game-obj": "Monster",
             "image": "AA1_Barathu.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Barathu",
+            "cr": "5",
+            "role": "Expert",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

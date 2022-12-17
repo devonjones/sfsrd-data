@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Woioko",
         "type": "stat_block",
-        "cr": "4",
-        "role": "Expert",
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,25 +29,30 @@
                     "subtype": "creature_subtype",
                     "name": "woioko"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "cr": "4",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "floatborn"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "woioko"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "envoy"
+                }
+            ],
+            "xp": 1200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "floatborn"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "woioko"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "envoy"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -172,6 +172,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "woiokan bodyglove (functions as basic lashunta tempweave)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical spear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>trailblazer tactical semi-auto pistol</i> with 90 small arm rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -253,23 +270,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "hold breath"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "woiokan bodyglove (functions as basic lashunta tempweave)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical spear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>trailblazer tactical semi-auto pistol</i> with 90 small arm rounds"
                 }
             ]
         },

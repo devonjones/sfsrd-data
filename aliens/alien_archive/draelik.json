@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Draelik",
         "type": "stat_block",
-        "cr": "2",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Draelik",
             "game-obj": "Monster",
             "image": "AA1_Draelik.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "draelik"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "2",
+            "role": "Spellcaster",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",
@@ -172,6 +172,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>lesser shadowstaff</i> with 1 clip (40 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -236,18 +248,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "stellar alignment (graviton)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "freebooter armor I"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>lesser shadowstaff</i> with 1 clip (40 charges)"
                 }
             ]
         },

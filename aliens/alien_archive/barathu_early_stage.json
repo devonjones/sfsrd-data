@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Barathu (Early Stage)",
         "type": "stat_block",
-        "cr": "2",
-        "alien_family": "Barathu",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Barathu (Early Stage)",
             "game-obj": "Monster",
             "image": "AA1_Barathu_Early_Stage.png"
         },
-        "xp": 600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Barathu",
+            "cr": "2",
+            "role": "Expert",
+            "xp": 600
         },
         "senses": {
             "name": "Senses",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Sprout",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Osifern",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Sprout",
             "game-obj": "Monster",
             "image": "AA4_Osifern_Sprout.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Tiny",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "alien_family": "Osifern",
+            "cr": "1/2",
+            "role": "Combatant",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",

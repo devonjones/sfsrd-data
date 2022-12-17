@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Youngling",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Huitz\u00e2\u0080\u0099plina",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Youngling",
             "game-obj": "Monster",
             "image": "AA4_Huitzplina_Youngling.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Huitz\u00e2\u0080\u0099plina",
+            "cr": "3",
+            "role": "Expert",
+            "xp": 800
         },
         "senses": {
             "name": "Senses",
@@ -175,6 +175,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flight suit stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical rail gun with 24 long\u2011arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical switchblade"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -250,23 +267,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "predreaming"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flight suit stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical rail gun with 24 long\u2011arm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical switchblade"
                 }
             ]
         },

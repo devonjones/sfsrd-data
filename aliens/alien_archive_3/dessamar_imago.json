@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Dessamar Imago",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Dessamar",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Dessamar Imago",
             "game-obj": "Monster",
             "image": "AA3_Dessamar_Imago.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "dessamar"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Dessamar",
+            "cr": "1",
+            "role": "Expert",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",
@@ -175,6 +175,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "second skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical spear"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -227,19 +239,7 @@
                         "name": "Koshorian"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "second skin"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical spear"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

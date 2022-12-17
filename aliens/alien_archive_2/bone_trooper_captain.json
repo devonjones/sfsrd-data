@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Bone Trooper Captain",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Bone Trooper",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Bone Trooper Captain",
             "game-obj": "Monster",
             "image": "AA2_Bone_Trooper.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 10
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Bone Trooper",
+            "cr": "8",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "elebrian"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "elebrian"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -227,6 +227,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "skitterhide II (with black force field)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "officer dueling sword"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "red star plasma pistol with 3 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -290,23 +307,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "skitterhide II (with black force field)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "officer dueling sword"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "red star plasma pistol with 3 batteries (20 charges each)"
                 }
             ]
         },

@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "AHAV",
         "type": "stat_block",
-        "cr": "12",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "AHAV",
             "game-obj": "Monster",
             "image": "AA1_AHAV.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +35,12 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Huge",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",
@@ -180,6 +180,18 @@
                 "value": "15 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hellhound-class flamethrower with 2 high-capacity petrol tanks"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "medium machine gun with 420 heavy rounds"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -225,18 +237,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hellhound-class flamethrower with 2 high-capacity petrol tanks"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "medium machine gun with 420 heavy rounds"
                 }
             ]
         },

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ferrofluid Magneto-Cluster",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Ferrofluid Ooze",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ferrofluid Magneto-Cluster",
             "game-obj": "Monster",
             "image": "AA3_Ferrofluid_Magneto-Cluster.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Ooze"
+            "creature_type": "Ooze",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Ferrofluid Ooze",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

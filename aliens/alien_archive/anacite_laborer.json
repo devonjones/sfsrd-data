@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Anacite Laborer",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Anacite",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Anacite Laborer",
             "game-obj": "Monster",
             "image": "AA1_Anacite_Laborer.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "alien_family": "Anacite",
+            "cr": "7",
+            "role": "Expert",
+            "xp": 3200
         },
         "senses": {
             "name": "Senses",

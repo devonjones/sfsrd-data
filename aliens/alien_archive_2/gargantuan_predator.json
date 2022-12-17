@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Gargantuan Predator",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Predator",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Gargantuan Predator",
             "game-obj": "Monster",
             "image": "AA2_Predator_Large.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Gargantuan",
+            "alien_family": "Predator",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

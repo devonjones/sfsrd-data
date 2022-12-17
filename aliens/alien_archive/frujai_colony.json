@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Frujai Colony",
         "type": "stat_block",
-        "cr": "19",
-        "alien_family": "Frujai",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Frujai Colony",
             "game-obj": "Monster",
             "image": "AA1_Frugai_Colony.png"
         },
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Colossal",
+            "alien_family": "Frujai",
+            "cr": "19",
+            "role": "Combatant",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",

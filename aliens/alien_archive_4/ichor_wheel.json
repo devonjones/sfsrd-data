@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Ichor Wheel",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Carrion Wheel",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ichor Wheel",
             "game-obj": "Monster",
             "image": "AA4_Carrion_Wheel.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Carrion Wheel",
+            "cr": "14",
+            "role": "Combatant",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",

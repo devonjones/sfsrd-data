@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Orocoran Ichor Lord",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Orocoran",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Orocoran Ichor Lord",
             "game-obj": "Monster",
             "image": "AA1_Orocoran_Ichor_Lord.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Orocoran",
+            "cr": "9",
+            "role": "Spellcaster",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",

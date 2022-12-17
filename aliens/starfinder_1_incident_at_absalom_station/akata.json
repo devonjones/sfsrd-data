@@ -12,29 +12,29 @@
     "stat_block": {
         "name": "Akata",
         "type": "stat_block",
-        "cr": "1",
-        "alien_family": "Akata",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Akata",
             "game-obj": "Monster",
             "image": "AA2_Akata.png"
         },
-        "xp": 400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Akata",
+            "cr": "1",
+            "role": "Combatant",
+            "xp": 400
         },
         "senses": {
             "name": "Senses",

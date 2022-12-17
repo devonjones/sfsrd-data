@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Animated Lashunta Mind Mail III",
         "type": "stat_block",
-        "cr": "16",
-        "alien_family": "Animated Armor",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Animated Lashunta Mind Mail III",
             "game-obj": "Monster",
             "image": "AA3_Animated_Armor_Lashunta.png"
         },
-        "xp": 76800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 10
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -52,7 +46,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "alien_family": "Animated Armor",
+            "cr": "16",
+            "role": "Combatant",
+            "xp": 76800
         },
         "senses": {
             "name": "Senses",
@@ -208,6 +208,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "2 <i>returning tenor singing disks</i>"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 3 thermal capacitor"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 1 spell reflector"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "red force field"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -270,28 +292,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "2 <i>returning tenor singing disks</i>"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 3 thermal capacitor"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mk 1 spell reflector"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "red force field"
                 }
             ]
         },

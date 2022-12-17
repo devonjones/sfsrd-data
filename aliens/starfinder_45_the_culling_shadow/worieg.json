@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Worieg",
         "type": "stat_block",
-        "cr": "6",
-        "role": "Spellcaster",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "shapeshifter"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "cr": "6",
+            "role": "Spellcaster",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -190,6 +190,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ysoki refractor suit (jetpack)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ant sting pistol with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "astrogator\u2019s kit"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -282,23 +299,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "Drift deceit"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ysoki refractor suit (jetpack)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ant sting pistol with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "astrogator\u2019s kit"
                 }
             ]
         },

@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Djinni",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Genie",
-        "role": "Expert",
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Good",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -40,7 +34,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Large",
+            "alien_family": "Genie",
+            "cr": "5",
+            "role": "Expert",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",
@@ -234,6 +234,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "business stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "carbon steel curve blade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic pistol with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -330,23 +347,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "fabricate item"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "business stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "carbon steel curve blade"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "thunderstrike sonic pistol with 1 battery (20 charges)"
                 }
             ]
         },

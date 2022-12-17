@@ -12,24 +12,18 @@
     "stat_block": {
         "name": "Comet Wasp Swarm",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Vermin (Space)",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Comet Wasp Swarm",
             "game-obj": "Monster",
             "image": "AA2_Vermin_Comet_Wasp.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Diminutive",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -41,7 +35,13 @@
                     "subtype": "creature_subtype",
                     "name": "swarm"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Diminutive",
+            "alien_family": "Vermin (Space)",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

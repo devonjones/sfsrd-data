@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Bryrvath",
         "type": "stat_block",
-        "cr": "15",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Bryrvath",
             "game-obj": "Monster",
             "image": "AA1_Bryrvath.png"
         },
-        "xp": 51200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 9
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +40,12 @@
                     "subtype": "creature_subtype",
                     "name": "evil"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "cr": "15",
+            "role": "Spellcaster",
+            "xp": 51200
         },
         "senses": {
             "name": "Senses",

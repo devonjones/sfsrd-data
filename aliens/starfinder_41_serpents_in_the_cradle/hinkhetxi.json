@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Hinkhetxi",
         "type": "stat_block",
-        "cr": "12",
-        "role": "Combatant",
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +29,25 @@
                     "subtype": "creature_subtype",
                     "name": "water"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "cr": "12",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "hinkhetxi"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 19200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "hinkhetxi"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -291,6 +291,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "kalo encounter suit III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultrathin doshakari"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "blizzard-class zero rifle with 1 super-capacity battery (80 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flash grenades III (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -372,28 +394,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "tactile chemoreceptors"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "kalo encounter suit III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultrathin doshakari"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "blizzard-class zero rifle with 1 super-capacity battery (80 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flash grenades III (2)"
                 }
             ]
         },

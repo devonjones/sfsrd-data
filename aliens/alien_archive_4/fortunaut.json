@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Fortunaut",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Worlanisi",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Fortunaut",
             "game-obj": "Monster",
             "image": "AA4_Worlanisi_Fortunaut.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Good",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "worlanisi"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Small",
+            "alien_family": "Worlanisi",
+            "cr": "9",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "worlanisi"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mechanic"
+                }
+            ],
+            "xp": 6400
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "worlanisi"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mechanic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -208,6 +208,23 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "d-suit III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "incapacitator with 1 battery (20 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "4 persuaders with 4 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -331,23 +348,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "worlanisi luck"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "d-suit III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "incapacitator with 1 battery (20 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "4 persuaders with 4 batteries (20 charges each)"
                 }
             ]
         },

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Maraquoi Shaman",
         "type": "stat_block",
-        "cr": "8",
-        "alien_family": "Maraquoi",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Maraquoi Shaman",
             "game-obj": "Monster",
             "image": "AA1_Maraquoi_Shaman.png"
         },
-        "xp": 4800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "maraquoi"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Maraquoi",
+            "cr": "8",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "maraquoi"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 4800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "maraquoi"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -171,6 +171,18 @@
             ],
             "connection": "healer"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "d-suit II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sentinel spear"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -238,18 +250,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "lifelink (8 HP)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "d-suit II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "sentinel spear"
                 }
             ]
         },

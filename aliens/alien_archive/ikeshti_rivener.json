@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Ikeshti Rivener",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Ikeshti",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ikeshti Rivener",
             "game-obj": "Monster",
             "image": "AA1_Ikeshti_Rivener.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "ikeshti"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Ikeshti",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Caldera",
         "type": "stat_block",
-        "cr": "10",
-        "alien_family": "Thermatrod",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Caldera",
             "game-obj": "Monster",
             "image": "AA4_Thermatrod.png"
         },
-        "xp": 9600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Chaotic Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "fire"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Huge",
+            "alien_family": "Thermatrod",
+            "cr": "10",
+            "role": "Combatant",
+            "xp": 9600
         },
         "senses": {
             "name": "Senses",

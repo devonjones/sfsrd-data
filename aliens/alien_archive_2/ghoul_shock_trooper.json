@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Ghoul Shock Trooper",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Ghoul",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Ghoul Shock Trooper",
             "game-obj": "Monster",
             "image": "AA2_Ghoul_Shock_Trooper.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Ghoul",
+            "cr": "11",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ghoul"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 12800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "ghoul"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -282,6 +282,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "golemforged plating IV"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "perihelion artillery laser with 1 ultra-capacity battery (100 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical autobeam rifle with 1 high-capacity battery (40 charges)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "frag grenades IV (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -347,28 +369,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "golemforged plating IV"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "perihelion artillery laser with 1 ultra-capacity battery (100 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical autobeam rifle with 1 high-capacity battery (40 charges)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "frag grenades IV (2)"
                 }
             ]
         },

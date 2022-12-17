@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Asteroid Louse",
         "type": "stat_block",
-        "cr": "1/2",
-        "alien_family": "Vermin (Space)",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Asteroid Louse",
             "game-obj": "Monster",
             "image": "AA2_Vermin_Asteroid_Louse.png"
         },
-        "xp": 200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Small",
+            "alien_family": "Vermin (Space)",
+            "cr": "1/2",
+            "role": "Combatant",
+            "xp": 200
         },
         "senses": {
             "name": "Senses",

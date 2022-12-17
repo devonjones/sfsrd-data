@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Multipole",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Kaion",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Multipole",
             "game-obj": "Monster",
             "image": "AA4_Kaion.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Kaion",
+            "cr": "11",
+            "role": "Combatant",
+            "xp": 12800
         },
         "senses": {
             "name": "Senses",

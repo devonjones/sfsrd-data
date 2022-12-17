@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Plesiosaur",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Dinosaur",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Plesiosaur",
             "game-obj": "Monster",
             "image": "AA2_Dinosaur2.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Huge",
+            "alien_family": "Dinosaur",
+            "cr": "7",
+            "role": "Combatant",
+            "xp": 3200
         },
         "senses": {
             "name": "Senses",

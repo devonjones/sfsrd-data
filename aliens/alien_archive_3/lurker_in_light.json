@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Lurker in Light",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Lurker in Light",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Lurker in Light",
             "game-obj": "Monster",
             "image": "AA3_Lurker_in_Light.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "alien_family": "Lurker in Light",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",
@@ -170,6 +170,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic spined blade"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -237,13 +244,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "daylight door"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic spined blade"
                 }
             ]
         },

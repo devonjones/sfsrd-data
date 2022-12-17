@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Dessamar Theurgist",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Dessamar",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Dessamar Theurgist",
             "game-obj": "Monster",
             "image": "AA3_Dessamar_Instars.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Chaotic Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "dessamar"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Good",
+            "size": "Medium",
+            "alien_family": "Dessamar",
+            "cr": "6",
+            "role": "Spellcaster",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
@@ -223,6 +223,23 @@
             ],
             "connection": "star shaman"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "shrieking larva with 2 batteries (20 charges each)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical living staff with 1 battery (20 charges)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -301,23 +318,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "walk the void"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite stationwear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "shrieking larva with 2 batteries (20 charges each)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical living staff with 1 battery (20 charges)"
                 }
             ]
         },

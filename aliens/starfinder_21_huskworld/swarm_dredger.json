@@ -12,18 +12,12 @@
     "stat_block": {
         "name": "Swarm Dredger",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Troop",
-        "role": "Combatant",
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Chaotic Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -35,7 +29,13 @@
                     "subtype": "creature_subtype",
                     "name": "troop"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Small",
+            "alien_family": "Troop",
+            "cr": "5",
+            "role": "Combatant",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

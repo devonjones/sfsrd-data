@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Tsukumogami",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Kami",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Tsukumogami",
             "game-obj": "Monster",
             "image": "AA3_Kami_Tsukumogami.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral Evil",
-        "size": "Diminutive",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,7 +33,13 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Diminutive",
+            "alien_family": "Kami",
+            "cr": "4",
+            "role": "Spellcaster",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

@@ -12,22 +12,22 @@
     "stat_block": {
         "name": "Pale Stranger",
         "type": "stat_block",
-        "cr": "11",
-        "role": "Expert",
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 12
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "cr": "11",
+            "role": "Expert",
+            "xp": 12800
         },
         "senses": {
             "name": "Senses",
@@ -154,6 +154,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite semi-auto pistols (4)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ultrathin longsword"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -226,18 +238,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "elite semi-auto pistols (4)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "ultrathin longsword"
                 }
             ]
         },

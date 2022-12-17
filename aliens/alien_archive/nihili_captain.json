@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Nihili Captain",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Nihili",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Nihili Captain",
             "game-obj": "Monster",
             "image": "AA1_Nihili.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 6
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Nihili",
+            "cr": "13",
+            "role": "Combatant",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",

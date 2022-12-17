@@ -5,42 +5,42 @@
     "stat_block": {
         "name": "Mi-Go High Priest",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Mi-Go",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Mi-Go High Priest",
             "game-obj": "Monster",
             "image": "AA2_Mi-Go.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Mi-Go",
+            "cr": "11",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mi-go"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 12800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mi-go"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -201,6 +201,13 @@
             ],
             "connection": "Akashic"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mi-go hailstorm-class zero pistol with 2 mi-go high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -295,13 +302,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "peer into the future (2/day)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "mi-go hailstorm-class zero pistol with 2 mi-go high-capacity batteries (40 charges each)"
                 }
             ]
         },

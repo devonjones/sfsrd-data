@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Aeon Guard Specialist",
         "type": "stat_block",
-        "cr": "7",
-        "alien_family": "Aeon Guard",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Aeon Guard Specialist",
             "game-obj": "Monster",
             "image": "AA1_Aeon_Guard.png"
         },
-        "xp": 3200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "human"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Aeon Guard",
+            "cr": "7",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "azlanti"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 3200
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "azlanti"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "operative"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -240,6 +240,33 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "AG SpecOps armor (<i>clear spindle aeon stone</i>, deflective reinforcement, filtered rebreather, jetpack, <i>purple sphere aeon stone</i>)"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "AG accelerator rifle"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona laser pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<i>efficient bandolier</i> (200 longarm rounds and 2 ultracapacity batteries)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -325,33 +352,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "specialization (ghost)"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "AG SpecOps armor (<i>clear spindle aeon stone</i>, deflective reinforcement, filtered rebreather, jetpack, <i>purple sphere aeon stone</i>)"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "AG accelerator rifle"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "corona laser pistol"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "tactical knife"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "<i>efficient bandolier</i> (200 longarm rounds and 2 ultracapacity batteries)"
                 }
             ]
         },

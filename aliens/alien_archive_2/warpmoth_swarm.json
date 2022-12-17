@@ -5,18 +5,12 @@
     "stat_block": {
         "name": "Warpmoth Swarm",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Vermin (Space)",
-        "role": "Combatant",
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Neutral",
-        "size": "Fine",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -28,7 +22,13 @@
                     "subtype": "creature_subtype",
                     "name": "swarm"
                 }
-            ]
+            ],
+            "alignment": "Neutral",
+            "size": "Fine",
+            "alien_family": "Vermin (Space)",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

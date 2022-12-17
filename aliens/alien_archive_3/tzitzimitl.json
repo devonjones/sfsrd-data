@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Tzitzimitl",
         "type": "stat_block",
-        "cr": "19",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Tzitzimitl",
             "game-obj": "Monster",
             "image": "AA3_Tzitzimitl.png"
         },
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 9
         },
-        "alignment": "Neutral Evil",
-        "size": "Gargantuan",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead"
+            "creature_type": "Undead",
+            "alignment": "Neutral Evil",
+            "size": "Gargantuan",
+            "cr": "19",
+            "role": "Combatant",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",

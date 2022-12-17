@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Kanabo Commando",
         "type": "stat_block",
-        "cr": "3",
-        "alien_family": "Oni",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Kanabo Commando",
             "game-obj": "Monster",
             "image": "AA2_Oni_Kanabo.png"
         },
-        "xp": 800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Lawful Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -39,20 +33,26 @@
                     "subtype": "creature_subtype",
                     "name": "native"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "alien_family": "Oni",
+            "cr": "3",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kanabo"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 800
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kanabo"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "soldier"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -215,6 +215,28 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "golemforged plating II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "autotarget rifle with 50 longarm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "carbon steel curveblade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flash grenades I (2)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -272,28 +294,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "rune of the eldritch knight"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "golemforged plating II"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "autotarget rifle with 50 longarm rounds"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "carbon steel curveblade"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "flash grenades I (2)"
                 }
             ]
         },

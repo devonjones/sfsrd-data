@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Orocoran",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Orocoran",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Orocoran",
             "game-obj": "Monster",
             "image": "AA1_Orocoran.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 5
         },
-        "alignment": "Chaotic Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "alien_family": "Orocoran",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",

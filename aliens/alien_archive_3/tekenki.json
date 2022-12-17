@@ -12,23 +12,18 @@
     "stat_block": {
         "name": "Tekenki",
         "type": "stat_block",
-        "cr": "17",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Tekenki",
             "game-obj": "Monster",
             "image": "AA3_Tekenki.png"
         },
-        "xp": 102400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Chaotic Evil",
-        "size": "Colossal",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -45,7 +40,12 @@
                     "subtype": "creature_subtype",
                     "name": "technological"
                 }
-            ]
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Colossal",
+            "cr": "17",
+            "role": "Combatant",
+            "xp": 102400
         },
         "senses": {
             "name": "Senses",
@@ -229,6 +229,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white star plasma cannons (3)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -310,13 +317,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "spaceflight"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "white star plasma cannons (3)"
                 }
             ]
         },

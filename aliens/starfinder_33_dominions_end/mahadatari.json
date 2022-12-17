@@ -12,17 +12,12 @@
     "stat_block": {
         "name": "Mahadatari",
         "type": "stat_block",
-        "cr": "19",
-        "role": "Expert",
-        "xp": 204800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 11
         },
-        "alignment": "Lawful Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +29,12 @@
                     "subtype": "creature_subtype",
                     "name": "kasatha"
                 }
-            ]
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "cr": "19",
+            "role": "Expert",
+            "xp": 204800
         },
         "senses": {
             "name": "Senses",
@@ -173,6 +173,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "bespoke echelon fashion"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -259,13 +266,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "testament to history"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "bespoke echelon fashion"
                 }
             ]
         },

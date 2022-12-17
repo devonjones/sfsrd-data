@@ -12,28 +12,28 @@
     "stat_block": {
         "name": "Harpy Jasmine",
         "type": "stat_block",
-        "cr": "5",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Harpy Jasmine",
             "game-obj": "Monster",
             "image": "AA4_Harpy_Jasmine.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "5",
+            "role": "Spellcaster",
+            "xp": 1600
         },
         "senses": {
             "name": "Senses",

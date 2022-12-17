@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Emotivore",
         "type": "stat_block",
-        "cr": "9",
-        "alien_family": "Emotivore",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Emotivore",
             "game-obj": "Monster",
             "image": "AA2_Emotivore.png"
         },
-        "xp": 6400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Evil",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "shapechanger"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "alien_family": "Emotivore",
+            "cr": "9",
+            "role": "Spellcaster",
+            "xp": 6400
         },
         "senses": {
             "name": "Senses",
@@ -200,6 +200,18 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "d-suit III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hailstorm-class zero pistol with 2 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -300,18 +312,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "unliving"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "d-suit III"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "hailstorm-class zero pistol with 2 high-capacity batteries (40 charges each)"
                 }
             ]
         },

@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Frujai Soldier",
         "type": "stat_block",
-        "cr": "12",
-        "alien_family": "Frujai",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Frujai Soldier",
             "game-obj": "Monster",
             "image": "AA1_Frugai_Soldier.png"
         },
-        "xp": 19200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 2
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Plant"
+            "creature_type": "Plant",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Frujai",
+            "cr": "12",
+            "role": "Combatant",
+            "xp": 19200
         },
         "senses": {
             "name": "Senses",

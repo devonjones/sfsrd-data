@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Juvenile Nyssholora",
         "type": "stat_block",
-        "cr": "4",
-        "alien_family": "Nyssholora",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Juvenile Nyssholora",
             "game-obj": "Monster",
             "image": "AA2_Nyssholora.png"
         },
-        "xp": 1200,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 0
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Magical Beast"
+            "creature_type": "Magical Beast",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Nyssholora",
+            "cr": "4",
+            "role": "Combatant",
+            "xp": 1200
         },
         "senses": {
             "name": "Senses",

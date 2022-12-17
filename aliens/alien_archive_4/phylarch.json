@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Phylarch",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Utesra",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Phylarch",
             "game-obj": "Monster",
             "image": "AA4_Utesra_Phylarch.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Vermin"
+            "creature_type": "Vermin",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Utesra",
+            "cr": "11",
+            "role": "Combatant",
+            "xp": 12800
         },
         "senses": {
             "name": "Senses",

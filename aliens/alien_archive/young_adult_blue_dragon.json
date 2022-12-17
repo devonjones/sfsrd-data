@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Young Adult Blue Dragon",
         "type": "stat_block",
-        "cr": "11",
-        "alien_family": "Dragon (Chromatic)",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Young Adult Blue Dragon",
             "game-obj": "Monster",
             "image": "AA1_Dragon_Young_Adult_Blue.png"
         },
-        "xp": 12800,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 4
         },
-        "alignment": "Lawful Evil",
-        "size": "Huge",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "earth"
                 }
-            ]
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Huge",
+            "alien_family": "Dragon (Chromatic)",
+            "cr": "11",
+            "role": "Combatant",
+            "xp": 12800
         },
         "senses": {
             "name": "Senses",
@@ -291,6 +291,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aurora arc rifle with 4 high-capacity batteries (40 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -377,13 +384,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "sound imitation"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "aurora arc rifle with 4 high-capacity batteries (40 charges each)"
                 }
             ]
         },

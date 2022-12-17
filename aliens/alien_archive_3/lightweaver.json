@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Lightweaver",
         "type": "stat_block",
-        "cr": "14",
-        "alien_family": "Lurker in Light",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Lightweaver",
             "game-obj": "Monster",
             "image": "AA3_Lurker_in_Light_Lightweaver.png"
         },
-        "xp": 38400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 8
         },
-        "alignment": "Neutral Evil",
-        "size": "Small",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,7 +28,13 @@
                     "subtype": "creature_subtype",
                     "name": "extraplanar"
                 }
-            ]
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "alien_family": "Lurker in Light",
+            "cr": "14",
+            "role": "Spellcaster",
+            "xp": 38400
         },
         "senses": {
             "name": "Senses",
@@ -167,6 +167,13 @@
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "neutron radshot with 2 super-capacity batteries (80 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -251,13 +258,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "ritual leap"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "neutron radshot with 2 super-capacity batteries (80 charges each)"
                 }
             ]
         },

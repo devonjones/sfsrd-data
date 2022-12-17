@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Yithian Elder",
         "type": "stat_block",
-        "cr": "13",
-        "alien_family": "Yithian",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Yithian Elder",
             "game-obj": "Monster",
             "image": "AA3_Yithian.png"
         },
-        "xp": 25600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Lawful Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Lawful Neutral",
+            "size": "Large",
+            "alien_family": "Yithian",
+            "cr": "13",
+            "role": "Expert",
+            "xp": 25600
         },
         "senses": {
             "name": "Senses",
@@ -176,6 +176,13 @@
                 "value": "10 ft."
             }
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "impulse storm coil with 4 super-capacity batteries (80 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -267,13 +274,6 @@
                     "type": "stat_block_section",
                     "subtype": "other_ability",
                     "name": "telepathic bond"
-                }
-            ],
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "impulse storm coil with 4 super-capacity batteries (80 charges each)"
                 }
             ]
         },

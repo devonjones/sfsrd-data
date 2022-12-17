@@ -5,24 +5,18 @@
     "stat_block": {
         "name": "Kalo Deepspeaker",
         "type": "stat_block",
-        "cr": "5",
-        "alien_family": "Kalo",
-        "role": "Spellcaster",
         "image": {
             "type": "image",
             "name": "Kalo Deepspeaker",
             "game-obj": "Monster",
             "image": "AA1_Kalo_Mystic.png"
         },
-        "xp": 1600,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral Good",
-        "size": "Medium",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
@@ -34,20 +28,26 @@
                     "subtype": "creature_subtype",
                     "name": "aquatic"
                 }
-            ]
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "alien_family": "Kalo",
+            "cr": "5",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "kalo"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "mystic"
+                }
+            ],
+            "xp": 1600
         },
-        "grafts": [
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "kalo"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "graft",
-                "name": "mystic"
-            }
-        ],
         "senses": {
             "name": "Senses",
             "type": "stat_block_section",
@@ -195,6 +195,23 @@
             ],
             "connection": "xenodruid"
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic Lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater tactical spear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater frostbite-class zero pistol with 3 batteries (20 charges each)"
+            }
+        ],
         "statistics": {
             "name": "Statistics",
             "type": "stat_block_section",
@@ -272,24 +289,7 @@
                         "name": "speak with animals"
                     }
                 ]
-            },
-            "gear": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "basic Lashunta tempweave"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater tactical spear"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "gear",
-                    "name": "underwater frostbite-class zero pistol with 3 batteries (20 charges each)"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

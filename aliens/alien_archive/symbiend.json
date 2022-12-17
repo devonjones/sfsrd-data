@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Symbiend",
         "type": "stat_block",
-        "cr": "1/3",
-        "alien_family": "Symbiend",
-        "role": "Expert",
         "image": {
             "type": "image",
             "name": "Symbiend",
             "game-obj": "Monster",
             "image": "AA1_Symbiend.png"
         },
-        "xp": 135,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 3
         },
-        "alignment": "Neutral",
-        "size": "Diminutive",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Aberration"
+            "creature_type": "Aberration",
+            "alignment": "Neutral",
+            "size": "Diminutive",
+            "alien_family": "Symbiend",
+            "cr": "1/3",
+            "role": "Expert",
+            "xp": 135
         },
         "senses": {
             "name": "Senses",

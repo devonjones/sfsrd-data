@@ -5,29 +5,29 @@
     "stat_block": {
         "name": "Green",
         "type": "stat_block",
-        "cr": "6",
-        "alien_family": "Rageshkor",
-        "role": "Combatant",
         "image": {
             "type": "image",
             "name": "Green",
             "game-obj": "Monster",
             "image": "AA4_Rageshkor_Green.png"
         },
-        "xp": 2400,
         "initiative": {
             "name": "Initiative",
             "type": "stat_block_section",
             "subtype": "initiative",
             "value": 1
         },
-        "alignment": "Neutral",
-        "size": "Large",
         "creature_type": {
             "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Animal"
+            "creature_type": "Animal",
+            "alignment": "Neutral",
+            "size": "Large",
+            "alien_family": "Rageshkor",
+            "cr": "6",
+            "role": "Combatant",
+            "xp": 2400
         },
         "senses": {
             "name": "Senses",
