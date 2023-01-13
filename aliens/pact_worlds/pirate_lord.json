@@ -71,7 +71,12 @@
             "name": "Defense",
             "type": "stat_block_section",
             "subtype": "defense",
-            "hp": 110,
+            "hp": {
+                "name": "hitpoints",
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 110
+            },
             "ac": {
                 "name": "AC",
                 "type": "stat_block_section",
