@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "daemon"
+                    "name": "Creature Subtype",
+                    "text": "daemon"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -61,12 +64,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (emotions) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotions"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -115,13 +131,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "harden exterior"
+                    "text": "harden exterior"
                 }
             ],
             "immunities": [
@@ -129,25 +145,25 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "death effects"
+                    "text": "death effects"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "disease"
+                    "text": "disease"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "resistances": [
@@ -227,7 +243,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "psychic warfare"
+                    "text": "psychic warfare"
                 },
                 {
                     "name": "Offensive Ability",
@@ -255,7 +271,7 @@
                             "name": "31 HP"
                         }
                     ],
-                    "value": "swallow whole"
+                    "text": "swallow whole"
                 }
             ]
         },
@@ -334,12 +350,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "emotional empathy"
+                    "name": "Other Ability",
+                    "text": "emotional empathy"
                 }
             ]
         },

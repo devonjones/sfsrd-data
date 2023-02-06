@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -50,12 +51,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (emotion) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotion"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -104,13 +118,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "weaknesses": [
@@ -174,7 +188,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "swirling colors"
+                    "text": "swirling colors"
                 }
             ]
         },
@@ -211,7 +225,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

@@ -26,22 +26,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "air"
+                    "name": "Creature Subtype",
+                    "text": "air"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "elemental"
+                    "name": "Creature Subtype",
+                    "text": "elemental"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "fire"
+                    "name": "Creature Subtype",
+                    "text": "fire"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "native"
+                    "name": "Creature Subtype",
+                    "text": "native"
                 }
             ],
             "alignment": "Neutral",
@@ -65,7 +69,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -115,7 +122,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "immunities": [
@@ -123,19 +130,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "elemental immunities"
+                    "text": "elemental immunities"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "radiation"
+                    "text": "radiation"
                 }
             ],
             "weaknesses": [
@@ -211,13 +218,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "conflagration"
+                    "text": "conflagration"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "stellar heat"
+                    "text": "stellar heat"
                 }
             ]
         },
@@ -255,17 +262,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "aglow (90 ft.)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "90 ft."
+                        }
+                    ],
+                    "text": "aglow"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar adaptation"
+                    "name": "Other Ability",
+                    "text": "solar adaptation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight"
+                    "name": "Other Ability",
+                    "text": "spaceflight"
                 }
             ]
         },

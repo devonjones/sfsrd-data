@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -55,12 +57,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (emotion) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotion"
+                        }
+                    ],
+                    "value": "blindsight"
                 }
             ]
         },
@@ -109,7 +124,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 },
                 {
                     "name": "Defensive Ability",
@@ -122,7 +137,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "limbicate stealth"
+                    "text": "limbicate stealth"
                 }
             ]
         },
@@ -184,7 +199,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "mortified mitosis"
+                    "text": "mortified mitosis"
                 },
                 {
                     "name": "Offensive Ability",
@@ -197,7 +212,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "reckless urge"
+                    "text": "reckless urge"
                 }
             ]
         },

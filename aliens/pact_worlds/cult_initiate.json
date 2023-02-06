@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "human"
+                    "name": "Creature Subtype",
+                    "text": "human"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "human"
+                    "name": "Graft",
+                    "text": "Human"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "Envoy"
                 }
             ],
             "xp": 1200
@@ -254,12 +257,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cunning liar"
+                    "name": "Other Ability",
+                    "text": "cunning liar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (clever feint, quick dispiriting taunt)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "clever feint"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick dispiriting taunt"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 }
             ]
         },

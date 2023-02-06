@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "pahtra"
+                    "name": "Creature Subtype",
+                    "text": "pahtra"
                 }
             ],
             "alignment": "Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "pahtra"
+                    "name": "Graft",
+                    "text": "Pahtra"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "technomancer"
+                    "name": "Graft",
+                    "text": "technomancer"
                 }
             ],
             "xp": 600
@@ -62,12 +65,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -116,7 +123,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "nimble"
+                    "text": "nimble"
                 }
             ]
         },
@@ -272,12 +279,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "magic hacks (quick scan)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick scan"
+                        }
+                    ],
+                    "text": "magic hacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spell cache (tattoo)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "tattoo"
+                        }
+                    ],
+                    "text": "spell cache"
                 }
             ]
         },

@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (sound) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sound"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -97,7 +108,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "weaknesses": [
@@ -234,7 +245,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "death throes"
+                    "name": "Other Ability",
+                    "text": "death throes"
                 }
             ]
         },

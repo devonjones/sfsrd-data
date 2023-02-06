@@ -43,7 +43,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -170,7 +180,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "ferocious charge"
+                    "text": "ferocious charge"
                 }
             ]
         },
@@ -201,7 +211,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "marshborn"
+                    "name": "Other Ability",
+                    "text": "marshborn"
                 }
             ]
         },

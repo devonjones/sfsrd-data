@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "osharu"
+                    "name": "Graft",
+                    "text": "Osharu"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 4800
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -271,22 +276,33 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "access Akashic record"
+                    "name": "Other Ability",
+                    "text": "access Akashic record"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "Akashic knowledge"
+                    "name": "Other Ability",
+                    "text": "Akashic knowledge"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "peer into the future (1/day)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1/day"
+                        }
+                    ],
+                    "text": "peer into the future"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "slime"
+                    "name": "Other Ability",
+                    "text": "slime"
                 }
             ]
         },

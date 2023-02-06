@@ -33,7 +33,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "plantlike"
+                    "name": "Creature Subtype",
+                    "text": "plantlike"
                 }
             ],
             "alignment": "Neutral Good",
@@ -56,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -112,7 +116,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "depth inured"
+                    "text": "depth inured"
                 }
             ],
             "resistances": [
@@ -212,7 +216,7 @@
                             "name": "DC 11"
                         }
                     ],
-                    "value": "beguiling glow"
+                    "text": "beguiling glow"
                 }
             ]
         },
@@ -303,22 +307,33 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "bioluminescence"
+                    "name": "Other Ability",
+                    "text": "bioluminescence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "no breath"
+                    "name": "Other Ability",
+                    "text": "no breath"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "plantlike"
+                    "name": "Other Ability",
+                    "text": "plantlike"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "symbiote adaption (tentacle krikik)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "tentacle krikik"
+                        }
+                    ],
+                    "text": "symbiote adaption"
                 }
             ]
         },

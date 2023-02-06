@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "water"
+                    "name": "Creature Subtype",
+                    "text": "water"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -61,7 +64,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -110,7 +116,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "water mastery"
+                    "text": "water mastery"
                 }
             ]
         },
@@ -216,7 +222,7 @@
                             "name": "1/10 minutes"
                         }
                     ],
-                    "value": "vortex"
+                    "text": "vortex"
                 }
             ]
         },
@@ -317,12 +323,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "amphibious"
+                    "name": "Other Ability",
+                    "text": "amphibious"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 }
             ]
         },

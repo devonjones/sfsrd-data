@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (heat) 360 ft."
+                    "name": "Special Sense",
+                    "range": 360,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "heat"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },

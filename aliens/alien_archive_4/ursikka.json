@@ -49,17 +49,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -108,7 +122,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "ferocity"
+                    "text": "ferocity"
                 }
             ],
             "resistances": [
@@ -202,19 +216,19 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "coat claws"
+                    "text": "coat claws"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "freezing saliva"
+                    "text": "freezing saliva"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "spit"
+                    "text": "spit"
                 }
             ]
         },
@@ -257,7 +271,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "hibernation"
+                    "name": "Other Ability",
+                    "text": "hibernation"
                 }
             ]
         },

@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "maraquoi"
+                    "name": "Creature Subtype",
+                    "text": "maraquoi"
                 }
             ],
             "alignment": "Neutral Good",
@@ -50,12 +51,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (30 ft.)"
+                    "name": "Special Sense",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 ft."
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },

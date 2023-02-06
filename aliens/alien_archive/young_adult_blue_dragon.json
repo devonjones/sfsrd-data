@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "earth"
+                    "name": "Creature Subtype",
+                    "text": "earth"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -50,12 +51,18 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -112,19 +119,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "paralysis"
+                    "text": "paralysis"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep"
+                    "text": "sleep"
                 }
             ]
         },
@@ -298,7 +305,7 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "breath weapon"
+                    "text": "breath weapon"
                 },
                 {
                     "name": "Offensive Ability",
@@ -311,7 +318,7 @@
                             "name": "4d6+19 B"
                         }
                     ],
-                    "value": "crush"
+                    "text": "crush"
                 }
             ]
         },
@@ -407,7 +414,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "sound imitation"
+                    "name": "Other Ability",
+                    "text": "sound imitation"
                 }
             ]
         },

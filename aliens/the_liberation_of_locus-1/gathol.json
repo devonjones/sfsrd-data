@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "gathol"
+                    "name": "Creature Subtype",
+                    "text": "gathol"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "gathol"
+                    "name": "Graft",
+                    "text": "Gathol"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "vanguard"
+                    "name": "Graft",
+                    "text": "vanguard"
                 }
             ],
             "xp": 800
@@ -62,7 +65,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -119,13 +123,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "mitigate"
+                    "text": "mitigate"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "stony plates"
+                    "text": "stony plates"
                 }
             ],
             "dr": {
@@ -270,7 +274,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "entropic strike"
+                    "text": "entropic strike"
                 }
             ]
         },
@@ -368,22 +372,47 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "aspect insight (exergy)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exergy"
+                        }
+                    ],
+                    "text": "aspect insight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "entropic pool"
+                    "name": "Other Ability",
+                    "text": "entropic pool"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "reactive (1/day)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1/day"
+                        }
+                    ],
+                    "text": "reactive"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "vanguard disciplines (metabolic stability)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "metabolic stability"
+                        }
+                    ],
+                    "text": "vanguard disciplines"
                 }
             ]
         },

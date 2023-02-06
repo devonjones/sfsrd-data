@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "ferran"
+                    "name": "Graft",
+                    "text": "Ferran"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 1600
@@ -55,7 +57,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -180,7 +183,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "momentum"
+                    "text": "momentum"
                 },
                 {
                     "name": "Offensive Ability",
@@ -193,13 +196,13 @@
                             "name": "DC 17"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -293,27 +296,70 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (datapad)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "datapad"
+                        }
+                    ],
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (energy shield [10 HP, 5 min.], neural shunt)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "energy shield [10 HP"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "5 min.]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "neural shunt"
+                        }
+                    ],
+                    "text": "mechanic tricks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "remote hack (DC 17)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 17"
+                        }
+                    ],
+                    "text": "remote hack"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "wireless hack"
+                    "name": "Other Ability",
+                    "text": "wireless hack"
                 }
             ]
         },

@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "raxilite"
+                    "name": "Graft",
+                    "text": "Raxilite"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 1200
@@ -55,7 +57,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -104,7 +107,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "limited plant benefits"
+                    "text": "limited plant benefits"
                 }
             ]
         },
@@ -195,13 +198,13 @@
                             "name": "DC 15"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -300,27 +303,58 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (brain augmentation with standard datajack)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "brain augmentation with standard datajack"
+                        }
+                    ],
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "LFAN"
+                    "name": "Other Ability",
+                    "text": "LFAN"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "LFAN symbiosis"
+                    "name": "Other Ability",
+                    "text": "LFAN symbiosis"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (distracting hack, overcharge)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "distracting hack"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "overcharge"
+                        }
+                    ],
+                    "text": "mechanic tricks"
                 }
             ]
         },

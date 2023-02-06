@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 }
             ],
             "alignment": "Neutral",
@@ -50,12 +51,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 180 ft."
+                    "name": "Special Sense",
+                    "range": 180,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sense through (vision [fog only]) 90 ft."
+                    "name": "Special Sense",
+                    "range": 90,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vision [fog only]"
+                        }
+                    ],
+                    "value": "sense through"
                 }
             ]
         },
@@ -104,7 +118,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amphibious"
+                    "text": "amphibious"
                 }
             ],
             "immunities": [
@@ -112,7 +126,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "deafened"
+                    "text": "deafened"
                 }
             ],
             "resistances": [
@@ -215,13 +229,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "atmospheric enhancement"
+                    "text": "atmospheric enhancement"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "sonic snap"
+                    "text": "sonic snap"
                 }
             ]
         },
@@ -272,22 +286,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "aerial buoyancy"
+                    "name": "Other Ability",
+                    "text": "aerial buoyancy"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "amphibious"
+                    "name": "Other Ability",
+                    "text": "amphibious"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindless"
+                    "name": "Other Ability",
+                    "text": "mindless"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "water breathing"
+                    "name": "Other Ability",
+                    "text": "water breathing"
                 }
             ]
         },

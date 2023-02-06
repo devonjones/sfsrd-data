@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "jububnan"
+                    "name": "Graft",
+                    "text": "Jububnan"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "witchwarper"
+                    "name": "Graft",
+                    "text": "witchwarper"
                 }
             ],
             "xp": 4800
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -283,32 +288,64 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "alternate outcome (1/day)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1/day"
+                        }
+                    ],
+                    "text": "alternate outcome"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "astonishing balance"
+                    "name": "Other Ability",
+                    "text": "astonishing balance"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "infinite worlds (3/day)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3/day"
+                        }
+                    ],
+                    "text": "infinite worlds"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "paradigm shifts (inhibit [DC 18], flash teleport)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "inhibit [DC 18]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "flash teleport"
+                        }
+                    ],
+                    "text": "paradigm shifts"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "puff up"
+                    "name": "Other Ability",
+                    "text": "puff up"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "wanderer\u2019s pluck"
+                    "name": "Other Ability",
+                    "text": "wanderer\u2019s pluck"
                 }
             ]
         },

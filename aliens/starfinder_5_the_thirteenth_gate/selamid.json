@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "selamid"
+                    "name": "Creature Subtype",
+                    "text": "selamid"
                 }
             ],
             "alignment": "Neutral Good",
@@ -50,12 +51,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -111,13 +123,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "gravity adaptation"
+                    "text": "gravity adaptation"
                 }
             ]
         },
@@ -278,17 +290,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "advanced ooze biology"
+                    "name": "Other Ability",
+                    "text": "advanced ooze biology"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "malleable"
+                    "name": "Other Ability",
+                    "text": "malleable"
                 }
             ]
         },

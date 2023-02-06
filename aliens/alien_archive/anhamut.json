@@ -33,12 +33,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "inevitable"
+                    "name": "Creature Subtype",
+                    "text": "inevitable"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "lawful"
+                    "name": "Creature Subtype",
+                    "text": "lawful"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -62,12 +64,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -123,7 +129,7 @@
                             "name": "chaotic"
                         }
                     ],
-                    "value": "regeneration 5"
+                    "text": "regeneration 5"
                 }
             ],
             "dr": {
@@ -138,13 +144,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "swarm immunities in discorporated form"
+                    "text": "swarm immunities in discorporated form"
                 }
             ],
             "sr": {
@@ -237,7 +243,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "inevitable onslaught"
+                    "text": "inevitable onslaught"
                 }
             ]
         },
@@ -304,12 +310,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "constructed"
+                    "name": "Other Ability",
+                    "text": "constructed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "discorporation"
+                    "name": "Other Ability",
+                    "text": "discorporation"
                 }
             ]
         },

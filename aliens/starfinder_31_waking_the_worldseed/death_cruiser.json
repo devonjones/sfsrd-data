@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -50,12 +51,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (life)"
+                    "name": "Special Sense",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -106,7 +118,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 }
             ],
             "immunities": [
@@ -114,7 +126,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ]
         },
@@ -246,12 +258,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "death racer"
+                    "name": "Other Ability",
+                    "text": "death racer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "soulbound boost"
+                    "name": "Other Ability",
+                    "text": "soulbound boost"
                 }
             ]
         },

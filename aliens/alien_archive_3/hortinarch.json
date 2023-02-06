@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "hortus"
+                    "name": "Graft",
+                    "text": "Hortus"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "technomancer"
+                    "name": "Graft",
+                    "text": "technomancer"
                 }
             ],
             "xp": 12800
@@ -55,7 +57,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -112,7 +115,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "limited plant benefits"
+                    "text": "limited plant benefits"
                 },
                 {
                     "name": "Defensive Ability",
@@ -125,7 +128,7 @@
                             "name": "DC 20"
                         }
                     ],
-                    "value": "slightly poisonous"
+                    "text": "slightly poisonous"
                 }
             ],
             "dr": {
@@ -289,22 +292,59 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "atmospheric alteration (DC 20)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 20"
+                        }
+                    ],
+                    "text": "atmospheric alteration"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cache capacitor 1 (unseen servant)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "unseen servant"
+                        }
+                    ],
+                    "text": "cache capacitor 1"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "magic hacks (flash teleport, reboot mind)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "flash teleport"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "reboot mind"
+                        }
+                    ],
+                    "text": "magic hacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spell cache (advanced living staff)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "advanced living staff"
+                        }
+                    ],
+                    "text": "spell cache"
                 }
             ]
         },

@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "maraquoi"
+                    "name": "Creature Subtype",
+                    "text": "maraquoi"
                 }
             ],
             "alignment": "Neutral Good",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "maraquoi"
+                    "name": "Graft",
+                    "text": "Maraquoi"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 4800
@@ -62,12 +65,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (sound) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sound"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -244,17 +258,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "healer\u2019s bond"
+                    "name": "Other Ability",
+                    "text": "healer\u2019s bond"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "healing channel (6d8)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "6d8"
+                        }
+                    ],
+                    "text": "healing channel"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "lifelink (8 HP)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8 HP"
+                        }
+                    ],
+                    "text": "lifelink"
                 }
             ]
         },

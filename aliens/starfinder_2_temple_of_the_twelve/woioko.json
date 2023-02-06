@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "woioko"
+                    "name": "Creature Subtype",
+                    "text": "woioko"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "floatborn"
+                    "name": "Graft",
+                    "text": "Floatborn"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "woioko"
+                    "name": "Graft",
+                    "text": "woioko"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 1200
@@ -67,7 +71,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -116,7 +121,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "slippery mind"
+                    "text": "slippery mind"
                 }
             ]
         },
@@ -274,12 +279,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (get \u2019em, inspiring boost [13 SP], quick inspiring boost [9 SP])"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "get \u2019em"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "inspiring boost [13 SP]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick inspiring boost [9 SP]"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "hold breath"
+                    "name": "Other Ability",
+                    "text": "hold breath"
                 }
             ]
         },

@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shirren"
+                    "name": "Creature Subtype",
+                    "text": "shirren"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -38,22 +39,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "songtwisted"
+                    "name": "Graft",
+                    "text": "Songtwisted"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "host"
+                    "name": "Graft",
+                    "text": "host"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "shirren"
+                    "name": "Graft",
+                    "text": "shirren"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 1600
@@ -72,7 +77,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (life or vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life or vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -209,13 +224,13 @@
                             "name": "DC 15"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -323,27 +338,71 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "backward limbs"
+                    "name": "Other Ability",
+                    "text": "backward limbs"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "communalism"
+                    "name": "Other Ability",
+                    "text": "communalism"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (armor upgrade)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "armor upgrade"
+                        }
+                    ],
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (neural shunt, overload weapon) remote hack (DC 15)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "neural shunt"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "overload weapon"
+                        }
+                    ],
+                    "text": "mechanic tricks"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 15"
+                        }
+                    ],
+                    "text": "remote hack"
                 }
             ]
         },

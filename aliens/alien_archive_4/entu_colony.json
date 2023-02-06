@@ -43,7 +43,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (emotion) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotion"
+                        }
+                    ],
+                    "value": "blindsight"
                 }
             ]
         },
@@ -92,13 +102,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "limited ooze benefits"
+                    "text": "limited ooze benefits"
                 }
             ]
         },
@@ -210,7 +220,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "tactical symbiosis"
+                    "name": "Other Ability",
+                    "text": "tactical symbiosis"
                 }
             ]
         },

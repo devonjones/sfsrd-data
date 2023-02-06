@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mi-go"
+                    "name": "Graft",
+                    "text": "Mi-go"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 12800
@@ -55,12 +57,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -110,7 +123,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "dr": {
@@ -125,13 +138,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 }
             ],
             "resistances": [
@@ -232,7 +245,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "evisceration"
+                    "text": "evisceration"
                 }
             ],
             "connection": "Akashic"
@@ -317,27 +330,46 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "access Akashic record"
+                    "name": "Other Ability",
+                    "text": "access Akashic record"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "Akashic knowledge"
+                    "name": "Other Ability",
+                    "text": "Akashic knowledge"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mi-go technology"
+                    "name": "Other Ability",
+                    "text": "mi-go technology"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight (Mysticism)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Mysticism"
+                        }
+                    ],
+                    "text": "spaceflight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "peer into the future (2/day)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2/day"
+                        }
+                    ],
+                    "text": "peer into the future"
                 }
             ]
         },

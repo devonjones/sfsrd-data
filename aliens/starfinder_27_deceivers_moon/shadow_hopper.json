@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -50,12 +51,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -105,7 +110,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "shadow hop"
+                    "text": "shadow hop"
                 }
             ],
             "weaknesses": [
@@ -176,7 +181,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "create darkness"
+                    "text": "create darkness"
                 }
             ]
         },
@@ -238,7 +243,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape"
+                    "name": "Other Ability",
+                    "text": "change shape"
                 }
             ]
         },

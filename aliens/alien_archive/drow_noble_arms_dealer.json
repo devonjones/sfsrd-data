@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "elf"
+                    "name": "Creature Subtype",
+                    "text": "elf"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "drow"
+                    "name": "Graft",
+                    "text": "Drow"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 12800
@@ -62,12 +65,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "<i>detect magic</i>"
+                    "name": "Special Sense",
+                    "value": "detect magic"
                 }
             ]
         },
@@ -124,7 +131,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep"
+                    "text": "sleep"
                 }
             ],
             "sr": {
@@ -203,13 +210,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "create darkness"
+                    "text": "create darkness"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "limning light"
+                    "text": "limning light"
                 }
             ]
         },
@@ -313,7 +320,30 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (hidden agenda, improved get \u2019em, improved hurry, quick dispiriting taunt)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "hidden agenda"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "improved get \u2019em"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "improved hurry"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick dispiriting taunt"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 }
             ]
         },

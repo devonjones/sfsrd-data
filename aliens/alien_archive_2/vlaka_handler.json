@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "vlaka"
+                    "name": "Creature Subtype",
+                    "text": "vlaka"
                 }
             ],
             "alignment": "Neutral Good",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "vlaka"
+                    "name": "Graft",
+                    "text": "Vlaka"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 2400
@@ -62,17 +65,38 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blinded"
+                    "name": "Special Sense",
+                    "value": "blinded"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (hearing) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "hearing"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (scent) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsight"
                 }
             ]
         },
@@ -291,7 +315,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (quick inspiring boost [12 SP], watch out, watch your step)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick inspiring boost [12 SP]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "watch out"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "watch your step"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 }
             ]
         },

@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "cold"
+                    "name": "Creature Subtype",
+                    "text": "cold"
                 }
             ],
             "alignment": "Lawful Good",
@@ -50,22 +51,37 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "detect alignment"
+                    "name": "Special Sense",
+                    "value": "detect alignment"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -122,19 +138,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "paralysis"
+                    "text": "paralysis"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep"
+                    "text": "sleep"
                 }
             ],
             "sr": {
@@ -290,7 +306,7 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "breath weapon"
+                    "text": "breath weapon"
                 },
                 {
                     "name": "Offensive Ability",
@@ -303,7 +319,7 @@
                             "name": "6d6+22 B"
                         }
                     ],
-                    "value": "crush"
+                    "text": "crush"
                 },
                 {
                     "name": "Offensive Ability",
@@ -326,7 +342,7 @@
                             "name": "DC 22"
                         }
                     ],
-                    "value": "paralyzing breath"
+                    "text": "paralyzing breath"
                 }
             ]
         },
@@ -442,7 +458,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (animal or humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "animal or humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 }
             ]
         },

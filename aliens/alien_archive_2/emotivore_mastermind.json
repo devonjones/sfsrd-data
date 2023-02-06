@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "emotivore"
+                    "name": "Graft",
+                    "text": "Emotivore"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 102400
@@ -62,17 +65,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (emotion) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotion"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -129,7 +146,7 @@
                             "name": "DC 26"
                         }
                     ],
-                    "value": "share pain"
+                    "text": "share pain"
                 }
             ],
             "dr": {
@@ -144,7 +161,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "resistances": [
@@ -251,26 +268,13 @@
                             "name": "17 damage"
                         }
                     ],
-                    "value": "backlash"
+                    "text": "backlash"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "feed"
-                },
-                {
-                    "name": "Offensive Ability",
-                    "type": "stat_block_section",
-                    "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 26"
-                        }
-                    ],
-                    "value": "mental anguish"
+                    "text": "feed"
                 },
                 {
                     "name": "Offensive Ability",
@@ -283,7 +287,7 @@
                             "name": "DC 26"
                         }
                     ],
-                    "value": "mindbreaking link"
+                    "text": "mental anguish"
                 },
                 {
                     "name": "Offensive Ability",
@@ -296,7 +300,20 @@
                             "name": "DC 26"
                         }
                     ],
-                    "value": "mindkiller"
+                    "text": "mindbreaking link"
+                },
+                {
+                    "name": "Offensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "text": "mindkiller"
                 },
                 {
                     "name": "Offensive Ability",
@@ -314,7 +331,7 @@
                             "name": "8 rounds"
                         }
                     ],
-                    "value": "sow doubt"
+                    "text": "sow doubt"
                 }
             ],
             "connection": "mindbreaker"
@@ -414,17 +431,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (Medium or Small humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Medium or Small humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "emotionsense"
+                    "name": "Other Ability",
+                    "text": "emotionsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

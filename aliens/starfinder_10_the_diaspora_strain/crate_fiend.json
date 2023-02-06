@@ -43,12 +43,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -97,7 +110,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "crate shell"
+                    "text": "crate shell"
                 }
             ],
             "resistances": [
@@ -217,7 +230,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "explosive death"
+                    "text": "explosive death"
                 }
             ]
         },
@@ -254,12 +267,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindless"
+                    "name": "Other Ability",
+                    "text": "mindless"
                 }
             ]
         },

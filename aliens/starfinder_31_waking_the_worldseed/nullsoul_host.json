@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "android"
+                    "name": "Creature Subtype",
+                    "text": "android"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "magical"
+                    "name": "Creature Subtype",
+                    "text": "magical"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "technological"
+                    "name": "Creature Subtype",
+                    "text": "technological"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -60,12 +63,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -121,7 +128,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 }
             ],
             "weaknesses": [
@@ -232,7 +239,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "integrated tools"
+                    "name": "Other Ability",
+                    "text": "integrated tools"
                 }
             ]
         },

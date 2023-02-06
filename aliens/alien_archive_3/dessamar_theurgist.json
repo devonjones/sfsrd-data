@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "dessamar"
+                    "name": "Creature Subtype",
+                    "text": "dessamar"
                 }
             ],
             "alignment": "Chaotic Good",
@@ -50,12 +51,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 30ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -111,7 +123,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "vacuum"
+                    "text": "vacuum"
                 }
             ]
         },
@@ -228,7 +240,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "twinkle"
+                    "text": "twinkle"
                 }
             ],
             "connection": "star shaman"
@@ -317,17 +329,32 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stargazer"
+                    "name": "Other Ability",
+                    "text": "stargazer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (6 minutes, DC 16)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "6 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

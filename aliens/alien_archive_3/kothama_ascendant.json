@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "cold"
+                    "name": "Creature Subtype",
+                    "text": "cold"
                 }
             ],
             "alignment": "Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "kothama"
+                    "name": "Graft",
+                    "text": "Kothama"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 38400
@@ -62,12 +65,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -118,7 +125,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 }
             ],
             "weaknesses": [
@@ -202,7 +209,7 @@
                             "name": "6d6+18 B"
                         }
                     ],
-                    "value": "trample"
+                    "text": "trample"
                 }
             ],
             "connection": "star shaman"
@@ -263,22 +270,38 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stargazer"
+                    "name": "Other Ability",
+                    "text": "stargazer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (14 minutes, DC 22)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "14 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 22"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starry bond"
+                    "name": "Other Ability",
+                    "text": "starry bond"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

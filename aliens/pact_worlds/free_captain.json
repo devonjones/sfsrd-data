@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "kasatha"
+                    "name": "Creature Subtype",
+                    "text": "kasatha"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "kasatha"
+                    "name": "Graft",
+                    "text": "Kasatha"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 1200
@@ -299,17 +302,32 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "desert stride"
+                    "name": "Other Ability",
+                    "text": "desert stride"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (get 'em, quick dispiriting taunt)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "get 'em"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick dispiriting taunt"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "four-armed"
+                    "name": "Other Ability",
+                    "text": "four-armed"
                 }
             ]
         }

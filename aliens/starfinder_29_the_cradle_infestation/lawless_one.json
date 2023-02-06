@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "chaotic"
+                    "name": "Creature Subtype",
+                    "text": "chaotic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -60,7 +63,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -110,13 +116,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "immunities": [
@@ -124,19 +130,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 }
             ],
             "weaknesses": [
@@ -194,7 +200,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "reality revisitation"
+                    "text": "reality revisitation"
                 }
             ]
         },
@@ -244,7 +250,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "truespeech"
+                    "name": "Other Ability",
+                    "text": "truespeech"
                 }
             ]
         },

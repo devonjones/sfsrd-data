@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (heat or vibration) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "heat or vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -97,19 +108,19 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "bioelectric growth"
+                    "text": "bioelectric growth"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "immunities": [
@@ -117,31 +128,31 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "paralysis"
+                    "text": "paralysis"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "polymorph"
+                    "text": "polymorph"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "stunning"
+                    "text": "stunning"
                 }
             ],
             "weaknesses": [
@@ -293,7 +304,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 }
             ]
         },

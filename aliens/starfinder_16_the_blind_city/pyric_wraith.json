@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -50,7 +51,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -99,13 +103,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "ash consumption"
+                    "text": "ash consumption"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 }
             ],
             "immunities": [
@@ -113,13 +117,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ]
         },
@@ -216,7 +220,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "pyric fire"
+                    "text": "pyric fire"
                 }
             ]
         },
@@ -271,12 +275,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "illuminated"
+                    "name": "Other Ability",
+                    "text": "illuminated"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

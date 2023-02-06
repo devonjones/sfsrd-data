@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "cold"
+                    "name": "Creature Subtype",
+                    "text": "cold"
                 }
             ],
             "alignment": "Neutral",
@@ -50,12 +51,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -111,7 +116,7 @@
                             "name": "60 fire"
                         }
                     ],
-                    "value": "shell of ice"
+                    "text": "shell of ice"
                 }
             ],
             "immunities": [
@@ -119,7 +124,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 }
             ],
             "resistances": [
@@ -224,7 +229,7 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "thermokinesis"
+                    "text": "thermokinesis"
                 }
             ]
         },

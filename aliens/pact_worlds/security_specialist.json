@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "android"
+                    "name": "Creature Subtype",
+                    "text": "android"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "android"
+                    "name": "Graft",
+                    "text": "Android"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "technomancer"
+                    "name": "Graft",
+                    "text": "technomancer"
                 }
             ],
             "xp": 800
@@ -63,12 +66,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -311,27 +318,53 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "constructed"
+                    "name": "Other Ability",
+                    "text": "constructed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "flat affect"
+                    "name": "Other Ability",
+                    "text": "flat affect"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "magic hacks (empowered weapon)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "empowered weapon"
+                        }
+                    ],
+                    "text": "magic hacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spell cache (badge)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "badge"
+                        }
+                    ],
+                    "text": "spell cache"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "upgrade slot (jump jets)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "jump jets"
+                        }
+                    ],
+                    "text": "upgrade slot"
                 }
             ]
         }

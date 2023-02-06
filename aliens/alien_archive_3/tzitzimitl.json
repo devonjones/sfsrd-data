@@ -49,22 +49,37 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "<i>arcane sight</i>"
+                    "name": "Special Sense",
+                    "value": "arcane sight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (life) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "<i>true seeing</i>"
+                    "name": "Special Sense",
+                    "value": "true seeing"
                 }
             ]
         },
@@ -120,19 +135,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "resistances": [
@@ -248,13 +263,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "eclipse"
+                    "text": "eclipse"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "electric force"
+                    "text": "electric force"
                 },
                 {
                     "name": "Offensive Ability",
@@ -272,13 +287,13 @@
                             "name": "DC 24"
                         }
                     ],
-                    "value": "energy drain"
+                    "text": "energy drain"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "light to dark"
+                    "text": "light to dark"
                 }
             ]
         },
@@ -361,7 +376,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight (Mysticism)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Mysticism"
+                        }
+                    ],
+                    "text": "spaceflight"
                 }
             ]
         },

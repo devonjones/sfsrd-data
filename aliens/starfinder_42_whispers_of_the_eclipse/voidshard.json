@@ -44,12 +44,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (sound) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sound"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -98,7 +111,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fast healing 5"
+                    "text": "fast healing 5"
                 }
             ],
             "dr": {
@@ -113,13 +126,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "weaknesses": [
@@ -237,7 +250,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "create spawn"
+                    "text": "create spawn"
                 },
                 {
                     "name": "Offensive Ability",
@@ -255,13 +268,13 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "energy drain"
+                    "text": "energy drain"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "entropic touch"
+                    "text": "entropic touch"
                 }
             ]
         },
@@ -339,12 +352,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "see sceaduinars"
+                    "name": "Other Ability",
+                    "text": "see sceaduinars"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

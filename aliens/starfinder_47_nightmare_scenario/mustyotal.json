@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "agathion"
+                    "name": "Creature Subtype",
+                    "text": "agathion"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "good"
+                    "name": "Creature Subtype",
+                    "text": "good"
                 }
             ],
             "alignment": "Neutral Good",
@@ -56,12 +58,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -122,13 +128,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "petrification"
+                    "text": "petrification"
                 }
             ],
             "resistances": [
@@ -213,7 +219,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "tandem disarm"
+                    "text": "tandem disarm"
                 }
             ]
         },
@@ -299,7 +305,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "healing channel"
+                    "name": "Other Ability",
+                    "text": "healing channel"
                 }
             ]
         },

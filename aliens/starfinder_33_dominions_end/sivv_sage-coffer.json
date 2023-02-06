@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "magical"
+                    "name": "Creature Subtype",
+                    "text": "magical"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "sivv"
+                    "name": "Creature Subtype",
+                    "text": "sivv"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "technological"
+                    "name": "Creature Subtype",
+                    "text": "technological"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -60,17 +63,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -127,7 +144,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 }
             ],
             "sr": {
@@ -258,7 +275,7 @@
                             "name": "DC 24"
                         }
                     ],
-                    "value": "rel-state snare"
+                    "text": "rel-state snare"
                 }
             ]
         },
@@ -350,17 +367,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "intangible step"
+                    "name": "Other Ability",
+                    "text": "intangible step"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "quantum storage"
+                    "name": "Other Ability",
+                    "text": "quantum storage"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

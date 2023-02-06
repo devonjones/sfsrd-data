@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "human"
+                    "name": "Creature Subtype",
+                    "text": "human"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -39,22 +40,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "human"
+                    "name": "Graft",
+                    "text": "Human"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "(star"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "graft",
-                    "name": "knight)"
+                    "name": "Graft",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "star knight"
+                        }
+                    ],
+                    "text": ""
                 }
             ],
             "xp": 9600
@@ -225,13 +231,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "anchoring attack"
+                    "text": "anchoring attack"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
@@ -254,7 +260,7 @@
                             "name": "supernova [15-ft. radius, 11d6 F, DC 19]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 },
                 {
                     "name": "Offensive Ability",
@@ -267,7 +273,7 @@
                             "name": "wormholes [2, 5 rounds]"
                         }
                     ],
-                    "value": "zenith revelations"
+                    "text": "zenith revelations"
                 }
             ]
         },
@@ -348,12 +354,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (weapon)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "weapon"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         }

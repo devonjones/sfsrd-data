@@ -26,12 +26,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "spectra"
+                    "name": "Creature Subtype",
+                    "text": "spectra"
                 }
             ],
             "alignment": "Neutral",
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -104,7 +109,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "dr": {
@@ -119,7 +124,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 }
             ],
             "resistances": [
@@ -291,12 +296,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "slip drive"
+                    "name": "Other Ability",
+                    "text": "slip drive"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight (Mysticism)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Mysticism"
+                        }
+                    ],
+                    "text": "spaceflight"
                 }
             ]
         },

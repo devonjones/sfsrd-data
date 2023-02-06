@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "colossus"
+                    "name": "Creature Subtype",
+                    "text": "colossus"
                 }
             ],
             "alignment": "Neutral",
@@ -50,12 +51,32 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (thought) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (sound) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sound"
+                        }
+                    ],
+                    "value": "blindsight"
                 }
             ]
         },
@@ -112,7 +133,7 @@
                             "name": "cold"
                         }
                     ],
-                    "value": "regeneration 15"
+                    "text": "regeneration 15"
                 }
             ],
             "immunities": [
@@ -120,13 +141,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "resistances": [
@@ -338,13 +359,13 @@
                             "name": "usable every 1d4 hours"
                         }
                     ],
-                    "value": "acidic breath weapon"
+                    "text": "acidic breath weapon"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "demolish structures"
+                    "text": "demolish structures"
                 },
                 {
                     "name": "Offensive Ability",
@@ -372,13 +393,13 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "sonic breath weapon"
+                    "text": "sonic breath weapon"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "wing buffet"
+                    "text": "wing buffet"
                 }
             ]
         },
@@ -446,12 +467,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "amphibious"
+                    "name": "Other Ability",
+                    "text": "amphibious"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "massive"
+                    "name": "Other Ability",
+                    "text": "massive"
                 }
             ]
         },

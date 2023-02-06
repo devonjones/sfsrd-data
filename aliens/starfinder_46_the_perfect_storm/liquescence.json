@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "water"
+                    "name": "Creature Subtype",
+                    "text": "water"
                 }
             ],
             "alignment": "Neutral",
@@ -55,12 +57,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (life) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -109,7 +122,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 }
             ],
             "dr": {
@@ -124,7 +137,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "ooze immunities"
+                    "text": "ooze immunities"
                 }
             ]
         },
@@ -195,7 +208,7 @@
                             "name": "DC 11"
                         }
                     ],
-                    "value": "engulf"
+                    "text": "engulf"
                 }
             ]
         },
@@ -239,7 +252,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindless"
+                    "name": "Other Ability",
+                    "text": "mindless"
                 }
             ]
         },

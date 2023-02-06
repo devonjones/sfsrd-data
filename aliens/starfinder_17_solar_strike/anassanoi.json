@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "anassanoi"
+                    "name": "Creature Subtype",
+                    "text": "anassanoi"
                 }
             ],
             "alignment": "Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "anassanoi"
+                    "name": "Graft",
+                    "text": "Anassanoi"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 1600
@@ -62,7 +65,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (thought) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -112,7 +125,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 }
             ],
             "weaknesses": [
@@ -186,13 +199,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "debilitating trick"
+                    "text": "debilitating trick"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +3d8"
+                    "text": "trick attack +3d8"
                 }
             ]
         },
@@ -290,12 +303,38 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (field treatment, glimpse the truth, jack of all trades)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "field treatment"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "glimpse the truth"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "jack of all trades"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (detective)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "detective"
+                        }
+                    ],
+                    "text": "specialization"
                 }
             ]
         },

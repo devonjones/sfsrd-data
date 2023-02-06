@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "ryphorian"
+                    "name": "Creature Subtype",
+                    "text": "ryphorian"
                 }
             ],
             "alignment": "Neutral Good",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "winterborn"
+                    "name": "Graft",
+                    "text": "Winterborn"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "ryphorian"
+                    "name": "Graft",
+                    "text": "ryphorian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 400
@@ -67,7 +71,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -181,7 +186,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -270,12 +275,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (armor upgrade)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "armor upgrade"
+                        }
+                    ],
+                    "text": "custom rig"
                 }
             ]
         },

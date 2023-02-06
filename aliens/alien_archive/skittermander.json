@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "skittermander"
+                    "name": "Creature Subtype",
+                    "text": "skittermander"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "skittermander"
+                    "name": "Graft",
+                    "text": "Skittermander"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 600
@@ -62,7 +65,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -179,7 +183,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "hyper"
+                    "text": "hyper"
                 }
             ]
         },
@@ -268,7 +272,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (get \u2019em, inspiring boost [8 SP])"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "get \u2019em"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "inspiring boost [8 SP]"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 }
             ]
         },

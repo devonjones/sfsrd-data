@@ -43,7 +43,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -257,12 +260,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "estex suit II"
+                    "name": "Other Ability",
+                    "text": "estex suit II"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "text": "frostbite-class zero pistol with 2 batteries"
                 }
             ]
         },

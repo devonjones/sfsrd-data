@@ -49,12 +49,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (life) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "detect alignment"
+                    "name": "Special Sense",
+                    "value": "detect alignment"
                 }
             ]
         },
@@ -103,7 +114,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "thought disruption"
+                    "text": "thought disruption"
                 }
             ],
             "dr": {
@@ -118,31 +129,31 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "bludgeoning"
+                    "text": "bludgeoning"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "charm"
+                    "text": "charm"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "ooze immunities"
+                    "text": "ooze immunities"
                 }
             ],
             "sr": {
@@ -246,7 +257,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "immerse"
+                    "text": "immerse"
                 }
             ]
         },
@@ -345,7 +356,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "ship interface"
+                    "name": "Other Ability",
+                    "text": "ship interface"
                 }
             ]
         },

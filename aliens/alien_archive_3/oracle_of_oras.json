@@ -49,12 +49,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (life) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -105,7 +116,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "reactive resistance"
+                    "text": "reactive resistance"
                 },
                 {
                     "name": "Defensive Ability",
@@ -118,13 +129,13 @@
                             "name": "acid"
                         }
                     ],
-                    "value": "regeneration 10"
+                    "text": "regeneration 10"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "dr": {
@@ -139,13 +150,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "combat maneuvers"
+                    "text": "combat maneuvers"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 }
             ],
             "resistances": [
@@ -263,7 +274,7 @@
                             "name": "DC 21"
                         }
                     ],
-                    "value": "grasping vines"
+                    "text": "grasping vines"
                 }
             ],
             "connection": "xenodruid"
@@ -338,17 +349,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "gene transfer"
+                    "name": "Other Ability",
+                    "text": "gene transfer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "share resistance"
+                    "name": "Other Ability",
+                    "text": "share resistance"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "verdant portal"
+                    "name": "Other Ability",
+                    "text": "verdant portal"
                 }
             ]
         },

@@ -31,17 +31,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mindscape"
+                    "name": "Graft",
+                    "text": "Mindscape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "swarm"
+                    "name": "Graft",
+                    "text": "Swarm"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mindreaper"
+                    "name": "Graft",
+                    "text": "mindreaper"
                 }
             ],
             "xp": 4800
@@ -60,17 +63,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "<i>see invisibility</i>"
+                    "name": "Special Sense",
+                    "value": "see invisibility"
                 }
             ]
         },
@@ -126,7 +143,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "Swarm mind"
+                    "text": "Swarm mind"
                 }
             ],
             "immunities": [
@@ -134,13 +151,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fear effects"
+                    "text": "fear effects"
                 }
             ],
             "weaknesses": [
@@ -209,7 +226,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trepan"
+                    "text": "trepan"
                 }
             ]
         },
@@ -278,22 +295,33 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "formless demise (DC 18)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "text": "formless demise"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindscape simulacrum"
+                    "name": "Other Ability",
+                    "text": "mindscape simulacrum"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "semi-mindless"
+                    "name": "Other Ability",
+                    "text": "semi-mindless"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "trepan analysis"
+                    "name": "Other Ability",
+                    "text": "trepan analysis"
                 }
             ]
         },

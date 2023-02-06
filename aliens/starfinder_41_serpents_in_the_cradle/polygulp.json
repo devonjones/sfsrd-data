@@ -43,12 +43,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft"
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -97,7 +110,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "amorphous"
+                    "text": "amorphous"
                 }
             ],
             "resistances": [
@@ -180,13 +193,13 @@
                             "name": "DC 13"
                         }
                     ],
-                    "value": "burp"
+                    "text": "burp"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "expanded gullet"
+                    "text": "expanded gullet"
                 },
                 {
                     "name": "Offensive Ability",
@@ -214,7 +227,7 @@
                             "name": "17 HP."
                         }
                     ],
-                    "value": "swallow whole"
+                    "text": "swallow whole"
                 }
             ]
         },
@@ -251,12 +264,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "amphibious"
+                    "name": "Other Ability",
+                    "text": "amphibious"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 }
             ]
         },

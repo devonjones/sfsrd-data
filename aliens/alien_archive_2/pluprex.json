@@ -33,22 +33,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "chaotic"
+                    "name": "Creature Subtype",
+                    "text": "chaotic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "demon"
+                    "name": "Creature Subtype",
+                    "text": "demon"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -72,7 +76,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -129,19 +136,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "disease"
+                    "text": "disease"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "resistances": [
@@ -286,7 +293,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "invoke mutation"
+                    "text": "invoke mutation"
                 }
             ]
         },
@@ -370,7 +377,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "irradiate dead"
+                    "name": "Other Ability",
+                    "text": "irradiate dead"
                 }
             ]
         },

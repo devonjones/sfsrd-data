@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "giant"
+                    "name": "Creature Subtype",
+                    "text": "giant"
                 }
             ],
             "alignment": "Neutral",
@@ -51,12 +52,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "see in darkness"
+                    "name": "Special Sense",
+                    "value": "see in darkness"
                 }
             ]
         },
@@ -105,7 +108,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "death effects"
+                    "text": "death effects"
                 }
             ]
         },
@@ -192,7 +195,7 @@
                             "name": "19 HP or damage"
                         }
                     ],
-                    "value": "infuse debris"
+                    "text": "infuse debris"
                 }
             ]
         },
@@ -273,7 +276,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "eclipse empowered (<i>greater resistant armor</i>)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "<i>greater resistant armor</i>"
+                        }
+                    ],
+                    "text": "eclipse empowered"
                 }
             ]
         },

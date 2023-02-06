@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "native"
+                    "name": "Creature Subtype",
+                    "text": "native"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "oni"
+                    "name": "Creature Subtype",
+                    "text": "oni"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -61,12 +64,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -122,7 +129,7 @@
                             "name": "8 damage"
                         }
                     ],
-                    "value": "dying vengeance"
+                    "text": "dying vengeance"
                 },
                 {
                     "name": "Defensive Ability",
@@ -135,7 +142,7 @@
                             "name": "acid or fire"
                         }
                     ],
-                    "value": "regeneration 5"
+                    "text": "regeneration 5"
                 }
             ],
             "resistances": [
@@ -260,7 +267,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "tsabagu onslaught"
+                    "text": "tsabagu onslaught"
                 }
             ]
         },
@@ -342,12 +349,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (Medium or Large monstrous humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Medium or Large monstrous humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "multiarmed (4)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4"
+                        }
+                    ],
+                    "text": "multiarmed"
                 }
             ]
         },

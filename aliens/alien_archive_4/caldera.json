@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "fire"
+                    "name": "Creature Subtype",
+                    "text": "fire"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -50,12 +51,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -105,7 +117,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 }
             ],
             "weaknesses": [
@@ -191,7 +203,7 @@
                             "name": "DC 17"
                         }
                     ],
-                    "value": "slag bombardment"
+                    "text": "slag bombardment"
                 }
             ]
         },
@@ -234,12 +246,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "deaf"
+                    "name": "Other Ability",
+                    "text": "deaf"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "earth glide"
+                    "name": "Other Ability",
+                    "text": "earth glide"
                 }
             ]
         },

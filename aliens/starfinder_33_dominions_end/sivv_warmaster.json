@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "sivv"
+                    "name": "Creature Subtype",
+                    "text": "sivv"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -50,12 +51,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -105,7 +119,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fast healing 5"
+                    "text": "fast healing 5"
                 }
             ],
             "immunities": [
@@ -113,7 +127,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fear effects"
+                    "text": "fear effects"
                 }
             ],
             "sr": {
@@ -260,7 +274,7 @@
                             "name": "DC 22"
                         }
                     ],
-                    "value": "domineering gaze"
+                    "text": "domineering gaze"
                 },
                 {
                     "name": "Offensive Ability",
@@ -278,7 +292,7 @@
                             "name": "DC 22"
                         }
                     ],
-                    "value": "rel-state dispersal"
+                    "text": "rel-state dispersal"
                 }
             ]
         },
@@ -367,12 +381,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "intangible step"
+                    "name": "Other Ability",
+                    "text": "intangible step"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "quantum storage"
+                    "name": "Other Ability",
+                    "text": "quantum storage"
                 }
             ]
         },

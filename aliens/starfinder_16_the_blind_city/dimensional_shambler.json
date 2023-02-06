@@ -27,17 +27,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "chaotic"
+                    "name": "Creature Subtype",
+                    "text": "chaotic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -60,7 +63,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -109,7 +115,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "resist conjuration"
+                    "text": "resist conjuration"
                 }
             ],
             "dr": {
@@ -213,12 +219,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "dimension mastery"
+                    "name": "Other Ability",
+                    "text": "dimension mastery"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "planar mastery"
+                    "name": "Other Ability",
+                    "text": "planar mastery"
                 }
             ]
         },

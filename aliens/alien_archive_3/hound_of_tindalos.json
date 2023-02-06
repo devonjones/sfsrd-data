@@ -26,12 +26,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -55,12 +57,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "discern prey"
+                    "name": "Special Sense",
+                    "value": "discern prey"
                 }
             ]
         },
@@ -109,7 +115,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "otherworldly mind"
+                    "text": "otherworldly mind"
                 }
             ],
             "dr": {
@@ -124,13 +130,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "mind-affecting effects"
+                    "text": "mind-affecting effects"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ]
         },
@@ -227,7 +233,7 @@
                             "name": "Fort DC 17"
                         }
                     ],
-                    "value": "ripping gaze"
+                    "text": "ripping gaze"
                 }
             ]
         },
@@ -288,7 +294,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "angled entry"
+                    "name": "Other Ability",
+                    "text": "angled entry"
                 }
             ]
         },

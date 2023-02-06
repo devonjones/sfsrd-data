@@ -31,17 +31,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "uplifted"
+                    "name": "Graft",
+                    "text": "Uplifted"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "bear"
+                    "name": "Graft",
+                    "text": "bear"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 3200
@@ -60,7 +63,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -225,13 +229,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "ferocious charge"
+                    "text": "ferocious charge"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
@@ -254,7 +258,7 @@
                             "name": "reflection"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -340,12 +344,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (solar armor)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "solar armor"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment (graviton)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "graviton"
+                        }
+                    ],
+                    "text": "stellar alignment"
                 }
             ]
         },

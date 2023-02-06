@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "cold"
+                    "name": "Creature Subtype",
+                    "text": "cold"
                 }
             ],
             "alignment": "Neutral",
@@ -55,12 +57,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (emotion) 5 ft."
+                    "name": "Special Sense",
+                    "range": 5,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "emotion"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -109,13 +122,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 }
             ],
             "weaknesses": [
@@ -175,7 +188,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "change shape"
+                    "text": "change shape"
                 },
                 {
                     "name": "Offensive Ability",
@@ -193,13 +206,13 @@
                             "name": "DC 21"
                         }
                     ],
-                    "value": "energy drain"
+                    "text": "energy drain"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "water breathing"
+                    "text": "water breathing"
                 }
             ]
         },

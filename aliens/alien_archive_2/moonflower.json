@@ -43,12 +43,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -104,13 +108,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 }
             ],
             "resistances": [
@@ -219,7 +223,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "light pulse"
+                    "text": "light pulse"
                 },
                 {
                     "name": "Offensive Ability",
@@ -247,7 +251,7 @@
                             "name": "31 HP"
                         }
                     ],
-                    "value": "swallow whole"
+                    "text": "swallow whole"
                 }
             ]
         },
@@ -309,7 +313,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "pod spawn"
+                    "name": "Other Ability",
+                    "text": "pod spawn"
                 }
             ]
         },

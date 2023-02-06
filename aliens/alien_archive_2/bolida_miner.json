@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "bolida"
+                    "name": "Graft",
+                    "text": "Bolida"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 600
@@ -55,17 +57,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -114,7 +130,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "defensive ball"
+                    "text": "defensive ball"
                 }
             ],
             "resistances": [
@@ -252,13 +268,13 @@
                             "name": "blitz"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "rolling charge"
+                    "text": "rolling charge"
                 }
             ]
         },

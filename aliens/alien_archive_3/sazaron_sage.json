@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "sazaron"
+                    "name": "Graft",
+                    "text": "Sazaron"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "technomancer"
+                    "name": "Graft",
+                    "text": "technomancer"
                 }
             ],
             "xp": 19200
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -309,17 +314,51 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cache capacitor 2 (keen senses, life bubble)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "keen senses"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life bubble"
+                        }
+                    ],
+                    "text": "cache capacitor 2"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "magic hacks (eternal spell [identify], tech countermeasures)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "eternal spell [identify]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "tech countermeasures"
+                        }
+                    ],
+                    "text": "magic hacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spell cache (dueling sword)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "dueling sword"
+                        }
+                    ],
+                    "text": "spell cache"
                 }
             ]
         },

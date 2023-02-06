@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "astriapi"
+                    "name": "Graft",
+                    "text": "Astriapi"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 400
@@ -55,12 +57,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -277,7 +292,7 @@
                             "name": "guard"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 }
             ]
         },
@@ -364,7 +379,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "honey production"
+                    "name": "Other Ability",
+                    "text": "honey production"
                 }
             ]
         },

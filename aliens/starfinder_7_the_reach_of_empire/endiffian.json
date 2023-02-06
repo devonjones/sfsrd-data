@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "endiffian"
+                    "name": "Creature Subtype",
+                    "text": "endiffian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -43,12 +45,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "endiffian"
+                    "name": "Graft",
+                    "text": "Endiffian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 800
@@ -109,7 +113,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 }
             ]
         },
@@ -195,7 +199,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +1d8"
+                    "text": "trick attack +1d8"
                 }
             ]
         },
@@ -302,22 +306,40 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "enveloping grip"
+                    "name": "Other Ability",
+                    "text": "enveloping grip"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (field treatment [9 HP])"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "field treatment [9 HP]"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "simulacrum"
+                    "name": "Other Ability",
+                    "text": "simulacrum"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (spy)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "spy"
+                        }
+                    ],
+                    "text": "specialization"
                 }
             ]
         },

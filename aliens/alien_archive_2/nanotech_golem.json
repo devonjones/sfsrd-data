@@ -26,12 +26,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "magical"
+                    "name": "Creature Subtype",
+                    "text": "magical"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "technological"
+                    "name": "Creature Subtype",
+                    "text": "technological"
                 }
             ],
             "alignment": "Neutral",
@@ -55,17 +57,22 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "all-around vision"
+                    "name": "Special Sense",
+                    "value": "all-around vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low.light vision"
+                    "name": "Special Sense",
+                    "value": "low.light vision"
                 }
             ]
         },
@@ -128,19 +135,19 @@
                             "name": "acid or fire"
                         }
                     ],
-                    "value": "regeneration 10"
+                    "text": "regeneration 10"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "swarmlike"
+                    "text": "swarmlike"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "immunities": [
@@ -148,13 +155,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "magic"
+                    "text": "magic"
                 }
             ]
         },
@@ -248,7 +255,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "nanite cloud"
+                    "text": "nanite cloud"
                 }
             ]
         },
@@ -266,17 +273,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "comm"
+                    "name": "Other Ability",
+                    "text": "comm"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindless"
+                    "name": "Other Ability",
+                    "text": "mindless"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

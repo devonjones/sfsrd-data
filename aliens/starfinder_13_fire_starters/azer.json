@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "fire"
+                    "name": "Creature Subtype",
+                    "text": "fire"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -43,12 +45,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "azer"
+                    "name": "Graft",
+                    "text": "Azer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 600
@@ -67,7 +71,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -116,7 +123,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 }
             ],
             "sr": {
@@ -202,13 +209,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "elemental fire"
+                    "text": "elemental fire"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -297,17 +304,41 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (cerebral implant with standard datajack)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "cerebral implant with standard datajack"
+                        }
+                    ],
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (neural shunt)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "neural shunt"
+                        }
+                    ],
+                    "text": "mechanic tricks"
                 }
             ]
         },

@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "gray"
+                    "name": "Creature Subtype",
+                    "text": "gray"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -50,7 +51,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -99,7 +103,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal rider"
+                    "text": "incorporeal rider"
                 }
             ],
             "weaknesses": [
@@ -254,12 +258,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "concealing shell"
+                    "name": "Other Ability",
+                    "text": "concealing shell"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "partial phasing"
+                    "name": "Other Ability",
+                    "text": "partial phasing"
                 }
             ]
         },

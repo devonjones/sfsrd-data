@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shakalta"
+                    "name": "Creature Subtype",
+                    "text": "shakalta"
                 }
             ],
             "alignment": "Neutral Good",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "shakalta"
+                    "name": "Graft",
+                    "text": "Shakalta"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic/solarian"
+                    "name": "Graft",
+                    "text": "mystic/solarian"
                 }
             ],
             "xp": 3200
@@ -105,13 +108,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "psychic shunt"
+                    "text": "psychic shunt"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "immunities": [
@@ -119,13 +122,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "disease"
+                    "text": "disease"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "weaknesses": [
@@ -238,13 +241,13 @@
                             "name": "solar weapon"
                         }
                     ],
-                    "value": "solar manifestation"
+                    "text": "solar manifestation"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "stellar alignment"
+                    "text": "stellar alignment"
                 },
                 {
                     "name": "Offensive Ability",
@@ -272,7 +275,7 @@
                             "name": "supernova [10-ft. radius, 5d6 fire, DC 15]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ],
             "connection": "star shaman"
@@ -357,17 +360,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "bonded souls"
+                    "name": "Other Ability",
+                    "text": "bonded souls"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (3 minutes)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3 minutes"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

@@ -49,12 +49,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "see invisibility"
+                    "name": "Special Sense",
+                    "value": "see invisibility"
                 }
             ]
         },
@@ -104,7 +106,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "solar adaptation"
+                    "text": "solar adaptation"
                 },
                 {
                     "name": "Defensive Ability",
@@ -117,13 +119,13 @@
                             "name": "soul furnace"
                         }
                     ],
-                    "value": "stellar revelation"
+                    "text": "stellar revelation"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "immunities": [
@@ -131,13 +133,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 }
             ]
         },
@@ -224,13 +226,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "kaleidoscopic glow"
+                    "text": "kaleidoscopic glow"
                 },
                 {
                     "name": "Offensive Ability",
@@ -248,7 +250,7 @@
                             "name": "supernova [15-ft. radius, 11d6 F; DC 19]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -323,17 +325,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "life-giving glow"
+                    "name": "Other Ability",
+                    "text": "life-giving glow"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (solar weapon)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "solar weapon"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment (photon)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "photon"
+                        }
+                    ],
+                    "text": "stellar alignment"
                 }
             ]
         },

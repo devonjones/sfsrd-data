@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "varratana"
+                    "name": "Creature Subtype",
+                    "text": "varratana"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "blusterwind"
+                    "name": "Graft",
+                    "text": "Blusterwind"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "varratana"
+                    "name": "Graft",
+                    "text": "varratana"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "biohacker"
+                    "name": "Graft",
+                    "text": "biohacker"
                 }
             ],
             "xp": 200
@@ -254,17 +258,41 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "biohacks (maximum 3)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "maximum 3"
+                        }
+                    ],
+                    "text": "biohacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom microlab (chemalyzer)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "chemalyzer"
+                        }
+                    ],
+                    "text": "custom microlab"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "fields of study (immunology)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "immunology"
+                        }
+                    ],
+                    "text": "fields of study"
                 }
             ]
         },

@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "quorlu"
+                    "name": "Graft",
+                    "text": "Quorlu"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 6400
@@ -55,12 +57,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -124,25 +130,25 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "endothermic"
+                    "text": "endothermic"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "lithic"
+                    "text": "lithic"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "stable"
+                    "text": "stable"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "resistances": [
@@ -273,7 +279,7 @@
                             "name": "3 rounds"
                         }
                     ],
-                    "value": "debilitating attack"
+                    "text": "debilitating attack"
                 },
                 {
                     "name": "Offensive Ability",
@@ -291,7 +297,7 @@
                             "name": "hit-and-run"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 },
                 {
                     "name": "Offensive Ability",
@@ -309,7 +315,7 @@
                             "name": "powerful explosive"
                         }
                     ],
-                    "value": "gear boosts"
+                    "text": "gear boosts"
                 },
                 {
                     "name": "Offensive Ability",
@@ -322,7 +328,7 @@
                             "name": "35 ft."
                         }
                     ],
-                    "value": "grenade expert"
+                    "text": "grenade expert"
                 },
                 {
                     "name": "Offensive Ability",
@@ -335,13 +341,13 @@
                             "name": "+3 damage"
                         }
                     ],
-                    "value": "heavy fire"
+                    "text": "heavy fire"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "opening volley"
+                    "text": "opening volley"
                 }
             ]
         },
@@ -433,12 +439,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "multiarmed (3)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "3"
+                        }
+                    ],
+                    "text": "multiarmed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "tunneler"
+                    "name": "Other Ability",
+                    "text": "tunneler"
                 }
             ]
         },

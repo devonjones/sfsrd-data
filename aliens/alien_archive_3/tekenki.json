@@ -33,12 +33,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "magical"
+                    "name": "Creature Subtype",
+                    "text": "magical"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "technological"
+                    "name": "Creature Subtype",
+                    "text": "technological"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -61,12 +63,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (thought) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sense the masses"
+                    "name": "Special Sense",
+                    "value": "sense the masses"
                 }
             ]
         },
@@ -115,13 +128,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "integrated weapons"
+                    "text": "integrated weapons"
                 }
             ],
             "resistances": [
@@ -240,19 +253,19 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "demolish structures"
+                    "text": "demolish structures"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "electromagnetic pulse"
+                    "text": "electromagnetic pulse"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "unwieldy fire"
+                    "text": "unwieldy fire"
                 }
             ]
         },
@@ -338,12 +351,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "internal ammunition"
+                    "name": "Other Ability",
+                    "text": "internal ammunition"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight"
+                    "name": "Other Ability",
+                    "text": "spaceflight"
                 }
             ]
         },

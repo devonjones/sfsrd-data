@@ -43,7 +43,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision (60 ft.)"
+                    "name": "Special Sense",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "60 ft."
+                        }
+                    ],
+                    "value": "darkvision"
                 }
             ]
         },
@@ -92,13 +100,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "reflexive rash"
+                    "text": "reflexive rash"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "resistances": [
@@ -164,13 +172,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "ambush"
+                    "text": "ambush"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "inflame"
+                    "text": "inflame"
                 }
             ]
         },

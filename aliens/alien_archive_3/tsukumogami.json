@@ -26,12 +26,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "kami"
+                    "name": "Creature Subtype",
+                    "text": "kami"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "native"
+                    "name": "Creature Subtype",
+                    "text": "native"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -55,12 +57,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -109,7 +115,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fast healing 5"
+                    "text": "fast healing 5"
                 }
             ],
             "immunities": [
@@ -117,19 +123,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "construct immunities"
+                    "text": "construct immunities"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "petrification"
+                    "text": "petrification"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "polymorph"
+                    "text": "polymorph"
                 }
             ],
             "resistances": [
@@ -268,17 +274,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "merge with ward (personal comm unit)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "personal comm unit"
+                        }
+                    ],
+                    "text": "merge with ward"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "no breath"
+                    "name": "Other Ability",
+                    "text": "no breath"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "permanent merge"
+                    "name": "Other Ability",
+                    "text": "permanent merge"
                 }
             ]
         },

@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "tryziarka"
+                    "name": "Creature Subtype",
+                    "text": "tryziarka"
                 }
             ],
             "alignment": "Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "tryziarka"
+                    "name": "Graft",
+                    "text": "Tryziarka"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy/mystic"
+                    "name": "Graft",
+                    "text": "envoy/mystic"
                 }
             ],
             "xp": 19200
@@ -260,27 +263,61 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (hidden agenda, improved get \u2019em, watch out)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "hidden agenda"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "improved get \u2019em"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "watch out"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (4 minutes, DC 13)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 13"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "tattoo magic"
+                    "name": "Other Ability",
+                    "text": "tattoo magic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "tattoo transference"
+                    "name": "Other Ability",
+                    "text": "tattoo transference"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

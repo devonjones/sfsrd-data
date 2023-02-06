@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "android"
+                    "name": "Creature Subtype",
+                    "text": "android"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "android"
+                    "name": "Graft",
+                    "text": "Android"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 800
@@ -63,12 +66,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -193,7 +200,7 @@
                             "name": "DC 14"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 }
             ]
         },
@@ -282,27 +289,53 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (drone chop cycle)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "drone chop cycle"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "constructed"
+                    "name": "Other Ability",
+                    "text": "constructed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig (arm)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "arm"
+                        }
+                    ],
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "flat affect"
+                    "name": "Other Ability",
+                    "text": "flat affect"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "upgrade slot (quick-release sheath)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quick-release sheath"
+                        }
+                    ],
+                    "text": "upgrade slot"
                 }
             ]
         }

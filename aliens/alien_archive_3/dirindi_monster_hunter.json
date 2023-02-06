@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "dirindi"
+                    "name": "Creature Subtype",
+                    "text": "dirindi"
                 }
             ],
             "alignment": "Chaotic Good",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "dirindi"
+                    "name": "Graft",
+                    "text": "Dirindi"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 1200
@@ -62,12 +65,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (electricity) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "electricity"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -202,7 +216,7 @@
                             "name": "supernova [10-ft. radius, 5d6 F, DC 13]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -294,12 +308,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (solar armor)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "solar armor"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         },

@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "ysoki"
+                    "name": "Creature Subtype",
+                    "text": "ysoki"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "ysoki"
+                    "name": "Graft",
+                    "text": "Ysoki"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 600
@@ -63,7 +66,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -112,7 +118,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 }
             ]
         },
@@ -187,7 +193,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +1d8"
+                    "text": "trick attack +1d8"
                 }
             ]
         },
@@ -302,22 +308,40 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cheek pouches"
+                    "name": "Other Ability",
+                    "text": "cheek pouches"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "moxie"
+                    "name": "Other Ability",
+                    "text": "moxie"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploit (uncanny mobility)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "uncanny mobility"
+                        }
+                    ],
+                    "text": "operative exploit"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (thief)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thief"
+                        }
+                    ],
+                    "text": "specialization"
                 }
             ]
         }

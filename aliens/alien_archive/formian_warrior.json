@@ -45,12 +45,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "formian"
+                    "name": "Graft",
+                    "text": "Formian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 800
@@ -76,12 +78,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -222,7 +237,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "deadly grasp"
+                    "text": "deadly grasp"
                 },
                 {
                     "name": "Offensive Ability",
@@ -235,7 +250,7 @@
                             "name": "guard"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 }
             ]
         },
@@ -309,12 +324,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "armor training"
+                    "name": "Other Ability",
+                    "text": "armor training"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "hive mind"
+                    "name": "Other Ability",
+                    "text": "hive mind"
                 }
             ]
         },

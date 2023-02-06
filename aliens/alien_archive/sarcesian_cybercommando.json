@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "sarcesian"
+                    "name": "Creature Subtype",
+                    "text": "sarcesian"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "sarcesian"
+                    "name": "Graft",
+                    "text": "Sarcesian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 4800
@@ -62,7 +65,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -209,7 +213,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 },
                 {
                     "name": "Offensive Ability",
@@ -222,7 +226,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 }
             ]
         },
@@ -321,37 +325,70 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "expert rig"
+                    "name": "Other Ability",
+                    "text": "expert rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic trick (energy shield [20 HP], 8 min.)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "energy shield [20 HP]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8 min."
+                        }
+                    ],
+                    "text": "mechanic trick"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "miracle worker 1/day"
+                    "name": "Other Ability",
+                    "text": "miracle worker 1/day"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "remote hack (DC 26)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "text": "remote hack"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "void flyer"
+                    "name": "Other Ability",
+                    "text": "void flyer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "wireless hack"
+                    "name": "Other Ability",
+                    "text": "wireless hack"
                 }
             ]
         },

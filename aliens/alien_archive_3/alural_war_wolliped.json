@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -165,7 +176,7 @@
                             "name": "ranged +19"
                         }
                     ],
-                    "value": "spit"
+                    "text": "spit"
                 },
                 {
                     "name": "Offensive Ability",
@@ -183,7 +194,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "trample"
+                    "text": "trample"
                 }
             ]
         },
@@ -227,7 +238,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cold inured"
+                    "name": "Other Ability",
+                    "text": "cold inured"
                 }
             ]
         },

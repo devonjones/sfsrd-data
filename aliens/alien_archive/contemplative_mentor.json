@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "contemplative"
+                    "name": "Graft",
+                    "text": "Contemplative"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 153600
@@ -55,12 +57,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (thought) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -124,7 +139,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "share pain"
+                    "text": "share pain"
                 }
             ],
             "weaknesses": [
@@ -207,7 +222,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "applied knowledge"
+                    "text": "applied knowledge"
                 },
                 {
                     "name": "Offensive Ability",
@@ -220,7 +235,7 @@
                             "name": "18 damage"
                         }
                     ],
-                    "value": "backlash"
+                    "text": "backlash"
                 },
                 {
                     "name": "Offensive Ability",
@@ -233,7 +248,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "explode head"
+                    "text": "explode head"
                 },
                 {
                     "name": "Offensive Ability",
@@ -246,7 +261,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "mental anguish"
+                    "text": "mental anguish"
                 },
                 {
                     "name": "Offensive Ability",
@@ -259,7 +274,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "mind-breaking link"
+                    "text": "mind-breaking link"
                 },
                 {
                     "name": "Offensive Ability",
@@ -272,7 +287,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "mindkiller"
+                    "text": "mindkiller"
                 },
                 {
                     "name": "Offensive Ability",
@@ -290,7 +305,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "sow doubt"
+                    "text": "sow doubt"
                 }
             ],
             "connection": "mindbreaker"

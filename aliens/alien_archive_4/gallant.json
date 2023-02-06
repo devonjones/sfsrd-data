@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "psacynoid"
+                    "name": "Graft",
+                    "text": "Psacynoid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 6400
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -176,7 +181,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
@@ -209,7 +214,7 @@
                             "name": "vital reinforcement [9 damage]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -286,17 +291,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "multiarmed (4)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4"
+                        }
+                    ],
+                    "text": "multiarmed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (solar shield)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "solar shield"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         },

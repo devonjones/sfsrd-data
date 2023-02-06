@@ -33,7 +33,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "colossus"
+                    "name": "Creature Subtype",
+                    "text": "colossus"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -56,12 +57,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (thought) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sense the masses"
+                    "name": "Special Sense",
+                    "value": "sense the masses"
                 }
             ]
         },
@@ -260,13 +272,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "demolish structures"
+                    "text": "demolish structures"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "enthrall victims"
+                    "text": "enthrall victims"
                 }
             ]
         },
@@ -326,12 +338,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "massive"
+                    "name": "Other Ability",
+                    "text": "massive"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "water breathing"
+                    "name": "Other Ability",
+                    "text": "water breathing"
                 }
             ]
         },

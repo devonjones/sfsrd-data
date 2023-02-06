@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "vesk"
+                    "name": "Creature Subtype",
+                    "text": "vesk"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "vesk"
+                    "name": "Graft",
+                    "text": "Vesk"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 3200
@@ -63,7 +66,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -213,13 +217,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "natural weapons"
+                    "text": "natural weapons"
                 },
                 {
                     "name": "Offensive Ability",
@@ -247,7 +251,7 @@
                             "name": "supernova [10-ft. radius, 8d6 F, DC 15]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -335,17 +339,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "armor savant"
+                    "name": "Other Ability",
+                    "text": "armor savant"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (armor)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "armor"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         }

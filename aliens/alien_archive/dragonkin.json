@@ -37,12 +37,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "dragonkin"
+                    "name": "Graft",
+                    "text": "Dragonkin"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 6400
@@ -61,12 +63,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -116,19 +122,19 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "paralysis"
+                    "text": "paralysis"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep"
+                    "text": "sleep"
                 }
             ]
         },
@@ -253,13 +259,13 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "breath weapon"
+                    "text": "breath weapon"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "charge attack"
+                    "text": "charge attack"
                 },
                 {
                     "name": "Offensive Ability",
@@ -277,7 +283,7 @@
                             "name": "guard"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 }
             ]
         },
@@ -354,17 +360,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "armor training"
+                    "name": "Other Ability",
+                    "text": "armor training"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "keep fighting (2d6+9 HP)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2d6+9 HP"
+                        }
+                    ],
+                    "text": "keep fighting"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "partner bond"
+                    "name": "Other Ability",
+                    "text": "partner bond"
                 }
             ]
         },

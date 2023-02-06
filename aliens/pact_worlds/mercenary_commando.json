@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "lashunta"
+                    "name": "Creature Subtype",
+                    "text": "lashunta"
                 }
             ],
             "alignment": "Neutral",
@@ -39,17 +40,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "damaya"
+                    "name": "Graft",
+                    "text": "Damaya"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "lashunta"
+                    "name": "Graft",
+                    "text": "lashunta"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 9600
@@ -110,13 +114,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "uncanny agility"
+                    "text": "uncanny agility"
                 }
             ]
         },
@@ -203,19 +207,19 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "debilitating trick"
+                    "text": "debilitating trick"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +5d8"
+                    "text": "trick attack +5d8"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "triple attack"
+                    "text": "triple attack"
                 }
             ]
         },
@@ -328,12 +332,43 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (cloaking field, master of disguise [3/day, 100 minutes or 10 minutes, DC 19])"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "cloaking field"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "master of disguise [3/day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "100 minutes or 10 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 19]"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (ghost)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "ghost"
+                        }
+                    ],
+                    "text": "specialization"
                 }
             ]
         }

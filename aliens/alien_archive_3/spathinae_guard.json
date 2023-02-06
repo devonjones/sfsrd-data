@@ -31,17 +31,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "spathinae"
+                    "name": "Graft",
+                    "text": "Spathinae"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "colony"
+                    "name": "Graft",
+                    "text": "colony"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 400
@@ -60,12 +63,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -121,7 +137,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "spathinae defenses"
+                    "text": "spathinae defenses"
                 }
             ]
         },
@@ -208,13 +224,13 @@
                             "name": "sharpshoot"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "sniper\u2019s aim"
+                    "text": "sniper\u2019s aim"
                 }
             ]
         },
@@ -291,17 +307,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "shapable"
+                    "name": "Other Ability",
+                    "text": "shapable"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "swarm flexibility"
+                    "name": "Other Ability",
+                    "text": "swarm flexibility"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "verminlike"
+                    "name": "Other Ability",
+                    "text": "verminlike"
                 }
             ]
         },

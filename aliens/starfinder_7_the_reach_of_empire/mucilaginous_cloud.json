@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 90 ft."
+                    "name": "Special Sense",
+                    "range": 90,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sightless"
+                    "name": "Special Sense",
+                    "value": "sightless"
                 }
             ]
         },
@@ -97,13 +108,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "ooze immunities"
+                    "text": "ooze immunities"
                 }
             ],
             "resistances": [
@@ -179,7 +190,7 @@
                             "name": "DC 15"
                         }
                     ],
-                    "value": "distraction"
+                    "text": "distraction"
                 },
                 {
                     "name": "Offensive Ability",
@@ -207,7 +218,7 @@
                             "name": "16 HP"
                         }
                     ],
-                    "value": "swallow whole"
+                    "text": "swallow whole"
                 }
             ]
         },
@@ -268,22 +279,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "buoyant"
+                    "name": "Other Ability",
+                    "text": "buoyant"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "camouflaging haze"
+                    "name": "Other Ability",
+                    "text": "camouflaging haze"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mindless"
+                    "name": "Other Ability",
+                    "text": "mindless"
                 }
             ]
         },

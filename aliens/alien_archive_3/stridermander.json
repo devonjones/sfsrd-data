@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "skittermander"
+                    "name": "Creature Subtype",
+                    "text": "skittermander"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -50,12 +51,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -111,7 +116,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "camouflage"
+                    "text": "camouflage"
                 }
             ],
             "weaknesses": [
@@ -237,7 +242,7 @@
                             "name": "+4"
                         }
                     ],
-                    "value": "gorge"
+                    "text": "gorge"
                 }
             ]
         },
@@ -287,7 +292,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "archaic obsidian spear (treat as archaic tactical spear)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "treat as archaic tactical spear"
+                        }
+                    ],
+                    "text": "archaic obsidian spear"
                 }
             ]
         },

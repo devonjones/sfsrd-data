@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "xararian"
+                    "name": "Creature Subtype",
+                    "text": "xararian"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "male"
+                    "name": "Graft",
+                    "text": "Male"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "xararian"
+                    "name": "Graft",
+                    "text": "xararian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 153600
@@ -67,7 +71,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -117,7 +122,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "vacuum"
+                    "text": "vacuum"
                 }
             ]
         },
@@ -209,7 +214,7 @@
                             "name": "DC 25"
                         }
                     ],
-                    "value": "meteor shower"
+                    "text": "meteor shower"
                 }
             ],
             "connection": "star shaman"
@@ -282,27 +287,44 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stargazer"
+                    "name": "Other Ability",
+                    "text": "stargazer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (18 minutes, DC 25)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "18 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 25"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starry bond"
+                    "name": "Other Ability",
+                    "text": "starry bond"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "swap spells"
+                    "name": "Other Ability",
+                    "text": "swap spells"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "trinir"
+                    "name": "Creature Subtype",
+                    "text": "trinir"
                 }
             ],
             "alignment": "Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "agender"
+                    "name": "Graft",
+                    "text": "Agender"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "trinir"
+                    "name": "Graft",
+                    "text": "trinir"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "technomancer"
+                    "name": "Graft",
+                    "text": "technomancer"
                 }
             ],
             "xp": 1200
@@ -67,12 +71,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -121,7 +129,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "resistance network"
+                    "text": "resistance network"
                 }
             ],
             "resistances": [
@@ -271,17 +279,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "constructed"
+                    "name": "Other Ability",
+                    "text": "constructed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "magic hacks (countertech)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "countertech"
+                        }
+                    ],
+                    "text": "magic hacks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spell cache (integrated comm unit)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "integrated comm unit"
+                        }
+                    ],
+                    "text": "spell cache"
                 }
             ]
         },

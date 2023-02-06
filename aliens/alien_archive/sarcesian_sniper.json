@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "sarcesian"
+                    "name": "Creature Subtype",
+                    "text": "sarcesian"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "sarcesian"
+                    "name": "Graft",
+                    "text": "Sarcesian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 1600
@@ -62,7 +65,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -112,13 +116,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "uncanny agility"
+                    "text": "uncanny agility"
                 }
             ]
         },
@@ -211,13 +215,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "debilitating trick"
+                    "text": "debilitating trick"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +3d8"
+                    "text": "trick attack +3d8"
                 }
             ]
         },
@@ -311,17 +315,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (cloaking field)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "cloaking field"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (ghost)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "ghost"
+                        }
+                    ],
+                    "text": "specialization"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "void flyer"
+                    "name": "Other Ability",
+                    "text": "void flyer"
                 }
             ]
         },

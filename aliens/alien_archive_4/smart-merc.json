@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "hadrogaan"
+                    "name": "Creature Subtype",
+                    "text": "hadrogaan"
                 }
             ],
             "alignment": "Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "doluma"
+                    "name": "Graft",
+                    "text": "Doluma"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "hadrogaan"
+                    "name": "Graft",
+                    "text": "hadrogaan"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 9600
@@ -67,7 +71,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -221,25 +235,25 @@
                             "name": "sharpshoot"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "focus fire"
+                    "text": "focus fire"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "intense focus"
+                    "text": "intense focus"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "sniper\u2019s aim"
+                    "text": "sniper\u2019s aim"
                 }
             ]
         },
@@ -321,7 +335,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "armor training"
+                    "name": "Other Ability",
+                    "text": "armor training"
                 }
             ]
         },

@@ -20,17 +20,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "dycepskian"
+                    "name": "Creature Subtype",
+                    "text": "dycepskian"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "reptoid"
+                    "name": "Creature Subtype",
+                    "text": "reptoid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Neutral",
@@ -42,17 +45,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "dycepskian-infested"
+                    "name": "Graft",
+                    "text": "Dycepskian-infested"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "reptoid"
+                    "name": "Graft",
+                    "text": "reptoid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 2400
@@ -71,7 +77,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -127,7 +134,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 }
             ],
             "immunities": [
@@ -135,7 +142,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "mind-affecting effects"
+                    "text": "mind-affecting effects"
                 }
             ],
             "weaknesses": [
@@ -224,13 +231,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "debilitating trick"
+                    "text": "debilitating trick"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +3d8"
+                    "text": "trick attack +3d8"
                 }
             ]
         },
@@ -319,22 +326,62 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (any specific humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "any specific humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "fungal mass mind"
+                    "name": "Other Ability",
+                    "text": "fungal mass mind"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (master of disguise [2/day, 60 minutes or 6 minutes, DC 16], uncanny shooter)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "master of disguise [2/day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "60 minutes or 6 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16]"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "uncanny shooter"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (spy)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "spy"
+                        }
+                    ],
+                    "text": "specialization"
                 }
             ]
         },

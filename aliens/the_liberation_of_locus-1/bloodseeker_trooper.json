@@ -20,7 +20,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "tromlin"
+                    "name": "Creature Subtype",
+                    "text": "tromlin"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -44,17 +45,29 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blood scent"
+                    "name": "Special Sense",
+                    "value": "blood scent"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -208,13 +221,13 @@
                             "name": "blitz"
                         }
                     ],
-                    "value": "fighting style"
+                    "text": "fighting style"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "pounce"
+                    "text": "pounce"
                 }
             ]
         },
@@ -298,7 +311,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "jumper"
+                    "name": "Other Ability",
+                    "text": "jumper"
                 }
             ]
         },

@@ -49,17 +49,29 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "see sexual dimorphism"
+                    "name": "Special Sense",
+                    "value": "see sexual dimorphism"
                 }
             ]
         },
@@ -210,7 +222,7 @@
                             "name": "DC 13"
                         }
                     ],
-                    "value": "trample"
+                    "text": "trample"
                 }
             ]
         },

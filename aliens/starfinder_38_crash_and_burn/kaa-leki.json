@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "kaa-leki"
+                    "name": "Creature Subtype",
+                    "text": "kaa-leki"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "plantlike"
+                    "name": "Creature Subtype",
+                    "text": "plantlike"
                 }
             ],
             "alignment": "Neutral Good",
@@ -43,12 +45,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "kaa-leki"
+                    "name": "Graft",
+                    "text": "Kaa-leki"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "operative"
+                    "name": "Graft",
+                    "text": "operative"
                 }
             ],
             "xp": 4800
@@ -67,12 +71,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sense through (vision [crystal only])"
+                    "name": "Special Sense",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vision [crystal only]"
+                        }
+                    ],
+                    "value": "sense through"
                 }
             ]
         },
@@ -121,13 +134,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "uncanny agility"
+                    "text": "uncanny agility"
                 }
             ]
         },
@@ -211,7 +224,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "debilitating trick"
+                    "text": "debilitating trick"
                 },
                 {
                     "name": "Offensive Ability",
@@ -224,25 +237,25 @@
                             "name": "+8"
                         }
                     ],
-                    "value": "evaluate construct"
+                    "text": "evaluate construct"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "terrain attack"
+                    "text": "terrain attack"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "trick attack +4d8"
+                    "text": "trick attack +4d8"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "triple attack"
+                    "text": "triple attack"
                 }
             ]
         },
@@ -326,52 +339,108 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "no breath"
+                    "name": "Other Ability",
+                    "text": "no breath"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "operative exploits (sure-footed)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sure-footed"
+                        }
+                    ],
+                    "text": "operative exploits"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "plantlike"
+                    "name": "Other Ability",
+                    "text": "plantlike"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "specialization (daredevil) advanced lashunta tempweave (brown force field, jump jets)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "daredevil"
+                        }
+                    ],
+                    "text": "specialization"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "lattice resonant pistol with 2 high-capacity batteries (40 charges each)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "brown force field"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "jump jets"
+                        }
+                    ],
+                    "text": "advanced lashunta tempweave"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "tactical knife"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ],
+                    "text": "lattice resonant pistol with 2 high-capacity batteries"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "bonding epoxy"
+                    "name": "Other Ability",
+                    "text": "tactical knife"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "titanium alloy cable line (50 ft.)"
+                    "name": "Other Ability",
+                    "text": "bonding epoxy"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "gear clamp"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "50 ft."
+                        }
+                    ],
+                    "text": "titanium alloy cable line"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "industrial backpack"
+                    "name": "Other Ability",
+                    "text": "gear clamp"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "Other Ability",
+                    "text": "industrial backpack"
                 }
             ]
         },

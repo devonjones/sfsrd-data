@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "izalguun"
+                    "name": "Graft",
+                    "text": "Izalguun"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 1200
@@ -55,7 +57,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -187,7 +192,7 @@
                             "name": "guard"
                         }
                     ],
-                    "value": "fighting style"
+                    "text": "fighting style"
                 }
             ]
         },
@@ -270,12 +275,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "armor training"
+                    "name": "Other Ability",
+                    "text": "armor training"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "posture (quadrupedal)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "quadrupedal"
+                        }
+                    ],
+                    "text": "posture"
                 }
             ]
         },

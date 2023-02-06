@@ -31,17 +31,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "human"
+                    "name": "Graft",
+                    "text": "Human"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "kurobozu"
+                    "name": "Graft",
+                    "text": "kurobozu"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 6400
@@ -60,7 +63,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -109,7 +115,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 }
             ],
             "immunities": [
@@ -117,7 +123,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "resistances": [
@@ -221,13 +227,13 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "black apoxia"
+                    "text": "black apoxia"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
@@ -240,7 +246,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "sage\u2019s bane"
+                    "text": "sage\u2019s bane"
                 },
                 {
                     "name": "Offensive Ability",
@@ -268,7 +274,7 @@
                             "name": "starquake [1d8 B, DC 16]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -334,17 +340,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (armor)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "armor"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment (graviton)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "graviton"
+                        }
+                    ],
+                    "text": "stellar alignment"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

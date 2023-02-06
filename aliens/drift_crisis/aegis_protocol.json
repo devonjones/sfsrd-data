@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "technological"
+                    "name": "Creature Subtype",
+                    "text": "technological"
                 }
             ],
             "alignment": "Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "genderless"
+                    "name": "Graft",
+                    "text": "Genderless"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "sro"
+                    "name": "Graft",
+                    "text": "SRO"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 51200
@@ -67,7 +71,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -130,37 +137,37 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "bleed"
+                    "text": "bleed"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "disease"
+                    "text": "disease"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "death effects"
+                    "text": "death effects"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "nonlethal damage"
+                    "text": "nonlethal damage"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep effects"
+                    "text": "sleep effects"
                 }
             ],
             "resistances": [
@@ -249,13 +256,13 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "flashing strikes"
+                    "text": "flashing strikes"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "solarian\u2019s onslaught"
+                    "text": "solarian\u2019s onslaught"
                 },
                 {
                     "name": "Offensive Ability",
@@ -283,7 +290,7 @@
                             "name": "supernova [15-ft. radius, 16d6 F, DC 21]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 },
                 {
                     "name": "Offensive Ability",
@@ -296,7 +303,7 @@
                             "name": "time dilation [DC 21]"
                         }
                     ],
-                    "value": "zenith revelations"
+                    "text": "zenith revelations"
                 }
             ]
         },
@@ -315,6 +322,23 @@
                 "type": "stat_block_section",
                 "subtype": "item",
                 "name": "chiral graviton pistol AR with 2 high-capacity batteries (40 charges each)"
+            }
+        ],
+        "augmentations": [
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "accelerated datajack"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "complete speed suspension"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "mk 5 dermal plating"
             }
         ],
         "statistics": {
@@ -373,39 +397,33 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "healing circuit"
+                    "name": "Other Ability",
+                    "text": "healing circuit"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "integrated equipment"
+                    "name": "Other Ability",
+                    "text": "integrated equipment"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (armor)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "armor"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
-                }
-            ],
-            "augmentations": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "accelerated datajack"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "complete speed suspension"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "mk 5 dermal plating"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         },

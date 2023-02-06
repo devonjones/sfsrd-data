@@ -49,12 +49,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "gravity sense 300 ft."
+                    "name": "Special Sense",
+                    "range": 300,
+                    "range_unit": "ft.",
+                    "value": "gravity sense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -103,7 +107,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "void adaptation"
+                    "text": "void adaptation"
                 }
             ],
             "immunities": [
@@ -111,7 +115,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 }
             ]
         },
@@ -208,7 +212,7 @@
                             "name": "13d6+29 B"
                         }
                     ],
-                    "value": "crush"
+                    "text": "crush"
                 }
             ]
         },
@@ -251,17 +255,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "spaceflight (Acrobatics)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Acrobatics"
+                        }
+                    ],
+                    "text": "spaceflight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar stealth"
+                    "name": "Other Ability",
+                    "text": "stellar stealth"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "wall smasher"
+                    "name": "Other Ability",
+                    "text": "wall smasher"
                 }
             ]
         },

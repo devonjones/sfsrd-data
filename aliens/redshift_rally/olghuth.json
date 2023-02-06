@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -50,7 +51,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -99,7 +103,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "resistances": [
@@ -243,13 +247,13 @@
                             "name": "usable every 1d6 rounds"
                         }
                     ],
-                    "value": "agonized wail"
+                    "text": "agonized wail"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "sideswipe"
+                    "text": "sideswipe"
                 }
             ]
         },
@@ -318,12 +322,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "amphibious"
+                    "name": "Other Ability",
+                    "text": "amphibious"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "water breathing"
+                    "name": "Other Ability",
+                    "text": "water breathing"
                 }
             ]
         },

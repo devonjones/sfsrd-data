@@ -20,7 +20,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapechanger"
+                    "name": "Creature Subtype",
+                    "text": "shapechanger"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -43,7 +44,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (scent) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsight"
                 }
             ]
         },
@@ -92,7 +103,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "magic warrior"
+                    "text": "magic warrior"
                 },
                 {
                     "name": "Defensive Ability",
@@ -105,7 +116,7 @@
                             "name": "fire and unholy"
                         }
                     ],
-                    "value": "regeneration 5"
+                    "text": "regeneration 5"
                 }
             ],
             "dr": {
@@ -120,13 +131,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "sleep"
+                    "text": "sleep"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "stunned"
+                    "text": "stunned"
                 }
             ],
             "sr": {
@@ -217,7 +228,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "ferocious charge"
+                    "text": "ferocious charge"
                 }
             ]
         },
@@ -285,12 +296,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (rhino)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "rhino"
+                        }
+                    ],
+                    "text": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "park guardian"
+                    "name": "Other Ability",
+                    "text": "park guardian"
                 }
             ]
         },

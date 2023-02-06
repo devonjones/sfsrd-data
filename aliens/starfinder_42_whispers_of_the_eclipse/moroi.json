@@ -32,12 +32,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "shirren"
+                    "name": "Graft",
+                    "text": "Shirren"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "moroi"
+                    "name": "Graft",
+                    "text": "moroi"
                 }
             ],
             "xp": 4800
@@ -56,12 +58,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -110,13 +125,13 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "coffin restoration"
+                    "text": "coffin restoration"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fast healing 5"
+                    "text": "fast healing 5"
                 }
             ],
             "dr": {
@@ -131,7 +146,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "resistances": [
@@ -205,19 +220,19 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "blood drain"
+                    "text": "blood drain"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "communalism"
+                    "text": "communalism"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "dominate"
+                    "text": "dominate"
                 }
             ]
         },
@@ -308,22 +323,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "children of the night"
+                    "name": "Other Ability",
+                    "text": "children of the night"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "create spawn"
+                    "name": "Other Ability",
+                    "text": "create spawn"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mist form"
+                    "name": "Other Ability",
+                    "text": "mist form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

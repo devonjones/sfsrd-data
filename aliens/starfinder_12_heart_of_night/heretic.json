@@ -27,22 +27,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "lawful"
+                    "name": "Creature Subtype",
+                    "text": "lawful"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "velstrac"
+                    "name": "Creature Subtype",
+                    "text": "velstrac"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -66,7 +70,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -115,7 +122,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "integrated weapons"
+                    "text": "integrated weapons"
                 },
                 {
                     "name": "Defensive Ability",
@@ -128,7 +135,7 @@
                             "name": "good or silver"
                         }
                     ],
-                    "value": "regeneration 5"
+                    "text": "regeneration 5"
                 }
             ],
             "dr": {
@@ -143,7 +150,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 }
             ]
         },
@@ -232,7 +239,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "unnerving gaze"
+                    "text": "unnerving gaze"
                 }
             ]
         },
@@ -246,6 +253,33 @@
                 "type": "stat_block_section",
                 "subtype": "item",
                 "name": "singer velstrac flenser with 2 batteries (20 charges each)"
+            }
+        ],
+        "augmentations": [
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "accelerated datajack"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "mk 2 dermal plating"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "respiration compounder"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "standard speed suspension"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "vocal modulator"
             }
         ],
         "statistics": {
@@ -299,34 +333,7 @@
                         "name": "Infernal"
                     }
                 ]
-            },
-            "augmentations": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "accelerated datajack"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "mk 2 dermal plating"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "respiration compounder"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "standard speed suspension"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "vocal modulator"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

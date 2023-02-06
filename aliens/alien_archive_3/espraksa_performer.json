@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "espraksa"
+                    "name": "Creature Subtype",
+                    "text": "espraksa"
                 }
             ],
             "alignment": "Chaotic Good",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "espraksa"
+                    "name": "Graft",
+                    "text": "Espraksa"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "envoy"
+                    "name": "Graft",
+                    "text": "envoy"
                 }
             ],
             "xp": 1200
@@ -315,12 +318,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "cold inured"
+                    "name": "Other Ability",
+                    "text": "cold inured"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "envoy improvisations (clever attack, clever feint)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "clever attack"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "clever feint"
+                        }
+                    ],
+                    "text": "envoy improvisations"
                 }
             ]
         },

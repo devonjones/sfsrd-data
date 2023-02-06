@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shapeshifter"
+                    "name": "Creature Subtype",
+                    "text": "shapeshifter"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -50,7 +51,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -200,7 +202,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "wanderlust"
+                    "text": "wanderlust"
                 }
             ]
         },
@@ -307,12 +309,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "change shape (Small humanoid)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Small humanoid"
+                        }
+                    ],
+                    "text": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "Drift deceit"
+                    "name": "Other Ability",
+                    "text": "Drift deceit"
                 }
             ]
         },

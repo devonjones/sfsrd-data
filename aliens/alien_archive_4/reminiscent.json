@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "incorporeal"
+                    "name": "Creature Subtype",
+                    "text": "incorporeal"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -50,12 +51,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (life) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -104,7 +118,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "incorporeal"
+                    "text": "incorporeal"
                 }
             ],
             "immunities": [
@@ -112,7 +126,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "weaknesses": [
@@ -176,7 +190,7 @@
                             "name": "DC 19"
                         }
                     ],
-                    "value": "memory deluge"
+                    "text": "memory deluge"
                 },
                 {
                     "name": "Offensive Ability",
@@ -189,7 +203,7 @@
                             "name": "DC 19"
                         }
                     ],
-                    "value": "possess body"
+                    "text": "possess body"
                 }
             ]
         },
@@ -256,7 +270,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "drift attraction"
+                    "name": "Other Ability",
+                    "text": "drift attraction"
                 }
             ]
         },

@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "shirren"
+                    "name": "Creature Subtype",
+                    "text": "shirren"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -39,12 +40,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "shirren"
+                    "name": "Graft",
+                    "text": "Shirren"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "Mystic"
                 }
             ],
             "xp": 4800
@@ -63,7 +66,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -120,7 +133,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "share pain"
+                    "text": "share pain"
                 }
             ]
         },
@@ -203,7 +216,7 @@
                             "name": "8 damage"
                         }
                     ],
-                    "value": "backlash"
+                    "text": "backlash"
                 },
                 {
                     "name": "Offensive Ability",
@@ -221,7 +234,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "sow doubt"
+                    "text": "sow doubt"
                 }
             ],
             "connection": "mindbreaker"
@@ -329,7 +342,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "communalism"
+                    "name": "Other Ability",
+                    "text": "communalism"
                 }
             ]
         }

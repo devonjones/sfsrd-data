@@ -27,22 +27,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "devil"
+                    "name": "Creature Subtype",
+                    "text": "devil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "evil"
+                    "name": "Creature Subtype",
+                    "text": "evil"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "lawful"
+                    "name": "Creature Subtype",
+                    "text": "lawful"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -66,12 +70,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "see in darkness"
+                    "name": "Special Sense",
+                    "value": "see in darkness"
                 }
             ]
         },
@@ -127,13 +135,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "fire"
+                    "text": "fire"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "poison"
+                    "text": "poison"
                 }
             ],
             "resistances": [
@@ -238,7 +246,7 @@
                             "name": "DC 19"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 },
                 {
                     "name": "Offensive Ability",
@@ -251,7 +259,7 @@
                             "name": "DC 19"
                         }
                     ],
-                    "value": "override"
+                    "text": "override"
                 }
             ]
         },
@@ -323,17 +331,39 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (distracting hack, ghost intrusion)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "distracting hack"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "ghost intrusion"
+                        }
+                    ],
+                    "text": "mechanic tricks"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "possess computer"
+                    "name": "Other Ability",
+                    "text": "possess computer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "remote hack (40 ft.; DC 19)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 ft.; DC 19"
+                        }
+                    ],
+                    "text": "remote hack"
                 }
             ]
         },

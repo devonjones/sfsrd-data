@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "android"
+                    "name": "Creature Subtype",
+                    "text": "android"
                 }
             ],
             "alignment": "Lawful Evil",
@@ -50,12 +51,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -111,13 +116,13 @@
                             "name": "see text"
                         }
                     ],
-                    "value": "regeneration 10"
+                    "text": "regeneration 10"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "spontaneous reincarnation"
+                    "text": "spontaneous reincarnation"
                 }
             ],
             "immunities": [
@@ -125,7 +130,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "undead immunities"
+                    "text": "undead immunities"
                 }
             ],
             "weaknesses": [
@@ -198,7 +203,7 @@
                             "name": "DC 20"
                         }
                     ],
-                    "value": "memory extraction"
+                    "text": "memory extraction"
                 }
             ]
         },
@@ -217,6 +222,13 @@
                 "type": "stat_block_section",
                 "subtype": "item",
                 "name": "sepulcher-class bone pistol with 2 batteries (20 charges each)"
+            }
+        ],
+        "augmentations": [
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "standard speed suspension"
             }
         ],
         "statistics": {
@@ -270,24 +282,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "constructed"
+                    "name": "Other Ability",
+                    "text": "constructed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "flat affect"
+                    "name": "Other Ability",
+                    "text": "flat affect"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
-                }
-            ],
-            "augmentations": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "standard speed suspension"
+                    "name": "Other Ability",
+                    "text": "unliving"
                 }
             ]
         },

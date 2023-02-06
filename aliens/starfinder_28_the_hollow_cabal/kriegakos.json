@@ -43,17 +43,38 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "sense through (blindsense [fog]) 60ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "blindsense [fog]"
+                        }
+                    ],
+                    "value": "sense through"
                 }
             ]
         },
@@ -114,19 +135,19 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "corrosive saliva"
+                    "text": "corrosive saliva"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "evasion"
+                    "text": "evasion"
                 },
                 {
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "unflankable"
+                    "text": "unflankable"
                 }
             ],
             "immunities": [
@@ -134,7 +155,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "acid"
+                    "text": "acid"
                 }
             ]
         },
@@ -203,7 +224,7 @@
                             "name": "4d8 A"
                         }
                     ],
-                    "value": "flyby attack"
+                    "text": "flyby attack"
                 },
                 {
                     "name": "Offensive Ability",
@@ -216,7 +237,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "saliva shake"
+                    "text": "saliva shake"
                 }
             ]
         },

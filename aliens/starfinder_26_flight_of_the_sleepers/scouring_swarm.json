@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "swarm"
+                    "name": "Creature Subtype",
+                    "text": "swarm"
                 }
             ],
             "alignment": "Neutral",
@@ -50,12 +51,25 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (organic material) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "organic material"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -104,7 +118,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "swarm defenses"
+                    "text": "swarm defenses"
                 }
             ],
             "immunities": [
@@ -112,7 +126,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "swarm immunities"
+                    "text": "swarm immunities"
                 }
             ],
             "weaknesses": [
@@ -183,7 +197,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "devour organics"
+                    "text": "devour organics"
                 },
                 {
                     "name": "Offensive Ability",
@@ -196,7 +210,7 @@
                             "name": "DC 11"
                         }
                     ],
-                    "value": "distraction"
+                    "text": "distraction"
                 }
             ]
         },
@@ -239,12 +253,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "death cloud"
+                    "name": "Other Ability",
+                    "text": "death cloud"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "no breath"
+                    "name": "Other Ability",
+                    "text": "no breath"
                 }
             ]
         },

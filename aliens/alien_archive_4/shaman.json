@@ -31,12 +31,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "kiirinta"
+                    "name": "Graft",
+                    "text": "Kiirinta"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 2400
@@ -55,7 +57,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -105,7 +108,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fluttercloud"
+                    "text": "fluttercloud"
                 }
             ]
         },
@@ -193,7 +196,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "grasping vines"
+                    "text": "grasping vines"
                 },
                 {
                     "name": "Offensive Ability",
@@ -206,7 +209,7 @@
                             "name": "DC 16"
                         }
                     ],
-                    "value": "reverberating shriek"
+                    "text": "reverberating shriek"
                 }
             ],
             "connection": "xenodruid"
@@ -302,7 +305,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "animal adaptation (6 minutes)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "6 minutes"
+                        }
+                    ],
+                    "text": "animal adaptation"
                 }
             ]
         },

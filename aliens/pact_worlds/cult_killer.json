@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "lashunta"
+                    "name": "Creature Subtype",
+                    "text": "lashunta"
                 }
             ],
             "alignment": "Chaotic Evil",
@@ -39,17 +40,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "korasha"
+                    "name": "Graft",
+                    "text": "Korasha"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "lashunta"
+                    "name": "Graft",
+                    "text": "lashunta"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "solarian"
+                    "name": "Graft",
+                    "text": "solarian"
                 }
             ],
             "xp": 2400
@@ -201,7 +205,7 @@
                             "name": "supernova [10-ft. radius, 7d6 F, DC 14]"
                         }
                     ],
-                    "value": "stellar revelations"
+                    "text": "stellar revelations"
                 }
             ]
         },
@@ -285,12 +289,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "solar manifestation (solar weapon)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "solar weapon"
+                        }
+                    ],
+                    "text": "solar manifestation"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stellar alignment"
+                    "name": "Other Ability",
+                    "text": "stellar alignment"
                 }
             ]
         }

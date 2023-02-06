@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "human"
+                    "name": "Creature Subtype",
+                    "text": "human"
                 }
             ],
             "alignment": "Chaotic Neutral",
@@ -38,12 +39,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "human"
+                    "name": "Graft",
+                    "text": "Human"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "soldier"
+                    "name": "Graft",
+                    "text": "soldier"
                 }
             ],
             "xp": 2400
@@ -196,7 +199,7 @@
                     "name": "Special Attack",
                     "type": "stat_block_section",
                     "subtype": "special_attack",
-                    "value": "charge attack"
+                    "text": "charge attack"
                 },
                 {
                     "name": "Special Attack",
@@ -209,13 +212,13 @@
                             "name": "blitz"
                         }
                     ],
-                    "value": "fighting styles"
+                    "text": "fighting styles"
                 },
                 {
                     "name": "Special Attack",
                     "type": "stat_block_section",
                     "subtype": "special_attack",
-                    "value": "frothing rage"
+                    "text": "frothing rage"
                 }
             ]
         },
@@ -234,6 +237,13 @@
                 "type": "stat_block_section",
                 "subtype": "item",
                 "name": "red star plasma pistol with 4 batteries (20 charges each)"
+            }
+        ],
+        "augmentations": [
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "Damoritosh\u2019s arm symbiend"
             }
         ],
         "statistics": {
@@ -282,14 +292,7 @@
                         "name": "Common"
                     }
                 ]
-            },
-            "augmentations": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "Damoritosh\u2019s arm symbiend"
-                }
-            ]
+            }
         },
         "ecology": {
             "name": "Ecology",

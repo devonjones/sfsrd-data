@@ -31,17 +31,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "cerebric"
+                    "name": "Graft",
+                    "text": "Cerebric"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "fungus"
+                    "name": "Graft",
+                    "text": "fungus"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mystic"
+                    "name": "Graft",
+                    "text": "mystic"
                 }
             ],
             "xp": 6400
@@ -60,12 +63,16 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -115,7 +122,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "fast healing 5"
+                    "text": "fast healing 5"
                 },
                 {
                     "name": "Defensive Ability",
@@ -128,7 +135,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "otherworldly mind"
+                    "text": "otherworldly mind"
                 }
             ],
             "immunities": [
@@ -136,13 +143,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "plant immunities"
+                    "text": "plant immunities"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "walk the void"
+                    "text": "walk the void"
                 }
             ],
             "resistances": [
@@ -351,7 +358,7 @@
                             "name": "DC 18"
                         }
                     ],
-                    "value": "star shriek"
+                    "text": "star shriek"
                 }
             ],
             "connection": "star shaman"
@@ -436,17 +443,32 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "stargazer"
+                    "name": "Other Ability",
+                    "text": "stargazer"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "starlight form (9 minutes, DC 18)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "9 minutes"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "text": "starlight form"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "walk the void"
+                    "name": "Other Ability",
+                    "text": "walk the void"
                 }
             ]
         },

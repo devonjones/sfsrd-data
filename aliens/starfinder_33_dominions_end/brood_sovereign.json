@@ -27,12 +27,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "aquatic"
+                    "name": "Creature Subtype",
+                    "text": "aquatic"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "cold"
+                    "name": "Creature Subtype",
+                    "text": "cold"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -55,17 +57,31 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsight (vibration) 120 ft."
+                    "name": "Special Sense",
+                    "range": 120,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -114,7 +130,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "depth-inured"
+                    "text": "depth-inured"
                 }
             ],
             "immunities": [
@@ -122,7 +138,7 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "cold"
+                    "text": "cold"
                 }
             ],
             "weaknesses": [
@@ -229,7 +245,7 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "value": "rage spasm"
+                    "text": "rage spasm"
                 },
                 {
                     "name": "Offensive Ability",
@@ -257,7 +273,7 @@
                             "name": "100 HP"
                         }
                     ],
-                    "value": "swallow whole"
+                    "text": "swallow whole"
                 },
                 {
                     "name": "Offensive Ability",
@@ -270,7 +286,7 @@
                             "name": "DC 27"
                         }
                     ],
-                    "value": "terrify"
+                    "text": "terrify"
                 }
             ]
         },
@@ -363,12 +379,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "compression"
+                    "name": "Other Ability",
+                    "text": "compression"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "water breathing"
+                    "name": "Other Ability",
+                    "text": "water breathing"
                 }
             ]
         },

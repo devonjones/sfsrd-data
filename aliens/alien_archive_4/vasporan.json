@@ -43,12 +43,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (scent) 90 ft."
+                    "name": "Special Sense",
+                    "range": 90,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "value": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -97,7 +108,7 @@
                     "name": "Defensive Ability",
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "value": "flash molt"
+                    "text": "flash molt"
                 }
             ]
         },
@@ -184,7 +195,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "ambush strike"
+                    "text": "ambush strike"
                 }
             ]
         },
@@ -234,12 +245,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "autotomous flight"
+                    "name": "Other Ability",
+                    "text": "autotomous flight"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "gaseous flesh"
+                    "name": "Other Ability",
+                    "text": "gaseous flesh"
                 }
             ]
         },

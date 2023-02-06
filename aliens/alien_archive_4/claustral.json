@@ -26,17 +26,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "agathion"
+                    "name": "Creature Subtype",
+                    "text": "agathion"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "extraplanar"
+                    "name": "Creature Subtype",
+                    "text": "extraplanar"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "good"
+                    "name": "Creature Subtype",
+                    "text": "good"
                 }
             ],
             "alignment": "Neutral Good",
@@ -60,7 +63,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "low-light vision"
+                    "name": "Special Sense",
+                    "value": "low-light vision"
                 }
             ]
         },
@@ -118,13 +122,13 @@
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "electricity"
+                    "text": "electricity"
                 },
                 {
                     "name": "Immunity",
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "value": "petrification"
+                    "text": "petrification"
                 }
             ],
             "resistances": [
@@ -228,7 +232,7 @@
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "preserver\u2019s patience"
+                    "text": "preserver\u2019s patience"
                 }
             ]
         },
@@ -312,7 +316,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "healing channel (6d8)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "6d8"
+                        }
+                    ],
+                    "text": "healing channel"
                 }
             ]
         },

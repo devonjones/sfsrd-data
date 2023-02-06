@@ -26,7 +26,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "hadrogaan"
+                    "name": "Creature Subtype",
+                    "text": "hadrogaan"
                 }
             ],
             "alignment": "Neutral",
@@ -38,17 +39,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "luma"
+                    "name": "Graft",
+                    "text": "Luma"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "hadrogaan"
+                    "name": "Graft",
+                    "text": "hadrogaan"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "name": "mechanic"
+                    "name": "Graft",
+                    "text": "mechanic"
                 }
             ],
             "xp": 800
@@ -67,7 +71,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "blindsense (vibration) 30 ft."
+                    "name": "Special Sense",
+                    "range": 30,
+                    "range_unit": "ft.",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "value": "blindsense"
                 }
             ]
         },
@@ -185,13 +199,13 @@
                             "name": "DC 14"
                         }
                     ],
-                    "value": "overload"
+                    "text": "overload"
                 },
                 {
                     "name": "Offensive Ability",
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "value": "target tracking"
+                    "text": "target tracking"
                 }
             ]
         },
@@ -210,6 +224,13 @@
                 "type": "stat_block_section",
                 "subtype": "item",
                 "name": "tactical baton"
+            }
+        ],
+        "augmentations": [
+            {
+                "type": "stat_block_section",
+                "subtype": "augmentation",
+                "name": "standard datajack"
             }
         ],
         "statistics": {
@@ -286,24 +307,34 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "artificial intelligence (exocortex)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "exocortex"
+                        }
+                    ],
+                    "text": "artificial intelligence"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "custom rig"
+                    "name": "Other Ability",
+                    "text": "custom rig"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "mechanic tricks (portable power)"
-                }
-            ],
-            "augmentations": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "augmentation",
-                    "name": "standard datajack"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "portable power"
+                        }
+                    ],
+                    "text": "mechanic tricks"
                 }
             ]
         },

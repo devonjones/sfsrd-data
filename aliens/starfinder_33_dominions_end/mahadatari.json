@@ -27,7 +27,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "kasatha"
+                    "name": "Creature Subtype",
+                    "text": "kasatha"
                 }
             ],
             "alignment": "Lawful Neutral",
@@ -50,7 +51,10 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "name": "darkvision 60 ft."
+                    "name": "Special Sense",
+                    "range": 60,
+                    "range_unit": "ft.",
+                    "value": "darkvision"
                 }
             ]
         },
@@ -174,7 +178,7 @@
                             "name": "19th level"
                         }
                     ],
-                    "value": "tempered arms"
+                    "text": "tempered arms"
                 }
             ]
         },
@@ -260,17 +264,27 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "multiarmed (4)"
+                    "name": "Other Ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4"
+                        }
+                    ],
+                    "text": "multiarmed"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "preternatural grace"
+                    "name": "Other Ability",
+                    "text": "preternatural grace"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "testament to history"
+                    "name": "Other Ability",
+                    "text": "testament to history"
                 }
             ]
         },
