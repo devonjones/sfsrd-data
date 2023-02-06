@@ -94,10 +94,19 @@
                     "value": 9
                 }
             },
-            "defensive_abilities": [
-                "DR 5/cold iron"
-            ],
-            "sr": "16"
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "cold iron"
+            },
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 16
+            }
         },
         "offense": {
             "name": "Offense",

@@ -95,10 +95,21 @@
                 }
             },
             "immunities": [
-                "poison"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "poison"
+                }
             ],
             "resistances": [
-                "acid 15"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 15
+                }
             ]
         },
         "offense": {

@@ -88,17 +88,53 @@
                 }
             },
             "defensive_abilities": [
-                "magic warrior",
-                "regeneration 5 (fire and unholy)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "magic warrior"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "fire and unholy"
+                        }
+                    ],
+                    "value": "regeneration 5"
+                }
             ],
-            "dr": [
-                "10/\u2013"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "\u2013"
+            },
             "immunities": [
-                "sleep",
-                "stunned"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sleep"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "stunned"
+                }
             ],
-            "sr": "25"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 25
+            }
         },
         "offense": {
             "name": "Offense",

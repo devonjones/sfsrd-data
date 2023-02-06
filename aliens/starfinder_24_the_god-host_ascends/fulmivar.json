@@ -99,12 +99,26 @@
                     "value": 14
                 }
             },
-            "dr": [
-                "5/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "\u2014"
+            },
             "immunities": [
-                "electricity",
-                "elemental immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "elemental immunities"
+                }
             ]
         },
         "offense": {

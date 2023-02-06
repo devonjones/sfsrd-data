@@ -100,9 +100,24 @@
                 }
             },
             "immunities": [
-                "acid",
-                "fire",
-                "ooze immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                }
             ],
             "weaknesses": [
                 "cold"

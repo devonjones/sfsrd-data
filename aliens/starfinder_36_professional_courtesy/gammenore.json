@@ -100,13 +100,36 @@
                 }
             },
             "defensive_abilities": [
-                "shell of ice (60 fire)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "60 fire"
+                        }
+                    ],
+                    "value": "shell of ice"
+                }
             ],
             "immunities": [
-                "cold"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                }
             ],
             "resistances": [
-                "fire 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 10
+                }
             ],
             "weaknesses": [
                 "vulnerable to fire"

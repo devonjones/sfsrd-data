@@ -93,11 +93,32 @@
                 }
             },
             "defensive_abilities": [
-                "quills (1d4 P",
-                "DC 13)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d4 P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 13"
+                        }
+                    ],
+                    "value": "quills"
+                }
             ],
             "immunities": [
-                "poison"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "poison"
+                }
             ],
             "weaknesses": [
                 "vulnerable to sonic"

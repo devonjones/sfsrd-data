@@ -95,11 +95,20 @@
                 }
             },
             "defensive_abilities": [
-                "out of phase"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "out of phase"
+                }
             ],
-            "dr": [
-                "5/cold iron"
-            ]
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "cold iron"
+            }
         },
         "offense": {
             "name": "Offense",

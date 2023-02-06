@@ -112,10 +112,27 @@
                 }
             },
             "resistances": [
-                "electricity 15",
-                "fire 15"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 15
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 15
+                }
             ],
-            "sr": "26",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 26
+            },
             "weaknesses": [
                 "vulnerable to cold"
             ]

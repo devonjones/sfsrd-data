@@ -102,19 +102,69 @@
                 }
             },
             "defensive_abilities": [
-                "incorporeal",
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "incorporeal"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
             "immunities": [
-                "acid",
-                "cold",
-                "fire",
-                "mind-affecting effects",
-                "ooze immunities",
-                "radiation",
-                "sonic"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "mind-affecting effects"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sonic"
+                }
             ],
-            "sr": "21",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 21
+            },
             "weaknesses": [
                 "susceptible to force effects"
             ]

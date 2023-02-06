@@ -89,10 +89,25 @@
                 }
             },
             "defensive_abilities": [
-                "insect pacifism",
-                "verminlike"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "insect pacifism"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "verminlike"
+                }
             ],
-            "sr": "11"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 11
+            }
         },
         "offense": {
             "name": "Offense",

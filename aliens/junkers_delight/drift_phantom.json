@@ -95,19 +95,63 @@
                 }
             },
             "defensive_abilities": [
-                "evasion",
-                "unflankable"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "evasion"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "unflankable"
+                }
             ],
-            "dr": [
-                "5/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "\u2014"
+            },
             "immunities": [
-                "bleed",
-                "critical hits",
-                "paralysis",
-                "poison",
-                "sleep effects",
-                "stunning"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "bleed"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "critical hits"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "paralysis"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "poison"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sleep effects"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "stunning"
+                }
             ]
         },
         "offense": {

@@ -98,8 +98,20 @@
                 }
             },
             "resistances": [
-                "electricity 10",
-                "sonic 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "sonic",
+                    "value": 10
+                }
             ]
         },
         "offense": {

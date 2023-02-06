@@ -105,11 +105,20 @@
                 }
             },
             "defensive_abilities": [
-                "resist conjuration"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "resist conjuration"
+                }
             ],
-            "dr": [
-                "5/lawful"
-            ]
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "lawful"
+            }
         },
         "offense": {
             "name": "Offense",

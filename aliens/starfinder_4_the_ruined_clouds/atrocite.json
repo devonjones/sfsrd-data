@@ -110,8 +110,18 @@
                 }
             },
             "immunities": [
-                "poison",
-                "vacuum"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "poison"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "vacuum"
+                }
             ]
         },
         "offense": {

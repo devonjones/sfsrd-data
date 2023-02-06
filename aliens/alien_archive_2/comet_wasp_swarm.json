@@ -107,12 +107,32 @@
                 }
             },
             "defensive_abilities": [
-                "swarm defenses",
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm defenses"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
             "immunities": [
-                "cold",
-                "swarm immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "swarm immunities"
+                }
             ]
         },
         "offense": {

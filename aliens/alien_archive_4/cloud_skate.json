@@ -88,12 +88,38 @@
                 }
             },
             "defensive_abilities": [
-                "explosive death (5d8 F",
-                "20 ft.",
-                "Reflex DC 14)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "5d8 F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 14"
+                        }
+                    ],
+                    "value": "explosive death"
+                }
             ],
             "resistances": [
-                "electricity 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 5
+                }
             ],
             "weaknesses": [
                 "vulnerable to fire"

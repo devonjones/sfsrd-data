@@ -88,12 +88,38 @@
                 }
             },
             "defensive_abilities": [
-                "explosive death (9d8 F",
-                "30 ft.",
-                "Reflex DC 19)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "9d8 F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "30 ft."
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "Reflex DC 19"
+                        }
+                    ],
+                    "value": "explosive death"
+                }
             ],
             "resistances": [
-                "electricity 15"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 15
+                }
             ],
             "weaknesses": [
                 "vulnerable to fire"

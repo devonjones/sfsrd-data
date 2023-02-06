@@ -93,7 +93,20 @@
                 }
             },
             "resistances": [
-                "electricity 5 (10 vs. nonlethal electricity)"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "10 vs. nonlethal electricity"
+                        }
+                    ],
+                    "text": "electricity",
+                    "value": 5
+                }
             ]
         },
         "offense": {

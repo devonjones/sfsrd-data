@@ -106,20 +106,55 @@
                 }
             },
             "defensive_abilities": [
-                "amorphous",
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "amorphous"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
-            "dr": [
-                "10/evil"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "evil"
+            },
             "immunities": [
-                "fire",
-                "radiation"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                }
             ],
             "resistances": [
-                "electricity 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 10
+                }
             ],
-            "sr": "24",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 24
+            },
             "weaknesses": [
                 "vulnerable to cold"
             ]

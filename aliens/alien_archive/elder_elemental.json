@@ -99,11 +99,20 @@
                     "value": 10
                 }
             },
-            "dr": [
-                "10/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "\u2014"
+            },
             "immunities": [
-                "elemental immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "elemental immunities"
+                }
             ]
         },
         "offense": {

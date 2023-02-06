@@ -99,11 +99,20 @@
                     "value": 5
                 }
             },
-            "dr": [
-                "5/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "magic"
+            },
             "immunities": [
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ],
             "weaknesses": [
                 "vulnerable to cold"

@@ -110,14 +110,33 @@
                 }
             },
             "defensive_abilities": [
-                "integrated weapons"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "integrated weapons"
+                }
             ],
-            "dr": [
-                "5/adamantine or wound"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "adamantine or wound"
+            },
             "immunities": [
-                "construct immunities",
-                "magic"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "magic"
+                }
             ]
         },
         "offense": {

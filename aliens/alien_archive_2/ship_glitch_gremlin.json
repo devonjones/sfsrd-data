@@ -94,15 +94,36 @@
                 }
             },
             "defensive_abilities": [
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
             "immunities": [
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ],
             "resistances": [
-                "cold 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 5
+                }
             ],
-            "sr": "12"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 12
+            }
         },
         "offense": {
             "name": "Offense",

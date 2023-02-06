@@ -103,17 +103,51 @@
                     "value": 20
                 }
             },
-            "dr": [
-                "20/adamantine"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 20,
+                "text": "adamantine"
+            },
             "immunities": [
-                "cold",
-                "electricity",
-                "fire",
-                "ooze immunities",
-                "radiation"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                }
             ],
-            "sr": "31"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 31
+            }
         },
         "offense": {
             "name": "Offense",

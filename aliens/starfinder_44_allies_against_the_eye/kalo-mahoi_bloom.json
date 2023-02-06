@@ -105,8 +105,18 @@
                 }
             },
             "immunities": [
-                "cold",
-                "plant immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "plant immunities"
+                }
             ],
             "weaknesses": [
                 "vulnerable to fire"

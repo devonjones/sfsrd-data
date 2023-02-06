@@ -111,11 +111,26 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5",
-                "hardness 15"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "fast healing 5"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "hardness 15"
+                }
             ],
             "immunities": [
-                "construct immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                }
             ]
         },
         "offense": {

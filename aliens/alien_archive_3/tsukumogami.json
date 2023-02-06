@@ -105,17 +105,55 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "fast healing 5"
+                }
             ],
             "immunities": [
-                "construct immunities",
-                "petrification",
-                "polymorph"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "petrification"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "polymorph"
+                }
             ],
             "resistances": [
-                "acid 10",
-                "electricity 10",
-                "fire 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 10
+                }
             ]
         },
         "offense": {

@@ -111,13 +111,34 @@
                 }
             },
             "defensive_abilities": [
-                "regeneration 5 (good or silver)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "good or silver"
+                        }
+                    ],
+                    "value": "regeneration 5"
+                }
             ],
-            "dr": [
-                "5/good or silver"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "good or silver"
+            },
             "immunities": [
-                "cold"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                }
             ]
         },
         "offense": {

@@ -116,13 +116,40 @@
                 }
             },
             "defensive_abilities": [
-                "integrated weapons",
-                "regeneration 5 (good or silver)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "integrated weapons"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "good or silver"
+                        }
+                    ],
+                    "value": "regeneration 5"
+                }
             ],
             "immunities": [
-                "cold"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                }
             ],
-            "sr": "22",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 22
+            },
             "weaknesses": [
                 "pain dependency",
                 "vulnerable to fire"

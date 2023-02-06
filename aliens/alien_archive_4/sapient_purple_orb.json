@@ -88,14 +88,39 @@
                 }
             },
             "defensive_abilities": [
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
             "immunities": [
-                "bleed",
-                "cold",
-                "radiation"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "bleed"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                }
             ],
-            "sr": "15"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 15
+            }
         },
         "offense": {
             "name": "Offense",

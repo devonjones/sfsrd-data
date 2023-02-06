@@ -93,10 +93,21 @@
                 }
             },
             "defensive_abilities": [
-                "crate shell"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "crate shell"
+                }
             ],
             "resistances": [
-                "acid 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 5
+                }
             ]
         },
         "offense": {

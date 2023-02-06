@@ -105,19 +105,55 @@
                     "value": 13
                 }
             },
-            "dr": [
-                "10/cold iron and lawful"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "cold iron and lawful"
+            },
             "immunities": [
-                "cold",
-                "electricity",
-                "poison"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "poison"
+                }
             ],
             "resistances": [
-                "acid 10",
-                "fire 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 10
+                }
             ],
-            "sr": "23"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 23
+            }
         },
         "offense": {
             "name": "Offense",

@@ -92,13 +92,32 @@
                     "value": 10
                 }
             },
-            "dr": [
-                "5/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "magic"
+            },
             "immunities": [
-                "paralysis",
-                "radiation",
-                "sleep"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "paralysis"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sleep"
+                }
             ]
         },
         "offense": {

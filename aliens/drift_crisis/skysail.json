@@ -87,11 +87,20 @@
                     "value": 4
                 }
             },
-            "dr": [
-                "5/slashing or piercing"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "slashing or piercing"
+            },
             "immunities": [
-                "plant immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "plant immunities"
+                }
             ]
         },
         "offense": {

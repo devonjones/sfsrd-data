@@ -98,8 +98,20 @@
                 }
             },
             "resistances": [
-                "cold 25",
-                "fire 25"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 25
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 25
+                }
             ]
         },
         "offense": {

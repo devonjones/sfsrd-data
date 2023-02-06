@@ -92,11 +92,21 @@
                     "value": 7
                 }
             },
-            "dr": [
-                "5/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "\u2014"
+            },
             "resistances": [
-                "sonic 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "sonic",
+                    "value": 10
+                }
             ]
         },
         "offense": {

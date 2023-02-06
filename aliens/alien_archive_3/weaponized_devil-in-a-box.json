@@ -100,10 +100,20 @@
                 }
             },
             "defensive_abilities": [
-                "boxed"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "boxed"
+                }
             ],
             "immunities": [
-                "construct immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                }
             ],
             "weaknesses": [
                 "vulnerable to critical hits"

@@ -100,7 +100,23 @@
                 }
             },
             "defensive_abilities": [
-                "incorporeal Immunities undead immunities Weakness captivating memento"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "incorporeal"
+                }
+            ],
+            "immunities": [
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
+            ],
+            "weaknesses": [
+                "captivating memento"
             ]
         },
         "offense": {

@@ -101,11 +101,26 @@
                 }
             },
             "defensive_abilities": [
-                "troop defenses"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "troop defenses"
+                }
             ],
             "immunities": [
-                "electricity",
-                "troop immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "troop immunities"
+                }
             ]
         },
         "offense": {

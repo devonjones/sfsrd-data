@@ -115,15 +115,41 @@
                 }
             },
             "defensive_abilities": [
-                "mitigate",
-                "stony plates"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "mitigate"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "stony plates"
+                }
             ],
-            "dr": [
-                "1/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 1,
+                "text": "\u2014"
+            },
             "resistances": [
-                "all 1",
-                "cold 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "all",
+                    "value": 1
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 5
+                }
             ]
         },
         "offense": {

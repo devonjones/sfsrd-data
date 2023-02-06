@@ -88,13 +88,27 @@
                     "value": 16
                 }
             },
-            "dr": [
-                "11/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 11,
+                "text": "magic"
+            },
             "immunities": [
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
-            "sr": "21"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 21
+            }
         },
         "offense": {
             "name": "Offense",

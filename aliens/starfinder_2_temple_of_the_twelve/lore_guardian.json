@@ -99,13 +99,27 @@
                     "value": 0
                 }
             },
-            "dr": [
-                "2/adamantine"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 2,
+                "text": "adamantine"
+            },
             "immunities": [
-                "construct immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                }
             ],
-            "sr": "13"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 13
+            }
         },
         "offense": {
             "name": "Offense",

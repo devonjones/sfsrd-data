@@ -99,9 +99,19 @@
                 }
             },
             "immunities": [
-                "ooze immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                }
             ],
-            "sr": "26"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 26
+            }
         },
         "offense": {
             "name": "Offense",

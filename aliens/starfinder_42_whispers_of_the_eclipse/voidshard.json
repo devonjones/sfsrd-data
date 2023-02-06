@@ -94,14 +94,33 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "fast healing 5"
+                }
             ],
-            "dr": [
-                "10/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "magic"
+            },
             "immunities": [
-                "cold",
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
             "weaknesses": [
                 "order aversion"

@@ -93,16 +93,48 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5",
-                "unflankable"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "fast healing 5"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "unflankable"
+                }
             ],
-            "dr": [
-                "10/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "magic"
+            },
             "resistances": [
-                "acid 10",
-                "cold 10",
-                "fire 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 10
+                }
             ]
         },
         "offense": {

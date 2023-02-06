@@ -104,10 +104,21 @@
                 }
             },
             "defensive_abilities": [
-                "ferocity"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "ferocity"
+                }
             ],
             "resistances": [
-                "cold 20"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 20
+                }
             ]
         },
         "offense": {

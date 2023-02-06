@@ -93,13 +93,35 @@
                 }
             },
             "immunities": [
-                "cold"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                }
             ],
             "resistances": [
-                "electricity 30",
-                "fire 30"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "electricity",
+                    "value": 30
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 30
+                }
             ],
-            "sr": "25"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 25
+            }
         },
         "offense": {
             "name": "Offense",

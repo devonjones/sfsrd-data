@@ -104,13 +104,33 @@
                 }
             },
             "defensive_abilities": [
-                "incorporeal",
-                "searing mind"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "incorporeal"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "searing mind"
+                }
             ],
             "immunities": [
-                "advanced immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "advanced immunities"
+                }
             ],
-            "sr": "28",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 28
+            },
             "weaknesses": [
                 "vulnerable to electricity"
             ]

@@ -114,12 +114,34 @@
                 }
             },
             "immunities": [
-                "electricity",
-                "petrification"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "petrification"
+                }
             ],
             "resistances": [
-                "cold 10",
-                "sonic 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 10
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "sonic",
+                    "value": 10
+                }
             ]
         },
         "offense": {

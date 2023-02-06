@@ -99,9 +99,24 @@
                 }
             },
             "immunities": [
-                "cold",
-                "electricity",
-                "vacuum"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "vacuum"
+                }
             ]
         },
         "offense": {

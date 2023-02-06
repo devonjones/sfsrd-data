@@ -110,13 +110,33 @@
                 }
             },
             "defensive_abilities": [
-                "swarm defenses"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm defenses"
+                }
             ],
             "immunities": [
-                "construct immunities",
-                "swarm immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "swarm immunities"
+                }
             ],
-            "sr": "18",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 18
+            },
             "weaknesses": [
                 "vulnerable to electricity"
             ]

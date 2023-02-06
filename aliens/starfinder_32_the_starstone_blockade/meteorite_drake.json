@@ -99,11 +99,20 @@
                     "value": 14
                 }
             },
-            "dr": [
-                "10/adamantine"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "adamantine"
+            },
             "immunities": [
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ]
         },
         "offense": {

@@ -101,22 +101,50 @@
                 }
             },
             "defensive_abilities": [
-                "void adaptation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "void adaptation"
+                }
             ],
-            "dr": [
-                "10/chaotic",
-                "evil",
-                "good",
-                "or law"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "chaotic, evil, good, or law"
+            },
             "immunities": [
-                "electricity"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                }
             ],
             "resistances": [
-                "cold 5",
-                "sonic 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 5
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "sonic",
+                    "value": 5
+                }
             ],
-            "sr": "24"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 24
+            }
         },
         "offense": {
             "name": "Offense",

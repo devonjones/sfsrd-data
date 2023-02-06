@@ -118,16 +118,43 @@
                 }
             },
             "defensive_abilities": [
-                "share pain (DC 26)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "value": "share pain"
+                }
             ],
-            "dr": [
-                "10/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "magic"
+            },
             "immunities": [
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
             "resistances": [
-                "cold 15"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 15
+                }
             ]
         },
         "offense": {

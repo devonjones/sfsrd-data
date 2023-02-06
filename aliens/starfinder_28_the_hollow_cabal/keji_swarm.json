@@ -95,12 +95,32 @@
                 }
             },
             "defensive_abilities": [
-                "diffraction",
-                "swarm defenses"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "diffraction"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm defenses"
+                }
             ],
             "immunities": [
-                "acid",
-                "swarm immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "swarm immunities"
+                }
             ]
         },
         "offense": {

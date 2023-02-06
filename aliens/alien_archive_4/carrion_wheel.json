@@ -88,11 +88,27 @@
                 }
             },
             "defensive_abilities": [
-                "reflexive rash",
-                "unflankable"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "reflexive rash"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "unflankable"
+                }
             ],
             "resistances": [
-                "acid 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                }
             ]
         },
         "offense": {

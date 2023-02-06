@@ -101,13 +101,38 @@
                 }
             },
             "defensive_abilities": [
-                "Swarm mind",
-                "troop defenses"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "Swarm mind"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "troop defenses"
+                }
             ],
             "immunities": [
-                "acid",
-                "fear effects",
-                "troop immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fear effects"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "troop immunities"
+                }
             ]
         },
         "offense": {

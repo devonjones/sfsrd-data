@@ -87,11 +87,20 @@
                     "value": 12
                 }
             },
-            "dr": [
-                "5/cold iron"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "cold iron"
+            },
             "immunities": [
-                "acid"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                }
             ]
         },
         "offense": {

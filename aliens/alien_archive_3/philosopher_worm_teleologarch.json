@@ -93,7 +93,19 @@
                     "value": 21
                 }
             },
-            "sr": "26 vs. mind-affecting effects only"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 26,
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "vs. mind-affecting effects only"
+                    }
+                ]
+            }
         },
         "offense": {
             "name": "Offense",

@@ -94,14 +94,35 @@
                 }
             },
             "defensive_abilities": [
-                "swarm defenses",
-                "unflankable"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm defenses"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "unflankable"
+                }
             ],
             "immunities": [
-                "swarm immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "swarm immunities"
+                }
             ],
             "resistances": [
-                "cold 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 5
+                }
             ]
         },
         "offense": {

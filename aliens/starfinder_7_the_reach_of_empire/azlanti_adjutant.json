@@ -101,12 +101,38 @@
                 }
             },
             "defensive_abilities": [
-                "aeon slot (+1",
-                "10 HP)",
-                "integrated weapons"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "+1"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "10 HP"
+                        }
+                    ],
+                    "value": "aeon slot"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "integrated weapons"
+                }
             ],
             "immunities": [
-                "construct immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                }
             ]
         },
         "offense": {

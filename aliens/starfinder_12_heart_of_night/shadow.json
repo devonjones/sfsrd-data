@@ -106,13 +106,38 @@
                 }
             },
             "defensive_abilities": [
-                "shadow cloak"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "shadow cloak"
+                }
             ],
             "immunities": [
-                "ability damage",
-                "ability drain",
-                "cold",
-                "negative levels"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ability damage"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ability drain"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "negative levels"
+                }
             ]
         },
         "offense": {

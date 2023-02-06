@@ -100,12 +100,26 @@
                     "value": 9
                 }
             },
-            "dr": [
-                "5/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "\u2014"
+            },
             "immunities": [
-                "cold",
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ]
         },
         "offense": {

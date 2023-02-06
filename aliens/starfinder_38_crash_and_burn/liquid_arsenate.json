@@ -93,8 +93,21 @@
                 }
             },
             "immunities": [
-                "electricity",
-                "ooze immunities Weaknesses vulnerable to cold"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                }
+            ],
+            "weaknesses": [
+                "vulnerable to cold"
             ]
         },
         "offense": {

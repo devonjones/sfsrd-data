@@ -81,11 +81,20 @@
                     "value": 3
                 }
             },
-            "dr": [
-                "5/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "magic"
+            },
             "immunities": [
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
             "weaknesses": [
                 "staggered"

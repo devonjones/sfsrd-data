@@ -100,15 +100,48 @@
                 }
             },
             "defensive_abilities": [
-                "integrated force field (20 HP)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 HP"
+                        }
+                    ],
+                    "value": "integrated force field"
+                }
             ],
             "immunities": [
-                "cold",
-                "electricity",
-                "ooze immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "cold"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                }
             ],
             "resistances": [
-                "acid 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                }
             ],
             "weaknesses": [
                 "sublimation"

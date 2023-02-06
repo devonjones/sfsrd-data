@@ -100,10 +100,31 @@
                 }
             },
             "defensive_abilities": [
-                "digital rejuvenation (1d8 days",
-                "DC 41)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "1d8 days"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 41"
+                        }
+                    ],
+                    "value": "digital rejuvenation"
+                }
             ],
-            "sr": "26",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 26
+            },
             "weaknesses": [
                 "network dependency"
             ]

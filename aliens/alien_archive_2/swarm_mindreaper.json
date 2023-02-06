@@ -105,11 +105,26 @@
                 }
             },
             "defensive_abilities": [
-                "swarm mind"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm mind"
+                }
             ],
             "immunities": [
-                "acid",
-                "fear effects"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "acid"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fear effects"
+                }
             ]
         },
         "offense": {

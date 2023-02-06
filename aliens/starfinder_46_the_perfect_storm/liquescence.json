@@ -105,13 +105,27 @@
                 }
             },
             "defensive_abilities": [
-                "amorphous"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "amorphous"
+                }
             ],
-            "dr": [
-                "5/piercing or slashing"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "piercing or slashing"
+            },
             "immunities": [
-                "ooze immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "ooze immunities"
+                }
             ]
         },
         "offense": {

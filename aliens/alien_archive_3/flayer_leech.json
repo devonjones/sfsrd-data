@@ -88,7 +88,19 @@
                 }
             },
             "defensive_abilities": [
-                "regeneration 5 (acid)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "acid"
+                        }
+                    ],
+                    "value": "regeneration 5"
+                }
             ],
             "weaknesses": [
                 "vulnerable to bludgeoning"

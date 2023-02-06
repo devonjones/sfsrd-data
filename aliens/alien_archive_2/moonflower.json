@@ -92,15 +92,35 @@
                     "value": 10
                 }
             },
-            "dr": [
-                "10/slashing"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "slashing"
+            },
             "immunities": [
-                "electricity",
-                "plant immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "plant immunities"
+                }
             ],
             "resistances": [
-                "cold 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 10
+                }
             ],
             "weaknesses": [
                 "vulnerable to fire"

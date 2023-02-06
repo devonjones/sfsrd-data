@@ -100,11 +100,33 @@
                 }
             },
             "defensive_abilities": [
-                "regeneration 10 (see text)",
-                "spontaneous reincarnation"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "see text"
+                        }
+                    ],
+                    "value": "regeneration 10"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "spontaneous reincarnation"
+                }
             ],
             "immunities": [
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
             "weaknesses": [
                 "collection dependency"

@@ -105,8 +105,25 @@
                 }
             },
             "defensive_abilities": [
-                "incorporeal",
-                "limbicate stealth (DC 16)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "incorporeal"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 16"
+                        }
+                    ],
+                    "value": "limbicate stealth"
+                }
             ]
         },
         "offense": {

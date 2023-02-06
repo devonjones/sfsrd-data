@@ -95,9 +95,24 @@
                 }
             },
             "immunities": [
-                "electricity",
-                "fire",
-                "radiation"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                }
             ],
             "weaknesses": [
                 "vulnerable to cold"

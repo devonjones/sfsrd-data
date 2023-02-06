@@ -112,9 +112,24 @@
                 }
             },
             "immunities": [
-                "fire",
-                "paralysis",
-                "sleep"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "paralysis"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sleep"
+                }
             ]
         },
         "offense": {

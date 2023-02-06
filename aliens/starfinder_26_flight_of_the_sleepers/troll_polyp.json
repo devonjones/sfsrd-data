@@ -95,7 +95,19 @@
                 }
             },
             "defensive_abilities": [
-                "versatile regeneration 5 (see text)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "see text"
+                        }
+                    ],
+                    "value": "versatile regeneration 5"
+                }
             ]
         },
         "offense": {

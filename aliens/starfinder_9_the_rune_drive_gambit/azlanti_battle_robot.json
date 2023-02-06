@@ -101,9 +101,19 @@
                 }
             },
             "immunities": [
-                "construct immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct immunities"
+                }
             ],
-            "sr": "17",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 17
+            },
             "weaknesses": [
                 "Azlanti programming",
                 "vulnerable to electricity"

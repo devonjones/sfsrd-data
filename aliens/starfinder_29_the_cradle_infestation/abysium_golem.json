@@ -106,13 +106,32 @@
                     "value": 9
                 }
             },
-            "dr": [
-                "10/\u2014"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "\u2014"
+            },
             "immunities": [
-                "construct traits",
-                "electricity",
-                "magic"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "construct traits"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "magic"
+                }
             ]
         },
         "offense": {

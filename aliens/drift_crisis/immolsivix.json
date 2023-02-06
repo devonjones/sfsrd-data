@@ -93,11 +93,27 @@
                     "value": 13
                 }
             },
-            "dr": [
-                "5/\u2014 (fungal armor)"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "fungal armor"
+                    }
+                ],
+                "text": "\u2014"
+            },
             "immunities": [
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ]
         },
         "offense": {

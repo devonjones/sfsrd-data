@@ -101,12 +101,27 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "fast healing 5"
+                }
             ],
             "immunities": [
-                "fear effects"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fear effects"
+                }
             ],
-            "sr": "28"
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 28
+            }
         },
         "offense": {
             "name": "Offense",

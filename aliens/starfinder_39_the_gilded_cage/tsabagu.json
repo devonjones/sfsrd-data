@@ -111,11 +111,41 @@
                 }
             },
             "defensive_abilities": [
-                "dying vengeance (8 damage)",
-                "regeneration 5 (acid or fire)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "8 damage"
+                        }
+                    ],
+                    "value": "dying vengeance"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "acid or fire"
+                        }
+                    ],
+                    "value": "regeneration 5"
+                }
             ],
             "resistances": [
-                "cold 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 10
+                }
             ]
         },
         "offense": {

@@ -95,11 +95,20 @@
                     "value": 17
                 }
             },
-            "dr": [
-                "10/cold iron"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "text": "cold iron"
+            },
             "immunities": [
-                "blinded"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "blinded"
+                }
             ]
         },
         "offense": {

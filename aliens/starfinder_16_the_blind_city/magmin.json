@@ -106,14 +106,33 @@
                 }
             },
             "defensive_abilities": [
-                "molten body"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "molten body"
+                }
             ],
-            "dr": [
-                "5/magic"
-            ],
+            "dr": {
+                "name": "DR",
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 5,
+                "text": "magic"
+            },
             "immunities": [
-                "elemental immunities",
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "elemental immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ],
             "weaknesses": [
                 "vulnerable to cold"

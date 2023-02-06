@@ -113,7 +113,19 @@
                 }
             },
             "defensive_abilities": [
-                "share pain (DC 27)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 27"
+                        }
+                    ],
+                    "value": "share pain"
+                }
             ],
             "weaknesses": [
                 "atrophied"

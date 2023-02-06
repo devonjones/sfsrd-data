@@ -88,13 +88,36 @@
                 }
             },
             "defensive_abilities": [
-                "pustule explosion (10 A) Immunities undead immunities"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "10 A"
+                        }
+                    ],
+                    "value": "pustule explosion"
+                }
             ],
             "immunities": [
-                "undead immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "undead immunities"
+                }
             ],
             "resistances": [
-                "acid 10"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "acid",
+                    "value": 10
+                }
             ],
             "weaknesses": [
                 "vulnerable to electricity"

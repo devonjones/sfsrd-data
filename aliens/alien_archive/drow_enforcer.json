@@ -114,9 +114,19 @@
                 }
             },
             "immunities": [
-                "sleep"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "sleep"
+                }
             ],
-            "sr": "7",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 7
+            },
             "weaknesses": [
                 "light blindness"
             ]

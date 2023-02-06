@@ -118,7 +118,19 @@
                 }
             },
             "defensive_abilities": [
-                "share pain (DC 18)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 18"
+                        }
+                    ],
+                    "value": "share pain"
+                }
             ]
         },
         "offense": {

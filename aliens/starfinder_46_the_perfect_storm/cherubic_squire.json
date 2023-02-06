@@ -122,11 +122,26 @@
                 }
             },
             "defensive_abilities": [
-                "constructed shell"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "constructed shell"
+                }
             ],
             "immunities": [
-                "electricity",
-                "petrification"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "electricity"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "petrification"
+                }
             ]
         },
         "offense": {

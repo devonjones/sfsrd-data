@@ -111,12 +111,34 @@
                 }
             },
             "defensive_abilities": [
-                "construct immunities",
-                "integrated weapons"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "construct immunities"
+                },
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "integrated weapons"
+                }
             ],
             "resistances": [
-                "cold 30",
-                "fire 30"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 30
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 30
+                }
             ]
         },
         "offense": {

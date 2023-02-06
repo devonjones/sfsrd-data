@@ -93,16 +93,55 @@
                 }
             },
             "defensive_abilities": [
-                "fast healing 5 (becomes regeneration 5 in irradiated areas)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "becomes regeneration 5 in irradiated areas"
+                        }
+                    ],
+                    "value": "fast healing 5"
+                }
             ],
             "immunities": [
-                "mind-affecting effects",
-                "radiation",
-                "vacuum"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "mind-affecting effects"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "radiation"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "vacuum"
+                }
             ],
             "resistances": [
-                "cold 5",
-                "fire 5"
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "cold",
+                    "value": 5
+                },
+                {
+                    "name": "Resistance",
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "text": "fire",
+                    "value": 5
+                }
             ],
             "weaknesses": [
                 "force field blindness"

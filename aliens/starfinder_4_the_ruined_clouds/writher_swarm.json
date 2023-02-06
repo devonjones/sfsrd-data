@@ -95,11 +95,26 @@
                 }
             },
             "defensive_abilities": [
-                "swarm defenses"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "value": "swarm defenses"
+                }
             ],
             "immunities": [
-                "plant immunities",
-                "swarm immunities"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "plant immunities"
+                },
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "swarm immunities"
+                }
             ]
         },
         "offense": {

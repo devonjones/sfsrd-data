@@ -112,9 +112,19 @@
                 }
             },
             "immunities": [
-                "fire"
+                {
+                    "name": "Immunity",
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "value": "fire"
+                }
             ],
-            "sr": "13",
+            "sr": {
+                "name": "SR",
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 13
+            },
             "weaknesses": [
                 "vulnerable to cold"
             ]

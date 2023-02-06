@@ -98,7 +98,19 @@
                 }
             },
             "defensive_abilities": [
-                "too tough to die (2/day)"
+                {
+                    "name": "Defensive Ability",
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "2/day"
+                        }
+                    ],
+                    "value": "too tough to die"
+                }
             ],
             "weaknesses": [
                 "disruptive susceptibility"
