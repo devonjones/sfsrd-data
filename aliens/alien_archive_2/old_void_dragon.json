@@ -92,13 +92,6 @@
                 "type": "stat_block_section",
                 "subtype": "aura",
                 "name": "Aura",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "sickened 2d4 rounds"
-                    }
-                ],
                 "text": "alien presence",
                 "range": {
                     "type": "stat_block_section",
@@ -106,6 +99,11 @@
                     "text": "240 ft.",
                     "range": 240,
                     "unit": "feet"
+                },
+                "damage": {
+                    "type": "stat_block_section",
+                    "subtype": "attack_damage",
+                    "effect": "sickened 2d4 rounds"
                 },
                 "saving_throw": {
                     "type": "stat_block_section",

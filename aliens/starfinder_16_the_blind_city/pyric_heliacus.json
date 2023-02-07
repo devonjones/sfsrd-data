@@ -92,13 +92,6 @@
                 "type": "stat_block_section",
                 "subtype": "aura",
                 "name": "Aura",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "sickened 1 round"
-                    }
-                ],
                 "text": "alien presence",
                 "range": {
                     "type": "stat_block_section",
@@ -112,6 +105,11 @@
                     "subtype": "save_dc",
                     "text": "DC 19",
                     "dc": 19
+                },
+                "damage": {
+                    "type": "stat_block_section",
+                    "subtype": "attack_damage",
+                    "effect": "sickened 1 round"
                 }
             }
         ],
