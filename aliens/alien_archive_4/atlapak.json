@@ -52,16 +52,26 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 180,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "darkvision 180 ft.",
+                        "range": 180,
+                        "unit": "feet"
+                    },
                     "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 90,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "sense through (vision [fog only]) 90 ft.",
+                        "range": 90,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",

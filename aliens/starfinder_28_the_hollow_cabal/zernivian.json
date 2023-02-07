@@ -44,16 +44,26 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 60,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "darkvision 60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
                     "value": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 60,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "herbsight 60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
                     "value": "herbsight"
                 },
                 {

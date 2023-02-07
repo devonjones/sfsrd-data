@@ -58,8 +58,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 5,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsense (emotion) 5 ft.",
+                        "range": 5,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",

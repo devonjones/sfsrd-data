@@ -50,8 +50,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 300,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "gravity sense 300 ft.",
+                        "range": 300,
+                        "unit": "feet"
+                    },
                     "value": "gravity sense"
                 },
                 {

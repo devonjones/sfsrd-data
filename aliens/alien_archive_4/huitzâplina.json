@@ -58,8 +58,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 30,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsense (scent) 30 ft.",
+                        "range": 30,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",
@@ -73,8 +78,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 60,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "darkvision 60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
                     "value": "darkvision"
                 },
                 {

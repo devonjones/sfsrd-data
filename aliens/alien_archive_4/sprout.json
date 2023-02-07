@@ -52,8 +52,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 30,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsense (sound) 30 ft.",
+                        "range": 30,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",
@@ -67,8 +72,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 5,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsight (sound) 5 ft.",
+                        "range": 5,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",

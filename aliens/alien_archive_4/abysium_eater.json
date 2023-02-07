@@ -44,8 +44,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 1,
-                    "range_unit": "mile",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsense (scent [abysium only]) 1 mile",
+                        "range": 1,
+                        "unit": "mile"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",
@@ -59,8 +64,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 60,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "blindsight (vibration) 60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
                     "modifiers": [
                         {
                             "type": "stat_block_section",

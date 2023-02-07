@@ -58,8 +58,13 @@
                     "type": "stat_block_section",
                     "subtype": "special_sense",
                     "name": "Special Sense",
-                    "range": 30,
-                    "range_unit": "ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "darkvision 30 ft.",
+                        "range": 30,
+                        "unit": "feet"
+                    },
                     "value": "darkvision"
                 }
             ]
