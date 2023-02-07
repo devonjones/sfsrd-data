@@ -210,7 +210,12 @@
                     "attack_type": "ranged",
                     "name": "mutation gun",
                     "bonus": 28,
-                    "dc": 22,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -233,8 +238,19 @@
                     "attack_type": "ranged",
                     "name": "degeneration grenade",
                     "bonus": 28,
-                    "range": "20 ft.",
-                    "dc": 22,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

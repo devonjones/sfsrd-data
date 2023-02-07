@@ -176,8 +176,19 @@
                     "attack_type": "ranged",
                     "name": "frag grenade II",
                     "bonus": 13,
-                    "range": "15 ft.",
-                    "dc": 14,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

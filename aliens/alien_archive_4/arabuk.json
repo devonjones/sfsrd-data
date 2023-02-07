@@ -245,7 +245,12 @@
                     "attack_type": "ranged",
                     "name": "antler reverberation",
                     "bonus": 16,
-                    "dc": 16,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

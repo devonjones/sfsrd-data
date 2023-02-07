@@ -164,7 +164,12 @@
                     "attack_type": "ranged",
                     "name": "LFD sonic rifle",
                     "bonus": 22,
-                    "dc": 21,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

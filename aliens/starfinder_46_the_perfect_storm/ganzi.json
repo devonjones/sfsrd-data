@@ -210,7 +210,12 @@
                     "attack_type": "ranged",
                     "name": "flash grenade I",
                     "bonus": 7,
-                    "dc": 14,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

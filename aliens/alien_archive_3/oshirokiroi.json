@@ -223,7 +223,12 @@
                     "attack_type": "ranged",
                     "name": "sonic burst",
                     "bonus": 22,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

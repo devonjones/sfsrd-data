@@ -155,7 +155,12 @@
                     "attack_type": "ranged",
                     "name": "thunderstrike sonic rifle",
                     "bonus": 11,
-                    "dc": 13,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -178,8 +183,19 @@
                     "attack_type": "ranged",
                     "name": "frag grenade II",
                     "bonus": 11,
-                    "range": "15 ft.",
-                    "dc": 13,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

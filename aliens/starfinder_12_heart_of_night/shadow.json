@@ -200,7 +200,12 @@
                     "attack_type": "ranged",
                     "name": "tomb-class void rifle",
                     "bonus": 23,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

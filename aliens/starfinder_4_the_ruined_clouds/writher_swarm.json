@@ -150,7 +150,12 @@
                     "subtype": "attack",
                     "attack_type": "melee",
                     "name": "swarm attack",
-                    "dc": 16,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

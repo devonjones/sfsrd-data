@@ -259,8 +259,19 @@
                     "attack_type": "ranged",
                     "name": "flash grenade I",
                     "bonus": 15,
-                    "range": "5 ft.",
-                    "dc": 15,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "5 ft.",
+                        "range": 5,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -280,8 +291,19 @@
                     "attack_type": "ranged",
                     "name": "smoke grenade",
                     "bonus": 15,
-                    "range": "20 ft.",
-                    "dc": 15,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

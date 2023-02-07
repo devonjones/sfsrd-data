@@ -169,7 +169,12 @@
                     "attack_type": "melee",
                     "name": "ultrathin doshakari",
                     "bonus": 29,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -215,7 +220,12 @@
                     "attack_type": "ranged",
                     "name": "blizzard-class zero rifle",
                     "bonus": 32,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -238,8 +248,19 @@
                     "attack_type": "ranged",
                     "name": "flash grenade III",
                     "bonus": 32,
-                    "range": "15 ft.",
-                    "dc": 19,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

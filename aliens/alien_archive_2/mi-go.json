@@ -207,7 +207,12 @@
                     "attack_type": "ranged",
                     "name": "mi-go frostbite-class zero rifle",
                     "bonus": 14,
-                    "dc": 16,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

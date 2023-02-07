@@ -213,7 +213,12 @@
                     "attack_type": "melee",
                     "name": "integrated andesite magma blade",
                     "bonus": 20,
-                    "dc": 16,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -238,7 +243,12 @@
                     "attack_type": "ranged",
                     "name": "integrated LFD screamer",
                     "bonus": 17,
-                    "dc": 16,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

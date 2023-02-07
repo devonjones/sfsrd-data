@@ -192,8 +192,19 @@
                     "attack_type": "ranged",
                     "name": "stickybomb grenade III",
                     "bonus": 19,
-                    "range": "20 ft.",
-                    "dc": 16,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

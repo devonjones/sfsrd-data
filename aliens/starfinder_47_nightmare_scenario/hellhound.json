@@ -172,7 +172,12 @@
                     "attack_type": "ranged",
                     "name": "flamethrower",
                     "bonus": 9,
-                    "dc": 12,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

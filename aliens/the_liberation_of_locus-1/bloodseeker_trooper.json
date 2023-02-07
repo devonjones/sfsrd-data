@@ -194,7 +194,13 @@
                     "attack_type": "ranged",
                     "name": "stickybomb I grenade",
                     "bonus": 8,
-                    "range": "10 ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "10 ft.",
+                        "range": 10,
+                        "unit": "feet"
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

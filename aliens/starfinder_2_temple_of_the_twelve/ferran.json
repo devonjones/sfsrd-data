@@ -160,7 +160,12 @@
                     "attack_type": "ranged",
                     "name": "frostbite-class zero pistol",
                     "bonus": 10,
-                    "dc": 17,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

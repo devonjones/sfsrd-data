@@ -183,7 +183,12 @@
                     "attack_type": "melee",
                     "name": "solar weapon",
                     "bonus": 22,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -208,7 +213,12 @@
                     "attack_type": "ranged",
                     "name": "apprehending hailstorm-class zero pistol",
                     "bonus": 19,
-                    "dc": 19,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

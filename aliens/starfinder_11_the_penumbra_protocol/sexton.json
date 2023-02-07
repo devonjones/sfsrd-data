@@ -222,7 +222,12 @@
                     "attack_type": "ranged",
                     "name": "shadow spine",
                     "bonus": 21,
-                    "dc": 18,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

@@ -193,8 +193,19 @@
                     "attack_type": "ranged",
                     "name": "mk 3 holo grenade",
                     "bonus": 14,
-                    "range": "20 ft.",
-                    "dc": 17,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

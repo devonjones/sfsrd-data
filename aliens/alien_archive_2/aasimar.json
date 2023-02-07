@@ -202,8 +202,19 @@
                     "attack_type": "ranged",
                     "name": "frag grenade I",
                     "bonus": 6,
-                    "range": "15 ft.",
-                    "dc": 12,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -225,8 +236,19 @@
                     "attack_type": "ranged",
                     "name": "smoke grenade I",
                     "bonus": 6,
-                    "range": "20 ft.",
-                    "dc": 12,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

@@ -183,7 +183,12 @@
                     "attack_type": "melee",
                     "name": "corrupting touch",
                     "bonus": 11,
-                    "dc": 17,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

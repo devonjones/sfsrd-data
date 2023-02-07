@@ -212,7 +212,12 @@
                     "attack_type": "melee",
                     "name": "nullifying zero-edge longsword",
                     "bonus": 28,
-                    "dc": 21,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -235,7 +240,13 @@
                     "attack_type": "ranged",
                     "name": "chiral graviton pistol",
                     "bonus": 25,
-                    "range": "25 ft.",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "25 ft.",
+                        "range": 25,
+                        "unit": "feet"
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

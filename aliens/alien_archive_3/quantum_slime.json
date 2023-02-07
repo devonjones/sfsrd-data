@@ -152,7 +152,12 @@
                     "attack_type": "melee",
                     "name": "quantum tendril",
                     "bonus": 24,
-                    "dc": 23,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 23",
+                        "dc": 23
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

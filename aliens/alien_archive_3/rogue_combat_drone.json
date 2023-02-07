@@ -185,7 +185,12 @@
                     "attack_type": "ranged",
                     "name": "obscuring absolute-zero hailcannon",
                     "bonus": 24,
-                    "dc": 20,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 20",
+                        "dc": 20
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

@@ -170,7 +170,12 @@
                     "attack_type": "melee",
                     "name": "red star plasma doshko",
                     "bonus": 16,
-                    "dc": 14,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -234,8 +239,19 @@
                     "attack_type": "ranged",
                     "name": "cryo grenade I",
                     "bonus": 13,
-                    "range": "10 ft.",
-                    "dc": 14,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "10 ft.",
+                        "range": 10,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -262,8 +278,19 @@
                     "attack_type": "ranged",
                     "name": "flash grenade II",
                     "bonus": 13,
-                    "range": "10 ft.",
-                    "dc": 14,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "10 ft.",
+                        "range": 10,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

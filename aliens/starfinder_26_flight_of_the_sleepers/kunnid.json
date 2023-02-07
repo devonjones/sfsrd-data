@@ -152,7 +152,12 @@
                     "attack_type": "ranged",
                     "name": "magnetic beam",
                     "bonus": 12,
-                    "dc": 13,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

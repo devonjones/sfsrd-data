@@ -178,7 +178,12 @@
                     "attack_type": "melee",
                     "name": "claws",
                     "bonus": 27,
-                    "dc": 21,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -229,7 +234,12 @@
                     "attack_type": "melee",
                     "name": "jaws",
                     "bonus": 27,
-                    "dc": 21,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

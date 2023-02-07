@@ -279,8 +279,19 @@
                     "attack_type": "multiattack",
                     "name": "fungal bomb",
                     "bonus": 18,
-                    "range": "10 ft.",
-                    "dc": 19,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "10 ft.",
+                        "range": 10,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
@@ -310,8 +321,19 @@
                     "attack_type": "ranged",
                     "name": "fungal bomb",
                     "bonus": 24,
-                    "range": "10 ft.",
-                    "dc": 19,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "10 ft.",
+                        "range": 10,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",

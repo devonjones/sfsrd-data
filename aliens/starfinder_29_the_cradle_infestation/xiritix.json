@@ -264,7 +264,12 @@
                     "attack_type": "ranged",
                     "name": "anomaly ray",
                     "bonus": 22,
-                    "dc": 20,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 20",
+                        "dc": 20
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
