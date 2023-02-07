@@ -71,7 +71,55 @@
                 }
             ]
         },
-        "aura": "frightful presence (210 ft., Will DC 23), temporal anomaly (10 ft., rounds, Will DC 23)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "frightful presence",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "210 ft.",
+                    "range": 210,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 23",
+                    "dc": 23,
+                    "save_type": "Will"
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "rounds"
+                    }
+                ],
+                "text": "temporal anomaly",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "10 ft.",
+                    "range": 10,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 23",
+                    "dc": 23,
+                    "save_type": "Will"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

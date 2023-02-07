@@ -63,7 +63,28 @@
                 }
             ]
         },
-        "aura": "anharmonic hum (30 ft., Fort DC 19)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "anharmonic hum",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "30 ft.",
+                    "range": 30,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fort DC 19",
+                    "dc": 19,
+                    "save_type": "Fort"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

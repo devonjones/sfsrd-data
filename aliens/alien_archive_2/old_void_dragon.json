@@ -77,7 +77,34 @@
                 }
             ]
         },
-        "aura": "alien presence (240 ft., sickened 2d4 rounds, DC 25)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "sickened 2d4 rounds"
+                    }
+                ],
+                "text": "alien presence",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "240 ft.",
+                    "range": 240,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 25",
+                    "dc": 25
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

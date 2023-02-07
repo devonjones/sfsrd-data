@@ -65,7 +65,27 @@
                 }
             ]
         },
-        "aura": "radiation (15 ft., DC 13)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "radiation",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "15 ft.",
+                    "range": 15,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 13",
+                    "dc": 13
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

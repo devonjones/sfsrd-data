@@ -65,7 +65,27 @@
                 }
             ]
         },
-        "aura": "stench (10 ft., DC 19)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "stench",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "10 ft.",
+                    "range": 10,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 19",
+                    "dc": 19
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

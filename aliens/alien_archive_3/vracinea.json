@@ -54,7 +54,28 @@
                 }
             ]
         },
-        "aura": "paralyzing scent (15 ft., Fortitude DC 13)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "paralyzing scent",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "15 ft.",
+                    "range": 15,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 13",
+                    "dc": 13,
+                    "save_type": "Fortitude"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

@@ -67,7 +67,27 @@
                 }
             ]
         },
-        "aura": "disorienting (15 ft., DC 14)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "disorienting",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "15 ft.",
+                    "range": 15,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 14",
+                    "dc": 14
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

@@ -77,7 +77,28 @@
                 }
             ]
         },
-        "aura": "repulsive nature (5 ft., Fortitude DC 9)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "repulsive nature",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "5 ft.",
+                    "range": 5,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 9",
+                    "dc": 9,
+                    "save_type": "Fortitude"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

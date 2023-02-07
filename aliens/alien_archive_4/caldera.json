@@ -71,7 +71,28 @@
                 }
             ]
         },
-        "aura": "melting aura (5 ft., 3d4 F)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "3d4 F"
+                    }
+                ],
+                "text": "melting aura",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "5 ft.",
+                    "range": 5,
+                    "unit": "feet"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

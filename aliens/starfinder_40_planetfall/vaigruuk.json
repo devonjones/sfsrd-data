@@ -49,7 +49,21 @@
                 }
             ]
         },
-        "aura": "amplified radiation (20 ft.)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "amplified radiation",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "20 ft.",
+                    "range": 20,
+                    "unit": "feet"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

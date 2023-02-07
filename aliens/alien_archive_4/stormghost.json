@@ -83,7 +83,28 @@
                 }
             ]
         },
-        "aura": "static (5 ft., 2d6 electricity)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "2d6 electricity"
+                    }
+                ],
+                "text": "static",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "5 ft.",
+                    "range": 5,
+                    "unit": "feet"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

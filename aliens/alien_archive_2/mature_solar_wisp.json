@@ -76,7 +76,21 @@
                 }
             ]
         },
-        "aura": "gravitational pull aura (120 ft.)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "gravitational pull aura",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "120 ft.",
+                    "range": 120,
+                    "unit": "feet"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

@@ -70,7 +70,27 @@
                 }
             ]
         },
-        "aura": "searing (5 ft., DC 12)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "searing",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "5 ft.",
+                    "range": 5,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 12",
+                    "dc": 12
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

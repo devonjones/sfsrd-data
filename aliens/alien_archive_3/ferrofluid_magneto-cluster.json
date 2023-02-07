@@ -63,7 +63,28 @@
                 }
             ]
         },
-        "aura": "magnetic field (60 ft., Strength DC 16)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "magnetic field",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "60 ft.",
+                    "range": 60,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Strength DC 16",
+                    "dc": 16,
+                    "save_type": "Strength"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

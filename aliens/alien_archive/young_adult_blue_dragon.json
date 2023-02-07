@@ -66,7 +66,27 @@
                 }
             ]
         },
-        "aura": "frightful presence (170 ft., DC 18)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "frightful presence",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "170 ft.",
+                    "range": 170,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 18",
+                    "dc": 18
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

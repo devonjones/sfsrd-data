@@ -69,7 +69,34 @@
                 }
             ]
         },
-        "aura": "radioactive (high, 10 ft., DC 22)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "high"
+                    }
+                ],
+                "text": "radioactive",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "10 ft.",
+                    "range": 10,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 22",
+                    "dc": 22
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

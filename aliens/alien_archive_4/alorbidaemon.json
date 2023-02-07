@@ -85,7 +85,27 @@
                 }
             ]
         },
-        "aura": "hazardous dedication (100 ft., DC 21)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "hazardous dedication",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "100 ft.",
+                    "range": 100,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 21",
+                    "dc": 21
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

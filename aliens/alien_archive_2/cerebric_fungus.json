@@ -56,7 +56,27 @@
                 }
             ]
         },
-        "aura": "unsettling appearance (60 ft., DC 14)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "unsettling appearance",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "60 ft.",
+                    "range": 60,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 14",
+                    "dc": 14
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

@@ -58,7 +58,27 @@
                 }
             ]
         },
-        "aura": "confusion (30 feet, DC 11)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "confusion",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "30 feet",
+                    "range": 30,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 11",
+                    "dc": 11
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

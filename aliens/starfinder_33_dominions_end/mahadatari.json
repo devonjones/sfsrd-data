@@ -58,7 +58,27 @@
                 }
             ]
         },
-        "aura": "sandstorm (30 ft., DC 26)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "sandstorm",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "30 ft.",
+                    "range": 30,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 26",
+                    "dc": 26
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

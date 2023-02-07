@@ -65,7 +65,34 @@
                 }
             ]
         },
-        "aura": "immolation (5 ft., 4d6 F, DC 19)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "4d6 F"
+                    }
+                ],
+                "text": "immolation",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "5 ft.",
+                    "range": 5,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 19",
+                    "dc": 19
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

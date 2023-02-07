@@ -58,7 +58,27 @@
                 }
             ]
         },
-        "aura": "torment (20 ft., DC 16)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "torment",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "20 ft.",
+                    "range": 20,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "DC 16",
+                    "dc": 16
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",

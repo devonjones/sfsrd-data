@@ -98,7 +98,21 @@
                 }
             ]
         },
-        "aura": "dimensional shadow (100 ft.)",
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "Aura",
+                "text": "dimensional shadow",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "100 ft.",
+                    "range": 100,
+                    "unit": "feet"
+                }
+            }
+        ],
         "defense": {
             "name": "Defense",
             "type": "stat_block_section",
