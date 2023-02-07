@@ -80,13 +80,6 @@
                 "type": "stat_block_section",
                 "subtype": "aura",
                 "name": "Aura",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "4d6 F"
-                    }
-                ],
                 "text": "immolation",
                 "range": {
                     "type": "stat_block_section",
@@ -94,6 +87,13 @@
                     "text": "5 ft.",
                     "range": 5,
                     "unit": "feet"
+                },
+                "damage": {
+                    "type": "stat_block_section",
+                    "subtype": "attack_damage",
+                    "formula": "4d6",
+                    "damage_type": "Fire",
+                    "damage_type_text": "F"
                 },
                 "saving_throw": {
                     "type": "stat_block_section",

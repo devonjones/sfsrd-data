@@ -98,13 +98,6 @@
                 "type": "stat_block_section",
                 "subtype": "aura",
                 "name": "Aura",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "2d6 electricity"
-                    }
-                ],
                 "text": "static",
                 "range": {
                     "type": "stat_block_section",
@@ -112,6 +105,13 @@
                     "text": "5 ft.",
                     "range": 5,
                     "unit": "feet"
+                },
+                "damage": {
+                    "type": "stat_block_section",
+                    "subtype": "attack_damage",
+                    "formula": "2d6",
+                    "damage_type": "Electricity",
+                    "damage_type_text": "E"
                 }
             }
         ],

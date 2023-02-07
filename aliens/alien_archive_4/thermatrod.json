@@ -81,13 +81,6 @@
                 "type": "stat_block_section",
                 "subtype": "aura",
                 "name": "Aura",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "1d4 F"
-                    }
-                ],
                 "text": "melting aura",
                 "range": {
                     "type": "stat_block_section",
@@ -95,6 +88,13 @@
                     "text": "5 ft.",
                     "range": 5,
                     "unit": "feet"
+                },
+                "damage": {
+                    "type": "stat_block_section",
+                    "subtype": "attack_damage",
+                    "formula": "1d4",
+                    "damage_type": "Fire",
+                    "damage_type_text": "F"
                 }
             }
         ],
