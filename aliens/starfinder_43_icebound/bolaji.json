@@ -298,8 +298,15 @@
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "telepathy (100 ft.)"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "100 ft."
+                            }
+                        ],
+                        "name": "telepathy"
                     }
                 ]
             }

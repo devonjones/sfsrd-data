@@ -276,8 +276,22 @@
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "telepathy 100 ft. (150 ft. with voidglass armor)"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "150 ft. with voidglass armor"
+                            }
+                        ],
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

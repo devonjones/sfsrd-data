@@ -315,8 +315,15 @@
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "telepathy 200 ft."
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "200 ft.",
+                            "range": 200,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

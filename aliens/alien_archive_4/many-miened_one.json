@@ -366,8 +366,22 @@
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "telepathy 200 ft. (gibbous phase only)"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "gibbous phase only"
+                            }
+                        ],
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "200 ft.",
+                            "range": 200,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

@@ -185,8 +185,15 @@
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "digital telepathy 30 ft."
+                        "subtype": "communication_ability",
+                        "name": "digital telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "30 ft.",
+                            "range": 30,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },
