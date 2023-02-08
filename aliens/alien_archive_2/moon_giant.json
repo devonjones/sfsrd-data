@@ -17,7 +17,6 @@
             "value": 4
         },
         "creature_type": {
-            "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
             "creature_type": "Humanoid",
@@ -91,24 +90,20 @@
             }
         ],
         "defense": {
-            "name": "Defense",
             "type": "stat_block_section",
             "subtype": "defense",
             "hp": {
-                "name": "hitpoints",
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
                 "hp": 330
             },
             "ac": {
-                "name": "AC",
                 "type": "stat_block_section",
                 "subtype": "armor_class",
                 "eac": 29,
                 "kac": 31
             },
             "saves": {
-                "name": "Saves",
                 "type": "stat_block_section",
                 "subtype": "saves",
                 "fort": {
@@ -146,18 +141,16 @@
             ]
         },
         "offense": {
-            "name": "Offense",
             "type": "stat_block_section",
             "subtype": "offense",
             "speed": {
-                "name": "Speed",
                 "type": "stat_block_section",
                 "subtype": "speeds",
                 "movement": [
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "name": "50 ft.",
+                        "text": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     }
@@ -226,7 +219,6 @@
             ]
         },
         "statistics": {
-            "name": "Statistics",
             "type": "stat_block_section",
             "subtype": "statistics",
             "str": 9,
@@ -241,7 +233,6 @@
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
-                "name": "Skills",
                 "skills": [
                     {
                         "type": "stat_block_section",
@@ -272,7 +263,6 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "name": "Languages",
                 "languages": [
                     {
                         "type": "stat_block_section",
@@ -288,7 +278,6 @@
             }
         },
         "ecology": {
-            "name": "Ecology",
             "type": "stat_block_section",
             "subtype": "ecology",
             "environment": "any lunar",

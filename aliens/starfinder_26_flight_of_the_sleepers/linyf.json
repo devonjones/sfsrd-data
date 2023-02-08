@@ -18,7 +18,6 @@
             "value": 4
         },
         "creature_type": {
-            "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
             "creature_type": "Plant",
@@ -57,24 +56,20 @@
             ]
         },
         "defense": {
-            "name": "Defense",
             "type": "stat_block_section",
             "subtype": "defense",
             "hp": {
-                "name": "hitpoints",
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
                 "hp": 38
             },
             "ac": {
-                "name": "AC",
                 "type": "stat_block_section",
                 "subtype": "armor_class",
                 "eac": 14,
                 "kac": 16
             },
             "saves": {
-                "name": "Saves",
                 "type": "stat_block_section",
                 "subtype": "saves",
                 "fort": {
@@ -117,25 +112,23 @@
             ]
         },
         "offense": {
-            "name": "Offense",
             "type": "stat_block_section",
             "subtype": "offense",
             "speed": {
-                "name": "Speed",
                 "type": "stat_block_section",
                 "subtype": "speeds",
                 "movement": [
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "name": "20 ft.",
+                        "text": "20 ft.",
                         "movement_type": "walk",
                         "value": 20
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "name": "climb 10 ft.",
+                        "text": "climb 10 ft.",
                         "movement_type": "climb",
                         "value": 10
                     }
@@ -191,7 +184,6 @@
             ]
         },
         "statistics": {
-            "name": "Statistics",
             "type": "stat_block_section",
             "subtype": "statistics",
             "str": 1,
@@ -203,7 +195,6 @@
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
-                "name": "Skills",
                 "skills": [
                     {
                         "type": "stat_block_section",
@@ -227,7 +218,6 @@
             }
         },
         "ecology": {
-            "name": "Ecology",
             "type": "stat_block_section",
             "subtype": "ecology",
             "environment": "any temperate",

@@ -18,7 +18,6 @@
             "value": 5
         },
         "creature_type": {
-            "name": "creature_type",
             "type": "stat_block_section",
             "subtype": "creature_type",
             "creature_type": "Humanoid",
@@ -70,25 +69,21 @@
             }
         },
         "defense": {
-            "name": "Defense",
             "type": "stat_block_section",
             "subtype": "defense",
             "hp": {
-                "name": "hitpoints",
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
                 "hp": 165,
                 "rp": 5
             },
             "ac": {
-                "name": "AC",
                 "type": "stat_block_section",
                 "subtype": "armor_class",
                 "eac": 23,
                 "kac": 25
             },
             "saves": {
-                "name": "Saves",
                 "type": "stat_block_section",
                 "subtype": "saves",
                 "fort": {
@@ -132,18 +127,16 @@
             ]
         },
         "offense": {
-            "name": "Offense",
             "type": "stat_block_section",
             "subtype": "offense",
             "speed": {
-                "name": "Speed",
                 "type": "stat_block_section",
                 "subtype": "speeds",
                 "movement": [
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "name": "30 ft.",
+                        "text": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -162,7 +155,7 @@
                                 "name": "average"
                             }
                         ],
-                        "name": "fly 30 ft"
+                        "text": "fly 30 ft"
                     }
                 ]
             },
@@ -291,7 +284,6 @@
             }
         ],
         "statistics": {
-            "name": "Statistics",
             "type": "stat_block_section",
             "subtype": "statistics",
             "str": 8,
@@ -306,7 +298,6 @@
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
-                "name": "Skills",
                 "skills": [
                     {
                         "type": "stat_block_section",
@@ -337,7 +328,6 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "name": "Languages",
                 "languages": [
                     {
                         "type": "stat_block_section",
