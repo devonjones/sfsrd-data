@@ -25,7 +25,7 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "value": "shapechanger"
+                    "name": "shapechanger"
                 }
             ],
             "alignment": "Neutral Evil",
@@ -37,12 +37,12 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "text": "Emotivore"
+                    "name": "Emotivore"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "graft",
-                    "text": "mystic"
+                    "name": "mystic"
                 }
             ],
             "xp": 102400
@@ -73,7 +73,7 @@
                             "name": "emotion"
                         }
                     ],
-                    "value": "blindsense"
+                    "name": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
@@ -85,12 +85,12 @@
                         "text": "60 ft.",
                         "unit": "feet"
                     },
-                    "value": "darkvision"
+                    "name": "darkvision"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "value": "low-light vision"
+                    "name": "low-light vision"
                 }
             ]
         },
@@ -146,27 +146,27 @@
                             "name": "DC 26"
                         }
                     ],
-                    "text": "share pain"
+                    "name": "share pain"
                 }
             ],
             "dr": {
                 "type": "stat_block_section",
                 "subtype": "dr",
                 "value": 10,
-                "text": "magic"
+                "name": "magic"
             },
             "immunities": [
                 {
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "text": "undead immunities"
+                    "name": "undead immunities"
                 }
             ],
             "resistances": [
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "text": "cold",
+                    "name": "cold",
                     "value": 15
                 }
             ]
@@ -269,24 +269,12 @@
                             "name": "17 damage"
                         }
                     ],
-                    "text": "backlash"
+                    "name": "backlash"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "text": "feed"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 26"
-                        }
-                    ],
-                    "text": "mental anguish"
+                    "name": "feed"
                 },
                 {
                     "type": "stat_block_section",
@@ -298,7 +286,7 @@
                             "name": "DC 26"
                         }
                     ],
-                    "text": "mindbreaking link"
+                    "name": "mental anguish"
                 },
                 {
                     "type": "stat_block_section",
@@ -310,7 +298,19 @@
                             "name": "DC 26"
                         }
                     ],
-                    "text": "mindkiller"
+                    "name": "mindbreaking link"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "DC 26"
+                        }
+                    ],
+                    "name": "mindkiller"
                 },
                 {
                     "type": "stat_block_section",
@@ -327,7 +327,7 @@
                             "name": "8 rounds"
                         }
                     ],
-                    "text": "sow doubt"
+                    "name": "sow doubt"
                 }
             ],
             "connection": "mindbreaker"
@@ -434,17 +434,17 @@
                             "name": "Medium or Small humanoid"
                         }
                     ],
-                    "text": "change shape"
+                    "name": "change shape"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "text": "emotionsense"
+                    "name": "emotionsense"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "text": "unliving"
+                    "name": "unliving"
                 }
             ]
         },
