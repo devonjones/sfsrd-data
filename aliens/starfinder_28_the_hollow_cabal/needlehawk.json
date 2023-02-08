@@ -230,12 +230,18 @@
                 "name": "Needlehawk Toxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 14",
                 "track": "Dexterity",
                 "frequency": "1/round for 4 rounds",
                 "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014Staggered; no end state",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 14",
+                    "dc": 14,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

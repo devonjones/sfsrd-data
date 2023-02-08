@@ -238,12 +238,18 @@
                 "name": "Gloom Spores",
                 "type": "stat_block_section",
                 "affliction_type": "poison (contact)",
-                "save": "Fortitude DC 18",
                 "track": "Wisdom (special)",
                 "frequency": "1/minute for 6 minutes",
                 "effect": "progression track is Healthy\u2014Weakened\u2014Impaired\u2014Confused\u2014Comatose\u2014Comatose. The second comatose functions as an end state.",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 18",
+                    "dc": 18,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

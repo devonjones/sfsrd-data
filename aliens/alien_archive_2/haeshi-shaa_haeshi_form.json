@@ -443,12 +443,18 @@
                 "name": "Viral Vapor",
                 "type": "stat_block_section",
                 "affliction_type": "disease (contact, inhaled, or injury)",
-                "save": "Fortitude DC 18",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "At the debilitated state, the victim becomes partially vaporous. Attacks made by or targeting the victim have a 25% miss chance. At bedridden, this effect ends and the victim is incorporeal. At dead, the victim\u2019s form completely dissipates into fine particles.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 18",
+                    "dc": 18,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

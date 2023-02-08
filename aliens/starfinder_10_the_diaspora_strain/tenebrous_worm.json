@@ -206,12 +206,18 @@
                 "name": "Tenebrous Worm Poison",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 16",
                 "track": "Dexterity (special)",
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014Staggered\u2014Immobile; no end state.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 16",
+                    "dc": 16,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

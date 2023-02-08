@@ -298,12 +298,18 @@
                 "name": "Carrion Spores",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 13",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "When an infected creature reaches the comatose state, 1d10+10 Diminutive ksarik seedlings burrow out of its flesh and wriggle away. This ends the disease and deals 1 piercing damage for each ksarik seedling.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 13",
+                    "dc": 13,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

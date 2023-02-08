@@ -402,10 +402,16 @@
                 "name": "Pyric Curse",
                 "type": "stat_block_section",
                 "affliction_type": "curse",
-                "save": "Fortitude DC 19",
                 "effect": "A creature that fails the save gains the burning 2d4 condition. This flame is pyric fire (see special ability). While affected, the creature succeeds at saving throws against other pyric curses of the same or weaker potency.",
                 "cure": "1 save; successful saves against the burning condition are successful saves against the curse.",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 19",
+                    "dc": 19,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

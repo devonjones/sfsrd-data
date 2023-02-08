@@ -231,12 +231,18 @@
                 "name": "Ihonva Infestation",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 13",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "Ihonva young emerge after 7 days, or 1 day after a victim dies, whichever results in more time.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 13",
+                    "dc": 13,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

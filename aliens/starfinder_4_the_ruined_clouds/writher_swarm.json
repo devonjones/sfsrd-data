@@ -236,12 +236,18 @@
                 "name": "Writher Infestation",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 16",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "If the victim dies from this disease, a new writher swarm immediately bursts forth from the corpse and attacks nearby creatures.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 16",
+                    "dc": 16,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

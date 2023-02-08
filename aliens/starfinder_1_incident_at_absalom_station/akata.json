@@ -319,12 +319,18 @@
                 "name": "Void Death",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 10",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "No latent/carrier state; an infected creature that dies rises as a void zombie 2d4 hours later.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 10",
+                    "dc": 10,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

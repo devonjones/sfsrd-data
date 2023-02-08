@@ -359,11 +359,17 @@
                 "name": "Formian Toxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 12",
                 "track": "Dexterity",
                 "frequency": "1/round for 6 rounds",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 12",
+                    "dc": 12,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

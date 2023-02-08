@@ -347,11 +347,17 @@
                 "name": "Zernivian Toxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 18",
                 "track": "Constitution",
                 "frequency": "1/round for 6 rounds",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 18",
+                    "dc": 18,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

@@ -270,12 +270,18 @@
                 "name": "Ghoul Fever",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 12",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "A creature that dies of ghoul fever rises as a ghoul within 24 hours.",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 12",
+                    "dc": 12,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

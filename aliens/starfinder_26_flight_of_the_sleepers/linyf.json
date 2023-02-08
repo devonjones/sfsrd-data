@@ -238,12 +238,18 @@
                 "name": "Fibrous Growth",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 12",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "no latent state",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 12",
+                    "dc": 12,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

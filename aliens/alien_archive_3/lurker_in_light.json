@@ -275,12 +275,18 @@
                 "name": "Lesser Shadow Essence",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 13",
                 "track": "Strength",
                 "frequency": "1/round for 6 rounds",
                 "effect": "At the staggered state, the penalties from the weakened state become permanent until the victim benefits from a lesser restoration spell.",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 13",
+                    "dc": 13,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

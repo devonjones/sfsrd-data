@@ -287,11 +287,17 @@
                 "name": "Genetic Transfer",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 19",
                 "track": "Constitution",
                 "frequency": "1/round until cured",
                 "cure": "removing the barb (standard action and a successful DC 24 Athletics or Medicine check) or breaking the tether (see above)",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 19",
+                    "dc": 19,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

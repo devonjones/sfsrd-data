@@ -363,12 +363,18 @@
                 "name": "Osoran Roil",
                 "type": "stat_block_section",
                 "affliction_type": "poison (inhaled)",
-                "save": "Fortitude DC 19",
                 "track": "Constitution",
                 "onset": "1 minute",
                 "frequency": "1/minute for 6 minutes",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 19",
+                    "dc": 19,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

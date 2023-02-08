@@ -378,12 +378,18 @@
                 "name": "Dominion Bile",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 22",
                 "track": "Constitution (special)",
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2014Weakened\u2014Debilitated\u2014Dead",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 22",
+                    "dc": 22,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

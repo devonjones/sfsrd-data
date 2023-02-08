@@ -308,11 +308,17 @@
                 "name": "Paralytic Neurotoxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 14",
                 "track": "Dexterity",
                 "frequency": "1/round for 4 rounds",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 14",
+                    "dc": 14,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

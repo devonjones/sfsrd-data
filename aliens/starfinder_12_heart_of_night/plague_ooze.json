@@ -295,12 +295,18 @@
                 "name": "Ooze Plague",
                 "type": "stat_block_section",
                 "affliction_type": "disease (contact or injury)",
-                "save": "Fortitude DC 15",
                 "track": "mental and physical (special)",
                 "frequency": "1/day",
                 "effect": "A creature that has this disease, even in its latent state, is contagious and can transmit the ooze plague through contact with others; the victim takes all penalties from progressing on the physical and mental disease tracks; at the impaired state and beyond, penalties from the weakened state become permanent until the victim benefits from a remove affliction or restoration spell; death from this disease causes the corpse to transform into a plague ooze 24 hours later.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 15",
+                    "dc": 15,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

@@ -215,12 +215,18 @@
                 "name": "Neurotoxic Venom",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 15",
                 "track": "Dexterity (special)",
                 "frequency": "1/round for 4 rounds",
                 "effect": "progression track is Healthy\u2014Staggered\u2014Paralyzed; no end state",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 15",
+                    "dc": 15,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

@@ -283,12 +283,18 @@
                 "name": "Utesra Incubation",
                 "type": "stat_block_section",
                 "affliction_type": "disease (injury)",
-                "save": "Fortitude DC 18",
                 "track": "physical",
                 "frequency": "1/day",
                 "effect": "No latent state; if the infected creature dies, 1d4+3 juvenile utesras hatch and devour the corpse over the course of 1d4 days.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 18",
+                    "dc": 18,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

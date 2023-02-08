@@ -379,10 +379,16 @@
                 "name": "Curse of Planned Obsolescence",
                 "type": "stat_block_section",
                 "affliction_type": "curse",
-                "save": "Will DC 25",
                 "effect": "Some of the victim\u2019s gear seems to occasionally work better. The first three times per day that the victim attempts an equipment-based skill check (such as using a tool kit), the victim adds 1d6 as an insight bonus to that skill check as a reaction. However, for 1 minute afterward, all of the victim\u2019s other gear becomes slightly corrupted. Skill checks using that other gear take a \u20134 circumstance penalty. Weapons have a 25% chance of targeting the nearest friendly target instead of the intended target. Any other piece of gear (such as activated armor upgrades) has a 50% chance of having its usage doubled for that time.",
                 "cure": "The victim must spend 1 month abstaining from the use of mass-produced gear (which is most equipment available for purchase); this doesn\u2019t include gear that the victim or one of the victim\u2019s allies crafts.",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 25",
+                    "dc": 25,
+                    "save_type": "Will"
+                }
             }
         ]
     },

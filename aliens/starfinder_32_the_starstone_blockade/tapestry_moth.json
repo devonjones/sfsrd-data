@@ -371,12 +371,18 @@
                 "name": "Tapestry Toxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury and contact)",
-                "save": "Fortitude DC 24",
                 "track": "Dexterity (special)",
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014 Staggered\u2014Immobile; no end state",
                 "cure": "2 saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 24",
+                    "dc": 24,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

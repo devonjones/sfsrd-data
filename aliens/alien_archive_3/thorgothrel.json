@@ -341,12 +341,18 @@
                 "name": "Atavistic Resequencing",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 18",
                 "track": "Intelligence (special)",
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2013Weakened\u2013 Impaired\u2013Animalistic\u2013Animalistic. The second animalistic functions as an end state, and at the second animalistic state, the effects of the state are permanent until the victim benefits from a <i>restoration</i> spell.",
                 "cure": "2 consecutive saves",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 18",
+                    "dc": 18,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },

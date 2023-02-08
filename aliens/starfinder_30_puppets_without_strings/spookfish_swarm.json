@@ -268,10 +268,16 @@
                 "name": "Curse of the Depths",
                 "type": "stat_block_section",
                 "affliction_type": "curse",
-                "save": "Will DC 22",
                 "effect": "The victim feels as though they are standing in chest-high water, no matter their current environment. The victim counts all terrain as difficult terrain and must spend 20 feet of movement to move 5 feet (and the victim can\u2019t attempt to swim through this illusory water). When the victim rolls a natural 1 on an attack roll, they feel as though they have been fully submerged in water and must hold their breath or begin drowning (regardless of the availability of breathable air or any equipment that would normally allow them to breathe underwater); creatures that don\u2019t need to breathe are immune to this effect. At the start of each subsequent round, the victim can attempt a Will saving throw to end the drowning effect of this curse.",
                 "cure": "The victim must spend 1 week fully submerged underwater; they can use equipment to breathe, but spending time in a submersible vehicle or domed underwater facility or settlement does not meet this requirement.",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 22",
+                    "dc": 22,
+                    "save_type": "Will"
+                }
             }
         ]
     },

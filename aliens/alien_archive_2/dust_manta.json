@@ -261,12 +261,18 @@
                 "name": "Dust Manta Toxin",
                 "type": "stat_block_section",
                 "affliction_type": "poison (injury)",
-                "save": "Fortitude DC 14",
                 "track": "Strength",
                 "frequency": "1/round for 6 rounds",
                 "effect": "At the dead state, the victim\u2019s body disintegrates into dust. A creature that dies as a result of dust manta toxin can only be brought back to life by spells such as <i>miracle</i>, <i>wish</i>, or another similarly powerful effect.",
                 "cure": "1 save",
-                "subtype": "affliction"
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 14",
+                    "dc": 14,
+                    "save_type": "Fortitude"
+                }
             }
         ]
     },
