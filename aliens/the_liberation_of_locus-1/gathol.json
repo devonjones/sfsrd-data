@@ -289,8 +289,23 @@
             "wis": 1,
             "cha": 1,
             "feats": [
-                "Diehard",
-                "Improved Combat Maneuver (trip)"
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Diehard"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "trip"
+                        }
+                    ],
+                    "name": "Improved Combat Maneuver"
+                }
             ],
             "skills": {
                 "type": "stat_block_section",

@@ -265,7 +265,18 @@
             "wis": 3,
             "cha": 4,
             "feats": [
-                "Improved Combat Maneuver (grapple)"
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "grapple"
+                        }
+                    ],
+                    "name": "Improved Combat Maneuver"
+                }
             ],
             "skills": {
                 "type": "stat_block_section",

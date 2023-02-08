@@ -302,8 +302,23 @@
             "wis": 4,
             "cha": 0,
             "feats": [
-                "Deadly Aim",
-                "Improved Combat Maneuver (bull rush)"
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Deadly Aim"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "bull rush"
+                        }
+                    ],
+                    "name": "Improved Combat Maneuver"
+                }
             ],
             "skills": {
                 "type": "stat_block_section",

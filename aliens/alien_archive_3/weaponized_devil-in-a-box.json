@@ -197,8 +197,16 @@
             "wis": 0,
             "cha": 0,
             "feats": [
-                "Mobility",
-                "Spring Attack"
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Mobility"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Spring Attack"
+                }
             ],
             "skills": {
                 "type": "stat_block_section",

@@ -343,8 +343,16 @@
             "wis": 0,
             "cha": 1,
             "feats": [
-                "Step Up",
-                "Step Up and Strike"
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Step Up"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Step Up and Strike"
+                }
             ],
             "skills": {
                 "type": "stat_block_section",
