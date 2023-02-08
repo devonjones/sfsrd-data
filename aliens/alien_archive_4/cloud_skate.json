@@ -88,24 +88,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5d8 F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "20 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 14"
-                        }
-                    ],
-                    "name": "explosive death"
+                    "name": "explosive death",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "5d8",
+                        "damage_type": "Fire",
+                        "damage_type_text": "F"
+                    },
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 14",
+                        "dc": 14,
+                        "save_type": "Reflex"
+                    }
                 }
             ],
             "resistances": [

@@ -113,14 +113,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 20"
-                        }
-                    ],
-                    "name": "slightly poisonous"
+                    "name": "slightly poisonous",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 20",
+                        "dc": 20
+                    }
                 }
             ],
             "dr": {

@@ -137,19 +137,19 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "name": "fast healing 5"
+                    "name": "fast healing",
+                    "value": 5
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 18"
-                        }
-                    ],
-                    "name": "otherworldly mind"
+                    "name": "otherworldly mind",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    }
                 }
             ],
             "immunities": [

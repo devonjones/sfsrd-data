@@ -112,14 +112,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "1d8 days"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 41"
                         }
                     ],
-                    "name": "digital rejuvenation"
+                    "name": "digital rejuvenation",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 41",
+                        "dc": 41
+                    }
                 }
             ],
             "sr": {

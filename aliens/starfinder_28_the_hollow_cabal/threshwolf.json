@@ -107,19 +107,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d4 P"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13"
-                        }
-                    ],
-                    "name": "quills"
+                    "name": "quills",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d4",
+                        "damage_type": "Piercing",
+                        "damage_type_text": "P"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    }
                 }
             ],
             "immunities": [
