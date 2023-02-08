@@ -216,7 +216,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "liquidator disintegration pistol with 2 batteries (20 charges each)"
+                "name": "liquidator disintegration pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
             }
         ],
         "statistics": {
@@ -340,8 +352,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Fortitude DC 16",
-                    "dc": 16,
-                    "save_type": "Fort"
+                    "save_type": "Fort",
+                    "dc": 16
                 }
             }
         ]

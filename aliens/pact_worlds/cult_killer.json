@@ -208,12 +208,24 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "corona laser pistol with 1 battery (20 charges)"
+                "name": "corona laser pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>least gluon crystal</i>"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "least gluon crystal"
             }
         ],
         "statistics": {

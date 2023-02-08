@@ -213,12 +213,36 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "incapacitator with 1 battery (20 charges)"
+                "name": "incapacitator"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "4 persuaders with 4 batteries (20 charges each)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "4 persuaders"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "4 batteries"
             }
         ],
         "statistics": {
@@ -365,14 +389,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "40 ft."
-                        }
-                    ],
-                    "name": "remote hack"
+                    "name": "remote hack",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "40 ft.",
+                        "range": 40,
+                        "unit": "feet"
+                    }
                 },
                 {
                     "type": "stat_block_section",

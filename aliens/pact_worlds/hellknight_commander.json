@@ -270,17 +270,46 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "d-suit III (deflective reinforcement, <i>haste circuit</i>, jetpack)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "deflective reinforcement"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "haste circuit"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "jetpack"
+                    }
+                ],
+                "name": "d-suit III"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>apprehending hailstorm-class zero pistol</i> with 2 high-capacity batteries (40 charges each)"
+                "name": "apprehending hailstorm-class zero pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>minor gluon crystal</i>"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges each"
+                    }
+                ],
+                "name": "2 high-capacity batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "minor gluon crystal"
             }
         ],
         "statistics": {

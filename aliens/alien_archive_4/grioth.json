@@ -237,7 +237,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "bruiser decoupler with 2 batteries (20 charges each)"
+                "name": "bruiser decoupler"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
             },
             {
                 "type": "stat_block_section",
@@ -370,8 +382,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Fortitude DC 12",
-                    "dc": 12,
-                    "save_type": "Fort"
+                    "save_type": "Fort",
+                    "dc": 12
                 }
             }
         ]

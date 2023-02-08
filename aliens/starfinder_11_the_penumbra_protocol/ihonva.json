@@ -157,7 +157,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "static arc pistol with 3 batteries (20 charges each)"
+                "name": "static arc pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "3 batteries"
             }
         ],
         "statistics": {
@@ -240,8 +252,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Fortitude DC 13",
-                    "dc": 13,
-                    "save_type": "Fort"
+                    "save_type": "Fort",
+                    "dc": 13
                 }
             }
         ]

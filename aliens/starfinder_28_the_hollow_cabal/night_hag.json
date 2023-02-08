@@ -262,17 +262,41 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "aphelion laser pistol with 1 high-capacity battery (40 charges)"
+                "name": "aphelion laser pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "incapacitator with 1 battery (20 charges)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges"
+                    }
+                ],
+                "name": "1 high-capacity battery"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>heartstone</i>"
+                "name": "incapacitator"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "heartstone"
             }
         ],
         "statistics": {
@@ -368,7 +392,7 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "<i>heartstone</i>"
+                    "name": "heartstone"
                 }
             ]
         },

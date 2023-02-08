@@ -198,17 +198,48 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "ixtangi survivalwear (functions as estex suit III)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as estex suit III"
+                    }
+                ],
+                "name": "ixtangi survivalwear"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "corona laser rifle with 2 high-capacity batteries (40 charges each)"
+                "name": "corona laser rifle"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "fangblade with 2 batteries (20 charges each)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges each"
+                    }
+                ],
+                "name": "2 high-capacity batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "fangblade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
             }
         ],
         "statistics": {
@@ -264,14 +295,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15"
-                        }
-                    ],
-                    "name": "liquid crystal display"
+                    "name": "liquid crystal display",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    }
                 },
                 {
                     "type": "stat_block_section",

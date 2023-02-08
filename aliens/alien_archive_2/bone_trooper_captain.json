@@ -241,7 +241,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "skitterhide II (with black force field)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "with black force field"
+                    }
+                ],
+                "name": "skitterhide II"
             },
             {
                 "type": "stat_block_section",
@@ -251,7 +258,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "red star plasma pistol with 3 batteries (20 charges each)"
+                "name": "red star plasma pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "3 batteries"
             }
         ],
         "statistics": {

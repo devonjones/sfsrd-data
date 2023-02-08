@@ -206,7 +206,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "xararian robes (functions as freebooter armor V)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as freebooter armor V"
+                    }
+                ],
+                "name": "xararian robes"
             },
             {
                 "type": "stat_block_section",
@@ -277,14 +284,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "18 minutes"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 25"
                         }
                     ],
-                    "name": "starlight form"
+                    "name": "starlight form",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 25",
+                        "dc": 25
+                    }
                 },
                 {
                     "type": "stat_block_section",

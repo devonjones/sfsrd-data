@@ -265,12 +265,24 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>holy corona laser rifle</i> with 2 high-capacity batteries (40 charges each)"
+                "name": "holy corona laser rifle"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>holy sintered longsword</i>"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges each"
+                    }
+                ],
+                "name": "2 high-capacity batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "holy sintered longsword"
             }
         ],
         "statistics": {

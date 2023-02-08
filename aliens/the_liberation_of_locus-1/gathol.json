@@ -261,7 +261,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "regimental dress I (jump jets)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "jump jets"
+                    }
+                ],
+                "name": "regimental dress I"
             },
             {
                 "type": "stat_block_section",
@@ -271,12 +278,36 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "flash compliance ray with 2 batteries (20 charges each)"
+                "name": "flash compliance ray"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "liquidator disintegration lash AR with 1 battery (20 charges)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "liquidator disintegration lash AR"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
             }
         ],
         "statistics": {

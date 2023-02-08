@@ -229,12 +229,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "d-suit I (custom rig)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "custom rig"
+                    }
+                ],
+                "name": "d-suit I"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "frostbite-class zero pistol with 2 batteries (20 charges each)"
+                "name": "frostbite-class zero pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
             }
         ],
         "statistics": {
@@ -391,14 +410,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15"
-                        }
-                    ],
-                    "name": "remote hack"
+                    "name": "remote hack",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    }
                 }
             ]
         },

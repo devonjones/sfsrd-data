@@ -240,12 +240,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "corona laser pistol with 1 battery (20 charges)"
+                "name": "corona laser pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>astriapi honey</i> (functions as <i>mk 2 serum of healing</i>)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as mk 2 serum of healing"
+                    }
+                ],
+                "name": "astriapi honey"
             }
         ],
         "statistics": {

@@ -97,8 +97,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Reflex DC 20",
-                    "dc": 20,
-                    "save_type": "Ref"
+                    "save_type": "Ref",
+                    "dc": 20
                 }
             }
         ],
@@ -297,7 +297,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "series-42 plasma guide with 1 super-capacity battery (80 charges)"
+                "name": "series-42 plasma guide"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "80 charges"
+                    }
+                ],
+                "name": "1 super-capacity battery"
             }
         ],
         "statistics": {

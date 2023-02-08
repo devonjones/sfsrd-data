@@ -204,7 +204,12 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "frostbite-class zero pistol with 1 battery"
+                "name": "frostbite-class zero pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "1 battery"
             },
             {
                 "type": "stat_block_section",
@@ -310,12 +315,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "energy shield [10 HP"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5 min.]"
+                            "name": "energy shield [10 HP, 5 min.]"
                         },
                         {
                             "type": "stat_block_section",
@@ -328,14 +328,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 17"
-                        }
-                    ],
-                    "name": "remote hack"
+                    "name": "remote hack",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    }
                 },
                 {
                     "type": "stat_block_section",

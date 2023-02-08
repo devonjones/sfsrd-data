@@ -391,14 +391,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "50 ft."
-                        }
-                    ],
-                    "name": "titanium alloy cable line"
+                    "name": "titanium alloy cable line",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "50 ft.",
+                        "range": 50,
+                        "unit": "feet"
+                    }
                 },
                 {
                     "type": "stat_block_section",

@@ -192,12 +192,17 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical semi-auto pistol with 18 small arm rounds"
+                "name": "tactical semi-auto pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>mk I serum of healing</i>"
+                "name": "18 small arm rounds"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk I serum of healing"
             }
         ],
         "statistics": {
@@ -258,14 +263,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 11"
-                        }
-                    ],
-                    "name": "atmospheric alteration"
+                    "name": "atmospheric alteration",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 11",
+                        "dc": 11
+                    }
                 }
             ]
         },

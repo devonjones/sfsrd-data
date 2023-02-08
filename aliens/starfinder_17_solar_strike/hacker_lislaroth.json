@@ -342,14 +342,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "40 ft.; DC 19"
-                        }
-                    ],
-                    "name": "remote hack"
+                    "name": "remote hack",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "40 ft.",
+                        "range": 40,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    }
                 }
             ]
         },

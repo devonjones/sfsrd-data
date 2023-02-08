@@ -222,12 +222,24 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>hybridized gelid hail pistol</i> with 2 batteries (20 charges each)"
+                "name": "hybridized gelid hail pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>minor graviton crystal</i>"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "minor graviton crystal"
             }
         ],
         "statistics": {

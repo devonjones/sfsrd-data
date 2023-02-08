@@ -245,7 +245,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "executioner disintegrator pistol with 1 high-capacity battery (40 charges)"
+                "name": "executioner disintegrator pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges"
+                    }
+                ],
+                "name": "1 high-capacity battery"
             }
         ],
         "statistics": {
@@ -386,8 +398,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Will DC 25",
-                    "dc": 25,
-                    "save_type": "Will"
+                    "save_type": "Will",
+                    "dc": 25
                 }
             }
         ]

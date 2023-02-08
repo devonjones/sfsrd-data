@@ -185,12 +185,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "ixtangi stationwear (functions as estex suit I)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as estex suit I"
+                    }
+                ],
+                "name": "ixtangi stationwear"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "pulsecaster pistol with 2 batteries (20 charges each)"
+                "name": "pulsecaster pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
             },
             {
                 "type": "stat_block_section",
@@ -257,14 +276,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15"
-                        }
-                    ],
-                    "name": "liquid crystal display"
+                    "name": "liquid crystal display",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    }
                 },
                 {
                     "type": "stat_block_section",

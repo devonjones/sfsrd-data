@@ -170,7 +170,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "aurora arc pistol with 1 high-capacity battery (40 charges)"
+                "name": "aurora arc pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges"
+                    }
+                ],
+                "name": "1 high-capacity battery"
             },
             {
                 "type": "stat_block_section",
@@ -238,14 +250,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21"
-                        }
-                    ],
-                    "name": "existential paralysis"
+                    "name": "existential paralysis",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    }
                 }
             ]
         },

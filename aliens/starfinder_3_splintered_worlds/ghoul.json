@@ -189,7 +189,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "azimuth laser pistol with 1 battery (20 charges)"
+                "name": "azimuth laser pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
             }
         ],
         "statistics": {
@@ -279,8 +291,8 @@
                     "type": "stat_block_section",
                     "subtype": "save_dc",
                     "text": "Fortitude DC 12",
-                    "dc": 12,
-                    "save_type": "Fort"
+                    "save_type": "Fort",
+                    "dc": 12
                 }
             }
         ]

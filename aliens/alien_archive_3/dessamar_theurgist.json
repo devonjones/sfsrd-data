@@ -248,12 +248,36 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "shrieking larva with 2 batteries (20 charges each)"
+                "name": "shrieking larva"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical living staff with 1 battery (20 charges)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical living staff"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
             }
         ],
         "statistics": {
@@ -330,14 +354,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "6 minutes"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 16"
                         }
                     ],
-                    "name": "starlight form"
+                    "name": "starlight form",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    }
                 },
                 {
                     "type": "stat_block_section",

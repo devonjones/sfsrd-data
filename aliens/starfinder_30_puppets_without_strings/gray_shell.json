@@ -188,12 +188,36 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "HFD pulse gauntlet with 1 battery (20 charges)"
+                "name": "HFD pulse gauntlet"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "LFD sonic rifle with 2 high-capacity batteries (40 charges each)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "LFD sonic rifle"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges each"
+                    }
+                ],
+                "name": "2 high-capacity batteries"
             }
         ],
         "statistics": {

@@ -244,7 +244,12 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "advanced semi-auto pistol with 24 small arm rounds"
+                "name": "advanced semi-auto pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "24 small arm rounds"
             },
             {
                 "type": "stat_block_section",
@@ -365,14 +370,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 18"
-                        }
-                    ],
-                    "name": "remote hack"
+                    "name": "remote hack",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    }
                 },
                 {
                     "type": "stat_block_section",

@@ -235,14 +235,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "20 ft."
-                        }
-                    ],
-                    "name": "aglow"
+                    "name": "aglow",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    }
                 },
                 {
                     "type": "stat_block_section",

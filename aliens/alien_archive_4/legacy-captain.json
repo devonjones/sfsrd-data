@@ -179,7 +179,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "perihelion laser pistol with two high capacity batteries (40 charges each)"
+                "name": "perihelion laser pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "40 charges each"
+                    }
+                ],
+                "name": "two high capacity batteries"
             },
             {
                 "type": "stat_block_section",
@@ -274,14 +286,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "4 minutes"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13"
                         }
                     ],
-                    "name": "starlight form"
+                    "name": "starlight form",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    }
                 },
                 {
                     "type": "stat_block_section",

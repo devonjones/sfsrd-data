@@ -209,12 +209,24 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "trailblazer subzero hail pistol with 2 batteries (20 charges each)"
+                "name": "trailblazer subzero hail pistol"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "<i>mk 1 serum of healing</i>"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 1 serum of healing"
             }
         ],
         "statistics": {

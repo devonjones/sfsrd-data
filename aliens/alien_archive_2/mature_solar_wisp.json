@@ -261,14 +261,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "90 ft."
-                        }
-                    ],
-                    "name": "aglow"
+                    "name": "aglow",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "90 ft.",
+                        "range": 90,
+                        "unit": "feet"
+                    }
                 },
                 {
                     "type": "stat_block_section",

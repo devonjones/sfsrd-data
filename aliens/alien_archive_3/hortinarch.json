@@ -205,12 +205,29 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "advanced living staff with 2 batteries (20 charges each)"
+                "name": "advanced living staff"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "advanced rotating pistol with 16 small arm rounds"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced rotating pistol"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "16 small arm rounds"
             }
         ],
         "statistics": {
@@ -271,14 +288,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 20"
-                        }
-                    ],
-                    "name": "atmospheric alteration"
+                    "name": "atmospheric alteration",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 20",
+                        "dc": 20
+                    }
                 },
                 {
                     "type": "stat_block_section",

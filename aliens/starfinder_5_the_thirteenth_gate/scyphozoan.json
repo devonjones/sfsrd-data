@@ -182,12 +182,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "scyphozoan bio-weave (functions as graphite carbon skin)"
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as graphite carbon skin"
+                    }
+                ],
+                "name": "scyphozoan bio-weave"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical arc emitter with 1 battery (20 charges)"
+                "name": "tactical arc emitter"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges"
+                    }
+                ],
+                "name": "1 battery"
             }
         ],
         "statistics": {
@@ -281,12 +300,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "energy shield [7 HP"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "3 minutes]"
+                            "name": "energy shield [7 HP, 3 minutes]"
                         }
                     ],
                     "name": "mechanic tricks"
