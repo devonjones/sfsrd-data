@@ -247,14 +247,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "18d10+40 B & S"
-                        }
-                    ],
                     "name": "trample",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "18d10+40",
+                        "damage_type": "Bludgeoning & Slashing",
+                        "damage_type_text": "B & S"
+                    },
                     "saving_throw": {
                         "type": "stat_block_section",
                         "subtype": "save_dc",
