@@ -207,14 +207,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "8d6+24 B"
-                        }
-                    ],
-                    "name": "crush"
+                    "name": "crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "8d6+24",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 }
             ]
         },

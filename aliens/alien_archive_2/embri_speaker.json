@@ -205,14 +205,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21"
-                        }
-                    ],
-                    "name": "greater forced amity"
+                    "name": "greater forced amity",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    }
                 },
                 {
                     "type": "stat_block_section",

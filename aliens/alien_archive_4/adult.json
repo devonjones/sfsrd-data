@@ -253,20 +253,26 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "6d10 F plus radiation exposure"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 16 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d6 rounds"
                         }
                     ],
-                    "name": "breath weapon"
+                    "name": "breath weapon",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "6d10",
+                        "effect": "radiation exposure",
+                        "damage_type": "Fire",
+                        "damage_type_text": "F"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 16 half",
+                        "save_type": "Ref",
+                        "dc": 16,
+                        "result": "half"
+                    }
                 }
             ]
         },

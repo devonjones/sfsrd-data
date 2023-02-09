@@ -304,32 +304,37 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "15d8 C"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 22 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "breath weapon"
+                    "name": "breath weapon",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "15d8",
+                        "damage_type": "Cold",
+                        "damage_type_text": "C"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 22 half",
+                        "save_type": "Ref",
+                        "dc": 22,
+                        "result": "half"
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "6d6+22 B"
-                        }
-                    ],
-                    "name": "crush"
+                    "name": "crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "6d6+22",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -344,14 +349,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "1d6+7 rounds"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 22"
                         }
                     ],
-                    "name": "paralyzing breath"
+                    "name": "paralyzing breath",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    }
                 }
             ]
         },

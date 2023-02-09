@@ -178,14 +178,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "2d8+13 B"
-                        }
-                    ],
-                    "name": "trample"
+                    "name": "trample",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "2d8+13",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 }
             ]
         },

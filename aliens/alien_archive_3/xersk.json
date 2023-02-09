@@ -192,19 +192,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "60 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Will DC 24"
-                        }
-                    ],
-                    "name": "demoralizing gaze"
+                    "name": "demoralizing gaze",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Will DC 24",
+                        "save_type": "Will",
+                        "dc": 24
+                    }
                 },
                 {
                     "type": "stat_block_section",

@@ -266,14 +266,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "2 levels"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 24"
                         }
                     ],
-                    "name": "energy drain"
+                    "name": "energy drain",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 24",
+                        "dc": 24
+                    }
                 },
                 {
                     "type": "stat_block_section",

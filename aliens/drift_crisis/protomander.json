@@ -240,14 +240,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "4d6"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 16"
                         }
                     ],
-                    "name": "chaotic infusion"
+                    "name": "chaotic infusion",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -262,14 +263,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "15-ft. cone"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 16"
                         }
                     ],
-                    "name": "warping funnel 1/day"
+                    "name": "warping funnel 1/day",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    }
                 }
             ]
         },

@@ -220,29 +220,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5d4+16 E"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "EAC 30"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "KAC 27"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "71 HP"
-                        }
-                    ],
-                    "name": "swallow whole"
+                    "name": "swallow whole",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "5d4+16",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "eac": 30,
+                    "kac": 27,
+                    "hp": 71
                 }
             ]
         },

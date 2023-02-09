@@ -281,14 +281,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "25 ft."
-                        }
-                    ],
-                    "name": "grenade expert"
+                    "name": "grenade expert",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "25 ft.",
+                        "range": 25,
+                        "unit": "feet"
+                    }
                 },
                 {
                     "type": "stat_block_section",

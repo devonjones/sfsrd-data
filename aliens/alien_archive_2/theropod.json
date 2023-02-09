@@ -136,29 +136,17 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "2d10+16 B"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "EAC 22"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "KAC 20"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "36 hp"
-                        }
-                    ],
-                    "name": "swallow whole"
+                    "name": "swallow whole",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "2d10+16",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    },
+                    "eac": 22,
+                    "kac": 20,
+                    "hp": 36
                 }
             ]
         },

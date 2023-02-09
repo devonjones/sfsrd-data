@@ -162,14 +162,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d8+2 B"
-                        }
-                    ],
-                    "name": "constrict"
+                    "name": "constrict",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d8+2",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 }
             ]
         },

@@ -176,14 +176,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d6+5 S"
-                        }
-                    ],
-                    "name": "thresh"
+                    "name": "thresh",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d6+5",
+                        "damage_type": "Slashing",
+                        "damage_type_text": "S"
+                    }
                 }
             ]
         },

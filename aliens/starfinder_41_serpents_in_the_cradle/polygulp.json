@@ -184,14 +184,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13"
-                        }
-                    ],
-                    "name": "burp"
+                    "name": "burp",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -205,25 +204,19 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "1d6+10 A"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "EAC 17"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "KAC 15"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "17 HP."
                         }
                     ],
-                    "name": "swallow whole"
+                    "name": "swallow whole",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d6+10",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
+                    },
+                    "eac": 17,
+                    "kac": 15
                 }
             ]
         },

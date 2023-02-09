@@ -247,14 +247,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "3d12+21 B"
-                        }
-                    ],
-                    "name": "crush"
+                    "name": "crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "3d12+21",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -264,14 +264,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "1 level"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 19"
                         }
                     ],
-                    "name": "energy drain"
+                    "name": "energy drain",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    }
                 }
             ]
         },

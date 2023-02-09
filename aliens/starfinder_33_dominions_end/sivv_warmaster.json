@@ -272,19 +272,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "30 feet"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 22"
-                        }
-                    ],
-                    "name": "domineering gaze"
+                    "name": "domineering gaze",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "30 feet",
+                        "range": 30,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -294,14 +295,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "ranged +28"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 22"
                         }
                     ],
-                    "name": "rel-state dispersal"
+                    "name": "rel-state dispersal",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    }
                 }
             ]
         },

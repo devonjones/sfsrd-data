@@ -160,19 +160,23 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d6+2 E plus staggered"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 13 half"
-                        }
-                    ],
-                    "name": "electrical discharge"
+                    "name": "electrical discharge",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d6+2",
+                        "effect": "staggered",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 13 half",
+                        "save_type": "Ref",
+                        "dc": 13,
+                        "result": "half"
+                    }
                 }
             ]
         },

@@ -317,44 +317,46 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "19d10 E"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 25"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "breath weapon"
+                    "name": "breath weapon",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "19d10",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 25",
+                        "dc": 25
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "8d8+29 B"
-                        }
-                    ],
-                    "name": "crush"
+                    "name": "crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "8d8+29",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 25"
-                        }
-                    ],
-                    "name": "suffocating breath"
+                    "name": "suffocating breath",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 25",
+                        "dc": 25
+                    }
                 }
             ]
         },

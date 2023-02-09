@@ -225,20 +225,23 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "1d4+7 B"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "1/10 min."
                         }
                     ],
-                    "name": "whirlwind"
+                    "name": "whirlwind",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d4+7",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    }
                 }
             ]
         },

@@ -156,19 +156,23 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "15-ft. cone"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d6+7 P plus neurotoxic venom"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 15"
                         }
                     ],
-                    "name": "stingswarm"
+                    "name": "stingswarm",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d6+7",
+                        "effect": "neurotoxic venom",
+                        "damage_type": "Piercing",
+                        "damage_type_text": "P"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 15",
+                        "dc": 15
+                    }
                 }
             ]
         },

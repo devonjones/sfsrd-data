@@ -202,24 +202,28 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "30 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "4d6 S"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Fort DC 17"
-                        }
-                    ],
-                    "name": "ripping gaze"
+                    "name": "ripping gaze",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "30 ft.",
+                        "range": 30,
+                        "unit": "feet"
+                    },
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "4d6",
+                        "damage_type": "Slashing",
+                        "damage_type_text": "S"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Fort DC 17",
+                        "save_type": "Fort",
+                        "dc": 17
+                    }
                 }
             ]
         },

@@ -199,14 +199,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 14"
-                        }
-                    ],
-                    "name": "distraction"
+                    "name": "distraction",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 14",
+                        "dc": 14
+                    }
                 }
             ]
         },

@@ -102,13 +102,15 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "becomes regeneration 5 in irradiated areas"
+                        }
+                    ],
                     "name": "fast healing",
-                    "value": 5,
-                    "damage": {
-                        "type": "stat_block_section",
-                        "subtype": "attack_damage",
-                        "effect": "becomes regeneration 5 in irradiated areas"
-                    }
+                    "value": 5
                 }
             ],
             "immunities": [

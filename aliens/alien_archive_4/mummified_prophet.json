@@ -230,26 +230,24 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21"
-                        }
-                    ],
-                    "name": "mental anguish"
+                    "name": "mental anguish",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21"
-                        }
-                    ],
-                    "name": "mindbreaking link"
+                    "name": "mindbreaking link",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -259,14 +257,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "6 rounds"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 21"
                         }
                     ],
-                    "name": "sow doubt"
+                    "name": "sow doubt",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 21",
+                        "dc": 21
+                    }
                 }
             ],
             "connection": "mindbreaker"

@@ -158,19 +158,21 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "120 feet"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Will DC 13"
-                        }
-                    ],
-                    "name": "lure"
+                    "name": "lure",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "120 feet",
+                        "range": 120,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Will DC 13",
+                        "save_type": "Will",
+                        "dc": 13
+                    }
                 }
             ]
         },

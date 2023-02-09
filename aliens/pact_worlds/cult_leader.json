@@ -214,14 +214,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "4 rounds"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 18"
                         }
                     ],
-                    "name": "sow doubt"
+                    "name": "sow doubt",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    }
                 }
             ],
             "connection": "mindbreaker"

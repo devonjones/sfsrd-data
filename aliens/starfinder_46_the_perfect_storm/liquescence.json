@@ -188,19 +188,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "1d6+3 A"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 11"
-                        }
-                    ],
-                    "name": "engulf"
+                    "name": "engulf",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "1d6+3",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 11",
+                        "dc": 11
+                    }
                 }
             ]
         },

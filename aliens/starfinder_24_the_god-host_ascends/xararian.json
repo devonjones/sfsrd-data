@@ -190,14 +190,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 25"
-                        }
-                    ],
-                    "name": "meteor shower"
+                    "name": "meteor shower",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 25",
+                        "dc": 25
+                    }
                 }
             ],
             "connection": "star shaman"

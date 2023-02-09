@@ -217,14 +217,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "13d6+29 B"
-                        }
-                    ],
-                    "name": "falling crush"
+                    "name": "falling crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "13d6+29",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -238,20 +238,25 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "19d6 E"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 23 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "redirect power"
+                    "name": "redirect power",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "19d6",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 23 half",
+                        "save_type": "Ref",
+                        "dc": 23,
+                        "result": "half"
+                    }
                 }
             ]
         },

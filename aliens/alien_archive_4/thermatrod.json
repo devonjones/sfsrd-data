@@ -186,19 +186,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "2d6 F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 12"
-                        }
-                    ],
-                    "name": "slag barrage"
+                    "name": "slag barrage",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "2d6",
+                        "damage_type": "Fire",
+                        "damage_type_text": "F"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    }
                 }
             ]
         },

@@ -160,19 +160,22 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "15-ft. cone"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "2d8 E"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 11"
                         }
                     ],
-                    "name": "jolting cascade"
+                    "name": "jolting cascade",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "2d8",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 11",
+                        "dc": 11
+                    }
                 }
             ]
         },

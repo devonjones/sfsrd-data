@@ -197,14 +197,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "1d6+7"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 13"
                         }
                     ],
-                    "name": "trample"
+                    "name": "trample",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    }
                 }
             ]
         },

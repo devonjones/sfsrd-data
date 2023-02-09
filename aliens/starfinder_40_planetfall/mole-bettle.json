@@ -155,15 +155,16 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "DC 8"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "bleed 1d4"
                         }
                     ],
-                    "name": "eversion feeding"
+                    "name": "eversion feeding",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 8",
+                        "dc": 8
+                    }
                 }
             ]
         },

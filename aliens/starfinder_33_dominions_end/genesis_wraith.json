@@ -202,20 +202,25 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "3d12+17 P"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 24 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "erupting branches"
+                    "name": "erupting branches",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "3d12+17",
+                        "damage_type": "Piercing",
+                        "damage_type_text": "P"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 24 half",
+                        "save_type": "Ref",
+                        "dc": 24,
+                        "result": "half"
+                    }
                 }
             ]
         },

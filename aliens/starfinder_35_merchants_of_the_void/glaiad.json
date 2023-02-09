@@ -184,20 +184,23 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "7d6 C"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 16"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "storm of shards"
+                    "name": "storm of shards",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "7d6",
+                        "damage_type": "Cold",
+                        "damage_type_text": "C"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    }
                 }
             ]
         },

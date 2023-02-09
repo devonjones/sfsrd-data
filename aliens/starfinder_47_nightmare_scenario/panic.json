@@ -187,14 +187,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 12"
-                        }
-                    ],
-                    "name": "synaptic pulse"
+                    "name": "synaptic pulse",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    }
                 }
             ]
         },

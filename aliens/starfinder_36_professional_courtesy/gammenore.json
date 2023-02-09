@@ -202,17 +202,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "100 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "6d8 C or F plus staggered"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 16"
                         },
                         {
                             "type": "stat_block_section",
@@ -220,7 +210,20 @@
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "thermokinesis"
+                    "name": "thermokinesis",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "100 ft.",
+                        "range": 100,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    }
                 }
             ]
         },

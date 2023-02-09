@@ -236,50 +236,46 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
-                        }
-                    ],
-                    "name": "explode head"
+                    "name": "explode head",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
-                        }
-                    ],
-                    "name": "mental anguish"
+                    "name": "mental anguish",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
-                        }
-                    ],
-                    "name": "mind-breaking link"
+                    "name": "mind-breaking link",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
-                        }
-                    ],
-                    "name": "mindkiller"
+                    "name": "mindkiller",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -289,14 +285,15 @@
                             "type": "stat_block_section",
                             "subtype": "modifier",
                             "name": "9 rounds"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
                         }
                     ],
-                    "name": "sow doubt"
+                    "name": "sow doubt",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 }
             ],
             "connection": "mindbreaker"

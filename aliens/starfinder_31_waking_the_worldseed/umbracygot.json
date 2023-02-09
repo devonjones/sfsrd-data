@@ -266,20 +266,25 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "10d6 A"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 19 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "acid spray"
+                    "name": "acid spray",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "10d6",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 19 half",
+                        "save_type": "Ref",
+                        "dc": 19,
+                        "result": "half"
+                    }
                 }
             ]
         },

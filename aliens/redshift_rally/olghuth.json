@@ -228,20 +228,23 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "11d6 So"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 17"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d6 rounds"
                         }
                     ],
-                    "name": "agonized wail"
+                    "name": "agonized wail",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "11d6",
+                        "damage_type": "Sonic",
+                        "damage_type_text": "So"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    }
                 },
                 {
                     "type": "stat_block_section",

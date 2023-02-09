@@ -184,14 +184,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "2d4+8 P"
-                        }
-                    ],
-                    "name": "powerful charge"
+                    "name": "powerful charge",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "2d4+8",
+                        "damage_type": "Piercing",
+                        "damage_type_text": "P"
+                    }
                 }
             ]
         },

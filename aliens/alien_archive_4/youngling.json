@@ -178,15 +178,17 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "Reflex DC 14"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "9 P"
                         }
                     ],
-                    "name": "spine assault"
+                    "name": "spine assault",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 14",
+                        "save_type": "Ref",
+                        "dc": 14
+                    }
                 }
             ]
         },

@@ -227,59 +227,52 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "4d12+20 E plus terrify"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 27 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "rage spasm"
+                    "name": "rage spasm",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "4d12+20",
+                        "effect": "terrify",
+                        "damage_type": "Electricity",
+                        "damage_type_text": "E"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 27 half",
+                        "save_type": "Ref",
+                        "dc": 27,
+                        "result": "half"
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "13d6+25 A"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "EAC 34"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "KAC 31"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "100 HP"
-                        }
-                    ],
-                    "name": "swallow whole"
+                    "name": "swallow whole",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "13d6+25",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
+                    },
+                    "eac": 34,
+                    "kac": 31,
+                    "hp": 100
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 27"
-                        }
-                    ],
-                    "name": "terrify"
+                    "name": "terrify",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 27",
+                        "dc": 27
+                    }
                 }
             ]
         },

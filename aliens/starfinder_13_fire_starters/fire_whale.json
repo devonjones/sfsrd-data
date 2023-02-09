@@ -284,32 +284,37 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "16d6 B & F"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "Reflex DC 22 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "breath weapon"
+                    "name": "breath weapon",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "16d6",
+                        "damage_type": "Bludgeoning & Fire",
+                        "damage_type_text": "B & F"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 22 half",
+                        "save_type": "Ref",
+                        "dc": 22,
+                        "result": "half"
+                    }
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "5d12+26 B & F"
-                        }
-                    ],
-                    "name": "crush"
+                    "name": "crush",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "5d12+26",
+                        "damage_type": "Bludgeoning & Fire",
+                        "damage_type_text": "B & F"
+                    }
                 }
             ]
         },

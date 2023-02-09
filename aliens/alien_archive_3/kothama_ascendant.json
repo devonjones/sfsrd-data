@@ -213,14 +213,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "6d6+18 B"
-                        }
-                    ],
-                    "name": "trample"
+                    "name": "trample",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "6d6+18",
+                        "damage_type": "Bludgeoning",
+                        "damage_type_text": "B"
+                    }
                 }
             ],
             "connection": "star shaman"

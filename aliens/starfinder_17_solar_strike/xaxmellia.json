@@ -360,20 +360,23 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "17d6 A"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 22"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 hours"
                         }
                     ],
-                    "name": "acidic breath weapon"
+                    "name": "acidic breath weapon",
+                    "damage": {
+                        "type": "stat_block_section",
+                        "subtype": "attack_damage",
+                        "formula": "17d6",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22",
+                        "dc": 22
+                    }
                 },
                 {
                     "type": "stat_block_section",
@@ -397,15 +400,17 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "DC 22 for half and no deafened"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d4 rounds"
                         }
                     ],
-                    "name": "sonic breath weapon"
+                    "name": "sonic breath weapon",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 22 for half and no deafened",
+                        "dc": 22,
+                        "result": "deafened"
+                    }
                 },
                 {
                     "type": "stat_block_section",

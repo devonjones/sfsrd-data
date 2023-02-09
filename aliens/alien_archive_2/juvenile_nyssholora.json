@@ -258,15 +258,18 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "Reflex DC 13 half"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
                             "name": "usable every 1d6 rounds"
                         }
                     ],
-                    "name": "breath weapon"
+                    "name": "breath weapon",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "Reflex DC 13 half",
+                        "save_type": "Ref",
+                        "dc": 13,
+                        "result": "half"
+                    }
                 }
             ]
         },

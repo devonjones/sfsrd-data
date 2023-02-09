@@ -153,14 +153,13 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "DC 12"
-                        }
-                    ],
-                    "name": "reverberating shriek"
+                    "name": "reverberating shriek",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 12",
+                        "dc": 12
+                    }
                 }
             ]
         },
