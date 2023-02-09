@@ -1,0 +1,362 @@
+{
+    "name": "Palioxodaemon",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Palioxodaemons form from the souls of evil mortals who died in teleportation accidents, planar warping, or other space-time anomalies, and they revel in using their powers to inflict similarly traumatic demises upon other living beings. Their horrific flesh resembles bodies that have been exploded outward, like anatomist\u2019s diagrams but with segments of their weeping flesh fused with rock, ship materials, and other non-organic debris."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Palioxodaemon",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "daemon"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "evil"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "extraplanar"
+                }
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "family": "Daemon",
+            "cr": "11",
+            "role": "Combatant",
+            "xp": 12800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 20
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 165
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 26
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "immunities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "acid"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "death effects"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "disease"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "poison"
+                }
+            ],
+            "resistances": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "name": "cold",
+                    "value": 20
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "name": "electricity",
+                    "value": 20
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "name": "fire",
+                    "value": 20
+                }
+            ],
+            "sr": {
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 22
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "text": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "text": "fly 40 ft.",
+                        "movement_type": "fly",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "slash",
+                    "bonus": 24,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+19",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "wound"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 4,
+                    "name": "slashes",
+                    "bonus": 18,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+19",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "wound"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "cause mishap"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "space-time shuffle"
+                }
+            ]
+        },
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 8,
+            "dex": 3,
+            "con": 5,
+            "int": 3,
+            "wis": -1,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 20
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Abyssal"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Infernal"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            }
+        },
+        "ecology": {
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any (Abaddon)",
+            "organization": "solitary, pair, or scramble (3\u20138)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a reaction when a creature within 60 feet of the palioxodaemon is affected by a teleportation effect, the daemon can scramble that creature\u2019s form. The creature takes 4d6 slashing damage and suffers the effects of the critical wound effect. A successful DC 18 Fortitude save halves the damage and negates the wound effect. The palioxodaemon can\u2019t use this ability on a target affected by their own space-time shuffle ability. In addition, any creature who accompanies a palioxodaemon via its teleport spell-like ability must attempt a save against cause mishap with a \u20134 penalty. The daemon can\u2019t choose not to affect an accompanying creature this way.",
+                "name": "Cause Mishap",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, the palioxodaemon can teleport any creature within 60 feet who they can see to any other unoccupied space within 60 feet that they can see. The target can attempt a DC 20 Will save to resist this teleportation. Once per day, the palioxodaemon can attempt to teleport their target into a space occupied by solid nonliving matter, such as a wall. A target subjected to this variation who fails the Will save also attempts a DC 18 Fortitude save; on a success, the daemon must instead teleport it to an unoccupied space. On a failed Fortitude save, the target takes 4d10 bludgeoning damage and is pinned within the matter. The affected creature isn\u2019t within line of sight of other creatures outside the matter (unless these creatures have a way to see through solid matter) and can\u2019t escape the pinned condition with the usual attack roll or Acrobatics check. However, at the beginning of each turn that it\u2019s pinned within the matter, the target attempts another DC 18 Fortitude save. On a success, it\u2019s teleported to a random unoccupied space adjacent to (or as close as possible to) the solid matter it had been trapped in. On a failure, the target takes an additional 4d10 bludgeoning damage and remains pinned. This is a teleportation effect.",
+                "name": "Space-Time Shuffle",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #48: Masters of Time and Space",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #48: Masters of Time and Space pg. 54",
+                "alt": "Starfinder #48: Masters of Time and Space pg. 54",
+                "href": "https://paizo.com/products/btq02c4c?Starfinder-Adventure-Path-48-Masters-of-Time-and-Space"
+            },
+            "page": 54
+        }
+    ]
+}

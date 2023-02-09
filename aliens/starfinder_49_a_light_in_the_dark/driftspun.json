@@ -1,21 +1,21 @@
 {
-    "name": "Atrocite",
+    "name": "Driftspun",
     "type": "alien",
     "sections": [
         {
             "name": "Description",
             "type": "section",
-            "html": "The monstrous atrocites are potent agents of the Devourer. Each atrocite has a unique form roughly similar to that of a member of some sentient species. If the original form has eyes, the atrocite\u2019s are instead empty voids. If it has hands, each holds a fanged mouth that speaks of destruction. A gray haze forms above atrocites, constantly crackling with red energy and serving as the source of their void bolts.<br/>Although they are outsiders, atrocites dwell primarily on the Material Plane, searching through space for places ripe for the depredations of a Devourer cult or helping extant cults execute massive acts of destruction beyond their normal capacity. An atrocite remains with a cult only so long as its presence and guidance clearly increases the recruiting power or destructive capacity of the cult, leaving as soon as it can to further spread its message of infinite unmaking.<br/>Cultists sometimes smuggle atrocites into highly populated systems to spread the Devourer\u2019s dire gospel, but atrocites travel on their own just as often, either teleporting over vast distances through space or using planar travel."
+            "html": "Scholars believe the first driftspun was created when the Drift absorbed a part of the Akashic Record, manifesting an entity that conformed to a story. Since then, the resulting psychic radiation has spread throughout the Drift. Occasionally, travelers through the hyperspace plane f nd that the weight of the stories they tell each other on the long journeys interact with this energy to form a driftspun.<br/> Each driftspun has a dif erent appearance, based on the story that manifested it. Some are shapeless clouds of darkness, others larger-than-life humanoids, and a few even resemble well-known threats within the Drift. As such, a particular driftspun might deal a dif erent type of damage with its attacks or af ect foes dif erently with its plot twist ability."
         }
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Atrocite",
+        "name": "Driftspun",
         "type": "stat_block",
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 2
+            "value": 4
         },
         "creature_type": {
             "type": "stat_block_section",
@@ -25,14 +25,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "creature_subtype",
-                    "name": "native"
+                    "name": "extraplanar"
                 }
             ],
-            "alignment": "Chaotic Evil",
-            "size": "Medium",
-            "cr": "10",
-            "role": "Spellcaster",
-            "xp": 9600
+            "alignment": "Neutral",
+            "size": "Huge",
+            "cr": "9",
+            "role": "Expert",
+            "xp": 6400
         },
         "senses": {
             "type": "stat_block_section",
@@ -40,7 +40,7 @@
             "perception": {
                 "type": "stat_block_section",
                 "subtype": "perception",
-                "value": 19
+                "value": 17
             },
             "special_senses": [
                 {
@@ -57,7 +57,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "life"
+                            "name": "thought"
                         }
                     ],
                     "name": "blindsense"
@@ -76,52 +76,88 @@
                 }
             ]
         },
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "settingscape",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "30 ft.",
+                    "range": 30,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 18",
+                    "save_type": "Will",
+                    "dc": 18
+                }
+            }
+        ],
         "defense": {
             "type": "stat_block_section",
             "subtype": "defense",
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 147
+                "hp": 120
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 23,
+                "eac": 21,
                 "kac": 22
             },
             "saves": {
                 "type": "stat_block_section",
                 "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "\u20134 against mind-af ecting ef ects"
+                    }
+                ],
                 "fort": {
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 9
+                    "value": 10
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 9
+                    "value": 8
                 },
                 "will": {
                     "name": "Will",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 15
+                    "value": 12
                 }
             },
-            "immunities": [
+            "defensive_abilities": [
                 {
                     "type": "stat_block_section",
-                    "subtype": "immunity",
-                    "name": "poison"
-                },
+                    "subtype": "defensive_ability",
+                    "name": "void adaptation"
+                }
+            ],
+            "dr": {
+                "type": "stat_block_section",
+                "subtype": "dr",
+                "value": 10,
+                "name": "\u2014"
+            },
+            "weaknesses": [
                 {
                     "type": "stat_block_section",
-                    "subtype": "immunity",
-                    "name": "vacuum"
+                    "subtype": "weakness",
+                    "name": "conflicting accounts"
                 }
             ]
         },
@@ -135,19 +171,19 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "text": "30 ft.",
                         "movement_type": "walk",
-                        "value": 40
+                        "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
-                        "maneuverability": "average",
-                        "text": "fly 40 ft.",
+                        "maneuverability": "perfect",
+                        "text": "fly 30 ft.",
                         "movement_type": "fly",
-                        "value": 40
+                        "value": 30
                     }
                 ]
             },
@@ -157,65 +193,47 @@
                     "subtype": "attack",
                     "attack_type": "melee",
                     "name": "slam",
-                    "bonus": 17,
+                    "bonus": 18,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "2d8+15",
+                            "formula": "3d4+15",
                             "damage_type": "Bludgeoning",
                             "damage_type_text": "B"
                         }
                     ]
                 }
             ],
-            "ranged": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "attack",
-                    "attack_type": "ranged",
-                    "name": "void bolt",
-                    "bonus": 19,
-                    "saving_throw": {
-                        "type": "stat_block_section",
-                        "subtype": "save_dc",
-                        "text": "DC 19",
-                        "dc": 19
-                    },
-                    "damage": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "formula": "3d4+10",
-                            "damage_type": "Electricity",
-                            "damage_type_text": "E"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "critical": true,
-                            "effect": "severe wound"
-                        }
-                    ]
-                }
-            ],
+            "space": "15",
+            "reach": {
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "15"
+            },
             "offensive_abilities": [
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "name": "words of destruction"
+                    "name": "plot twist",
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    }
                 }
             ]
         },
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
-            "str": 5,
-            "dex": 2,
-            "con": 2,
-            "int": 0,
-            "wis": 3,
-            "cha": 8,
+            "str": 6,
+            "dex": 4,
+            "con": 3,
+            "int": -3,
+            "wis": 1,
+            "cha": 3,
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
@@ -223,20 +241,45 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 17,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+23 to fly"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
                         "name": "Intimidate",
-                        "value": 24
+                        "value": 17
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Mysticism",
-                        "value": 24
+                        "name": "Piloting",
+                        "value": 17
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Sense Motive",
-                        "value": 19
+                        "name": "Stealth",
+                        "value": 17
                     }
                 ]
             },
@@ -247,26 +290,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Abyssal"
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "Common"
+                        "name": "truespeech"
                     }
                 ],
                 "communication_abilities": [
                     {
                         "type": "stat_block_section",
                         "subtype": "communication_ability",
-                        "modifiers": [
-                            {
-                                "type": "stat_block_section",
-                                "subtype": "modifier",
-                                "name": "100 ft."
-                            }
-                        ],
-                        "name": "telepathy"
+                        "name": "telepathy 100 ft"
                     }
                 ]
             },
@@ -274,30 +305,38 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "no breath"
+                    "name": "spaceflight"
                 }
             ]
         },
         "ecology": {
             "type": "stat_block_section",
             "subtype": "ecology",
-            "environment": "any",
-            "organization": "solitary or cult (1 plus 13\u201320 cultists)"
+            "environment": "the Drift",
+            "organization": "solitary, pair, or anthology (3\u20136)"
         },
         "special_abilities": [
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "As a ranged attack, an atrocite can fire a bolt of mystical electricity that has a range increment of 60 feet. This damage has the force descriptor.",
-                "name": "Void Bolt",
+                "text": "As a creature formed mainly from thoughts and stories, a driftspun is susceptible to psychic energy. It takes a \u20134 penalty to saves against mind-affecting spells and abilities, and when it fails a save against such an effect, it loses its damage reduction for 1 round.",
+                "name": "Conflicting Accounts",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, a driftspun can manipulate its surroundings to confound and hinder opponents. All creatures except for the driftspun in the driftspun's aura must succeed a DC 18 Fortitude save or suffer one of the following ef ects (chosen by the driftspun) for 1d4 rounds (or 1 round if they disbelieved the settingscape).<br/><i>Quake</i>: The affected creature treats the area of the driftspun's settingscape as difficult terrain.<br/><i>Ripple</i>: The affected creature is flat-footed.<br/><i>Shift</i>: The affected creature is off-target.",
+                "name": "Plot Twist",
                 "ability_type": "Supernatural",
                 "ability_type_abbrev": "Su"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "Once per day as a swift action, the many mouths of an atrocite can speak words of total devastation. For the next 3 rounds, any chaotic evil worshipper of the Devourer within 60 feet adds the wound critical hit effect to all its attacks (in addition to any existing critical hit effect); if an attack already has the wound critical hit effect, it gains the severe wound critical hit effect instead. If the atrocite takes damage at any point during this 3-round period, the effects of its words of destruction end immediately.",
-                "name": "Words of Destruction",
+                "text": "A driftspun surrounds itself with a psychic aura with the ef ects of a constant holographic terrain spell (CL 9th), changing the appearance of the environment and any items and structures within 30 feet to match the story that manifested the driftspun. Creatures that succeed at a DC 18 Will save to disbelieve this holographic terrain are immune to this driftspun's aura for 24 hours.",
+                "name": "Settingscape",
                 "ability_type": "Supernatural",
                 "ability_type_abbrev": "Su"
             }
@@ -306,25 +345,14 @@
     "sources": [
         {
             "type": "source",
-            "name": "Starfinder Dead Suns Adventure Path",
+            "name": "Starfinder #49: A Light in the Dark",
             "link": {
                 "type": "link",
-                "name": "Starfinder Dead Suns Adventure Path pg. 265",
-                "alt": "Starfinder Dead Suns Adventure Path pg. 265",
-                "href": "https://paizo.com/products/btq02c0y"
+                "name": "Starfinder #49: A Light in the Dark pg. 58",
+                "alt": "Starfinder #49: A Light in the Dark pg. 58",
+                "href": "https://paizo.com/products/btq02eah?Starfinder-Adventure-Path-49-A-Light-in-the-Dark"
             },
-            "page": 265
-        },
-        {
-            "type": "source",
-            "name": "Starfinder #4: The Ruined Clouds",
-            "link": {
-                "type": "link",
-                "name": "Starfinder #4: The Ruined Clouds pg. 56",
-                "alt": "Starfinder #4: The Ruined Clouds pg. 56",
-                "href": "https://paizo.com/products/btpy9zkj?Starfinder-Adventure-Path-The-Ruined-Clouds"
-            },
-            "page": 56
+            "page": 58
         }
     ]
 }

@@ -1,31 +1,50 @@
 {
-    "name": "Gatecrasher",
+    "name": "Alkainan",
     "type": "alien",
     "sections": [
         {
             "name": "Description",
             "type": "section",
-            "html": "Gatecrashers are undead abominations, horrific blends of powered armor and necromancy-infused flesh. These undead monstrosities revel in combat, seeking it out wherever possible."
+            "html": "Alkainans are badger-like humanoids with metallic fur who have recently taken up residence on the arboreal planet of Volunisp in Near Space, somewhat near the Veskarium. Alkainan mythology speaks of their home world, a realm of naturally occurring metallic spires somewhere in the Vast, and how they fled a \u201cgreat evil\u201d that none can specify.<br/> Current alkainan society consists of three castes: the byggja, custodians of the Volunisp settlements; the leita, who take to the stars to meet and trade with other species; and the matriarchs, female alkainan leaders and ministers of marriage and other spiritual matters. While most matriarchs remain on Volunisp, a few travel with leita on their chrome-plated starships.<br/> Part of an alkainan''s physiology depends on the types of metals consumed by their ancestors on their home world, granting unusual coloring to their fur and unique defenses."
         }
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Gatecrasher",
+        "name": "Alkainan",
         "type": "stat_block",
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 5
+            "value": 7
         },
         "creature_type": {
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead",
-            "alignment": "Lawful Evil",
-            "size": "Large",
-            "cr": "10",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "alkainan"
+                }
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "5",
             "role": "Combatant",
-            "xp": 9600
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Alkainan"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "soldier"
+                }
+            ],
+            "xp": 1600
         },
         "senses": {
             "type": "stat_block_section",
@@ -33,20 +52,13 @@
             "perception": {
                 "type": "stat_block_section",
                 "subtype": "perception",
-                "value": 19
+                "value": 11
             },
             "special_senses": [
                 {
                     "type": "stat_block_section",
                     "subtype": "special_sense",
-                    "range": {
-                        "type": "stat_block_section",
-                        "subtype": "range",
-                        "range": 60,
-                        "text": "60 ft.",
-                        "unit": "feet"
-                    },
-                    "name": "darkvision"
+                    "name": "low-light vision"
                 }
             ]
         },
@@ -56,13 +68,13 @@
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 198
+                "hp": 70
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 24,
-                "kac": 25
+                "eac": 17,
+                "kac": 20
             },
             "saves": {
                 "type": "stat_block_section",
@@ -71,28 +83,21 @@
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 12
+                    "value": 7
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 12
+                    "value": 5
                 },
                 "will": {
                     "name": "Will",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 11
+                    "value": 6
                 }
-            },
-            "immunities": [
-                {
-                    "type": "stat_block_section",
-                    "subtype": "immunity",
-                    "name": "undead immunities"
-                }
-            ]
+            }
         },
         "offense": {
             "type": "stat_block_section",
@@ -104,9 +109,16 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "20 ft.",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "20 ft. in armor"
+                            }
+                        ],
+                        "text": "30 ft.",
                         "movement_type": "walk",
-                        "value": 20
+                        "value": 30
                     }
                 ]
             },
@@ -115,21 +127,27 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "melee",
-                    "name": "advanced swoop hammer",
-                    "bonus": 22,
+                    "name": "unarmed strike",
+                    "bonus": 14,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 13",
+                        "dc": 13
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d10+18",
-                            "damage_type": "Bludgeoning",
-                            "damage_type_text": "B"
+                            "formula": "1d3+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
                             "critical": true,
-                            "effect": "knockdown"
+                            "effect": "wound"
                         }
                     ]
                 }
@@ -139,8 +157,24 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "ranged",
-                    "name": "aurora shock caster",
-                    "bonus": 19,
+                    "name": "advanced rail gun",
+                    "bonus": 11,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+5",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "shock grenade II",
+                    "bonus": 11,
                     "range": {
                         "type": "stat_block_section",
                         "subtype": "range",
@@ -151,36 +185,52 @@
                     "saving_throw": {
                         "type": "stat_block_section",
                         "subtype": "save_dc",
-                        "text": "DC 19",
-                        "dc": 19
+                        "text": "DC 13",
+                        "dc": 13
                     },
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "2d12+10",
-                            "damage_type": "Electricity",
-                            "damage_type_text": "E"
+                            "effect": "explode"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "effect": "explode"
+                            "formula": "1d12",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
                         }
                     ]
                 }
             ],
-            "space": "10 ft.",
-            "reach": {
-                "type": "stat_block_section",
-                "subtype": "reach",
-                "value": "10 ft."
-            },
             "offensive_abilities": [
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "name": "juggernaut of destruction"
+                    "name": "coordinated shot"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "squad"
+                        }
+                    ],
+                    "name": "fighting styles"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "quick backup"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "unarmed mauler"
                 }
             ]
         },
@@ -188,12 +238,17 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "advanced swoop hammer"
+                "name": "enforcer armor I"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "aurora shock caster"
+                "name": "advanced rail gun"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "15 rounds"
             },
             {
                 "type": "stat_block_section",
@@ -202,21 +257,28 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
-                        "name": "40 charges each"
+                        "name": "2"
                     }
                 ],
-                "name": "3 high-capacity batteries"
+                "name": "shock grenades II"
             }
         ],
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
-            "str": 8,
-            "dex": 5,
-            "con": null,
-            "int": 0,
-            "wis": 3,
-            "cha": 1,
+            "str": 5,
+            "dex": 3,
+            "con": 2,
+            "int": 1,
+            "wis": -1,
+            "cha": 0,
+            "feats": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Coordinated Shot"
+                }
+            ],
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
@@ -225,19 +287,19 @@
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Athletics",
-                        "value": 19
+                        "value": 16
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Engineering",
-                        "value": 19
+                        "value": 11
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Intimidate",
-                        "value": 24
+                        "name": "Survival",
+                        "value": 11
                     }
                 ]
             },
@@ -248,12 +310,12 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
+                        "name": "Alkainish"
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Eoxian"
+                        "name": "Vesk"
                     }
                 ]
             },
@@ -265,75 +327,31 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "forcepack"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "haste circuit"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "targeting computer"
+                            "name": "ferrous"
                         }
                     ],
-                    "name": "integral upgrades"
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "other_ability",
-                    "name": "unliving"
+                    "name": "metallic bloodline"
                 }
             ]
         },
         "ecology": {
             "type": "stat_block_section",
             "subtype": "ecology",
-            "environment": "any",
-            "organization": "solitary, pair, or squad (3\u20136)"
-        },
-        "special_abilities": [
-            {
-                "type": "stat_block_section",
-                "subtype": "special_ability",
-                "text": "A gatecrasher can install up to three armor upgrades (each with an item level no greater than the gatecrasher\u2019s CR) into its heavily armored frame. It\u2019s treated as wearing heavy or powered armor for this purpose. Its armor upgrades cannot be damaged or removed unless the gatecrasher is destroyed and leaves intact physical remains.",
-                "name": "Integral Upgrades",
-                "ability_type": "Supernatural",
-                "ability_type_abbrev": "Su"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "special_ability",
-                "text": "A gatecrasher can use a two-handed weapon in one hand without taking a penalty, and when wielding two such weapons, as a full action can attack with each weapon once (taking a \u20136 penalty to each attack roll and to the saving throw DCs of any special properties or critical hit effects the weapons have), even if either weapon has the unwieldy weapon special property. A gatecrasher can use any weapons designed for creatures within one size category of its size without penalty.",
-                "name": "Juggernaut of Destruction",
-                "ability_type": "Extraordinary",
-                "ability_type_abbrev": "Ex"
-            }
-        ]
+            "environment": "any (Volunisp)",
+            "organization": "solitary, pair, or community (12\u201348 with 2\u20134 leaders)"
+        }
     },
     "sources": [
         {
             "type": "source",
-            "name": "Starfinder Dead Suns Adventure Path",
+            "name": "Starfinder #49: A Light in the Dark",
             "link": {
                 "type": "link",
-                "name": "Starfinder Dead Suns Adventure Path pg. 269",
-                "alt": "Starfinder Dead Suns Adventure Path pg. 269",
-                "href": "https://paizo.com/products/btq02c0y"
+                "name": "Starfinder #49: A Light in the Dark pg. 56",
+                "alt": "Starfinder #49: A Light in the Dark pg. 56",
+                "href": "https://paizo.com/products/btq02eah?Starfinder-Adventure-Path-49-A-Light-in-the-Dark"
             },
-            "page": 269
-        },
-        {
-            "type": "source",
-            "name": "Starfinder #6: Empire of Bones",
-            "link": {
-                "type": "link",
-                "name": "Starfinder #6: Empire of Bones pg. 57",
-                "alt": "Starfinder #6: Empire of Bones pg. 57",
-                "href": "https://paizo.com/products/btpya1ai/"
-            },
-            "page": 57
+            "page": 56
         }
     ]
 }

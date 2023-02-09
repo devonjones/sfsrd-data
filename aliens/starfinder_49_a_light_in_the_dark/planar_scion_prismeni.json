@@ -1,31 +1,50 @@
 {
-    "name": "Marrowblight",
+    "name": "Planar Scion, Prismeni",
     "type": "alien",
     "sections": [
         {
             "name": "Description",
             "type": "section",
-            "html": "Marrowblights are muscular undead monstrosities filled with hate. They typically arise from brawny humanoids that were exposed to strange radiation or arcane energy that painfully warped their flesh at the moment of their demise, creating hideous bone spurs that protrude from the creatures\u2019 backs, cheeks, jaws, and shoulders. Marrowblights can use these spurs as weapons, as they drip with the disease that courses through the creature\u2019s undead bones like marrow. <br/>Scientifically advanced planets, such as Eox in the Pact Worlds, have pinpointed the biology-warping processes required to create marrowblights, and some elebrians have willingly succumbed to this horrific undead fate. On Eox, naturally occurring marrowblights created during the planet\u2019s cataclysm still exist. These are typically among the universe\u2019s most vicious and hateful undead, eschewing society and living creatures in particular. Sometimes, though, such marrowblights ally with forces that seek to assert and spread the superiority of undead creatures throughout the universe and beyond, including the Corpse Fleet and those who sympathize with the exiled navy.<br/>Marrowblights are typically 8 to 10 feet tall\u2014including the horrific bone spurs that protrude from their backs\u2014and weigh upward of 300 pounds."
+            "html": "Prismenis are planar scions touched by the Drift, the spectra native to that plane, or Triune. While they look much like their mortal parent species, they have odd features that set them apart from their peers, such as metallic gray eyes, rainbow-colored locks, thick cords or wire for hair, or f esh that shimmers with dif erent colors in various light.<br/> Most prismenis were born in the Drift. Others found themselves transformed into a prismeni after prolonged close contact with a spectra or being present at a spectra gathering. Very rarely, prismenis are naturally born to prominent or particularly devout Triunites, or else spontaneously transformed into a prismeni after performing a dangerous task on behalf of Triune."
         }
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Marrowblight",
+        "name": "Planar Scion, Prismeni",
         "type": "stat_block",
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 4
+            "value": 3
         },
         "creature_type": {
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead",
-            "alignment": "Chaotic Evil",
+            "creature_type": "Outsider",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "native"
+                }
+            ],
+            "alignment": "Neutral Good",
             "size": "Medium",
-            "cr": "7",
-            "role": "Combatant",
-            "xp": 3200
+            "cr": "4",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Prismeni"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "technomancer"
+                }
+            ],
+            "xp": 1200
         },
         "senses": {
             "type": "stat_block_section",
@@ -33,7 +52,7 @@
             "perception": {
                 "type": "stat_block_section",
                 "subtype": "perception",
-                "value": 14
+                "value": 10
             },
             "special_senses": [
                 {
@@ -56,13 +75,13 @@
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 105
+                "hp": 43
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 19,
-                "kac": 21
+                "eac": 15,
+                "kac": 16
             },
             "saves": {
                 "type": "stat_block_section",
@@ -71,13 +90,13 @@
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 9
+                    "value": 4
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 9
+                    "value": 4
                 },
                 "will": {
                     "name": "Will",
@@ -86,11 +105,12 @@
                     "value": 8
                 }
             },
-            "immunities": [
+            "resistances": [
                 {
                     "type": "stat_block_section",
-                    "subtype": "immunity",
-                    "name": "undead immunities"
+                    "subtype": "resistance",
+                    "name": "electricity",
+                    "value": 5
                 }
             ]
         },
@@ -115,71 +135,40 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "melee",
-                    "name": "claw",
-                    "bonus": 17,
+                    "name": "tactical dueling sword",
+                    "bonus": 6,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "1d8+12",
+                            "formula": "1d6+4",
                             "damage_type": "Slashing",
                             "damage_type_text": "S"
                         }
                     ]
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "attack",
-                    "attack_type": "melee",
-                    "name": "spur",
-                    "bonus": 17,
-                    "damage": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "formula": "1d8+12",
-                            "damage_type": "Piercing",
-                            "damage_type_text": "P"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "effect": "red ache"
-                        }
-                    ]
                 }
             ],
-            "multiattack": [
+            "ranged": [
                 {
                     "type": "stat_block_section",
                     "subtype": "attack",
-                    "attack_type": "multiattack",
-                    "name": "claw",
-                    "bonus": 12,
+                    "attack_type": "ranged",
+                    "name": "explorer handcoil",
+                    "bonus": 8,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "1d8+12"
-                        }
-                    ]
-                },
-                {
-                    "type": "stat_block_section",
-                    "subtype": "attack",
-                    "attack_type": "multiattack",
-                    "name": "spur",
-                    "bonus": 12,
-                    "damage": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "formula": "1d8+12"
+                            "formula": "1d6+4",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "effect": "red ache"
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "arc"
                         }
                     ]
                 }
@@ -188,19 +177,48 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "name": "pounce"
+                    "name": "Drift Hop"
                 }
             ]
         },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "basic lashunta tempweave"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "explorer handcoil"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "20 charges each"
+                    }
+                ],
+                "name": "2 batteries"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical dueling sword"
+            }
+        ],
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
-            "str": 5,
-            "dex": 4,
-            "con": null,
-            "int": 2,
+            "str": 0,
+            "dex": 3,
+            "con": 0,
+            "int": 5,
             "wis": 1,
-            "cha": -1,
+            "cha": 1,
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
@@ -208,20 +226,20 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Acrobatics",
-                        "value": 14
+                        "name": "Computers",
+                        "value": 15
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Athletics",
-                        "value": 14
+                        "name": "Engineering",
+                        "value": 10
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
-                        "name": "Intimidate",
-                        "value": 19
+                        "name": "Mysticism",
+                        "value": 15
                     }
                 ]
             },
@@ -232,12 +250,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "Eoxian"
+                        "name": "Common and 5 others"
                     }
                 ]
             },
@@ -245,49 +258,57 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "name": "unliving"
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "countertech"
+                        }
+                    ],
+                    "name": "magic hacks"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "tattoo"
+                        }
+                    ],
+                    "name": "spell cache"
                 }
             ]
         },
         "ecology": {
             "type": "stat_block_section",
             "subtype": "ecology",
-            "environment": "any ruins (Eox)",
-            "organization": "solitary"
+            "environment": "any",
+            "organization": "solitary, pair, or family (3\u20136)"
         },
         "special_abilities": [
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "As a standard action, a marrowblight can leap up to 15 feet into an empty space, provoking attacks of opportunity as normal for this movement. Each creature in a square adjacent to the marrowblight at the end of its movement must succeed at a DC 15 Reflex saving throw or gain the off-target condition for 1 round. Creatures that fail this check by 10 or more are also knocked prone. The marrowblight can exclude a number of allies from this effect equal to its Intelligence modifier (2 for most marrowblights).",
-                "name": "Pounce",
-                "ability_type": "Extraordinary",
-                "ability_type_abbrev": "Ex"
+                "text": "Once per day as a move action, a prismeni can teleport 30 feet. The prismeni can't bring other creatures along, and if a solid object occupies the arrival point, the ability fails without expending its daily use. If the prismeni uses this ability while in the Drift, the distance they can teleport increases to 60 feet.",
+                "name": "Drift Hop",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
             }
         ]
     },
     "sources": [
         {
             "type": "source",
-            "name": "Starfinder Dead Suns Adventure Path",
+            "name": "Starfinder #49: A Light in the Dark",
             "link": {
                 "type": "link",
-                "name": "Starfinder Dead Suns Adventure Path pg. 275",
-                "alt": "Starfinder Dead Suns Adventure Path pg. 275",
-                "href": "https://paizo.com/products/btq02c0y"
+                "name": "Starfinder #49: A Light in the Dark pg. 60",
+                "alt": "Starfinder #49: A Light in the Dark pg. 60",
+                "href": "https://paizo.com/products/btq02eah?Starfinder-Adventure-Path-49-A-Light-in-the-Dark"
             },
-            "page": 275
-        },
-        {
-            "type": "source",
-            "name": "Starfinder #3: Splintered Worlds",
-            "link": {
-                "type": "link",
-                "name": "Starfinder #3: Splintered Worlds pg. 55",
-                "alt": "Starfinder #3: Splintered Worlds pg. 55",
-                "href": "https://paizo.com/products/btpy9xa2?Starfinder-Adventure-Path-Splintered-Worlds"
-            },
-            "page": 55
+            "page": 60
         }
     ]
 }

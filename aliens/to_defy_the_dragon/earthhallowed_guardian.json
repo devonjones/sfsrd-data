@@ -1,27 +1,34 @@
 {
-    "name": "Gatecrasher",
+    "name": "Earthhallowed Guardian",
     "type": "alien",
     "sections": [
         {
             "name": "Description",
             "type": "section",
-            "html": "Gatecrashers are undead abominations, horrific blends of powered armor and necromancy-infused flesh. These undead monstrosities revel in combat, seeking it out wherever possible."
+            "html": "Ancient Genrovians developed a technique to infuse wellspring energy into stone statues, magically animating them to act as fissure guardians. Though their method of creation has been lost to time, many of these constructs still exist, standing sentinel over the cracks from which Genrovis draws its power. Modern Genrovians respect the earthhallowed guardians for their history, but their task of defending the wellspring fissures\u2014now at Ayleth's behest\u2014in an environment where energy is scarce causes many citizens to view them with resentment. Legend says those who use energy wastefully draw the ire of the earthhallowed guardians, and egregious offenders might soon hear admonishing stone hands knocking at their doors\u2014although as mindless constructs, the earthhallowed guardians are unlikely to be capable of sensing such activities.<br/> An earthhallowed guardian's form can vary as much as the stone it was carved from. Most are large humanoid figures, standing about 15 feet tall and carved from marble or granite. Brilliant white light emitted by the wellspring energy encased within constantly glows from a guardian's eyes and seams. An earthhallowed guardian requires ambient energy from the wellspring to function and powers down completely if taken more than a mile or two away from a wellspring fissure."
         }
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Gatecrasher",
+        "name": "Earthhallowed Guardian",
         "type": "stat_block",
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 5
+            "value": 3
         },
         "creature_type": {
             "type": "stat_block_section",
             "subtype": "creature_type",
-            "creature_type": "Undead",
-            "alignment": "Lawful Evil",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                }
+            ],
+            "alignment": "Neutral",
             "size": "Large",
             "cr": "10",
             "role": "Combatant",
@@ -47,6 +54,11 @@
                         "unit": "feet"
                     },
                     "name": "darkvision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
                 }
             ]
         },
@@ -56,12 +68,12 @@
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 198
+                "hp": 165
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 24,
+                "eac": 23,
                 "kac": 25
             },
             "saves": {
@@ -71,28 +83,48 @@
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 12
+                    "value": 10
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 12
+                    "value": 7
                 },
                 "will": {
                     "name": "Will",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 11
+                    "value": 10
                 }
             },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "within 60 feet of a wellspring fissure"
+                        }
+                    ],
+                    "name": "fast healing",
+                    "value": 5
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "name": "undead immunities"
+                    "name": "construct immunities"
                 }
-            ]
+            ],
+            "sr": {
+                "type": "stat_block_section",
+                "subtype": "sr",
+                "value": 21
+            }
         },
         "offense": {
             "type": "stat_block_section",
@@ -104,9 +136,9 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "20 ft.",
+                        "text": "30 ft.",
                         "movement_type": "walk",
-                        "value": 20
+                        "value": 30
                     }
                 ]
             },
@@ -115,13 +147,19 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "melee",
-                    "name": "advanced swoop hammer",
-                    "bonus": 22,
+                    "name": "slam",
+                    "bonus": 23,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    },
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d10+18",
+                            "formula": "2d10+18",
                             "damage_type": "Bludgeoning",
                             "damage_type_text": "B"
                         },
@@ -129,7 +167,7 @@
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
                             "critical": true,
-                            "effect": "knockdown"
+                            "effect": "siphon charge"
                         }
                     ]
                 }
@@ -139,33 +177,21 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "ranged",
-                    "name": "aurora shock caster",
-                    "bonus": 19,
-                    "range": {
-                        "type": "stat_block_section",
-                        "subtype": "range",
-                        "text": "15 ft.",
-                        "range": 15,
-                        "unit": "feet"
-                    },
-                    "saving_throw": {
-                        "type": "stat_block_section",
-                        "subtype": "save_dc",
-                        "text": "DC 19",
-                        "dc": 19
-                    },
+                    "name": "wellspring lance",
+                    "bonus": 20,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "2d12+10",
-                            "damage_type": "Electricity",
-                            "damage_type_text": "E"
+                            "formula": "2d10+18",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "effect": "explode"
+                            "critical": true,
+                            "effect": "burn"
                         }
                     ]
                 }
@@ -180,43 +206,32 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
-                    "name": "juggernaut of destruction"
+                    "name": "radiant gaze",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "60 ft.",
+                        "range": 60,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    }
                 }
             ]
         },
-        "gear": [
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "advanced swoop hammer"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "aurora shock caster"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "3 high-capacity batteries"
-            }
-        ],
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
             "str": 8,
-            "dex": 5,
+            "dex": 3,
             "con": null,
-            "int": 0,
-            "wis": 3,
-            "cha": 1,
+            "int": null,
+            "wis": 5,
+            "cha": 0,
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
@@ -225,35 +240,13 @@
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Athletics",
-                        "value": 19
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "skill",
-                        "name": "Engineering",
-                        "value": 19
+                        "value": 24
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Intimidate",
-                        "value": 24
-                    }
-                ]
-            },
-            "languages": {
-                "type": "stat_block_section",
-                "subtype": "languages",
-                "languages": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "Common"
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "Eoxian"
+                        "value": 19
                     }
                 ]
             },
@@ -261,24 +254,7 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
-                    "modifiers": [
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "forcepack"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "haste circuit"
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "modifier",
-                            "name": "targeting computer"
-                        }
-                    ],
-                    "name": "integral upgrades"
+                    "name": "mindless"
                 },
                 {
                     "type": "stat_block_section",
@@ -290,23 +266,31 @@
         "ecology": {
             "type": "stat_block_section",
             "subtype": "ecology",
-            "environment": "any",
-            "organization": "solitary, pair, or squad (3\u20136)"
+            "environment": "any wellspring (Genrovis)",
+            "organization": "solitary, pair, or brigade (3\u20136)"
         },
         "special_abilities": [
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A gatecrasher can install up to three armor upgrades (each with an item level no greater than the gatecrasher\u2019s CR) into its heavily armored frame. It\u2019s treated as wearing heavy or powered armor for this purpose. Its armor upgrades cannot be damaged or removed unless the gatecrasher is destroyed and leaves intact physical remains.",
-                "name": "Integral Upgrades",
+                "text": "The eyes of an earthhallowed guardian emit a bright glow from the wellspring energy infused within. A creature who can see an earthhallowed guardian must succeed at a DC 17 Fortitude saving throw against this ability, or it's blinded until the beginning of its next turn.",
+                "name": "Radiant Gaze",
                 "ability_type": "Supernatural",
                 "ability_type_abbrev": "Su"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A gatecrasher can use a two-handed weapon in one hand without taking a penalty, and when wielding two such weapons, as a full action can attack with each weapon once (taking a \u20136 penalty to each attack roll and to the saving throw DCs of any special properties or critical hit effects the weapons have), even if either weapon has the unwieldy weapon special property. A gatecrasher can use any weapons designed for creatures within one size category of its size without penalty.",
-                "name": "Juggernaut of Destruction",
+                "text": "A creature who takes critical hit damage from an earthhallowed guardian must attempt a DC 17 Reflex save. On a failure, all charges are drained from the battery of a technological weapon the creature is wielding; if the creature is wielding more than one technological weapon, the weapon drained is determined randomly. If the earthhallowed guardian successfully siphons charges this way, it gains the benefits of haste until the end of its next turn.",
+                "name": "Siphon Charge",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a swift action, an earthhallowed guardian can form nearby wellspring energy into a superheated lance that functions as a thrown weapon with a range of 40 feet. The earthhallowed guardian must be within 60 feet of a wellspring fissure to use this ability.",
+                "name": "Wellspring Lance",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"
             }
@@ -315,25 +299,14 @@
     "sources": [
         {
             "type": "source",
-            "name": "Starfinder Dead Suns Adventure Path",
+            "name": "To Defy the Dragon",
             "link": {
                 "type": "link",
-                "name": "Starfinder Dead Suns Adventure Path pg. 269",
-                "alt": "Starfinder Dead Suns Adventure Path pg. 269",
-                "href": "https://paizo.com/products/btq02c0y"
+                "name": "To Defy the Dragon pg. 62",
+                "alt": "To Defy the Dragon pg. 62",
+                "href": "https://paizo.com/products/btq02d4x?Starfinder-Adventure-To-Defy-the-Dragon"
             },
-            "page": 269
-        },
-        {
-            "type": "source",
-            "name": "Starfinder #6: Empire of Bones",
-            "link": {
-                "type": "link",
-                "name": "Starfinder #6: Empire of Bones pg. 57",
-                "alt": "Starfinder #6: Empire of Bones pg. 57",
-                "href": "https://paizo.com/products/btpya1ai/"
-            },
-            "page": 57
+            "page": 62
         }
     ]
 }
