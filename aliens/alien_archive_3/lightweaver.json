@@ -113,12 +113,17 @@
                     "value": 17
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "cold iron"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/cold iron",
+                    "damage_types": [
+                        "cold iron"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -137,7 +142,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     },
@@ -147,7 +152,7 @@
                         "ability_type": "Extraordinary",
                         "ability_type_abbrev": "Ex",
                         "maneuverability": "perfect",
-                        "text": "fly 50 ft"
+                        "name": "fly 50 ft"
                     }
                 ]
             },

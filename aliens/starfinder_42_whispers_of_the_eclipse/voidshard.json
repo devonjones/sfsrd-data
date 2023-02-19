@@ -114,12 +114,17 @@
                     "value": 5
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -150,7 +155,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -160,7 +165,7 @@
                         "ability_type": "Extraordinary",
                         "ability_type_abbrev": "Ex",
                         "maneuverability": "average",
-                        "text": "fly 60 ft.",
+                        "name": "fly 60 ft.",
                         "movement_type": "fly",
                         "value": 60
                     }

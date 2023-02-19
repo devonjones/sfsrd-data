@@ -130,12 +130,17 @@
                     "name": "molten body"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -166,7 +171,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }

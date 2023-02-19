@@ -168,7 +168,7 @@
                         "ability_type": "Extraordinary",
                         "ability_type_abbrev": "Ex",
                         "maneuverability": "perfect",
-                        "text": "fly 120 ft.",
+                        "name": "fly 120 ft.",
                         "movement_type": "fly",
                         "value": 120
                     }
@@ -252,23 +252,37 @@
                         "type": "stat_block_section",
                         "subtype": "language",
                         "name": "Hallas"
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "telepathy 120 ft. and telepathy"
                     }
                 ],
-                "modifiers": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "anywhere on same plane"
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "120 ft.",
+                            "range": 120,
+                            "unit": "feet"
+                        }
                     },
                     {
                         "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "other hallajins only"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "anywhere on same plane"
+                            },
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "other hallajins only"
+                            }
+                        ],
+                        "name": "telepathy"
                     }
                 ]
             },

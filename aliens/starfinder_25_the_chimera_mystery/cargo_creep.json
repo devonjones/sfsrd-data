@@ -93,12 +93,17 @@
                     "name": "molecular mimicry"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "weaknesses": [
                 {
                     "type": "stat_block_section",
@@ -117,14 +122,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "15 ft.",
+                        "name": "15 ft.",
                         "movement_type": "walk",
                         "value": 15
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 20 ft.",
+                        "name": "climb 20 ft.",
                         "movement_type": "climb",
                         "value": 20
                     }
@@ -229,14 +234,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ]
             },

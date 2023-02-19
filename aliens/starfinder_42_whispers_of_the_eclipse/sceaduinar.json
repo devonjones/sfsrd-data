@@ -129,12 +129,19 @@
                     "name": "void child"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "adamantine or good"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/adamantine or good",
+                    "conjunction": "or",
+                    "damage_types": [
+                        "adamantine",
+                        "good"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -166,20 +173,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 10
+                    "value": 10,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "sonic",
-                    "value": 10
+                    "value": 10,
+                    "name": "sonic"
                 }
             ],
             "sr": {
@@ -198,7 +205,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
@@ -208,7 +215,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "good",
-                        "text": "fly 90 ft.",
+                        "name": "fly 90 ft.",
                         "movement_type": "fly",
                         "value": 90
                     }

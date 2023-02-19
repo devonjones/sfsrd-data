@@ -117,12 +117,17 @@
                     "value": 10
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 3,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 3,
+                    "text": "3/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -141,14 +146,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "burrow 15 ft.",
+                        "name": "burrow 15 ft.",
                         "movement_type": "burrow",
                         "value": 15
                     }

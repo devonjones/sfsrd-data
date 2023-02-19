@@ -141,12 +141,17 @@
                     "name": "prayer scroll"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -163,8 +168,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -185,7 +190,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }

@@ -127,12 +127,17 @@
                     "value": 5
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "magic"
-            }
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ]
         },
         "offense": {
             "type": "stat_block_section",
@@ -144,7 +149,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }

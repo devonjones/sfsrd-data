@@ -115,12 +115,19 @@
                     "name": "swarm flight"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "wood and piercing"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/wood and piercing",
+                    "conjunction": "and",
+                    "damage_types": [
+                        "wood",
+                        "piercing"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -132,20 +139,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "sonic",
-                    "value": 10
+                    "value": 10,
+                    "name": "sonic"
                 }
             ],
             "weaknesses": [
@@ -166,14 +173,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "spider climb"
+                        "name": "spider climb"
                     }
                 ]
             },

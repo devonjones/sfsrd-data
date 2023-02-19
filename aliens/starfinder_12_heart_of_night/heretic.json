@@ -129,12 +129,17 @@
                     "value": 5
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 2,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 2,
+                    "text": "2/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -153,7 +158,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     }

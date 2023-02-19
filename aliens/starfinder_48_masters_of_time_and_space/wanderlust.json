@@ -147,12 +147,17 @@
                     "value": 10
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "magic"
-            }
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ]
         },
         "offense": {
             "type": "stat_block_section",
@@ -164,7 +169,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
@@ -174,7 +179,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 60 ft.",
+                        "name": "fly 60 ft.",
                         "movement_type": "fly",
                         "value": 60
                     }
@@ -264,7 +269,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Aklo"
+                        "name": "Aklo",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -279,13 +291,6 @@
                             "range": 120,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             }

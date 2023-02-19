@@ -107,8 +107,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 5
+                    "value": 5,
+                    "name": "acid"
                 }
             ]
         },
@@ -122,14 +122,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 20 ft.",
+                        "name": "climb 20 ft.",
                         "movement_type": "climb",
                         "value": 20
                     }
@@ -250,14 +250,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "cannot speak"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "cannot speak"
+                            }
+                        ]
                     }
                 ]
             }

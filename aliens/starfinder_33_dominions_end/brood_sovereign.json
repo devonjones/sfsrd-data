@@ -154,14 +154,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "20 ft.",
+                        "name": "20 ft.",
                         "movement_type": "walk",
                         "value": 20
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 60 ft.",
+                        "name": "swim 60 ft.",
                         "movement_type": "swim",
                         "value": 60
                     }
@@ -340,7 +340,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Sarcesian"
+                        "name": "Sarcesian",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -355,13 +362,6 @@
                             "range": 120,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             },

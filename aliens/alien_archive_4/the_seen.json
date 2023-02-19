@@ -150,7 +150,7 @@
                                 "name": "60 ft. when unobserved"
                             }
                         ],
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }
@@ -239,18 +239,25 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "languages": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "telepathy 100 ft."
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "other Seen only"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "other Seen only"
+                            }
+                        ],
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

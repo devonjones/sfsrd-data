@@ -139,18 +139,23 @@
                     "value": 10
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "resistances": [
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "sonic",
-                    "value": 10
+                    "value": 10,
+                    "name": "sonic"
                 }
             ]
         },
@@ -164,7 +169,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "5 ft.",
+                        "name": "5 ft.",
                         "movement_type": "walk",
                         "value": 5
                     }

@@ -111,12 +111,19 @@
                     "value": 13
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "cold iron and lawful"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/cold iron and lawful",
+                    "conjunction": "and",
+                    "damage_types": [
+                        "cold iron",
+                        "lawful"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -138,14 +145,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 10
+                    "value": 10,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 10
+                    "value": 10,
+                    "name": "fire"
                 }
             ],
             "sr": {
@@ -164,7 +171,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -174,7 +181,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 100 ft.",
+                        "name": "fly 100 ft.",
                         "movement_type": "fly",
                         "value": 100
                     }

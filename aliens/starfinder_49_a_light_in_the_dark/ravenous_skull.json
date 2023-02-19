@@ -87,12 +87,17 @@
                     "value": 3
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -116,7 +121,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "10 ft.",
+                        "name": "10 ft.",
                         "movement_type": "walk",
                         "value": 10
                     },
@@ -126,7 +131,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "average",
-                        "text": "fly 30 ft.",
+                        "name": "fly 30 ft.",
                         "movement_type": "fly",
                         "value": 30
                     }

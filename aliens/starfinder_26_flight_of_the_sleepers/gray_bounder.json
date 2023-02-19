@@ -111,7 +111,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     }
@@ -215,7 +215,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Aklo"
+                        "name": "Aklo",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -230,13 +237,6 @@
                             "range": 30,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             }

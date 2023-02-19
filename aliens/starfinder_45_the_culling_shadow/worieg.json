@@ -86,12 +86,17 @@
                     "value": 9
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "cold iron"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/cold iron",
+                    "damage_types": [
+                        "cold iron"
+                    ]
+                }
+            ],
             "sr": {
                 "type": "stat_block_section",
                 "subtype": "sr",
@@ -108,7 +113,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -122,7 +127,7 @@
                                 "name": "average"
                             }
                         ],
-                        "text": "fly 30 ft.",
+                        "name": "fly 30 ft.",
                         "movement_type": "fly",
                         "value": 30
                     }

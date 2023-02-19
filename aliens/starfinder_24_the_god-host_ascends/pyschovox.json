@@ -143,8 +143,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 }
             ]
         },
@@ -158,7 +158,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     },
@@ -172,7 +172,7 @@
                                 "name": "clumsy"
                             }
                         ],
-                        "text": "fly 20 ft.",
+                        "name": "fly 20 ft.",
                         "movement_type": "fly",
                         "value": 20
                     }
@@ -269,7 +269,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Shirren"
+                        "name": "Shirren",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -284,13 +291,6 @@
                             "range": 100,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             }

@@ -112,12 +112,17 @@
                     "value": 14
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "adamantine"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/adamantine",
+                    "damage_types": [
+                        "adamantine"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -136,14 +141,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "20 ft.",
+                        "name": "20 ft.",
                         "movement_type": "walk",
                         "value": 20
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "burrow 10 ft.",
+                        "name": "burrow 10 ft.",
                         "movement_type": "burrow",
                         "value": 10
                     },
@@ -153,7 +158,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 200 ft.",
+                        "name": "fly 200 ft.",
                         "movement_type": "fly",
                         "value": 200
                     }

@@ -130,7 +130,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }
@@ -209,11 +209,20 @@
                         "type": "stat_block_section",
                         "subtype": "language",
                         "name": "Katholbi"
-                    },
+                    }
+                ],
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "telepathy 100 ft."
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             }

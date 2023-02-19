@@ -117,12 +117,17 @@
                     "value": 15
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -159,14 +164,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 15
+                    "value": 15,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 15
+                    "value": 15,
+                    "name": "fire"
                 }
             ]
         },
@@ -180,7 +185,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "60 ft.",
+                        "name": "60 ft.",
                         "movement_type": "walk",
                         "value": 60
                     }

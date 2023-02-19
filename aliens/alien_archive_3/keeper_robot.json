@@ -117,12 +117,17 @@
                     "name": "unflankable"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 15,
-                "name": "adamantine"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 15,
+                    "text": "15/adamantine",
+                    "damage_types": [
+                        "adamantine"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -148,14 +153,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "spider climb"
+                        "name": "spider climb"
                     }
                 ]
             },

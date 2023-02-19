@@ -117,7 +117,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }
@@ -217,7 +217,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -232,13 +239,6 @@
                             "range": 60,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             }

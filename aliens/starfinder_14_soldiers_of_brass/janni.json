@@ -98,26 +98,26 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 5
+                    "value": 5,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 5
+                    "value": 5,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 5
+                    "value": 5,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 5
+                    "value": 5,
+                    "name": "fire"
                 }
             ]
         },
@@ -131,7 +131,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -141,7 +141,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 20 ft.",
+                        "name": "fly 20 ft.",
                         "movement_type": "fly",
                         "value": 20
                     }
@@ -276,7 +276,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "2 additional languages"
+                        "name": "2 additional languages",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "usually elemental or planar"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -296,13 +303,6 @@
                             "range": 100,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "usually elemental or planar"
                     }
                 ]
             },

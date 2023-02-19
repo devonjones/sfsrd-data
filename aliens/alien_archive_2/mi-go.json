@@ -105,12 +105,17 @@
                     "name": "void adaptation"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "slashing"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/slashing",
+                    "damage_types": [
+                        "slashing"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -127,14 +132,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 10
+                    "value": 10,
+                    "name": "fire"
                 }
             ]
         },
@@ -148,7 +153,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -158,7 +163,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "average",
-                        "text": "fly 50 ft.",
+                        "name": "fly 50 ft.",
                         "movement_type": "fly",
                         "value": 50
                     }

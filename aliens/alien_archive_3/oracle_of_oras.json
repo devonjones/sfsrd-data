@@ -151,12 +151,17 @@
                     "name": "unflankable"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -173,20 +178,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 10
+                    "value": 10,
+                    "name": "fire"
                 }
             ]
         },
@@ -200,7 +205,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "0 ft.",
+                        "name": "0 ft.",
                         "movement_type": "walk",
                         "value": 0
                     }
@@ -321,7 +326,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -341,13 +353,6 @@
                             "range": 60,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
                     }
                 ]
             },

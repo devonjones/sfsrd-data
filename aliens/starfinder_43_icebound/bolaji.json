@@ -162,14 +162,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "spider climb"
+                        "name": "spider climb"
                     }
                 ]
             },
@@ -299,14 +299,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "communication_ability",
-                        "modifiers": [
-                            {
-                                "type": "stat_block_section",
-                                "subtype": "modifier",
-                                "name": "100 ft."
-                            }
-                        ],
-                        "name": "telepathy"
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             }

@@ -118,30 +118,35 @@
                     "name": "unflankable"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "resistances": [
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 10
+                    "value": 10,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "fire",
-                    "value": 10
+                    "value": 10,
+                    "name": "fire"
                 }
             ]
         },
@@ -155,14 +160,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "20 ft.",
+                        "name": "20 ft.",
                         "movement_type": "walk",
                         "value": 20
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 20 ft.",
+                        "name": "climb 20 ft.",
                         "movement_type": "climb",
                         "value": 20
                     }

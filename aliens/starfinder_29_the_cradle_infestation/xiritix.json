@@ -140,12 +140,17 @@
                     "name": "displacement"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "lawful"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/lawful",
+                    "damage_types": [
+                        "lawful"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -162,14 +167,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "sonic",
-                    "value": 10
+                    "value": 10,
+                    "name": "sonic"
                 }
             ],
             "sr": {
@@ -188,7 +193,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -198,7 +203,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 60 ft.",
+                        "name": "fly 60 ft.",
                         "movement_type": "fly",
                         "value": 60
                     }

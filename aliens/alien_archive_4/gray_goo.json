@@ -156,8 +156,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 15
+                    "value": 15,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -183,7 +183,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     },
@@ -193,7 +193,7 @@
                         "ability_type": "Extraordinary",
                         "ability_type_abbrev": "Ex",
                         "maneuverability": "perfect",
-                        "text": "fly 50 ft.",
+                        "name": "fly 50 ft.",
                         "movement_type": "fly",
                         "value": 50
                     }
@@ -288,14 +288,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ]
             },

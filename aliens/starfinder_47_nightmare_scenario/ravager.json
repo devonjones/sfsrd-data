@@ -103,20 +103,20 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 15
+                    "value": 15,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 15
+                    "value": 15,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 15
+                    "value": 15,
+                    "name": "electricity"
                 }
             ]
         },
@@ -130,7 +130,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     }
@@ -270,7 +270,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Infernal"
+                        "name": "Infernal",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -285,13 +292,6 @@
                             "range": 120,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak"
                     }
                 ]
             },

@@ -141,8 +141,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 5
+                    "value": 5,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -163,7 +163,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }
@@ -277,11 +277,18 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "languages": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "telepathy 100 ft."
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             }

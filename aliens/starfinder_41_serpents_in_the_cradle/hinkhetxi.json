@@ -138,14 +138,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 40 ft.",
+                        "name": "swim 40 ft.",
                         "movement_type": "swim",
                         "value": 40
                     }
@@ -401,7 +401,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Hinkhetxi\u2019I"
+                        "name": "Hinkhetxi\u2019I",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -416,13 +423,6 @@
                             "range": 30,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak"
                     }
                 ]
             },

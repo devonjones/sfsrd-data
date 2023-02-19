@@ -127,12 +127,17 @@
                     "name": "construct form"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "good"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/good",
+                    "damage_types": [
+                        "good"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -149,14 +154,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 10
+                    "value": 10,
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 }
             ],
             "sr": {
@@ -175,14 +180,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 40 ft.",
+                        "name": "climb 40 ft.",
                         "movement_type": "climb",
                         "value": 40
                     }

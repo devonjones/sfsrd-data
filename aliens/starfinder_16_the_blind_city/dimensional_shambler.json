@@ -110,12 +110,17 @@
                     "name": "resist conjuration"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "lawful"
-            }
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/lawful",
+                    "damage_types": [
+                        "lawful"
+                    ]
+                }
+            ]
         },
         "offense": {
             "type": "stat_block_section",
@@ -127,7 +132,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }

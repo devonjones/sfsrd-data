@@ -118,24 +118,29 @@
                     "name": "stony plates"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 1,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 1,
+                    "text": "1/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "resistances": [
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "all",
-                    "value": 1
+                    "value": 1,
+                    "name": "all"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 5
+                    "value": 5,
+                    "name": "cold"
                 }
             ]
         },
@@ -149,7 +154,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }

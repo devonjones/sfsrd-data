@@ -112,12 +112,17 @@
                     "name": "darkwater veil"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 0,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 0,
+                    "text": "0/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -153,7 +158,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 60 ft.",
+                        "name": "swim 60 ft.",
                         "movement_type": "swim",
                         "value": 60
                     }
@@ -247,11 +252,18 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "languages": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "electrocommunication 300 ft."
+                        "subtype": "communication_ability",
+                        "name": "electrocommunication",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "300 ft.",
+                            "range": 300,
+                            "unit": "feet"
+                        }
                     }
                 ]
             }

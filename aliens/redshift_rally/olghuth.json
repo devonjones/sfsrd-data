@@ -104,8 +104,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "acid",
-                    "value": 15
+                    "value": 15,
+                    "name": "acid"
                 }
             ]
         },
@@ -119,14 +119,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "10 ft.",
+                        "name": "10 ft.",
                         "movement_type": "walk",
                         "value": 10
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 40 ft.",
+                        "name": "swim 40 ft.",
                         "movement_type": "swim",
                         "value": 40
                     }
@@ -300,14 +300,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Aklo"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
+                        "name": "Aklo",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ]
             },

@@ -131,12 +131,19 @@
                     "value": 5
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 5,
-                "name": "magic and silver"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/magic and silver",
+                    "conjunction": "and",
+                    "damage_types": [
+                        "magic",
+                        "silver"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -148,14 +155,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "electricity",
-                    "value": 10
+                    "value": 10,
+                    "name": "electricity"
                 }
             ],
             "weaknesses": [
@@ -176,14 +183,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "spider climb"
+                        "name": "spider climb"
                     }
                 ]
             },
@@ -304,14 +311,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "communication_ability",
-                        "modifiers": [
-                            {
-                                "type": "stat_block_section",
-                                "subtype": "modifier",
-                                "name": "30 ft."
-                            }
-                        ],
-                        "name": "limited telepathy"
+                        "name": "limited telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "30 ft.",
+                            "range": 30,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

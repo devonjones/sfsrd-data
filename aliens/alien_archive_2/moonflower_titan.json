@@ -91,12 +91,17 @@
                     "value": 18
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "slashing"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/slashing",
+                    "damage_types": [
+                        "slashing"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -113,8 +118,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -135,7 +140,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     }
@@ -264,23 +269,25 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "languages": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "telepathy"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "10 miles"
-                    },
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "other moonflowers only"
+                        "subtype": "communication_ability",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "other moonflowers only"
+                            }
+                        ],
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "10 miles",
+                            "range": 10,
+                            "unit": "miles"
+                        }
                     }
                 ]
             },

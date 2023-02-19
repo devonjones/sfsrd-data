@@ -147,7 +147,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 50 ft.",
+                        "name": "swim 50 ft.",
                         "movement_type": "swim",
                         "value": 50
                     }
@@ -235,11 +235,18 @@
             "languages": {
                 "type": "stat_block_section",
                 "subtype": "languages",
-                "languages": [
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "electrocommunication 150 ft."
+                        "subtype": "communication_ability",
+                        "name": "electrocommunication",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "150 ft.",
+                            "range": 150,
+                            "unit": "feet"
+                        }
                     }
                 ]
             }

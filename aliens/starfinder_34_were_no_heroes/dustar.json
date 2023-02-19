@@ -131,14 +131,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "40 ft.",
+                        "name": "40 ft.",
                         "movement_type": "walk",
                         "value": 40
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 40 ft.",
+                        "name": "climb 40 ft.",
                         "movement_type": "climb",
                         "value": 40
                     }
@@ -253,7 +253,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -268,13 +275,6 @@
                             "range": 100,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak"
                     }
                 ]
             },

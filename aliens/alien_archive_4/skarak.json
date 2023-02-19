@@ -116,18 +116,23 @@
                     "value": 12
                 }
             },
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "magic"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/magic",
+                    "damage_types": [
+                        "magic"
+                    ]
+                }
+            ],
             "resistances": [
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -148,21 +153,21 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "burrow 20 ft.",
+                        "name": "burrow 20 ft.",
                         "movement_type": "burrow",
                         "value": 20
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 50 ft.",
+                        "name": "climb 50 ft.",
                         "movement_type": "climb",
                         "value": 50
                     }

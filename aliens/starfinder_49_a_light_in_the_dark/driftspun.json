@@ -147,12 +147,17 @@
                     "name": "void adaptation"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "weaknesses": [
                 {
                     "type": "stat_block_section",
@@ -171,7 +176,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
@@ -181,7 +186,7 @@
                         "ability_type": "Supernatural",
                         "ability_type_abbrev": "Su",
                         "maneuverability": "perfect",
-                        "text": "fly 30 ft.",
+                        "name": "fly 30 ft.",
                         "movement_type": "fly",
                         "value": 30
                     }
@@ -297,7 +302,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "communication_ability",
-                        "name": "telepathy 100 ft"
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

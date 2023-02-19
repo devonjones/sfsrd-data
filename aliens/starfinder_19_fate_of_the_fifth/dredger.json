@@ -136,14 +136,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "30 ft.",
+                        "name": "30 ft.",
                         "movement_type": "walk",
                         "value": 30
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "burrow 20 ft.",
+                        "name": "burrow 20 ft.",
                         "movement_type": "burrow",
                         "value": 20
                     }
@@ -213,7 +213,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Shirren"
+                        "name": "Shirren",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak"
+                            }
+                        ]
                     }
                 ],
                 "communication_abilities": [
@@ -228,13 +235,6 @@
                             "range": 100,
                             "unit": "feet"
                         }
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak"
                     }
                 ]
             }

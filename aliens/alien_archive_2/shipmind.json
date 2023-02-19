@@ -111,12 +111,17 @@
                     "name": "thought disruption"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 10,
-                "name": "\u2014"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -179,7 +184,7 @@
                                 "name": "10 ft. outside of container"
                             }
                         ],
-                        "text": "0 ft.",
+                        "name": "0 ft.",
                         "movement_type": "walk",
                         "value": 0
                     }

@@ -110,12 +110,21 @@
                     "name": "void adaptation"
                 }
             ],
-            "dr": {
-                "type": "stat_block_section",
-                "subtype": "dr",
-                "value": 15,
-                "name": "chaotic, evil, good, or lawful"
-            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 15,
+                    "text": "15/chaotic\uff0cevil\uff0cgood or lawful",
+                    "conjunction": "or",
+                    "damage_types": [
+                        "chaotic",
+                        "evil",
+                        "good",
+                        "lawful"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
@@ -127,14 +136,14 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 5
+                    "value": 5,
+                    "name": "cold"
                 },
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "sonic",
-                    "value": 5
+                    "value": 5,
+                    "name": "sonic"
                 }
             ],
             "sr": {
@@ -153,7 +162,7 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "50 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
                         "value": 50
                     },
@@ -163,7 +172,7 @@
                         "ability_type": "Extraordinary",
                         "ability_type_abbrev": "Ex",
                         "maneuverability": "perfect",
-                        "text": "fly 100 ft.",
+                        "name": "fly 100 ft.",
                         "movement_type": "fly",
                         "value": 100
                     }
@@ -340,12 +349,21 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "machine telepathy 100 ft."
-                    },
+                        "name": "truespeech"
+                    }
+                ],
+                "communication_abilities": [
                     {
                         "type": "stat_block_section",
-                        "subtype": "language",
-                        "name": "truespeech"
+                        "subtype": "communication_ability",
+                        "name": "machine telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
                     }
                 ]
             },

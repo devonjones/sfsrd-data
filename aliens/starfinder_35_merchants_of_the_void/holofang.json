@@ -114,8 +114,8 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "resistance",
-                    "name": "cold",
-                    "value": 10
+                    "value": 10,
+                    "name": "cold"
                 }
             ],
             "weaknesses": [
@@ -136,21 +136,21 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "10 ft.",
+                        "name": "10 ft.",
                         "movement_type": "walk",
                         "value": 10
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "climb 10 ft.",
+                        "name": "climb 10 ft.",
                         "movement_type": "climb",
                         "value": 10
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "text": "swim 20 ft.",
+                        "name": "swim 20 ft.",
                         "movement_type": "swim",
                         "value": 20
                     }
@@ -269,14 +269,14 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "language",
-                        "name": "Common"
-                    }
-                ],
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "can\u2019t speak any language"
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak any language"
+                            }
+                        ]
                     }
                 ]
             },
