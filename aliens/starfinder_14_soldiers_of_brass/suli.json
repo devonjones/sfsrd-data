@@ -241,12 +241,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "autotarget rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "30 longarm rounds"
+                "name": "autotarget rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 30
+                }
             },
             {
                 "type": "stat_block_section",
@@ -256,14 +257,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "frag grenades I",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "frag grenades I"
+                ]
             }
         ],
         "statistics": {

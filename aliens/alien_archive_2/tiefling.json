@@ -218,24 +218,25 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "second skin",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "jump jets"
                     }
-                ],
-                "name": "second skin"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical semi-auto pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "45 small arm rounds"
+                "name": "tactical semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 45
+                }
             },
             {
                 "type": "stat_block_section",
@@ -245,12 +246,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical shirren-eye rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "25 sniper rounds"
+                "name": "tactical shirren-eye rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "sniper rounds",
+                    "quantity": 25
+                }
             }
         ],
         "statistics": {

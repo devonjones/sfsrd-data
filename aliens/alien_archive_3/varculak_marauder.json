@@ -276,41 +276,43 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical acid dart rifle"
+                "name": "tactical acid dart rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 20
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "20 darts"
+                "name": "thunderstrike pulse gauntlet",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "thunderstrike pulse gauntlet"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
+                "name": "incendiary grenades I",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "incendiary grenades I"
+                ]
             }
         ],
         "statistics": {

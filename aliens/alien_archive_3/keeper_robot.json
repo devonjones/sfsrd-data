@@ -269,19 +269,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "avalanche-class zero rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "100 charges"
-                    }
-                ],
-                "name": "1 ultra-capacity battery"
+                "name": "avalanche-class zero rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "ultra-capacity battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "100 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

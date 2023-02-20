@@ -175,19 +175,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "unstable junklaser"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
+                "name": "unstable junklaser",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

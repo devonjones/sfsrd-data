@@ -161,12 +161,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical battlebow"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "20 arrows"
+                "name": "tactical battlebow",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "arrows",
+                    "quantity": 20
+                }
             }
         ],
         "statistics": {

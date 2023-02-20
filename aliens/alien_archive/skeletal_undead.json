@@ -177,12 +177,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "hunting rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "20 longarm rounds"
+                "name": "hunting rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 20
+                }
             },
             {
                 "type": "stat_block_section",

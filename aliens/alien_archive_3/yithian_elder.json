@@ -232,19 +232,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "impulse storm coil"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "80 charges each"
-                    }
-                ],
-                "name": "4 super-capacity batteries"
+                "name": "impulse storm coil",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "super-capacity batteries",
+                    "quantity": 4,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "80 charges each"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

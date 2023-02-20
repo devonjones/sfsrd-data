@@ -240,12 +240,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "autotarget rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "50 longarm rounds"
+                "name": "autotarget rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 50
+                }
             },
             {
                 "type": "stat_block_section",
@@ -255,14 +256,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "flash grenades I",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "flash grenades I"
+                ]
             }
         ],
         "statistics": {

@@ -221,41 +221,42 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "vesk overplate I"
+                "name": "vesk overplate I",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "filtered rebreather"
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "filtered rebreather"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
+                "name": "frag grenades II",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "frag grenades II"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "red star plasma pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "4 batteries"
+                "name": "red star plasma pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 4,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             }
         ],
         "augmentations": [

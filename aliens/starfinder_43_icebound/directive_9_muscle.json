@@ -236,46 +236,49 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "stalker assassin rifle"
+                "name": "stalker assassin rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "rounds",
+                    "quantity": 10
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "10 rounds"
+                "name": "tactical rail gun",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "clips",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "12 rounds each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical rail gun"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "12 rounds each"
-                    }
-                ],
-                "name": "2 clips"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "vapor cavitation pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
+                "name": "vapor cavitation pistol ",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",

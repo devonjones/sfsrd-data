@@ -169,12 +169,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical semi-auto pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "27 small arm rounds"
+                "name": "tactical semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 27
+                }
             }
         ],
         "statistics": {

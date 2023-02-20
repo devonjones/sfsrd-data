@@ -177,12 +177,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical rail gunAR"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "24 longarm rounds"
+                "name": "tactical rail gunAR",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 24
+                }
             }
         ],
         "statistics": {

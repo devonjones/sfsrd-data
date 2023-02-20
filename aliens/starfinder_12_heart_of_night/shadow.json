@@ -290,19 +290,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tomb-class void rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges"
-                    }
-                ],
-                "name": "1 high-capacity battery"
+                "name": "tomb-class void rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

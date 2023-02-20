@@ -200,14 +200,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "trinir suit",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "functions as defrex hide"
                     }
-                ],
-                "name": "trinir suit"
+                ]
             },
             {
                 "type": "stat_block_section",
@@ -217,19 +217,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "thunderstrike sonic pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
+                "name": "thunderstrike sonic pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

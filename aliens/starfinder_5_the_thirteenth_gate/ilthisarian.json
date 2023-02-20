@@ -195,19 +195,19 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "static arc pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "battery"
+                "name": "static arc pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

@@ -195,12 +195,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "bow"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "20 arrows"
+                "name": "bow",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "arrows",
+                    "quantity": 20
+                }
             },
             {
                 "type": "stat_block_section",

@@ -243,14 +243,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "d-suit IV",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "gray force field [20 temporary HP]"
                     }
-                ],
-                "name": "d-suit IV"
+                ]
             },
             {
                 "type": "stat_block_section",
@@ -260,19 +260,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "perihelion laser pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "6 high-capacity batteries"
+                "name": "perihelion laser pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "quantity": 6,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",

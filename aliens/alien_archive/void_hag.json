@@ -223,19 +223,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "hailstorm-class zero pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "4 high-capacity batteries"
+                "name": "hailstorm-class zero pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "quantity": 4,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",

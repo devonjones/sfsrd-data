@@ -194,19 +194,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical arc emitter"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
+                "name": "tactical arc emitter",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

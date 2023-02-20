@@ -285,29 +285,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical magnetar rifle"
+                "name": "tactical magnetar rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 50
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "50 longarm rounds"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "thunderhead dragonglaive"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
+                "name": "thunderhead dragonglaive",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

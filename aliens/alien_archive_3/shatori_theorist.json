@@ -163,29 +163,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "buzzblade dueling sword"
+                "name": "buzzblade dueling sword",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "elite semi-auto pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "24 small arm rounds"
+                "name": "elite semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 24
+                }
             }
         ],
         "statistics": {

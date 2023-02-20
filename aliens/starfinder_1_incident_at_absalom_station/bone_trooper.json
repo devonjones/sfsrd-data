@@ -238,12 +238,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical semi-auto pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "30 rounds"
+                "name": "tactical semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "rounds",
+                    "quantity": 30
+                }
             },
             {
                 "type": "stat_block_section",

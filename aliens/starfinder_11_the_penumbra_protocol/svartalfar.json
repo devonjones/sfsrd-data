@@ -304,41 +304,43 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "advanced shirreneye rifle"
+                "name": "advanced shirreneye rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "sniper rounds",
+                    "quantity": 20
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "20 sniper rounds"
+                "name": "aphelion laser pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "aphelion laser pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "2 high-capacity batteries"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
+                "name": "flash grenades II",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "flash grenades II"
+                ]
             },
             {
                 "type": "stat_block_section",
@@ -348,6 +350,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "credstick",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
@@ -359,8 +362,7 @@
                         "subtype": "modifier",
                         "name": "200 credits"
                     }
-                ],
-                "name": "credstick"
+                ]
             }
         ],
         "statistics": {

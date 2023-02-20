@@ -281,6 +281,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "d-suit II",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
@@ -292,25 +293,25 @@
                         "subtype": "modifier",
                         "name": "jetpack"
                     }
-                ],
-                "name": "d-suit II"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "holy inertial cavitation pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "3 high-capacity batteries"
+                "name": "holy inertial cavitation pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "quantity": 3,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",

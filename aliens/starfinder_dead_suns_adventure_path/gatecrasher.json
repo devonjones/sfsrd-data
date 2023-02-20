@@ -193,19 +193,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "aurora shock caster"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges each"
-                    }
-                ],
-                "name": "3 high-capacity batteries"
+                "name": "aurora shock caster",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "quantity": 3,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

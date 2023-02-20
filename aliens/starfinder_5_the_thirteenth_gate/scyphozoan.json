@@ -182,31 +182,32 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "scyphozoan bio-weave",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "functions as graphite carbon skin"
                     }
-                ],
-                "name": "scyphozoan bio-weave"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical arc emitter"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
+                "name": "tactical arc emitter",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

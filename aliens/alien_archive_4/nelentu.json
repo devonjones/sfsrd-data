@@ -203,36 +203,38 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "corona laser rifle"
+                "name": "corona laser rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "fangblade"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
+                "name": "fangblade",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

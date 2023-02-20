@@ -199,31 +199,32 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "ysoki refractor suit",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "jetpack"
                     }
-                ],
-                "name": "ysoki refractor suit"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "ant sting pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
+                "name": "ant sting pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",

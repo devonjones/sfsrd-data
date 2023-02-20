@@ -205,19 +205,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "integrated yellow star plasma rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges"
-                    }
-                ],
-                "name": "1 high-capacity battery"
+                "name": "integrated yellow star plasma rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

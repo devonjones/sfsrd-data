@@ -257,41 +257,43 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "dual acid dart rifle"
+                "name": "dual acid dart rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 48
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "48 darts"
+                "name": "LFD pulse gauntlet",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "LFD pulse gauntlet"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
+                "name": "frag grenades II",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "frag grenades II"
+                ]
             }
         ],
         "statistics": {

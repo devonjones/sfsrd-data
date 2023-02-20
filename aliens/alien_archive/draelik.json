@@ -186,19 +186,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "lesser shadowstaff"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges"
-                    }
-                ],
-                "name": "1 clip"
+                "name": "lesser shadowstaff",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "clip",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

@@ -212,19 +212,20 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "static arc pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges each"
-                    }
-                ],
-                "name": "2 batteries"
+                "name": "static arc pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "quantity": 2,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
@@ -234,12 +235,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical shirren-eye rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "10 sniper rounds"
+                "name": "tactical shirren-eye rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "sniper rounds",
+                    "quantity": 10
+                }
             }
         ],
         "statistics": {

@@ -175,14 +175,14 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "woiokan bodyglove",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "functions as basic lashunta tempweave"
                     }
-                ],
-                "name": "woiokan bodyglove"
+                ]
             },
             {
                 "type": "stat_block_section",
@@ -192,12 +192,13 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "trailblazer tactical semi-auto pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "90 small arm rounds"
+                "name": "trailblazer tactical semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 90
+                }
             }
         ],
         "statistics": {

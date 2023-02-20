@@ -220,24 +220,25 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical semi-auto pistol"
+                "name": "tactical semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 30
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "30 small arm rounds"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
+                "name": "frag grenades I",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "2"
                     }
-                ],
-                "name": "frag grenades I"
+                ]
             }
         ],
         "statistics": {

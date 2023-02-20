@@ -174,29 +174,31 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "gray skinsuit",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "functions as basic lashunta tempweave"
                     }
-                ],
-                "name": "gray skinsuit"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "needler pistol"
+                "name": "needler pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 25
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "25 darts"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "5 doses of blue whinnis"
+                "name": "doses of blue whinnis",
+                "quantity": 5
             }
         ],
         "statistics": {

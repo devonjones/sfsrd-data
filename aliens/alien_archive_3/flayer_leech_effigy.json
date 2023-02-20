@@ -202,31 +202,32 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "diamond carbon skin",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "green force field [25 HP]"
                     }
-                ],
-                "name": "diamond carbon skin"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "white star plasma pistol"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "100 charges"
-                    }
-                ],
-                "name": "1 ultra-capacity battery"
+                "name": "white star plasma pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "ultra-capacity battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "100 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {

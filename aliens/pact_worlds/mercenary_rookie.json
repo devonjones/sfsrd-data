@@ -320,48 +320,50 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
+                "name": "vesk overplate I",
                 "modifiers": [
                     {
                         "type": "stat_block_section",
                         "subtype": "modifier",
                         "name": "jetpack"
                     }
-                ],
-                "name": "vesk overplate I"
+                ]
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "red star plasma doshko"
+                "name": "red star plasma doshko",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges"
+                        }
+                    ]
+                }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "20 charges"
-                    }
-                ],
-                "name": "1 battery"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "name": "static arc rifle"
-            },
-            {
-                "type": "stat_block_section",
-                "subtype": "item",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "40 charges"
-                    }
-                ],
-                "name": "1 high-capacity battery"
+                "name": "static arc rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity battery",
+                    "quantity": 1,
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ]
+                }
             }
         ],
         "statistics": {
