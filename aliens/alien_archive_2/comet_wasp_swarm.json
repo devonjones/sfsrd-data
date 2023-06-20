@@ -3,14 +3,22 @@
     "type": "alien",
     "sections": [
         {
-            "name": "Comet Wasp Gestation",
-            "type": "section",
-            "html": "<b>Type</b> disease (injury); <b>Save </b>Fortitude DC 19<br/><b>Track </b>physical (special); <b>Frequency </b>1/day<br/><b>Effect </b>no latent state; the victim dies on the fifth day as a new comet wasp swarm cuts itself free<br/><b>Cure </b>surgically extract eggs with a Medicine check (DC 19) that takes 1 hour and requires a medical lab; subject takes 1d4 Constitution damage on each attempt"
-        },
-        {
             "name": "Vermin (Space)",
             "type": "section",
-            "html": "<b>Source</b><a class=\"external-link\" href=\"https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2\" target=\"_blank\"><i>Alien Archive 2 pg. 132</i></a><br/>Even the vacuum of space has bugs. Most of these void-dwelling vermin are harmless, but some are dangerous or predatory.<br/><br/> Asteroid lice and planetoid beetles feed on minerals in the rock of their airless habitats. Asteroid lice are communal, but planetoid beetles are territorial, tolerating only one mate. These creatures and their eggs can float in space to a new home. However, careless quarrying and shipping have accelerated their spread through the galaxy.<br/><br/> Xenobiologists theorize many space vermin evolved in special circumstances. Necropedes were once centipede-like scavengers on Eox; they now have a bite that can digest undead flesh. A warpmoth is like a glowing blue-white speck attracted to moving light, such as other warpmoths or passing starships. Gathering in swarms and following ships helps the moths feed and mate. Comet wasps create nests in frozen interstellar bodies. These icy, venomous vespids lay their eggs in living creatures."
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Alien Archive 2",
+                    "link": {
+                        "type": "link",
+                        "name": "Alien Archive 2 pg. 132",
+                        "alt": "Alien Archive 2 pg. 132",
+                        "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+                    },
+                    "page": 132
+                }
+            ],
+            "html": "Even the vacuum of space has bugs. Most of these void-dwelling vermin are harmless, but some are dangerous or predatory.<br/><br/> Asteroid lice and planetoid beetles feed on minerals in the rock of their airless habitats. Asteroid lice are communal, but planetoid beetles are territorial, tolerating only one mate. These creatures and their eggs can float in space to a new home. However, careless quarrying and shipping have accelerated their spread through the galaxy.<br/><br/> Xenobiologists theorize many space vermin evolved in special circumstances. Necropedes were once centipede-like scavengers on Eox; they now have a bite that can digest undead flesh. A warpmoth is like a glowing blue-white speck attracted to moving light, such as other warpmoths or passing starships. Gathering in swarms and following ships helps the moths feed and mate. Comet wasps create nests in frozen interstellar bodies. These icy, venomous vespids lay their eggs in living creatures."
         }
     ],
     "game-obj": "Aliens",
@@ -283,6 +291,23 @@
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014 Staggered\u2014Immobile; no end state",
                 "cure": "1 save",
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 19",
+                    "save_type": "Fort",
+                    "dc": 19
+                }
+            },
+            {
+                "name": "Comet Wasp Gestation",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "track": "physical (special)",
+                "frequency": "1/day",
+                "effect": "no latent state; the victim dies on the fifth day as a new comet wasp swarm cuts itself free",
+                "cure": "surgically extract eggs with a Medicine check (DC 19) that takes 1 hour and requires a medical lab; subject takes 1d4 Constitution damage on each attempt",
                 "subtype": "affliction",
                 "saving_throw": {
                     "type": "stat_block_section",

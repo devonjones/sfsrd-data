@@ -3,11 +3,6 @@
     "type": "alien",
     "sections": [
         {
-            "name": "Tapestry Moth Gestation",
-            "type": "section",
-            "html": "<b>Type</b> disease (injury); <b>Save</b> Fortitude DC 24<br/><b>Track</b> physical (special); <b>Frequency</b> 1/day<br/><b>Effect</b> no latent state; the victim dies on the fifth day as a miniature tapestry moth cuts itself free of its body<br/><b>Cure</b> surgically extract egg with a Medicine check (DC 24) that takes 1 hour and requires a medical lab; subject takes 1d4 Constitution damage on each attempt"
-        },
-        {
             "name": "Description",
             "type": "section",
             "html": "The tapestry moth is an interstellar nightmare whose existence has only been recently confirmed. They approach starships in space and <i>dimension door</i> onto the starship\u2019s hull, bypassing starship shields or other defenses. Able to squeeze into openings only inches wide, they skitter to cargo bay doors, air locks, or other ports and access panels. Once inside, tapestry moths systematically slaughter the crew of these starships, ambushing their prey one by one or in small numbers and hiding the bodies, or stowing away to slip past a space station\u2019s defenses. No matter the strategy, these acts of mayhem aren\u2019t random, but rather the purposeful acts of bioengineered living weapons of unknown origin."
@@ -375,6 +370,23 @@
                 "frequency": "1/round for 6 rounds",
                 "effect": "progression track is Healthy\u2014Sluggish\u2014Stiffened\u2014 Staggered\u2014Immobile; no end state",
                 "cure": "2 saves",
+                "subtype": "affliction",
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Fortitude DC 24",
+                    "save_type": "Fort",
+                    "dc": 24
+                }
+            },
+            {
+                "name": "Tapestry Moth Gestation",
+                "type": "stat_block_section",
+                "affliction_type": "disease (injury)",
+                "track": "physical (special)",
+                "frequency": "1/day",
+                "effect": "no latent state; the victim dies on the fifth day as a miniature tapestry moth cuts itself free of its body",
+                "cure": "surgically extract egg with a Medicine check (DC 24) that takes 1 hour and requires a medical lab; subject takes 1d4 Constitution damage on each attempt",
                 "subtype": "affliction",
                 "saving_throw": {
                     "type": "stat_block_section",

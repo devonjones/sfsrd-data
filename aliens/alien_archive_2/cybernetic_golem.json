@@ -5,7 +5,20 @@
         {
             "name": "Golem",
             "type": "section",
-            "html": "<b>Source</b><a class=\"external-link\" href=\"https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2\" target=\"_blank\"><i>Alien Archive 2 pg. 67</i></a><br/>These automatons, created by powerful spellcasters, differ from most robots in that each has an elemental spirit bound within. Properly binding this spirit, which is usually from an earth elemental, is the most important part of creating a golem. As the spirit is only semiconscious, the golem exists in a mindless state and acts only to defend itself or to follow orders from its creator. In some golems, injury causes the elemental spirit to stir in its artificial shell. As it gains awareness, it rages at its imprisonment."
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Alien Archive 2",
+                    "link": {
+                        "type": "link",
+                        "name": "Alien Archive 2 pg. 67",
+                        "alt": "Alien Archive 2 pg. 67",
+                        "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+                    },
+                    "page": 67
+                }
+            ],
+            "html": "These automatons, created by powerful spellcasters, differ from most robots in that each has an elemental spirit bound within. Properly binding this spirit, which is usually from an earth elemental, is the most important part of creating a golem. As the spirit is only semiconscious, the golem exists in a mindless state and acts only to defend itself or to follow orders from its creator. In some golems, injury causes the elemental spirit to stir in its artificial shell. As it gains awareness, it rages at its imprisonment."
         }
     ],
     "game-obj": "Aliens",
@@ -332,7 +345,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A cybernetic or nanotech golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem as follows. <ul> <li>The golem can be affected by <i>discharge </i>or <i>greater discharge </i>but has a unique reaction to the spells. If the golem fails a saving throw against either spell, it becomes confused for 1d4 rounds instead of suffering the spell\u2019s normal effect. The golem can attempt a Fortitude save at the end of each of its turns, ending the condition on a success.</li> <li>Magical effects that deal cold damage slow (as the slow spell) the golem for 3 rounds (no save). If the golem has a haste circuit and it is active, this effect counters the haste circuit but has no other effect.</li> <li>The golem automatically fails saving throws against weapons and magical effects that deal electricity damage. However, such an effect merely breaks any slow effect on the golem and heals it for 1 Hit Point per 3 damage the effect would have dealt. Any damage that exceeds the golem\u2019s maximum Hit Points is stored as charges for its weapons, at a rate of 1 charge per Hit Point the golem would have gained. Any additional damage is ignored.</li> </ul>",
+                "text": "A cybernetic or nanotech golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem as follows. <ul><li>The golem can be affected by <i>discharge </i>or <i>greater discharge </i>but has a unique reaction to the spells. If the golem fails a saving throw against either spell, it becomes confused for 1d4 rounds instead of suffering the spell\u2019s normal effect. The golem can attempt a Fortitude save at the end of each of its turns, ending the condition on a success.</li><li>Magical effects that deal cold damage slow (as the slow spell) the golem for 3 rounds (no save). If the golem has a haste circuit and it is active, this effect counters the haste circuit but has no other effect.</li><li>The golem automatically fails saving throws against weapons and magical effects that deal electricity damage. However, such an effect merely breaks any slow effect on the golem and heals it for 1 Hit Point per 3 damage the effect would have dealt. Any damage that exceeds the golem\u2019s maximum Hit Points is stored as charges for its weapons, at a rate of 1 charge per Hit Point the golem would have gained. Any additional damage is ignored.</li></ul>",
                 "name": "Magic Immunity",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"

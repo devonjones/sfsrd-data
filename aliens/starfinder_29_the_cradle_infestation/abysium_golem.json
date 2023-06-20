@@ -10,7 +10,20 @@
         {
             "name": "Golem",
             "type": "section",
-            "html": "<b>Source</b><a class=\"external-link\" href=\"https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2\" target=\"_blank\"><i>Alien Archive 2 pg. 67</i></a><br/>These automatons, created by powerful spellcasters, differ from most robots in that each has an elemental spirit bound within. Properly binding this spirit, which is usually from an earth elemental, is the most important part of creating a golem. As the spirit is only semiconscious, the golem exists in a mindless state and acts only to defend itself or to follow orders from its creator. In some golems, injury causes the elemental spirit to stir in its artificial shell. As it gains awareness, it rages at its imprisonment."
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Alien Archive 2",
+                    "link": {
+                        "type": "link",
+                        "name": "Alien Archive 2 pg. 67",
+                        "alt": "Alien Archive 2 pg. 67",
+                        "href": "https://paizo.com/products/btpya20r?Starfinder-Alien-Archive-2"
+                    },
+                    "page": 67
+                }
+            ],
+            "html": "These automatons, created by powerful spellcasters, differ from most robots in that each has an elemental spirit bound within. Properly binding this spirit, which is usually from an earth elemental, is the most important part of creating a golem. As the spirit is only semiconscious, the golem exists in a mindless state and acts only to defend itself or to follow orders from its creator. In some golems, injury causes the elemental spirit to stir in its artificial shell. As it gains awareness, it rages at its imprisonment."
         }
     ],
     "game-obj": "Aliens",
@@ -313,7 +326,7 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "An abysium golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem, as follows. <ul> <li>If targeted with <i>remove radioactivity</i>, the abysium golem is slowed (as the slow spell) for 3 rounds (no save), but if the caster also succeeds at a caster level check against the DC of the golem\u2019s radioactive aura, the golem is also flat-footed and off-target for the same duration.</li> <li>The <i>irradiate</i> spell ends any slow effect on the golem, and it regains a number of Hit Points depending on the radiation level (2d8 for low, 4d8 for medium, 6d8 for high, and 8d8 for severe). If the amount of healing would cause the golem to exceed its maximum Hit Points, it gains any excess as temporary Hit Points.</li> </ul>",
+                "text": "An abysium golem is immune to any spell or spell-like ability that allows spell resistance, unless the spell specifically lists constructs in its Targets entry. In addition, certain spells and effects function differently against the golem, as follows. <ul><li>If targeted with <i>remove radioactivity</i>, the abysium golem is slowed (as the slow spell) for 3 rounds (no save), but if the caster also succeeds at a caster level check against the DC of the golem\u2019s radioactive aura, the golem is also flat-footed and off-target for the same duration.</li> <li>The <i>irradiate</i> spell ends any slow effect on the golem, and it regains a number of Hit Points depending on the radiation level (2d8 for low, 4d8 for medium, 6d8 for high, and 8d8 for severe). If the amount of healing would cause the golem to exceed its maximum Hit Points, it gains any excess as temporary Hit Points.</li></ul>",
                 "name": "Magic Immunity",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"

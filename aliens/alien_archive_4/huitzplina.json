@@ -1,5 +1,5 @@
 {
-    "name": "Youngling",
+    "name": "Huitz\u2019plina",
     "type": "alien",
     "sections": [
         {
@@ -28,29 +28,41 @@
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Youngling",
+        "name": "Huitz\u2019plina",
         "type": "stat_block",
         "image": {
             "type": "image",
-            "name": "Youngling",
+            "name": "Huitz\u2019plina",
             "game-obj": "Monster",
-            "image": "AA4_Huitzplina_Youngling.png"
+            "image": "AA4_Huitzplina.png"
         },
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 4
+            "value": 6
         },
         "creature_type": {
             "type": "stat_block_section",
             "subtype": "creature_type",
             "creature_type": "Magical Beast",
-            "alignment": "Chaotic Good",
+            "alignment": "Neutral Good",
             "size": "Medium",
             "family": "Huitz\u2019plina",
-            "cr": "3",
+            "cr": "9",
             "role": "Expert",
-            "xp": 800
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Huitz\u2019plina"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 6400
         },
         "senses": {
             "type": "stat_block_section",
@@ -58,7 +70,7 @@
             "perception": {
                 "type": "stat_block_section",
                 "subtype": "perception",
-                "value": 8
+                "value": 17
             },
             "special_senses": [
                 {
@@ -105,13 +117,14 @@
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 35
+                "hp": 135,
+                "rp": 4
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 14,
-                "kac": 15
+                "eac": 22,
+                "kac": 23
             },
             "saves": {
                 "type": "stat_block_section",
@@ -120,21 +133,33 @@
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 4
+                    "value": 10
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 4
+                    "value": 10
                 },
                 "will": {
                     "name": "Will",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 6
+                    "value": 12
                 }
-            }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "evasion"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "uncanny agility"
+                }
+            ]
         },
         "offense": {
             "type": "stat_block_section",
@@ -146,9 +171,9 @@
                     {
                         "type": "stat_block_section",
                         "subtype": "speed",
-                        "name": "30 ft.",
+                        "name": "50 ft.",
                         "movement_type": "walk",
-                        "value": 30
+                        "value": 50
                     },
                     {
                         "type": "stat_block_section",
@@ -164,13 +189,13 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "melee",
-                    "name": "tactical switchblade",
-                    "bonus": 10,
+                    "name": "tactical knife",
+                    "bonus": 18,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "1d4+3",
+                            "formula": "2d4+9",
                             "damage_type": "Slashing",
                             "damage_type_text": "S"
                         }
@@ -182,15 +207,22 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "ranged",
-                    "name": "tactical rail gun",
-                    "bonus": 8,
+                    "name": "aphelion laser pistol",
+                    "bonus": 20,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "1d8+3",
-                            "damage_type": "Piercing",
-                            "damage_type_text": "P"
+                            "formula": "3d4+9",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
                         }
                     ]
                 }
@@ -199,21 +231,36 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "offensive_ability",
+                    "name": "debilitating trick"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
                     "modifiers": [
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "9 P"
+                            "name": "27 P"
                         }
                     ],
                     "name": "spine assault",
                     "saving_throw": {
                         "type": "stat_block_section",
                         "subtype": "save_dc",
-                        "text": "Reflex DC 14",
+                        "text": "Reflex DC 18",
                         "save_type": "Ref",
-                        "dc": 14
+                        "dc": 18
                     }
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "trick attack +5d8"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "triple attack"
                 }
             ]
         },
@@ -221,33 +268,40 @@
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "flight suit stationwear"
+                "name": "D-suit III"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical rail gun",
+                "name": "aphelion laser pistol",
                 "with": {
                     "type": "stat_block_section",
                     "subtype": "item",
-                    "name": "long\u2011arm rounds",
-                    "quantity": 24
+                    "name": "high-capacity batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ],
+                    "quantity": 2
                 }
             },
             {
                 "type": "stat_block_section",
                 "subtype": "item",
-                "name": "tactical switchblade"
+                "name": "tactical knife"
             }
         ],
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
             "str": 0,
-            "dex": 4,
-            "con": 2,
-            "int": 1,
-            "wis": 0,
+            "dex": 6,
+            "con": 3,
+            "int": 4,
+            "wis": 3,
             "cha": 0,
             "skills": {
                 "type": "stat_block_section",
@@ -257,32 +311,44 @@
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Acrobatics",
-                        "value": 13
+                        "value": 17
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Athletics",
-                        "value": 13,
+                        "value": 17,
                         "modifiers": [
                             {
                                 "type": "stat_block_section",
                                 "subtype": "modifier",
-                                "name": "+21 to climb"
+                                "name": "+25 to climb"
                             }
                         ]
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
+                        "name": "Culture",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
                         "name": "Mysticism",
-                        "value": 13
+                        "value": 22
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Stealth",
-                        "value": 8
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 22
                     }
                 ]
             },
@@ -311,7 +377,36 @@
                 {
                     "type": "stat_block_section",
                     "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "certainty"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "ever vigilant"
+                        }
+                    ],
+                    "name": "operative exploits"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
                     "name": "predreaming"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "explorer"
+                        }
+                    ],
+                    "name": "specialization"
                 }
             ]
         },
@@ -319,7 +414,7 @@
             "type": "stat_block_section",
             "subtype": "ecology",
             "environment": "warm forests (Mulkaxi)",
-            "organization": "solitary or pair"
+            "organization": "solitary, pair, or prickle (3\u20134)"
         },
         "special_abilities": [
             {
