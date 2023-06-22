@@ -1,0 +1,312 @@
+{
+    "name": "Hacker",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Hackers are experts at bypassing security measures and getting into computer systems. They usually aim to steal intellectual property or sensitive personal records to blackmail people, or use malware to compromise systems. Hackers take pride in their skills but value their lives even more. Rather than getting directly involved in combat, a hacker prefers to partner with muscle to keep hostiles at bay."
+        },
+        {
+            "name": "Infiltrators",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 168",
+                        "alt": "Interstellar Species pg. 168",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 168
+                }
+            ],
+            "html": "Infiltrators are skilled at sneaking in and out of restricted places. Although different types of infiltrators may have similar goals, their methods for avoiding or compromising guards and security measures differ greatly: shapeshifters rely on their ability to become someone else, spies are masters of remaining undetected, hackers can easily break into both physical locations and computer systems to steal information, and double agents are trained to maintain a cover and lie about their allegiances.<br/> In adventures, infiltrators are most often encountered as antagonists who are planning to break into a secure facility to carry out acts of espionage or sabotage or to exfiltrate prisoners. Depending on the type of gig in question, infiltrators may work with assassins or thieves"
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Hacker",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "family": "Infiltrators",
+            "cr": "5",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "SRO"
+                }
+            ],
+            "xp": 1600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 11
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 65
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 17,
+                "kac": 18
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "robotic"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "swagger handcannon",
+                    "bonus": 13,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+5",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "hack equipment"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "business stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "swagger handcannon",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "scattergun shells",
+                    "quantity": 12
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "integrated high-density datajack"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "integrated personal comm unit"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 3,
+            "con": 0,
+            "int": 5,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 16
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 16
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "healing circuit"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "integrated equipment"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "natural- born hacker"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a hacker can attempt to temporarily deactivate one weapon, piece of equipment, or armor upgrade within 30 feet, provided it\u2019s a technological or hybrid item. They roll 1d20 + their CR; the DC is equal to 10 + the item level. If they succeed, they deactivate the device until the beginning of their next turn.<br/> The device\u2019s owner can take a move action and attempt an Engineering check with a DC equal to 10 + 1-1/2 \u00d7 the hacker\u2019s CR + their Dexterity modifier (DC 20 for this hacker). If they succeed, they reactivate the device. ",
+                "name": "Hack Equipment",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Equipped with integrated tools, a hacker always counts as having the appropriate tool or basic kit for any Computer or Engineering skill check they attempt. Additionally, they can attempt Computers and Engineering skill checks at a range of 30 feet. When they use this ability to remotely hack a mechanism or computer, a clearly visible holographic keyboard manifests in front of them, making it obvious they\u2019re the origin of the activity.",
+                "name": "Natural-Born Hacker",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 168",
+                "alt": "Interstellar Species pg. 168",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 168
+        }
+    ]
+}

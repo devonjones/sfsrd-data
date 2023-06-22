@@ -1,0 +1,447 @@
+{
+    "name": "Mysterious Hermit",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "For one reason or another, mysterious hermits isolate themselves from civilization. Perhaps a hermit chose isolation to better focus on their studies, or perhaps they fled their home after being persecuted for performing horrible experiments on the local populace. Locating a hermit and convincing them to share their knowledge requires seekers to travel to remote, dangerous locales simply for the chance of receiving a hermit\u2019s aid. Hermits can have a range of reactions to others seeking them; they might be grateful for some brief company, or be violently distrustful of those who seek their knowledge."
+        },
+        {
+            "name": "Survivalists",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 182",
+                        "alt": "Interstellar Species pg. 182",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 182
+                }
+            ],
+            "html": "Survivalists are defined by independence and self-sufficiency. They often expertly navigate specific types of hostile or dangerous terrain: forests, deserts, or more remote locales such as dead space or post-apocalyptic cityscapes. Survivalists generally don\u2019t rely on others and commonly live and work alone. However, the following statistics can represent hunters and warriors within a community as well as hermits. A survivalist might have some kind of sentient companion or a creature companion, such as a beast of burden or a hunting beast. A survivalist might arrive at a critical moment to help PCs as they travel through a barren wasteland. Alternatively, a survivalist makes an excellent antagonist in a wilderness setting since they\u2019re capable of using every aspect of the environment against their foes."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mysterious Hermit",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "shapechanger"
+                }
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Medium",
+            "family": "Survivalists",
+            "cr": "14",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Astrazoan"
+                }
+            ],
+            "xp": 38400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 25
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 215,
+                "rp": 5
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 27,
+                "kac": 28
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "advanced living staff",
+                    "bonus": 21,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d6+14",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "bind"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "parallax laser pistol",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d4+14",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "spells": [
+                {
+                    "name": "Spells Known",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "commune with nature"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "raise dead"
+                                }
+                            ],
+                            "level_text": "5th",
+                            "level": 5,
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "confusion",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 23",
+                                        "dc": 23
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "discern lies",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 23",
+                                        "dc": 23
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "divination"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "restoration"
+                                }
+                            ],
+                            "level_text": "4th",
+                            "level": 4,
+                            "count_text": "6/day",
+                            "count": 6,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mind thrust",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 22",
+                                        "dc": 22
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "remove affliction"
+                                }
+                            ],
+                            "level_text": "3rd",
+                            "level": 3,
+                            "count_text": "at will",
+                            "frequency": "at will"
+                        }
+                    ],
+                    "caster_level": 14
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor IV"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced living staff",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "parallax laser pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "super-capacity batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "80 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": 0,
+            "int": 4,
+            "wis": 8,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 4 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "change form"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "many forms"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "peer into the unknown"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "weird surroundings"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mysterious hermit can spend 1 Resolve Point to gain +2 on an attack roll, skill check, or saving throw. They can choose to use this ability after success or failure has been determined. ",
+                "name": "Peer into the Unknown",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A mysterious hermit has the ability to alter the terrain close to their home. In any location where the hermit has lived for at least 1 year, they can create one of the following effects within a radius of 1 mile: change the local gravity by 1 step, change the local temperature by 1 step, or increase Survival DCs to avoid getting lost by 10. A mysterious hermit can change which effect is active once per day and the change takes effect after 1 day.",
+                "name": "Weird Surroundings",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 183",
+                "alt": "Interstellar Species pg. 183",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 183
+        }
+    ]
+}

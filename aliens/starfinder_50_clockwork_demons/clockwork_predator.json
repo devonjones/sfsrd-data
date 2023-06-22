@@ -1,0 +1,331 @@
+{
+    "name": "Clockwork Predator",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A clockwork predator is an automaton modeled after a live animal that hunts and kills in the wild. A clockwork predator\u2019s rudimentary programming allows it to mimic that type of creature\u2019s behavior, which it does with great success. This construct is usually installed as a guardian of the clockwork engineer\u2019s (or their client\u2019s) property, especially large, sprawling estates where the clockwork predator can establish its territory. When a clockwork predator catches the scent of prey (any creature in its territory that doesn\u2019t provide an immediate threat), it tracks that prey relentlessly. When it finds its quarry, it then pounces with great speed and force, trying to bite and tear the victim to pieces.<br/><br/>Explorers have returned from journeys to faraway planets with tales of vast clockwork forests and jungles inhabited solely by clockwork creatures. How these ecosystems were created and are sustained is unknown, though many suspect magical influences. Starfinder agents believe that such clockwork habitats result from prior seeding, probably from a self-aware \u201cclockwork core\u201d responsible for terraforming vast regions of suitable planets. Other scholars believe that such clockwork domains are magical in nature, created entirely by the minds of unhinged spellcasters.<br/><br/>The Veskarium regularly procures clockwork predators that take the form of the defrexes native to Vesk-2. Officers acquiring such clockwork constructs employ them as guardians for stations and outposts far removed from the greater Veskarium as a reminder of their homeland."
+        },
+        {
+            "name": "Variant Clockwork Predators",
+            "type": "section",
+            "html": "Like the many generic predator animals found on pages 102\u2013103 of Starfinder Alien Archive 2, clockwork predators can come in all shapes and sizes. The size and Challenge Rating of a clockwork predator can be altered easily to suit an encounter\u2019s needs. In addition, you can use the environmental grafts found on pages 138\u2013141 of Alien Archive 2 to adapt a clockwork predator to any type of terrain.<br/><br/>Several different clockworks have specialized ranged attacks that spew out spinning gears, while others use serrated cogs that grant the bleed critical hit effect to their attacks. Some even employ unique sensory means that grant blindsense."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Clockwork Predator",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "cr": "7",
+            "role": "Combatant",
+            "xp": 3200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 14
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 105
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/adamantine",
+                    "damage_types": [
+                        "adamantine"
+                    ]
+                }
+            ],
+            "immunities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "construct immunities"
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "precision machinery"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "vulnerable to sonic"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+12",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "bite",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+12",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "count": 2,
+                    "name": "claws",
+                    "bonus": 12,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "pounce"
+                }
+            ]
+        },
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 4,
+            "con": null,
+            "int": null,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 14
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mindless"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any",
+            "organization": "solitary, pair, or pack (3\u20137)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The machinery of a clockwork predator is powerful but more delicate than standard technological constructs. Vibrations and jarring hits might knock gears out of position. If a clockwork predator takes a critical hit or receives at least 30 sonic damage in a single hit, it can\u2019t multiattack on its next turn and gains the off-target condition until the end of its next turn.",
+                "name": "Precision Machinery",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #50: Clockwork Demons",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #50: Clockwork Demons pg. 56",
+                "alt": "Starfinder #50: Clockwork Demons pg. 56",
+                "href": "https://paizo.com/products/btq02dvx?Starfinder-Adventure-Path-50-Clockwork-Demons"
+            },
+            "page": 56
+        }
+    ]
+}

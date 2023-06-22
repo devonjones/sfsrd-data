@@ -1,0 +1,350 @@
+{
+    "name": "Colveare Hierarch",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The astriapi home world Colveare is run by a council called the Hierarchs, descended from revolutionary warrior-priests. While Colveare today is a peaceful marvel of civic engineering, a few ambitious Hierarch outliers found conspiracies, cults, or private armies to rule unequivocally. While these aspirations often take the Hierarch far from home, a few aspire to overthrow Colveare\u2019s government and install themselves as absolute monarchs."
+        },
+        {
+            "name": "Tyrants",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 186",
+                        "alt": "Interstellar Species pg. 186",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 186
+                }
+            ],
+            "html": "Those who amass extraordinary wealth, power, and influence often use them to perpetuate their advantages, typically through violent or coercive means. Tyrants might maintain their rule through subterfuge and surveillance or through age-old and expedient threats and brute force. What unifies tyrants across philosophical and ideological divides is the willingness and ruthlessness to pursue extraordinarily ends to justify their means, often at a terrible cost to those who dare oppose them."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Colveare Hierarch",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "family": "Tyrants",
+            "cr": "14",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Astriapi"
+                }
+            ],
+            "xp": 38400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 25
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 215,
+                "rp": 6
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 27,
+                "kac": 28
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 20
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "nanoserrated chitinblade",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d8+16",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d3+21",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "executioner caustoject",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d4+14",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "injection"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "injection +2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "ready to wear echelon fashion"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "nanoserrated chitinblade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "executioner caustoject",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tier III sedative",
+                "quantity": 5
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 3,
+            "con": 6,
+            "int": 1,
+            "wis": 8,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 25
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 30
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Astriapi"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "zhufera visions"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, the hierarch can psychically project terrifying visions that affect any number of creatures within 60 feet. Each affected creature attempts a Will save (DC = 8 + the hierarch\u2019s CR). If they fail, they\u2019re staggered for 1 round and shaken for 1d4 rounds. If they succeed, they\u2019re shaken for 1 round. After being affected by this ability, a creature is immune to that hierarch\u2019s zhufera visions for 1 hour. This is a mind-affecting ability.",
+                "name": "Zhufera Visions",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 186",
+                "alt": "Interstellar Species pg. 186",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 186
+        }
+    ]
+}

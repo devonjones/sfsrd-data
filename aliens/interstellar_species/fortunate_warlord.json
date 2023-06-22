@@ -1,0 +1,389 @@
+{
+    "name": "Fortunate Warlord",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Some worlanisi leverage their preternatural luck to best their rivals, forging loyal armies that revere the leader\u2019s track record of uncanny victories. These fiefdoms typically thrive less on careful planning than they do on aggression, creating situations where the warlord can beat the odds in one fell swoop. These leaders most often run pirate ships or mercenary crews, where a quick tongue and quicker aim can win the day."
+        },
+        {
+            "name": "Tyrants",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 186",
+                        "alt": "Interstellar Species pg. 186",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 186
+                }
+            ],
+            "html": "Those who amass extraordinary wealth, power, and influence often use them to perpetuate their advantages, typically through violent or coercive means. Tyrants might maintain their rule through subterfuge and surveillance or through age-old and expedient threats and brute force. What unifies tyrants across philosophical and ideological divides is the willingness and ruthlessness to pursue extraordinarily ends to justify their means, often at a terrible cost to those who dare oppose them."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Fortunate Warlord",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "worlanisi"
+                }
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Small",
+            "family": "Tyrants",
+            "cr": "11",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Worlanisi"
+                }
+            ],
+            "xp": 12800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 20
+            }
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 180
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 24,
+                "kac": 26
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "\u20131 vs. mind-affecting effects"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            },
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "psychic reverb"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tactical plasma sword",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+16",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "medium machine gun",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d10+11",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "cryo grenade II",
+                    "bonus": 20,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 18",
+                        "dc": 18
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "lucky bounce"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "medium machine gun",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "rounds",
+                    "quantity": 240
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical plasma sword",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "cryo grenades II",
+                "quantity": 3
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 8,
+            "con": 2,
+            "int": 1,
+            "wis": 0,
+            "cha": 3,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 20
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 25
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Worlanisi"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "limited telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "60 ft.",
+                            "range": 60,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4"
+                        }
+                    ],
+                    "name": "multiarmed"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "worlanisi gamble"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "worlanisi luck"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, a fortunate warlord can draw and throw a grenade with a \u201310 penalty to their attack roll. When a fortunate warlord misses a ranged attack with a thrown weapon, they can reduce the number of squares the weapon lands away from the target by 1. In addition, they roll 1d8 twice and use either result to determine the misdirection of the throw.",
+                "name": "Lucky Bounce",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 186",
+                "alt": "Interstellar Species pg. 186",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 186
+        }
+    ]
+}

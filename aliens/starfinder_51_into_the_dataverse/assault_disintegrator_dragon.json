@@ -1,20 +1,15 @@
 {
-    "name": "Assault Laser Dragon",
+    "name": "Assault Disintegrator Dragon",
     "type": "alien",
     "sections": [
         {
             "name": "Description",
             "type": "section",
-            "html": "Robot dragons are incredibly complex artificial constructs so advanced they attract a dragon\u2019s soul upon completion, much like android bodies. Each is built around a specific category of weapon. The creation of such creatures is a nearly lost art, and while robot dragons are often built as weapons of war to serve specific groups, they inevitably become independent."
+            "html": "Artificial constructs that house dragon souls much like android bodies house those of humanoids, robot dragons are built as instruments of war. Each one is modeled around a specific category of weapon, such as laser blasters or projectile firearms, though far more specialized models exist. Perhaps the most infamous are the dreaded disintegrator dragons, massive engines of destruction built with nuclear fission chambers for hearts that enable them to unleash terrifying gouts of power that tear matter apart at the molecular level. Shock dragons, on the other hand, favor speed over destructive power and are often used as quick infiltrators and shock troops due to their mobility and ability to stun opponents. Sonic dragons are the most obscure, and they have the ability to harness raw sound into earsplitting blasts of incapacitating power."
         },
         {
             "name": "Robot Dragon",
             "type": "section"
-        },
-        {
-            "name": "Robot Dragon Template Grafts",
-            "type": "section",
-            "html": "Robot dragons tend to seek out military conflicts that align with their philosophies and can further their personal goals.<br/> As with most true dragons, a robotic dragon\u2019s size is based on their CR. However unlike biological dragons, whose size is determined by their age, a robot dragon\u2019s size is set when constructed and is based on the robot dragon\u2019s intended function (CR 3\u20134: Small, scout; CR 5\u20136: Medium, guard; CR 7\u201310: Large, trooper; CR 11\u201316: Huge, assault; CR 17\u201324: Gargantuan, siegebreaker; CR 25: Colossal, warlord). A robot dragon has an extraordinary fly speed that\u2019s based on jets and functions in a vacuum. Their speed and maneuverability is determined by their CR: CR 3\u20136: 150 ft. (Ex, average); CR 7\u201310: 200 ft. (Ex, average); CR 11\u201316: 200 ft. (Ex, clumsy); CR 17\u201325: 250 ft. (Ex, clumsy). If a robot dragon is CR 11 or higher, they have the crush universal creature rule and spell resistance equal to 11 + their CR. All robot dragons have the robotic special ability (page 100) and the spaceflight and void adaptation universal creature rules."
         },
         {
             "name": "Extra Content",
@@ -24,18 +19,12 @@
     ],
     "game-obj": "Aliens",
     "stat_block": {
-        "name": "Assault Laser Dragon",
+        "name": "Assault Disintegrator Dragon",
         "type": "stat_block",
-        "image": {
-            "type": "image",
-            "name": "Assault Laser Dragon",
-            "game-obj": "Monster",
-            "image": "AA4_Robot_Dragon_Assault_Laser.png"
-        },
         "initiative": {
             "type": "stat_block_section",
             "subtype": "initiative",
-            "value": 8
+            "value": 10
         },
         "creature_type": {
             "type": "stat_block_section",
@@ -48,12 +37,12 @@
                     "name": "technological"
                 }
             ],
-            "alignment": "Lawful Neutral",
+            "alignment": "Neutral Evil",
             "size": "Huge",
             "family": "Robot Dragon",
-            "cr": "12",
+            "cr": "16",
             "role": "Combatant",
-            "xp": 19200
+            "xp": 76800
         },
         "senses": {
             "type": "stat_block_section",
@@ -61,7 +50,7 @@
             "perception": {
                 "type": "stat_block_section",
                 "subtype": "perception",
-                "value": 22
+                "value": 28
             },
             "special_senses": [
                 {
@@ -81,7 +70,7 @@
                             "name": "vibration"
                         }
                     ],
-                    "name": "blindsight"
+                    "name": "blindsense"
                 },
                 {
                     "type": "stat_block_section",
@@ -102,19 +91,40 @@
                 }
             ]
         },
+        "auras": [
+            {
+                "type": "stat_block_section",
+                "subtype": "aura",
+                "name": "frightful presence",
+                "range": {
+                    "type": "stat_block_section",
+                    "subtype": "range",
+                    "text": "220 ft.",
+                    "range": 220,
+                    "unit": "feet"
+                },
+                "saving_throw": {
+                    "type": "stat_block_section",
+                    "subtype": "save_dc",
+                    "text": "Will DC 22",
+                    "save_type": "Will",
+                    "dc": 22
+                }
+            }
+        ],
         "defense": {
             "type": "stat_block_section",
             "subtype": "defense",
             "hp": {
                 "type": "stat_block_section",
                 "subtype": "hitpoints",
-                "hp": 200
+                "hp": 300
             },
             "ac": {
                 "type": "stat_block_section",
                 "subtype": "armor_class",
-                "eac": 26,
-                "kac": 28
+                "eac": 30,
+                "kac": 32
             },
             "saves": {
                 "type": "stat_block_section",
@@ -123,19 +133,19 @@
                     "name": "Fort",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 16
+                    "value": 20
                 },
                 "ref": {
                     "name": "Ref",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 16
+                    "value": 20
                 },
                 "will": {
                     "name": "Will",
                     "type": "stat_block_section",
                     "subtype": "save",
-                    "value": 13
+                    "value": 16
                 }
             },
             "defensive_abilities": [
@@ -145,11 +155,22 @@
                     "name": "void adaptation"
                 }
             ],
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 10,
+                    "text": "10/adamantine",
+                    "damage_types": [
+                        "adamantine"
+                    ]
+                }
+            ],
             "immunities": [
                 {
                     "type": "stat_block_section",
                     "subtype": "immunity",
-                    "name": "fire"
+                    "name": "acid"
                 },
                 {
                     "type": "stat_block_section",
@@ -165,13 +186,13 @@
             "sr": {
                 "type": "stat_block_section",
                 "subtype": "sr",
-                "value": 23
+                "value": 27
             },
             "weaknesses": [
                 {
                     "type": "stat_block_section",
                     "subtype": "weakness",
-                    "name": "vulnerable to electricity"
+                    "name": "vulnerable to sonic"
                 }
             ]
         },
@@ -207,12 +228,12 @@
                     "subtype": "attack",
                     "attack_type": "melee",
                     "name": "bite",
-                    "bonus": 23,
+                    "bonus": 28,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "6d4+17",
+                            "formula": "3d10+23",
                             "damage_type": "Piercing",
                             "damage_type_text": "P"
                         }
@@ -225,12 +246,12 @@
                     "subtype": "attack",
                     "attack_type": "multiattack",
                     "name": "bite",
-                    "bonus": 17,
+                    "bonus": 22,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d4+17",
+                            "formula": "3d10+23",
                             "damage_type": "Piercing",
                             "damage_type_text": "P"
                         }
@@ -242,12 +263,12 @@
                     "attack_type": "multiattack",
                     "count": 2,
                     "name": "claws",
-                    "bonus": 15,
+                    "bonus": 22,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d4+17",
+                            "formula": "3d10+23",
                             "damage_type": "Slashing",
                             "damage_type_text": "S"
                         }
@@ -258,12 +279,12 @@
                     "subtype": "attack",
                     "attack_type": "multiattack",
                     "name": "tail slap",
-                    "bonus": 15,
+                    "bonus": 22,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d4+17",
+                            "formula": "3d10+23",
                             "damage_type": "Bludgeoning",
                             "damage_type_text": "B"
                         }
@@ -275,21 +296,22 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "ranged",
-                    "name": "laser bolt",
-                    "bonus": 26,
+                    "name": "disintegrator cannon",
+                    "bonus": 31,
                     "damage": [
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "6d4+12",
-                            "damage_type": "Fire",
-                            "damage_type_text": "F"
+                            "formula": "7d6+16",
+                            "damage_type": "Acid",
+                            "damage_type_text": "A"
                         },
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
-                            "formula": "3d6",
-                            "effect": "burn"
+                            "formula": "4d6",
+                            "critical": true,
+                            "effect": "corrode"
                         }
                     ]
                 }
@@ -298,14 +320,7 @@
             "reach": {
                 "type": "stat_block_section",
                 "subtype": "reach",
-                "modifiers": [
-                    {
-                        "type": "stat_block_section",
-                        "subtype": "modifier",
-                        "name": "15 ft. with bite"
-                    }
-                ],
-                "value": "10 ft."
+                "value": "15 ft."
             },
             "offensive_abilities": [
                 {
@@ -315,7 +330,7 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "modifier",
-                            "name": "45-ft. cone or 90-ft. line"
+                            "name": "55-ft. cone"
                         },
                         {
                             "type": "stat_block_section",
@@ -327,16 +342,16 @@
                     "damage": {
                         "type": "stat_block_section",
                         "subtype": "attack_damage",
-                        "formula": "13d6",
-                        "damage_type": "Fire",
-                        "damage_type_text": "F"
+                        "formula": "17d6",
+                        "damage_type": "Acid",
+                        "damage_type_text": "A"
                     },
                     "saving_throw": {
                         "type": "stat_block_section",
                         "subtype": "save_dc",
-                        "text": "Reflex DC 19 half",
+                        "text": "Reflex DC 22 half",
                         "save_type": "Ref",
-                        "dc": 19,
+                        "dc": 22,
                         "result": "half"
                     }
                 },
@@ -347,7 +362,7 @@
                     "damage": {
                         "type": "stat_block_section",
                         "subtype": "attack_damage",
-                        "formula": "6d4+17",
+                        "formula": "6d10+23",
                         "damage_type": "Bludgeoning",
                         "damage_type_text": "B"
                     }
@@ -357,12 +372,12 @@
         "statistics": {
             "type": "stat_block_section",
             "subtype": "statistics",
-            "str": 5,
-            "dex": 8,
-            "con": 3,
-            "int": 4,
-            "wis": 3,
-            "cha": 3,
+            "str": 7,
+            "dex": 10,
+            "con": 4,
+            "int": 5,
+            "wis": 4,
+            "cha": 4,
             "skills": {
                 "type": "stat_block_section",
                 "subtype": "skills",
@@ -371,12 +386,12 @@
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Acrobatics",
-                        "value": 27,
+                        "value": 33,
                         "modifiers": [
                             {
                                 "type": "stat_block_section",
                                 "subtype": "modifier",
-                                "name": "+19 to fly"
+                                "name": "+25 to fly"
                             }
                         ]
                     },
@@ -384,19 +399,19 @@
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Computers",
-                        "value": 22
+                        "value": 28
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Piloting",
-                        "value": 22
+                        "value": 28
                     },
                     {
                         "type": "stat_block_section",
                         "subtype": "skill",
                         "name": "Sense Motive",
-                        "value": 22
+                        "value": 28
                     }
                 ]
             },
@@ -439,15 +454,23 @@
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "A laser dragon can fire laser beams from their mouth, eyes, or wingtips. This attack has a range increment of 100 feet, targets EAC, and has the burn critical hit effect that lists a number of d6s equal to one quarter their level (minimum 1). The attack also has the sniper weapon special property with a range of 1,000 feet.",
-                "name": "Laser Bolt",
+                "text": "A disintegrator dragon\u2019s breath weapon and disintegrator cannon can completely reduce a target to only traces of fine dust. If either ability reduces a creature to 0 Hit Points, that creature\u2019s body is destroyed (as per disintegrate). A creature can negate the utter destruction of their body by spending all its remaining Resolve Points; this leaves it at 0 Hit Points and unconscious but stable.",
+                "name": "Annihilation",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"
             },
             {
                 "type": "stat_block_section",
                 "subtype": "special_ability",
-                "text": "For effects targeting creatures by type, laser dragons count as both dragons and constructs (whichever allows an ability to affect them for abilities that affect only one of those types, and whichever is worse for abilities that affect both types). They receive a +2 racial bonus to saving throws against disease, mind-affecting effects, and poison unless those effects specifically target constructs. Additionally, they are protected from environmental effects as if wearing armor (of an item level equal to the dragon\u2019s CR) with its environmental protection active.",
+                "text": "A disintegrator dragon\u2019s head is built around a destructive proton-decoupler cannon that provides the dragon with a ranged attack that deals acid damage, targets EAC, has a range increment equal to their breath weapon\u2019s maximum range and the corrodeAR 2d6 critical effect (increase to 3d6 at CR 7, 4d6 at CR 11, 5d6 at CR 17, and 6d6 at CR 25), and the line and unwieldy weapon special properties. ",
+                "name": "Disintegrator Cannon",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "For effects targeting creatures by type, disintegrator dragons count as both dragons and constructs (whichever allows an ability to affect them for abilities that affect only one of those types, and whichever is worse for abilities that affect both types). They receive a +2 racial bonus to saving throws against disease, mind-affecting effects, and poison unless those effects specifically target constructs. Additionally, they\u2019re protected from environmental effects as if wearing armor (of an item level equal to the dragon\u2019s CR) with its environmental protection active.",
                 "name": "Robotic",
                 "ability_type": "Extraordinary",
                 "ability_type_abbrev": "Ex"
@@ -457,14 +480,14 @@
     "sources": [
         {
             "type": "source",
-            "name": "Alien Archive 4",
+            "name": "Starfinder #51: Into the Dataverse",
             "link": {
                 "type": "link",
-                "name": "Alien Archive 4 pg. 100",
-                "alt": "Alien Archive 4 pg. 100",
-                "href": "https://paizo.com/products/btq026jv?Starfinder-Alien-Archive-4"
+                "name": "Starfinder #51: Into the Dataverse pg. 60",
+                "alt": "Starfinder #51: Into the Dataverse pg. 60",
+                "href": "https://paizo.com/products/btq02e0u?Starfinder-Adventure-Path-51-Into-the-Dataverse"
             },
-            "page": 100
+            "page": 60
         }
     ]
 }

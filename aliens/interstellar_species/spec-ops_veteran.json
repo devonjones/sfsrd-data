@@ -1,0 +1,456 @@
+{
+    "name": "Spec-ops Veteran",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A spec-ops veteran is an elite soldier trained in reconnaissance, combat, and myriad other skills that make them a one-person army or capable commander."
+        },
+        {
+            "name": "Former Military",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 164",
+                        "alt": "Interstellar Species pg. 164",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 164
+                }
+            ],
+            "html": "Military training hones experts with varied skillsets, tempering them in battlefield conditions. Mercenary work is an obvious outlet for their skills, but former military pros function well as security forces and rescue teams, and on exploration missions and supply delivery in dangerous areas. They might be found in more mundane settings, such as corporate facilities or research labs, especially in places where people or facilities need extra protection. Each of these NPCs has the following ability.<br/><b>Unit Tactics (Ex)</b> Before rolling initiative, the character can choose to roll twice and take the lower result, and an ally within 30 feet can roll their initiative check twice and use the better result. When the character successfully uses covering fire, the selected ally gains the circumstance bonus to AC against the next two attacks made against them by creatures in the character\u2019s line of effect."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Spec-ops Veteran",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "shapechanger"
+                }
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "family": "Former Military",
+            "cr": "16",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Astrazoan"
+                }
+            ],
+            "xp": 76800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 28
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 280
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 30,
+                "kac": 31
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 21
+                }
+            },
+            "dr": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "dr",
+                    "value": 5,
+                    "text": "5/\u2014",
+                    "damage_types": [
+                        "\u2014"
+                    ]
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "many forms"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "forcepack"
+                            },
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "average"
+                            }
+                        ],
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "zero-edge longsword",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "7d8+21",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "unarmed strike",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d6+21",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "parallax laser pistol",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "5d4+16",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "elite shirren-eye rifle",
+                    "bonus": 28,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d10+16",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "spec-ops shooter"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "unnerving precision"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "shiftskin II",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "forcepack"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite shirren-eye rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 36
+                },
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "combined flash suppressor and silencer"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "parallax laser pistol",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "2 batteries with 80 charges"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<b>Augmentations</b>  Augmentations standard speed suspension"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 5 dermal plating"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 8,
+            "con": 1,
+            "int": 3,
+            "wis": 5,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 33
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Pilot",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 28
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 33
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 28
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 4 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "change form"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "rapid revival"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "spec-ops stealth"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unit tactics"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A spec-ops veteran treats their target\u2019s AC bonus from cover as 2 lower and reduces any miss chance due to concealment or total concealment by 10%. The spec-ops veteran reduces the penalty to Stealth checks for moving or sniping by 5. ",
+                "name": "Spec-Ops Shooter",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per round when an spec-ops veteran\u2019s attack exceeds their target\u2019s AC by 5 or more, the target becomes shaken for 1 round (Will negates, DC = 10 + the spec-ops veteran\u2019s CR).",
+                "name": "Unnerving Precision",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 165",
+                "alt": "Interstellar Species pg. 165",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 165
+        }
+    ]
+}

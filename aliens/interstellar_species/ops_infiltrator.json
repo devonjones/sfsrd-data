@@ -1,0 +1,397 @@
+{
+    "name": "Ops Infiltrator",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Ops infiltrators identify threats to the Pact Worlds through a combination of stealth, espionage, disguise, and charm. These agents typically work solo, yet they periodically hire trusted teams to gather information or covertly destroy a target."
+        },
+        {
+            "name": "Stewards",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 180",
+                        "alt": "Interstellar Species pg. 180",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 180
+                }
+            ],
+            "html": "With three branches\u2014the Constabulary, Ops, and Overwatch\u2014 the Stewards protect people and legal rights within the Pact Worlds. The Constabulary handles planet-side troubles, the Overwatch fleet guards Pact Worlds space, and Ops is usually responsible for gathering intelligence. Although Stewards often function as allies for PCs, they might confront PCs engaged in risky heroics, or a canny villain could frame PCs for high crimes to turn Stewards into fearsome adversaries."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Ops Infiltrator",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 9
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "ryphorian"
+                }
+            ],
+            "alignment": "Lawful Neutral",
+            "size": "Medium",
+            "family": "Stewards",
+            "cr": "15",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Winterborn"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "ryphorian"
+                }
+            ],
+            "xp": 51200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 31
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 255,
+                "rp": 7
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 29,
+                "kac": 30
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+2 vs mind-affecting, staggered,"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 15
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            },
+            "resistances": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "value": 15,
+                    "name": "cold"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "molecular rift sword cane",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d8+15",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "aphelion shoulder laser",
+                    "bonus": 26,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+15",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "mk 3 holo grenade",
+                    "bonus": 26,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "20 ft.",
+                        "range": 20,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 23",
+                        "dc": 23
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "3rd-level holographic image"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "cover up"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "squad hardlight series"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aphelion shoulder laser",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "molecular rift sword cane"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 3 holo grenade"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "holoskin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "personal comm unit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<b>Augmentations</b> vocal modulator"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 9,
+            "con": 2,
+            "int": 5,
+            "wis": 1,
+            "cha": 7,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 31
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 26
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 31
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Draconic"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Triaxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "plus any 15 others"
+                    }
+                ]
+            }
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a reaction when they would be hit by an attack, an ops infiltrator can create a figment to retroactively apply a 20% miss chance against the triggering attack. If they spend 1 Resolve Point when activating this ability, they instead gain a 50% miss chance. This is an illusion ability. ",
+                "name": "Body Double",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "By speaking with a creature for up to 5 minutes and spending 1 Resolve Point, an ops infiltrator can alter that creature\u2019s memory of an event that\u2019s no longer than the time they spend speaking. Alternatively, an ops infiltrator can use this ability as a standard action against a creature within 30 feet, briefly muddling the target\u2019s memory of recent events leading up to that moment; the target becomes confused for 1d4 rounds (Will negates, DC = 13 + 1/2 the specialist\u2019s CR). Once a creature has been targeted by this ability, they\u2019re immune to that infiltrator\u2019s cover up for 24 hours. This is a language-dependent, mind-affecting, and sense-dependent ability.",
+                "name": "Cover Up",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 181",
+                "alt": "Interstellar Species pg. 181",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 181
+        }
+    ]
+}

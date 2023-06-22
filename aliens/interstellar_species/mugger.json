@@ -1,0 +1,346 @@
+{
+    "name": "Mugger",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Like pickpockets, muggers are common in large cities, but they adopt a strategy of brute force rather than stealth. Most muggers are physically imposing, the better to intimidate their ictims into handing over valuables. They can be among the lower echelons of an organized gang or simply free agents. A mugger might prey on low-level PCs who wander down the wrong alleyway, or the PCs might witness a mugging and wish to help. Most muggers flee if their victims put up a fight, which could provide the opportunity for an exciting chase."
+        },
+        {
+            "name": "Thieves",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 185",
+                        "alt": "Interstellar Species pg. 185",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 185
+                }
+            ],
+            "html": "Thieves are common throughout the galaxy, though more numerous in larger cities and space stations. They have a variety of methods and motivations for snaring others\u2019 property; some thieves strike back against an amoral corporate system that left them behind, while others selfishly prey on those with little power to defend their possessions. PCs can encounter thieves in numerous circumstances, whether as unsavory associates, crafty foes, or on-again-off-again allies and rivals."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mugger",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "family": "Thieves",
+            "cr": "6",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Nuar"
+                }
+            ],
+            "xp": 2400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 13
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 90
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 18,
+                "kac": 20
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "yellow star solar brand",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "wound"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "horn",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+11",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "thunderstrike sonic rifle",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+6",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "beatdown"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "gore"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "menace"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor II"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "thunderstrike sonic rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity battery",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ],
+                    "quantity": 1
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "yellow star solar brand",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 2,
+            "con": 3,
+            "int": 1,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 18
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Orc"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "maze mind"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, a mugger can attempt a combat maneuver to trip a target. If this succeeds, the mugger also deals damage equal to one of their melee attacks. ",
+                "name": "Beatdown",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a standard action, the mugger can menace a target, who must succeed at a Will save (DC = 9 + the mugger\u2019s CR) or be forced to follow the mugger\u2019s orders as if affected by <i>command</i>. If the target succeeds at their Will save, they\u2019re immune to that mugger\u2019s menace ability for 24 hours.",
+                "name": "Menace",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 185",
+                "alt": "Interstellar Species pg. 185",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 185
+        }
+    ]
+}

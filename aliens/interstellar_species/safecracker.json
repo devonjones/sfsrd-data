@@ -1,0 +1,383 @@
+{
+    "name": "Safecracker",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Safecrackers specialize in getting into vaults and other secured locations, often working with a small team. Some safecrackers go after treasures like gemstones and art objects, while others target less-tangible things, such as corporate secrets. The PCs might encounter a safecracker if they interrupt a robbery while on another mission, or might be asked to investigate a break-in after it occurs."
+        },
+        {
+            "name": "Thieves",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 185",
+                        "alt": "Interstellar Species pg. 185",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 185
+                }
+            ],
+            "html": "Thieves are common throughout the galaxy, though more numerous in larger cities and space stations. They have a variety of methods and motivations for snaring others\u2019 property; some thieves strike back against an amoral corporate system that left them behind, while others selfishly prey on those with little power to defend their possessions. PCs can encounter thieves in numerous circumstances, whether as unsavory associates, crafty foes, or on-again-off-again allies and rivals."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Safecracker",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Plant",
+            "alignment": "Neutral Evil",
+            "size": "Tiny",
+            "family": "Thieves",
+            "cr": "10",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Raxilite"
+                }
+            ],
+            "xp": 9600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 24
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 150,
+                "rp": 5
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 24
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "limited plant benefits"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "sintered handaxe",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+13",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "space": "2-1/2 ft.",
+                    "reach": {
+                        "type": "stat_block_section",
+                        "subtype": "reach",
+                        "value": "0 ft."
+                    },
+                    "name": "aphelion laser pistol",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+10",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "jam shot"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white carbon carbon skin"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aphelion laser pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sintered handaxe"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "laser drill"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "microgoggles"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 3,
+            "dex": 5,
+            "con": 3,
+            "int": 8,
+            "wis": 1,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 24,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+26 to disable a device"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Akitonian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Aklo"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Castrovelian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Raxi"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Triaxian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vercite"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vesk"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ysoki"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "LFAN"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "LFAN symbiosis"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "swift recalibration"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a standard action, the safecracker can apply a small explosive to a 5-foot square. They can trigger this explosive as a reaction when a creature enters this space, dealing fire damage equal to twice the safecracker\u2019s CR, pushing the target back 5 feet into an empty space, and knocking it prone. The creature can attempt a Reflex save (DC = 10 + the safecracker\u2019s CR) to halve the damage and avoid being pushed and knocked prone. ",
+                "name": "Jam Shot",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The safecracker\u2019s keen eye quickly notes mistakes. They can spend 1 Resolve Point to immediately reroll a failed Engineering check to arm explosives, disable a device, or repair an item, taking the better of the two results.",
+                "name": "Swift Recalibration",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 185",
+                "alt": "Interstellar Species pg. 185",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 185
+        }
+    ]
+}

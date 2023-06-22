@@ -1,0 +1,461 @@
+{
+    "name": "Psychic Healer",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Psychic healers use magic to unravel curses, banish malevolent spirits, and burn away diseases. These miraculous remedies can make psychic healers into self-serving celebrities or cult leaders. Others are hermits or iconoclasts who disdain social obligations and demand potential clients prove their worth."
+        },
+        {
+            "name": "Medical Staff",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 172",
+                        "alt": "Interstellar Species pg. 172",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 172
+                }
+            ],
+            "html": "In many societies, practicing medicine requires extensive (and often formal) education and even certification. Yet the galaxy is a big, dangerous place, and some of the best healers are self-taught, work outside of official networks, or both. Altruism, prestige, or profit motivate most medics to provide life-saving care. However, medics can be villains, with criminals, charlatans, and unethical innovators willing to provide risky surgeries, experimental drugs, or cure-all placebos for the right price."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Psychic Healer",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Magical Beast",
+            "alignment": "Chaotic Good",
+            "size": "Large",
+            "family": "Medical Staff",
+            "cr": "9",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Uplifted"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "bear"
+                }
+            ],
+            "xp": 6400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 22
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 120
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 21,
+                "kac": 22
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+4 vs. curses"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d4+13",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "space": "10 ft.",
+                    "reach": {
+                        "type": "stat_block_section",
+                        "subtype": "reach",
+                        "value": "5 ft."
+                    },
+                    "name": "rime subduer",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "nonlethal": true,
+                            "formula": "1d12+9",
+                            "damage_type": "Cold",
+                            "damage_type_text": "C"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "ferocious charge"
+                }
+            ],
+            "spells": [
+                {
+                    "name": "Spells Known",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "remove affliction",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 20",
+                                        "dc": 20
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "synaptic pulse",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 20",
+                                        "dc": 20
+                                    }
+                                }
+                            ],
+                            "level_text": "3rd",
+                            "level": 3,
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "hold person",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "lesser restoration",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mystic cure",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "status",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                }
+                            ],
+                            "level_text": "2nd",
+                            "level": 2,
+                            "count_text": "6/day",
+                            "count": 6,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "command",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 18",
+                                        "dc": 18
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "lesser remove condition"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mystic cure",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 18",
+                                        "dc": 18
+                                    }
+                                }
+                            ],
+                            "level_text": "1st",
+                            "level": 1,
+                            "count_text": "at will",
+                            "frequency": "at will"
+                        }
+                    ],
+                    "caster_level": 9
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta mind mail I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "rime subduer",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 3 serum of healing"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced medkit"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 0,
+            "con": 0,
+            "int": 2,
+            "wis": 6,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Medicine",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Mysticism",
+                        "value": 22
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "limited telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "30 ft.",
+                            "range": 30,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "soothing magic"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a psychic healer restores Hit Points to a creature, the target also gains a +2 morale bonus to their next saving throw against a curse, mind-affecting, or pain effect attempted in the next 10 minutes.",
+                "name": "Soothing Magic",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 172",
+                "alt": "Interstellar Species pg. 172",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 172
+        }
+    ]
+}

@@ -1,0 +1,353 @@
+{
+    "name": "Viper",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Vipers rely on poison to take out their targets. They often craft their own toxins, using various aspects of their bodies, such as blood, tears, or chitin. They typically work alone. Vipers pride themselves on their calling cards, which can be used to trace assassinations back to them. Their ability to create novel venoms makes it difficult for natural defenses to resist the effects of the poison and for medical staff to treat those affected.<br/> Vipers are skilled bioengineers who are likely to work or have previously worked in laboratories. They see assassinations as a chance to show off their talent and research, and they revel in the fear instilled by their creations."
+        },
+        {
+            "name": "Assassins",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 152",
+                        "alt": "Interstellar Species pg. 152",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 152
+                }
+            ],
+            "html": "Assassins are skilled killers who excel in eliminating single targets. Often using various forms of stealth and subterfuge, they can pass between guards undetected and skillfully navigate traps to quickly dispatch their marked query. High-profile corporations, cults, or criminal syndicates may employ assassins, but most work alone or as part of secretive guilds for hire and by contract.<br/> Assassins work in the shadows, with some operating discreetly among the underbellies of society and others conducting their business while hiding in plain sight. Regardless of their methods, they\u2019re valued for their ability to hide their tracks and maintain their employer\u2019s anonymity. The most skilled assassins can take out high-profile figures without leaving any evidence for investigators to follow. The more difficult the job and the greater the prominence of the target, the higher the fee they command."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Viper",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 6
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "family": "Assassins",
+            "cr": "9",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Astriapi"
+                }
+            ],
+            "xp": 6400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 17
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 145
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 24
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 10
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Extraordinary",
+                        "ability_type_abbrev": "Ex",
+                        "maneuverability": "average",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "sintered starknife",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "4d4+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "bite",
+                    "bonus": 19,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "advanced nightarch needler",
+                    "bonus": 22,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+9",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "injection DC +2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "dvanced nightarch needler",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 10
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sinteredstarknife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "viper poison",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "functions as ungol dust"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "3 doses"
+                    }
+                ]
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 6,
+            "con": 0,
+            "int": 3,
+            "wis": 0,
+            "cha": 4,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 22
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science +",
+                        "value": 17
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 22
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Astriapi"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "envenom"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "honey production"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Each viper has a signature poison, sometimes concocted with material from their own body. Each day they can produce three doses of this poison, which acts as an existing poison at a level lower than or equal to their CR. This poison can\u2019t be sold and loses its toxicity after 24 hours.",
+                "name": "Envenom",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 152",
+                "alt": "Interstellar Species pg. 152",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 152
+        }
+    ]
+}

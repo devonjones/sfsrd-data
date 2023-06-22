@@ -1,0 +1,447 @@
+{
+    "name": "Bounty Hunter",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The bounty hunters of the public imagination are hardened experts who use combat, investigation, and legal knowhow to track fugitives across the stars. Such bounty hunters can be military or law enforcement personnel who hang up official duties for freelance ones. Others arose as civilian contractors, learning the rougher parts of the trade as they went. Whatever the case, these bounty hunters take on riskier contracts and don\u2019t shy from jobs that might require hurting or killing the mark."
+        },
+        {
+            "name": "Bounty Hunters",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 154",
+                        "alt": "Interstellar Species pg. 154",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 154
+                }
+            ],
+            "html": "Anyone who seeks and catches those who don\u2019t want to be caught may be called a bounty hunter, though in practice, the term comprises an array of professionals. Most bounty hunters have legal sanction, such as a license to hunt fugitives, but many also work in a gray area between legal authority and vigilantism. Bounty hunters take jobs from legitimate authorities, but what legitimate means varies by location. Little stops a bounty hunter from acting as an agent of a private party, and many are enforcers for the unscrupulous. Some clever bounty hunters double as private investigators, tracking down missing people or runaways."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Bounty Hunter",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 11
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "pahtra"
+                }
+            ],
+            "alignment": "Neutral",
+            "size": "Medium",
+            "family": "Bounty Hunters",
+            "cr": "10",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Pahtra"
+                }
+            ],
+            "xp": 9600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 19
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 150
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 24
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "+2 vs. charm and compulsion"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "nimble"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "50 ft.",
+                        "movement_type": "walk",
+                        "value": 50
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "forcepack"
+                            },
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "average"
+                            }
+                        ],
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "aurora polarity gauntlets",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "tactical magnetar rifle",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+10",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "stickybomb grenade III",
+                    "bonus": 20,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 19",
+                        "dc": 19
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode 20 ft., entangled 2d4 rounds"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor III",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "forcepack"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "aurora polarity gauntlets",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "high-capacity battery",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges"
+                        }
+                    ],
+                    "quantity": 1
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical magnetar rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "longarm rounds",
+                    "quantity": 90
+                },
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "inertial dampener"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "manacles",
+                "quantity": 4
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<b>Augmentations</b> standard speed suspension"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 7,
+            "con": 1,
+            "int": 1,
+            "wis": 4,
+            "cha": 3,
+            "feats": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Mobility"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Parting Shot"
+                }
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Profession (bounty hunter)",
+                        "value": 23
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Pahtra"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vesk"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "any one other"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "mark"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "swift stalker"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A bounty hunter can choose one sapient creature as a mark, provided the bounty hunter can identify that creature by a specific identity and has studied the mark for 1 hour using available information, or directly observed the mark for 1 minute outside of combat or as a full action in combat. The bounty hunter gains an insight bonus on skill checks made to investigate, track, or gather information on the mark, as well as on Sense Motive checks against the mark. This bonus equals 1 + the bounty hunter\u2019s CR divided by 6 (+2 total at CR 10). Also, the bounty hunter can use Sense Motive instead of Perception to use the pierce disguise or search tasks of the Perception skill against the mark. ",
+                "name": "Mark",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A bounty hunter reduces the penalty for following tracks using Survival while moving at full speed to 0. The agent also reduces the penalty for moving at more than half speed while using Stealth to hide to \u20135.",
+                "name": "Swift Stalker",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 154",
+                "alt": "Interstellar Species pg. 154",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 154
+        }
+    ]
+}

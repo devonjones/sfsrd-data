@@ -1,0 +1,259 @@
+{
+    "name": "Razordoll",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Razordolls tragically arise when misguided necromancers attempt to raise mutilated android corpses after replacing their missing parts with plastic and metal scraps. These nearly mindless abominations lose the ability to speak and all memories of their lives. In a state of constant pain, razordolls lash out in fury against the living with the crude blades jutting from their limbs. Despite their twisted appearances, razordolls are nimbler than they might seem, and they often move from target to target in combat with surprising fluidity. Silent, broken, and hateful, they\u2019re terrifying foes.<br/><br/>Some believe the process for creating a razordoll was accidentally discovered during the Gap, when a heartbroken medic who lost their android partner in a terrible explosion turned to the necromantic arts. The unfortunate medic was slain instantly by their newly risen creation, who went on to kill dozens more before being put down by a brigade of Stewards. Of course, this tale can\u2019t be verified, but it has given rise to Razordolls Resurrection, a popular series of horror holovids that released its thirteenth installment last year and is set to become a Pact Worlds top seller yet again.<br/><br/>One notable razordoll operates in the Spike district of Absalom Station. Known as Crimson Kiss, this jawless android corpse speaks only through a series of rhythmic blinks with its black and red eyes. Crimson Kiss has murdered at least a dozen gang members in the Spike, and its motivations remain unknown, save that it collects a left arm from every victim."
+        },
+        {
+            "name": "Extra Content",
+            "type": "section",
+            "html": "The following extra content was found for this creature:<br/>- <a href=\"TemplateGrafts.aspx?ItemName=Razordoll&Family=Razordoll\">Razordoll Graft Template</a><br/>"
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Razordoll",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Undead",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "android"
+                }
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "cr": "7",
+            "role": "Combatant",
+            "xp": 3200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 14
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 105
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "ferocity"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "integrated weapons"
+                }
+            ],
+            "immunities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "undead immunities"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "integrated limb blade",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+11",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "slashing steps"
+                }
+            ]
+        },
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 5,
+            "con": null,
+            "int": 2,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "can\u2019t speak"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any urban",
+            "organization": "solitary, pair, or hunting party (3\u20135)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a razordoll makes a full attack, it can move up to 15 feet between attacks as long as this movement places it within melee range of another target. The razordoll gains a +4 bonus to its Armor Class against attacks of opportunity it provokes from this movement.",
+                "name": "Slashing Steps",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #50: Clockwork Demons",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #50: Clockwork Demons pg. 60",
+                "alt": "Starfinder #50: Clockwork Demons pg. 60",
+                "href": "https://paizo.com/products/btq02dvx?Starfinder-Adventure-Path-50-Clockwork-Demons"
+            },
+            "page": 60
+        }
+    ]
+}

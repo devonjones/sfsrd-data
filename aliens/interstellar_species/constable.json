@@ -1,0 +1,390 @@
+{
+    "name": "Constable",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Constables have much more to do than chasing criminals\u2014 constables patrol neighborhoods, assist in investigations, guard visiting dignitaries, provide disaster relief, and more. Constables have limited authority to deputize capable bystanders like adventurers to help contain a threat."
+        },
+        {
+            "name": "Stewards",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 180",
+                        "alt": "Interstellar Species pg. 180",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 180
+                }
+            ],
+            "html": "With three branches\u2014the Constabulary, Ops, and Overwatch\u2014 the Stewards protect people and legal rights within the Pact Worlds. The Constabulary handles planet-side troubles, the Overwatch fleet guards Pact Worlds space, and Ops is usually responsible for gathering intelligence. Although Stewards often function as allies for PCs, they might confront PCs engaged in risky heroics, or a canny villain could frame PCs for high crimes to turn Stewards into fearsome adversaries."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Constable",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 3
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "aquatic"
+                }
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "family": "Stewards",
+            "cr": "7",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Kalo"
+                }
+            ],
+            "xp": 3200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 14
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "sound"
+                        }
+                    ],
+                    "name": "blindsight"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 105
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 21
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "resistances": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "value": 10,
+                    "name": "cold"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "15 ft.",
+                        "movement_type": "walk",
+                        "value": 15
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "swim 45 ft.",
+                        "movement_type": "swim",
+                        "value": 45
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "underwater aurora shockpad",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d4+13",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "stun"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "staggered"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "manacles",
+                    "bonus": 17,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+13",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "underwater thunderstrike sonic rifle",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d10+7",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "riot grenade II",
+                    "bonus": 14,
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "text": "15 ft.",
+                        "range": 15,
+                        "unit": "feet"
+                    },
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 16",
+                        "dc": 16
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "explode"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "staggered"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "officer ceremonial plate"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater aurora shock pad"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "underwater thunderstrike sonic rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "riot grenades II",
+                "quantity": 2
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "manacles"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 6,
+            "dex": 3,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 1,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Kalo"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "manacles training"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "A Stewards constable can wield manacles as though they were a one-handed basic melee weapon with the analog special property. If a manacles attack result would equal or exceed the target\u2019s KAC + 4, the constable can attempt a grapple combat maneuver against the target as part of the attack. If the attack result equals or exceeds the target\u2019s KAC + 13 and the combat maneuver check succeeds, the constable grapples and applies the restraints to the target.",
+                "name": "Manacles Training",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 180",
+                "alt": "Interstellar Species pg. 180",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 180
+        }
+    ]
+}

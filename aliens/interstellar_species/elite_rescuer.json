@@ -1,0 +1,434 @@
+{
+    "name": "Elite Rescuer",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "For disasters covering a huge area or with several victims, magically adept rescuers can use divinations and specialized senses to search for survivors. These experts often work alone, and must be fit enough to clamber over terrain, remove obstacles, and potentially carry their charges back to safety. 163"
+        },
+        {
+            "name": "Emergency Workers",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 162",
+                        "alt": "Interstellar Species pg. 162",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 162
+                }
+            ],
+            "html": "Emergency workers administer medical care, handle hazardous materials, evacuate disaster victims, and provide myriad other services in the wake of tragedy. They can be selfless idealists, exhausted municipal workers, or mercenaries who don\u2019t lift a finger unless they\u2019re under contract. Whatever their motivations, emergency workers are capable, resourceful, and tough, able to work long hours under difficult conditions."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Elite Rescuer",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "vlaka"
+                }
+            ],
+            "alignment": "Neutral Good",
+            "size": "Medium",
+            "family": "Emergency Workers",
+            "cr": "10",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Vlaka"
+                }
+            ],
+            "xp": 9600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 24
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "name": "blindsight"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "life"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "dying and stable living creatures only"
+                        }
+                    ],
+                    "name": "blindsight"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "deafened"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 140,
+                "rp": 4
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 22,
+                "kac": 23
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 9
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 13
+                }
+            },
+            "resistances": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "value": 10,
+                    "name": "cold"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "average"
+                            }
+                        ],
+                        "name": "fly 60 ft.",
+                        "movement_type": "fly",
+                        "value": 60
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "sintered handaxe",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d6+12",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "elite semi-auto pistol",
+                    "bonus": 18,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d6+10",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "cooperative"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter III",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "forcepack"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sintered handaxe"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite semi-auto pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "small arm rounds",
+                    "quantity": 24
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 3 serums of healing",
+                "quantity": 2
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "spell gem of tongues"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced medkit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "emergency beacon"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "grappler"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "sprayflesh",
+                "quantity": 4
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "titanium alloy cable line",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "150 ft."
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<b>Augmentations</b> synchronous heart"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 4,
+            "con": 3,
+            "int": 6,
+            "wis": 3,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Medicine",
+                        "value": 24
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vlakan",
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "spoken"
+                            },
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "signed"
+                            },
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "and tactile"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 8 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "buoy"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "on your feet"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When an elite rescuer uses Medicine to treat deadly wounds and exceeds the check\u2019s DC by 5 or more, they also suppress one of the following conditions the target might have for 1d4 hours: dazzled, deafened, fatigued, nauseated, shaken, sickened, or staggered. Alternatively, the elite rescuer can reduce any movement speed penalty a target\u2019s experiencing by 10 feet for 1d4 hours.",
+                "name": "On Your Feet",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 162",
+                "alt": "Interstellar Species pg. 162",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 162
+        }
+    ]
+}

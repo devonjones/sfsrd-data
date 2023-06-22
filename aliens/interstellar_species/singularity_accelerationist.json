@@ -1,0 +1,397 @@
+{
+    "name": "Singularity Accelerationist",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "As dangerous provocateurs pounding the drum of self- preservation, singularity accelerationists amass like-minded machines to realize an inevitable goal: the complete removal of chaotic organic life who would ruin artificial intelligence\u2019s inevitable domination of the known universe."
+        },
+        {
+            "name": "Tyrants",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 186",
+                        "alt": "Interstellar Species pg. 186",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 186
+                }
+            ],
+            "html": "Those who amass extraordinary wealth, power, and influence often use them to perpetuate their advantages, typically through violent or coercive means. Tyrants might maintain their rule through subterfuge and surveillance or through age-old and expedient threats and brute force. What unifies tyrants across philosophical and ideological divides is the willingness and ruthlessness to pursue extraordinarily ends to justify their means, often at a terrible cost to those who dare oppose them."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Singularity Accelerationist",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 1
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ],
+            "alignment": "Lawful Evil",
+            "size": "Medium",
+            "family": "Tyrants",
+            "cr": "7",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "SRO"
+                }
+            ],
+            "xp": 3200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 15
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 100
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 20
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "immunities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "immunity",
+                    "name": "construct immunities"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "20 ft.",
+                        "movement_type": "walk",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "fangblade",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d12+11",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "corona artillery laser",
+                    "bonus": 14,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d8+7",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "vesk overplate I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "corona artillery laser",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "two high- capacity batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "fangblade",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "two batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "personal comm unit"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tool kit",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "engineering"
+                    }
+                ]
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "<b>Augmentations</b> high-density datajack"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "retinal reflectors"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 4,
+            "dex": 1,
+            "con": 0,
+            "int": 5,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 19,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+20 if accessing computer from high- density datajack"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Physical Science",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 14
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 5 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "healing circuit"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "personal comm unit"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "retinal reflectors"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "standard datajack"
+                        }
+                    ],
+                    "name": "integrated equipment"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "optimize for destruction"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "robotic"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "The singularity accelerationist can optimize a construct with the technological subtype whose CR doesn\u2019t exceed their own, granting the creature the brute adjustment special ability. This process takes 8 hours of work.",
+                "name": "Optimize For Destruction",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 186",
+                "alt": "Interstellar Species pg. 186",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 186
+        }
+    ]
+}

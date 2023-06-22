@@ -1,0 +1,254 @@
+{
+    "name": "Mewclock",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "A mewclock is a clockwork automaton imbued with a magical spark of sentience that gives it an animal-like level of intelligence. Designed to look like tiny, adorable felines, mewclocks are often mistaken for simple toys. However, like any stray animal, a mewclock found in the wild (usually in abandoned urban buildings in areas where clockwork engineering is prevalent) is slow to trust a creature it doesn\u2019t know. Attempting to snatch up and take a mewclock home often results in receiving a jolt of electricity or some slashed skin. However, once a feral mewclock is domesticated, it can become an affectionate companion. In certain civilizations where clockwork is the prevalent form of technology, mewclocks are constructed and sold as pets."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Mewclock",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Construct",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "magical"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "technological"
+                }
+            ],
+            "alignment": "Neutral",
+            "size": "Tiny",
+            "cr": "3",
+            "role": "Spellcaster",
+            "xp": 800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 8
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "name": "low-light vision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 32
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 14
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 0
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "construct immunities"
+                }
+            ],
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "vulnerable to sonic"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claws",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+4",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "space": "2-1/2 ft.",
+            "reach": {
+                "type": "stat_block_section",
+                "subtype": "reach",
+                "value": "0 ft."
+            },
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "pack distraction"
+                }
+            ]
+        },
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": null,
+            "int": -4,
+            "wis": 0,
+            "cha": 2,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8,
+                        "modifiers": [
+                            {
+                                "type": "stat_block_section",
+                                "subtype": "modifier",
+                                "name": "+16 to climb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 13
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unliving"
+                }
+            ]
+        },
+        "ecology": {
+            "type": "stat_block_section",
+            "subtype": "ecology",
+            "environment": "any urban",
+            "organization": "solitary or college (4\u20137)"
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "When a mewclock starts its turn adjacent to a creature that\u2019s adjacent to at least one other mewclock, as a full action, it can enter that creature\u2019s square, make a single melee attack, and then return to its original position. This movement doesn\u2019t provoke attacks of opportunity.",
+                "name": "Pack Distraction",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Starfinder #50: Clockwork Demons",
+            "link": {
+                "type": "link",
+                "name": "Starfinder #50: Clockwork Demons pg. 59",
+                "alt": "Starfinder #50: Clockwork Demons pg. 59",
+                "href": "https://paizo.com/products/btq02dvx?Starfinder-Adventure-Path-50-Clockwork-Demons"
+            },
+            "page": 59
+        }
+    ]
+}

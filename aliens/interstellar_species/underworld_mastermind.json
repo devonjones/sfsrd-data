@@ -1,0 +1,374 @@
+{
+    "name": "Underworld Mastermind",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "The deadliest tyrants rule from the shadows. By blending in among minions, bystanders, and rivals alike, an underworld mastermind can steal secrets, manipulate social phenomena, and rule multiple organizations under many guises. Such a power broker often needs pawns\u2014willing or unwitting\u2014and they could act as a patron who maneuvers young adventurers to eventually gain an advantage."
+        },
+        {
+            "name": "Tyrants",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 186",
+                        "alt": "Interstellar Species pg. 186",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 186
+                }
+            ],
+            "html": "Those who amass extraordinary wealth, power, and influence often use them to perpetuate their advantages, typically through violent or coercive means. Tyrants might maintain their rule through subterfuge and surveillance or through age-old and expedient threats and brute force. What unifies tyrants across philosophical and ideological divides is the willingness and ruthlessness to pursue extraordinarily ends to justify their means, often at a terrible cost to those who dare oppose them."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Underworld Mastermind",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 9
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Aberration",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "shapechanger"
+                }
+            ],
+            "alignment": "Neutral Evil",
+            "size": "Medium",
+            "family": "Tyrants",
+            "cr": "19",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Astrazoan"
+                }
+            ],
+            "xp": 204800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 32
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 385
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 33,
+                "kac": 34
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 21
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "molecular rift dagger",
+                    "bonus": 30,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "10d4+21",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "19",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "multiattack": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "multiattack",
+                    "name": "ttack 3 molecular rift daggers",
+                    "bonus": 24,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "10d4+21",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "19",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "elite injector pistol",
+                    "bonus": 32,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "9d6+19",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "injection"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "injection +2"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "cruel bladework"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "19d4"
+                        }
+                    ],
+                    "name": "deadly betrayal"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor V"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite injector pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 40
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "molecular rift daggers",
+                "quantity": 3
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "hydrofluoric acid",
+                "quantity": 3
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 9,
+            "con": 1,
+            "int": 6,
+            "wis": 3,
+            "cha": 11,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 32
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 37
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 32
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "up to 6 others"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "change shape"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "compression"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "If a mastermind successfully hits an enemy during a surprise round, they deal additional damage with the attack to one target equal to 1d4 per CR. ",
+                "name": "Deadly Betrayal",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Any operative slashing weapon the mastermind wields gains the bleed critical hit effect, with the bleed damage equal to the underworld mastermind\u2019s CR.",
+                "name": "Cruel Bladework",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 186",
+                "alt": "Interstellar Species pg. 186",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 186
+        }
+    ]
+}

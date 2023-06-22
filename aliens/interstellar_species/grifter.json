@@ -1,0 +1,344 @@
+{
+    "name": "Grifter",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Grifters work up close and personal, earning their credits through sleight of hand and misleading prattle, and are always ready to flee if they\u2019re caught cheating or their marks lose their temper. Most pick pockets or run street-corner hustles, but many work at festivals and circus midways, or play or rig games at casinos and gambling dens. Some work in groups, with one grifter distracting an audience or mark while another relieves them of their credits, possessions, or vehicle. The most benevolent work as magicians and use their skills to entertain."
+        },
+        {
+            "name": "Charlatans",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 158",
+                        "alt": "Interstellar Species pg. 158",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 158
+                }
+            ],
+            "html": "Throughout the galaxy charlatans run countless cons, scams, and tricks, from small scale to large, from harmless to downright dangerous. Although their methods, modes, and goals vary, charlatans are nearly always selfish, greedy, and unscrupulous. Occasionally, a charlatan uses their skills to entertain, inspire, and astound\u2014or to rip off oppressors, villains, and faceless mega corporations\u2014but they\u2019re the exception, not the rule. The following charlatans represent a diverse array of con artists, scammers, and impostors."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Grifter",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 4
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "worlanisi"
+                }
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "family": "Charlatans",
+            "cr": "2",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Worlanisi"
+                }
+            ],
+            "xp": 600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 7
+            }
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 25
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 13,
+                "kac": 15
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "\u20131 vs. mind-affecting effects"
+                    }
+                ],
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 6
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                }
+            },
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "psychic reverb"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "climb 20 ft.",
+                        "movement_type": "climb",
+                        "value": 20
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "tactical switchblade",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "diffraction perforator pistol",
+                    "bonus": 7,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+2",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "bleed"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "diffraction perforator pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical switchblade"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 1,
+            "dex": 4,
+            "con": 1,
+            "int": 0,
+            "wis": 1,
+            "cha": 2,
+            "feats": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Improved Feint"
+                }
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Acrobatics",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 7
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 12
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Worlanisi"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "limited telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "60 ft.",
+                            "range": 60,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "distracting prattle"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "4"
+                        }
+                    ],
+                    "name": "multiarmed"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "worlanisi gamble"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "worlanisi luck"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "As a move action, the grifter talks incessantly, covering their motions and distracting their marks with misleading conversation. The grifter gains a +2 circumstance bonus to Bluff and Sleight of Hand checks until the end of their turn.",
+                "name": "Distracting Prattle",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 158",
+                "alt": "Interstellar Species pg. 158",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 158
+        }
+    ]
+}

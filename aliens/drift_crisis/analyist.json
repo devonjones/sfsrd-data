@@ -1,0 +1,414 @@
+{
+    "name": "Analyist",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "This entry-level member of the Architects collects and collates data pulled from Signal sites and presents it to their interfacer or higher-ranking programmers within the organization. Far from simple scholars, these analysts must prove themselves adept liars, impersonators, and diplomats\u2014skills needed to gain access to sites, interact with locals, and hide their true goals without arousing suspicion."
+        },
+        {
+            "name": "Drift Architects",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Drift Crisis",
+                    "link": {
+                        "type": "link",
+                        "name": "Drift Crisis pg. 168",
+                        "alt": "Drift Crisis pg. 168",
+                        "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+                    },
+                    "page": 168
+                }
+            ],
+            "html": "The Architects, rumored to be a secret cadre of innovators within the Church of Triune, attempted to upgrade the Drift using fragments of fossil code. The following stat blocks represent members of this mysterious group. Alternatively, they can represent other members of the Church of Triune\u2014a dangerous hacker collective; a tech-focused cult that's risen to prominence during the Drift Crisis; or members of the Primacy, a group rumored to have infected the Drift with a devastating virus.<br/><b>Adaptation</b>: The NPCs represented here can be a part of many factions and organizations, including AbadarCorp, the Aspis Consortium, Chiwatech, the Moored.<br/> You can customize these stat blocks by swapping subtype or template grafts, spells, and equipment. To change the CR of any of these stat blocks, use the arrays in <a aonid=\"318\" game-obj=\"Rules\">Appendix 1</a> of Starfinder Alien Archive. Be sure to adjust any associated class graft to the appropriate level as needed."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Analyist",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 5
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "ysoki"
+                }
+            ],
+            "alignment": "Chaotic Neutral",
+            "size": "Small",
+            "family": "Drift Architects",
+            "cr": "1",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Ysoki"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "operative"
+                }
+            ],
+            "xp": 400
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 11
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 17
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 11,
+                "kac": 12
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 1
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "survival knife +",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+1",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "azimuth laser pistol",
+                    "bonus": 4,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+1",
+                            "damage_type": "Fire",
+                            "damage_type_text": "F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4",
+                            "critical": true,
+                            "effect": "burn"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "precision coil rifle",
+                    "bonus": 6,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+1",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "flight suit stationwear"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "azimuth laser pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "precision coil rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "rounds",
+                    "quantity": 8
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tool kit",
+                "modifiers": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "disguise"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "engineering"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "modifier",
+                        "name": "hacking"
+                    }
+                ]
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 0,
+            "dex": 4,
+            "con": 0,
+            "int": 2,
+            "wis": 1,
+            "cha": 1,
+            "feats": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "feat",
+                    "name": "Mobility"
+                }
+            ],
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 6
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Disguise",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Engineering",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Intimidate",
+                        "value": 6
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sense Motive",
+                        "value": 6
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Sleight of Hand",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 11
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Survival",
+                        "value": 6
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Akitonian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Vercite"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ysoki"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "cheek pouches"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "moxie"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "hacker"
+                        }
+                    ],
+                    "name": "specialization"
+                }
+            ]
+        }
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Drift Crisis",
+            "link": {
+                "type": "link",
+                "name": "Drift Crisis pg. 168",
+                "alt": "Drift Crisis pg. 168",
+                "href": "https://paizo.com/products/btq02aly?Starfinder-Drift-Crisis"
+            },
+            "page": 168
+        }
+    ]
+}

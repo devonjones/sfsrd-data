@@ -1,0 +1,372 @@
+{
+    "name": "Influencer",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Influencers build their reputations as subject matter and lifestyle experts. They inspire their followers to mirror the example they set, whether that means cooking the same recipes, adopting the same magical shortcuts, or assuming the same political stance. They act as advocates, reviewers, and brand ambassadors. However, they must sustain viewership and their reputations, and any threat to either of these can transform the influencer into an implacable foe. An accomplished influencer wields fearsome power, potentially generating or crushing demand for a new product."
+        },
+        {
+            "name": "Celebrities",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 156",
+                        "alt": "Interstellar Species pg. 156",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 156
+                }
+            ],
+            "html": "Celebrities shine in ways that often draw admiration, adoration, or amusement from fans across their home worlds and beyond. They regularly engage with fans through interviews, social media, and special appearances, boosting their sway in the court of public opinion. Some celebrities use their massive platforms to influence policy and elections, and it\u2019s not uncommon for groups with specific political or corporate interests to secretly plant or sponsor celebrities to advance particular agendas."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Influencer",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Neutral",
+            "size": "Medium",
+            "family": "Celebrities",
+            "cr": "7",
+            "role": "Spellcaster",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Contemplative"
+                }
+            ],
+            "xp": 3200
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 14
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "thought"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 95
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 19,
+                "kac": 20
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 5
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 7
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "weaknesses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "weakness",
+                    "name": "atrophied"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "5 ft.",
+                        "movement_type": "walk",
+                        "value": 5
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "ability_type": "Supernatural",
+                        "ability_type_abbrev": "Su",
+                        "maneuverability": "perfect",
+                        "name": "fly 30 ft.",
+                        "movement_type": "fly",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 16,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d8+6",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "applied knowledge"
+                }
+            ],
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "detect thoughts",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 16",
+                                        "dc": 16
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mind thrust",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "3rd level, DC 18"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "daze",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 15",
+                                        "dc": 15
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "psychokinetic hand"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        }
+                    ],
+                    "caster_level": 7
+                }
+            ]
+        },
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": -1,
+            "dex": 1,
+            "con": 0,
+            "int": 3,
+            "wis": 3,
+            "cha": 6,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Bluff",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Culture",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 14
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Profession (video personality)",
+                        "value": 19
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Akitonian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Ysoki"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "100 ft.",
+                            "range": 100,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "brand ambassador"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An influencer can spend 1 hour creating and distributing media about an item, location, or person, after which the influencer attempts a Profession (video personality) check with a DC equal to 10 + 1-1/2 \u00d7 the subject\u2019s CR, item level, or the CR of the location\u2019s owner. If the influencer succeeds at the check, they attract large crowds to the subject. If the media was positive, this allows anyone who attempts to earn income with a Profession check related to the subject that week to roll their check twice and use the better result. For negative media, the unfriendly coverage disrupts business, forcing anyone attempting to earn income with a Profession check related to the subject that week to roll their check twice and use the worse result. After using this ability, the influencer can\u2019t affect that subject for another week.",
+                "name": "Brand Ambassador",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 157",
+                "alt": "Interstellar Species pg. 157",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 157
+        }
+    ]
+}

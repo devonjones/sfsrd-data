@@ -1,0 +1,421 @@
+{
+    "name": "Emt",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Emergency medical technicians (sometimes abbreviated as EMTs) are often first on the scene, providing field care and stabilizing seriously injured patients for transportation to a medical facility for more intense procedures. Although not included in their gear, EMTs typically operate with an ambulance, such as a hover truck with a medical lab expansion bay.<br/> The stats presented here also work well for a medic early in their career, such as a doctor in residency or self-trained street clinician. This could also represent a criminal, such as an organ thief."
+        },
+        {
+            "name": "Medical Staff",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 172",
+                        "alt": "Interstellar Species pg. 172",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 172
+                }
+            ],
+            "html": "In many societies, practicing medicine requires extensive (and often formal) education and even certification. Yet the galaxy is a big, dangerous place, and some of the best healers are self-taught, work outside of official networks, or both. Altruism, prestige, or profit motivate most medics to provide life-saving care. However, medics can be villains, with criminals, charlatans, and unethical innovators willing to provide risky surgeries, experimental drugs, or cure-all placebos for the right price."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Emt",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 2
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Lawful Good",
+            "size": "Medium",
+            "family": "Medical Staff",
+            "cr": "3",
+            "role": "Expert",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Formian"
+                }
+            ],
+            "xp": 800
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 13
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "scent"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 35
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 14,
+                "kac": 15
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 2
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 4
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 8
+                }
+            },
+            "resistances": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "resistance",
+                    "value": 5,
+                    "name": "sonic"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "40 ft.",
+                        "movement_type": "walk",
+                        "value": 40
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "claw",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+5",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "survival knife",
+                    "bonus": 8,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+5",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "static arc pistol",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d6+3",
+                            "damage_type": "Electricity",
+                            "damage_type_text": "E"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "stun"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2",
+                            "critical": true,
+                            "effect": "arc"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "tactical needler pistol",
+                    "bonus": 10,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "1d4+3",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "injection DC +2"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "injection weapon training"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "clearweave I"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "static arc pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "20 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "survival knife"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "tactical needler pistol",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "darts",
+                    "quantity": 16
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "mk 1 serums of healing",
+                "quantity": 2
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "amblaree",
+                "quantity": 3
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "chemalyzer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "medkit"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 2,
+            "dex": 0,
+            "con": 1,
+            "int": 3,
+            "wis": 0,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Computers",
+                        "value": 8
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Life Science",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Medicine",
+                        "value": 13
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 13
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Castrovelian"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Shirren"
+                    }
+                ],
+                "communication_abilities": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "communication_ability",
+                        "name": "limited telepathy",
+                        "range": {
+                            "type": "stat_block_section",
+                            "subtype": "range",
+                            "text": "60 ft.",
+                            "range": 60,
+                            "unit": "feet"
+                        }
+                    }
+                ]
+            }
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "An EMT gains a +5 circumstance bonus to attack rolls using weapons with the injection special property when attacking a willing target. On a successful attack with an injection weapon against a willing target, the EMT can choose to deal no damage to the target while still affecting the target with any drug, serum, or similar substance loaded into the injection weapon.",
+                "name": "Injection Weapon Training",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 172",
+                "alt": "Interstellar Species pg. 172",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 172
+        }
+    ]
+}

@@ -1,0 +1,304 @@
+{
+    "name": "Specter",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "Even among assassins, there are those who are so highly skilled that few dare to speak their names. Often referred to as specters for their ability to appear and vanish like ghosts, these killers can silence their targets without a single witness to the act, leaving nothing but a corpse as evidence.<br/> Specters prefer to stay hidden, even to their employers. They are often hired for high-level assassinations and work with clients on recommendations only. Untrustworthy clients who are put on a specter\u2019s block list soon find themselves out of favor with most other assassins within their network."
+        },
+        {
+            "name": "Assassins",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 152",
+                        "alt": "Interstellar Species pg. 152",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 152
+                }
+            ],
+            "html": "Assassins are skilled killers who excel in eliminating single targets. Often using various forms of stealth and subterfuge, they can pass between guards undetected and skillfully navigate traps to quickly dispatch their marked query. High-profile corporations, cults, or criminal syndicates may employ assassins, but most work alone or as part of secretive guilds for hire and by contract.<br/> Assassins work in the shadows, with some operating discreetly among the underbellies of society and others conducting their business while hiding in plain sight. Regardless of their methods, they\u2019re valued for their ability to hide their tracks and maintain their employer\u2019s anonymity. The most skilled assassins can take out high-profile figures without leaving any evidence for investigators to follow. The more difficult the job and the greater the prominence of the target, the higher the fee they command."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Specter",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 8
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Humanoid",
+            "creature_subtypes": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "creature_subtype",
+                    "name": "hadrogaan"
+                }
+            ],
+            "alignment": "Chaotic Evil",
+            "size": "Medium",
+            "family": "Assassins",
+            "cr": "18",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Hadrogaan"
+                }
+            ],
+            "xp": 153600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 36
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 30,
+                        "text": "30 ft.",
+                        "unit": "feet"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "vibration"
+                        }
+                    ],
+                    "name": "blindsense"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 375
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 32,
+                "kac": 34
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 19
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 18
+                }
+            }
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "30 ft.",
+                        "movement_type": "walk",
+                        "value": 30
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "white star plasma sword",
+                    "bonus": 29,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "8d8+29",
+                            "damage_type": "Electricity & Fire",
+                            "damage_type_text": "E & F"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "severe wound"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "elite seeker rifle",
+                    "bonus": 32,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "9d8+18",
+                            "damage_type": "Piercing",
+                            "damage_type_text": "P"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "freebooter armor V"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "elite seeker rifle",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "sniper rounds",
+                    "quantity": 18
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "white star plasma sword"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 11,
+            "dex": 8,
+            "con": 6,
+            "int": 6,
+            "wis": 2,
+            "cha": 0,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 36
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Stealth",
+                        "value": 31
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Hadrogaan"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "dual nervous systems"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "unobserved"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Twice per day for 15 minutes each, a specter can reduce their presence to the point where they become unobserved even while standing in plain sight. To observe a specter while they\u2019re in this mode, a creature must succeed at a Will save (DC = 8 + the specter\u2019s CR) or be unable to detect the presence of the specter using any sense (including blindsense and blindsight). A success grants a creature the ability to see the specter for only 1 round, after which they must attempt another Will save.",
+                "name": "Unobserved",
+                "ability_type": "Supernatural",
+                "ability_type_abbrev": "Su"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 153",
+                "alt": "Interstellar Species pg. 153",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 153
+        }
+    ]
+}

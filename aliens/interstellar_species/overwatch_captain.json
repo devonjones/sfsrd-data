@@ -1,0 +1,367 @@
+{
+    "name": "Overwatch Captain",
+    "type": "alien",
+    "sections": [
+        {
+            "name": "Description",
+            "type": "section",
+            "html": "While Overwatch captains often command larger starships, they\u2019re also dispatched as pilots in smaller craft for more discreet missions, such as tracking major outlaws or leading assaults against galactic invaders."
+        },
+        {
+            "name": "Stewards",
+            "type": "section",
+            "sources": [
+                {
+                    "type": "source",
+                    "name": "Interstellar Species",
+                    "link": {
+                        "type": "link",
+                        "name": "Interstellar Species pg. 180",
+                        "alt": "Interstellar Species pg. 180",
+                        "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+                    },
+                    "page": 180
+                }
+            ],
+            "html": "With three branches\u2014the Constabulary, Ops, and Overwatch\u2014 the Stewards protect people and legal rights within the Pact Worlds. The Constabulary handles planet-side troubles, the Overwatch fleet guards Pact Worlds space, and Ops is usually responsible for gathering intelligence. Although Stewards often function as allies for PCs, they might confront PCs engaged in risky heroics, or a canny villain could frame PCs for high crimes to turn Stewards into fearsome adversaries."
+        }
+    ],
+    "game-obj": "Aliens",
+    "stat_block": {
+        "name": "Overwatch Captain",
+        "type": "stat_block",
+        "initiative": {
+            "type": "stat_block_section",
+            "subtype": "initiative",
+            "value": 0
+        },
+        "creature_type": {
+            "type": "stat_block_section",
+            "subtype": "creature_type",
+            "creature_type": "Monstrous Humanoid",
+            "alignment": "Lawful Good",
+            "size": "Large",
+            "family": "Stewards",
+            "cr": "10",
+            "role": "Combatant",
+            "grafts": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "graft",
+                    "name": "Trox"
+                }
+            ],
+            "xp": 9600
+        },
+        "senses": {
+            "type": "stat_block_section",
+            "subtype": "senses",
+            "perception": {
+                "type": "stat_block_section",
+                "subtype": "perception",
+                "value": 19
+            },
+            "special_senses": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "special_sense",
+                    "range": {
+                        "type": "stat_block_section",
+                        "subtype": "range",
+                        "range": 60,
+                        "text": "60 ft.",
+                        "unit": "feet"
+                    },
+                    "name": "darkvision"
+                }
+            ]
+        },
+        "defense": {
+            "type": "stat_block_section",
+            "subtype": "defense",
+            "hp": {
+                "type": "stat_block_section",
+                "subtype": "hitpoints",
+                "hp": 165
+            },
+            "ac": {
+                "type": "stat_block_section",
+                "subtype": "armor_class",
+                "eac": 23,
+                "kac": 25
+            },
+            "saves": {
+                "type": "stat_block_section",
+                "subtype": "saves",
+                "fort": {
+                    "name": "Fort",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 12
+                },
+                "ref": {
+                    "name": "Ref",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 14
+                },
+                "will": {
+                    "name": "Will",
+                    "type": "stat_block_section",
+                    "subtype": "save",
+                    "value": 11
+                }
+            },
+            "defensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "defensive_ability",
+                    "name": "bulwark"
+                }
+            ]
+        },
+        "offense": {
+            "type": "stat_block_section",
+            "subtype": "offense",
+            "speed": {
+                "type": "stat_block_section",
+                "subtype": "speeds",
+                "movement": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "35 ft.",
+                        "movement_type": "walk",
+                        "value": 35
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "speed",
+                        "name": "burrow 15 ft.",
+                        "movement_type": "burrow",
+                        "value": 15
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "melee",
+                    "name": "advanced swoop hammer",
+                    "bonus": 23,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "3d10+15",
+                            "damage_type": "Bludgeoning",
+                            "damage_type_text": "B"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "knockdown"
+                        }
+                    ]
+                }
+            ],
+            "ranged": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "name": "surge staccato rifle",
+                    "bonus": 20,
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "formula": "2d10+10",
+                            "damage_type": "Sonic",
+                            "damage_type_text": "So"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "critical": true,
+                            "effect": "deafen"
+                        }
+                    ]
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "attack",
+                    "attack_type": "ranged",
+                    "space": "10 ft.",
+                    "reach": {
+                        "type": "stat_block_section",
+                        "subtype": "reach",
+                        "value": "10 ft."
+                    },
+                    "name": "riot grenade III",
+                    "bonus": 20,
+                    "saving_throw": {
+                        "type": "stat_block_section",
+                        "subtype": "save_dc",
+                        "text": "DC 17",
+                        "dc": 17
+                    },
+                    "damage": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "nonlethal": true,
+                            "formula": "1d8",
+                            "damage_type": "Slashing",
+                            "damage_type_text": "S"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "attack_damage",
+                            "effect": "staggered,"
+                        }
+                    ]
+                }
+            ],
+            "offensive_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "air strike"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "frenzy"
+                },
+                {
+                    "type": "stat_block_section",
+                    "subtype": "offensive_ability",
+                    "name": "grappler"
+                }
+            ]
+        },
+        "gear": [
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "lashunta ringwear III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "advanced swoop hammer"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "surge staccato rifleR",
+                "with": {
+                    "type": "stat_block_section",
+                    "subtype": "item",
+                    "name": "batteries",
+                    "modifiers": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "modifier",
+                            "name": "40 charges each"
+                        }
+                    ],
+                    "quantity": 2
+                }
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "riot grenade III"
+            },
+            {
+                "type": "stat_block_section",
+                "subtype": "item",
+                "name": "manacles"
+            }
+        ],
+        "statistics": {
+            "type": "stat_block_section",
+            "subtype": "statistics",
+            "str": 5,
+            "dex": 0,
+            "con": 3,
+            "int": 0,
+            "wis": 2,
+            "cha": 8,
+            "skills": {
+                "type": "stat_block_section",
+                "subtype": "skills",
+                "skills": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Athletics",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Diplomacy",
+                        "value": 19
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "skill",
+                        "name": "Piloting",
+                        "value": 24
+                    }
+                ]
+            },
+            "languages": {
+                "type": "stat_block_section",
+                "subtype": "languages",
+                "languages": [
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Common"
+                    },
+                    {
+                        "type": "stat_block_section",
+                        "subtype": "language",
+                        "name": "Nchaki"
+                    }
+                ]
+            },
+            "other_abilities": [
+                {
+                    "type": "stat_block_section",
+                    "subtype": "other_ability",
+                    "name": "vestigial arms"
+                }
+            ]
+        },
+        "special_abilities": [
+            {
+                "type": "stat_block_section",
+                "subtype": "special_ability",
+                "text": "Once per day as a full action while outdoors and in line of sight of a flying allied starship, an Overwatch captain can coordinate an exceptionally accurate air strike against an outdoor area with a 20-foot radius at a range of 1 mile. At the beginning of the captain\u2019s next turn, the allied starship fires, dealing 10d8 fire and piercing damage to anything in the area. Creatures take half damage with a successful Reflex save (DC 12 + 1/2 the captain\u2019s CR).",
+                "name": "Air Strike",
+                "ability_type": "Extraordinary",
+                "ability_type_abbrev": "Ex"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "type": "source",
+            "name": "Interstellar Species",
+            "link": {
+                "type": "link",
+                "name": "Interstellar Species pg. 180",
+                "alt": "Interstellar Species pg. 180",
+                "href": "https://paizo.com/products/btq02d4w?Starfinder-Interstellar-Species"
+            },
+            "page": 180
+        }
+    ]
+}
