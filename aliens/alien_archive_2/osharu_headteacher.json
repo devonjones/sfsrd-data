@@ -204,6 +204,122 @@
                     ]
                 }
             ],
+            "spells": [
+                {
+                    "name": "Mystic Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mindlink"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        }
+                    ],
+                    "caster_level": 8
+                },
+                {
+                    "name": "Mystic Spells Known",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "remove affliction"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "tongues"
+                                }
+                            ],
+                            "level_text": "3rd",
+                            "level": 3,
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "augury"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "force blast",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "hurl forcedisk"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "zone of truth",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 19",
+                                        "dc": 19
+                                    }
+                                }
+                            ],
+                            "level_text": "2nd",
+                            "level": 2,
+                            "count_text": "6/day",
+                            "count": 6,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "identify"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mystic cure"
+                                }
+                            ],
+                            "level_text": "1st",
+                            "level": 1,
+                            "count_text": "at will",
+                            "frequency": "at will"
+                        }
+                    ],
+                    "caster_level": 8,
+                    "ranged": 16
+                }
+            ],
             "connection": "Akashic"
         },
         "gear": [

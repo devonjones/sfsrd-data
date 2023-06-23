@@ -220,6 +220,72 @@
                     "subtype": "offensive_ability",
                     "name": "applied knowledge"
                 }
+            ],
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "detect thoughts",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 15",
+                                        "dc": 15
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mind thrust",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "1st-level, DC 15"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "daze",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 14",
+                                        "dc": 14
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "psychokinetic hand"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        }
+                    ],
+                    "caster_level": 2
+                }
             ]
         },
         "gear": [

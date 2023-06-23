@@ -197,6 +197,96 @@
                     ]
                 }
             ],
+            "spells": [
+                {
+                    "name": "Mystic Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mindlink"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        }
+                    ],
+                    "caster_level": 3
+                },
+                {
+                    "name": "Mystic Spells Known",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "detect thoughts",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 16",
+                                        "dc": 16
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mind thrust",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 16",
+                                        "dc": 16
+                                    }
+                                }
+                            ],
+                            "level_text": "1st",
+                            "level": 1,
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "daze",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 15",
+                                        "dc": 15
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "telepathic message"
+                                }
+                            ],
+                            "level_text": "0",
+                            "level": 0,
+                            "count_text": "at will",
+                            "frequency": "at will"
+                        }
+                    ],
+                    "caster_level": 3
+                }
+            ],
             "connection": "empath"
         },
         "gear": [

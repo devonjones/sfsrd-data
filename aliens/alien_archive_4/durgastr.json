@@ -327,6 +327,131 @@
                     "subtype": "offensive_ability",
                     "name": "warpwave"
                 }
+            ],
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "disintegrate",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 26",
+                                        "dc": 26
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "shadow walk"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "summon creature VI",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "proteans only"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "terraform"
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "greater dispel magic"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "greater song of the cosmos",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 24",
+                                        "dc": 24
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "mislead",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 25",
+                                        "dc": 25
+                                    }
+                                }
+                            ],
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "confusion",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 24",
+                                        "dc": 24
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "entropic grasp",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 23",
+                                        "dc": 23
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "probability prediction"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        }
+                    ],
+                    "caster_level": 16,
+                    "melee": 26,
+                    "ranged": 26
+                }
             ]
         },
         "statistics": {

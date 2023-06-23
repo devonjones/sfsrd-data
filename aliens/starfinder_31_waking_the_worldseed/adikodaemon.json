@@ -264,6 +264,140 @@
                         }
                     ]
                 }
+            ],
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "summon allies",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "1 adikodaemon 35%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        }
+                    ],
+                    "caster_level": 18
+                },
+                {
+                    "name": "Spells Known",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "disintegrate",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 27",
+                                        "dc": 27
+                                    }
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "holographic image",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "5th level, DC 26"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "holographic terrain",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 26",
+                                        "dc": 26
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "unwilling guardian",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 26",
+                                        "dc": 26
+                                    }
+                                }
+                            ],
+                            "count_text": "3/day",
+                            "count": 3,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "destruction protocol"
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "greater invisibility"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "true seeing"
+                                }
+                            ],
+                            "count_text": "Constant",
+                            "frequency": "Constant"
+                        }
+                    ],
+                    "caster_level": 18,
+                    "ranged": 29
+                }
             ]
         },
         "gear": [

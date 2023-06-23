@@ -206,7 +206,89 @@
                 "type": "stat_block_section",
                 "subtype": "reach",
                 "value": "0 ft."
-            }
+            },
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "contact other plane"
+                                }
+                            ],
+                            "count_text": "1/week",
+                            "count": 1,
+                            "frequency": "week"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "command",
+                                    "saving_throw": {
+                                        "type": "stat_block_section",
+                                        "subtype": "save_dc",
+                                        "text": "DC 11",
+                                        "dc": 11
+                                    }
+                                },
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "invisibility",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "self only"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "count_text": "1/day",
+                            "count": 1,
+                            "frequency": "day"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "psychokinetic hand"
+                                }
+                            ],
+                            "count_text": "At will",
+                            "frequency": "At will"
+                        },
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "detect magic"
+                                }
+                            ],
+                            "count_text": "Constant",
+                            "frequency": "Constant"
+                        }
+                    ],
+                    "caster_level": 2
+                }
+            ]
         },
         "statistics": {
             "type": "stat_block_section",

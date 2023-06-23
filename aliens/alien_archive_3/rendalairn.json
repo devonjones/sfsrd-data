@@ -262,6 +262,36 @@
                         "dc": 28
                     }
                 }
+            ],
+            "spells": [
+                {
+                    "name": "Spell-Like Abilities",
+                    "type": "stat_block_section",
+                    "subtype": "spells",
+                    "spell_list": [
+                        {
+                            "type": "stat_block_section",
+                            "subtype": "spell_list",
+                            "spells": [
+                                {
+                                    "type": "stat_block_section",
+                                    "subtype": "spell",
+                                    "name": "true seeing",
+                                    "modifiers": [
+                                        {
+                                            "type": "stat_block_section",
+                                            "subtype": "modifier",
+                                            "name": "self"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "count_text": "Constant",
+                            "frequency": "Constant"
+                        }
+                    ],
+                    "caster_level": 25
+                }
             ]
         },
         "statistics": {

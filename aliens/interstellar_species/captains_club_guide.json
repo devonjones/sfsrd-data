@@ -179,6 +179,12 @@
                     "type": "stat_block_section",
                     "subtype": "attack",
                     "attack_type": "ranged",
+                    "space": "10 ft.",
+                    "reach": {
+                        "type": "stat_block_section",
+                        "subtype": "reach",
+                        "value": "5 ft."
+                    },
                     "name": "aurora arc pistol",
                     "bonus": 27,
                     "damage": [
@@ -192,13 +198,9 @@
                         {
                             "type": "stat_block_section",
                             "subtype": "attack_damage",
+                            "formula": "2d6",
                             "critical": true,
-                            "effect": "arc 2d6 Space 10 ft."
-                        },
-                        {
-                            "type": "stat_block_section",
-                            "subtype": "attack_damage",
-                            "effect": "Reach 5 ft."
+                            "effect": "arc"
                         }
                     ]
                 }
